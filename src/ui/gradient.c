@@ -57,7 +57,7 @@ blank_pixbuf (int width, int height)
   if (!buf)
     return NULL;
 
-  return cdk_pixbuf_new_from_data (buf, GDK_COLORSPACE_RGB,
+  return cdk_pixbuf_new_from_data (buf, CDK_COLORSPACE_RGB,
                                    TRUE, 8,
                                    width, height, rowstride,
                                    free_buffer, NULL);
@@ -468,7 +468,7 @@ meta_gradient_create_multi_diagonal (int width, int height,
   else if (height == 1)
     return meta_gradient_create_multi_horizontal (width, height, colors, count);
 
-  pixbuf = cdk_pixbuf_new (GDK_COLORSPACE_RGB, FALSE, 8,
+  pixbuf = cdk_pixbuf_new (CDK_COLORSPACE_RGB, FALSE, 8,
                            width, height);
   if (pixbuf == NULL)
     return NULL;
@@ -521,7 +521,7 @@ simple_multiply_alpha (CdkPixbuf *pixbuf,
   int height;
   int row;
 
-  g_return_if_fail (GDK_IS_PIXBUF (pixbuf));
+  g_return_if_fail (CDK_IS_PIXBUF (pixbuf));
 
   if (alpha == 255)
     return;
@@ -860,7 +860,7 @@ meta_gradient_add_alpha (CdkPixbuf       *pixbuf,
                          int              n_alphas,
                          MetaGradientType type)
 {
-  g_return_if_fail (GDK_IS_PIXBUF (pixbuf));
+  g_return_if_fail (CDK_IS_PIXBUF (pixbuf));
   g_return_if_fail (cdk_pixbuf_get_has_alpha (pixbuf));
   g_return_if_fail (n_alphas > 0);
 

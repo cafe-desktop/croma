@@ -225,7 +225,7 @@ reload_xinerama_infos (MetaScreen *screen)
 #endif /* HAVE_XFREE_XINERAMA */
 
 #ifdef HAVE_SOLARIS_XINERAMA
-  /* This code from GDK, Copyright (C) 2002 Sun Microsystems */
+  /* This code from CDK, Copyright (C) 2002 Sun Microsystems */
   if (screen->n_xinerama_infos == 0 &&
       XineramaGetState (screen->display->xdisplay,
                         screen->number))

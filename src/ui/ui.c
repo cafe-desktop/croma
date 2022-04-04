@@ -52,8 +52,8 @@ void meta_ui_init(int* argc, char*** argv)
 {
   /* As of 2.91.7, Cdk uses XI2 by default, which conflicts with the
    * direct X calls we use - in particular, events caused by calls to
-   * XGrabPointer/XGrabKeyboard are no longer understood by GDK, while
-   * GDK will no longer generate the core XEvents we process.
+   * XGrabPointer/XGrabKeyboard are no longer understood by CDK, while
+   * CDK will no longer generate the core XEvents we process.
    * So at least for now, enforce the previous behavior.
    */
   cdk_disable_multidevice ();
@@ -66,18 +66,18 @@ void meta_ui_init(int* argc, char*** argv)
 
 Display* meta_ui_get_display(void)
 {
-	return GDK_DISPLAY_XDISPLAY(cdk_display_get_default());
+	return CDK_DISPLAY_XDISPLAY(cdk_display_get_default());
 }
 
 /* We do some of our event handling in frames.c, which expects
- * GDK events delivered by CTK+.  However, since the transition to
- * client side windows, we can't let GDK see button events, since the
+ * CDK events delivered by CTK+.  However, since the transition to
+ * client side windows, we can't let CDK see button events, since the
  * client-side tracking of implicit and explicit grabs it does will
  * get confused by our direct use of X grabs in the core code.
  *
- * So we do a very minimal GDK => CTK event conversion here and send on the
+ * So we do a very minimal CDK => CTK event conversion here and send on the
  * events we care about, and then filter them out so they don't go
- * through the normal GDK event handling.
+ * through the normal CDK event handling.
  *
  * To reduce the amount of code, the only events fields filled out
  * below are the ones that frames.c uses. If frames.c is modified to
@@ -124,7 +124,7 @@ maybe_redirect_mouse_event (XEvent *xevent)
   seat = cdk_display_get_default_seat (gdisplay);
   gdevice = cdk_seat_get_pointer (seat);
 
-  /* If GDK already thinks it has a grab, we better let it see events; this
+  /* If CDK already thinks it has a grab, we better let it see events; this
    * is the menu-navigation case and events need to get sent to the appropriate
    * (client-side) subwindow for individual menu items.
    */
@@ -152,12 +152,12 @@ maybe_redirect_mouse_event (XEvent *xevent)
               ABS (xevent->xbutton.x - ui->button_click_x) <= double_click_distance &&
               ABS (xevent->xbutton.y - ui->button_click_y) <= double_click_distance)
             {
-              gevent = cdk_event_new (GDK_2BUTTON_PRESS);
+              gevent = cdk_event_new (CDK_2BUTTON_PRESS);
               ui->button_click_number = 0;
             }
           else
             {
-              gevent = cdk_event_new (GDK_BUTTON_PRESS);
+              gevent = cdk_event_new (CDK_BUTTON_PRESS);
               ui->button_click_number = xevent->xbutton.button;
               ui->button_click_window = xevent->xbutton.window;
               ui->button_click_time = xevent->xbutton.time;
@@ -167,7 +167,7 @@ maybe_redirect_mouse_event (XEvent *xevent)
         }
       else
         {
-          gevent = cdk_event_new (GDK_BUTTON_RELEASE);
+          gevent = cdk_event_new (CDK_BUTTON_RELEASE);
         }
 
       gevent->button.window = g_object_ref (cdk_window);
@@ -179,13 +179,13 @@ maybe_redirect_mouse_event (XEvent *xevent)
       gevent->button.y_root = xevent->xbutton.y_root;
       break;
     case MotionNotify:
-      gevent = cdk_event_new (GDK_MOTION_NOTIFY);
-      gevent->motion.type = GDK_MOTION_NOTIFY;
+      gevent = cdk_event_new (CDK_MOTION_NOTIFY);
+      gevent->motion.type = CDK_MOTION_NOTIFY;
       gevent->motion.window = g_object_ref (cdk_window);
       break;
     case EnterNotify:
     case LeaveNotify:
-      gevent = cdk_event_new (xevent->type == EnterNotify ? GDK_ENTER_NOTIFY : GDK_LEAVE_NOTIFY);
+      gevent = cdk_event_new (xevent->type == EnterNotify ? CDK_ENTER_NOTIFY : CDK_LEAVE_NOTIFY);
       gevent->crossing.window = g_object_ref (cdk_window);
       gevent->crossing.x = xevent->xcrossing.x;
       gevent->crossing.y = xevent->xcrossing.y;
@@ -218,13 +218,13 @@ filter_func (CdkXEvent *xevent,
              CdkEvent *event,
              gpointer data)
 {
-  g_return_val_if_fail (ef != NULL, GDK_FILTER_CONTINUE);
+  g_return_val_if_fail (ef != NULL, CDK_FILTER_CONTINUE);
 
   if ((* ef->func) (xevent, ef->data) ||
       maybe_redirect_mouse_event (xevent))
-    return GDK_FILTER_REMOVE;
+    return CDK_FILTER_REMOVE;
   else
-    return GDK_FILTER_CONTINUE;
+    return CDK_FILTER_CONTINUE;
 }
 
 void
@@ -269,7 +269,7 @@ meta_ui_new (Display *xdisplay,
   gdisplay = cdk_x11_lookup_xdisplay (xdisplay);
   g_assert (gdisplay == cdk_display_get_default ());
 
-  g_assert (xdisplay == GDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
+  g_assert (xdisplay == CDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
   ui->frames = meta_frames_new ();
   /* CTK+ needs the frame-sync protocol to work in order to properly
    * handle style changes. This means that the dummy widget we create
@@ -361,17 +361,17 @@ meta_ui_create_frame_window (MetaUI *ui,
   attrs.title = NULL;
 
   /* frame.c is going to replace the event mask immediately, but
-   * we still have to set it here to let GDK know what it is.
+   * we still have to set it here to let CDK know what it is.
    */
   attrs.event_mask =
-    GDK_EXPOSURE_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK |
-    GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK |
-    GDK_ENTER_NOTIFY_MASK | GDK_LEAVE_NOTIFY_MASK | GDK_FOCUS_CHANGE_MASK;
+    CDK_EXPOSURE_MASK | CDK_BUTTON_PRESS_MASK | CDK_BUTTON_RELEASE_MASK |
+    CDK_POINTER_MOTION_MASK | CDK_POINTER_MOTION_HINT_MASK |
+    CDK_ENTER_NOTIFY_MASK | CDK_LEAVE_NOTIFY_MASK | CDK_FOCUS_CHANGE_MASK;
   attrs.x = x;
   attrs.y = y;
-  attrs.wclass = GDK_INPUT_OUTPUT;
+  attrs.wclass = CDK_INPUT_OUTPUT;
   attrs.visual = visual;
-  attrs.window_type = GDK_WINDOW_CHILD;
+  attrs.window_type = CDK_WINDOW_CHILD;
   attrs.cursor = NULL;
   attrs.wmclass_name = NULL;
   attrs.wmclass_class = NULL;
@@ -380,18 +380,18 @@ meta_ui_create_frame_window (MetaUI *ui,
   attrs.width  = width;
   attrs.height = height;
 
-  attributes_mask = GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL;
+  attributes_mask = CDK_WA_X | CDK_WA_Y | CDK_WA_VISUAL;
 
   window =
     cdk_window_new (cdk_screen_get_root_window(screen),
 		    &attrs, attributes_mask);
 
   cdk_window_resize (window, width, height);
-  set_background_none (xdisplay, GDK_WINDOW_XID (window));
+  set_background_none (xdisplay, CDK_WINDOW_XID (window));
 
-  meta_frames_manage_window (ui->frames, GDK_WINDOW_XID (window), window);
+  meta_frames_manage_window (ui->frames, CDK_WINDOW_XID (window), window);
 
-  return GDK_WINDOW_XID (window);
+  return CDK_WINDOW_XID (window);
 }
 
 void
@@ -548,7 +548,7 @@ meta_cdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
   XWindowAttributes attrs;
   CdkPixbuf *retval;
 
-  display = GDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
+  display = CDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
 
   if (!XGetGeometry (display, xpixmap, &root_return,
                      &x_ret, &y_ret, &w_ret, &h_ret, &bw_ret, &depth_ret))
@@ -558,7 +558,7 @@ meta_cdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
     {
       surface = cairo_xlib_surface_create_for_bitmap (display,
                                                       xpixmap,
-                                                      GDK_SCREEN_XSCREEN (cdk_screen_get_default ()),
+                                                      CDK_SCREEN_XSCREEN (cdk_screen_get_default ()),
                                                       w_ret,
                                                       h_ret);
     }
@@ -662,7 +662,7 @@ meta_ui_window_should_not_cause_focus (Display *xdisplay,
   /* we shouldn't cause focus if we're an override redirect
    * toplevel which is not foreign
    */
-  if (window && cdk_window_get_window_type (window) == GDK_WINDOW_TEMP)
+  if (window && cdk_window_get_window_type (window) == CDK_WINDOW_TEMP)
     return TRUE;
   else
     return FALSE;
@@ -781,31 +781,31 @@ meta_ui_parse_accelerator (const char          *accel,
   if (cdk_sym == None && cdk_code == 0)
     return FALSE;
 
-  if (cdk_mask & GDK_RELEASE_MASK) /* we don't allow this */
+  if (cdk_mask & CDK_RELEASE_MASK) /* we don't allow this */
     return FALSE;
 
   *keysym = cdk_sym;
   *keycode = cdk_code;
 
-  if (cdk_mask & GDK_SHIFT_MASK)
+  if (cdk_mask & CDK_SHIFT_MASK)
     *mask |= META_VIRTUAL_SHIFT_MASK;
-  if (cdk_mask & GDK_CONTROL_MASK)
+  if (cdk_mask & CDK_CONTROL_MASK)
     *mask |= META_VIRTUAL_CONTROL_MASK;
-  if (cdk_mask & GDK_MOD1_MASK)
+  if (cdk_mask & CDK_MOD1_MASK)
     *mask |= META_VIRTUAL_ALT_MASK;
-  if (cdk_mask & GDK_MOD2_MASK)
+  if (cdk_mask & CDK_MOD2_MASK)
     *mask |= META_VIRTUAL_MOD2_MASK;
-  if (cdk_mask & GDK_MOD3_MASK)
+  if (cdk_mask & CDK_MOD3_MASK)
     *mask |= META_VIRTUAL_MOD3_MASK;
-  if (cdk_mask & GDK_MOD4_MASK)
+  if (cdk_mask & CDK_MOD4_MASK)
     *mask |= META_VIRTUAL_MOD4_MASK;
-  if (cdk_mask & GDK_MOD5_MASK)
+  if (cdk_mask & CDK_MOD5_MASK)
     *mask |= META_VIRTUAL_MOD5_MASK;
-  if (cdk_mask & GDK_SUPER_MASK)
+  if (cdk_mask & CDK_SUPER_MASK)
     *mask |= META_VIRTUAL_SUPER_MASK;
-  if (cdk_mask & GDK_HYPER_MASK)
+  if (cdk_mask & CDK_HYPER_MASK)
     *mask |= META_VIRTUAL_HYPER_MASK;
-  if (cdk_mask & GDK_META_MASK)
+  if (cdk_mask & CDK_META_MASK)
     *mask |= META_VIRTUAL_META_MASK;
 
   return TRUE;
@@ -824,25 +824,25 @@ meta_ui_accelerator_name  (unsigned int        keysym,
     }
 
   if (mask & META_VIRTUAL_SHIFT_MASK)
-    mods |= GDK_SHIFT_MASK;
+    mods |= CDK_SHIFT_MASK;
   if (mask & META_VIRTUAL_CONTROL_MASK)
-    mods |= GDK_CONTROL_MASK;
+    mods |= CDK_CONTROL_MASK;
   if (mask & META_VIRTUAL_ALT_MASK)
-    mods |= GDK_MOD1_MASK;
+    mods |= CDK_MOD1_MASK;
   if (mask & META_VIRTUAL_MOD2_MASK)
-    mods |= GDK_MOD2_MASK;
+    mods |= CDK_MOD2_MASK;
   if (mask & META_VIRTUAL_MOD3_MASK)
-    mods |= GDK_MOD3_MASK;
+    mods |= CDK_MOD3_MASK;
   if (mask & META_VIRTUAL_MOD4_MASK)
-    mods |= GDK_MOD4_MASK;
+    mods |= CDK_MOD4_MASK;
   if (mask & META_VIRTUAL_MOD5_MASK)
-    mods |= GDK_MOD5_MASK;
+    mods |= CDK_MOD5_MASK;
   if (mask & META_VIRTUAL_SUPER_MASK)
-    mods |= GDK_SUPER_MASK;
+    mods |= CDK_SUPER_MASK;
   if (mask & META_VIRTUAL_HYPER_MASK)
-    mods |= GDK_HYPER_MASK;
+    mods |= CDK_HYPER_MASK;
   if (mask & META_VIRTUAL_META_MASK)
-    mods |= GDK_META_MASK;
+    mods |= CDK_META_MASK;
 
   return ctk_accelerator_name (keysym, mods);
 
@@ -868,28 +868,28 @@ meta_ui_parse_modifier (const char          *accel,
   if (cdk_sym != None || cdk_code != 0)
     return FALSE;
 
-  if (cdk_mask & GDK_RELEASE_MASK) /* we don't allow this */
+  if (cdk_mask & CDK_RELEASE_MASK) /* we don't allow this */
     return FALSE;
 
-  if (cdk_mask & GDK_SHIFT_MASK)
+  if (cdk_mask & CDK_SHIFT_MASK)
     *mask |= META_VIRTUAL_SHIFT_MASK;
-  if (cdk_mask & GDK_CONTROL_MASK)
+  if (cdk_mask & CDK_CONTROL_MASK)
     *mask |= META_VIRTUAL_CONTROL_MASK;
-  if (cdk_mask & GDK_MOD1_MASK)
+  if (cdk_mask & CDK_MOD1_MASK)
     *mask |= META_VIRTUAL_ALT_MASK;
-  if (cdk_mask & GDK_MOD2_MASK)
+  if (cdk_mask & CDK_MOD2_MASK)
     *mask |= META_VIRTUAL_MOD2_MASK;
-  if (cdk_mask & GDK_MOD3_MASK)
+  if (cdk_mask & CDK_MOD3_MASK)
     *mask |= META_VIRTUAL_MOD3_MASK;
-  if (cdk_mask & GDK_MOD4_MASK)
+  if (cdk_mask & CDK_MOD4_MASK)
     *mask |= META_VIRTUAL_MOD4_MASK;
-  if (cdk_mask & GDK_MOD5_MASK)
+  if (cdk_mask & CDK_MOD5_MASK)
     *mask |= META_VIRTUAL_MOD5_MASK;
-  if (cdk_mask & GDK_SUPER_MASK)
+  if (cdk_mask & CDK_SUPER_MASK)
     *mask |= META_VIRTUAL_SUPER_MASK;
-  if (cdk_mask & GDK_HYPER_MASK)
+  if (cdk_mask & CDK_HYPER_MASK)
     *mask |= META_VIRTUAL_HYPER_MASK;
-  if (cdk_mask & GDK_META_MASK)
+  if (cdk_mask & CDK_META_MASK)
     *mask |= META_VIRTUAL_META_MASK;
 
   return TRUE;

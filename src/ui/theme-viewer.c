@@ -1077,7 +1077,7 @@ run_theme_benchmark (void)
   while (i < ITERATIONS)
     {
       /* Creating the pixmap in the loop is right, since
-       * GDK does the same with its double buffering.
+       * CDK does the same with its double buffering.
        */
       pixmap = cdk_window_create_similar_surface (ctk_widget_get_window (widget),
                                                   CAIRO_CONTENT_COLOR,

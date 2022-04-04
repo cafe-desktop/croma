@@ -218,23 +218,23 @@ Technical gotchas to keep in mind
   (display.[hc], window.[hc]) are not supposed to include cdk.h or
   ctk.h.  Reasons:
 
-    "Basically you don't want GDK most of the time. It adds
+    "Basically you don't want CDK most of the time. It adds
     abstractions that cause problems, because they aren't designed to
     be used in a WM where we do weird stuff (display grabs, and just
-    being the WM). At best GDK adds inefficiency, at worst it breaks
-    things in weird ways where you have to be a GDK guru to figure
+    being the WM). At best CDK adds inefficiency, at worst it breaks
+    things in weird ways where you have to be a CDK guru to figure
     them out. Owen also told me that they didn't want to start adding
-    a lot of hacks to GDK to let a WM use it; we both agreed back in
+    a lot of hacks to CDK to let a WM use it; we both agreed back in
     the mists of time that croma would only use it for the "UI"
     bits as it does.
 
     Having the split in the source code contains and makes very clear
-    the interface between the WM and GDK/CTK. This keeps people from
-    introducing extra GDK/CTK usage when it isn't needed or
+    the interface between the WM and CDK/CTK. This keeps people from
+    introducing extra CDK/CTK usage when it isn't needed or
     appropriate. Also, it speeds up the compilation a bit, though this
     was perhaps more relevant 5 years ago than it is now.
 
-    There was also a very old worry that the GDK stuff might have to
+    There was also a very old worry that the CDK stuff might have to
     be in a separate process to work right; that turned out to be
     untrue. Though who knows what issues the CM will introduce."
 

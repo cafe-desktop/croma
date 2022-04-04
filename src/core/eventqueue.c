@@ -3,7 +3,7 @@
 /* Croma X event source for main loop */
 
 /*
- * Copyright (C) 2001 Havoc Pennington (based on GDK code (C) Owen
+ * Copyright (C) 2001 Havoc Pennington (based on CDK code (C) Owen
  * Taylor, Red Hat Inc.)
  *
  * This program is free software; you can redistribute it and/or

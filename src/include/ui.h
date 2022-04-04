@@ -32,7 +32,7 @@
 #include <cdk-pixbuf/cdk-pixbuf.h>
 #include <cairo/cairo.h>
 
-/* This is between CTK_PRIORITY_RESIZE (+10) and GDK_PRIORITY_REDRAW (+20) */
+/* This is between CTK_PRIORITY_RESIZE (+10) and CDK_PRIORITY_REDRAW (+20) */
 #define META_PRIORITY_RESIZE    (G_PRIORITY_HIGH_IDLE + 15)
 
 typedef struct _MetaUI MetaUI;
@@ -85,7 +85,7 @@ void meta_ui_move_resize_frame (MetaUI *ui,
 				int width,
 				int height);
 
-/* GDK insists on tracking map/unmap */
+/* CDK insists on tracking map/unmap */
 void meta_ui_map_frame   (MetaUI *ui,
                           Window  xwindow);
 void meta_ui_unmap_frame (MetaUI *ui,

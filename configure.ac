@@ -409,13 +409,13 @@ AM_CONDITIONAL(HAVE_SM, test "$found_sm" = "yes")
 HOST_ALIAS=$host_alias
 AC_SUBST(HOST_ALIAS)
 
-AC_PATH_PROG(GDK_PIXBUF_CSOURCE, cdk-pixbuf-csource, no)
+AC_PATH_PROG(CDK_PIXBUF_CSOURCE, cdk-pixbuf-csource, no)
 
-if test x"$GDK_PIXBUF_CSOURCE" = xno; then
+if test x"$CDK_PIXBUF_CSOURCE" = xno; then
   AC_MSG_ERROR([cdk-pixbuf-csource executable not found in your path - should be installed with CTK])
 fi
 
-AC_SUBST(GDK_PIXBUF_CSOURCE)
+AC_SUBST(CDK_PIXBUF_CSOURCE)
 
 AC_PATH_PROG(ZENITY, zenity, no)
 if test x"$ZENITY" = xno; then

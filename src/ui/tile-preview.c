@@ -191,8 +191,8 @@ meta_tile_preview_show (MetaTilePreview *preview,
     return; /* nothing to do */
 
   window = ctk_widget_get_window (preview->preview_window);
-  meta_core_lower_beneath_focus_window (GDK_DISPLAY_XDISPLAY (cdk_display_get_default ()),
-                                        GDK_WINDOW_XID (window),
+  meta_core_lower_beneath_focus_window (CDK_DISPLAY_XDISPLAY (cdk_display_get_default ()),
+                                        CDK_WINDOW_XID (window),
                                         ctk_get_current_event_time ());
 
   old_rect.x = old_rect.y = 0;

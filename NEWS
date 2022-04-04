@@ -272,7 +272,7 @@
   * ctk 3.22: avoid deprecated cdk_screen_get_monitor... functions:
   * avoid deprecated cdk_screen_width/height
   * avoid deprecated cdk_screen_get_width
-  * display: don't use deprecated GDK_DEVICE_MANAGER
+  * display: don't use deprecated CDK_DEVICE_MANAGER
   * tools: remove croma-mag and croma-grayscaletools
   * Fix synthetic keybinding/button-grab window
   * Forces a window scale of 1 for the window manager,
