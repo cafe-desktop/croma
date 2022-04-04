@@ -6,7 +6,7 @@ CAFE Croma is a fork of GNOME Metacity.
 COMPILING CROMA
 ===
 
-You need GTK+ 3.14.  For startup notification to work you need
+You need CTK+ 3.14.  For startup notification to work you need
 libstartup-notification at
 http://www.freedesktop.org/software/startup-notification/.
 
@@ -52,12 +52,12 @@ implementing:
    should save about 80K. This should be fairly easy.
 
  - add --disable-ctk, which would implement the interface in ui.h
-   without using GTK. This one is easier than you think because the
-   main part of the window manager doesn't use GTK directly, but is
+   without using CTK. This one is easier than you think because the
+   main part of the window manager doesn't use CTK directly, but is
    still fairly hard to do.  You would probably have to give up some
    of the features, such as window menus, as menus are pretty complex
-   to implement well.  So time may be better spent adding a GTK
-   configure script feature to build GTK with only a small core set of
+   to implement well.  So time may be better spent adding a CTK
+   configure script feature to build CTK with only a small core set of
    functionality.
 
 CROMA FEATURES
@@ -66,8 +66,8 @@ CROMA FEATURES
  - Boring window manager for the adult in you. Many window managers
    are like Marshmallow Froot Loops; Croma is like Cheerios.
 
- - Uses GTK+ 3.0 for drawing window frames. This means colors, fonts,
-   etc. come from GTK+ theme.
+ - Uses CTK+ 3.0 for drawing window frames. This means colors, fonts,
+   etc. come from CTK+ theme.
 
  - Does not expose the concept of "window manager" to the user.  Some
    of the features in the CAFE control panel and other parts of the
@@ -79,7 +79,7 @@ CROMA FEATURES
    environment. The pager, configuration, etc. are all separate and
    modular. The "libwnck" library (which I also wrote) is available
    for writing croma extensions, pagers, and so on. (But libwnck
-   isn't croma specific, or CAFE-dependent; it requires only GTK,
+   isn't croma specific, or CAFE-dependent; it requires only CTK,
    and should work with KWin, fvwm2, and other EWMH-compliant WMs.)
 
  - Has a simple theme system and a couple of extra themes come with it.

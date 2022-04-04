@@ -1800,7 +1800,7 @@ msgstr "Thang độ nên có ít nhất hai màu."
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1821,20 +1821,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Lời ghi rõ màu GTK phải có trạng thái nằm trong ngoặc, v.d. "
+"Lời ghi rõ màu CTK phải có trạng thái nằm trong ngoặc, v.d. "
 "«ctk:fg[NORMAL]», NORMAL (bình thường) là trạng thái; không thể phân tích « "
 "%s »."
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Lời ghi rõ màu GTK phải có dấu đóng ngoặc sau trạng thái, v.d. «fg[NORMAL]»,"
+"Lời ghi rõ màu CTK phải có dấu đóng ngoặc sau trạng thái, v.d. «fg[NORMAL]»,"
 " NORMAL (bình thường) là trạng thái; không thể phân tích « %s »."
 
 #: src/ui/theme.c:1496

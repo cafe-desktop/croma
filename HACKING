@@ -229,8 +229,8 @@ Technical gotchas to keep in mind
     bits as it does.
 
     Having the split in the source code contains and makes very clear
-    the interface between the WM and GDK/GTK. This keeps people from
-    introducing extra GDK/GTK usage when it isn't needed or
+    the interface between the WM and GDK/CTK. This keeps people from
+    introducing extra GDK/CTK usage when it isn't needed or
     appropriate. Also, it speeds up the compilation a bit, though this
     was perhaps more relevant 5 years ago than it is now.
 

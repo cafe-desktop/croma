@@ -1771,7 +1771,7 @@ msgstr "Dylid graddfa cael o leiaf dau liw"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1792,19 +1792,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Rhaid i benodiad lliw GTK cael cyflwr tu fewn i fracedi, e.e. ctk:fg[NORMAL]"
+"Rhaid i benodiad lliw CTK cael cyflwr tu fewn i fracedi, e.e. ctk:fg[NORMAL]"
 " lle mae NORMAL yw'r cyflwr; ni all gramadegu \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Rhaid i benodiad lliw GTK gael braced cau e.e. ctk:fg[NORMAL] lle NORMAL "
+"Rhaid i benodiad lliw CTK gael braced cau e.e. ctk:fg[NORMAL] lle NORMAL "
 "yw'r cyflwr; ni allwyd gramadegu \"%s\""
 
 #: src/ui/theme.c:1496

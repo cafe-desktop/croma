@@ -70,9 +70,9 @@ typedef enum
   STATE_TINT,
   STATE_GRADIENT,
   STATE_IMAGE,
-  STATE_GTK_ARROW,
-  STATE_GTK_BOX,
-  STATE_GTK_VLINE,
+  STATE_CTK_ARROW,
+  STATE_CTK_BOX,
+  STATE_CTK_VLINE,
   STATE_ICON,
   STATE_TITLE,
   STATE_INCLUDE, /* include another draw op list */
@@ -2402,7 +2402,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
           return;
         }
 
-      op = meta_draw_op_new (META_DRAW_GTK_ARROW);
+      op = meta_draw_op_new (META_DRAW_CTK_ARROW);
 
       op->data.ctk_arrow.x = meta_draw_spec_new (info->theme, x, NULL);
       op->data.ctk_arrow.y = meta_draw_spec_new (info->theme, y, NULL);
@@ -2419,7 +2419,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       meta_draw_op_list_append (info->op_list, op);
 
-      push_state (info, STATE_GTK_ARROW);
+      push_state (info, STATE_CTK_ARROW);
     }
   else if (ELEMENT_IS ("ctk_box"))
     {
@@ -2475,7 +2475,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
           return;
         }
 
-      op = meta_draw_op_new (META_DRAW_GTK_BOX);
+      op = meta_draw_op_new (META_DRAW_CTK_BOX);
 
       op->data.ctk_box.x = meta_draw_spec_new (info->theme, x, NULL);
       op->data.ctk_box.y = meta_draw_spec_new (info->theme, y, NULL);
@@ -2489,7 +2489,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       meta_draw_op_list_append (info->op_list, op);
 
-      push_state (info, STATE_GTK_BOX);
+      push_state (info, STATE_CTK_BOX);
     }
   else if (ELEMENT_IS ("ctk_vline"))
     {
@@ -2528,7 +2528,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
           return;
         }
 
-      op = meta_draw_op_new (META_DRAW_GTK_VLINE);
+      op = meta_draw_op_new (META_DRAW_CTK_VLINE);
 
       op->data.ctk_vline.x = meta_draw_spec_new (info->theme, x, NULL);
       op->data.ctk_vline.y1 = meta_draw_spec_new (info->theme, y1, NULL);
@@ -2540,7 +2540,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       meta_draw_op_list_append (info->op_list, op);
 
-      push_state (info, STATE_GTK_VLINE);
+      push_state (info, STATE_CTK_VLINE);
     }
   else if (ELEMENT_IS ("icon"))
     {
@@ -3665,9 +3665,9 @@ start_element_handler (GMarkupParseContext *context,
     case STATE_CLIP:
     case STATE_TINT:
     case STATE_IMAGE:
-    case STATE_GTK_ARROW:
-    case STATE_GTK_BOX:
-    case STATE_GTK_VLINE:
+    case STATE_CTK_ARROW:
+    case STATE_CTK_BOX:
+    case STATE_CTK_VLINE:
     case STATE_ICON:
     case STATE_TITLE:
     case STATE_INCLUDE:
@@ -3906,15 +3906,15 @@ end_element_handler (GMarkupParseContext *context,
       pop_state (info);
       g_assert (peek_state (info) == STATE_DRAW_OPS);
       break;
-    case STATE_GTK_ARROW:
+    case STATE_CTK_ARROW:
       pop_state (info);
       g_assert (peek_state (info) == STATE_DRAW_OPS);
       break;
-    case STATE_GTK_BOX:
+    case STATE_CTK_BOX:
       pop_state (info);
       g_assert (peek_state (info) == STATE_DRAW_OPS);
       break;
-    case STATE_GTK_VLINE:
+    case STATE_CTK_VLINE:
       pop_state (info);
       g_assert (peek_state (info) == STATE_DRAW_OPS);
       break;
@@ -4190,13 +4190,13 @@ text_handler (GMarkupParseContext *context,
     case STATE_IMAGE:
       NO_TEXT ("image");
       break;
-    case STATE_GTK_ARROW:
+    case STATE_CTK_ARROW:
       NO_TEXT ("ctk_arrow");
       break;
-    case STATE_GTK_BOX:
+    case STATE_CTK_BOX:
       NO_TEXT ("ctk_box");
       break;
-    case STATE_GTK_VLINE:
+    case STATE_CTK_VLINE:
       NO_TEXT ("ctk_vline");
       break;
     case STATE_ICON:

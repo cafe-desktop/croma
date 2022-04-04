@@ -1815,7 +1815,7 @@ msgstr "Renk geçişlerinde en az iki renk olmalı"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1836,20 +1836,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK renk belirtiminde köşeli parantezler arasında durum verilmelidir; "
+"CTK renk belirtiminde köşeli parantezler arasında durum verilmelidir; "
 "örneğin, ctk:fg[NORMAL] belirtiminde NORMAL, durumu gösterir; \"%s\" "
 "ayrıştırılamadı"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK renk belirtiminde durumdan sonra sağ köşeli parantezleri gelmelidir; "
+"CTK renk belirtiminde durumdan sonra sağ köşeli parantezleri gelmelidir; "
 "örneğin, ctk:fg[NORMAL] belirtiminde NORMAL, durumu gösterir; \"%s\" "
 "ayrıştırılamadı"
 

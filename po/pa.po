@@ -1782,7 +1782,7 @@ msgstr "ਢਾਲਵੇ ਲਈ ਘੱਟ ਤੋਂ ਘੱਟ ਦੋ ਰੰਗ �
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1803,19 +1803,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK ਰੰਗ ਦੀ ਨਿਰਧਾਰਨਾ ਦੀ ਹਾਲਤ ਬਰੈਕਟਾਂ ਵਿੱਚ ਜਰੂਰੀ ਹੈ, ਉਦਾਹਰਨ ਵਜੋਂ "
+"CTK ਰੰਗ ਦੀ ਨਿਰਧਾਰਨਾ ਦੀ ਹਾਲਤ ਬਰੈਕਟਾਂ ਵਿੱਚ ਜਰੂਰੀ ਹੈ, ਉਦਾਹਰਨ ਵਜੋਂ "
 "ctk:fg[ਸਾਧਾਰਨ] ਜਿੱਥੇ ਸਾਧਾਰਨ  ਇੱਕ ਹਾਲਤ ਹੈ; \"%s\" ਦੀ ਪਾਰਸ ਨਹੀਂ ਕਰ ਸਕਿਆ"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"ਹਾਲਤ ਤੋਂ ਬਾਅਦ GTK ਰੰਗ ਨਿਰਧਾਰਨ ਬਰੈਕਟਾਂ ਵਿੱਚ ਬੰਦ ਕਰਨੀ ਜਰੂਰੀ ਹੈ, ਉਦਾਹਰਨ ਵਜੋਂ "
+"ਹਾਲਤ ਤੋਂ ਬਾਅਦ CTK ਰੰਗ ਨਿਰਧਾਰਨ ਬਰੈਕਟਾਂ ਵਿੱਚ ਬੰਦ ਕਰਨੀ ਜਰੂਰੀ ਹੈ, ਉਦਾਹਰਨ ਵਜੋਂ "
 "ctk:fg[ਸਾਧਾਰਨ] ਜਿੱਥੇ ਸਾਧਾਰਨ ਇੱਕ ਹਾਲਤ ਹੈ; \"%s\" ਦੀ ਪਾਰਸ ਨਹੀਂ ਕਰ ਸਕਿਆ"
 
 #: src/ui/theme.c:1496

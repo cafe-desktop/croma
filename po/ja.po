@@ -1770,7 +1770,7 @@ msgstr "階調度は少なくとも2つの色をもつべきです"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1791,19 +1791,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"\"%s\" を解析できませんでした; GTK の色指定では ctk:fg[NORMAL] のように状態を大括弧で囲み指定する必要があります "
+"\"%s\" を解析できませんでした; CTK の色指定では ctk:fg[NORMAL] のように状態を大括弧で囲み指定する必要があります "
 "(NORMAL は状態を示す)"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"\"%s\" を解析できませんでした; GTK の色指定では ctk:fg[NORMAL] のように状態の後に右大括弧をつける必要があります "
+"\"%s\" を解析できませんでした; CTK の色指定では ctk:fg[NORMAL] のように状態の後に右大括弧をつける必要があります "
 "(NORMAL は状態を示す)"
 
 #: src/ui/theme.c:1496

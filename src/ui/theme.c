@@ -1304,11 +1304,11 @@ meta_color_spec_new (MetaColorSpecType type)
       size += sizeof (dummy.data.basic);
       break;
 
-    case META_COLOR_SPEC_GTK:
+    case META_COLOR_SPEC_CTK:
       size += sizeof (dummy.data.ctk);
       break;
 
-    case META_COLOR_SPEC_GTK_CUSTOM:
+    case META_COLOR_SPEC_CTK_CUSTOM:
       size += sizeof (dummy.data.ctkcustom);
       break;
 
@@ -1339,11 +1339,11 @@ meta_color_spec_free (MetaColorSpec *spec)
       DEBUG_FILL_STRUCT (&spec->data.basic);
       break;
 
-    case META_COLOR_SPEC_GTK:
+    case META_COLOR_SPEC_CTK:
       DEBUG_FILL_STRUCT (&spec->data.ctk);
       break;
 
-    case META_COLOR_SPEC_GTK_CUSTOM:
+    case META_COLOR_SPEC_CTK_CUSTOM:
       if (spec->data.ctkcustom.color_name)
         g_free (spec->data.ctkcustom.color_name);
       if (spec->data.ctkcustom.fallback)
@@ -1394,7 +1394,7 @@ meta_color_spec_new_from_string (const char *str,
         {
           g_set_error (err, META_THEME_ERROR,
                        META_THEME_ERROR_FAILED,
-                       _("GTK custom color specification must have color name and fallback in parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""),
+                       _("CTK custom color specification must have color name and fallback in parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""),
                        str);
           return NULL;
         }
@@ -1447,13 +1447,13 @@ meta_color_spec_new_from_string (const char *str,
 
       color_name = g_strndup (color_name_start, fallback_str_start - color_name_start - 1);
 
-      spec = meta_color_spec_new (META_COLOR_SPEC_GTK_CUSTOM);
+      spec = meta_color_spec_new (META_COLOR_SPEC_CTK_CUSTOM);
       spec->data.ctkcustom.color_name = color_name;
       spec->data.ctkcustom.fallback = fallback;
     }
   else if (strncmp (str, "ctk:", 4) == 0)
     {
-      /* GTK color */
+      /* CTK color */
       const char *bracket;
       const char *end_bracket;
       char *tmp;
@@ -1468,7 +1468,7 @@ meta_color_spec_new_from_string (const char *str,
         {
           g_set_error (err, META_THEME_ERROR,
                        META_THEME_ERROR_FAILED,
-                       _("GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""),
+                       _("CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""),
                        str);
           return NULL;
         }
@@ -1482,7 +1482,7 @@ meta_color_spec_new_from_string (const char *str,
         {
           g_set_error (err, META_THEME_ERROR,
                        META_THEME_ERROR_FAILED,
-                       _("GTK color specification must have a close bracket after the state, e.g. ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""),
+                       _("CTK color specification must have a close bracket after the state, e.g. ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""),
                        str);
           return NULL;
         }
@@ -1502,7 +1502,7 @@ meta_color_spec_new_from_string (const char *str,
 
       tmp = g_strndup (str + 4, bracket - str - 4);
       component = meta_color_component_from_string (tmp);
-      if (component == META_GTK_COLOR_LAST)
+      if (component == META_CTK_COLOR_LAST)
         {
           g_set_error (err, META_THEME_ERROR,
                        META_THEME_ERROR_FAILED,
@@ -1513,10 +1513,10 @@ meta_color_spec_new_from_string (const char *str,
         }
       g_free (tmp);
 
-      spec = meta_color_spec_new (META_COLOR_SPEC_GTK);
+      spec = meta_color_spec_new (META_COLOR_SPEC_CTK);
       spec->data.ctk.state = state;
       spec->data.ctk.component = component;
-      g_assert (spec->data.ctk.component < META_GTK_COLOR_LAST);
+      g_assert (spec->data.ctk.component < META_CTK_COLOR_LAST);
     }
   else if (strncmp (str, "blend/", 6) == 0)
     {
@@ -1669,7 +1669,7 @@ meta_color_spec_new_ctk (MetaCtkColorComponent component,
 {
   MetaColorSpec *spec;
 
-  spec = meta_color_spec_new (META_COLOR_SPEC_GTK);
+  spec = meta_color_spec_new (META_COLOR_SPEC_CTK);
 
   spec->data.ctk.component = component;
   spec->data.ctk.state = state;
@@ -1685,7 +1685,7 @@ get_background_color_real (CtkStyleContext *context,
   GdkRGBA *c;
 
   g_return_if_fail (color != NULL);
-  g_return_if_fail (GTK_IS_STYLE_CONTEXT (context));
+  g_return_if_fail (CTK_IS_STYLE_CONTEXT (context));
 
   ctk_style_context_get (context,
                          state,
@@ -1711,7 +1711,7 @@ get_background_color (CtkStyleContext *context,
       CtkWidget *toplevel;
       CtkStyleContext *tmp;
 
-      toplevel = ctk_window_new (GTK_WINDOW_TOPLEVEL);
+      toplevel = ctk_window_new (CTK_WINDOW_TOPLEVEL);
       tmp = ctk_widget_get_style_context (toplevel);
 
       get_background_color_real (tmp, state, &rgba);
@@ -1751,29 +1751,29 @@ meta_set_color_from_style (GdkRGBA               *color,
 {
   GdkRGBA other;
 
-  /* Add background class to context to get the correct colors from the GTK+
+  /* Add background class to context to get the correct colors from the CTK+
      theme instead of white text over black background. */
-  ctk_style_context_add_class (context, GTK_STYLE_CLASS_BACKGROUND);
+  ctk_style_context_add_class (context, CTK_STYLE_CLASS_BACKGROUND);
 
   switch (component)
     {
-    case META_GTK_COLOR_BG:
-    case META_GTK_COLOR_BASE:
+    case META_CTK_COLOR_BG:
+    case META_CTK_COLOR_BASE:
       get_background_color (context, state, color);
       break;
-    case META_GTK_COLOR_FG:
-    case META_GTK_COLOR_TEXT:
+    case META_CTK_COLOR_FG:
+    case META_CTK_COLOR_TEXT:
       ctk_style_context_get_color (context, state, color);
       break;
-    case META_GTK_COLOR_TEXT_AA:
+    case META_CTK_COLOR_TEXT_AA:
       ctk_style_context_get_color (context, state, color);
-      meta_set_color_from_style (&other, context, state, META_GTK_COLOR_BASE);
+      meta_set_color_from_style (&other, context, state, META_CTK_COLOR_BASE);
 
       color->red = (color->red + other.red) / 2;
       color->green = (color->green + other.green) / 2;
       color->blue = (color->blue + other.blue) / 2;
       break;
-    case META_GTK_COLOR_MID:
+    case META_CTK_COLOR_MID:
       meta_ctk_style_get_light_color (context, state, color);
       meta_ctk_style_get_dark_color (context, state, &other);
 
@@ -1781,13 +1781,13 @@ meta_set_color_from_style (GdkRGBA               *color,
       color->green = (color->green + other.green) / 2;
       color->blue = (color->blue + other.blue) / 2;
       break;
-    case META_GTK_COLOR_LIGHT:
+    case META_CTK_COLOR_LIGHT:
       meta_ctk_style_get_light_color (context, state, color);
       break;
-    case META_GTK_COLOR_DARK:
+    case META_CTK_COLOR_DARK:
       meta_ctk_style_get_dark_color (context, state, color);
       break;
-    case META_GTK_COLOR_LAST:
+    case META_CTK_COLOR_LAST:
       g_assert_not_reached ();
       break;
     }
@@ -1810,7 +1810,7 @@ meta_color_spec_render (MetaColorSpec *spec,
 {
   g_return_if_fail (spec != NULL);
 
-  g_return_if_fail (GTK_IS_STYLE_CONTEXT (style));
+  g_return_if_fail (CTK_IS_STYLE_CONTEXT (style));
 
   switch (spec->type)
     {
@@ -1818,14 +1818,14 @@ meta_color_spec_render (MetaColorSpec *spec,
       *color = spec->data.basic.color;
       break;
 
-    case META_COLOR_SPEC_GTK:
+    case META_COLOR_SPEC_CTK:
       meta_set_color_from_style (color,
                                  style,
                                  spec->data.ctk.state,
                                  spec->data.ctk.component);
       break;
 
-    case META_COLOR_SPEC_GTK_CUSTOM:
+    case META_COLOR_SPEC_CTK_CUSTOM:
       meta_set_custom_color_from_style (color,
                                         style,
                                         spec->data.ctkcustom.color_name,
@@ -3148,15 +3148,15 @@ meta_draw_op_new (MetaDrawType type)
       size += sizeof (dummy.data.image);
       break;
 
-    case META_DRAW_GTK_ARROW:
+    case META_DRAW_CTK_ARROW:
       size += sizeof (dummy.data.ctk_arrow);
       break;
 
-    case META_DRAW_GTK_BOX:
+    case META_DRAW_CTK_BOX:
       size += sizeof (dummy.data.ctk_box);
       break;
 
-    case META_DRAW_GTK_VLINE:
+    case META_DRAW_CTK_VLINE:
       size += sizeof (dummy.data.ctk_vline);
       break;
 
@@ -3271,21 +3271,21 @@ meta_draw_op_free (MetaDrawOp *op)
       meta_draw_spec_free (op->data.image.height);
       break;
 
-    case META_DRAW_GTK_ARROW:
+    case META_DRAW_CTK_ARROW:
       meta_draw_spec_free (op->data.ctk_arrow.x);
       meta_draw_spec_free (op->data.ctk_arrow.y);
       meta_draw_spec_free (op->data.ctk_arrow.width);
       meta_draw_spec_free (op->data.ctk_arrow.height);
       break;
 
-    case META_DRAW_GTK_BOX:
+    case META_DRAW_CTK_BOX:
       meta_draw_spec_free (op->data.ctk_box.x);
       meta_draw_spec_free (op->data.ctk_box.y);
       meta_draw_spec_free (op->data.ctk_box.width);
       meta_draw_spec_free (op->data.ctk_box.height);
       break;
 
-    case META_DRAW_GTK_VLINE:
+    case META_DRAW_CTK_VLINE:
       meta_draw_spec_free (op->data.ctk_vline.x);
       meta_draw_spec_free (op->data.ctk_vline.y1);
       meta_draw_spec_free (op->data.ctk_vline.y2);
@@ -3730,9 +3730,9 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
       }
 
     case META_DRAW_GRADIENT:
-    case META_DRAW_GTK_ARROW:
-    case META_DRAW_GTK_BOX:
-    case META_DRAW_GTK_VLINE:
+    case META_DRAW_CTK_ARROW:
+    case META_DRAW_CTK_BOX:
+    case META_DRAW_CTK_VLINE:
       break;
 
     case META_DRAW_ICON:
@@ -3838,9 +3838,9 @@ draw_op_as_surface (const MetaDrawOp   *op,
     case META_DRAW_ARC:
     case META_DRAW_CLIP:
     case META_DRAW_GRADIENT:
-    case META_DRAW_GTK_ARROW:
-    case META_DRAW_GTK_BOX:
-    case META_DRAW_GTK_VLINE:
+    case META_DRAW_CTK_ARROW:
+    case META_DRAW_CTK_BOX:
+    case META_DRAW_CTK_VLINE:
     case META_DRAW_TITLE:
     case META_DRAW_OP_LIST:
     case META_DRAW_TILE:
@@ -4172,7 +4172,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
       }
       break;
 
-    case META_DRAW_GTK_ARROW:
+    case META_DRAW_CTK_ARROW:
       {
         int rx, ry, rwidth, rheight;
 
@@ -4185,19 +4185,19 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
 
         switch (op->data.ctk_arrow.arrow)
           {
-          case GTK_ARROW_UP:
+          case CTK_ARROW_UP:
             angle = 0;
             break;
-          case GTK_ARROW_RIGHT:
+          case CTK_ARROW_RIGHT:
             angle = M_PI / 2;
             break;
-          case GTK_ARROW_DOWN:
+          case CTK_ARROW_DOWN:
             angle = M_PI;
             break;
-          case GTK_ARROW_LEFT:
+          case CTK_ARROW_LEFT:
             angle = 3 * M_PI / 2;
             break;
-          case GTK_ARROW_NONE:
+          case CTK_ARROW_NONE:
             return;
           }
 
@@ -4206,7 +4206,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
       }
       break;
 
-    case META_DRAW_GTK_BOX:
+    case META_DRAW_CTK_BOX:
       {
         int rx, ry, rwidth, rheight;
 
@@ -4221,7 +4221,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
       }
       break;
 
-    case META_DRAW_GTK_VLINE:
+    case META_DRAW_CTK_VLINE:
       {
         int rx, ry1, ry2;
 
@@ -6244,7 +6244,7 @@ meta_ctk_widget_get_font_desc (CtkWidget *widget,
 
   CtkStyleContext *style = ctk_widget_get_style_context (widget);
   CtkStateFlags state = ctk_widget_get_state_flags (widget);
-  ctk_style_context_get(style, state, GTK_STYLE_PROPERTY_FONT, &font_desc, NULL);
+  ctk_style_context_get(style, state, CTK_STYLE_PROPERTY_FONT, &font_desc, NULL);
   font_desc = pango_font_description_copy (font_desc);
 
   if (override)
@@ -6286,23 +6286,23 @@ MetaCtkColorComponent
 meta_color_component_from_string (const char *str)
 {
   if (strcmp ("fg", str) == 0)
-    return META_GTK_COLOR_FG;
+    return META_CTK_COLOR_FG;
   else if (strcmp ("bg", str) == 0)
-    return META_GTK_COLOR_BG;
+    return META_CTK_COLOR_BG;
   else if (strcmp ("light", str) == 0)
-    return META_GTK_COLOR_LIGHT;
+    return META_CTK_COLOR_LIGHT;
   else if (strcmp ("dark", str) == 0)
-    return META_GTK_COLOR_DARK;
+    return META_CTK_COLOR_DARK;
   else if (strcmp ("mid", str) == 0)
-    return META_GTK_COLOR_MID;
+    return META_CTK_COLOR_MID;
   else if (strcmp ("text", str) == 0)
-    return META_GTK_COLOR_TEXT;
+    return META_CTK_COLOR_TEXT;
   else if (strcmp ("base", str) == 0)
-    return META_GTK_COLOR_BASE;
+    return META_CTK_COLOR_BASE;
   else if (strcmp ("text_aa", str) == 0)
-    return META_GTK_COLOR_TEXT_AA;
+    return META_CTK_COLOR_TEXT_AA;
   else
-    return META_GTK_COLOR_LAST;
+    return META_CTK_COLOR_LAST;
 }
 
 const char*
@@ -6310,23 +6310,23 @@ meta_color_component_to_string (MetaCtkColorComponent component)
 {
   switch (component)
     {
-    case META_GTK_COLOR_FG:
+    case META_CTK_COLOR_FG:
       return "fg";
-    case META_GTK_COLOR_BG:
+    case META_CTK_COLOR_BG:
       return "bg";
-    case META_GTK_COLOR_LIGHT:
+    case META_CTK_COLOR_LIGHT:
       return "light";
-    case META_GTK_COLOR_DARK:
+    case META_CTK_COLOR_DARK:
       return "dark";
-    case META_GTK_COLOR_MID:
+    case META_CTK_COLOR_MID:
       return "mid";
-    case META_GTK_COLOR_TEXT:
+    case META_CTK_COLOR_TEXT:
       return "text";
-    case META_GTK_COLOR_BASE:
+    case META_CTK_COLOR_BASE:
       return "base";
-    case META_GTK_COLOR_TEXT_AA:
+    case META_CTK_COLOR_TEXT_AA:
       return "text_aa";
-    case META_GTK_COLOR_LAST:
+    case META_CTK_COLOR_LAST:
       break;
     }
 
@@ -6733,21 +6733,21 @@ CtkStateFlags
 meta_ctk_state_from_string (const char *str)
 {
   if (g_ascii_strcasecmp ("normal", str) == 0)
-    return GTK_STATE_FLAG_NORMAL;
+    return CTK_STATE_FLAG_NORMAL;
   else if (g_ascii_strcasecmp ("prelight", str) == 0)
-    return GTK_STATE_FLAG_PRELIGHT;
+    return CTK_STATE_FLAG_PRELIGHT;
   else if (g_ascii_strcasecmp ("active", str) == 0)
-    return GTK_STATE_FLAG_ACTIVE;
+    return CTK_STATE_FLAG_ACTIVE;
   else if (g_ascii_strcasecmp ("selected", str) == 0)
-    return GTK_STATE_FLAG_SELECTED;
+    return CTK_STATE_FLAG_SELECTED;
   else if (g_ascii_strcasecmp ("insensitive", str) == 0)
-    return GTK_STATE_FLAG_INSENSITIVE;
+    return CTK_STATE_FLAG_INSENSITIVE;
   else if (g_ascii_strcasecmp ("inconsistent", str) == 0)
-    return GTK_STATE_FLAG_INCONSISTENT;
+    return CTK_STATE_FLAG_INCONSISTENT;
   else if (g_ascii_strcasecmp ("focused", str) == 0)
-    return GTK_STATE_FLAG_FOCUSED;
+    return CTK_STATE_FLAG_FOCUSED;
   else if (g_ascii_strcasecmp ("backdrop", str) == 0)
-    return GTK_STATE_FLAG_BACKDROP;
+    return CTK_STATE_FLAG_BACKDROP;
   else
     return -1; /* hack */
 }
@@ -6756,15 +6756,15 @@ CtkShadowType
 meta_ctk_shadow_from_string (const char *str)
 {
   if (strcmp ("none", str) == 0)
-    return GTK_SHADOW_NONE;
+    return CTK_SHADOW_NONE;
   else if (strcmp ("in", str) == 0)
-    return GTK_SHADOW_IN;
+    return CTK_SHADOW_IN;
   else if (strcmp ("out", str) == 0)
-    return GTK_SHADOW_OUT;
+    return CTK_SHADOW_OUT;
   else if (strcmp ("etched_in", str) == 0)
-    return GTK_SHADOW_ETCHED_IN;
+    return CTK_SHADOW_ETCHED_IN;
   else if (strcmp ("etched_out", str) == 0)
-    return GTK_SHADOW_ETCHED_OUT;
+    return CTK_SHADOW_ETCHED_OUT;
   else
     return -1;
 }
@@ -6774,15 +6774,15 @@ meta_ctk_shadow_to_string (CtkShadowType shadow)
 {
   switch (shadow)
     {
-    case GTK_SHADOW_NONE:
+    case CTK_SHADOW_NONE:
       return "none";
-    case GTK_SHADOW_IN:
+    case CTK_SHADOW_IN:
       return "in";
-    case GTK_SHADOW_OUT:
+    case CTK_SHADOW_OUT:
       return "out";
-    case GTK_SHADOW_ETCHED_IN:
+    case CTK_SHADOW_ETCHED_IN:
       return "etched_in";
-    case GTK_SHADOW_ETCHED_OUT:
+    case CTK_SHADOW_ETCHED_OUT:
       return "etched_out";
     }
 
@@ -6793,15 +6793,15 @@ CtkArrowType
 meta_ctk_arrow_from_string (const char *str)
 {
   if (strcmp ("up", str) == 0)
-    return GTK_ARROW_UP;
+    return CTK_ARROW_UP;
   else if (strcmp ("down", str) == 0)
-    return GTK_ARROW_DOWN;
+    return CTK_ARROW_DOWN;
   else if (strcmp ("left", str) == 0)
-    return GTK_ARROW_LEFT;
+    return CTK_ARROW_LEFT;
   else if (strcmp ("right", str) == 0)
-    return GTK_ARROW_RIGHT;
+    return CTK_ARROW_RIGHT;
   else if (strcmp ("none", str) == 0)
-    return GTK_ARROW_NONE;
+    return CTK_ARROW_NONE;
   else
     return -1;
 }
@@ -6811,15 +6811,15 @@ meta_ctk_arrow_to_string (CtkArrowType arrow)
 {
   switch (arrow)
     {
-    case GTK_ARROW_UP:
+    case CTK_ARROW_UP:
       return "up";
-    case GTK_ARROW_DOWN:
+    case CTK_ARROW_DOWN:
       return "down";
-    case GTK_ARROW_LEFT:
+    case CTK_ARROW_LEFT:
       return "left";
-    case GTK_ARROW_RIGHT:
+    case CTK_ARROW_RIGHT:
       return "right";
-    case GTK_ARROW_NONE:
+    case CTK_ARROW_NONE:
       return "none";
     }
 

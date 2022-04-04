@@ -232,23 +232,23 @@ typedef enum
 typedef enum
 {
   META_COLOR_SPEC_BASIC,
-  META_COLOR_SPEC_GTK,
-  META_COLOR_SPEC_GTK_CUSTOM,
+  META_COLOR_SPEC_CTK,
+  META_COLOR_SPEC_CTK_CUSTOM,
   META_COLOR_SPEC_BLEND,
   META_COLOR_SPEC_SHADE
 } MetaColorSpecType;
 
 typedef enum
 {
-  META_GTK_COLOR_FG,
-  META_GTK_COLOR_BG,
-  META_GTK_COLOR_LIGHT,
-  META_GTK_COLOR_DARK,
-  META_GTK_COLOR_MID,
-  META_GTK_COLOR_TEXT,
-  META_GTK_COLOR_BASE,
-  META_GTK_COLOR_TEXT_AA,
-  META_GTK_COLOR_LAST
+  META_CTK_COLOR_FG,
+  META_CTK_COLOR_BG,
+  META_CTK_COLOR_LIGHT,
+  META_CTK_COLOR_DARK,
+  META_CTK_COLOR_MID,
+  META_CTK_COLOR_TEXT,
+  META_CTK_COLOR_BASE,
+  META_CTK_COLOR_TEXT_AA,
+  META_CTK_COLOR_LAST
 } MetaCtkColorComponent;
 
 struct _MetaColorSpec
@@ -326,10 +326,10 @@ typedef enum
   META_DRAW_GRADIENT,
   META_DRAW_IMAGE,
 
-  /** GTK theme engine stuff */
-  META_DRAW_GTK_ARROW,
-  META_DRAW_GTK_BOX,
-  META_DRAW_GTK_VLINE,
+  /** CTK theme engine stuff */
+  META_DRAW_CTK_ARROW,
+  META_DRAW_CTK_BOX,
+  META_DRAW_CTK_VLINE,
 
   /** App's window icon */
   META_DRAW_ICON,
@@ -699,7 +699,7 @@ struct _MetaFrameStyle
   MetaFrameLayout *layout;
   /**
    * Background colour of the window. Only present in theme formats
-   * 2 and above. Can be NULL to use the standard GTK theme engine.
+   * 2 and above. Can be NULL to use the standard CTK theme engine.
    */
   MetaColorSpec *window_background_color;
   /**

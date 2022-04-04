@@ -1873,10 +1873,10 @@ msgstr "A színátmenetnek legalább két színűnek kell lennie"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"A GTK színmeghatározásnál kötelező a zárójelek között megadott színnév és a "
+"A CTK színmeghatározásnál kötelező a zárójelek között megadott színnév és a "
 "tartalék érték. Például: ctk:custom(foo,bar); Nem sikerült értelmezni a "
 "következőt: „%s”."
 
@@ -1901,20 +1901,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK szín meghatározásnál az állapotnak szögletes zárójelben kell lennie, "
+"CTK szín meghatározásnál az állapotnak szögletes zárójelben kell lennie, "
 "pl.ctk:fg[NORMAL] ahol NORMAL az állapot; nem lehetett feldolgozni a "
 "következőt: „%s”"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"A GTK színmeghatározásnál kötelező záró szögletes zárójelet tenni az állapot"
+"A CTK színmeghatározásnál kötelező záró szögletes zárójelet tenni az állapot"
 " után, például ctk:fg[NORMAL], ahol NORMAL az állapot; nem sikerült "
 "értelmezni a következőt: „%s”"
 

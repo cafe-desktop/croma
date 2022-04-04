@@ -1766,7 +1766,7 @@ msgstr "ग्रेडियन्टमा कम्तिमा पनि द
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1787,19 +1787,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"जीटीके (GTK) रङ विशिष्टिकरणमा कोष्ठक स्थिति हुनुपर्दछ, जस्तै; ctk:fg[NORMAL]"
+"जीटीके (CTK) रङ विशिष्टिकरणमा कोष्ठक स्थिति हुनुपर्दछ, जस्तै; ctk:fg[NORMAL]"
 " जहाँ NORMAL स्थिति हो; पद वर्णन गर्न सकेन \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"जीटीके (GTK) रङ विशिष्टिकरणमा अवस्थिति पछाडी बन्द कोष्ठक हुनुपर्दछ, जस्तै "
+"जीटीके (CTK) रङ विशिष्टिकरणमा अवस्थिति पछाडी बन्द कोष्ठक हुनुपर्दछ, जस्तै "
 "ctk:fg[NORMAL] जहाँ NORMAL स्थिति हो; पद वर्णन गर् सकेन \"%s\""
 
 #: src/ui/theme.c:1496

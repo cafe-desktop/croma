@@ -1417,12 +1417,12 @@ handle_net_restack_window (MetaDisplay* display,
 #endif
 
 /* We do some of our event handling in core/frames.c, which expects
- * GDK events delivered by GTK+.  However, since the transition to
+ * GDK events delivered by CTK+.  However, since the transition to
  * client side windows, we can't let GDK see button events, since the
  * client-side tracking of implicit and explicit grabs it does will
  * get confused by our direct use of X grabs.
  *
- * So we do a very minimal GDK => GTK event conversion here and send on the
+ * So we do a very minimal GDK => CTK event conversion here and send on the
  * events we care about, and then filter them out so they don't go
  * through the normal GDK event handling.
  *
@@ -1745,7 +1745,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
       event->type == (display->xsync_event_base + XSyncAlarmNotify) &&
       ((XSyncAlarmNotifyEvent*)event)->alarm == display->grab_sync_request_alarm)
     {
-      filter_out_event = TRUE; /* GTK doesn't want to see this really */
+      filter_out_event = TRUE; /* CTK doesn't want to see this really */
 
       if (display->grab_op != META_GRAB_OP_NONE &&
           display->grab_window != NULL &&
@@ -1758,7 +1758,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
   if (META_DISPLAY_HAS_SHAPE (display) &&
       event->type == (display->shape_event_base + ShapeNotify))
     {
-      filter_out_event = TRUE; /* GTK doesn't want to see this really */
+      filter_out_event = TRUE; /* CTK doesn't want to see this really */
 
       if (window && !frame_was_receiver)
         {
@@ -2622,7 +2622,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
                       process_pong_message (display, event);
 
                       /* We don't want ping reply events going into
-                       * the GTK+ event loop because ctk+ will treat
+                       * the CTK+ event loop because ctk+ will treat
                        * them as ping requests and send more replies.
                        */
                       filter_out_event = TRUE;

@@ -1941,7 +1941,7 @@ msgstr "Els degradats han de tenir almenys dos colors"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1962,19 +1962,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"L'especificació de color GTK ha de tenir l'estat entre claudàtors, p. ex. "
+"L'especificació de color CTK ha de tenir l'estat entre claudàtors, p. ex. "
 "ctk:fg[NORMAL] on NORMAL és l'estat; no s'ha pogut analitzar \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"L'especificació de color GTK ha de tenir un claudàtor de tancament després "
+"L'especificació de color CTK ha de tenir un claudàtor de tancament després "
 "de l'estat, p. ex. ctk:fg[NORMAL] on NORMAL és l'estat; no s'ha pogut "
 "analitzar «%s»"
 

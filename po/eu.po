@@ -1822,7 +1822,7 @@ msgstr "Gradienteek bi kolore izan behar dituzte gutxienez"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1843,19 +1843,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK kolore-zehaztapenak egoera kortxete artean izan behar du, adib. "
+"CTK kolore-zehaztapenak egoera kortxete artean izan behar du, adib. "
 "ctk:fg[NORMAL], NORMAL egoera izanik; \"%s\" ezin da analizatu"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK kolore-zehaztapenak ixteko kortxetea izan behar egoeraren ondoren, adib."
+"CTK kolore-zehaztapenak ixteko kortxetea izan behar egoeraren ondoren, adib."
 " ctk:fg[NORMAL], NORMAL egoera izanik; \"%s\" ezin da analizatu"
 
 #: src/ui/theme.c:1496

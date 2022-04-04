@@ -1868,11 +1868,11 @@ msgstr "Градієнти повинні мати принаймні два к�
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"Специфікація кольорів GTK користувача повинна мати назву кольору та запасну "
-"в дужках, наприклад, GTK: Custom (foo, Bar); не вдалося проаналізувати "
+"Специфікація кольорів CTK користувача повинна мати назву кольору та запасну "
+"в дужках, наприклад, CTK: Custom (foo, Bar); не вдалося проаналізувати "
 "\"%s\""
 
 #: src/ui/theme.c:1413
@@ -1892,19 +1892,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"При визначенні кольору GTK потрібно вказувати режим у прямокутних дужках, "
+"При визначенні кольору CTK потрібно вказувати режим у прямокутних дужках, "
 "наприклад ctk:fg[NORMAL], де NORMAL - режим; неможливо розібрати \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"При визначенні кольору GTK після вказування режиму повинна бути завершальна "
+"При визначенні кольору CTK після вказування режиму повинна бути завершальна "
 "прямокутна дужка, наприклад ctk:fg[NORMAL], де NORMAL - режим; неможливо "
 "розібрати \"%s\""
 

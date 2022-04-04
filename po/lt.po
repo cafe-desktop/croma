@@ -1891,10 +1891,10 @@ msgstr "Aprašant persiliejančias spalvas reikia nurodyti bent dvi spalvas"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"GTK pasirinktų spalvų aprašymas turi turėti palvos pavadinimą ir atsarginę "
+"CTK pasirinktų spalvų aprašymas turi turėti palvos pavadinimą ir atsarginę "
 "spalvą skliaustuose, pvz. ctk:custom(foo,bar); could not parse \"%s\""
 
 #: src/ui/theme.c:1413
@@ -1917,20 +1917,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK spalvų aprašymas turi turėti būsenos aprašymą patalpintą tarp laužtinių "
+"CTK spalvų aprašymas turi turėti būsenos aprašymą patalpintą tarp laužtinių "
 "skliaustų, pvz., ctk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
 "\"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK spalvų aprašymas po būsenos turi turėti uždarančius laužtinius "
+"CTK spalvų aprašymas po būsenos turi turėti uždarančius laužtinius "
 "skliaustus, pvz., ctk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
 "\"%s\""
 

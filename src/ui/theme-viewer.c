@@ -146,20 +146,20 @@ create_toolbar (void)
 
   toolbar = ctk_toolbar_new ();
 
-  item = ctk_tool_button_new (ctk_image_new_from_icon_name ("document-new", GTK_ICON_SIZE_SMALL_TOOLBAR), NULL);
+  item = ctk_tool_button_new (ctk_image_new_from_icon_name ("document-new", CTK_ICON_SIZE_SMALL_TOOLBAR), NULL);
   ctk_tool_item_set_tooltip_markup (item, "Open another one of these windows");
-  ctk_actionable_set_action_name (GTK_ACTIONABLE (item), "theme-viewer.new");
-  ctk_toolbar_insert (GTK_TOOLBAR (toolbar), item, -1);
+  ctk_actionable_set_action_name (CTK_ACTIONABLE (item), "theme-viewer.new");
+  ctk_toolbar_insert (CTK_TOOLBAR (toolbar), item, -1);
 
-  item = ctk_tool_button_new (ctk_image_new_from_icon_name ("document-open", GTK_ICON_SIZE_SMALL_TOOLBAR), NULL);
+  item = ctk_tool_button_new (ctk_image_new_from_icon_name ("document-open", CTK_ICON_SIZE_SMALL_TOOLBAR), NULL);
   ctk_tool_item_set_tooltip_markup (item, "This is a demo button with an 'open' icon");
-  ctk_actionable_set_action_name (GTK_ACTIONABLE (item), "theme-viewer.open");
-  ctk_toolbar_insert (GTK_TOOLBAR (toolbar), item, -1);
+  ctk_actionable_set_action_name (CTK_ACTIONABLE (item), "theme-viewer.open");
+  ctk_toolbar_insert (CTK_TOOLBAR (toolbar), item, -1);
 
-  item = ctk_tool_button_new (ctk_image_new_from_icon_name ("application-exit", GTK_ICON_SIZE_SMALL_TOOLBAR), NULL);
+  item = ctk_tool_button_new (ctk_image_new_from_icon_name ("application-exit", CTK_ICON_SIZE_SMALL_TOOLBAR), NULL);
   ctk_tool_item_set_tooltip_markup (item, "This is a demo button with a 'quit' icon");
-  ctk_actionable_set_action_name (GTK_ACTIONABLE (item), "theme-viewer.quit");
-  ctk_toolbar_insert (GTK_TOOLBAR (toolbar), item, -1);
+  ctk_actionable_set_action_name (CTK_ACTIONABLE (item), "theme-viewer.quit");
+  ctk_toolbar_insert (CTK_TOOLBAR (toolbar), item, -1);
 
   return toolbar;
 }
@@ -179,12 +179,12 @@ normal_contents (void)
   /* create menu items */
   GMenuModel *model = G_MENU_MODEL (ctk_builder_get_object (builder, "menubar"));
   CtkWidget *menubar = ctk_menu_bar_new_from_model (model);
-  ctk_grid_attach (GTK_GRID (grid), menubar, 0, 0, 1, 1);
+  ctk_grid_attach (CTK_GRID (grid), menubar, 0, 0, 1, 1);
   ctk_widget_set_hexpand (menubar, TRUE);
 
    /* Create the toolbar */
   CtkWidget *toolbar = create_toolbar ();
-  ctk_grid_attach (GTK_GRID (grid), toolbar, 0, 1, 1, 1);
+  ctk_grid_attach (CTK_GRID (grid), toolbar, 0, 1, 1, 1);
   ctk_widget_set_hexpand (toolbar, TRUE);
 
   /* Create document
@@ -194,29 +194,29 @@ normal_contents (void)
   ctk_widget_set_hexpand (sw, TRUE);
   ctk_widget_set_vexpand (sw, TRUE);
 
-  ctk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
-                                  GTK_POLICY_AUTOMATIC,
-                                  GTK_POLICY_AUTOMATIC);
+  ctk_scrolled_window_set_policy (CTK_SCROLLED_WINDOW (sw),
+                                  CTK_POLICY_AUTOMATIC,
+                                  CTK_POLICY_AUTOMATIC);
 
-  ctk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (sw),
-                                       GTK_SHADOW_IN);
+  ctk_scrolled_window_set_shadow_type (CTK_SCROLLED_WINDOW (sw),
+                                       CTK_SHADOW_IN);
 
-  ctk_grid_attach (GTK_GRID (grid),
+  ctk_grid_attach (CTK_GRID (grid),
                    sw,
                    0, 2, 1, 1);
 
   contents = ctk_text_view_new ();
-  ctk_text_view_set_wrap_mode (GTK_TEXT_VIEW (contents),
+  ctk_text_view_set_wrap_mode (CTK_TEXT_VIEW (contents),
                                PANGO_WRAP_WORD);
 
-  ctk_container_add (GTK_CONTAINER (sw),
+  ctk_container_add (CTK_CONTAINER (sw),
                      contents);
 
   /* Create statusbar */
 
   statusbar = ctk_statusbar_new ();
   ctk_widget_set_hexpand (statusbar, TRUE);
-  ctk_grid_attach (GTK_GRID (grid),
+  ctk_grid_attach (CTK_GRID (grid),
                    statusbar,
                    0, 3, 1, 1);
 
@@ -231,9 +231,9 @@ static void
 update_spacings (CtkWidget *vbox,
                  CtkWidget *action_area)
 {
-  ctk_container_set_border_width (GTK_CONTAINER (vbox), 2);
-  ctk_box_set_spacing (GTK_BOX (action_area), 10);
-  ctk_container_set_border_width (GTK_CONTAINER (action_area), 5);
+  ctk_container_set_border_width (CTK_CONTAINER (vbox), 2);
+  ctk_box_set_spacing (CTK_BOX (action_area), 10);
+  ctk_container_set_border_width (CTK_CONTAINER (action_area), 5);
 }
 
 static CtkWidget*
@@ -246,43 +246,43 @@ dialog_contents (void)
   CtkWidget *image;
   CtkWidget *button;
 
-  vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+  vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 
-  action_area = ctk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
+  action_area = ctk_button_box_new (CTK_ORIENTATION_HORIZONTAL);
 
-  ctk_button_box_set_layout (GTK_BUTTON_BOX (action_area),
-                             GTK_BUTTONBOX_END);
+  ctk_button_box_set_layout (CTK_BUTTON_BOX (action_area),
+                             CTK_BUTTONBOX_END);
 
   button = ctk_button_new_with_mnemonic (_("_OK"));
-  ctk_button_set_image (GTK_BUTTON (button), ctk_image_new_from_icon_name ("ctk-ok", GTK_ICON_SIZE_BUTTON));
+  ctk_button_set_image (CTK_BUTTON (button), ctk_image_new_from_icon_name ("ctk-ok", CTK_ICON_SIZE_BUTTON));
 
-  ctk_box_pack_end (GTK_BOX (action_area),
+  ctk_box_pack_end (CTK_BOX (action_area),
                     button,
                     FALSE, TRUE, 0);
 
-  ctk_box_pack_end (GTK_BOX (vbox), action_area,
+  ctk_box_pack_end (CTK_BOX (vbox), action_area,
                     FALSE, TRUE, 0);
 
   update_spacings (vbox, action_area);
 
   label = ctk_label_new (_("This is a sample message in a sample dialog"));
   image = ctk_image_new_from_icon_name ("dialog-information",
-                                        GTK_ICON_SIZE_DIALOG);
-  ctk_widget_set_halign (image, GTK_ALIGN_CENTER);
-  ctk_widget_set_valign (image, GTK_ALIGN_START);
+                                        CTK_ICON_SIZE_DIALOG);
+  ctk_widget_set_halign (image, CTK_ALIGN_CENTER);
+  ctk_widget_set_valign (image, CTK_ALIGN_START);
 
-  ctk_label_set_line_wrap (GTK_LABEL (label), TRUE);
-  ctk_label_set_selectable (GTK_LABEL (label), TRUE);
+  ctk_label_set_line_wrap (CTK_LABEL (label), TRUE);
+  ctk_label_set_selectable (CTK_LABEL (label), TRUE);
 
-  hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+  hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);
 
-  ctk_box_pack_start (GTK_BOX (hbox), image,
+  ctk_box_pack_start (CTK_BOX (hbox), image,
                       FALSE, FALSE, 0);
 
-  ctk_box_pack_start (GTK_BOX (hbox), label,
+  ctk_box_pack_start (CTK_BOX (hbox), label,
                       TRUE, TRUE, 0);
 
-  ctk_box_pack_start (GTK_BOX (vbox),
+  ctk_box_pack_start (CTK_BOX (vbox),
                       hbox,
                       FALSE, FALSE, 0);
 
@@ -317,7 +317,7 @@ utility_contents (void)
           ctk_widget_set_hexpand (button, TRUE);
           ctk_widget_set_vexpand (button, TRUE);
 
-          ctk_grid_attach (GTK_GRID (grid),
+          ctk_grid_attach (CTK_GRID (grid),
                            button,
                            i, j, 1, 1);
 
@@ -341,25 +341,25 @@ menu_contents (void)
   CtkWidget *frame;
 
   frame = ctk_frame_new (NULL);
-  ctk_frame_set_shadow_type (GTK_FRAME (frame),
-                             GTK_SHADOW_OUT);
+  ctk_frame_set_shadow_type (CTK_FRAME (frame),
+                             CTK_SHADOW_OUT);
 
-  vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+  vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 
   i = 0;
   while (i < 10)
     {
       char *str = g_strdup_printf (_("Fake menu item %d\n"), i + 1);
       mi = ctk_label_new (str);
-      ctk_widget_set_halign (mi, GTK_ALIGN_START);
-      ctk_widget_set_valign (mi, GTK_ALIGN_CENTER);
+      ctk_widget_set_halign (mi, CTK_ALIGN_START);
+      ctk_widget_set_valign (mi, CTK_ALIGN_CENTER);
       g_free (str);
-      ctk_box_pack_start (GTK_BOX (vbox), mi, FALSE, FALSE, 0);
+      ctk_box_pack_start (CTK_BOX (vbox), mi, FALSE, FALSE, 0);
 
       ++i;
     }
 
-  ctk_container_add (GTK_CONTAINER (frame), vbox);
+  ctk_container_add (CTK_CONTAINER (frame), vbox);
 
   ctk_widget_show_all (frame);
 
@@ -381,8 +381,8 @@ override_background_color (CtkWidget *widget,
   g_free (css);
 
   ctk_style_context_add_provider (ctk_widget_get_style_context (widget),
-                                  GTK_STYLE_PROVIDER (provider),
-                                  GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+                                  CTK_STYLE_PROVIDER (provider),
+                                  CTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
   g_object_unref (provider);
 }
 
@@ -402,15 +402,15 @@ border_only_contents (void)
   color.alpha = 1.0;
   override_background_color (event_box, &color);
 
-  vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-  ctk_container_set_border_width (GTK_CONTAINER (vbox), 3);
+  vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+  ctk_container_set_border_width (CTK_CONTAINER (vbox), 3);
 
   w = ctk_label_new (_("Border-only window"));
-  ctk_box_pack_start (GTK_BOX (vbox), w, FALSE, FALSE, 0);
+  ctk_box_pack_start (CTK_BOX (vbox), w, FALSE, FALSE, 0);
   w = ctk_button_new_with_label (_("Bar"));
-  ctk_box_pack_start (GTK_BOX (vbox), w, FALSE, FALSE, 0);
+  ctk_box_pack_start (CTK_BOX (vbox), w, FALSE, FALSE, 0);
 
-  ctk_container_add (GTK_CONTAINER (event_box), vbox);
+  ctk_container_add (CTK_CONTAINER (event_box), vbox);
 
   ctk_widget_show_all (event_box);
 
@@ -523,8 +523,8 @@ override_font (CtkWidget   *widget,
   g_free (css);
 
   ctk_style_context_add_provider (ctk_widget_get_style_context (widget),
-                                  GTK_STYLE_PROVIDER (provider),
-                                  GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+                                  CTK_STYLE_PROVIDER (provider),
+                                  CTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
   g_object_unref (provider);
 }
 
@@ -539,18 +539,18 @@ preview_collection (int font_size,
   CtkWidget *eventbox;
 
   sw = ctk_scrolled_window_new (NULL, NULL);
-  ctk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
-                                  GTK_POLICY_AUTOMATIC,
-                                  GTK_POLICY_AUTOMATIC);
+  ctk_scrolled_window_set_policy (CTK_SCROLLED_WINDOW (sw),
+                                  CTK_POLICY_AUTOMATIC,
+                                  CTK_POLICY_AUTOMATIC);
 
-  box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-  ctk_box_set_spacing (GTK_BOX (box), 20);
-  ctk_container_set_border_width (GTK_CONTAINER (box), 20);
+  box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+  ctk_box_set_spacing (CTK_BOX (box), 20);
+  ctk_container_set_border_width (CTK_CONTAINER (box), 20);
 
   eventbox = ctk_event_box_new ();
-  ctk_container_add (GTK_CONTAINER (eventbox), box);
+  ctk_container_add (CTK_CONTAINER (eventbox), box);
 
-  ctk_container_add (GTK_CONTAINER (sw), eventbox);
+  ctk_container_add (CTK_CONTAINER (sw), eventbox);
 
   GSimpleActionGroup *action_group = g_simple_action_group_new ();
   g_action_map_add_action_entries (G_ACTION_MAP (action_group),
@@ -583,7 +583,7 @@ preview_collection (int font_size,
 
       preview = meta_preview_new ();
 
-      ctk_container_add (GTK_CONTAINER (eventbox2), preview);
+      ctk_container_add (CTK_CONTAINER (eventbox2), preview);
 
       meta_preview_set_frame_type (META_PREVIEW (preview), i);
       meta_preview_set_frame_flags (META_PREVIEW (preview),
@@ -595,23 +595,23 @@ preview_collection (int font_size,
 
       meta_preview_set_title (META_PREVIEW (preview), title);
 
-      ctk_container_add (GTK_CONTAINER (preview), contents);
+      ctk_container_add (CTK_CONTAINER (preview), contents);
 
       if (i == META_FRAME_TYPE_MENU)
         {
-          xalign = GTK_ALIGN_START;
-          yalign = GTK_ALIGN_START;
+          xalign = CTK_ALIGN_START;
+          yalign = CTK_ALIGN_START;
         }
       else
         {
-          xalign = GTK_ALIGN_FILL;
-          yalign = GTK_ALIGN_FILL;
+          xalign = CTK_ALIGN_FILL;
+          yalign = CTK_ALIGN_FILL;
         }
 
       ctk_widget_set_halign (eventbox2, xalign);
       ctk_widget_set_valign (eventbox2, yalign);
 
-      ctk_box_pack_start (GTK_BOX (box), eventbox2, TRUE, TRUE, 0);
+      ctk_box_pack_start (CTK_BOX (box), eventbox2, TRUE, TRUE, 0);
 
       switch (font_size)
         {
@@ -773,18 +773,18 @@ previews_of_button_layouts (void)
     }
 
   sw = ctk_scrolled_window_new (NULL, NULL);
-  ctk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
-                                  GTK_POLICY_AUTOMATIC,
-                                  GTK_POLICY_AUTOMATIC);
+  ctk_scrolled_window_set_policy (CTK_SCROLLED_WINDOW (sw),
+                                  CTK_POLICY_AUTOMATIC,
+                                  CTK_POLICY_AUTOMATIC);
 
-  box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-  ctk_box_set_spacing (GTK_BOX (box), 20);
-  ctk_container_set_border_width (GTK_CONTAINER (box), 20);
+  box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+  ctk_box_set_spacing (CTK_BOX (box), 20);
+  ctk_container_set_border_width (CTK_CONTAINER (box), 20);
 
   eventbox = ctk_event_box_new ();
-  ctk_container_add (GTK_CONTAINER (eventbox), box);
+  ctk_container_add (CTK_CONTAINER (eventbox), box);
 
-  ctk_container_add (GTK_CONTAINER (sw), eventbox);
+  ctk_container_add (CTK_CONTAINER (sw), eventbox);
 
   desktop_color.red = 0.32;
   desktop_color.green = 0.46;
@@ -804,7 +804,7 @@ previews_of_button_layouts (void)
 
       preview = meta_preview_new ();
 
-      ctk_container_add (GTK_CONTAINER (eventbox2), preview);
+      ctk_container_add (CTK_CONTAINER (eventbox2), preview);
 
       meta_preview_set_theme (META_PREVIEW (preview), global_theme);
 
@@ -815,9 +815,9 @@ previews_of_button_layouts (void)
       meta_preview_set_button_layout (META_PREVIEW (preview),
                                       &different_layouts[i]);
 
-      ctk_widget_set_halign (eventbox2, GTK_ALIGN_FILL);
+      ctk_widget_set_halign (eventbox2, CTK_ALIGN_FILL);
 
-      ctk_box_pack_start (GTK_BOX (box), eventbox2, TRUE, TRUE, 0);
+      ctk_box_pack_start (CTK_BOX (box), eventbox2, TRUE, TRUE, 0);
 
       previews[META_FRAME_TYPE_LAST*FONT_SIZE_LAST + i] = preview;
 
@@ -892,11 +892,11 @@ main (int argc, char **argv)
 
   run_theme_benchmark ();
 
-  window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
-  ctk_window_set_default_size (GTK_WINDOW (window), 350, 350);
+  window = ctk_window_new (CTK_WINDOW_TOPLEVEL);
+  ctk_window_set_default_size (CTK_WINDOW (window), 350, 350);
 
   if (strcmp (global_theme->name, global_theme->readable_name)==0)
-    ctk_window_set_title (GTK_WINDOW (window),
+    ctk_window_set_title (CTK_WINDOW (window),
                           global_theme->readable_name);
   else
     {
@@ -907,7 +907,7 @@ main (int argc, char **argv)
                                    global_theme->readable_name,
                                    NULL);
 
-      ctk_window_set_title (GTK_WINDOW (window),
+      ctk_window_set_title (CTK_WINDOW (window),
                             title);
 
       g_free (title);
@@ -918,39 +918,39 @@ main (int argc, char **argv)
 
   ctk_widget_realize (window);
   style = ctk_widget_get_style_context (window);
-  ctk_style_context_get (style, GTK_STATE_FLAG_NORMAL, "font", &font_desc, NULL);
+  ctk_style_context_get (style, CTK_STATE_FLAG_NORMAL, "font", &font_desc, NULL);
 
   g_assert (style);
   g_assert (font_desc);
 
   notebook = ctk_notebook_new ();
-  ctk_container_add (GTK_CONTAINER (window), notebook);
+  ctk_container_add (CTK_CONTAINER (window), notebook);
 
   collection = preview_collection (FONT_SIZE_NORMAL,
                                    font_desc);
-  ctk_notebook_append_page (GTK_NOTEBOOK (notebook),
+  ctk_notebook_append_page (CTK_NOTEBOOK (notebook),
                             collection,
                             ctk_label_new (_("Normal Title Font")));
 
   collection = preview_collection (FONT_SIZE_SMALL,
                                    font_desc);
-  ctk_notebook_append_page (GTK_NOTEBOOK (notebook),
+  ctk_notebook_append_page (CTK_NOTEBOOK (notebook),
                             collection,
                             ctk_label_new (_("Small Title Font")));
 
   collection = preview_collection (FONT_SIZE_LARGE,
                                    font_desc);
-  ctk_notebook_append_page (GTK_NOTEBOOK (notebook),
+  ctk_notebook_append_page (CTK_NOTEBOOK (notebook),
                             collection,
                             ctk_label_new (_("Large Title Font")));
 
   collection = previews_of_button_layouts ();
-  ctk_notebook_append_page (GTK_NOTEBOOK (notebook),
+  ctk_notebook_append_page (CTK_NOTEBOOK (notebook),
                             collection,
                             ctk_label_new (_("Button Layouts")));
 
   collection = benchmark_summary ();
-  ctk_notebook_append_page (GTK_NOTEBOOK (notebook),
+  ctk_notebook_append_page (CTK_NOTEBOOK (notebook),
                             collection,
                             ctk_label_new (_("Benchmark")));
 
@@ -997,7 +997,7 @@ get_text_height (CtkWidget *widget)
   int                   text_height;
 
   style = ctk_widget_get_style_context (widget);
-  ctk_style_context_get (style, GTK_STATE_FLAG_NORMAL, "font", &font_desc, NULL);
+  ctk_style_context_get (style, CTK_STATE_FLAG_NORMAL, "font", &font_desc, NULL);
   text_height = meta_pango_font_desc_get_text_height (font_desc, ctk_widget_get_pango_context (widget));
   pango_font_description_free (font_desc);
 
@@ -1039,7 +1039,7 @@ run_theme_benchmark (void)
   int client_height;
   int inc;
 
-  widget = ctk_window_new (GTK_WINDOW_TOPLEVEL);
+  widget = ctk_window_new (CTK_WINDOW_TOPLEVEL);
   ctk_widget_realize (widget);
 
   meta_theme_get_frame_borders (global_theme,

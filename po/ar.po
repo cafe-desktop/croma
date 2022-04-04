@@ -1772,7 +1772,7 @@ msgstr "يجب أن يكون للتّدرُّجات لونان على الأقل
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1793,19 +1793,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"يجب أن تكون حالة تخصيصات ألوان GTK  في قوسان قائمان، مثال ctk:fg[NORMAL] "
+"يجب أن تكون حالة تخصيصات ألوان CTK  في قوسان قائمان، مثال ctk:fg[NORMAL] "
 "NORMAL هنا هو الحالة، لا يمكن تحليل \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"يحب أن يكون لتخصيص حالة ألوان GTK قوس غلق قائم بعد الحالة/ مثال "
+"يحب أن يكون لتخصيص حالة ألوان CTK قوس غلق قائم بعد الحالة/ مثال "
 "ctk:fg[NORMAL]، NORMAL هنا هو الحالة، لا يمكن تحليل \"%s\""
 
 #: src/ui/theme.c:1496

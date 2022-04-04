@@ -61,7 +61,7 @@
   * async-getprop: Fix cast from non-struct type to struct type
   * xprops: Fix cast from non-struct type to struct type
   * frames: bump priority of style providers
-  * window: add _GTK_THEME_VARIANT to initial window properties
+  * window: add _CTK_THEME_VARIANT to initial window properties
   * frames: apply modified hack from Mutter/Metacity
   * frames: avoid infinite loop on the variants GList
   * frames: use style_updated instead of style_set
@@ -123,10 +123,10 @@
   * fix a crash-on-exit
   * ui-frame: Add support for style variants
   * ui-frames: Delay attaching the style to new frames
-  * core: Update frame style when _GTK_THEME_VARIANT changes
+  * core: Update frame style when _CTK_THEME_VARIANT changes
   * ui: Add meta_ui_update_frame_style()
   * core: Allow retrieving the theme variant via core_get()
-  * window: Parse _GTK_THEME_VARIANT property
+  * window: Parse _CTK_THEME_VARIANT property
   * MetaFrameBorders: Add meta_frame_borders_clear
   * Replace public MetaFrameGeometry with MetaFrameBorders
   * alt+tab popup: bugfix mouse click handling for scale factor > 1
@@ -199,7 +199,7 @@
   * tabpopup.c: improve
   * Don't show the ws switcher if we only have one
   * theme: Allow disabling fallback colors in ctk:custom()
-  * theme: Allow using custom colors from the GTK+ theme
+  * theme: Allow using custom colors from the CTK+ theme
   * theme: Add tiled_left/tiled_right frame states
   * theme: Add background functions for single buttons
   * theme-parser: Use peek_required_version() for validation
@@ -229,7 +229,7 @@
 ### croma 1.20.0
 
   * Translations update
-  * require GTK+ 3.22 and GLib 2.50
+  * require CTK+ 3.22 and GLib 2.50
   * build: drop unneeded pangoxft requirement
   * Small bugfix for the move_to_X keybinds
   * Bugfix for monitors of different sizes
@@ -238,7 +238,7 @@
   * schema: fix typos
   * compositor: don't try to paint window that is not viewable, fix #324
   * Fix wrong result in meta_window_titlebar_is_onscreen() for windows without a frame
-  * Add support for ctk3 _GTK_SHOW_WINDOW_MENU event
+  * Add support for ctk3 _CTK_SHOW_WINDOW_MENU event
   * More elegant solution for handling new move-to-workspace keybinds
   * Implemented a setting to disable top tiling
   * Implemented tabpopup when moving window to different workspace
@@ -297,9 +297,9 @@
 
   * NEWS: use consistent, project wide, markdown-like formatting to make
     generating release announcements easier
-  * Move to GTK+3 (require GTK+ >= 3.14), drop GTK+2 code and --with-ctk
+  * Move to CTK+3 (require CTK+ >= 3.14), drop CTK+2 code and --with-ctk
     build option
-  * Theme viewer: fix build for GTK+3 and fix some GTK+ deprecations
+  * Theme viewer: fix build for CTK+3 and fix some CTK+ deprecations
   * Add ability to disable showing preselected window border on alt-tab
   * Add ability to ignore applications when show-desktop is triggered
   * Schema: make compositing on by default
@@ -310,13 +310,13 @@
 ### croma 1.16.0
 
   * Translations update
-  * Make distcheck use currently selected GTK+ version
+  * Make distcheck use currently selected CTK+ version
 
 ### croma 1.14.2
 
   * Translations update
-  * GTK+3: fix a typo with deprecated CtkMisc
-  * GTK+3 fixedtip: add style class tooltip
+  * CTK+3: fix a typo with deprecated CtkMisc
+  * CTK+3 fixedtip: add style class tooltip
 
 ### croma 1.14.1
 
@@ -329,23 +329,23 @@
   * Fix visual glitches appearing after unmaximizing Chromium window
   * Correct description of compositing-fast-alt-tab GSettings key
       (mention that it disables thumbnails)
-  * Bump libcroma-private's sover for GTK+3 build
-  * GTK+3: re-add ability to show alt-tab thumbnails when compositor is on
-  * GTK+3: fix several deprecations
+  * Bump libcroma-private's sover for CTK+3 build
+  * CTK+3: re-add ability to show alt-tab thumbnails when compositor is on
+  * CTK+3: fix several deprecations
   * Translations update
   * Add Changelog generation
 
 ### croma 1.12.1
 
   * Fix animation issues that led to crashes and visual glitches
-  * GTK+3 fixes
+  * CTK+3 fixes
   * Translations update
 
 ### croma 1.12.0
 
   * Add manual and by-pointer window placement
   * Use Alt-` for switching between windows of the same application
-  * GTK+3 fixes
+  * CTK+3 fixes
   * Some more fixes and cleanups
 
 ### croma 1.10.3

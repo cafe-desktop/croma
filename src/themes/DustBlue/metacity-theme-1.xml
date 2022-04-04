@@ -56,7 +56,7 @@
 </draw_ops>
 
 <!--
-    Construct titlebar from rectangles instead so we can pick up the GTK theme
+    Construct titlebar from rectangles instead so we can pick up the CTK theme
 -->
 
 <draw_ops name="draw_title">

@@ -1734,10 +1734,10 @@ msgstr "渐变应至少有两种颜色"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"GTK自定义颜色规范必须在括号中具有颜色名称'color_name'和后备'fallback'，例如ctk:custom(foo,bar);无法解析\"%s\""
+"CTK自定义颜色规范必须在括号中具有颜色名称'color_name'和后备'fallback'，例如ctk:custom(foo,bar);无法解析\"%s\""
 
 #: src/ui/theme.c:1413
 #, c-format
@@ -1756,16 +1756,16 @@ msgstr "Ctk:custom格式为 \"ctk:custom(color_name,fallback)\", \"%s\" 不符�
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
-msgstr "GTK 颜色规范必须将状态包含在方括号中，例如 ctk:fg[NORMAL]其中 NORMAL 是状态；无法解析“%s”"
+msgstr "CTK 颜色规范必须将状态包含在方括号中，例如 ctk:fg[NORMAL]其中 NORMAL 是状态；无法解析“%s”"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
-msgstr "GTK 颜色规范必须在状态后有一个闭方括号，例如 ctk:fg[NORMAL]，其中 NORMAL 是状态；无法解析“%s”"
+msgstr "CTK 颜色规范必须在状态后有一个闭方括号，例如 ctk:fg[NORMAL]，其中 NORMAL 是状态；无法解析“%s”"
 
 #: src/ui/theme.c:1496
 #, c-format

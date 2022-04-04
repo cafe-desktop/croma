@@ -1804,7 +1804,7 @@ msgstr "Väriliu'uissa täytyy olla vähintään kaksi väriä"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1825,19 +1825,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-värimääritteessä täytyy olla tila hakasuluissa. Esimerkiksi "
+"CTK-värimääritteessä täytyy olla tila hakasuluissa. Esimerkiksi "
 "ctk:fg[NORMAL], jossa NORMAL on tila. ”%s” ei jäsentynyt."
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-värimääritteessä täytyy olla loppuhakasulku tilan jälkeen. Esimerkiksi "
+"CTK-värimääritteessä täytyy olla loppuhakasulku tilan jälkeen. Esimerkiksi "
 "ctk:fg[NORMAL], jossa NORMAL on tila. ”%s” ei jäsenny."
 
 #: src/ui/theme.c:1496

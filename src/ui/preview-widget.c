@@ -44,7 +44,7 @@ static void     meta_preview_finalize      (GObject          *object);
 #define NO_CHILD_WIDTH 80
 #define NO_CHILD_HEIGHT 20
 
-G_DEFINE_TYPE (MetaPreview, meta_preview, GTK_TYPE_BIN);
+G_DEFINE_TYPE (MetaPreview, meta_preview, CTK_TYPE_BIN);
 
 static void
 meta_preview_class_init (MetaPreviewClass *class)
@@ -53,7 +53,7 @@ meta_preview_class_init (MetaPreviewClass *class)
   CtkWidgetClass *widget_class;
 
   widget_class = (CtkWidgetClass*) class;
-  meta_preview_parent_class = g_type_class_peek (GTK_TYPE_BIN);
+  meta_preview_parent_class = g_type_class_peek (CTK_TYPE_BIN);
 
   gobject_class->finalize = meta_preview_finalize;
 
@@ -61,7 +61,7 @@ meta_preview_class_init (MetaPreviewClass *class)
   widget_class->get_preferred_width = meta_preview_get_preferred_width;
   widget_class->get_preferred_height = meta_preview_get_preferred_height;
 
-  ctk_container_class_handle_border_width (GTK_CONTAINER_CLASS (class));
+  ctk_container_class_handle_border_width (CTK_CONTAINER_CLASS (class));
   widget_class->size_allocate = meta_preview_size_allocate;
 }
 
@@ -70,7 +70,7 @@ meta_preview_init (MetaPreview *preview)
 {
   int i;
 
-  ctk_widget_set_has_window (GTK_WIDGET (preview), FALSE);
+  ctk_widget_set_has_window (CTK_WIDGET (preview), FALSE);
 
   i = 0;
   while (i < MAX_BUTTONS_PER_CORNER)
@@ -108,7 +108,7 @@ meta_preview_new (void)
 
   preview = g_object_new (META_TYPE_PREVIEW, NULL);
 
-  return GTK_WIDGET (preview);
+  return CTK_WIDGET (preview);
 }
 
 static void
@@ -129,7 +129,7 @@ ensure_info (MetaPreview *preview)
 {
   CtkWidget *widget;
 
-  widget = GTK_WIDGET (preview);
+  widget = CTK_WIDGET (preview);
 
   if (preview->layout == NULL)
     {
@@ -208,7 +208,7 @@ meta_preview_draw (CtkWidget *widget,
 
   cairo_save (cr);
 
-  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (CTK_CONTAINER (widget));
 
   ctk_widget_get_allocation (widget, &allocation);
   client_width = allocation.width - preview->borders.total.left - preview->borders.total.right - border_width * 2;
@@ -238,7 +238,7 @@ meta_preview_draw (CtkWidget *widget,
   cairo_restore (cr);
 
   /* draw child */
-  return GTK_WIDGET_CLASS (meta_preview_parent_class)->draw (widget, cr);
+  return CTK_WIDGET_CLASS (meta_preview_parent_class)->draw (widget, cr);
 }
 
 static void
@@ -256,7 +256,7 @@ meta_preview_get_preferred_width (CtkWidget *widget,
 
   *minimum = *natural = preview->borders.total.left + preview->borders.total.right;
 
-  child = ctk_bin_get_child (GTK_BIN (preview));
+  child = ctk_bin_get_child (CTK_BIN (preview));
   if (child && ctk_widget_get_visible (child))
     {
       gint child_min, child_nat;
@@ -272,7 +272,7 @@ meta_preview_get_preferred_width (CtkWidget *widget,
       *natural += NO_CHILD_WIDTH;
     }
 
-  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (CTK_CONTAINER (widget));
   *minimum += border_width * 2;
   *natural += border_width * 2;
 }
@@ -292,7 +292,7 @@ meta_preview_get_preferred_height (CtkWidget *widget,
 
   *minimum = *natural = preview->borders.total.top + preview->borders.total.bottom;
 
-  child = ctk_bin_get_child (GTK_BIN (preview));
+  child = ctk_bin_get_child (CTK_BIN (preview));
   if (child && ctk_widget_get_visible (child))
     {
       gint child_min, child_nat;
@@ -308,7 +308,7 @@ meta_preview_get_preferred_height (CtkWidget *widget,
       *natural += NO_CHILD_HEIGHT;
     }
 
-  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (CTK_CONTAINER (widget));
   *minimum += border_width * 2;
   *natural += border_width * 2;
 }
@@ -328,9 +328,9 @@ meta_preview_size_allocate (CtkWidget         *widget,
 
   ctk_widget_set_allocation (widget, allocation);
 
-  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (CTK_CONTAINER (widget));
 
-  child = ctk_bin_get_child (GTK_BIN (widget));
+  child = ctk_bin_get_child (CTK_BIN (widget));
   if (child &&
       ctk_widget_get_visible (child))
     {
@@ -341,7 +341,7 @@ meta_preview_size_allocate (CtkWidget         *widget,
       child_allocation.width = MAX (1, widget_allocation.width - border_width * 2 - preview->borders.total.left - preview->borders.total.right);
       child_allocation.height = MAX (1, widget_allocation.height - border_width * 2 - preview->borders.total.top - preview->borders.total.bottom);
 
-      ctk_widget_size_allocate (ctk_bin_get_child (GTK_BIN (widget)), &child_allocation);
+      ctk_widget_size_allocate (ctk_bin_get_child (CTK_BIN (widget)), &child_allocation);
     }
 }
 
@@ -367,7 +367,7 @@ meta_preview_set_theme (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  ctk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (CTK_WIDGET (preview));
 }
 
 void
@@ -381,7 +381,7 @@ meta_preview_set_title (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  ctk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (CTK_WIDGET (preview));
 }
 
 void
@@ -394,7 +394,7 @@ meta_preview_set_frame_type (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  ctk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (CTK_WIDGET (preview));
 }
 
 void
@@ -407,7 +407,7 @@ meta_preview_set_frame_flags (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  ctk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (CTK_WIDGET (preview));
 }
 
 void
@@ -418,7 +418,7 @@ meta_preview_set_button_layout (MetaPreview            *preview,
 
   preview->button_layout = *button_layout;
 
-  ctk_widget_queue_draw (GTK_WIDGET (preview));
+  ctk_widget_queue_draw (CTK_WIDGET (preview));
 }
 
 GdkPixbuf*

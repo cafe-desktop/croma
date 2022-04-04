@@ -1719,7 +1719,7 @@ msgstr "Mmakọ ụcha kwesịrị inwe ọbụnaghị ụcha abụọ"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1740,19 +1740,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK nzipụta ụcha ga-enwe ọnọdụ n'ụdị akara mmechi, ọmụmaatụ. ctk:fg[NORMAL] "
+"CTK nzipụta ụcha ga-enwe ọnọdụ n'ụdị akara mmechi, ọmụmaatụ. ctk:fg[NORMAL] "
 "ebe NỌ́MÁÀLỤ̀ bụ ọnọdụ; agaghị enwenwu ike ịtọsasi \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK nzipụta ụcha ga-enwe akara mmechi ma agachaa ọnọdụ, ọmụmaatụ. "
+"CTK nzipụta ụcha ga-enwe akara mmechi ma agachaa ọnọdụ, ọmụmaatụ. "
 "ctk:fg[NORMAL] ebe NỌ́MÁÀLỤ̀ bụ ọnọdụ; agaghị enwenwu ike ịtọsasi \"%s\""
 
 #: src/ui/theme.c:1496

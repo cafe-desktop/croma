@@ -5,7 +5,7 @@
     <author>Grassmunk</author>
     <copyright>&#xC2; 2007 Srivatsa Kanchi &lt;srivatsa_nk@dataone.in&gt;, 2010 Perberos</copyright>
     <date>April 22, 2016</date>
-    <description>GTK default theme, successed by Adwaita.</description>
+    <description>CTK default theme, successed by Adwaita.</description>
   </info>
   <frame_geometry name="normal_geometry" has_title="true" rounded_top_left="false" rounded_top_right="false" title_scale="medium" rounded_bottom_left="false" rounded_bottom_right="false">
     <distance name="left_width" value="4"/>

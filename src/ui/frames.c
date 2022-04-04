@@ -42,7 +42,7 @@
 
 #include <cairo-xlib.h>
 
-G_DEFINE_TYPE (MetaFrames, meta_frames, GTK_TYPE_WINDOW);
+G_DEFINE_TYPE (MetaFrames, meta_frames, CTK_TYPE_WINDOW);
 
 #define DEFAULT_INNER_BUTTON_BORDER 3
 
@@ -184,14 +184,14 @@ create_style_context (MetaFrames  *frames,
   GdkScreen *screen;
   char *theme_name;
 
-  screen = ctk_widget_get_screen (GTK_WIDGET (frames));
+  screen = ctk_widget_get_screen (CTK_WIDGET (frames));
   g_object_get (ctk_settings_get_for_screen (screen),
                 "ctk-theme-name", &theme_name,
                 NULL);
 
   style = ctk_style_context_new ();
   ctk_style_context_set_path (style,
-                              ctk_widget_get_path (GTK_WIDGET (frames)));
+                              ctk_widget_get_path (CTK_WIDGET (frames)));
 
   if (theme_name && *theme_name)
     {
@@ -199,8 +199,8 @@ create_style_context (MetaFrames  *frames,
 
       provider = ctk_css_provider_get_named (theme_name, variant);
       ctk_style_context_add_provider (style,
-                                      GTK_STYLE_PROVIDER (provider),
-                                      GTK_STYLE_PROVIDER_PRIORITY_SETTINGS);
+                                      CTK_STYLE_PROVIDER (provider),
+                                      CTK_STYLE_PROVIDER_PRIORITY_SETTINGS);
     }
 
   if (theme_name)
@@ -311,7 +311,7 @@ meta_frames_destroy (CtkWidget *widget)
       frames->style_variants = NULL;
     }
 
-  GTK_WIDGET_CLASS (meta_frames_parent_class)->destroy (widget);
+  CTK_WIDGET_CLASS (meta_frames_parent_class)->destroy (widget);
 }
 
 static void
@@ -490,7 +490,7 @@ meta_frames_style_updated (CtkWidget *widget)
   g_hash_table_foreach (frames->frames,
                         reattach_style_func, frames);
 
-  GTK_WIDGET_CLASS (meta_frames_parent_class)->style_updated (widget);
+  CTK_WIDGET_CLASS (meta_frames_parent_class)->style_updated (widget);
 }
 
 static void
@@ -502,9 +502,9 @@ meta_frames_ensure_layout (MetaFrames  *frames,
   MetaFrameType type;
   MetaFrameStyle *style;
 
-  g_return_if_fail (ctk_widget_get_realized (GTK_WIDGET (frames)));
+  g_return_if_fail (ctk_widget_get_realized (CTK_WIDGET (frames)));
 
-  widget = GTK_WIDGET (frames);
+  widget = CTK_WIDGET (frames);
 
   meta_core_get (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()), frame->xwindow,
                  META_CORE_GET_FRAME_FLAGS, &flags,
@@ -622,23 +622,23 @@ meta_frames_new (void)
 
   frames = g_object_new (META_TYPE_FRAMES,
                          "screen", screen,
-                         "type", GTK_WINDOW_POPUP,
+                         "type", CTK_WINDOW_POPUP,
                          NULL);
 
   /* Put the window at an arbitrary offscreen location; the one place
    * it can't be is at -100x-100, since the meta_window_new() will
    * mistake it for a window created via meta_create_offscreen_window()
    * and ignore it, and we need this window to get frame-synchronization
-   * messages so that GTK+'s style change handling works.
+   * messages so that CTK+'s style change handling works.
    */
-  ctk_window_move (GTK_WINDOW (frames), -200, -200);
-  ctk_window_resize (GTK_WINDOW (frames), 1, 1);
+  ctk_window_move (CTK_WINDOW (frames), -200, -200);
+  ctk_window_resize (CTK_WINDOW (frames), 1, 1);
 
   return frames;
 }
 
 /* In order to use a style with a window it has to be attached to that
- * window. Actually, the colormaps just have to match, but since GTK+
+ * window. Actually, the colormaps just have to match, but since CTK+
  * already takes care of making sure that its cheap to attach a style
  * to multiple windows with the same colormap, we can just go ahead
  * and attach separately for each window.
@@ -1124,7 +1124,7 @@ meta_frames_apply_shapes (MetaFrames *frames,
                   "Frame 0x%lx needs to incorporate client shape\n",
                   frame->xwindow);
 
-      screen = ctk_widget_get_screen (GTK_WIDGET (frames));
+      screen = ctk_widget_get_screen (CTK_WIDGET (frames));
       screen_number = gdk_x11_screen_get_screen_number (screen);
 
       attrs.override_redirect = True;

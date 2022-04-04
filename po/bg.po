@@ -1900,7 +1900,7 @@ msgstr "Преливките трябва да имат поне два цвят
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1921,20 +1921,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Цветовата спецификация на GTK трябва да указва състоянието в квадратни "
+"Цветовата спецификация на CTK трябва да указва състоянието в квадратни "
 "скоби, напр. ctk:fg[NORMAL], където NORMAL е състоянието. Неуспех при "
 "анализира „%s“"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Цветовата спецификация на GTK трябва да съдържа квадратна скоба след "
+"Цветовата спецификация на CTK трябва да съдържа квадратна скоба след "
 "състоянието, напр. ctk:fg[NORMAL], където NORMAL е състоянието. Неуспех при "
 "анализа на „%s“"
 

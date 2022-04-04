@@ -1907,10 +1907,10 @@ msgstr "У градиентов должно быть не меньше двух
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"В пользовательской спецификации цвета GTK название цвета и запасное значение"
+"В пользовательской спецификации цвета CTK название цвета и запасное значение"
 " должны быть указаны скобках, например ctk:custom(foo,bar); не удалось "
 "разобрать «%s»"
 
@@ -1935,19 +1935,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"У спецификации цвета GTK+ в скобках должен быть указан режим, например, "
+"У спецификации цвета CTK+ в скобках должен быть указан режим, например, "
 "ctk:fg[NORMAL], где NORMAL — это режим; не удалось разобрать «%s»"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"У спецификации цвета GTK+ после указания режима должна быть закрывающая "
+"У спецификации цвета CTK+ после указания режима должна быть закрывающая "
 "скобка, например, ctk:fg[NORMAL], где NORMAL — это режим; не удалось "
 "разобрать «%s»"
 

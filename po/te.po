@@ -1807,7 +1807,7 @@ msgstr "గ్రేడియంట్లు కనీసం రెండు ర
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1828,19 +1828,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK రంగు విశదీకరణ తప్పక స్థితిని బ్రాకెట్లనందు కలిగివుండాలి, ఉ.దా. "
+"CTK రంగు విశదీకరణ తప్పక స్థితిని బ్రాకెట్లనందు కలిగివుండాలి, ఉ.దా. "
 "ctk:fg[NORMAL] యిచట NORMAL అంటే స్థితి; \"%s\" పార్శ్ చేయలేదు"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK రంగు విశదీకరణము తప్పక దగ్గిరి బ్రాకెట్‌ను స్థితి తర్వాత గలిగివుండాలి, "
+"CTK రంగు విశదీకరణము తప్పక దగ్గిరి బ్రాకెట్‌ను స్థితి తర్వాత గలిగివుండాలి, "
 "ఉ.దా. ctk:fg[NORMAL] యిచట NORMAL అనునది స్థితి, \"%s\" పార్శ్ చేయలేదు"
 
 #: src/ui/theme.c:1496

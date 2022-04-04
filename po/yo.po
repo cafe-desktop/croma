@@ -1742,7 +1742,7 @@ msgstr "Àwọn ìdàgẹ̀rẹ̀ yẹ kó ní ó kéré tán àwọn 
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1763,20 +1763,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Ojú-ìwọ̀n àwọ̀ GTK gbọ́dọ̀ ní ipò náà nínú àwọn àmì àkámọ́, "
+"Ojú-ìwọ̀n àwọ̀ CTK gbọ́dọ̀ ní ipò náà nínú àwọn àmì àkámọ́, "
 "b.a. ctk:fg[DÉÉDÉÉ] níbi tí DÉÉDÉÉ bá jẹ́ ipò;kò ní lè "
 "páàsì \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Ojú-ìwọ̀n àwọ̀ GTK gbọ́dọ̀ ní àmì àkámọ́ títí lẹ́yìn ipò náà, "
+"Ojú-ìwọ̀n àwọ̀ CTK gbọ́dọ̀ ní àmì àkámọ́ títí lẹ́yìn ipò náà, "
 "b.a. ctk:fg[DÉÉDÉÉ] níbi tí DÉÉDÉÉ ti jẹ́ ipò kò ní lè "
 "páàsì \"%s\""
 

@@ -1794,7 +1794,7 @@ msgstr "Värviüleminekus peaks olema vähemalt kaks värvi"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1815,19 +1815,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK värvispetsifikatsioonil peab olek olema määratud nurksulgudes, nt. "
+"CTK värvispetsifikatsioonil peab olek olema määratud nurksulgudes, nt. "
 "ctk:fg[NORMAL] kus NORMAL on olek; väärtust \"%s\" ei saa töödelda"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK värvispetsifikatsioonil peab lõppema nurksuluga, nt. ctk:fg[NORMAL] kus "
+"CTK värvispetsifikatsioonil peab lõppema nurksuluga, nt. ctk:fg[NORMAL] kus "
 "NORMAL on olek; väärtust \"%s\" ei saa töödelda"
 
 #: src/ui/theme.c:1496

@@ -1898,7 +1898,7 @@ msgstr "Τα διαβαθμισμένα χρώματα θα πρέπει να έ
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1919,19 +1919,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Ο καθορισμός χρώματος GTK θα πρέπει να έχει τη κατάσταση σε αγκύλες, π.χ "
+"Ο καθορισμός χρώματος CTK θα πρέπει να έχει τη κατάσταση σε αγκύλες, π.χ "
 "ctk:fg[NORMAL] όπου NORMAL είναι η κατάσταση. Αδυναμία ανάλυσης \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Ο καθορισμός χρώματος GTK θα πρέπει να έχει μια αγκύλη κλεισίματος μετά την "
+"Ο καθορισμός χρώματος CTK θα πρέπει να έχει μια αγκύλη κλεισίματος μετά την "
 "κατάσταση. π.χ ctk:fg[NORMAL] όπου NORMAL είναι η κατάσταση. Αδυναμία "
 "ανάλυσης \"%s\""
 

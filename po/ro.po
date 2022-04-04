@@ -1825,7 +1825,7 @@ msgstr "Degradeul ar trebui să aibă cel puțin două culori"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1846,19 +1846,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Specificația culorilor GTK trebuie să aibă starea între paranteze drepte, de"
+"Specificația culorilor CTK trebuie să aibă starea între paranteze drepte, de"
 " exemplu ctk:fg[NORMAL], unde starea este NORMAL; nu s-a putut analiza „%s”"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Specificația culorilor GTK trebuie să fie aibă o paranteză dreaptă după "
+"Specificația culorilor CTK trebuie să fie aibă o paranteză dreaptă după "
 "stare, de exemplu ctk:fg[NORMAL], unde starea este NORMAL; nu s-a putut "
 "analiza „%s”"
 

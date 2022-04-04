@@ -1859,7 +1859,7 @@ msgstr "Prechody by mali mať aspoň dve farby"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1880,19 +1880,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Špecifikácia farby GTK musí mať stav v hranatých zátvorkách, napr. "
+"Špecifikácia farby CTK musí mať stav v hranatých zátvorkách, napr. "
 "ctk:fg[NORMAL], kde NORMAL je stav. Nepodarilo sa spracovať „%s“"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Špecifikácia farby GTK musí mať stav uzavretý v hranatých zátvorkách, napr. "
+"Špecifikácia farby CTK musí mať stav uzavretý v hranatých zátvorkách, napr. "
 "ctk:fg[NORMAL], kde NORMAL je stav. Nepodarilo sa spracovať „%s“"
 
 #: src/ui/theme.c:1496

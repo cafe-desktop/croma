@@ -1720,7 +1720,7 @@ msgstr "شیب‌ها باید حداقل دو رنگ داشته باشند"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1741,19 +1741,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"وضعیت در مشخصه‌ی رنگ GTK باید داخل قلاب نوشته شود، به طور مثال "
+"وضعیت در مشخصه‌ی رنگ CTK باید داخل قلاب نوشته شود، به طور مثال "
 "ctk:fg[NORMAL] که NORMAL وضعیت است: »%s» قابل تجزیه نیست"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"در مشخصه‌ی رنگ GTK باید بعد از وضعیت، قلاب بسته داشته باشد، به طور مثال "
+"در مشخصه‌ی رنگ CTK باید بعد از وضعیت، قلاب بسته داشته باشد، به طور مثال "
 "ctk:fg[NORMAL] که NORMAL وضعیت است: »%s» قابل تجزیه نیست"
 
 #: src/ui/theme.c:1496

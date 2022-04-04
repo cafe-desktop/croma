@@ -73,7 +73,7 @@ get_background_color (CtkStyleContext *context,
   GdkRGBA *c;
 
   g_return_if_fail (color != NULL);
-  g_return_if_fail (GTK_IS_STYLE_CONTEXT (context));
+  g_return_if_fail (CTK_IS_STYLE_CONTEXT (context));
 
   ctk_style_context_get (context,
                          state,
@@ -200,11 +200,11 @@ wnck_draw_workspace (CtkWidget                   *widget,
   workspace_rect.height = height;
 
   if (is_active)
-    state = GTK_STATE_FLAG_SELECTED;
+    state = CTK_STATE_FLAG_SELECTED;
   else if (workspace_background)
-    state = GTK_STATE_FLAG_PRELIGHT;
+    state = CTK_STATE_FLAG_PRELIGHT;
   else
-    state = GTK_STATE_FLAG_NORMAL;
+    state = CTK_STATE_FLAG_NORMAL;
 
   style = ctk_widget_get_style_context (widget);
   cairo_save (cr);

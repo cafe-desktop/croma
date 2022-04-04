@@ -1875,7 +1875,7 @@ msgstr "Գրադիենտը պետք է ունենա առնվազն երկու գ
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1896,19 +1896,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK գույնի բնորոշումները պետք է ունենա վիճակիը փակագծերի մեջ e.g. "
+"CTK գույնի բնորոշումները պետք է ունենա վիճակիը փակագծերի մեջ e.g. "
 "ctk:fg[NORMAL]  , որտեղ ՆՈՐՄԱԼ վիճակն է, չի կարող վերլուծվել \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK գույնի բնորոշումները պետք է ունենա փակվող փակագիծ վիճակից հետո, e.g. "
+"CTK գույնի բնորոշումները պետք է ունենա փակվող փակագիծ վիճակից հետո, e.g. "
 "ctk:fg[ՆՈՐՄԱԼ] , որտեղ ՆՈՐՄԱԼ վիճակն է, չի կարող վերլուծվել \"%s\""
 
 #: src/ui/theme.c:1496

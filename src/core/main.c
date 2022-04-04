@@ -397,7 +397,7 @@ on_sigterm (GIOChannel   *source,
 /**
  * This is where the story begins. It parses commandline options and
  * environment variables, sets up the screen, hands control off to
- * GTK, and cleans up afterwards.
+ * CTK, and cleans up afterwards.
  *
  * \param argc Number of arguments (as usual)
  * \param argv Array of arguments (as usual)

@@ -1910,10 +1910,10 @@ msgstr "Gradien harus paling tidak ada dua warna"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"Spesifikasi warna ubahan GTK harus memiliki nama warna dan cadangan dalam "
+"Spesifikasi warna ubahan CTK harus memiliki nama warna dan cadangan dalam "
 "kurung, mis. ctk:custom(foo,bar); tidak dapat mengurai \"%s\""
 
 #: src/ui/theme.c:1413
@@ -1937,20 +1937,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Spesifikasi warna GTK harus memiliki kondisi pada kurung, misal "
+"Spesifikasi warna CTK harus memiliki kondisi pada kurung, misal "
 "ctk:fg[NORMAL] dengan NORMAL adalah jenis kondisinya, tidak dapat membaca "
 "\"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Spesifikasi warna GTK harus memiliki kurung tutup pada kondisinya, misal "
+"Spesifikasi warna CTK harus memiliki kurung tutup pada kondisinya, misal "
 "ctk:fg[NORMAL] dengan NORMAL adalah jenis kondisinya, tidak dapat membaca "
 "\"%s\""
 

@@ -1759,7 +1759,7 @@ msgstr "Градиентите треба да имаат најмаку две 
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1780,19 +1780,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK спецификациите на боите мора да бидат во загради, пр. ctk:fg[НОРМАЛНО] "
+"CTK спецификациите на боите мора да бидат во загради, пр. ctk:fg[НОРМАЛНО] "
 "каде што НОРМАЛНО е состојбата; не може да разложува \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK спецификациите на боите мора да имаат блиску заграда,после состојбата, "
+"CTK спецификациите на боите мора да имаат блиску заграда,после состојбата, "
 "пр. ctk:fg[НОРМАЛНО] каде што НОРМАЛНО е состојбата; не може да разложува "
 "\"%s\""
 
