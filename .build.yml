@@ -49,4 +49,4 @@ build_scripts:
   - ./after-build
 
 after_scripts:
-  - if [ -f "gen-index" ]; then ./gen-index -l 20; fi
+  - if [ -f "gen-index" ]; then ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/cafe-icon-theme/raw/master/cafe/16x16/apps/preferences-system-windows.png; fi
