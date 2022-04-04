@@ -430,14 +430,14 @@ try_pixmap_and_mask (MetaDisplay *display,
                                  gdk_pixbuf_get_width (unscaled),
                                  ideal_height > 0 ? ideal_height :
                                  gdk_pixbuf_get_height (unscaled),
-                                 CDK_INTERP_BILINEAR);
+                                 GDK_INTERP_BILINEAR);
       *mini_iconp =
         gdk_pixbuf_scale_simple (unscaled,
                                  ideal_mini_width > 0 ? ideal_mini_width :
                                  gdk_pixbuf_get_width (unscaled),
                                  ideal_mini_height > 0 ? ideal_mini_height :
                                  gdk_pixbuf_get_height (unscaled),
-                                 CDK_INTERP_BILINEAR);
+                                 GDK_INTERP_BILINEAR);
 
       g_object_unref (G_OBJECT (unscaled));
 
@@ -675,7 +675,7 @@ scaled_from_pixdata (guchar *pixdata,
 
   if (w != new_w || h != new_h)
     {
-      dest = gdk_pixbuf_scale_simple (src, new_w, new_h, CDK_INTERP_BILINEAR);
+      dest = gdk_pixbuf_scale_simple (src, new_w, new_h, GDK_INTERP_BILINEAR);
 
       g_object_unref (G_OBJECT (src));
     }
