@@ -3347,7 +3347,7 @@ apply_alpha (GdkPixbuf             *pixbuf,
   GdkPixbuf *new_pixbuf;
   gboolean needs_alpha;
 
-  g_return_val_if_fail (CDK_IS_PIXBUF (pixbuf), NULL);
+  g_return_val_if_fail (GDK_IS_PIXBUF (pixbuf), NULL);
 
   needs_alpha = spec && (spec->n_alphas > 1 ||
                          spec->alphas[0] != 0xff);
