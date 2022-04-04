@@ -79,7 +79,7 @@ cairo_region_t* meta_preview_get_clip_region (MetaPreview *preview,
                                           gint new_window_width,
                                           gint new_window_height);
 
-GdkPixbuf* meta_preview_get_icon (void);
-GdkPixbuf* meta_preview_get_mini_icon (void);
+CdkPixbuf* meta_preview_get_icon (void);
+CdkPixbuf* meta_preview_get_mini_icon (void);
 
 #endif

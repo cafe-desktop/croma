@@ -421,10 +421,10 @@ meta_preview_set_button_layout (MetaPreview            *preview,
   ctk_widget_queue_draw (CTK_WIDGET (preview));
 }
 
-GdkPixbuf*
+CdkPixbuf*
 meta_preview_get_icon (void)
 {
-  static GdkPixbuf *default_icon = NULL;
+  static CdkPixbuf *default_icon = NULL;
 
   if (default_icon == NULL)
     {
@@ -454,10 +454,10 @@ meta_preview_get_icon (void)
   return default_icon;
 }
 
-GdkPixbuf*
+CdkPixbuf*
 meta_preview_get_mini_icon (void)
 {
-  static GdkPixbuf *default_icon = NULL;
+  static CdkPixbuf *default_icon = NULL;
 
   if (default_icon == NULL)
     {
@@ -490,7 +490,7 @@ meta_preview_get_mini_icon (void)
 cairo_region_t *
 meta_preview_get_clip_region (MetaPreview *preview, gint new_window_width, gint new_window_height)
 {
-  GdkRectangle xrect;
+  CdkRectangle xrect;
   cairo_region_t *corners_xregion, *window_xregion;
   gint flags;
   MetaFrameLayout *fgeom;

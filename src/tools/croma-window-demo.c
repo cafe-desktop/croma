@@ -32,7 +32,7 @@ do_appwindow (GSimpleAction *action,
 static gboolean aspect_on;
 
 static void
-set_cdk_window_struts (GdkWindow *window,
+set_cdk_window_struts (CdkWindow *window,
                        int        left,
                        int        right,
                        int        top,
@@ -119,7 +119,7 @@ set_ctk_window_struts (CtkWidget  *window,
 }
 
 static void
-set_cdk_window_type (GdkWindow  *window,
+set_cdk_window_type (CdkWindow  *window,
                      const char *type)
 {
   Atom atoms[2] = { None, None };
@@ -176,7 +176,7 @@ set_ctk_window_type (CtkWindow  *window,
 }
 
 static void
-set_cdk_window_border_only (GdkWindow *window)
+set_cdk_window_border_only (CdkWindow *window)
 {
   cdk_window_set_decorations (window, GDK_DECOR_BORDER);
 }
@@ -218,7 +218,7 @@ int
 main (int argc, char **argv)
 {
   GList *list;
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   GError *err;
 
   ctk_init (&argc, &argv);
@@ -475,7 +475,7 @@ border_only_cb (GSimpleAction *action,
 
 static gboolean
 focus_in_event_cb (CtkWidget *window,
-                   GdkEvent  *event,
+                   CdkEvent  *event,
                    gpointer   data)
 {
   CtkWidget *widget;
@@ -490,7 +490,7 @@ focus_in_event_cb (CtkWidget *window,
 
 static gboolean
 focus_out_event_cb (CtkWidget *window,
-                    GdkEvent  *event,
+                    CdkEvent  *event,
                     gpointer   data)
 {
   CtkWidget *widget;
@@ -665,7 +665,7 @@ dock_cb (GSimpleAction *action,
 
 static void
 override_background_color (CtkWidget *widget,
-                           GdkRGBA   *rgba)
+                           CdkRGBA   *rgba)
 {
   gchar          *css;
   CtkCssProvider *provider;
@@ -690,7 +690,7 @@ desktop_cb (GSimpleAction *action,
 {
   CtkWidget *window;
   CtkWidget *label;
-  GdkRGBA    desktop_color;
+  CdkRGBA    desktop_color;
 
   window = ctk_window_new (CTK_WINDOW_TOPLEVEL);
   set_ctk_window_type (CTK_WINDOW (window), "_NET_WM_WINDOW_TYPE_DESKTOP");
@@ -728,7 +728,7 @@ toggle_aspect_ratio (GSimpleAction *action,
                      gpointer       data)
 {
   CtkWidget *window;
-  GdkGeometry geom;
+  CdkGeometry geom;
   CtkWidget *widget = CTK_WIDGET (data);
 
   if (aspect_on)

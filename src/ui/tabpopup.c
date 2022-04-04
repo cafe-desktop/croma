@@ -49,11 +49,11 @@ struct _TabEntry
   char            *title;
   gint             grid_left;
   gint             grid_top;
-  GdkPixbuf       *icon, *dimmed_icon;
+  CdkPixbuf       *icon, *dimmed_icon;
   cairo_surface_t *win_surface;
   CtkWidget       *widget;
-  GdkRectangle     rect;
-  GdkRectangle     inner_rect;
+  CdkRectangle     rect;
+  CdkRectangle     inner_rect;
   guint blank : 1;
 };
 
@@ -69,7 +69,7 @@ struct _MetaTabPopup
   gint border;
 };
 
-static CtkWidget* selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface);
+static CtkWidget* selectable_image_new (CdkPixbuf *pixbuf, cairo_surface_t *win_surface);
 static void       select_image         (CtkWidget *widget);
 static void       unselect_image       (CtkWidget *widget);
 
@@ -83,7 +83,7 @@ outline_window_draw (CtkWidget *widget,
                      cairo_t   *cr,
                      gpointer   data)
 {
-  GdkRGBA black = { 0.0, 0.0, 0.0, 1.0 };
+  CdkRGBA black = { 0.0, 0.0, 0.0, 1.0 };
   MetaTabPopup *popup;
   TabEntry *te;
 
@@ -120,12 +120,12 @@ outline_window_draw (CtkWidget *widget,
 
 static void
 popup_window_screen_changed (CtkWidget *widget,
-                             GdkScreen *old_screen G_GNUC_UNUSED,
+                             CdkScreen *old_screen G_GNUC_UNUSED,
                              gpointer   data G_GNUC_UNUSED)
 {
   /* To check if the display supports alpha channels, get the visual */
-  GdkScreen *screen = ctk_widget_get_screen (widget);
-  GdkVisual *visual = cdk_screen_get_rgba_visual (screen);
+  CdkScreen *screen = ctk_widget_get_screen (widget);
+  CdkVisual *visual = cdk_screen_get_rgba_visual (screen);
 
   if (!visual)
     visual = cdk_screen_get_system_visual (screen);
@@ -133,13 +133,13 @@ popup_window_screen_changed (CtkWidget *widget,
   ctk_widget_set_visual(widget, visual);
 }
 
-static GdkPixbuf*
-dimm_icon (GdkPixbuf *pixbuf)
+static CdkPixbuf*
+dimm_icon (CdkPixbuf *pixbuf)
 {
   int x, y, pixel_stride, row_stride;
   guchar *row, *pixels;
   int w, h;
-  GdkPixbuf *dimmed_pixbuf;
+  CdkPixbuf *dimmed_pixbuf;
 
   if (cdk_pixbuf_get_has_alpha (pixbuf))
     {
@@ -249,7 +249,7 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
   CtkWidget *frame;
   int max_label_width; /* the actual max width of the labels we create */
   AtkObject *obj;
-  GdkScreen *screen;
+  CdkScreen *screen;
   int scale;
 
   CtkShadowType frame_shadow = CTK_SHADOW_OUT;
@@ -530,8 +530,8 @@ display_entry (MetaTabPopup *popup,
 
   if (popup->border & BORDER_OUTLINE_WINDOW)
     {
-      GdkRectangle rect;
-      GdkWindow *window;
+      CdkRectangle rect;
+      CdkWindow *window;
       cairo_region_t *region;
 
       window = ctk_widget_get_window (popup->outline_window);
@@ -749,7 +749,7 @@ struct _MetaSelectImageClass
 static GType meta_select_image_get_type (void) G_GNUC_CONST;
 
 static CtkWidget*
-selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface)
+selectable_image_new (CdkPixbuf *pixbuf, cairo_surface_t *win_surface)
 {
   CtkWidget *widget;
 
@@ -872,7 +872,7 @@ meta_select_image_draw (CtkWidget *widget,
   if (META_SELECT_IMAGE (widget)->selected)
     {
       CtkRequisition requisition;
-      GdkRGBA color;
+      CdkRGBA color;
       int x, y, w, h;
 
       ctk_widget_get_preferred_size (widget, &requisition, 0);
@@ -1119,7 +1119,7 @@ meta_select_workspace_draw (CtkWidget *widget,
   if (META_SELECT_WORKSPACE (widget)->selected)
     {
       CtkStyleContext *context;
-      GdkRGBA color;
+      CdkRGBA color;
 
       context = ctk_widget_get_style_context (widget);
 

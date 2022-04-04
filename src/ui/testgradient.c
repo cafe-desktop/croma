@@ -34,7 +34,7 @@ draw_checkerboard (cairo_t *cr,
                    int          height)
 {
   gint i, j, xcount, ycount;
-  GdkRGBA color1, color2;
+  CdkRGBA color1, color2;
 
 #define CHECK_SIZE 10
 #define SPACING 2
@@ -85,8 +85,8 @@ render_simple (
                MetaGradientType type,
                gboolean    with_alpha)
 {
-  GdkPixbuf *pixbuf;
-  GdkRGBA from, to;
+  CdkPixbuf *pixbuf;
+  CdkRGBA from, to;
 
   cdk_rgba_parse (&from, "blue");
   cdk_rgba_parse (&to, "green");
@@ -101,7 +101,7 @@ render_simple (
 
       if (!cdk_pixbuf_get_has_alpha (pixbuf))
         {
-          GdkPixbuf *new_pixbuf;
+          CdkPixbuf *new_pixbuf;
 
           new_pixbuf = cdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
           g_object_unref (G_OBJECT (pixbuf));
@@ -160,10 +160,10 @@ render_multi (
               int width, int height,
               MetaGradientType type)
 {
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
 #define N_COLORS 5
 
-  GdkRGBA colors[N_COLORS];
+  CdkRGBA colors[N_COLORS];
 
   cdk_rgba_parse (&colors[0], "red");
   cdk_rgba_parse (&colors[1], "blue");
@@ -212,10 +212,10 @@ render_interwoven_func (
                         cairo_t     *cr,
                         int width, int height)
 {
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
 #define N_COLORS 4
 
-  GdkRGBA colors[N_COLORS];
+  CdkRGBA colors[N_COLORS];
 
   cdk_rgba_parse (&colors[0], "red");
   cdk_rgba_parse (&colors[1], "blue");
@@ -241,7 +241,7 @@ draw_callback (CtkWidget *widget,
   RenderGradientFunc func = data;
   CtkAllocation allocation;
   CtkStyleContext *style;
-  GdkRGBA color;
+  CdkRGBA color;
 
   style = ctk_widget_get_style_context (widget);
 

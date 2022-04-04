@@ -56,19 +56,19 @@ static void meta_frames_update_prelit_control (MetaFrames      *frames,
                                                MetaUIFrame     *frame,
                                                MetaFrameControl control);
 static gboolean meta_frames_button_press_event    (CtkWidget           *widget,
-                                                   GdkEventButton      *event);
+                                                   CdkEventButton      *event);
 static gboolean meta_frames_button_release_event  (CtkWidget           *widget,
-                                                   GdkEventButton      *event);
+                                                   CdkEventButton      *event);
 static gboolean meta_frames_motion_notify_event   (CtkWidget           *widget,
-                                                   GdkEventMotion      *event);
+                                                   CdkEventMotion      *event);
 static gboolean meta_frames_destroy_event         (CtkWidget           *widget,
-                                                   GdkEventAny         *event);
+                                                   CdkEventAny         *event);
 static gboolean meta_frames_draw                  (CtkWidget           *widget,
                                                    cairo_t             *cr);
 static gboolean meta_frames_enter_notify_event    (CtkWidget           *widget,
-                                                   GdkEventCrossing    *event);
+                                                   CdkEventCrossing    *event);
 static gboolean meta_frames_leave_notify_event    (CtkWidget           *widget,
-                                                   GdkEventCrossing    *event);
+                                                   CdkEventCrossing    *event);
 
 static void meta_frames_attach_style (MetaFrames  *frames,
                                       MetaUIFrame *frame);
@@ -91,7 +91,7 @@ static void meta_frames_font_changed          (MetaFrames *frames);
 static void meta_frames_button_layout_changed (MetaFrames *frames);
 
 
-static GdkRectangle*    control_rect (MetaFrameControl   control,
+static CdkRectangle*    control_rect (MetaFrameControl   control,
                                       MetaFrameGeometry *fgeom);
 static MetaFrameControl get_control  (MetaFrames        *frames,
                                       MetaUIFrame       *frame,
@@ -181,7 +181,7 @@ create_style_context (MetaFrames  *frames,
                       const gchar *variant)
 {
   CtkStyleContext *style;
-  GdkScreen *screen;
+  CdkScreen *screen;
   char *theme_name;
 
   screen = ctk_widget_get_screen (CTK_WIDGET (frames));
@@ -615,7 +615,7 @@ meta_frames_calc_geometry (MetaFrames        *frames,
 MetaFrames*
 meta_frames_new (void)
 {
-  GdkScreen *screen;
+  CdkScreen *screen;
   MetaFrames *frames;
 
   screen = cdk_display_get_default_screen (cdk_display_get_default ());
@@ -668,7 +668,7 @@ meta_frames_attach_style (MetaFrames  *frames,
 void
 meta_frames_manage_window (MetaFrames *frames,
                            Window      xwindow,
-                           GdkWindow  *window)
+                           CdkWindow  *window)
 {
   MetaUIFrame *frame;
 
@@ -1117,7 +1117,7 @@ meta_frames_apply_shapes (MetaFrames *frames,
       cairo_region_t *frame_region;
       cairo_region_t *client_region;
       cairo_region_t *tmp_region;
-      GdkScreen *screen;
+      CdkScreen *screen;
       int screen_number;
 
       meta_topic (META_DEBUG_SHAPES,
@@ -1395,7 +1395,7 @@ show_tip_now (MetaFrames *frames)
   if (tiptext)
     {
       MetaFrameGeometry fgeom;
-      GdkRectangle *rect;
+      CdkRectangle *rect;
       int dx, dy, scale;
 
       meta_frames_calc_geometry (frames, frame, &fgeom);
@@ -1459,7 +1459,7 @@ redraw_control (MetaFrames *frames,
                 MetaFrameControl control)
 {
   MetaFrameGeometry fgeom;
-  GdkRectangle *rect;
+  CdkRectangle *rect;
 
   meta_frames_calc_geometry (frames, frame, &fgeom);
 
@@ -1471,7 +1471,7 @@ redraw_control (MetaFrames *frames,
 
 static gboolean
 meta_frame_titlebar_event (MetaUIFrame    *frame,
-                           GdkEventButton *event,
+                           CdkEventButton *event,
                            int            action)
 {
   MetaFrameFlags flags;
@@ -1578,7 +1578,7 @@ meta_frame_titlebar_event (MetaUIFrame    *frame,
 
 static gboolean
 meta_frame_double_click_event (MetaUIFrame    *frame,
-                               GdkEventButton *event)
+                               CdkEventButton *event)
 {
   int action = meta_prefs_get_action_double_click_titlebar ();
 
@@ -1587,7 +1587,7 @@ meta_frame_double_click_event (MetaUIFrame    *frame,
 
 static gboolean
 meta_frame_middle_click_event (MetaUIFrame    *frame,
-                               GdkEventButton *event)
+                               CdkEventButton *event)
 {
   int action = meta_prefs_get_action_middle_click_titlebar();
 
@@ -1596,7 +1596,7 @@ meta_frame_middle_click_event (MetaUIFrame    *frame,
 
 static gboolean
 meta_frame_right_click_event(MetaUIFrame     *frame,
-                             GdkEventButton  *event)
+                             CdkEventButton  *event)
 {
   int action = meta_prefs_get_action_right_click_titlebar();
 
@@ -1605,7 +1605,7 @@ meta_frame_right_click_event(MetaUIFrame     *frame,
 
 static gboolean
 meta_frames_button_press_event (CtkWidget      *widget,
-                                GdkEventButton *event)
+                                CdkEventButton *event)
 {
   MetaUIFrame *frame;
   MetaFrames *frames;
@@ -1734,7 +1734,7 @@ meta_frames_button_press_event (CtkWidget      *widget,
       if (op == META_GRAB_OP_CLICKING_MENU)
         {
           MetaFrameGeometry fgeom;
-          GdkRectangle *rect;
+          CdkRectangle *rect;
           int dx, dy;
 
           meta_frames_calc_geometry (frames, frame, &fgeom);
@@ -1876,7 +1876,7 @@ meta_frames_notify_menu_hide (MetaFrames *frames)
 
 static gboolean
 meta_frames_button_release_event    (CtkWidget           *widget,
-                                     GdkEventButton      *event)
+                                     CdkEventButton      *event)
 {
   MetaUIFrame *frame;
   MetaFrames *frames;
@@ -2132,7 +2132,7 @@ meta_frames_update_prelit_control (MetaFrames      *frames,
 
 static gboolean
 meta_frames_motion_notify_event     (CtkWidget           *widget,
-                                     GdkEventMotion      *event)
+                                     CdkEventMotion      *event)
 {
   MetaUIFrame *frame;
   MetaFrames *frames;
@@ -2247,7 +2247,7 @@ meta_frames_motion_notify_event     (CtkWidget           *widget,
 
 static gboolean
 meta_frames_destroy_event           (CtkWidget           *widget,
-                                     GdkEventAny         *event)
+                                     CdkEventAny         *event)
 {
   MetaUIFrame *frame;
   MetaFrames *frames;
@@ -2384,8 +2384,8 @@ populate_cache (MetaFrames *frames,
 static void
 clip_to_screen (cairo_region_t *region, MetaUIFrame *frame)
 {
-  GdkRectangle frame_area;
-  GdkRectangle screen_area = { 0, 0, 0, 0 };
+  CdkRectangle frame_area;
+  CdkRectangle screen_area = { 0, 0, 0, 0 };
   cairo_region_t *tmp_region;
 
   /* Chop off stuff outside the screen; this optimization
@@ -2563,8 +2563,8 @@ meta_frames_paint_to_drawable (MetaFrames   *frames,
 {
   MetaFrameFlags flags;
   MetaFrameType type;
-  GdkPixbuf *mini_icon;
-  GdkPixbuf *icon;
+  CdkPixbuf *mini_icon;
+  CdkPixbuf *icon;
   int w, h, scale;
   MetaButtonState button_states[META_BUTTON_TYPE_LAST];
   Window grab_frame;
@@ -2692,7 +2692,7 @@ meta_frames_paint_to_drawable (MetaFrames   *frames,
 
 static gboolean
 meta_frames_enter_notify_event      (CtkWidget           *widget,
-                                     GdkEventCrossing    *event)
+                                     CdkEventCrossing    *event)
 {
   MetaUIFrame *frame;
   MetaFrames *frames;
@@ -2712,7 +2712,7 @@ meta_frames_enter_notify_event      (CtkWidget           *widget,
 
 static gboolean
 meta_frames_leave_notify_event      (CtkWidget           *widget,
-                                     GdkEventCrossing    *event)
+                                     CdkEventCrossing    *event)
 {
   MetaUIFrame *frame;
   MetaFrames *frames;
@@ -2730,11 +2730,11 @@ meta_frames_leave_notify_event      (CtkWidget           *widget,
   return TRUE;
 }
 
-static GdkRectangle*
+static CdkRectangle*
 control_rect (MetaFrameControl control,
               MetaFrameGeometry *fgeom)
 {
-  GdkRectangle *rect;
+  CdkRectangle *rect;
 
   rect = NULL;
   switch (control)
@@ -2811,7 +2811,7 @@ get_control (MetaFrames *frames,
   MetaFrameGeometry fgeom;
   MetaFrameFlags flags;
   gboolean has_vert, has_horiz;
-  GdkRectangle client;
+  CdkRectangle client;
   gint scale;
 
   scale = cdk_window_get_scale_factor (frame->window);

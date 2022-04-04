@@ -37,7 +37,7 @@ static CtkWidget *tip = NULL;
  */
 static CtkWidget *label = NULL;
 
-static GdkScreen *screen = NULL;
+static CdkScreen *screen = NULL;
 
 static gboolean
 draw_handler (CtkWidget *widget,
@@ -67,13 +67,13 @@ meta_fixed_tip_show (int root_x, int root_y,
 {
   gint w;
   gint h;
-  GdkMonitor *mon_num;
-  GdkRectangle monitor;
+  CdkMonitor *mon_num;
+  CdkRectangle monitor;
   gint screen_right_edge;
 
   if (tip == NULL)
     {
-      GdkVisual *visual;
+      CdkVisual *visual;
 
       tip = ctk_window_new (CTK_WINDOW_POPUP);
 

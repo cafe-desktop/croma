@@ -75,7 +75,7 @@ typedef struct _MetaUIFrame         MetaUIFrame;
 struct _MetaUIFrame
 {
   Window xwindow;
-  GdkWindow *window;
+  CdkWindow *window;
   CtkStyleContext *style;
   MetaFrameStyle *cache_style;
   PangoLayout *text_layout;
@@ -119,7 +119,7 @@ MetaFrames *meta_frames_new (void);
 
 void meta_frames_manage_window (MetaFrames *frames,
                                 Window      xwindow,
-				GdkWindow  *window);
+				CdkWindow  *window);
 void meta_frames_unmanage_window (MetaFrames *frames,
                                   Window      xwindow);
 void meta_frames_set_title (MetaFrames *frames,

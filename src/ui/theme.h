@@ -161,9 +161,9 @@ struct _MetaFrameLayout
 struct _MetaButtonSpace
 {
   /** The screen area where the button's image is drawn */
-  GdkRectangle visible;
+  CdkRectangle visible;
   /** The screen area where the button can be activated by clicking */
-  GdkRectangle clickable;
+  CdkRectangle clickable;
 };
 
 /**
@@ -176,7 +176,7 @@ struct _MetaFrameGeometry
   int width;
   int height;
 
-  GdkRectangle title_rect;
+  CdkRectangle title_rect;
 
   int left_titlebar_edge;
   int right_titlebar_edge;
@@ -185,7 +185,7 @@ struct _MetaFrameGeometry
 
   /* used for a memset hack */
 #define ADDRESS_OF_BUTTON_RECTS(fgeom) (((char*)(fgeom)) + G_STRUCT_OFFSET (MetaFrameGeometry, close_rect))
-#define LENGTH_OF_BUTTON_RECTS (G_STRUCT_OFFSET (MetaFrameGeometry, right_single_background) + sizeof (GdkRectangle) - G_STRUCT_OFFSET (MetaFrameGeometry, close_rect))
+#define LENGTH_OF_BUTTON_RECTS (G_STRUCT_OFFSET (MetaFrameGeometry, right_single_background) + sizeof (CdkRectangle) - G_STRUCT_OFFSET (MetaFrameGeometry, close_rect))
 
   /* The button rects (if changed adjust memset hack) */
   MetaButtonSpace close_rect;
@@ -201,14 +201,14 @@ struct _MetaFrameGeometry
   MetaButtonSpace unstick_rect;
 
 #define MAX_MIDDLE_BACKGROUNDS (MAX_BUTTONS_PER_CORNER - 2)
-  GdkRectangle left_left_background;
-  GdkRectangle left_middle_backgrounds[MAX_MIDDLE_BACKGROUNDS];
-  GdkRectangle left_right_background;
-  GdkRectangle left_single_background;
-  GdkRectangle right_left_background;
-  GdkRectangle right_middle_backgrounds[MAX_MIDDLE_BACKGROUNDS];
-  GdkRectangle right_right_background;
-  GdkRectangle right_single_background;
+  CdkRectangle left_left_background;
+  CdkRectangle left_middle_backgrounds[MAX_MIDDLE_BACKGROUNDS];
+  CdkRectangle left_right_background;
+  CdkRectangle left_single_background;
+  CdkRectangle right_left_background;
+  CdkRectangle right_middle_backgrounds[MAX_MIDDLE_BACKGROUNDS];
+  CdkRectangle right_right_background;
+  CdkRectangle right_single_background;
   /* End of button rects (if changed adjust memset hack) */
 
   /* Saved button layout */
@@ -257,7 +257,7 @@ struct _MetaColorSpec
   union
   {
     struct {
-      GdkRGBA color;
+      CdkRGBA color;
     } basic;
     struct {
       MetaCtkColorComponent component;
@@ -271,12 +271,12 @@ struct _MetaColorSpec
       MetaColorSpec *foreground;
       MetaColorSpec *background;
       double alpha;
-      GdkRGBA color;
+      CdkRGBA color;
     } blend;
     struct {
       MetaColorSpec *base;
       double factor;
-      GdkRGBA color;
+      CdkRGBA color;
     } shade;
   } data;
 };
@@ -296,8 +296,8 @@ struct _MetaAlphaGradientSpec
 
 struct _MetaDrawInfo
 {
-  GdkPixbuf   *mini_icon;
-  GdkPixbuf   *icon;
+  CdkPixbuf   *mini_icon;
+  CdkPixbuf   *icon;
   PangoLayout *title_layout;
   int title_layout_width;
   int title_layout_height;
@@ -491,14 +491,14 @@ struct _MetaDrawOp
     struct {
       MetaColorSpec *colorize_spec;
       MetaAlphaGradientSpec *alpha_spec;
-      GdkPixbuf *pixbuf;
+      CdkPixbuf *pixbuf;
       MetaDrawSpec *x;
       MetaDrawSpec *y;
       MetaDrawSpec *width;
       MetaDrawSpec *height;
 
       guint32 colorize_cache_pixel;
-      GdkPixbuf *colorize_cache_pixbuf;
+      CdkPixbuf *colorize_cache_pixbuf;
       MetaImageFillType fill_type;
       unsigned int vertical_stripes : 1;
       unsigned int horizontal_stripes : 1;
@@ -910,7 +910,7 @@ MetaColorSpec* meta_color_spec_new_ctk         (MetaCtkColorComponent component,
 void           meta_color_spec_free            (MetaColorSpec     *spec);
 void           meta_color_spec_render          (MetaColorSpec     *spec,
                                                 CtkStyleContext   *style_ctk,
-                                                GdkRGBA           *color);
+                                                CdkRGBA           *color);
 
 MetaDrawOp*    meta_draw_op_new  (MetaDrawType        type);
 void           meta_draw_op_free (MetaDrawOp          *op);
@@ -980,8 +980,8 @@ void meta_frame_style_draw (MetaFrameStyle          *style,
                             PangoLayout             *title_layout,
                             int                      text_height,
                             MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                            GdkPixbuf               *mini_icon,
-                            GdkPixbuf               *icon);
+                            CdkPixbuf               *mini_icon,
+                            CdkPixbuf               *icon);
 
 
 void meta_frame_style_draw_with_style (MetaFrameStyle          *style,
@@ -993,8 +993,8 @@ void meta_frame_style_draw_with_style (MetaFrameStyle          *style,
                                        PangoLayout             *title_layout,
                                        int                      text_height,
                                        MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                                       GdkPixbuf               *mini_icon,
-                                       GdkPixbuf               *icon);
+                                       CdkPixbuf               *mini_icon,
+                                       CdkPixbuf               *icon);
 
 
 gboolean       meta_frame_style_validate (MetaFrameStyle    *style,
@@ -1016,7 +1016,7 @@ MetaTheme* meta_theme_new      (void);
 void       meta_theme_free     (MetaTheme *theme);
 gboolean   meta_theme_validate (MetaTheme *theme,
                                 GError   **error);
-GdkPixbuf* meta_theme_load_image (MetaTheme  *theme,
+CdkPixbuf* meta_theme_load_image (MetaTheme  *theme,
                                   const char *filename,
                                   guint       size_of_theme_icons,
                                   GError    **error);
@@ -1040,8 +1040,8 @@ void meta_theme_draw_frame (MetaTheme              *theme,
                             int                     text_height,
                             const MetaButtonLayout *button_layout,
                             MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                            GdkPixbuf              *mini_icon,
-                            GdkPixbuf              *icon);
+                            CdkPixbuf              *mini_icon,
+                            CdkPixbuf              *icon);
 
 void meta_theme_draw_frame_by_name (MetaTheme              *theme,
                                     CtkWidget              *widget,
@@ -1054,8 +1054,8 @@ void meta_theme_draw_frame_by_name (MetaTheme              *theme,
                                     int                     text_height,
                                     const MetaButtonLayout *button_layout,
                                     MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                                    GdkPixbuf              *mini_icon,
-                                    GdkPixbuf              *icon);
+                                    CdkPixbuf              *mini_icon,
+                                    CdkPixbuf              *icon);
 
 
 void meta_theme_get_frame_borders (MetaTheme         *theme,
@@ -1158,10 +1158,10 @@ MetaImageFillType     meta_image_fill_type_from_string (const char            *s
 const char*           meta_image_fill_type_to_string   (MetaImageFillType      fill_type);
 void                  meta_ctk_style_get_light_color   (CtkStyleContext      *style,
                                                         CtkStateFlags         state,
-                                                        GdkRGBA              *color);
+                                                        CdkRGBA              *color);
 void                  meta_ctk_style_get_dark_color    (CtkStyleContext      *style,
                                                         CtkStateFlags         state,
-                                                        GdkRGBA              *color);
+                                                        CdkRGBA              *color);
 
 guint meta_theme_earliest_version_with_button (MetaButtonType type);
 
