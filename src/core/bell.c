@@ -343,7 +343,7 @@ meta_bell_notify (MetaDisplay *display,
         }
 
       /* First, we try to play a real sound ... */
-      res = ca_context_play_full (ca_ctk_context_get (), 1, p, NULL, NULL);
+      res = ca_context_play_full (ca_gtk_context_get (), 1, p, NULL, NULL);
 
       ca_proplist_destroy (p);
 
