@@ -13,7 +13,7 @@ Jobs of various files
   src/window.c is where all the guts of the window manager live. This is
   basically the only remotely scary file.
 
-  src/frames.c is the GtkWidget that handles drawing window frames.
+  src/frames.c is the CtkWidget that handles drawing window frames.
 
   src/core.h defines the interface used by the GTK portion of the window
   manager to talk to the other portions. There's some cruft in here that's

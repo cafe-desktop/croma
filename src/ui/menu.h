@@ -36,7 +36,7 @@
 struct _MetaWindowMenu {
 	MetaFrames* frames;
 	Window client_xwindow;
-	GtkWidget* menu;
+	CtkWidget* menu;
 	MetaWindowMenuFunc func;
 	gpointer data;
 	MetaMenuOp ops;

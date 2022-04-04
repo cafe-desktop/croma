@@ -76,7 +76,7 @@ struct _MetaUIFrame
 {
   Window xwindow;
   GdkWindow *window;
-  GtkStyleContext *style;
+  CtkStyleContext *style;
   MetaFrameStyle *cache_style;
   PangoLayout *text_layout;
   int text_height;
@@ -90,7 +90,7 @@ struct _MetaUIFrame
 
 struct _MetaFrames
 {
-  GtkWindow parent_instance;
+  CtkWindow parent_instance;
 
   GHashTable *text_heights;
 
@@ -99,7 +99,7 @@ struct _MetaFrames
   guint tooltip_timeout;
   MetaUIFrame *last_motion_frame;
 
-  GtkStyleContext *normal_style;
+  CtkStyleContext *normal_style;
   GHashTable *style_variants;
   int expose_delay_count;
 
@@ -110,7 +110,7 @@ struct _MetaFrames
 
 struct _MetaFramesClass
 {
-  GtkWindowClass parent_class;
+  CtkWindowClass parent_class;
 };
 
 GType        meta_frames_get_type               (void) G_GNUC_CONST;

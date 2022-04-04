@@ -35,7 +35,7 @@
 
 
 struct _MetaTilePreview {
-  GtkWidget     *preview_window;
+  CtkWidget     *preview_window;
 
   GdkRGBA       *preview_color;
 
@@ -45,7 +45,7 @@ struct _MetaTilePreview {
 };
 
 static gboolean
-meta_tile_preview_draw (GtkWidget *widget,
+meta_tile_preview_draw (CtkWidget *widget,
                         cairo_t   *cr,
                         gpointer   user_data)
 {
@@ -97,13 +97,13 @@ meta_tile_preview_draw (GtkWidget *widget,
 }
 
 static void
-on_preview_window_style_set (GtkWidget *widget,
-                             GtkStyle  *previous,
+on_preview_window_style_set (CtkWidget *widget,
+                             CtkStyle  *previous,
                              gpointer   user_data)
 {
   MetaTilePreview *preview = user_data;
-  GtkStyleContext *context = ctk_style_context_new ();
-  GtkWidgetPath *path = ctk_widget_path_new ();
+  CtkStyleContext *context = ctk_style_context_new ();
+  CtkWidgetPath *path = ctk_widget_path_new ();
   guchar alpha = 0xFF;
 
   ctk_widget_path_append_type (path, GTK_TYPE_ICON_VIEW);

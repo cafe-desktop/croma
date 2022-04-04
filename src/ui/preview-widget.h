@@ -40,7 +40,7 @@ typedef struct _MetaPreviewClass	MetaPreviewClass;
 
 struct _MetaPreview
 {
-  GtkBin bin;
+  CtkBin bin;
 
   MetaTheme *theme;
   char *title;
@@ -57,12 +57,12 @@ struct _MetaPreview
 
 struct _MetaPreviewClass
 {
-  GtkBinClass parent_class;
+  CtkBinClass parent_class;
 };
 
 
 GType    meta_preview_get_type (void) G_GNUC_CONST;
-GtkWidget* meta_preview_new	 (void);
+CtkWidget* meta_preview_new	 (void);
 
 void meta_preview_set_theme         (MetaPreview            *preview,
                                      MetaTheme              *theme);

@@ -115,7 +115,7 @@
   * Fix XShape
   * compositor: don't draw shadow under windows
   * constraints: initialize window->user_rect in initial placement
-  * theme: Make meta_frame_draw_theme take a GtkStyleContext instead of a widget
+  * theme: Make meta_frame_draw_theme take a CtkStyleContext instead of a widget
   * build everything as library
   * Allow raise_on_click to be set independent of focus_mode
   * window: initialize few variables
@@ -222,8 +222,8 @@
   * Support HiDPI window decorations
   * Fix mismatched enums in keybinding detection for switch-panels and switch-panels-backward
   * window: add _NET_WM_STATE_FOCUSED hint to _NET_WM_STATE
-  * avoid deprecated GtkButton:use-stock
-  * avoid deprecated GtkStock
+  * avoid deprecated CtkButton:use-stock
+  * avoid deprecated CtkStock
   * Fixes move_to_center moving window between monitors
 
 ### croma 1.20.0
@@ -315,7 +315,7 @@
 ### croma 1.14.2
 
   * Translations update
-  * GTK+3: fix a typo with deprecated GtkMisc
+  * GTK+3: fix a typo with deprecated CtkMisc
   * GTK+3 fixedtip: add style class tooltip
 
 ### croma 1.14.1

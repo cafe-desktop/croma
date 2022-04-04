@@ -234,13 +234,13 @@ render_interwoven_func (
 }
 
 static gboolean
-draw_callback (GtkWidget *widget,
+draw_callback (CtkWidget *widget,
                cairo_t *cr,
                gpointer data)
 {
   RenderGradientFunc func = data;
-  GtkAllocation allocation;
-  GtkStyleContext *style;
+  CtkAllocation allocation;
+  CtkStyleContext *style;
   GdkRGBA color;
 
   style = ctk_widget_get_style_context (widget);
@@ -262,12 +262,12 @@ draw_callback (GtkWidget *widget,
   return FALSE;
 }
 
-static GtkWidget*
+static CtkWidget*
 create_gradient_window (const char *title,
                         RenderGradientFunc func)
 {
-  GtkWidget *window;
-  GtkWidget *drawing_area;
+  CtkWidget *window;
+  CtkWidget *drawing_area;
 
   window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
 

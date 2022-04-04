@@ -66,8 +66,8 @@ get_window_rect (const WnckWindowDisplayInfo *win,
 }
 
 static void
-get_background_color (GtkStyleContext *context,
-                      GtkStateFlags    state,
+get_background_color (CtkStyleContext *context,
+                      CtkStateFlags    state,
                       GdkRGBA         *color)
 {
   GdkRGBA *c;
@@ -85,17 +85,17 @@ get_background_color (GtkStyleContext *context,
 }
 
 static void
-draw_window (GtkWidget                   *widget,
+draw_window (CtkWidget                   *widget,
              cairo_t                     *cr,
              const WnckWindowDisplayInfo *win,
              const GdkRectangle          *winrect,
-             GtkStateType                state)
+             CtkStateType                state)
 {
   cairo_surface_t *icon;
   int icon_x, icon_y, icon_w, icon_h, scale;
   gboolean is_active;
   GdkRGBA color;
-  GtkStyleContext *style;
+  CtkStyleContext *style;
 
   is_active = win->is_active;
 
@@ -176,7 +176,7 @@ draw_window (GtkWidget                   *widget,
 }
 
 void
-wnck_draw_workspace (GtkWidget                   *widget,
+wnck_draw_workspace (CtkWidget                   *widget,
                      cairo_t                     *cr,
                      int                          x,
                      int                          y,
@@ -191,8 +191,8 @@ wnck_draw_workspace (GtkWidget                   *widget,
 {
   int i;
   GdkRectangle workspace_rect;
-  GtkStateFlags state;
-  GtkStyleContext *style;
+  CtkStateFlags state;
+  CtkStyleContext *style;
 
   workspace_rect.x = x;
   workspace_rect.y = y;

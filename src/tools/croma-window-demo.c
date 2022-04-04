@@ -62,10 +62,10 @@ set_gdk_window_struts (GdkWindow *window,
 }
 
 static void
-on_realize_set_struts (GtkWindow *window,
+on_realize_set_struts (CtkWindow *window,
                        gpointer   data)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
   int left;
   int right;
   int top;
@@ -85,13 +85,13 @@ on_realize_set_struts (GtkWindow *window,
 }
 
 static void
-set_ctk_window_struts (GtkWidget  *window,
+set_ctk_window_struts (CtkWidget  *window,
                        int         left,
                        int         right,
                        int         top,
                        int         bottom)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
 
   widget = GTK_WIDGET (window);
 
@@ -136,7 +136,7 @@ set_gdk_window_type (GdkWindow  *window,
 }
 
 static void
-on_realize_set_type (GtkWindow *window,
+on_realize_set_type (CtkWindow *window,
                      gpointer   data)
 {
   const char *type;
@@ -152,10 +152,10 @@ on_realize_set_type (GtkWindow *window,
 }
 
 static void
-set_ctk_window_type (GtkWindow  *window,
+set_ctk_window_type (CtkWindow  *window,
                      const char *type)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
 
   widget = GTK_WIDGET (window);
 
@@ -182,10 +182,10 @@ set_gdk_window_border_only (GdkWindow *window)
 }
 
 static void
-on_realize_set_border_only (GtkWindow *window,
+on_realize_set_border_only (CtkWindow *window,
                             gpointer   data)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
 
   widget = GTK_WIDGET (window);
 
@@ -195,9 +195,9 @@ on_realize_set_border_only (GtkWindow *window,
 }
 
 static void
-set_ctk_window_border_only (GtkWindow  *window)
+set_ctk_window_border_only (CtkWindow  *window)
 {
-GtkWidget *widget;
+CtkWidget *widget;
 
   widget = GTK_WIDGET (window);
 
@@ -248,15 +248,15 @@ main (int argc, char **argv)
 }
 
 static void
-response_cb (GtkDialog *dialog,
+response_cb (CtkDialog *dialog,
              int        response_id,
              void      *data);
 
 static void
-make_dialog (GtkWidget *parent,
+make_dialog (CtkWidget *parent,
              int        depth)
 {
-  GtkWidget *dialog;
+  CtkWidget *dialog;
   char *str;
 
   dialog = ctk_message_dialog_new (parent ? GTK_WINDOW (parent) : NULL,
@@ -288,7 +288,7 @@ make_dialog (GtkWidget *parent,
 }
 
 static void
-response_cb (GtkDialog *dialog,
+response_cb (CtkDialog *dialog,
              int        response_id,
              void      *data)
 {
@@ -319,7 +319,7 @@ modal_dialog_cb (GSimpleAction *action,
                  GVariant      *parameter,
                  gpointer       callback_data)
 {
-  GtkWidget *dialog;
+  CtkWidget *dialog;
 
   dialog = ctk_message_dialog_new (GTK_WINDOW (callback_data),
                                    GTK_DIALOG_DESTROY_WITH_PARENT,
@@ -347,9 +347,9 @@ utility_cb (GSimpleAction *action,
             GVariant      *parameter,
             gpointer       callback_data)
 {
-  GtkWidget *window;
-  GtkWidget *vbox;
-  GtkWidget *button;
+  CtkWidget *window;
+  CtkWidget *vbox;
+  CtkWidget *button;
 
   window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
   set_ctk_window_type (GTK_WINDOW (window), "_NET_WM_WINDOW_TYPE_UTILITY");
@@ -381,9 +381,9 @@ toolbar_cb (GSimpleAction *action,
             GVariant      *parameter,
             gpointer       callback_data)
 {
-  GtkWidget *window;
-  GtkWidget *vbox;
-  GtkWidget *label;
+  CtkWidget *window;
+  CtkWidget *vbox;
+  CtkWidget *label;
 
   window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
   set_ctk_window_type (GTK_WINDOW (window), "_NET_WM_WINDOW_TYPE_TOOLBAR");
@@ -406,9 +406,9 @@ menu_cb (GSimpleAction *action,
          GVariant      *parameter,
          gpointer       callback_data)
 {
-  GtkWidget *window;
-  GtkWidget *vbox;
-  GtkWidget *label;
+  CtkWidget *window;
+  CtkWidget *vbox;
+  CtkWidget *label;
 
   window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
   set_ctk_window_type (GTK_WINDOW (window), "_NET_WM_WINDOW_TYPE_MENU");
@@ -431,9 +431,9 @@ override_redirect_cb (GSimpleAction *action,
                       GVariant      *parameter,
                       gpointer       callback_data)
 {
-  GtkWidget *window;
-  GtkWidget *vbox;
-  GtkWidget *label;
+  CtkWidget *window;
+  CtkWidget *vbox;
+  CtkWidget *label;
 
   window = ctk_window_new (GTK_WINDOW_POPUP);
   ctk_window_set_title (GTK_WINDOW (window), "Override Redirect");
@@ -453,9 +453,9 @@ border_only_cb (GSimpleAction *action,
                 GVariant      *parameter,
                 gpointer       callback_data)
 {
-  GtkWidget *window;
-  GtkWidget *vbox;
-  GtkWidget *label;
+  CtkWidget *window;
+  CtkWidget *vbox;
+  CtkWidget *label;
 
   window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
   set_ctk_window_border_only (GTK_WINDOW (window));
@@ -474,11 +474,11 @@ border_only_cb (GSimpleAction *action,
 }
 
 static gboolean
-focus_in_event_cb (GtkWidget *window,
+focus_in_event_cb (CtkWidget *window,
                    GdkEvent  *event,
                    gpointer   data)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
 
   widget = GTK_WIDGET (data);
 
@@ -489,11 +489,11 @@ focus_in_event_cb (GtkWidget *window,
 
 
 static gboolean
-focus_out_event_cb (GtkWidget *window,
+focus_out_event_cb (CtkWidget *window,
                     GdkEvent  *event,
                     gpointer   data)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
 
   widget = GTK_WIDGET (data);
 
@@ -502,10 +502,10 @@ focus_out_event_cb (GtkWidget *window,
   return TRUE;
 }
 
-static GtkWidget*
-focus_label (GtkWidget *window)
+static CtkWidget*
+focus_label (CtkWidget *window)
 {
-  GtkWidget *label;
+  CtkWidget *label;
 
   label = ctk_label_new ("Not focused");
 
@@ -523,9 +523,9 @@ splashscreen_cb (GSimpleAction *action,
                  GVariant      *parameter,
                  gpointer       callback_data)
 {
-  GtkWidget *window;
-  GtkWidget *image;
-  GtkWidget *vbox;
+  CtkWidget *window;
+  CtkWidget *image;
+  CtkWidget *vbox;
 
   window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
   set_ctk_window_type (GTK_WINDOW (window), "_NET_WM_WINDOW_TYPE_SPLASH");
@@ -555,10 +555,10 @@ enum
 static void
 make_dock (int type)
 {
-  GtkWidget *window;
-  GtkWidget *image;
-  GtkWidget *box;
-  GtkWidget *button;
+  CtkWidget *window;
+  CtkWidget *image;
+  CtkWidget *box;
+  CtkWidget *button;
 
   g_return_if_fail (type != DOCK_ALL);
 
@@ -664,11 +664,11 @@ dock_cb (GSimpleAction *action,
 }
 
 static void
-override_background_color (GtkWidget *widget,
+override_background_color (CtkWidget *widget,
                            GdkRGBA   *rgba)
 {
   gchar          *css;
-  GtkCssProvider *provider;
+  CtkCssProvider *provider;
 
   provider = ctk_css_provider_new ();
 
@@ -688,8 +688,8 @@ desktop_cb (GSimpleAction *action,
             GVariant      *parameter,
             gpointer       callback_data)
 {
-  GtkWidget *window;
-  GtkWidget *label;
+  CtkWidget *window;
+  CtkWidget *label;
   GdkRGBA    desktop_color;
 
   window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -727,9 +727,9 @@ toggle_aspect_ratio (GSimpleAction *action,
                      GVariant      *parameter,
                      gpointer       data)
 {
-  GtkWidget *window;
+  CtkWidget *window;
   GdkGeometry geom;
-  GtkWidget *widget = GTK_WIDGET (data);
+  CtkWidget *widget = GTK_WIDGET (data);
 
   if (aspect_on)
     {
@@ -758,7 +758,7 @@ toggle_decorated_cb (GSimpleAction *action,
                      GVariant      *parameter,
                      gpointer       data)
 {
-  GtkWidget *window;
+  CtkWidget *window;
   window = ctk_widget_get_ancestor (data, GTK_TYPE_WINDOW);
   if (window)
     ctk_window_set_decorated (GTK_WINDOW (window),
@@ -770,7 +770,7 @@ clicked_toolbar_cb (GSimpleAction *action,
                     GVariant      *parameter,
                     gpointer       data)
 {
-  GtkWidget *dialog;
+  CtkWidget *dialog;
 
   dialog = ctk_message_dialog_new (GTK_WINDOW (data),
                                    GTK_DIALOG_DESTROY_WITH_PARENT,
@@ -788,13 +788,13 @@ clicked_toolbar_cb (GSimpleAction *action,
 }
 
 static void
-update_statusbar (GtkTextBuffer *buffer,
-                  GtkStatusbar  *statusbar)
+update_statusbar (CtkTextBuffer *buffer,
+                  CtkStatusbar  *statusbar)
 {
   gchar *msg;
   gint row, col;
   gint count;
-  GtkTextIter iter;
+  CtkTextIter iter;
 
   ctk_statusbar_pop (statusbar, 0); /* clear any previous message, underflow is allowed */
 
@@ -816,9 +816,9 @@ update_statusbar (GtkTextBuffer *buffer,
 }
 
 static void
-mark_set_callback (GtkTextBuffer     *buffer,
-                   const GtkTextIter *new_location,
-                   GtkTextMark       *mark,
+mark_set_callback (CtkTextBuffer     *buffer,
+                   const CtkTextIter *new_location,
+                   CtkTextMark       *mark,
                    gpointer           data)
 {
   update_statusbar (buffer, GTK_STATUSBAR (data));
@@ -827,7 +827,7 @@ mark_set_callback (GtkTextBuffer     *buffer,
 static int window_count = 0;
 
 static void
-destroy_cb (GtkWidget *w, gpointer data)
+destroy_cb (CtkWidget *w, gpointer data)
 {
   --window_count;
   if (window_count == 0)
@@ -934,11 +934,11 @@ static GActionEntry demo_entries[] =
   { "ratio",             toggle_aspect_ratio,  NULL, NULL, NULL, {} },
 };
 
-static GtkWidget *
+static CtkWidget *
 create_toolbar (void)
 {
-  GtkWidget *toolbar;
-  GtkToolItem *item;
+  CtkWidget *toolbar;
+  CtkToolItem *item;
 
   toolbar = ctk_toolbar_new ();
 
@@ -975,15 +975,15 @@ do_appwindow (GSimpleAction *action,
               GVariant      *parameter,
               gpointer       user_data)
 {
-  GtkWidget *window;
-  GtkWidget *grid;
-  GtkWidget *toolbar;
+  CtkWidget *window;
+  CtkWidget *grid;
+  CtkWidget *toolbar;
   GSimpleActionGroup *action_group;
-  GtkBuilder *builder;
-  GtkWidget *statusbar;
-  GtkWidget *contents;
-  GtkWidget *sw;
-  GtkTextBuffer *buffer;
+  CtkBuilder *builder;
+  CtkWidget *statusbar;
+  CtkWidget *contents;
+  CtkWidget *sw;
+  CtkTextBuffer *buffer;
 
   /* Create the toplevel window
    */
@@ -1018,7 +1018,7 @@ do_appwindow (GSimpleAction *action,
    */
 
   GMenuModel *model = G_MENU_MODEL (ctk_builder_get_object (builder, "menubar"));
-  GtkWidget *menubar = ctk_menu_bar_new_from_model (model);
+  CtkWidget *menubar = ctk_menu_bar_new_from_model (model);
   ctk_grid_attach (GTK_GRID (grid), menubar, 0, 0, 1, 1);
   ctk_widget_set_hexpand (menubar, TRUE);
 

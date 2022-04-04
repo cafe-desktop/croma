@@ -1,11 +1,11 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Croma hacked-up GtkAccelLabel */
+/* Croma hacked-up CtkAccelLabel */
 /* Copyright (C) 2002 Red Hat, Inc. */
 /* GTK - The GIMP Toolkit
  * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald
  *
- * MetaAccelLabel: GtkLabel with accelerator monitoring facilities.
+ * MetaAccelLabel: CtkLabel with accelerator monitoring facilities.
  * Copyright (C) 1998 Tim Janik
  *
  * This library is free software; you can redistribute it and/or
@@ -55,7 +55,7 @@ typedef struct _MetaAccelLabelClass  MetaAccelLabelClass;
 
 struct _MetaAccelLabel
 {
-  GtkLabel label;
+  CtkLabel label;
 
   MetaVirtualModifier accel_mods;
   guint accel_key;
@@ -66,7 +66,7 @@ struct _MetaAccelLabel
 
 struct _MetaAccelLabelClass
 {
-  GtkLabelClass	 parent_class;
+  CtkLabelClass	 parent_class;
 
   gchar		*signal_quote1;
   gchar		*signal_quote2;
@@ -92,7 +92,7 @@ struct _MetaAccelLabelClass
 };
 
 GType	   meta_accel_label_get_type          (void) G_GNUC_CONST;
-GtkWidget* meta_accel_label_new_with_mnemonic (const gchar            *string);
+CtkWidget* meta_accel_label_new_with_mnemonic (const gchar            *string);
 void       meta_accel_label_set_accelerator   (MetaAccelLabel         *accel_label,
                                                guint                   accelerator_key,
                                                MetaVirtualModifier     accelerator_mods);

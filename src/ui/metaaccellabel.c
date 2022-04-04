@@ -1,11 +1,11 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Croma hacked-up GtkAccelLabel */
+/* Croma hacked-up CtkAccelLabel */
 /* Copyright (C) 2002 Red Hat, Inc. */
 /* GTK - The GIMP Toolkit
  * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald
  *
- * MetaAccelLabel: GtkLabel with accelerator monitoring facilities.
+ * MetaAccelLabel: CtkLabel with accelerator monitoring facilities.
  * Copyright (C) 1998 Tim Janik
  *
  * This library is free software; you can redistribute it and/or
@@ -39,18 +39,18 @@
 
 static void     meta_accel_label_class_init   (MetaAccelLabelClass *klass);
 static void     meta_accel_label_init         (MetaAccelLabel      *accel_label);
-static void     meta_accel_label_destroy      (GtkWidget           *object);
+static void     meta_accel_label_destroy      (CtkWidget           *object);
 static void     meta_accel_label_finalize     (GObject             *object);
 static void  meta_accel_label_update          (MetaAccelLabel *accel_label);
 static int   meta_accel_label_get_accel_width (MetaAccelLabel *accel_label);
 
-static void     meta_accel_label_get_preferred_width  (GtkWidget *widget,
+static void     meta_accel_label_get_preferred_width  (CtkWidget *widget,
                                                        gint      *minimum,
                                                        gint      *natural);
-static void     meta_accel_label_get_preferred_height (GtkWidget *widget,
+static void     meta_accel_label_get_preferred_height (CtkWidget *widget,
                                                        gint      *minimum,
                                                        gint      *natural);
-static gboolean meta_accel_label_draw         (GtkWidget           *widget,
+static gboolean meta_accel_label_draw         (CtkWidget           *widget,
                                                cairo_t             *cr);
 
 
@@ -60,7 +60,7 @@ static void
 meta_accel_label_class_init (MetaAccelLabelClass *class)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (class);
-  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (class);
+  CtkWidgetClass *widget_class = GTK_WIDGET_CLASS (class);
 
   gobject_class->finalize = meta_accel_label_finalize;
 
@@ -147,7 +147,7 @@ meta_accel_label_init (MetaAccelLabel *accel_label)
   meta_accel_label_update (accel_label);
 }
 
-GtkWidget*
+CtkWidget*
 meta_accel_label_new_with_mnemonic (const gchar *string)
 {
   MetaAccelLabel *accel_label;
@@ -162,7 +162,7 @@ meta_accel_label_new_with_mnemonic (const gchar *string)
 }
 
 static void
-meta_accel_label_destroy (GtkWidget *object)
+meta_accel_label_destroy (CtkWidget *object)
 {
   MetaAccelLabel *accel_label = META_ACCEL_LABEL (object);
 
@@ -213,7 +213,7 @@ meta_accel_label_get_accel_width (MetaAccelLabel *accel_label)
 }
 
 static void
-meta_accel_label_get_preferred_width (GtkWidget *widget,
+meta_accel_label_get_preferred_width (CtkWidget *widget,
                                       gint      *minimum,
                                       gint      *natural)
 {
@@ -231,7 +231,7 @@ meta_accel_label_get_preferred_width (GtkWidget *widget,
 }
 
 static void
-meta_accel_label_get_preferred_height (GtkWidget *widget,
+meta_accel_label_get_preferred_height (CtkWidget *widget,
                                        gint      *minimum,
                                        gint      *natural)
 {
@@ -239,14 +239,14 @@ meta_accel_label_get_preferred_height (GtkWidget *widget,
 }
 
 static gboolean
-meta_accel_label_draw (GtkWidget *widget,
+meta_accel_label_draw (CtkWidget *widget,
                        cairo_t   *cr)
 {
   MetaAccelLabel *accel_label = META_ACCEL_LABEL (widget);
-  GtkTextDirection direction;
+  CtkTextDirection direction;
   int ac_width;
-  GtkAllocation allocation;
-  GtkRequisition requisition;
+  CtkAllocation allocation;
+  CtkRequisition requisition;
 
   direction = ctk_widget_get_direction (widget);
   ac_width = meta_accel_label_get_accel_width (accel_label);
@@ -256,10 +256,10 @@ meta_accel_label_draw (GtkWidget *widget,
 
   if (allocation.width >= requisition.width + ac_width)
     {
-      GtkStyleContext *style;
+      CtkStyleContext *style;
       PangoLayout *label_layout;
       PangoLayout *accel_layout;
-      GtkLabel *label = GTK_LABEL (widget);
+      CtkLabel *label = GTK_LABEL (widget);
       gint x, y, xpad, ypad;
       gint margin_start, margin_end, margin_top, margin_bottom;
       gfloat yalign;

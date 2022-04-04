@@ -60,7 +60,7 @@ enum
 };
 
 static MetaTheme *global_theme = NULL;
-static GtkWidget *previews[META_FRAME_TYPE_LAST*FONT_SIZE_LAST + BUTTON_LAYOUT_COMBINATIONS] = { NULL, };
+static CtkWidget *previews[META_FRAME_TYPE_LAST*FONT_SIZE_LAST + BUTTON_LAYOUT_COMBINATIONS] = { NULL, };
 static double milliseconds_to_draw_frame = 0.0;
 
 static void run_theme_benchmark (void);
@@ -138,11 +138,11 @@ static GActionEntry theme_viewer_entries[] =
   { "quit",         NULL, NULL, NULL, NULL, {} }
 };
 
-static GtkWidget *
+static CtkWidget *
 create_toolbar (void)
 {
-  GtkWidget *toolbar;
-  GtkToolItem *item;
+  CtkWidget *toolbar;
+  CtkToolItem *item;
 
   toolbar = ctk_toolbar_new ();
 
@@ -164,26 +164,26 @@ create_toolbar (void)
   return toolbar;
 }
 
-static GtkWidget *
+static CtkWidget *
 normal_contents (void)
 {
-  GtkWidget *grid;
-  GtkWidget *statusbar;
-  GtkWidget *contents;
-  GtkWidget *sw;
-  GtkBuilder *builder;
+  CtkWidget *grid;
+  CtkWidget *statusbar;
+  CtkWidget *contents;
+  CtkWidget *sw;
+  CtkBuilder *builder;
 
   grid = ctk_grid_new ();
   builder = ctk_builder_new_from_string (xml, -1);
 
   /* create menu items */
   GMenuModel *model = G_MENU_MODEL (ctk_builder_get_object (builder, "menubar"));
-  GtkWidget *menubar = ctk_menu_bar_new_from_model (model);
+  CtkWidget *menubar = ctk_menu_bar_new_from_model (model);
   ctk_grid_attach (GTK_GRID (grid), menubar, 0, 0, 1, 1);
   ctk_widget_set_hexpand (menubar, TRUE);
 
    /* Create the toolbar */
-  GtkWidget *toolbar = create_toolbar ();
+  CtkWidget *toolbar = create_toolbar ();
   ctk_grid_attach (GTK_GRID (grid), toolbar, 0, 1, 1, 1);
   ctk_widget_set_hexpand (toolbar, TRUE);
 
@@ -228,23 +228,23 @@ normal_contents (void)
 }
 
 static void
-update_spacings (GtkWidget *vbox,
-                 GtkWidget *action_area)
+update_spacings (CtkWidget *vbox,
+                 CtkWidget *action_area)
 {
   ctk_container_set_border_width (GTK_CONTAINER (vbox), 2);
   ctk_box_set_spacing (GTK_BOX (action_area), 10);
   ctk_container_set_border_width (GTK_CONTAINER (action_area), 5);
 }
 
-static GtkWidget*
+static CtkWidget*
 dialog_contents (void)
 {
-  GtkWidget *vbox;
-  GtkWidget *hbox;
-  GtkWidget *action_area;
-  GtkWidget *label;
-  GtkWidget *image;
-  GtkWidget *button;
+  CtkWidget *vbox;
+  CtkWidget *hbox;
+  CtkWidget *action_area;
+  CtkWidget *label;
+  CtkWidget *image;
+  CtkWidget *button;
 
   vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 
@@ -291,11 +291,11 @@ dialog_contents (void)
   return vbox;
 }
 
-static GtkWidget*
+static CtkWidget*
 utility_contents (void)
 {
-  GtkWidget *grid;
-  GtkWidget *button;
+  CtkWidget *grid;
+  CtkWidget *button;
   int i, j;
 
   grid = ctk_grid_new ();
@@ -332,13 +332,13 @@ utility_contents (void)
   return grid;
 }
 
-static GtkWidget*
+static CtkWidget*
 menu_contents (void)
 {
-  GtkWidget *vbox;
-  GtkWidget *mi;
+  CtkWidget *vbox;
+  CtkWidget *mi;
   int i;
-  GtkWidget *frame;
+  CtkWidget *frame;
 
   frame = ctk_frame_new (NULL);
   ctk_frame_set_shadow_type (GTK_FRAME (frame),
@@ -367,11 +367,11 @@ menu_contents (void)
 }
 
 static void
-override_background_color (GtkWidget *widget,
+override_background_color (CtkWidget *widget,
                            GdkRGBA   *rgba)
 {
   gchar          *css;
-  GtkCssProvider *provider;
+  CtkCssProvider *provider;
 
   provider = ctk_css_provider_new ();
 
@@ -386,12 +386,12 @@ override_background_color (GtkWidget *widget,
   g_object_unref (provider);
 }
 
-static GtkWidget*
+static CtkWidget*
 border_only_contents (void)
 {
-  GtkWidget *event_box;
-  GtkWidget *vbox;
-  GtkWidget *w;
+  CtkWidget *event_box;
+  CtkWidget *vbox;
+  CtkWidget *w;
   GdkRGBA color;
 
   event_box = ctk_event_box_new ();
@@ -417,7 +417,7 @@ border_only_contents (void)
   return event_box;
 }
 
-static GtkWidget*
+static CtkWidget*
 get_window_contents (MetaFrameType  type,
                      const char   **title)
 {
@@ -510,11 +510,11 @@ get_window_flags (MetaFrameType type)
 }
 
 static void
-override_font (GtkWidget   *widget,
+override_font (CtkWidget   *widget,
                const gchar *font)
 {
   gchar          *css;
-  GtkCssProvider *provider;
+  CtkCssProvider *provider;
 
   provider = ctk_css_provider_new ();
 
@@ -528,15 +528,15 @@ override_font (GtkWidget   *widget,
   g_object_unref (provider);
 }
 
-static GtkWidget*
+static CtkWidget*
 preview_collection (int font_size,
                     const PangoFontDescription *base_desc)
 {
-  GtkWidget *box;
-  GtkWidget *sw;
+  CtkWidget *box;
+  CtkWidget *sw;
   GdkRGBA desktop_color;
   int i;
-  GtkWidget *eventbox;
+  CtkWidget *eventbox;
 
   sw = ctk_scrolled_window_new (NULL, NULL);
   ctk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
@@ -571,10 +571,10 @@ preview_collection (int font_size,
   while (i < META_FRAME_TYPE_LAST)
     {
       const char *title = NULL;
-      GtkWidget *contents;
-      GtkAlign xalign, yalign;
-      GtkWidget *eventbox2;
-      GtkWidget *preview;
+      CtkWidget *contents;
+      CtkAlign xalign, yalign;
+      CtkWidget *eventbox2;
+      CtkWidget *preview;
       PangoFontDescription *font_desc;
       gchar *font_string;
       double scale;
@@ -756,15 +756,15 @@ init_layouts (void)
 }
 
 
-static GtkWidget*
+static CtkWidget*
 previews_of_button_layouts (void)
 {
   static gboolean initted = FALSE;
-  GtkWidget *box;
-  GtkWidget *sw;
+  CtkWidget *box;
+  CtkWidget *sw;
   GdkRGBA desktop_color;
   int i;
-  GtkWidget *eventbox;
+  CtkWidget *eventbox;
 
   if (!initted)
     {
@@ -796,8 +796,8 @@ previews_of_button_layouts (void)
   i = 0;
   while (i < BUTTON_LAYOUT_COMBINATIONS)
     {
-      GtkWidget *eventbox2;
-      GtkWidget *preview;
+      CtkWidget *eventbox2;
+      CtkWidget *preview;
       char *title;
 
       eventbox2 = ctk_event_box_new ();
@@ -827,11 +827,11 @@ previews_of_button_layouts (void)
   return sw;
 }
 
-static GtkWidget*
+static CtkWidget*
 benchmark_summary (void)
 {
   char *msg;
-  GtkWidget *label;
+  CtkWidget *label;
 
   msg = g_strdup_printf (_("%g milliseconds to draw one window frame"),
                          milliseconds_to_draw_frame);
@@ -844,13 +844,13 @@ benchmark_summary (void)
 int
 main (int argc, char **argv)
 {
-  GtkWidget *window;
-  GtkWidget *collection;
-  GtkStyleContext *style;
+  CtkWidget *window;
+  CtkWidget *collection;
+  CtkStyleContext *style;
   PangoFontDescription *font_desc;
   GError *err;
   clock_t start, end;
-  GtkWidget *notebook;
+  CtkWidget *notebook;
   int i;
 
   bindtextdomain (GETTEXT_PACKAGE, CROMA_LOCALEDIR);
@@ -976,7 +976,7 @@ main (int argc, char **argv)
 
 
 static MetaFrameFlags
-get_flags (GtkWidget *widget)
+get_flags (CtkWidget *widget)
 {
   return META_FRAME_ALLOWS_DELETE |
     META_FRAME_ALLOWS_MENU |
@@ -990,9 +990,9 @@ get_flags (GtkWidget *widget)
 }
 
 static int
-get_text_height (GtkWidget *widget)
+get_text_height (CtkWidget *widget)
 {
-  GtkStyleContext      *style;
+  CtkStyleContext      *style;
   PangoFontDescription *font_desc;
   int                   text_height;
 
@@ -1005,7 +1005,7 @@ get_text_height (GtkWidget *widget)
 }
 
 static PangoLayout*
-create_title_layout (GtkWidget *widget)
+create_title_layout (CtkWidget *widget)
 {
   PangoLayout *layout;
 
@@ -1017,7 +1017,7 @@ create_title_layout (GtkWidget *widget)
 static void
 run_theme_benchmark (void)
 {
-  GtkWidget* widget;
+  CtkWidget* widget;
   cairo_surface_t *pixmap;
   cairo_t *cr;
   MetaFrameBorders borders;

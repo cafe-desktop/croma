@@ -1749,9 +1749,9 @@ msgstr "ctk:custom的color_name参数中的字符'%c'无效，只有A-Za-z0-9-_�
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
+"Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
-msgstr "Gtk:custom格式为 \"ctk:custom(color_name,fallback)\", \"%s\" 不符合格式"
+msgstr "Ctk:custom格式为 \"ctk:custom(color_name,fallback)\", \"%s\" 不符合格式"
 
 #: src/ui/theme.c:1471
 #, c-format

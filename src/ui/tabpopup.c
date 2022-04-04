@@ -51,7 +51,7 @@ struct _TabEntry
   gint             grid_top;
   GdkPixbuf       *icon, *dimmed_icon;
   cairo_surface_t *win_surface;
-  GtkWidget       *widget;
+  CtkWidget       *widget;
   GdkRectangle     rect;
   GdkRectangle     inner_rect;
   guint blank : 1;
@@ -59,27 +59,27 @@ struct _TabEntry
 
 struct _MetaTabPopup
 {
-  GtkWidget *window;
-  GtkWidget *grid;
-  GtkWidget *label;
+  CtkWidget *window;
+  CtkWidget *grid;
+  CtkWidget *label;
   GList *current;
   GList *entries;
   TabEntry *current_selected_entry;
-  GtkWidget *outline_window;
+  CtkWidget *outline_window;
   gint border;
 };
 
-static GtkWidget* selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface);
-static void       select_image         (GtkWidget *widget);
-static void       unselect_image       (GtkWidget *widget);
+static CtkWidget* selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface);
+static void       select_image         (CtkWidget *widget);
+static void       unselect_image       (CtkWidget *widget);
 
-static GtkWidget* selectable_workspace_new (MetaWorkspace *workspace,
+static CtkWidget* selectable_workspace_new (MetaWorkspace *workspace,
                                                            int entry_count);
-static void       select_workspace         (GtkWidget *widget);
-static void       unselect_workspace       (GtkWidget *widget);
+static void       select_workspace         (CtkWidget *widget);
+static void       unselect_workspace       (CtkWidget *widget);
 
 static gboolean
-outline_window_draw (GtkWidget *widget,
+outline_window_draw (CtkWidget *widget,
                      cairo_t   *cr,
                      gpointer   data)
 {
@@ -119,7 +119,7 @@ outline_window_draw (GtkWidget *widget,
 }
 
 static void
-popup_window_screen_changed (GtkWidget *widget,
+popup_window_screen_changed (CtkWidget *widget,
                              GdkScreen *old_screen G_GNUC_UNUSED,
                              gpointer   data G_GNUC_UNUSED)
 {
@@ -243,16 +243,16 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
   MetaTabPopup *popup;
   int i, left, top;
   int height;
-  GtkWidget *grid;
-  GtkWidget *vbox;
+  CtkWidget *grid;
+  CtkWidget *vbox;
   GList *tmp;
-  GtkWidget *frame;
+  CtkWidget *frame;
   int max_label_width; /* the actual max width of the labels we create */
   AtkObject *obj;
   GdkScreen *screen;
   int scale;
 
-  GtkShadowType frame_shadow = GTK_SHADOW_OUT;
+  CtkShadowType frame_shadow = GTK_SHADOW_OUT;
 
   popup = g_new (MetaTabPopup, 1);
 
@@ -358,8 +358,8 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
 
       while (tmp && left < width)
         {
-          GtkWidget *image;
-          GtkRequisition req;
+          CtkWidget *image;
+          CtkRequisition req;
 
           TabEntry *te;
 
@@ -419,13 +419,13 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
       /* only one row partially filled with columns and additional_columns given
          => calculate default_window_width to fit max_label_width if possible */
 
-      GtkWidget **dummies = g_try_malloc (sizeof (GtkWidget*) * (width - left));
+      CtkWidget **dummies = g_try_malloc (sizeof (CtkWidget*) * (width - left));
       if (dummies)
         {
           int j;
           for (j = 0; j < width - left; ++j)
             {
-              GtkWidget *dummy = ctk_label_new ("");
+              CtkWidget *dummy = ctk_label_new ("");
               dummies[j] = dummy;
               ctk_grid_attach (GTK_GRID (grid), dummy, left + j, top, 1, 1);
             }
@@ -434,7 +434,7 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
           ctk_widget_set_halign (grid, GTK_ALIGN_CENTER);
           ctk_widget_show_all (grid); /* for ctk_widget_get_preferred_size */
 
-          GtkRequisition req;
+          CtkRequisition req;
           ctk_widget_get_preferred_size (grid, &req, NULL);
           default_window_width = req.width;
 
@@ -601,7 +601,7 @@ meta_ui_tab_popup_backward (MetaTabPopup *popup)
 
 static void
 display_widget (MetaTabPopup *popup,
-                GtkWidget    *w)
+                CtkWidget    *w)
 {
   if (w != NULL) 
     {
@@ -623,7 +623,7 @@ meta_ui_tab_popup_down (MetaTabPopup *popup)
   if (popup->current != NULL)
     {
       TabEntry *te = popup->current->data;
-      GtkWidget* w = ctk_grid_get_child_at (GTK_GRID(popup->grid), 
+      CtkWidget* w = ctk_grid_get_child_at (GTK_GRID(popup->grid), 
                                             te->grid_left,
                                             te->grid_top + 1);
       display_widget (popup, w);
@@ -636,7 +636,7 @@ meta_ui_tab_popup_up (MetaTabPopup *popup)
   if (popup->current != NULL)
     {
       TabEntry *te = popup->current->data;
-      GtkWidget* w = ctk_grid_get_child_at (GTK_GRID(popup->grid), 
+      CtkWidget* w = ctk_grid_get_child_at (GTK_GRID(popup->grid), 
                                             te->grid_left,
                                             te->grid_top - 1);
       display_widget (popup, w);
@@ -688,7 +688,7 @@ meta_ui_tab_popup_select (MetaTabPopup *popup,
     }
 }
 
-GtkWidget*
+CtkWidget*
 meta_ui_tab_popup_get_widget (MetaTabPopup *popup)
 {
   if (popup != NULL)
@@ -713,7 +713,7 @@ meta_ui_tab_popup_mouse_press (MetaTabPopup       *popup,
                                            x, y,
                                            &wx, &wy))
         {
-          GtkAllocation alloc;
+          CtkAllocation alloc;
           ctk_widget_get_allocation(te->widget, &alloc);
           found = (0 <= wx && wx < alloc.width &&
                    0 <= wy && wy < alloc.height);
@@ -736,22 +736,22 @@ typedef struct _MetaSelectImageClass  MetaSelectImageClass;
 
 struct _MetaSelectImage
 {
-  GtkImage parent_instance;
+  CtkImage parent_instance;
   guint selected : 1;
 };
 
 struct _MetaSelectImageClass
 {
-  GtkImageClass parent_class;
+  CtkImageClass parent_class;
 };
 
 
 static GType meta_select_image_get_type (void) G_GNUC_CONST;
 
-static GtkWidget*
+static CtkWidget*
 selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
 
   widget = g_object_new (meta_select_image_get_type (), NULL);
 
@@ -774,14 +774,14 @@ selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface)
 }
 
 static void
-select_image (GtkWidget *widget)
+select_image (CtkWidget *widget)
 {
   META_SELECT_IMAGE (widget)->selected = TRUE;
   ctk_widget_queue_draw (widget);
 }
 
 static void
-unselect_image (GtkWidget *widget)
+unselect_image (CtkWidget *widget)
 {
   META_SELECT_IMAGE (widget)->selected = FALSE;
   ctk_widget_queue_draw (widget);
@@ -790,10 +790,10 @@ unselect_image (GtkWidget *widget)
 static void     meta_select_image_class_init   (MetaSelectImageClass *klass,
                                                 void                 *data);
 
-static gboolean meta_select_image_draw         (GtkWidget            *widget,
+static gboolean meta_select_image_draw         (CtkWidget            *widget,
                                                 cairo_t              *cr);
 
-static GtkImageClass *parent_class;
+static CtkImageClass *parent_class;
 
 GType
 meta_select_image_get_type (void)
@@ -822,7 +822,7 @@ meta_select_image_get_type (void)
 }
 
 static void
-meta_select_image_get_preferred_width (GtkWidget *widget,
+meta_select_image_get_preferred_width (CtkWidget *widget,
                                        gint      *minimum_width,
                                        gint      *natural_width)
 {
@@ -835,7 +835,7 @@ meta_select_image_get_preferred_width (GtkWidget *widget,
 }
 
 static void
-meta_select_image_get_preferred_height (GtkWidget *widget,
+meta_select_image_get_preferred_height (CtkWidget *widget,
                                         gint      *minimum_height,
                                         gint      *natural_height)
 {
@@ -850,7 +850,7 @@ meta_select_image_get_preferred_height (GtkWidget *widget,
 static void
 meta_select_image_class_init (MetaSelectImageClass *klass, void *data)
 {
-  GtkWidgetClass *widget_class;
+  CtkWidgetClass *widget_class;
 
   parent_class = g_type_class_peek (ctk_image_get_type ());
 
@@ -862,16 +862,16 @@ meta_select_image_class_init (MetaSelectImageClass *klass, void *data)
 }
 
 static gboolean
-meta_select_image_draw (GtkWidget *widget,
+meta_select_image_draw (CtkWidget *widget,
                         cairo_t   *cr)
 {
-  GtkStyleContext *context;
+  CtkStyleContext *context;
 
   context = ctk_widget_get_style_context (widget);
 
   if (META_SELECT_IMAGE (widget)->selected)
     {
-      GtkRequisition requisition;
+      CtkRequisition requisition;
       GdkRGBA color;
       int x, y, w, h;
 
@@ -910,14 +910,14 @@ typedef struct _MetaSelectWorkspaceClass  MetaSelectWorkspaceClass;
 
 struct _MetaSelectWorkspace
 {
-  GtkDrawingArea parent_instance;
+  CtkDrawingArea parent_instance;
   MetaWorkspace *workspace;
   guint selected : 1;
 };
 
 struct _MetaSelectWorkspaceClass
 {
-  GtkDrawingAreaClass parent_class;
+  CtkDrawingAreaClass parent_class;
 };
 
 
@@ -926,10 +926,10 @@ static GType meta_select_workspace_get_type (void) G_GNUC_CONST;
 #define SELECT_OUTLINE_WIDTH 2
 #define MINI_WORKSPACE_SCREEN_FRACTION 0.33
 
-static GtkWidget*
+static CtkWidget*
 selectable_workspace_new (MetaWorkspace *workspace, int entry_count)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
   const MetaXineramaScreenInfo *current;
   int mini_workspace_width, mini_workspace_height;
   double mini_workspace_ratio;
@@ -962,14 +962,14 @@ selectable_workspace_new (MetaWorkspace *workspace, int entry_count)
 }
 
 static void
-select_workspace (GtkWidget *widget)
+select_workspace (CtkWidget *widget)
 {
   META_SELECT_WORKSPACE(widget)->selected = TRUE;
   ctk_widget_queue_draw (widget);
 }
 
 static void
-unselect_workspace (GtkWidget *widget)
+unselect_workspace (CtkWidget *widget)
 {
   META_SELECT_WORKSPACE (widget)->selected = FALSE;
   ctk_widget_queue_draw (widget);
@@ -978,7 +978,7 @@ unselect_workspace (GtkWidget *widget)
 static void meta_select_workspace_class_init (MetaSelectWorkspaceClass *klass,
                                               void                     *data);
 
-static gboolean meta_select_workspace_draw (GtkWidget *widget,
+static gboolean meta_select_workspace_draw (CtkWidget *widget,
                                             cairo_t   *cr);
 
 GType
@@ -1014,7 +1014,7 @@ static void
 meta_select_workspace_class_init (MetaSelectWorkspaceClass *klass,
                                   void                     *data)
 {
-  GtkWidgetClass *widget_class;
+  CtkWidgetClass *widget_class;
 
   widget_class = GTK_WIDGET_CLASS (klass);
 
@@ -1055,12 +1055,12 @@ meta_convert_meta_to_wnck (MetaWindow *window, MetaScreen *screen)
 }
 
 static gboolean
-meta_select_workspace_draw (GtkWidget *widget,
+meta_select_workspace_draw (CtkWidget *widget,
                             cairo_t   *cr)
 {
   MetaWorkspace *workspace;
   WnckWindowDisplayInfo *windows;
-  GtkAllocation allocation;
+  CtkAllocation allocation;
   int i, n_windows;
   GList *tmp, *list;
 
@@ -1118,7 +1118,7 @@ meta_select_workspace_draw (GtkWidget *widget,
 
   if (META_SELECT_WORKSPACE (widget)->selected)
     {
-      GtkStyleContext *context;
+      CtkStyleContext *context;
       GdkRGBA color;
 
       context = ctk_widget_get_style_context (widget);

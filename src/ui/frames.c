@@ -48,26 +48,26 @@ G_DEFINE_TYPE (MetaFrames, meta_frames, GTK_TYPE_WINDOW);
 
 static void meta_frames_class_init (MetaFramesClass *klass);
 static void meta_frames_init       (MetaFrames      *frames);
-static void meta_frames_destroy    (GtkWidget       *object);
+static void meta_frames_destroy    (CtkWidget       *object);
 static void meta_frames_finalize   (GObject         *object);
-static void meta_frames_style_updated  (GtkWidget   *widget);
+static void meta_frames_style_updated  (CtkWidget   *widget);
 
 static void meta_frames_update_prelit_control (MetaFrames      *frames,
                                                MetaUIFrame     *frame,
                                                MetaFrameControl control);
-static gboolean meta_frames_button_press_event    (GtkWidget           *widget,
+static gboolean meta_frames_button_press_event    (CtkWidget           *widget,
                                                    GdkEventButton      *event);
-static gboolean meta_frames_button_release_event  (GtkWidget           *widget,
+static gboolean meta_frames_button_release_event  (CtkWidget           *widget,
                                                    GdkEventButton      *event);
-static gboolean meta_frames_motion_notify_event   (GtkWidget           *widget,
+static gboolean meta_frames_motion_notify_event   (CtkWidget           *widget,
                                                    GdkEventMotion      *event);
-static gboolean meta_frames_destroy_event         (GtkWidget           *widget,
+static gboolean meta_frames_destroy_event         (CtkWidget           *widget,
                                                    GdkEventAny         *event);
-static gboolean meta_frames_draw                  (GtkWidget           *widget,
+static gboolean meta_frames_draw                  (CtkWidget           *widget,
                                                    cairo_t             *cr);
-static gboolean meta_frames_enter_notify_event    (GtkWidget           *widget,
+static gboolean meta_frames_enter_notify_event    (CtkWidget           *widget,
                                                    GdkEventCrossing    *event);
-static gboolean meta_frames_leave_notify_event    (GtkWidget           *widget,
+static gboolean meta_frames_leave_notify_event    (CtkWidget           *widget,
                                                    GdkEventCrossing    *event);
 
 static void meta_frames_attach_style (MetaFrames  *frames,
@@ -120,10 +120,10 @@ static void
 meta_frames_class_init (MetaFramesClass *class)
 {
   GObjectClass   *gobject_class;
-  GtkWidgetClass *widget_class;
+  CtkWidgetClass *widget_class;
 
   gobject_class = G_OBJECT_CLASS (class);
-  widget_class = (GtkWidgetClass*) class;
+  widget_class = (CtkWidgetClass*) class;
 
   gobject_class->constructor = meta_frames_constructor;
   gobject_class->finalize = meta_frames_finalize;
@@ -176,11 +176,11 @@ prefs_changed_callback (MetaPreference pref,
     }
 }
 
-static GtkStyleContext *
+static CtkStyleContext *
 create_style_context (MetaFrames  *frames,
                       const gchar *variant)
 {
-  GtkStyleContext *style;
+  CtkStyleContext *style;
   GdkScreen *screen;
   char *theme_name;
 
@@ -195,7 +195,7 @@ create_style_context (MetaFrames  *frames,
 
   if (theme_name && *theme_name)
     {
-      GtkCssProvider *provider;
+      CtkCssProvider *provider;
 
       provider = ctk_css_provider_get_named (theme_name, variant);
       ctk_style_context_add_provider (style,
@@ -209,11 +209,11 @@ create_style_context (MetaFrames  *frames,
   return style;
 }
 
-static GtkStyleContext *
+static CtkStyleContext *
 meta_frames_get_theme_variant (MetaFrames  *frames,
                                const gchar *variant)
 {
-  GtkStyleContext *style;
+  CtkStyleContext *style;
 
   style = g_hash_table_lookup (frames->style_variants, variant);
   if (style == NULL)
@@ -228,7 +228,7 @@ meta_frames_get_theme_variant (MetaFrames  *frames,
 static void
 update_style_contexts (MetaFrames *frames)
 {
-  GtkStyleContext *style;
+  CtkStyleContext *style;
   GList *variant_list, *variant;
 
   if (frames->normal_style)
@@ -275,7 +275,7 @@ listify_func (gpointer key, gpointer value, gpointer data)
 }
 
 static void
-meta_frames_destroy (GtkWidget *widget)
+meta_frames_destroy (CtkWidget *widget)
 {
   GSList *winlist;
   GSList *tmp;
@@ -478,7 +478,7 @@ reattach_style_func (gpointer key, gpointer value, gpointer data)
 }
 
 static void
-meta_frames_style_updated (GtkWidget *widget)
+meta_frames_style_updated (CtkWidget *widget)
 {
   MetaFrames *frames;
 
@@ -497,7 +497,7 @@ static void
 meta_frames_ensure_layout (MetaFrames  *frames,
                            MetaUIFrame *frame)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
   MetaFrameFlags flags;
   MetaFrameType type;
   MetaFrameStyle *style;
@@ -1604,7 +1604,7 @@ meta_frame_right_click_event(MetaUIFrame     *frame,
 }
 
 static gboolean
-meta_frames_button_press_event (GtkWidget      *widget,
+meta_frames_button_press_event (CtkWidget      *widget,
                                 GdkEventButton *event)
 {
   MetaUIFrame *frame;
@@ -1875,7 +1875,7 @@ meta_frames_notify_menu_hide (MetaFrames *frames)
 }
 
 static gboolean
-meta_frames_button_release_event    (GtkWidget           *widget,
+meta_frames_button_release_event    (CtkWidget           *widget,
                                      GdkEventButton      *event)
 {
   MetaUIFrame *frame;
@@ -2131,7 +2131,7 @@ meta_frames_update_prelit_control (MetaFrames      *frames,
 }
 
 static gboolean
-meta_frames_motion_notify_event     (GtkWidget           *widget,
+meta_frames_motion_notify_event     (CtkWidget           *widget,
                                      GdkEventMotion      *event)
 {
   MetaUIFrame *frame;
@@ -2246,7 +2246,7 @@ meta_frames_motion_notify_event     (GtkWidget           *widget,
 }
 
 static gboolean
-meta_frames_destroy_event           (GtkWidget           *widget,
+meta_frames_destroy_event           (CtkWidget           *widget,
                                      GdkEventAny         *event)
 {
   MetaUIFrame *frame;
@@ -2487,7 +2487,7 @@ find_frame_to_draw (MetaFrames *frames,
 }
 
 static gboolean
-meta_frames_draw (GtkWidget *widget,
+meta_frames_draw (CtkWidget *widget,
                   cairo_t   *cr)
 {
   MetaUIFrame *frame;
@@ -2691,7 +2691,7 @@ meta_frames_paint_to_drawable (MetaFrames   *frames,
 }
 
 static gboolean
-meta_frames_enter_notify_event      (GtkWidget           *widget,
+meta_frames_enter_notify_event      (CtkWidget           *widget,
                                      GdkEventCrossing    *event)
 {
   MetaUIFrame *frame;
@@ -2711,7 +2711,7 @@ meta_frames_enter_notify_event      (GtkWidget           *widget,
 }
 
 static gboolean
-meta_frames_leave_notify_event      (GtkWidget           *widget,
+meta_frames_leave_notify_event      (CtkWidget           *widget,
                                      GdkEventCrossing    *event)
 {
   MetaUIFrame *frame;

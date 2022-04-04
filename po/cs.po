@@ -1903,10 +1903,10 @@ msgstr ""
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
+"Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"Formát Gtk:custom je „ctk:custom(color_name,fallback)” avšak „%s” formátu "
+"Formát Ctk:custom je „ctk:custom(color_name,fallback)” avšak „%s” formátu "
 "neodpovídá"
 
 #: src/ui/theme.c:1471
