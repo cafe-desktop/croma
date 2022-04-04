@@ -1518,7 +1518,7 @@ get_possible_matches (MetaWindow *window)
 
   retval = NULL;
 
-  ignore_client_id = g_getenv ("MARCO_DEBUG_SM") != NULL;
+  ignore_client_id = g_getenv ("CROMA_DEBUG_SM") != NULL;
 
   tmp = window_info_list;
   while (tmp != NULL)

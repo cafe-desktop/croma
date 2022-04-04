@@ -2,10 +2,10 @@ icondir=$(pkgdatadir)/icons
 icon_DATA=croma-window-demo.png
 
 AM_CPPFLAGS =					\
-	@MARCO_WINDOW_DEMO_CFLAGS@		\
-	@MARCO_MESSAGE_CFLAGS@			\
-	-DMARCO_ICON_DIR=\"$(pkgdatadir)/icons\" \
-	-DMARCO_LOCALEDIR=\"$(prefix)/@DATADIRNAME@/locale\" \
+	@CROMA_WINDOW_DEMO_CFLAGS@		\
+	@CROMA_MESSAGE_CFLAGS@			\
+	-DCROMA_ICON_DIR=\"$(pkgdatadir)/icons\" \
+	-DCROMA_LOCALEDIR=\"$(prefix)/@DATADIRNAME@/locale\" \
 	$(WARN_CFLAGS)
 
 croma_message_SOURCES= 				\
@@ -16,8 +16,8 @@ croma_window_demo_SOURCES=				\
 
 bin_PROGRAMS=croma-message croma-window-demo
 
-croma_message_LDADD= @MARCO_MESSAGE_LIBS@
-croma_window_demo_LDADD= @MARCO_WINDOW_DEMO_LIBS@
+croma_message_LDADD= @CROMA_MESSAGE_LIBS@
+croma_window_demo_LDADD= @CROMA_WINDOW_DEMO_LIBS@
 
 EXTRA_DIST= \
 	meson.build \

@@ -3,7 +3,7 @@ Croma [![Build Status](https://travis-ci.org/mate-desktop/croma.svg?branch=maste
 
 MATE Croma is a fork of GNOME Metacity.
 
-COMPILING MARCO
+COMPILING CROMA
 ===
 
 You need GTK+ 3.14.  For startup notification to work you need
@@ -28,7 +28,7 @@ pretty easy.  Send me mail, or put the patch in bugzilla.
 
 See the HACKING file for some notes on hacking Croma.
 
-SHRINKING MARCO
+SHRINKING CROMA
 ===
 
 Not that croma is huge, but a substantial amount of code is in
@@ -60,7 +60,7 @@ implementing:
    configure script feature to build GTK with only a small core set of
    functionality.
 
-MARCO FEATURES
+CROMA FEATURES
 ===
 
  - Boring window manager for the adult in you. Many window managers
@@ -221,7 +221,7 @@ You might be interested in existing accessories such as "Devil's Pie"
 by Ross Burton, which add features to Croma (or other
 EWMH-compliant WMs).
 
-MARCO BUGS, NON-FEATURES, AND CAVEATS
+CROMA BUGS, NON-FEATURES, AND CAVEATS
 ===
 
 See github: https://github.com/mate-desktop/croma/issues

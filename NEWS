@@ -37,7 +37,7 @@
   * tabpopup: Make workspaces compatible with OSD popup
   * tabpopup: Render window thumbnail as cairo surface
   * tabpopup: Draw transparent OSD-style popups
-  * Fix MARCO_LOCALEDIR displaying the translated messages
+  * Fix CROMA_LOCALEDIR displaying the translated messages
   * WinMe theme: strip png images of all profiles and comments
   * eOS theme: Add single button backgrounds
   * eOS theme: strip png images of all profiles and comments

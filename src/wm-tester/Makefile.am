@@ -1,6 +1,6 @@
 
 AM_CPPFLAGS = \
-	@MARCO_CFLAGS@ \
+	@CROMA_CFLAGS@ \
 	$(WARN_CFLAGS)
 
 wm_tester_SOURCES= 				\
@@ -20,11 +20,11 @@ test_size_hints_SOURCES=			\
 
 noinst_PROGRAMS=wm-tester test-gravity test-resizing focus-window test-size-hints
 
-wm_tester_LDADD= @MARCO_LIBS@
-test_gravity_LDADD= @MARCO_LIBS@
-test_resizing_LDADD= @MARCO_LIBS@
-test_size_hints_LDADD= @MARCO_LIBS@
-focus_window_LDADD= @MARCO_LIBS@
+wm_tester_LDADD= @CROMA_LIBS@
+test_gravity_LDADD= @CROMA_LIBS@
+test_resizing_LDADD= @CROMA_LIBS@
+test_size_hints_LDADD= @CROMA_LIBS@
+focus_window_LDADD= @CROMA_LIBS@
 
 EXTRA_DIST= \
 	meson.build

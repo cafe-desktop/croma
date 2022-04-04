@@ -294,9 +294,9 @@ if build_xsync
   croma_deps += [libxext]
 endif
 
-config_h.set_quoted('MARCO_LOCALEDIR', localdir)
+config_h.set_quoted('CROMA_LOCALEDIR', localdir)
 config_h.set_quoted('LIBDIR', libdir)
-config_h.set_quoted('MARCO_DATADIR', datadir)
+config_h.set_quoted('CROMA_DATADIR', datadir)
 
 configure_file(
   output: 'config.h',

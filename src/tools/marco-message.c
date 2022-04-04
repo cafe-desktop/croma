@@ -41,7 +41,7 @@ send_restart (void)
   xev.xclient.display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
   xev.xclient.window = gdk_x11_get_default_root_xwindow ();
   xev.xclient.message_type = XInternAtom (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
-                                          "_MARCO_RESTART_MESSAGE",
+                                          "_CROMA_RESTART_MESSAGE",
                                           False);
   xev.xclient.format = 32;
   xev.xclient.data.l[0] = 0;
@@ -69,7 +69,7 @@ send_reload_theme (void)
   xev.xclient.display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
   xev.xclient.window = gdk_x11_get_default_root_xwindow ();
   xev.xclient.message_type = XInternAtom (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
-                                          "_MARCO_RELOAD_THEME_MESSAGE",
+                                          "_CROMA_RELOAD_THEME_MESSAGE",
                                           False);
   xev.xclient.format = 32;
   xev.xclient.data.l[0] = 0;
@@ -97,7 +97,7 @@ send_set_keybindings (gboolean enabled)
   xev.xclient.display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
   xev.xclient.window = gdk_x11_get_default_root_xwindow ();
   xev.xclient.message_type = XInternAtom (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
-                                          "_MARCO_SET_KEYBINDINGS_MESSAGE",
+                                          "_CROMA_SET_KEYBINDINGS_MESSAGE",
                                           False);
   xev.xclient.format = 32;
   xev.xclient.data.l[0] = enabled;
@@ -126,7 +126,7 @@ send_toggle_verbose (void)
   xev.xclient.display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
   xev.xclient.window = gdk_x11_get_default_root_xwindow ();
   xev.xclient.message_type = XInternAtom (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
-                                          "_MARCO_TOGGLE_VERBOSE",
+                                          "_CROMA_TOGGLE_VERBOSE",
                                           False);
   xev.xclient.format = 32;
   xev.xclient.data.l[0] = 0;

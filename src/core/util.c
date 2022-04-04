@@ -79,7 +79,7 @@ static FILE* logfile = NULL;
 static void
 ensure_logfile (void)
 {
-  if (logfile == NULL && g_getenv ("MARCO_USE_LOGFILE"))
+  if (logfile == NULL && g_getenv ("CROMA_USE_LOGFILE"))
     {
       char *filename = NULL;
       char *tmpl;

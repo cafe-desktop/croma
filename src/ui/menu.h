@@ -26,10 +26,10 @@
 #include "frames.h"
 
 /* Stock icons */
-#define MARCO_STOCK_DELETE   "window-close"
-#define MARCO_STOCK_RESTORE  "view-restore"
-#define MARCO_STOCK_MINIMIZE "go-down"
-#define MARCO_STOCK_MAXIMIZE "view-fullscreen"
+#define CROMA_STOCK_DELETE   "window-close"
+#define CROMA_STOCK_RESTORE  "view-restore"
+#define CROMA_STOCK_MINIMIZE "go-down"
+#define CROMA_STOCK_MAXIMIZE "view-fullscreen"
 
 
 

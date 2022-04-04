@@ -4,14 +4,14 @@ SUBDIRS=wm-tester tools themes
 
 AM_CPPFLAGS = \
 	-I$(srcdir)/include \
-	-DMARCO_LIBEXECDIR=\"$(libexecdir)\" \
+	-DCROMA_LIBEXECDIR=\"$(libexecdir)\" \
 	-DHOST_ALIAS=\"@HOST_ALIAS@\" \
-	-DMARCO_LOCALEDIR=\""$(datadir)/locale"\" \
-	-DMARCO_PKGDATADIR=\"$(pkgdatadir)\" \
-	-DMARCO_DATADIR=\"$(datadir)\" \
+	-DCROMA_LOCALEDIR=\""$(datadir)/locale"\" \
+	-DCROMA_PKGDATADIR=\"$(pkgdatadir)\" \
+	-DCROMA_DATADIR=\"$(datadir)\" \
 	-DG_LOG_DOMAIN=\"croma\" \
 	-DSN_API_NOT_YET_FROZEN=1 \
-	@MARCO_CFLAGS@ \
+	@CROMA_CFLAGS@ \
 	$(WARN_CFLAGS)
 
 croma_SOURCES= 				\
@@ -118,7 +118,7 @@ libcroma_private_la_SOURCES=			\
 	include/all-keybindings.h
 
 libcroma_private_la_LDFLAGS = -no-undefined -version-info $(LT_VERSION_INFO)
-libcroma_private_la_LIBADD = @MARCO_LIBS@
+libcroma_private_la_LIBADD = @CROMA_LIBS@
 
 libcromaincludedir = $(includedir)/croma-1/croma-private
 
@@ -136,8 +136,8 @@ croma_theme_viewer_SOURCES= \
 
 bin_PROGRAMS=croma croma-theme-viewer
 
-croma_LDADD=@MARCO_LIBS@ libcroma-private.la
-croma_theme_viewer_LDADD= @MARCO_LIBS@ libcroma-private.la
+croma_LDADD=@CROMA_LIBS@ libcroma-private.la
+croma_theme_viewer_LDADD= @CROMA_LIBS@ libcroma-private.la
 
 testboxes_SOURCES=include/util.h core/util.c include/boxes.h core/boxes.c core/testboxes.c
 testgradient_SOURCES=ui/gradient.h ui/gradient.c ui/testgradient.c
@@ -145,9 +145,9 @@ testasyncgetprop_SOURCES=core/async-getprop.h core/async-getprop.c core/testasyn
 
 noinst_PROGRAMS=testboxes testgradient testasyncgetprop
 
-testboxes_LDADD= @MARCO_LIBS@
-testgradient_LDADD= @MARCO_LIBS@
-testasyncgetprop_LDADD= @MARCO_LIBS@
+testboxes_LDADD= @CROMA_LIBS@
+testgradient_LDADD= @CROMA_LIBS@
+testasyncgetprop_LDADD= @CROMA_LIBS@
 
 %.desktop: %.desktop.in
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@

@@ -1386,7 +1386,7 @@ meta_color_spec_new_from_string (const char *str,
 
       if (!debug_set)
         {
-          debug = g_getenv ("MARCO_DISABLE_FALLBACK_COLOR") != NULL;
+          debug = g_getenv ("CROMA_DISABLE_FALLBACK_COLOR") != NULL;
           debug_set = TRUE;
         }
 

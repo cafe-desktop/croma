@@ -1,4 +1,4 @@
-cargs = ['-DMARCO_ICON_DIR="croma"']
+cargs = ['-DCROMA_ICON_DIR="croma"']
 
 install_data('croma-window-demo.png',
   install_dir: join_paths(pkgdatadir, 'icons')

@@ -91,7 +91,7 @@
 ========== bn.po ==========
 # Bengali Translation for Croma 2.4
 # Copyright (C) 2003 Free Software Foundation
-# This file is distributed under the same license as the MARCO package.
+# This file is distributed under the same license as the CROMA package.
 # Dr Anirban Mitra <mitra_anirban@yahoo.co.in>, 2003.
 # Mahay Alam Khan <makl10n@yahoo.com>, 2005.
 # Samia Niamatullah <mailsamia2001@yahoo.com>, 2005.
@@ -106,7 +106,7 @@
 # translation of bn_IN.po to Bengali INDIA
 # Bengali India Translation for Croma 2.4
 # Copyright (C) 2003 Free Software Foundation
-# This file is distributed under the same license as the MARCO package.
+# This file is distributed under the same license as the CROMA package.
 #
 # Dr Anirban Mitra <mitra_anirban@yahoo.co.in>, 2003.
 # Mahay Alam Khan <makl10n@yahoo.com>, 2005.
@@ -641,9 +641,9 @@
 
 
 ========== mg.po ==========
-# translation of MARCO.
-# Copyright (C) 2006 THE MARCO'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the MARCO package.
+# translation of CROMA.
+# Copyright (C) 2006 THE CROMA'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the CROMA package.
 # Fano Rajaonarisoa <rajfanhar@yahoo.fr>, 2006.
 # Thierry Randrianiriana <randrianiriana@gmail.com>, 2006.
 # 

@@ -343,7 +343,7 @@ meta_parse_options (int *argc, char ***argv,
 /**
  * Selects which display Croma should use. It first tries to use
  * display_name as the display. If display_name is NULL then
- * try to use the environment variable MARCO_DISPLAY. If that
+ * try to use the environment variable CROMA_DISPLAY. If that
  * also is NULL, use the default - :0.0
  */
 static void
@@ -352,9 +352,9 @@ meta_select_display (gchar *display_name)
   gchar *envVar = "";
   if (display_name)
     envVar = g_strconcat ("DISPLAY=", display_name, NULL);
-  else if (g_getenv ("MARCO_DISPLAY"))
+  else if (g_getenv ("CROMA_DISPLAY"))
     envVar = g_strconcat ("DISPLAY=",
-      g_getenv ("MARCO_DISPLAY"), NULL);
+      g_getenv ("CROMA_DISPLAY"), NULL);
   /* DO NOT FREE envVar, putenv() sucks */
   putenv (envVar);
 }
@@ -449,9 +449,9 @@ main (int argc, char **argv)
     g_printerr ("Failed to register SIGTERM handler: %s\n",
 		g_strerror (errno));
 
-  if (g_getenv ("MARCO_VERBOSE"))
+  if (g_getenv ("CROMA_VERBOSE"))
     meta_set_verbose (TRUE);
-  if (g_getenv ("MARCO_DEBUG"))
+  if (g_getenv ("CROMA_DEBUG"))
     meta_set_debugging (TRUE);
 
   if (g_get_home_dir ())
@@ -461,14 +461,14 @@ main (int argc, char **argv)
 
   meta_print_self_identity ();
 
-  bindtextdomain (GETTEXT_PACKAGE, MARCO_LOCALEDIR);
+  bindtextdomain (GETTEXT_PACKAGE, CROMA_LOCALEDIR);
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
 
   /* Parse command line arguments.*/
   meta_parse_options (&argc, &argv, &meta_args);
 
-  meta_set_syncing (meta_args.sync || (g_getenv ("MARCO_SYNC") != NULL));
+  meta_set_syncing (meta_args.sync || (g_getenv ("CROMA_SYNC") != NULL));
 
   if (meta_args.print_version)
     version ();
@@ -499,7 +499,7 @@ main (int argc, char **argv)
 
 #endif
 
-  if (g_getenv ("MARCO_G_FATAL_WARNINGS") != NULL)
+  if (g_getenv ("CROMA_G_FATAL_WARNINGS") != NULL)
     g_log_set_always_fatal (G_LOG_LEVEL_MASK);
 
   meta_ui_set_current_theme (meta_prefs_get_theme (), FALSE);
@@ -517,7 +517,7 @@ main (int argc, char **argv)
       GError *err = NULL;
       GDir   *themes_dir = NULL;
 
-      if (!(themes_dir = g_dir_open (MARCO_DATADIR"/themes", 0, &err)))
+      if (!(themes_dir = g_dir_open (CROMA_DATADIR"/themes", 0, &err)))
         {
           meta_fatal (_("Failed to scan themes directory: %s\n"), err->message);
           g_error_free (err);
@@ -536,7 +536,7 @@ main (int argc, char **argv)
 
   if (!meta_ui_have_a_theme ())
     meta_fatal (_("Could not find a theme! Be sure %s exists and contains the usual themes.\n"),
-                MARCO_DATADIR"/themes");
+                CROMA_DATADIR"/themes");
 
   /* Connect to SM as late as possible - but before managing display,
    * or we might try to manage a window before we have the session
@@ -626,7 +626,7 @@ meta_quit (MetaExitCode code)
  * Restarts Croma. In practice, this tells the event loop to stop
  * processing, having first set the meta_restart_after_quit flag which
  * tells Croma to spawn an identical copy of itself before quitting.
- * This happens on receipt of a _MARCO_RESTART_MESSAGE client event.
+ * This happens on receipt of a _CROMA_RESTART_MESSAGE client event.
  */
 void
 meta_restart (void)

@@ -62,11 +62,11 @@ static void activate_cb(GtkWidget* menuitem, gpointer data);
 
 static MenuItem menuitems[] = {
 	/* Translators: Translate this string the same way as you do in libwnck! */
-	{META_MENU_OP_MINIMIZE, MENU_ITEM_IMAGE, MARCO_STOCK_MINIMIZE, FALSE, N_("Mi_nimize")},
+	{META_MENU_OP_MINIMIZE, MENU_ITEM_IMAGE, CROMA_STOCK_MINIMIZE, FALSE, N_("Mi_nimize")},
 	/* Translators: Translate this string the same way as you do in libwnck! */
-	{META_MENU_OP_MAXIMIZE, MENU_ITEM_IMAGE, MARCO_STOCK_MAXIMIZE, FALSE, N_("Ma_ximize")},
+	{META_MENU_OP_MAXIMIZE, MENU_ITEM_IMAGE, CROMA_STOCK_MAXIMIZE, FALSE, N_("Ma_ximize")},
 	/* Translators: Translate this string the same way as you do in libwnck! */
-	{META_MENU_OP_UNMAXIMIZE, MENU_ITEM_IMAGE, MARCO_STOCK_RESTORE, FALSE, N_("Unma_ximize")},
+	{META_MENU_OP_UNMAXIMIZE, MENU_ITEM_IMAGE, CROMA_STOCK_RESTORE, FALSE, N_("Unma_ximize")},
 	/* Translators: Translate this string the same way as you do in libwnck! */
 	{META_MENU_OP_SHADE, MENU_ITEM_NORMAL, NULL, FALSE, N_("Roll _Up")},
 	/* Translators: Translate this string the same way as you do in libwnck! */
@@ -97,7 +97,7 @@ static MenuItem menuitems[] = {
 	{0, MENU_ITEM_WORKSPACE_LIST, NULL, FALSE, NULL},
 	{0, MENU_ITEM_SEPARATOR, NULL, FALSE, NULL}, /* separator */
 	/* Translators: Translate this string the same way as you do in libwnck! */
-	{META_MENU_OP_DELETE, MENU_ITEM_IMAGE, MARCO_STOCK_DELETE, FALSE, N_("_Close")}
+	{META_MENU_OP_DELETE, MENU_ITEM_IMAGE, CROMA_STOCK_DELETE, FALSE, N_("_Close")}
 };
 
 static void popup_position_func(GtkMenu* menu, gint* x, gint* y, gboolean* push_in, gpointer user_data)

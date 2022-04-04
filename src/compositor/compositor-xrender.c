@@ -2752,8 +2752,8 @@ process_generic(MetaCompositorXRender   *compositor,
 static int
 timeout_debug (MetaCompositorXRender *compositor)
 {
-  compositor->show_redraw = (g_getenv ("MARCO_DEBUG_REDRAWS") != NULL);
-  compositor->debug = (g_getenv ("MARCO_DEBUG_COMPOSITOR") != NULL);
+  compositor->show_redraw = (g_getenv ("CROMA_DEBUG_REDRAWS") != NULL);
+  compositor->debug = (g_getenv ("CROMA_DEBUG_COMPOSITOR") != NULL);
 
   return FALSE;
 }

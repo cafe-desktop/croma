@@ -853,13 +853,13 @@ main (int argc, char **argv)
   GtkWidget *notebook;
   int i;
 
-  bindtextdomain (GETTEXT_PACKAGE, MARCO_LOCALEDIR);
+  bindtextdomain (GETTEXT_PACKAGE, CROMA_LOCALEDIR);
   textdomain(GETTEXT_PACKAGE);
   bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
 
   gtk_init (&argc, &argv);
 
-  if (g_getenv ("MARCO_DEBUG") != NULL)
+  if (g_getenv ("CROMA_DEBUG") != NULL)
     {
       meta_set_debugging (TRUE);
       meta_set_verbose (TRUE);

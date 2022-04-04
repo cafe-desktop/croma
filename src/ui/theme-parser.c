@@ -41,7 +41,7 @@
 #define THEME_MINOR_VERSION 5
 #define THEME_VERSION (1000 * THEME_MAJOR_VERSION + THEME_MINOR_VERSION)
 
-#define MARCO_THEME_FILENAME_FORMAT "metacity-theme-%d.xml"
+#define CROMA_THEME_FILENAME_FORMAT "metacity-theme-%d.xml"
 
 typedef enum
 {
@@ -4278,7 +4278,7 @@ load_theme (const char *theme_dir,
   retval = NULL;
   context = NULL;
 
-  theme_filename = g_strdup_printf (MARCO_THEME_FILENAME_FORMAT, major_version);
+  theme_filename = g_strdup_printf (CROMA_THEME_FILENAME_FORMAT, major_version);
   theme_file = g_build_filename (theme_dir, theme_filename, NULL);
 
   if (!g_file_get_contents (theme_file, &text, &length, error))
@@ -4407,8 +4407,8 @@ meta_theme_load (const char  *theme_name,
           if (!keep_trying (&error))
             goto out;
         }
-      /* Look for themes in MARCO_DATADIR */
-      theme_dir = g_build_filename (MARCO_DATADIR,
+      /* Look for themes in CROMA_DATADIR */
+      theme_dir = g_build_filename (CROMA_DATADIR,
                                     "themes",
                                     theme_name,
                                     THEME_SUBDIR,

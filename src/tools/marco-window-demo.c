@@ -224,7 +224,7 @@ main (int argc, char **argv)
   gtk_init (&argc, &argv);
 
   err = NULL;
-  pixbuf = gdk_pixbuf_new_from_file (MARCO_ICON_DIR"/croma-window-demo.png",
+  pixbuf = gdk_pixbuf_new_from_file (CROMA_ICON_DIR"/croma-window-demo.png",
                                      &err);
   if (pixbuf)
     {

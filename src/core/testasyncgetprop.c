@@ -277,7 +277,7 @@ main (int argc, char **argv)
       return 1;
     }
 
-  if (getenv ("MARCO_SYNC") != NULL)
+  if (getenv ("CROMA_SYNC") != NULL)
     XSynchronize (xdisplay, True);
 
   XSetErrorHandler (x_error_handler);

@@ -58,7 +58,7 @@ AC_C_BIGENDIAN
 GIO_MIN_VERSION=2.25.10
 GTK_MIN_VERSION=3.22.0
 
-MARCO_PC_MODULES="gtk+-3.0 >= $GTK_MIN_VERSION gio-2.0 >= $GIO_MIN_VERSION pango >= 1.2.0 libcanberra-gtk3"
+CROMA_PC_MODULES="gtk+-3.0 >= $GTK_MIN_VERSION gio-2.0 >= $GIO_MIN_VERSION pango >= 1.2.0 libcanberra-gtk3"
 
 GLIB_GSETTINGS
 
@@ -105,8 +105,8 @@ AC_ARG_ENABLE(shape,
 AC_CHECK_HEADERS(execinfo.h, [AC_CHECK_FUNCS(backtrace)])
 
 PKG_CHECK_MODULES(ALL, glib-2.0 >= 2.58.0)
-PKG_CHECK_MODULES(MARCO_MESSAGE, gtk+-3.0 >= $GTK_MIN_VERSION)
-PKG_CHECK_MODULES(MARCO_WINDOW_DEMO, gtk+-3.0 >= $GTK_MIN_VERSION)
+PKG_CHECK_MODULES(CROMA_MESSAGE, gtk+-3.0 >= $GTK_MIN_VERSION)
+PKG_CHECK_MODULES(CROMA_WINDOW_DEMO, gtk+-3.0 >= $GTK_MIN_VERSION)
 
 # Unconditionally use this dir to avoid a circular dep with matecc
 MATE_KEYBINDINGS_KEYSDIR="${datadir}/mate-control-center/keybindings"
@@ -132,7 +132,7 @@ fi
 
 if test x$have_startup_notification = xyes; then
   echo "Building with libstartup-notification"
-  MARCO_PC_MODULES="$MARCO_PC_MODULES libstartup-notification-1.0 >= $STARTUP_NOTIFICATION_VERSION"
+  CROMA_PC_MODULES="$CROMA_PC_MODULES libstartup-notification-1.0 >= $STARTUP_NOTIFICATION_VERSION"
   AC_DEFINE(HAVE_STARTUP_NOTIFICATION, , [Building with startup notification support])
 else
   echo "Building without libstartup-notification"
@@ -162,7 +162,7 @@ if test x$have_xcomposite = xyes; then
 fi
 
 if test x$have_xcomposite = xyes; then
-  MARCO_PC_MODULES="$MARCO_PC_MODULES xcomposite >= $XCOMPOSITE_VERSION xfixes xrender xdamage"
+  CROMA_PC_MODULES="$CROMA_PC_MODULES xcomposite >= $XCOMPOSITE_VERSION xfixes xrender xdamage"
   AC_DEFINE(HAVE_COMPOSITE_EXTENSIONS, 1, [Building with compositing manager support])
   echo "Building with compositing manager"
 
@@ -194,7 +194,7 @@ if test x$have_xcomposite = xno; then
 
   if test x$have_xrender = xyes; then
      echo "Building with Render"
-     MARCO_PC_MODULES="$MARCO_PC_MODULES xrender >= $XRENDER_VERSION"
+     CROMA_PC_MODULES="$CROMA_PC_MODULES xrender >= $XRENDER_VERSION"
   fi
 fi ## have_composite
 
@@ -212,7 +212,7 @@ if $PKG_CONFIG xcursor; then
 
 if test x$have_xcursor = xyes; then
   echo "Building with Xcursor"
-  MARCO_PC_MODULES="$MARCO_PC_MODULES xcursor"
+  CROMA_PC_MODULES="$CROMA_PC_MODULES xcursor"
   AC_DEFINE(HAVE_XCURSOR, , [Building with Xcursor support])
 fi
 
@@ -226,11 +226,11 @@ if $PKG_CONFIG libgtop-2.0; then
 
 if test x$have_gtop = xyes; then
   echo "Building with libgtop"
-  MARCO_PC_MODULES="$MARCO_PC_MODULES libgtop-2.0"
+  CROMA_PC_MODULES="$CROMA_PC_MODULES libgtop-2.0"
   AC_DEFINE(HAVE_GTOP, , [Building with libgtop])
 fi
 
-PKG_CHECK_MODULES(MARCO, $MARCO_PC_MODULES)
+PKG_CHECK_MODULES(CROMA, $CROMA_PC_MODULES)
 
 AC_PATH_XTRA
 
@@ -371,21 +371,21 @@ if test "x$found_xpresent" = "xyes"; then
    AC_DEFINE(HAVE_PRESENT, , [Have the Xpresent extension library])
 fi
 
-MARCO_LIBS="$MARCO_LIBS $XSYNC_LIBS $RANDR_LIBS $SHAPE_LIBS $XPRESENT_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS -lm"
-MARCO_MESSAGE_LIBS="$MARCO_MESSAGE_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
-MARCO_WINDOW_DEMO_LIBS="$MARCO_WINDOW_DEMO_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
-MARCO_PROPS_LIBS="$MARCO_PROPS_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
+CROMA_LIBS="$CROMA_LIBS $XSYNC_LIBS $RANDR_LIBS $SHAPE_LIBS $XPRESENT_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS -lm"
+CROMA_MESSAGE_LIBS="$CROMA_MESSAGE_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
+CROMA_WINDOW_DEMO_LIBS="$CROMA_WINDOW_DEMO_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
+CROMA_PROPS_LIBS="$CROMA_PROPS_LIBS $X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
 
 found_sm=no
-case "$MARCO_LIBS" in
+case "$CROMA_LIBS" in
  *-lSM*)
     found_sm=yes
     ;;
  *)
   AC_CHECK_LIB(SM, SmcSaveYourselfDone,
                [AC_CHECK_HEADERS(X11/SM/SMlib.h,
-                                MARCO_LIBS="-lSM -lICE $MARCO_LIBS" found_sm=yes)],
-               , $MARCO_LIBS)
+                                CROMA_LIBS="-lSM -lICE $CROMA_LIBS" found_sm=yes)],
+               , $CROMA_LIBS)
     ;;
 esac
 

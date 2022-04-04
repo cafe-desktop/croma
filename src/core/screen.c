@@ -289,7 +289,7 @@ reload_xinerama_infos (MetaScreen *screen)
    */
   if (screen->n_xinerama_infos == 0)
     {
-      if (g_getenv ("MARCO_DEBUG_XINERAMA"))
+      if (g_getenv ("CROMA_DEBUG_XINERAMA"))
         {
           meta_topic (META_DEBUG_XINERAMA,
                       "Pretending a single monitor has two Xinerama screens\n");
