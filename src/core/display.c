@@ -84,7 +84,7 @@
 	#include <ctk/ctk.h>
 #endif
 
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 
 #include <string.h>
 
@@ -657,7 +657,7 @@ meta_display_open (void)
     XEvent event;
 
     /* We only care about the PropertyChangeMask in the next 30 or so lines of
-     * code.  Note that gdk will at some point unset the PropertyChangeMask for
+     * code.  Note that cdk will at some point unset the PropertyChangeMask for
      * this window, so we can't rely on it still being set later.  See bug
      * 354213 for details.
      */
@@ -1436,9 +1436,9 @@ handle_net_restack_window (MetaDisplay* display,
 static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 {
 	/* We're always using the default display */
-	GdkDisplay* gdk_display = gdk_display_get_default();
-	GdkEvent* gdk_event = NULL;
-	GdkWindow* gdk_window;
+	GdkDisplay* cdk_display = cdk_display_get_default();
+	GdkEvent* cdk_event = NULL;
+	GdkWindow* cdk_window;
 	Window window;
 	GdkSeat *seat;
 	GdkDevice *device;
@@ -1464,9 +1464,9 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 			return FALSE;
 	}
 
-	gdk_window = gdk_x11_window_lookup_for_display(gdk_display, window);
+	cdk_window = cdk_x11_window_lookup_for_display(cdk_display, window);
 
-	if (gdk_window == NULL)
+	if (cdk_window == NULL)
 	{
 		return FALSE;
 	}
@@ -1476,16 +1476,16 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 	 * (client-side) subwindow for individual menu items.
 	 */
 
-	gdk_display = gdk_window_get_display (gdk_window);
-	seat = gdk_display_get_default_seat (gdk_display);
-	device = gdk_seat_get_pointer (seat);
+	cdk_display = cdk_window_get_display (cdk_window);
+	seat = cdk_display_get_default_seat (cdk_display);
+	device = cdk_seat_get_pointer (seat);
 
-	if (gdk_display_device_is_grabbed(gdk_display, device))
+	if (cdk_display_device_is_grabbed(cdk_display, device))
 	{
 		return FALSE;
 	}
 
-	if (gdk_display_device_is_grabbed(gdk_display, device))
+	if (cdk_display_device_is_grabbed(cdk_display, device))
 	{
 		return FALSE;
 	}
@@ -1515,12 +1515,12 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 					ABS(xevent->xbutton.x - display->button_click_x) <= double_click_distance &&
 					ABS (xevent->xbutton.y - display->button_click_y) <= double_click_distance)
 				{
-					gdk_event = gdk_event_new(GDK_2BUTTON_PRESS);
+					cdk_event = cdk_event_new(GDK_2BUTTON_PRESS);
 					display->button_click_number = 0;
 				}
 				else
 				{
-					gdk_event = gdk_event_new(GDK_BUTTON_PRESS);
+					cdk_event = cdk_event_new(GDK_BUTTON_PRESS);
 					display->button_click_number = xevent->xbutton.button;
 					display->button_click_window = xevent->xbutton.window;
 					display->button_click_time = xevent->xbutton.time;
@@ -1530,54 +1530,54 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 			}
 			else
 			{
-				gdk_event = gdk_event_new(GDK_BUTTON_RELEASE);
+				cdk_event = cdk_event_new(GDK_BUTTON_RELEASE);
 			}
 
-			gdk_event->button.window = g_object_ref(gdk_window);
-			gdk_event->button.send_event = 0;
-			gdk_event->button.axes = NULL;
-			gdk_event->button.state = 0;
-			gdk_event->button.device = NULL;
-			gdk_event->button.button = xevent->xbutton.button;
-			gdk_event->button.time = xevent->xbutton.time;
-			gdk_event->button.x = xevent->xbutton.x;
-			gdk_event->button.y = xevent->xbutton.y;
-			gdk_event->button.x_root = xevent->xbutton.x_root;
-			gdk_event->button.y_root = xevent->xbutton.y_root;
+			cdk_event->button.window = g_object_ref(cdk_window);
+			cdk_event->button.send_event = 0;
+			cdk_event->button.axes = NULL;
+			cdk_event->button.state = 0;
+			cdk_event->button.device = NULL;
+			cdk_event->button.button = xevent->xbutton.button;
+			cdk_event->button.time = xevent->xbutton.time;
+			cdk_event->button.x = xevent->xbutton.x;
+			cdk_event->button.y = xevent->xbutton.y;
+			cdk_event->button.x_root = xevent->xbutton.x_root;
+			cdk_event->button.y_root = xevent->xbutton.y_root;
 
 			break;
 
 		case MotionNotify:
-			gdk_event = gdk_event_new(GDK_MOTION_NOTIFY);
-			gdk_event->motion.window = g_object_ref(gdk_window);
-			gdk_event->motion.send_event = FALSE;
-			gdk_event->motion.time = 0;
-			gdk_event->motion.x = 0;
-			gdk_event->motion.y = 0;
-			gdk_event->motion.axes = NULL;
-			gdk_event->motion.state = 0;
-			gdk_event->motion.is_hint = 0;
-			gdk_event->motion.device = NULL;
-			gdk_event->motion.x_root = 0;
-			gdk_event->motion.y_root = 0;
+			cdk_event = cdk_event_new(GDK_MOTION_NOTIFY);
+			cdk_event->motion.window = g_object_ref(cdk_window);
+			cdk_event->motion.send_event = FALSE;
+			cdk_event->motion.time = 0;
+			cdk_event->motion.x = 0;
+			cdk_event->motion.y = 0;
+			cdk_event->motion.axes = NULL;
+			cdk_event->motion.state = 0;
+			cdk_event->motion.is_hint = 0;
+			cdk_event->motion.device = NULL;
+			cdk_event->motion.x_root = 0;
+			cdk_event->motion.y_root = 0;
 			break;
 
 		case EnterNotify:
 
 		case LeaveNotify:
-			gdk_event = gdk_event_new(xevent->type == EnterNotify ? GDK_ENTER_NOTIFY : GDK_LEAVE_NOTIFY);
-			gdk_event->crossing.window = g_object_ref(gdk_window);
-			gdk_event->crossing.send_event = 0;
-			gdk_event->crossing.subwindow = NULL;
-			gdk_event->crossing.time = 0;
-			gdk_event->crossing.x = xevent->xcrossing.x;
-			gdk_event->crossing.y = xevent->xcrossing.y;
-			gdk_event->crossing.x_root = 0;
-			gdk_event->crossing.y_root = 0;
-			gdk_event->crossing.mode = 0;
-			gdk_event->crossing.detail = 0;
-			gdk_event->crossing.focus = FALSE;
-			gdk_event->crossing.state = 0;
+			cdk_event = cdk_event_new(xevent->type == EnterNotify ? GDK_ENTER_NOTIFY : GDK_LEAVE_NOTIFY);
+			cdk_event->crossing.window = g_object_ref(cdk_window);
+			cdk_event->crossing.send_event = 0;
+			cdk_event->crossing.subwindow = NULL;
+			cdk_event->crossing.time = 0;
+			cdk_event->crossing.x = xevent->xcrossing.x;
+			cdk_event->crossing.y = xevent->xcrossing.y;
+			cdk_event->crossing.x_root = 0;
+			cdk_event->crossing.y_root = 0;
+			cdk_event->crossing.mode = 0;
+			cdk_event->crossing.detail = 0;
+			cdk_event->crossing.focus = FALSE;
+			cdk_event->crossing.state = 0;
 			break;
 
 		default:
@@ -1585,12 +1585,12 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 			break;
 	}
 
-	gdk_event_set_device (gdk_event, device);
+	cdk_event_set_device (cdk_event, device);
 
-	/* If we've gotten here, we've filled in the gdk_event and should send it on */
-	ctk_main_do_event(gdk_event);
+	/* If we've gotten here, we've filled in the cdk_event and should send it on */
+	ctk_main_do_event(cdk_event);
 
-	gdk_event_free(gdk_event);
+	cdk_event_free(cdk_event);
 	return TRUE;
 }
 
@@ -1619,7 +1619,7 @@ mouse_event_is_in_tab_popup (MetaDisplay *display,
           if (window == NULL)
             return FALSE;
 
-          Window popup_xid = gdk_x11_window_get_xid (window);
+          Window popup_xid = cdk_x11_window_get_xid (window);
           gboolean ok2 = XTranslateCoordinates (display->xdisplay,
                                                 event_window, popup_xid,
                                                 event_x, event_y,

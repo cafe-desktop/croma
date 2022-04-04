@@ -28,8 +28,8 @@
 #ifndef WNCK_DRAW_WORKSPACE_H
 #define WNCK_DRAW_WORKSPACE_H
 
-#include <gdk/gdk.h>
-#include <gdk-pixbuf/gdk-pixbuf.h>
+#include <cdk/cdk.h>
+#include <cdk-pixbuf/cdk-pixbuf.h>
 #include <ctk/ctk.h>
 
 typedef struct

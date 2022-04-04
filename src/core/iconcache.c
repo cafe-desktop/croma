@@ -335,16 +335,16 @@ apply_mask (GdkPixbuf *pixbuf,
   int src_stride;
   int dest_stride;
 
-  w = MIN (gdk_pixbuf_get_width (mask), gdk_pixbuf_get_width (pixbuf));
-  h = MIN (gdk_pixbuf_get_height (mask), gdk_pixbuf_get_height (pixbuf));
+  w = MIN (cdk_pixbuf_get_width (mask), cdk_pixbuf_get_width (pixbuf));
+  h = MIN (cdk_pixbuf_get_height (mask), cdk_pixbuf_get_height (pixbuf));
 
-  with_alpha = gdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
+  with_alpha = cdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
 
-  dest = gdk_pixbuf_get_pixels (with_alpha);
-  src = gdk_pixbuf_get_pixels (mask);
+  dest = cdk_pixbuf_get_pixels (with_alpha);
+  src = cdk_pixbuf_get_pixels (mask);
 
-  dest_stride = gdk_pixbuf_get_rowstride (with_alpha);
-  src_stride = gdk_pixbuf_get_rowstride (mask);
+  dest_stride = cdk_pixbuf_get_rowstride (with_alpha);
+  src_stride = cdk_pixbuf_get_rowstride (mask);
 
   i = 0;
   while (i < h)
@@ -394,7 +394,7 @@ try_pixmap_and_mask (MetaDisplay *display,
 
   get_pixmap_geometry (display, src_pixmap, &w, &h, NULL);
 
-  unscaled = meta_gdk_pixbuf_get_from_pixmap (NULL,
+  unscaled = meta_cdk_pixbuf_get_from_pixmap (NULL,
                                               src_pixmap,
                                               0, 0, 0, 0,
                                               w, h);
@@ -402,7 +402,7 @@ try_pixmap_and_mask (MetaDisplay *display,
   if (unscaled && src_mask != None)
     {
       get_pixmap_geometry (display, src_mask, &w, &h, NULL);
-      mask = meta_gdk_pixbuf_get_from_pixmap (NULL,
+      mask = meta_cdk_pixbuf_get_from_pixmap (NULL,
                                               src_mask,
                                               0, 0, 0, 0,
                                               w, h);
@@ -425,18 +425,18 @@ try_pixmap_and_mask (MetaDisplay *display,
   if (unscaled)
     {
       *iconp =
-        gdk_pixbuf_scale_simple (unscaled,
+        cdk_pixbuf_scale_simple (unscaled,
                                  ideal_width > 0 ? ideal_width :
-                                 gdk_pixbuf_get_width (unscaled),
+                                 cdk_pixbuf_get_width (unscaled),
                                  ideal_height > 0 ? ideal_height :
-                                 gdk_pixbuf_get_height (unscaled),
+                                 cdk_pixbuf_get_height (unscaled),
                                  GDK_INTERP_BILINEAR);
       *mini_iconp =
-        gdk_pixbuf_scale_simple (unscaled,
+        cdk_pixbuf_scale_simple (unscaled,
                                  ideal_mini_width > 0 ? ideal_mini_width :
-                                 gdk_pixbuf_get_width (unscaled),
+                                 cdk_pixbuf_get_width (unscaled),
                                  ideal_mini_height > 0 ? ideal_mini_height :
-                                 gdk_pixbuf_get_height (unscaled),
+                                 cdk_pixbuf_get_height (unscaled),
                                  GDK_INTERP_BILINEAR);
 
       g_object_unref (G_OBJECT (unscaled));
@@ -641,7 +641,7 @@ scaled_from_pixdata (guchar *pixdata,
   GdkPixbuf *src;
   GdkPixbuf *dest;
 
-  src = gdk_pixbuf_new_from_data (pixdata,
+  src = cdk_pixbuf_new_from_data (pixdata,
                                   GDK_COLORSPACE_RGB,
                                   TRUE,
                                   8,
@@ -659,12 +659,12 @@ scaled_from_pixdata (guchar *pixdata,
 
       size = MAX (w, h);
 
-      tmp = gdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, size, size);
+      tmp = cdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, size, size);
 
       if (tmp)
 	{
-	  gdk_pixbuf_fill (tmp, 0);
-	  gdk_pixbuf_copy_area (src, 0, 0, w, h,
+	  cdk_pixbuf_fill (tmp, 0);
+	  cdk_pixbuf_copy_area (src, 0, 0, w, h,
 				tmp,
 				(size - w) / 2, (size - h) / 2);
 
@@ -675,7 +675,7 @@ scaled_from_pixdata (guchar *pixdata,
 
   if (w != new_w || h != new_h)
     {
-      dest = gdk_pixbuf_scale_simple (src, new_w, new_h, GDK_INTERP_BILINEAR);
+      dest = cdk_pixbuf_scale_simple (src, new_w, new_h, GDK_INTERP_BILINEAR);
 
       g_object_unref (G_OBJECT (src));
     }

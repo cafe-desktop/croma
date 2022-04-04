@@ -21,7 +21,7 @@
  * 02110-1301, USA.
  */
 
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include <config.h>
 #include <stdio.h>
 #include <string.h>
@@ -118,8 +118,8 @@ static void popup_position_func(CtkMenu* menu, gint* x, gint* y, gboolean* push_
 	}
 
 	/* Ensure onscreen */
-	*x = CLAMP (*x, 0, MAX(0, WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - req.width));
-	*y = CLAMP (*y, 0, MAX(0, HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - req.height));
+	*x = CLAMP (*x, 0, MAX(0, WidthOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ())) - req.width));
+	*y = CLAMP (*y, 0, MAX(0, HeightOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ())) - req.height));
 }
 
 static void menu_closed(CtkMenu* widget, gpointer data)
@@ -132,7 +132,7 @@ static void menu_closed(CtkMenu* widget, gpointer data)
 
 	(*menu->func)(
 		menu,
-		GDK_DISPLAY_XDISPLAY(gdk_display_get_default()),
+		GDK_DISPLAY_XDISPLAY(cdk_display_get_default()),
 		menu->client_xwindow,
 		ctk_get_current_event_time (),
 		0, 0,
@@ -153,7 +153,7 @@ static void activate_cb(CtkWidget* menuitem, gpointer data)
 
 	(*md->menu->func)(
 		md->menu,
-		GDK_DISPLAY_XDISPLAY (gdk_display_get_default()),
+		GDK_DISPLAY_XDISPLAY (cdk_display_get_default()),
 		md->menu->client_xwindow,
 		ctk_get_current_event_time(),
 		md->op,
@@ -395,8 +395,8 @@ meta_window_menu_new   (MetaFrames         *frames,
 
                   display = GDK_WINDOW_XDISPLAY (window);
 
-                  screen = gdk_window_get_screen (window);
-                  xroot = GDK_WINDOW_XID (gdk_screen_get_root_window (screen));
+                  screen = cdk_window_get_screen (window);
+                  xroot = GDK_WINDOW_XID (cdk_screen_get_root_window (screen));
 
                   submenu = ctk_menu_new ();
 

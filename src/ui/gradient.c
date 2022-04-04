@@ -34,7 +34,7 @@
 
 #include "gradient.h"
 
-/* Used as the destroy notification function for gdk_pixbuf_new() */
+/* Used as the destroy notification function for cdk_pixbuf_new() */
 static void
 free_buffer (guchar *pixels, gpointer data)
 {
@@ -57,7 +57,7 @@ blank_pixbuf (int width, int height)
   if (!buf)
     return NULL;
 
-  return gdk_pixbuf_new_from_data (buf, GDK_COLORSPACE_RGB,
+  return cdk_pixbuf_new_from_data (buf, GDK_COLORSPACE_RGB,
                                    TRUE, 8,
                                    width, height, rowstride,
                                    free_buffer, NULL);
@@ -94,9 +94,9 @@ meta_gradient_create_horizontal (int width, int height,
   if (pixbuf == NULL)
     return NULL;
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
   ptr = pixels;
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
 
   r0 = (guchar) (from->red * 0xff);
   g0 = (guchar) (from->green * 0xff);
@@ -168,8 +168,8 @@ meta_gradient_create_vertical (int width, int height,
   if (pixbuf == NULL)
     return NULL;
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
 
   r0 = (guchar) (from->red * 0xff);
   g0 = (guchar) (from->green * 0xff);
@@ -248,8 +248,8 @@ meta_gradient_create_diagonal (int width, int height,
   if (pixbuf == NULL)
     return NULL;
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
 
   tmp = meta_gradient_create_horizontal (2*width-1, 1, from, to);
   if (!tmp)
@@ -258,7 +258,7 @@ meta_gradient_create_diagonal (int width, int height,
       return NULL;
     }
 
-  ptr = gdk_pixbuf_get_pixels (tmp);
+  ptr = cdk_pixbuf_get_pixels (tmp);
 
   a = ((float)(width - 1))/((float)(height - 1));
   width = width * 4;
@@ -294,8 +294,8 @@ meta_gradient_create_multi_horizontal (int width, int height,
   if (pixbuf == NULL)
     return NULL;
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
   ptr = pixels;
 
   if (count > width)
@@ -372,8 +372,8 @@ meta_gradient_create_multi_vertical (int width, int height,
   if (pixbuf == NULL)
     return NULL;
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
   ptr = pixels;
 
   if (count > height)
@@ -468,13 +468,13 @@ meta_gradient_create_multi_diagonal (int width, int height,
   else if (height == 1)
     return meta_gradient_create_multi_horizontal (width, height, colors, count);
 
-  pixbuf = gdk_pixbuf_new (GDK_COLORSPACE_RGB, FALSE, 8,
+  pixbuf = cdk_pixbuf_new (GDK_COLORSPACE_RGB, FALSE, 8,
                            width, height);
   if (pixbuf == NULL)
     return NULL;
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
 
   if (count > width)
     count = width;
@@ -496,7 +496,7 @@ meta_gradient_create_multi_diagonal (int width, int height,
       g_object_unref (G_OBJECT (pixbuf));
       return NULL;
     }
-  ptr = gdk_pixbuf_get_pixels (tmp);
+  ptr = cdk_pixbuf_get_pixels (tmp);
 
   a = ((float)(width - 1))/((float)(height - 1));
   width = width * 3;
@@ -526,11 +526,11 @@ simple_multiply_alpha (GdkPixbuf *pixbuf,
   if (alpha == 255)
     return;
 
-  g_assert (gdk_pixbuf_get_has_alpha (pixbuf));
+  g_assert (cdk_pixbuf_get_has_alpha (pixbuf));
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
-  height = gdk_pixbuf_get_height (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
+  height = cdk_pixbuf_get_height (pixbuf);
 
   row = 0;
   while (row < height)
@@ -585,8 +585,8 @@ meta_gradient_add_alpha_horizontal (GdkPixbuf           *pixbuf,
       return;
     }
 
-  width = gdk_pixbuf_get_width (pixbuf);
-  height = gdk_pixbuf_get_height (pixbuf);
+  width = cdk_pixbuf_get_width (pixbuf);
+  height = cdk_pixbuf_get_height (pixbuf);
 
   gradient = g_new (unsigned char, width);
   gradient_end = gradient + width;
@@ -624,8 +624,8 @@ meta_gradient_add_alpha_horizontal (GdkPixbuf           *pixbuf,
     }
 
   /* Now for each line of the pixbuf, fill in with the gradient */
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
 
   p = pixels;
   i = 0;
@@ -780,8 +780,8 @@ meta_gradient_create_interwoven (int            width,
   if (pixbuf == NULL)
     return NULL;
 
-  pixels = gdk_pixbuf_get_pixels (pixbuf);
-  rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  pixels = cdk_pixbuf_get_pixels (pixbuf);
+  rowstride = cdk_pixbuf_get_rowstride (pixbuf);
 
   r1 = (long)(colors1[0].red*0xffffff);
   g1 = (long)(colors1[0].green*0xffffff);
@@ -861,7 +861,7 @@ meta_gradient_add_alpha (GdkPixbuf       *pixbuf,
                          MetaGradientType type)
 {
   g_return_if_fail (GDK_IS_PIXBUF (pixbuf));
-  g_return_if_fail (gdk_pixbuf_get_has_alpha (pixbuf));
+  g_return_if_fail (cdk_pixbuf_get_has_alpha (pixbuf));
   g_return_if_fail (n_alphas > 0);
 
   switch (type)

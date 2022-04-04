@@ -56,23 +56,23 @@ meta_tile_preview_draw (CtkWidget *widget,
   if (preview->has_alpha)
     {
       /* Fill the preview area with a transparent color */
-      gdk_cairo_set_source_rgba (cr, preview->preview_color);
+      cdk_cairo_set_source_rgba (cr, preview->preview_color);
 
       cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
       cairo_paint (cr);
 
       /* Use the opaque color for the border */
-      gdk_cairo_set_source_rgba (cr, preview->preview_color);
+      cdk_cairo_set_source_rgba (cr, preview->preview_color);
     }
   else
     {
       GdkRGBA black = {.0, .0, .0, 1.0};
       GdkRGBA white = {1.0, 1.0, 1.0, 1.0};
 
-      gdk_cairo_set_source_rgba (cr, &black);
+      cdk_cairo_set_source_rgba (cr, &black);
       cairo_paint (cr);
 
-      gdk_cairo_set_source_rgba (cr, &white);
+      cdk_cairo_set_source_rgba (cr, &white);
 
       cairo_rectangle (cr,
                        OUTLINE_WIDTH - 0.5, OUTLINE_WIDTH - 0.5,
@@ -129,7 +129,7 @@ meta_tile_preview_new (void)
   MetaTilePreview *preview;
   GdkScreen *screen;
 
-  screen = gdk_display_get_default_screen (gdk_display_get_default ());
+  screen = cdk_display_get_default_screen (cdk_display_get_default ());
 
   preview = g_new (MetaTilePreview, 1);
 
@@ -144,7 +144,7 @@ meta_tile_preview_new (void)
   preview->tile_rect.width = preview->tile_rect.height = 0;
 
   ctk_widget_set_visual (preview->preview_window,
-                         gdk_screen_get_rgba_visual (screen));
+                         cdk_screen_get_rgba_visual (screen));
 
   g_signal_connect (preview->preview_window, "style-set",
                     G_CALLBACK (on_preview_window_style_set), preview);
@@ -163,7 +163,7 @@ meta_tile_preview_free (MetaTilePreview *preview)
   ctk_widget_destroy (preview->preview_window);
 
   if (preview->preview_color)
-    gdk_rgba_free (preview->preview_color);
+    cdk_rgba_free (preview->preview_color);
 
   g_free (preview);
 }
@@ -191,7 +191,7 @@ meta_tile_preview_show (MetaTilePreview *preview,
     return; /* nothing to do */
 
   window = ctk_widget_get_window (preview->preview_window);
-  meta_core_lower_beneath_focus_window (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
+  meta_core_lower_beneath_focus_window (GDK_DISPLAY_XDISPLAY (cdk_display_get_default ()),
                                         GDK_WINDOW_XID (window),
                                         ctk_get_current_event_time ());
 
@@ -199,13 +199,13 @@ meta_tile_preview_show (MetaTilePreview *preview,
   old_rect.width = preview->tile_rect.width;
   old_rect.height = preview->tile_rect.height;
 
-  gdk_window_invalidate_rect (window, &old_rect, FALSE);
+  cdk_window_invalidate_rect (window, &old_rect, FALSE);
 
   ctk_widget_show (preview->preview_window);
 
   preview->tile_rect = *tile_rect;
 
-  gdk_window_move_resize (window,
+  cdk_window_move_resize (window,
                           preview->tile_rect.x, preview->tile_rect.y,
                           preview->tile_rect.width, preview->tile_rect.height);
 #if HAVE_COMPOSITE_EXTENSIONS
@@ -237,7 +237,7 @@ meta_tile_preview_show (MetaTilePreview *preview,
       ctk_widget_shape_combine_region (preview->preview_window, outer_region);
       cairo_region_destroy (outer_region);
     } else {
-      gdk_window_shape_combine_region (window, NULL, 0, 0);
+      cdk_window_shape_combine_region (window, NULL, 0, 0);
     }
 }
 

@@ -25,7 +25,7 @@
 #include "resizepopup.h"
 #include "util.h"
 #include <ctk/ctk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 
 struct _MetaResizePopup
 {
@@ -78,7 +78,7 @@ ensure_size_window (MetaResizePopup *popup)
   popup->size_window = ctk_window_new (CTK_WINDOW_POPUP);
 
   ctk_window_set_screen (CTK_WINDOW (popup->size_window),
-			 gdk_display_get_default_screen (gdk_x11_lookup_xdisplay (popup->display)));
+			 cdk_display_get_default_screen (cdk_x11_lookup_xdisplay (popup->display)));
 
   /* never shrink the size window */
   ctk_window_set_resizable (CTK_WINDOW (popup->size_window),
@@ -136,7 +136,7 @@ update_size_window (MetaResizePopup *popup)
   if (ctk_widget_get_realized (popup->size_window))
     {
       /* using move_resize to avoid jumpiness */
-      gdk_window_move_resize (ctk_widget_get_window (popup->size_window),
+      cdk_window_move_resize (ctk_widget_get_window (popup->size_window),
                               x, y,
                               width, height);
     }
@@ -156,7 +156,7 @@ sync_showing (MetaResizePopup *popup)
         ctk_widget_show (popup->size_window);
 
       if (popup->size_window && ctk_widget_get_realized (popup->size_window))
-        gdk_window_raise (ctk_widget_get_window(CTK_WIDGET(popup->size_window)));
+        cdk_window_raise (ctk_widget_get_window(CTK_WIDGET(popup->size_window)));
     }
   else
     {

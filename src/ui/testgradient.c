@@ -58,9 +58,9 @@ draw_checkerboard (cairo_t *cr,
       while (j < height)
 	{
 	  if (ycount % 2)
-	    gdk_cairo_set_source_rgba (cr, &color1);
+	    cdk_cairo_set_source_rgba (cr, &color1);
 	  else
-	    gdk_cairo_set_source_rgba (cr, &color2);
+	    cdk_cairo_set_source_rgba (cr, &color2);
 
 	  /* If we're outside event->area, this will do nothing.
 	   * It might be mildly more efficient if we handled
@@ -88,8 +88,8 @@ render_simple (
   GdkPixbuf *pixbuf;
   GdkRGBA from, to;
 
-  gdk_rgba_parse (&from, "blue");
-  gdk_rgba_parse (&to, "green");
+  cdk_rgba_parse (&from, "blue");
+  cdk_rgba_parse (&to, "green");
 
   pixbuf = meta_gradient_create_simple (width, height,
                                         &from, &to,
@@ -99,11 +99,11 @@ render_simple (
     {
       const unsigned char alphas[] = { 0xff, 0xaa, 0x2f, 0x0, 0xcc, 0xff, 0xff };
 
-      if (!gdk_pixbuf_get_has_alpha (pixbuf))
+      if (!cdk_pixbuf_get_has_alpha (pixbuf))
         {
           GdkPixbuf *new_pixbuf;
 
-          new_pixbuf = gdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
+          new_pixbuf = cdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
           g_object_unref (G_OBJECT (pixbuf));
           pixbuf = new_pixbuf;
         }
@@ -115,7 +115,7 @@ render_simple (
       draw_checkerboard (cr, width, height);
     }
 
-  gdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
+  cdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
   cairo_rectangle (cr, 0, 0, width, height);
   cairo_fill (cr);
 
@@ -165,17 +165,17 @@ render_multi (
 
   GdkRGBA colors[N_COLORS];
 
-  gdk_rgba_parse (&colors[0], "red");
-  gdk_rgba_parse (&colors[1], "blue");
-  gdk_rgba_parse (&colors[2], "orange");
-  gdk_rgba_parse (&colors[3], "pink");
-  gdk_rgba_parse (&colors[4], "green");
+  cdk_rgba_parse (&colors[0], "red");
+  cdk_rgba_parse (&colors[1], "blue");
+  cdk_rgba_parse (&colors[2], "orange");
+  cdk_rgba_parse (&colors[3], "pink");
+  cdk_rgba_parse (&colors[4], "green");
 
   pixbuf = meta_gradient_create_multi (width, height,
                                        colors, N_COLORS,
                                        type);
 
-  gdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
+  cdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
   cairo_rectangle (cr, 0, 0, width, height);
   cairo_fill (cr);
 
@@ -217,16 +217,16 @@ render_interwoven_func (
 
   GdkRGBA colors[N_COLORS];
 
-  gdk_rgba_parse (&colors[0], "red");
-  gdk_rgba_parse (&colors[1], "blue");
-  gdk_rgba_parse (&colors[2], "pink");
-  gdk_rgba_parse (&colors[3], "green");
+  cdk_rgba_parse (&colors[0], "red");
+  cdk_rgba_parse (&colors[1], "blue");
+  cdk_rgba_parse (&colors[2], "pink");
+  cdk_rgba_parse (&colors[3], "green");
 
   pixbuf = meta_gradient_create_interwoven (width, height,
                                             colors, height / 10,
                                             colors + 2, height / 14);
 
-  gdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
+  cdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
   cairo_rectangle (cr, 0, 0, width, height);
   cairo_fill (cr);
 

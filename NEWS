@@ -180,9 +180,9 @@
   * add git.mk to autogenerate .gitignore files
   * enable silent output when building
   * 'meta_error_trap_push' instead 'meta_error_trap_push_with_return'
-  * errors.c: avoid deprecated 'gdk_error_trap...' functions:
+  * errors.c: avoid deprecated 'cdk_error_trap...' functions:
   * frames.c: drop unused variables
-  * compositor-xrender: avoid deprecated 'gdk_error_trap_push/pop'
+  * compositor-xrender: avoid deprecated 'cdk_error_trap_push/pop'
 
 ### croma 1.21.1
 
@@ -269,16 +269,16 @@
   * Translations update
   * Store a window flag when user resizes from tiled
   * Allow tiled windows to be resized horizontally
-  * ctk 3.22: avoid deprecated gdk_screen_get_monitor... functions:
-  * avoid deprecated gdk_screen_width/height
-  * avoid deprecated gdk_screen_get_width
+  * ctk 3.22: avoid deprecated cdk_screen_get_monitor... functions:
+  * avoid deprecated cdk_screen_width/height
+  * avoid deprecated cdk_screen_get_width
   * display: don't use deprecated GDK_DEVICE_MANAGER
   * tools: remove croma-mag and croma-grayscaletools
   * Fix synthetic keybinding/button-grab window
   * Forces a window scale of 1 for the window manager,
     instead of using the default or user configured scale.
-  * avoid deprecated gdk_display_get_screen
-  * avoid deprecated gdk_screen_get_number
+  * avoid deprecated cdk_display_get_screen
+  * avoid deprecated cdk_screen_get_number
   * Alt/tab - define arrow keycode + numpad arrows
   * Allow use of arrows while in alt+tab popup
   * ui: Fix invalid object construction in frames

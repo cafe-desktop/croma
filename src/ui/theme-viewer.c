@@ -376,7 +376,7 @@ override_background_color (CtkWidget *widget,
   provider = ctk_css_provider_new ();
 
   css = g_strdup_printf ("* { background-color: %s; }",
-                         gdk_rgba_to_string (rgba));
+                         cdk_rgba_to_string (rgba));
   ctk_css_provider_load_from_data (provider, css, -1, NULL);
   g_free (css);
 
@@ -1079,7 +1079,7 @@ run_theme_benchmark (void)
       /* Creating the pixmap in the loop is right, since
        * GDK does the same with its double buffering.
        */
-      pixmap = gdk_window_create_similar_surface (ctk_widget_get_window (widget),
+      pixmap = cdk_window_create_similar_surface (ctk_widget_get_window (widget),
                                                   CAIRO_CONTENT_COLOR,
                                                   client_width + borders.total.left + borders.total.right,
                                                   client_height + borders.total.top + borders.total.bottom);

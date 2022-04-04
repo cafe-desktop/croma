@@ -1292,7 +1292,7 @@ meta_screen_ensure_tab_popup (MetaScreen      *screen,
                                         screen->active_workspace);
 
   len = g_list_length (tab_list);
-  scale = gdk_window_get_scale_factor (gdk_get_default_root_window ());
+  scale = cdk_window_get_scale_factor (cdk_get_default_root_window ());
 
   entries = g_new (MetaTabEntry, len + 1);
   entries[len].key = NULL;
@@ -1348,7 +1348,7 @@ meta_screen_ensure_tab_popup (MetaScreen      *screen,
               cairo_paint (cr);
 
               /* Get the window icon as a surface */
-              icon = gdk_cairo_surface_create_from_pixbuf (window->icon, scale, NULL);
+              icon = cdk_cairo_surface_create_from_pixbuf (window->icon, scale, NULL);
 
               icon_width = cairo_image_surface_get_width (icon) / scale;
               icon_height = cairo_image_surface_get_height (icon) / scale;

@@ -33,8 +33,8 @@
 #include <math.h>
 #include <unistd.h>
 
-#include <gdk/gdk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdk.h>
+#include <cdk/cdkx.h>
 #include <ctk/ctk.h>
 
 #include <cairo/cairo-xlib.h>
@@ -2837,7 +2837,7 @@ xrender_manage_screen (MetaCompositor *compositor,
   MetaCompScreen *info;
   MetaDisplay *display = meta_screen_get_display (screen);
   Display *xdisplay = meta_display_get_xdisplay (display);
-  GdkDisplay *gdk_display = gdk_x11_lookup_xdisplay (xdisplay);
+  GdkDisplay *cdk_display = cdk_x11_lookup_xdisplay (xdisplay);
   XRenderPictureAttributes pa;
   XRenderPictFormat *visual_format;
   int screen_number = meta_screen_get_screen_number (screen);
@@ -2848,11 +2848,11 @@ xrender_manage_screen (MetaCompositor *compositor,
   if (meta_screen_get_compositor_data (screen))
     return;
 
-  gdk_x11_display_error_trap_push (gdk_display);
+  cdk_x11_display_error_trap_push (cdk_display);
   XCompositeRedirectSubwindows (xdisplay, xroot, CompositeRedirectManual);
   XSync (xdisplay, FALSE);
 
-  if (gdk_x11_display_error_trap_pop (gdk_display))
+  if (cdk_x11_display_error_trap_pop (cdk_display))
     {
       g_warning ("Another compositing manager is running on screen %i",
                  screen_number);

@@ -20,7 +20,7 @@
  */
 
 #include <ctk/ctk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 
 #include <stdlib.h>
 #include <sys/types.h>
@@ -123,9 +123,9 @@ evil_timeout (gpointer data)
 
       ctk_window_move (CTK_WINDOW (w),
                        g_random_int_range (0,
-                                           WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ()))),
+                                           WidthOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ()))),
                        g_random_int_range (0,
-                                           HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ()))));
+                                           HeightOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ()))));
 
       parent = NULL;
 

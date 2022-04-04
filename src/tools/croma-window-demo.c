@@ -20,7 +20,7 @@
  */
 
 #include <ctk/ctk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include <X11/Xatom.h>
 #include <unistd.h>
 
@@ -32,7 +32,7 @@ do_appwindow (GSimpleAction *action,
 static gboolean aspect_on;
 
 static void
-set_gdk_window_struts (GdkWindow *window,
+set_cdk_window_struts (GdkWindow *window,
                        int        left,
                        int        right,
                        int        top,
@@ -80,7 +80,7 @@ on_realize_set_struts (CtkWindow *window,
   top = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (window), "meta-strut-top"));
   bottom = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (window), "meta-strut-bottom"));
 
-  set_gdk_window_struts (ctk_widget_get_window (widget),
+  set_cdk_window_struts (ctk_widget_get_window (widget),
                          left, right, top, bottom);
 }
 
@@ -114,12 +114,12 @@ set_ctk_window_struts (CtkWidget  *window,
                           NULL);
 
   if (ctk_widget_get_realized (widget))
-    set_gdk_window_struts (ctk_widget_get_window (widget),
+    set_cdk_window_struts (ctk_widget_get_window (widget),
                            left, right, top, bottom);
 }
 
 static void
-set_gdk_window_type (GdkWindow  *window,
+set_cdk_window_type (GdkWindow  *window,
                      const char *type)
 {
   Atom atoms[2] = { None, None };
@@ -147,7 +147,7 @@ on_realize_set_type (CtkWindow *window,
 
   g_return_if_fail (type != NULL);
 
-  set_gdk_window_type (ctk_widget_get_window (CTK_WIDGET (window)),
+  set_cdk_window_type (ctk_widget_get_window (CTK_WIDGET (window)),
                        type);
 }
 
@@ -171,14 +171,14 @@ set_ctk_window_type (CtkWindow  *window,
                           NULL);
 
   if (ctk_widget_get_realized (widget))
-    set_gdk_window_type (ctk_widget_get_window (widget),
+    set_cdk_window_type (ctk_widget_get_window (widget),
                          type);
 }
 
 static void
-set_gdk_window_border_only (GdkWindow *window)
+set_cdk_window_border_only (GdkWindow *window)
 {
-  gdk_window_set_decorations (window, GDK_DECOR_BORDER);
+  cdk_window_set_decorations (window, GDK_DECOR_BORDER);
 }
 
 static void
@@ -191,7 +191,7 @@ on_realize_set_border_only (CtkWindow *window,
 
   g_return_if_fail (ctk_widget_get_realized (widget));
 
-  set_gdk_window_border_only (ctk_widget_get_window (widget));
+  set_cdk_window_border_only (ctk_widget_get_window (widget));
 }
 
 static void
@@ -211,7 +211,7 @@ CtkWidget *widget;
                           NULL);
 
   if (ctk_widget_get_realized (widget))
-    set_gdk_window_border_only (ctk_widget_get_window (widget));
+    set_cdk_window_border_only (ctk_widget_get_window (widget));
 }
 
 int
@@ -224,7 +224,7 @@ main (int argc, char **argv)
   ctk_init (&argc, &argv);
 
   err = NULL;
-  pixbuf = gdk_pixbuf_new_from_file (CROMA_ICON_DIR"/croma-window-demo.png",
+  pixbuf = cdk_pixbuf_new_from_file (CROMA_ICON_DIR"/croma-window-demo.png",
                                      &err);
   if (pixbuf)
     {
@@ -604,7 +604,7 @@ make_dock (int type)
       break;
     case DOCK_RIGHT:
       ctk_widget_set_size_request (window, DOCK_SIZE, 400);
-      ctk_window_move (CTK_WINDOW (window), WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - DOCK_SIZE, 200);
+      ctk_window_move (CTK_WINDOW (window), WidthOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ())) - DOCK_SIZE, 200);
       set_ctk_window_struts (window, 0, DOCK_SIZE, 0, 0);
       ctk_window_set_title (CTK_WINDOW (window), "RightDock");
       break;
@@ -616,7 +616,7 @@ make_dock (int type)
       break;
     case DOCK_BOTTOM:
       ctk_widget_set_size_request (window, 600, DOCK_SIZE);
-      ctk_window_move (CTK_WINDOW (window), 200, HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - DOCK_SIZE);
+      ctk_window_move (CTK_WINDOW (window), 200, HeightOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ())) - DOCK_SIZE);
       set_ctk_window_struts (window, 0, 0, 0, DOCK_SIZE);
       ctk_window_set_title (CTK_WINDOW (window), "BottomDock");
       break;
@@ -673,7 +673,7 @@ override_background_color (CtkWidget *widget,
   provider = ctk_css_provider_new ();
 
   css = g_strdup_printf ("* { background-color: %s; }",
-                         gdk_rgba_to_string (rgba));
+                         cdk_rgba_to_string (rgba));
   ctk_css_provider_load_from_data (provider, css, -1, NULL);
   g_free (css);
 
@@ -696,8 +696,8 @@ desktop_cb (GSimpleAction *action,
   set_ctk_window_type (CTK_WINDOW (window), "_NET_WM_WINDOW_TYPE_DESKTOP");
   ctk_window_set_title (CTK_WINDOW (window), "Desktop");
   ctk_widget_set_size_request (window,
-                               WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())),
-                               HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())));
+                               WidthOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ())),
+                               HeightOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ())));
   ctk_window_move (CTK_WINDOW (window), 0, 0);
 
   desktop_color.red = 0.32;

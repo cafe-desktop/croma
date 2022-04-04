@@ -29,7 +29,7 @@
 #include "place.h"
 #include "workspace.h"
 #include "prefs.h"
-#include <gdk/gdk.h>
+#include <cdk/cdk.h>
 #include <math.h>
 #include <stdlib.h>
 

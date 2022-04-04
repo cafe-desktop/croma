@@ -5,7 +5,7 @@
 /*
  * Copyright (C) 2005, 2006 Elijah Newren
  * [meta_rectangle_intersect() is copyright the CTK+ Team according to Havoc,
- * see gdkrectangle.c.  As far as Havoc knows, he probably wrote
+ * see cdkrectangle.c.  As far as Havoc knows, he probably wrote
  * meta_rectangle_equal(), and I'm guessing it's (C) Red Hat.  So...]
  * Copyright (C) 1995-2000  CTK+ Team
  * Copyright (C) 2002 Red Hat, Inc.
