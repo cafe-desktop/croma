@@ -29,7 +29,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <glib.h>
-#include <cdk-pixbuf/cdk-pixbuf.h>
+#include <gdk-pixbuf/gdk-pixbuf.h>
 #include <cairo/cairo.h>
 
 /* This is between CTK_PRIORITY_RESIZE (+10) and CDK_PRIORITY_REDRAW (+20) */

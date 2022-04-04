@@ -24,7 +24,7 @@
 #ifndef META_GRADIENT_H
 #define META_GRADIENT_H
 
-#include <cdk-pixbuf/cdk-pixbuf.h>
+#include <gdk-pixbuf/gdk-pixbuf.h>
 #include <cdk/cdk.h>
 
 /**
