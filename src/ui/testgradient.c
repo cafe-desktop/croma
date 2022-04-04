@@ -99,11 +99,11 @@ render_simple (
     {
       const unsigned char alphas[] = { 0xff, 0xaa, 0x2f, 0x0, 0xcc, 0xff, 0xff };
 
-      if (!cdk_pixbuf_get_has_alpha (pixbuf))
+      if (!gdk_pixbuf_get_has_alpha (pixbuf))
         {
           CdkPixbuf *new_pixbuf;
 
-          new_pixbuf = cdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
+          new_pixbuf = gdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
           g_object_unref (G_OBJECT (pixbuf));
           pixbuf = new_pixbuf;
         }

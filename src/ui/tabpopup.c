@@ -141,22 +141,22 @@ dimm_icon (CdkPixbuf *pixbuf)
   int w, h;
   CdkPixbuf *dimmed_pixbuf;
 
-  if (cdk_pixbuf_get_has_alpha (pixbuf))
+  if (gdk_pixbuf_get_has_alpha (pixbuf))
     {
-      dimmed_pixbuf = cdk_pixbuf_copy (pixbuf);
+      dimmed_pixbuf = gdk_pixbuf_copy (pixbuf);
     }
   else
     {
-      dimmed_pixbuf = cdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
+      dimmed_pixbuf = gdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
     }
 
-  w = cdk_pixbuf_get_width (dimmed_pixbuf);
-  h = cdk_pixbuf_get_height (dimmed_pixbuf);
+  w = gdk_pixbuf_get_width (dimmed_pixbuf);
+  h = gdk_pixbuf_get_height (dimmed_pixbuf);
 
   pixel_stride = 4;
 
-  row = cdk_pixbuf_get_pixels (dimmed_pixbuf);
-  row_stride = cdk_pixbuf_get_rowstride (dimmed_pixbuf);
+  row = gdk_pixbuf_get_pixels (dimmed_pixbuf);
+  row_stride = gdk_pixbuf_get_rowstride (dimmed_pixbuf);
 
   for (y = 0; y < h; y++)
     {

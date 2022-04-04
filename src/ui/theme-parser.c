@@ -2262,11 +2262,11 @@ parse_draw_op_element (GMarkupParseContext  *context,
       op->data.image.fill_type = fill_type_val;
 
       /* Check for vertical & horizontal stripes */
-      pixbuf_n_channels = cdk_pixbuf_get_n_channels(pixbuf);
-      pixbuf_width = cdk_pixbuf_get_width(pixbuf);
-      pixbuf_height = cdk_pixbuf_get_height(pixbuf);
-      pixbuf_rowstride = cdk_pixbuf_get_rowstride(pixbuf);
-      pixbuf_pixels = cdk_pixbuf_get_pixels(pixbuf);
+      pixbuf_n_channels = gdk_pixbuf_get_n_channels(pixbuf);
+      pixbuf_width = gdk_pixbuf_get_width(pixbuf);
+      pixbuf_height = gdk_pixbuf_get_height(pixbuf);
+      pixbuf_rowstride = gdk_pixbuf_get_rowstride(pixbuf);
+      pixbuf_pixels = gdk_pixbuf_get_pixels(pixbuf);
 
       /* Check for horizontal stripes */
       for (h = 0; h < pixbuf_height; h++)

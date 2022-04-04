@@ -531,7 +531,7 @@ meta_ui_window_menu_free (MetaWindowMenu *menu)
 }
 
 CdkPixbuf*
-meta_cdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
+meta_gdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
                                  Pixmap       xpixmap,
                                  int          src_x,
                                  int          src_y,
@@ -573,7 +573,7 @@ meta_cdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
                                            w_ret, h_ret);
     }
 
-  retval = cdk_pixbuf_get_from_surface (surface,
+  retval = gdk_pixbuf_get_from_surface (surface,
                                         src_x,
                                         src_y,
                                         width,
@@ -950,6 +950,6 @@ CdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface)
 	width = cairo_xlib_surface_get_width (surface);
 	height = cairo_xlib_surface_get_height (surface);
 
-	return cdk_pixbuf_get_from_surface (surface, 0, 0, width, height);
+	return gdk_pixbuf_get_from_surface (surface, 0, 0, width, height);
 }
 

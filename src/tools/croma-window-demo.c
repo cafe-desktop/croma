@@ -224,7 +224,7 @@ main (int argc, char **argv)
   ctk_init (&argc, &argv);
 
   err = NULL;
-  pixbuf = cdk_pixbuf_new_from_file (CROMA_ICON_DIR"/croma-window-demo.png",
+  pixbuf = gdk_pixbuf_new_from_file (CROMA_ICON_DIR"/croma-window-demo.png",
                                      &err);
   if (pixbuf)
     {
