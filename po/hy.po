@@ -720,7 +720,7 @@ msgstr "Վիրտուալ Ազդանշանի Տեսակ"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -728,7 +728,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Marco տեղեկացնում է ինչպես իրականացնել ձայնային ազդանշանի մասին տեղեկացումը,"
+"Croma տեղեկացնում է ինչպես իրականացնել ձայնային ազդանշանի մասին տեղեկացումը,"
 " կամ որ մեկ այլ կիրառական ծրագրի զանգը հնչել է։Այժմ կան երկու արժեքներ "
 "\"fullscreen\", որն ամբողջ էկրանի վրա առաջ է բերում սև–սպիտակ առկայծում, և "
 "\"frame_flash\", որը ակտիվացնում է այն պատուհանի վերնագրի տողերը, որում "
@@ -741,8 +741,8 @@ msgid "Compositing Manager"
 msgstr "Կազմավորման Կառավարիչ"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Որոշում է , արդյոք Marco֊ն կաղմավորվող կառավարիչ է։"
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Որոշում է , արդյոք Croma֊ն կաղմավորվող կառավարիչ է։"
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -770,7 +770,7 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Եթե ճիշտ է, ապա Marco֊ն օգտագործողին կտա ավելի քիչ հետադարձ կապ, "
+"Եթե ճիշտ է, ապա Croma֊ն օգտագործողին կտա ավելի քիչ հետադարձ կապ, "
 "օգտագործելով մետաղալարերի շրջանակները, խուսափելով անիմացիաներից կամ այլ "
 "միջոցներից։ Սա էական կրճատում է բազմաթիվ օգտվողների համար "
 "հարմարավետությունը, բայց կարող է թույլ տալիս ժառանգության դիմումներ "
@@ -787,7 +787,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -795,7 +795,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Եթե ճիշտ է ապա, Marco֊ն աշխատում է ծրագրերի պայմաններով, այլ ոչ թե "
+"Եթե ճիշտ է ապա, Croma֊ն աշխատում է ծրագրերի պայմաններով, այլ ոչ թե "
 "պատուհանների։ Հայեցակարգը մի քիչ աբստրակտ է, բայց ընդհանուր առմամբ ծրագիրը "
 "տեղակայված է ավելի շատ նման Mac֊ին և ավելի քիչ նման Windows֊ին։ Եթե դուք "
 "կենտրոնացնում եք պատուհանը ծրագրիր հիմնված ռեժիմում ծրագրի մեջ բոլոր "
@@ -812,13 +812,13 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Որոշ ծրագրեր արհամարում են որոշակիացումները ճանապարհով, որը հանգեցնում է "
 "պատուհանային կառավարիչի առանձնահատկությունների մեջ։ Այս տարբերակը դնում "
-"Marco֊ն խստորեն ճիշտ ռեժիմում, որը տալիս է շատ ավելի հետևողական ինտերֆեյս։"
+"Croma֊ն խստորեն ճիշտ ռեժիմում, որը տալիս է շատ ավելի հետևողական ինտերֆեյս։"
 
 #: src/org.mate.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
@@ -1275,7 +1275,7 @@ msgid "Disable connection to session manager"
 msgstr "Անջատել ենթահամակարգի կառավարչի հետ կապը"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
+msgid "Replace the running window manager with Croma"
 msgstr ""
 "Աշխատանքի ընթացքի մեջ գտնվող պատուհանի կառավարչին փոխարինել մետասիթիով"
 
@@ -1476,7 +1476,7 @@ msgid "Opened log file %s\n"
 msgstr "Բացված log Ֆայլ %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr "Մետասիթին կոմպլեկտավորվել է առանց բազմաբառ օպերացիոն համակարգի ռեժիմի\n"
 
 #: src/core/util.c:227
@@ -1498,7 +1498,7 @@ msgstr "Պատուհանի կառավարչի սխալ․"
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
+msgid "Croma"
 msgstr "Մետասիթի"
 
 #. first time through

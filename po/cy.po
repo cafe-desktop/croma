@@ -642,7 +642,7 @@ msgstr "Math o gloch weledol"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -650,7 +650,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Yn dweud sut dylid Marco hysbysu fod cloch y system neu gloch rhaglen wedi "
+"Yn dweud sut dylid Croma hysbysu fod cloch y system neu gloch rhaglen wedi "
 "atseinio. Mae yna dwy werth dilys, \"fullscreen\" sydd yn creu fflach gwyn-"
 "du llawn sgrin, a \"frame_flash\" sy'n gweud i far teitl y rhaglen a "
 "anfonodd y gloch i fflachio. Os yw'r rhaglen a anfonodd y gloch yn anhysbys "
@@ -662,8 +662,8 @@ msgid "Compositing Manager"
 msgstr "Rheolwr Cyfansawdd"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Penderfynu a yw Marco yn rheolwr cyfansawdd"
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Penderfynu a yw Croma yn rheolwr cyfansawdd"
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -704,7 +704,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -712,7 +712,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Os yn wir, mae Marco yn gweithredu yn nhermau rhaglenni yn hytrach na "
+"Os yn wir, mae Croma yn gweithredu yn nhermau rhaglenni yn hytrach na "
 "ffenestri. Mae hyn yn syniad eithaf haniaethol, ond yn gyffredinol mae'r "
 "modd rhaglen yn fwy tebyg i'r Mac ac yn llai tebyg i Windows. Wrth roi "
 "ffocws ar ffenestr yn y modd rhaglen, mi fydd pob ffenestr sy'n perthyn i'r "
@@ -729,7 +729,7 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
@@ -1177,8 +1177,8 @@ msgid "Disable connection to session manager"
 msgstr "Analluogi cysylltiad â'r rheolwr sesiynau"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Amnewid y rheolwr ffenestri sy'n rhedeg gyda Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Amnewid y rheolwr ffenestri sy'n rhedeg gyda Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1371,8 +1371,8 @@ msgid "Opened log file %s\n"
 msgstr "Agorwyd cofnod %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Crynhowyd Marco heb gynhaliaeth ar gyfer modd llafar\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Crynhowyd Croma heb gynhaliaeth ar gyfer modd llafar\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1393,8 +1393,8 @@ msgstr "Gwall rheolydd ffenestri:"
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

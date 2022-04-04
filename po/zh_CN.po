@@ -641,7 +641,7 @@ msgstr "视觉铃声类型"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -649,7 +649,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"通知 Marco "
+"通知 Croma "
 "如何实现系统铃声或其它应用程序响铃的视觉标识。目前有两种值，“全屏”将以黑白色闪烁整个屏幕，而“框架闪烁”将闪烁发出响铃信号的应用程序的标题栏。如果发送响铃的程序未知(通常是默认的“系统响铃”)，则闪烁当前窗口的标题栏。"
 
 #: src/org.mate.croma.gschema.xml:151
@@ -657,8 +657,8 @@ msgid "Compositing Manager"
 msgstr "混成管理器"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "决定 Marco 是否是混成管理器。"
+msgid "Determines whether Croma is a compositing manager."
+msgstr "决定 Croma 是否是混成管理器。"
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -696,7 +696,7 @@ msgstr "(未实现)导航以应用程序而不是窗口的方式工作"
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -704,7 +704,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"如果为真，那么 Marco 将以应用程序而不是窗口的方式工作。该概念有点抽象，但通常基于应用程序的设置更类似于 Mac 系统，而不太像 Windows "
+"如果为真，那么 Croma 将以应用程序而不是窗口的方式工作。该概念有点抽象，但通常基于应用程序的设置更类似于 Mac 系统，而不太像 Windows "
 "系统。当您以基于应用程序的模式聚焦窗口时，该应用程序中的所有窗口都将被提升。同时，在基于应用程序的模式下，聚焦点击不会被传递到其它应用程序中的窗口。但是，基于应用程序的模式目前还基本没有实现。"
 
 #: src/org.mate.croma.gschema.xml:171
@@ -714,11 +714,11 @@ msgstr "禁用旧的或有缺陷的应用程序所需的错误功能"
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
-"某些应用程序破坏规定从而导致窗口管理器功能失常。该选项将 Marco "
+"某些应用程序破坏规定从而导致窗口管理器功能失常。该选项将 Croma "
 "置于完全正确模式下，这样的用户界面会更具有一致性，假定您不需要运行任何有缺陷的应用程序。"
 
 #: src/org.mate.croma.gschema.xml:176
@@ -1158,8 +1158,8 @@ msgid "Disable connection to session manager"
 msgstr "禁止连接到会话管理器"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "将运行中的窗口管理器替换为 Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "将运行中的窗口管理器替换为 Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1341,8 +1341,8 @@ msgid "Opened log file %s\n"
 msgstr "打开的日志文件 %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Marco 编译的时候没有加入详细模式的支持\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Croma 编译的时候没有加入详细模式的支持\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1363,8 +1363,8 @@ msgstr "窗口管理器错误："
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

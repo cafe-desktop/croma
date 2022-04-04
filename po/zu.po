@@ -686,7 +686,7 @@ msgstr ""
 
 #: ../src/org.mate.croma.gschema.xml.h:40
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -700,7 +700,7 @@ msgid "Compositing Manager"
 msgstr ""
 
 #: ../src/org.mate.croma.gschema.xml.h:42
-msgid "Determines whether Marco is a compositing manager."
+msgid "Determines whether Croma is a compositing manager."
 msgstr ""
 
 #: ../src/org.mate.croma.gschema.xml.h:43
@@ -734,7 +734,7 @@ msgstr ""
 
 #: ../src/org.mate.croma.gschema.xml.h:48
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -750,7 +750,7 @@ msgstr ""
 #: ../src/org.mate.croma.gschema.xml.h:50
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
@@ -1039,7 +1039,7 @@ msgid "Disable connection to session manager"
 msgstr "Qamula ukuxhumana kumphathi wesiqephu"
 
 #: ../src/core/main.c:275
-msgid "Replace the running window manager with Marco"
+msgid "Replace the running window manager with Croma"
 msgstr ""
 
 #: ../src/core/main.c:281
@@ -1226,7 +1226,7 @@ msgstr ""
 
 #: ../src/core/util.c:136 ../src/tools/croma-message.c:176
 #, c-format
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr ""
 
 #: ../src/core/util.c:236
@@ -1248,7 +1248,7 @@ msgstr ""
 #. Translators: This is the title used on dialog boxes
 #: ../src/core/util.c:569 ../src/core/util.c:667 ../src/croma.desktop.in.h:1
 #: ../src/croma-wm.desktop.in.h:1
-msgid "Marco"
+msgid "Croma"
 msgstr ""
 
 #. first time through

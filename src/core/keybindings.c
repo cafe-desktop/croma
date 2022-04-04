@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco Keybindings */
+/* Croma Keybindings */
 /*
  * Copyright (C) 2001 Havoc Pennington
  * Copyright (C) 2002 Red Hat Inc.

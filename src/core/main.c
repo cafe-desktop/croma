@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco main() */
+/* Croma main() */
 
 /*
  * Copyright (C) 2001 Havoc Pennington
@@ -26,14 +26,14 @@
  * \file
  * Program startup.
  * Functions which parse the command-line arguments, create the display,
- * kick everything off and then close down Marco when it's time to go.
+ * kick everything off and then close down Croma when it's time to go.
  */
 
 /**
  * \mainpage
- * Marco - a boring window manager for the adult in you
+ * Croma - a boring window manager for the adult in you
  *
- * Many window managers are like Marshmallow Froot Loops; Marco
+ * Many window managers are like Marshmallow Froot Loops; Croma
  * is like Cheerios.
  *
  * The best way to get a handle on how the whole system fits together
@@ -76,13 +76,13 @@
 static MetaExitCode meta_exit_code = META_EXIT_SUCCESS;
 
 /**
- * Handle on the main loop, so that we have an easy way of shutting Marco
+ * Handle on the main loop, so that we have an easy way of shutting Croma
  * down.
  */
 static GMainLoop *meta_main_loop = NULL;
 
 /**
- * If set, Marco will spawn an identical copy of itself immediately
+ * If set, Croma will spawn an identical copy of itself immediately
  * before quitting.
  */
 static gboolean meta_restart_after_quit = FALSE;
@@ -91,7 +91,7 @@ static void prefs_changed_callback (MetaPreference pref,
                                     gpointer       data);
 
 /**
- * Prints log messages. If Marco was compiled with backtrace support,
+ * Prints log messages. If Croma was compiled with backtrace support,
  * also prints a backtrace (see meta_print_backtrace()).
  *
  * \param log_domain  the domain the error occurred in (we ignore this)
@@ -111,7 +111,7 @@ log_handler (const gchar   *log_domain,
 }
 
 /**
- * Prints the version notice. This is shown when Marco is called
+ * Prints the version notice. This is shown when Croma is called
  * with the --version switch.
  */
 static void
@@ -139,7 +139,7 @@ version (void)
 
 /**
  * Prints a list of which configure script options were used to
- * build this copy of Marco. This is actually always called
+ * build this copy of Croma. This is actually always called
  * on startup, but it's all no-op unless we're in verbose mode
  * (see meta_set_verbose).
  */
@@ -192,7 +192,7 @@ meta_print_compilation_info (void)
  * Prints the version number, the current timestamp (not the
  * build date), the locale, the character encoding, and a list
  * of configure script options that were used to build this
- * copy of Marco. This is actually always called
+ * copy of Croma. This is actually always called
  * on startup, but it's all no-op unless we're in verbose mode
  * (see meta_set_verbose).
  */
@@ -207,7 +207,7 @@ meta_print_self_identity (void)
   g_date_clear (&d, 1);
   g_date_set_time_t (&d, time (NULL));
   g_date_strftime (buf, sizeof (buf), "%x", &d);
-  meta_verbose ("Marco version %s running on %s\n",
+  meta_verbose ("Croma version %s running on %s\n",
     VERSION, buf);
 
   /* Locale and encoding. */
@@ -220,7 +220,7 @@ meta_print_self_identity (void)
 }
 
 /**
- * The set of possible options that can be set on Marco's
+ * The set of possible options that can be set on Croma's
  * command line. This type exists so that meta_parse_options() can
  * write to an instance of it.
  */
@@ -247,14 +247,14 @@ typedef struct
 
 /**
  * Parses argc and argv and returns the
- * arguments that Marco understands in meta_args.
+ * arguments that Croma understands in meta_args.
  *
  * The strange call signature has to be written like it is so
  * that g_option_context_parse() gets a chance to modify argc and
  * argv.
  *
- * \param argc  Pointer to the number of arguments Marco was given
- * \param argv  Pointer to the array of arguments Marco was given
+ * \param argc  Pointer to the number of arguments Croma was given
+ * \param argv  Pointer to the array of arguments Croma was given
  * \param meta_args  The result of parsing the arguments.
  **/
 static void
@@ -273,7 +273,7 @@ meta_parse_options (int *argc, char ***argv,
     {
       "replace", 0, 0, G_OPTION_ARG_NONE,
       &my_args.replace_wm,
-      N_("Replace the running window manager with Marco"),
+      N_("Replace the running window manager with Croma"),
       NULL
     },
     {
@@ -341,7 +341,7 @@ meta_parse_options (int *argc, char ***argv,
 }
 
 /**
- * Selects which display Marco should use. It first tries to use
+ * Selects which display Croma should use. It first tries to use
  * display_name as the display. If display_name is NULL then
  * try to use the environment variable MARCO_DISPLAY. If that
  * also is NULL, use the default - :0.0
@@ -605,7 +605,7 @@ main (int argc, char **argv)
 }
 
 /**
- * Stops Marco. This tells the event loop to stop processing; it is rather
+ * Stops Croma. This tells the event loop to stop processing; it is rather
  * dangerous to use this rather than meta_restart() because this will leave
  * the user with no window manager. We generally do this only if, for example,
  * the session manager asks us to; we assume the session manager knows what
@@ -623,9 +623,9 @@ meta_quit (MetaExitCode code)
 }
 
 /**
- * Restarts Marco. In practice, this tells the event loop to stop
+ * Restarts Croma. In practice, this tells the event loop to stop
  * processing, having first set the meta_restart_after_quit flag which
- * tells Marco to spawn an identical copy of itself before quitting.
+ * tells Croma to spawn an identical copy of itself before quitting.
  * This happens on receipt of a _MARCO_RESTART_MESSAGE client event.
  */
 void

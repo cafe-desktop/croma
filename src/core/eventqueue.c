@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco X event source for main loop */
+/* Croma X event source for main loop */
 
 /*
  * Copyright (C) 2001 Havoc Pennington (based on GDK code (C) Owen

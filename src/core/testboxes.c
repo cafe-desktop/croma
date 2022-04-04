@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco box operation testing program */
+/* Croma box operation testing program */
 
 /*
  * Copyright (C) 2005 Elijah Newren

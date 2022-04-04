@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco preferences */
+/* Croma preferences */
 
 /*
  * Copyright (C) 2001 Havoc Pennington, Copyright (C) 2002 Red Hat Inc.
@@ -46,7 +46,7 @@
  * not given a name here, because the purpose of the unified handlers
  * is that keys should be referred to exactly once.
  */
-#define KEY_GENERAL_SCHEMA "org.mate.Marco.general"
+#define KEY_GENERAL_SCHEMA "org.mate.Croma.general"
 #define KEY_GENERAL_TITLEBAR_FONT "titlebar-font"
 #define KEY_GENERAL_NUM_WORKSPACES "num-workspaces"
 #define KEY_GENERAL_COMPOSITOR "compositing-manager"
@@ -56,14 +56,14 @@
 #define KEY_GENERAL_ALT_TAB_MAX_COLUMNS "alt-tab-max-columns"
 #define KEY_GENERAL_ALT_TAB_EXPAND_TO_FIT_TITLE "alt-tab-expand-to-fit-title"
 
-#define KEY_COMMAND_SCHEMA "org.mate.Marco.keybinding-commands"
+#define KEY_COMMAND_SCHEMA "org.mate.Croma.keybinding-commands"
 #define KEY_COMMAND_PREFIX "command-"
 
-#define KEY_SCREEN_BINDINGS_SCHEMA "org.mate.Marco.global-keybindings"
+#define KEY_SCREEN_BINDINGS_SCHEMA "org.mate.Croma.global-keybindings"
 
-#define KEY_WINDOW_BINDINGS_SCHEMA "org.mate.Marco.window-keybindings"
+#define KEY_WINDOW_BINDINGS_SCHEMA "org.mate.Croma.window-keybindings"
 
-#define KEY_WORKSPACE_NAME_SCHEMA "org.mate.Marco.workspace-names"
+#define KEY_WORKSPACE_NAME_SCHEMA "org.mate.Croma.workspace-names"
 #define KEY_WORKSPACE_NAME_PREFIX "name-"
 
 #define KEY_MATE_INTERFACE_SCHEMA "org.mate.interface"
@@ -1052,7 +1052,7 @@ change_notify (GSettings *settings,
   else
     {
       /* Is this possible with GSettings? I dont think so! */
-      meta_topic (META_DEBUG_PREFS, "Key %s doesn't mean anything to Marco\n",
+      meta_topic (META_DEBUG_PREFS, "Key %s doesn't mean anything to Croma\n",
                   key);
     }
   g_free (schema_name);

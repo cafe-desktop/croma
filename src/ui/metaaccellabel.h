@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco hacked-up GtkAccelLabel */
+/* Croma hacked-up GtkAccelLabel */
 /* Copyright (C) 2002 Red Hat, Inc. */
 /* GTK - The GIMP Toolkit
  * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald

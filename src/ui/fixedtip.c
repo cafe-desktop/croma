@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco fixed tooltip routine */
+/* Croma fixed tooltip routine */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

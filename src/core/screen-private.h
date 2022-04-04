@@ -1,7 +1,7 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
 /**
- * \file screen-private.h  Screens which Marco manages
+ * \file screen-private.h  Screens which Croma manages
  *
  * Managing X screens.
  * This file contains methods on this class which are available to

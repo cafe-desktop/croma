@@ -62,7 +62,7 @@ cases in which a new window shouldn't be focused:
      (error dialogs, instant messaging windows, etc.), then the window
      should not take focus when it appears.
 
-To handle these cases, Marco compares timestamps of the event that
+To handle these cases, Croma compares timestamps of the event that
 caused the launch and the timestamp of the last interaction with the
 focused window.  (Case 2 is handled by the application providing a
 special timestamp of 0 for the launch time, which ensures that the
@@ -82,7 +82,7 @@ Additionally, the user may decide to use the keyboard instead of the mouse
 to navigate between windows (referred to as "keynav").  This poses no
 problems for click-to-focus (because the same invariant can be
 maintained), but for sloppy and mouse focus it requires extra work to
-attempt to handle the INHERENTLY CONFLICTING CONSTRAINTS.  Marco does
+attempt to handle the INHERENTLY CONFLICTING CONSTRAINTS.  Croma does
 this by having a mouse_mode boolean used to determine which of the two
 sets of invariants holds.  This mode is set according to which method was
 most recently used to choose a focus window:

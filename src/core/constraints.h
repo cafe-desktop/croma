@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco size/position constraints */
+/* Croma size/position constraints */
 
 /*
  * Copyright (C) 2002 Red Hat, Inc.

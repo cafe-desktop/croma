@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco tab popup window */
+/* Croma tab popup window */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

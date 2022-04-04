@@ -26,7 +26,7 @@
 /**
  * \file atomnames.h  A list of atom names.
  *
- * This is a list of the names of all the X atoms that Marco uses.
+ * This is a list of the names of all the X atoms that Croma uses.
  * Each is wrapped in a macro "item()" which is undefined here; the
  * idea is that when you need to make a big list of all the X atoms,
  * you can define item(), include this file, and then undefine it

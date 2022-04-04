@@ -1,7 +1,7 @@
-Marco [![Build Status](https://travis-ci.org/mate-desktop/croma.svg?branch=master)](https://travis-ci.org/mate-desktop/croma)
+Croma [![Build Status](https://travis-ci.org/mate-desktop/croma.svg?branch=master)](https://travis-ci.org/mate-desktop/croma)
 ===
 
-MATE Marco is a fork of GNOME Metacity.
+MATE Croma is a fork of GNOME Metacity.
 
 COMPILING MARCO
 ===
@@ -22,11 +22,11 @@ feature requests on GitHub. Please read
 http://pobox.com/~hp/features.html prior to adding any kind of flame
 about missing features or misfeatures.
 
-Feel free to send patches too; Marco is relatively small and
+Feel free to send patches too; Croma is relatively small and
 simple, so if you find a bug or want to add a feature it should be
 pretty easy.  Send me mail, or put the patch in bugzilla.
 
-See the HACKING file for some notes on hacking Marco.
+See the HACKING file for some notes on hacking Croma.
 
 SHRINKING MARCO
 ===
@@ -64,7 +64,7 @@ MARCO FEATURES
 ===
 
  - Boring window manager for the adult in you. Many window managers
-   are like Marshmallow Froot Loops; Marco is like Cheerios.
+   are like Marshmallow Froot Loops; Croma is like Cheerios.
 
  - Uses GTK+ 3.0 for drawing window frames. This means colors, fonts,
    etc. come from GTK+ theme.
@@ -85,9 +85,9 @@ MARCO FEATURES
  - Has a simple theme system and a couple of extra themes come with it.
    Change themes via gsettings:
      ```
-     gsettings set org.mate.Marco.general theme Menta
-     gsettings set org.mate.Marco.general theme BlackMATE
-     gsettings set org.mate.Marco.general theme TraditionalOk
+     gsettings set org.mate.Croma.general theme Menta
+     gsettings set org.mate.Croma.general theme BlackMATE
+     gsettings set org.mate.Croma.general theme TraditionalOk
      ```
 
    See theme-format.txt for docs on the theme format. Use
@@ -95,15 +95,15 @@ MARCO FEATURES
 
  - Change number of workspaces via gsettings:
 
-     gsettings set org.mate.Marco.general num-workspaces 5
+     gsettings set org.mate.Croma.general num-workspaces 5
 
    Can also change workspaces from MATE 2 pager.
 
  - Change focus mode:
 
-     gsettings set org.mate.Marco.general focus-mode mouse
-     gsettings set org.mate.Marco.general focus-mode sloppy
-     gsettings set org.mate.Marco.general focus-mode click
+     gsettings set org.mate.Croma.general focus-mode mouse
+     gsettings set org.mate.Croma.general focus-mode sloppy
+     gsettings set org.mate.Croma.general focus-mode click
 
  - Global keybinding defaults include:
 
@@ -118,7 +118,7 @@ MARCO FEATURES
 
    Change keybindings for example:
 
-     gsettings set org.mate.Marco.global-keybindings switch-to-workspace-1 '<Alt>F1'
+     gsettings set org.mate.Croma.global-keybindings switch-to-workspace-1 '<Alt>F1'
 
    Also try the MATE keyboard shortcuts control panel.
 
@@ -175,11 +175,11 @@ MARCO FEATURES
 
  - Session management:
 
-    Marco connects to the session manager and will set itself up to
+    Croma connects to the session manager and will set itself up to
      be respawned. It theoretically restores sizes/positions/workspace
      for session-aware applications.
 
- - Marco implements much of the EWMH window manager specification
+ - Croma implements much of the EWMH window manager specification
    from freedesktop.org, as well as the older ICCCM.  Please refer to
    the COMPLIANCE file for information on croma compliance with
    these standards.
@@ -201,7 +201,7 @@ MARCO FEATURES
    another WM claims it, and can claim it from another WM if you pass
    the --replace argument. So if you're running another
    ICCCM-compliant WM, you can run "croma --replace" to replace it
-   with Marco.
+   with Croma.
 
  - does basic colormap handling
 
@@ -218,7 +218,7 @@ available that uses the EWMH and is specifically designed for writing
 WM accessories.
 
 You might be interested in existing accessories such as "Devil's Pie"
-by Ross Burton, which add features to Marco (or other
+by Ross Burton, which add features to Croma (or other
 EWMH-compliant WMs).
 
 MARCO BUGS, NON-FEATURES, AND CAVEATS
@@ -237,7 +237,7 @@ A: If it makes sense to turn on unconditionally, or is genuinely a
 
    If the only rationale for your feature is that other window
    managers have it, or that you are personally used to it, or
-   something like that, then I will not be impressed. Marco is
+   something like that, then I will not be impressed. Croma is
    firmly in the "choose good defaults" camp rather than the "offer 6
    equally broken ways to do it, and let the user pick one" camp.
 
@@ -260,25 +260,25 @@ A: If it makes sense to turn on unconditionally, or is genuinely a
    http://pobox.com/~hp/free-software-ui.html
    http://pobox.com/~hp/features.html
 
-Q: Why does Marco remember the workspace/position of some apps
+Q: Why does Croma remember the workspace/position of some apps
    but not others across logout/login?
 
-A: Marco only stores sizes/positions for apps that are session
+A: Croma only stores sizes/positions for apps that are session
    managed. As far as I can determine, there is no way to attempt to
    remember workspace/position for non-session-aware apps without
    causing a lot of weird effects.
 
    The reason is that you don't know which non-SM-aware apps were
-   launched by the session. When you initially log in, Marco sees a
+   launched by the session. When you initially log in, Croma sees a
    bunch of new windows appear. But it can't distinguish between
    windows that were stored in your session, or windows you just
-   launched after logging in. If Marco tried to guess that a window
+   launched after logging in. If Croma tried to guess that a window
    was from the session, it could e.g. end up maximizing a dialog, or
    put a window you just launched on another desktop or in a weird
    place. And in fact I see a lot of bugs like this in window managers
    that try to handle non-session-aware apps.
 
-   However, for session-aware apps, Marco can tell that the
+   However, for session-aware apps, Croma can tell that the
    application instance is from the session and thus restore it
    reliably, assuming the app properly restores the windows it had
    open on session save.
@@ -336,7 +336,7 @@ Q: Why is there no edge flipping?
 A: This one is also in rationales.txt. Because "ouija board" UI, where
    you just move the mouse around and the computer guesses what you
    mean, has a lot of issues. This includes mouse focus, shade-hover
-   mode, edge flipping, autoraise, etc. Marco has mouse focus and
+   mode, edge flipping, autoraise, etc. Croma has mouse focus and
    autoraise as a compromise, but these features are all confusing for
    many users, and cause problems with accessibility, fitt's law, and
    so on.

@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco window frame manager widget */
+/* Croma window frame manager widget */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

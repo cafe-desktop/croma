@@ -695,7 +695,7 @@ msgstr "ಗೋಚರಿಸು ಗಂಟೆಯ ಬಗೆ"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -704,7 +704,7 @@ msgid ""
 "focused window's titlebar is flashed."
 msgstr ""
 "ಗಣಕದ ಗಂಟೆ ಅಥವ ಬೇರೆ ಅನ್ವಯದ 'ಗಂಟೆ' ಸೂಚಕವು ಧ್ವನಿ ಹೊರಡಿಸಿದಲ್ಲಿ ಗೋಚರ ಸೂಚನೆಯನ್ನು "
-"Marco ಯು ಹೇಗೆ ಅನ್ವಯಿಸಬೇಕು ಎನ್ನುವುದನ್ನು ಇದು ತಿಳಿಸುತ್ತದೆ. ಪ್ರಸಕ್ತ ಇದು ಎರಡು "
+"Croma ಯು ಹೇಗೆ ಅನ್ವಯಿಸಬೇಕು ಎನ್ನುವುದನ್ನು ಇದು ತಿಳಿಸುತ್ತದೆ. ಪ್ರಸಕ್ತ ಇದು ಎರಡು "
 "ಮಾನ್ಯವಾದ ಮೌಲ್ಯಗಳನ್ನು ಹೊಂದಿರಬಹುದು, \"fullscreen\"(ಪೂರ್ಣತೆರೆ), ಇದರಿಂದಾಗು "
 "ಸಂಪೂರ್ಣತೆರೆಯು ಕಪ್ಪು-ಬಿಳುಪಿನಲ್ಲಿ ಹೊಳೆಯುತ್ತದೆ, ಹಾಗು \"frame_flash\" (ಚೌಕಟ್ಟು "
 "ಹೊಳೆಯುವಿಕೆ), ಇದರಿಂದಾಗಿ ಗಂಟೆ ಸೂಚನೆಯನ್ನು ಕಳುಹಿಸಿದ ಅನ್ವಯದ ಶೀರ್ಷಿಕೆಪಟ್ಟಿಯು "
@@ -717,9 +717,9 @@ msgid "Compositing Manager"
 msgstr "ಸಮ್ಮಿಶ್ರಗೊಳಿಕೆಯ(ಕಾಂಪೋಸಿಟಿಂಗ್) ವ್ಯವಸ್ಥಾಪಕ"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
+msgid "Determines whether Croma is a compositing manager."
 msgstr ""
-"Marco ಯು ಒಂದು ಸಮ್ಮಿಶ್ರಗೊಳಿಕೆ(ಕಾಂಪೋಸಿಟಿಂಗ್) ವ್ಯವಸ್ಥಾಪಕವೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ."
+"Croma ಯು ಒಂದು ಸಮ್ಮಿಶ್ರಗೊಳಿಕೆ(ಕಾಂಪೋಸಿಟಿಂಗ್) ವ್ಯವಸ್ಥಾಪಕವೆ ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -761,7 +761,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -769,7 +769,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"true ಆಗಿದ್ದಲ್ಲಿ, Marco ಯು ವಿಂಡೋಗಳನ್ನು ಅನುಸರಿಸದೆ ಅನ್ವಯಗಳಿಗನುಸಾರವಾಗಿ ಕೆಲಸ "
+"true ಆಗಿದ್ದಲ್ಲಿ, Croma ಯು ವಿಂಡೋಗಳನ್ನು ಅನುಸರಿಸದೆ ಅನ್ವಯಗಳಿಗನುಸಾರವಾಗಿ ಕೆಲಸ "
 "ಮಾಡುತ್ತದೆ. ಈ ವಿಚಾರವು ಒಂದಿಷ್ಟು ವಿಚಿತ್ರವೆನಿಸಿದರೂ ಸಹ ಸಾಮಾನ್ಯವಾಗಿ ಅನ್ವಯ-ಆಧರಿತವಾದ"
 " ಒಂದು ಸಿದ್ಧತೆಯು ಹೆಚ್ಚಿನ ಪಾಲು Mac ನಂತಹೆ ಇರುತ್ತದೆಯೆ ಹೊರತು Windows ನಂತಲ್ಲ. ಅನ"
 "್ವಯ-ಆಧರಿತವಾದ ಕ್ರಮದಲ್ಲಿ ನೀವು ಒಂದು ವಿಂಡೋದತ್ತ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿದಾಗ, ಅನ್ವಯದ ಎಲ್ಲಾ"
@@ -786,12 +786,12 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "ಕೆಲವು ಅನ್ವಯಗಳು ವಿಂಡೋ ವ್ಯವಸ್ಥಾಪಕದ ತಪ್ಪುಸಲವಲತ್ತಿಗೆ ಕಾರಣವಾಗುವ ರೀತಿಯಲ್ಲಿ "
-"ವಿವರಗಳನ್ನು ಆಲಕ್ಷಿಸುತ್ತವೆ. ಈ ಆಯ್ಕೆಯಿಂದಾಗಿ Marco ಅತ್ಯಂತ ಕಟ್ಟುನಿಟ್ಟಿನ ಕ್ರಮದಲ್ಲಿ"
+"ವಿವರಗಳನ್ನು ಆಲಕ್ಷಿಸುತ್ತವೆ. ಈ ಆಯ್ಕೆಯಿಂದಾಗಿ Croma ಅತ್ಯಂತ ಕಟ್ಟುನಿಟ್ಟಿನ ಕ್ರಮದಲ್ಲಿ"
 " ಇರುತ್ತದೆ, ಹಾಗು ಬಳಕೆದಾರರು ಅನುಚಿತವಾಗಿ ವರ್ತಿಸುವ ಯಾವುದೆ ಅನ್ವಯಗಳನ್ನು ಚಲಾಯಿಸದೆ "
 "ಇದ್ದಲ್ಲಿ ಇದು ಹೆಚ್ಚು ಸ್ಥಿರವಾದ ಒಂದು ಬಳಕೆದಾರ ಸಂಪರ್ಕಸಾಧನವನ್ನು ನೀಡುತ್ತದೆ."
 
@@ -1238,8 +1238,8 @@ msgid "Disable connection to session manager"
 msgstr "ಅಧಿವೇಶನದ ವ್ಯವಸ್ಥಾಪಕನೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ಅಶಕ್ತಗೊಳಿಸು"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "ಚಲಾಯಿತಗೊಳ್ಳುತ್ತಿರುವ ವಿಂಡೊ ವ್ಯವಸ್ಥಾಪಕವನ್ನು Marco ಯೊಂದಿಗೆ ಬದಲಾಯಿಸಿ"
+msgid "Replace the running window manager with Croma"
+msgstr "ಚಲಾಯಿತಗೊಳ್ಳುತ್ತಿರುವ ವಿಂಡೊ ವ್ಯವಸ್ಥಾಪಕವನ್ನು Croma ಯೊಂದಿಗೆ ಬದಲಾಯಿಸಿ"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1440,8 +1440,8 @@ msgid "Opened log file %s\n"
 msgstr "ದಾಖಲೆ ಕಡತ %s ಅನ್ನು ತೆರೆಯಲಾಗಿದೆ\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "ವರ್ಬೋಸ್ ಕ್ರಮಕ್ಕಾಗಿನ ಬೆಂಬಲವಿಲ್ಲದೆ Marco ಅನ್ನು ಕಂಪೈಲ್ ಮಾಡಲಾಗಿದೆ\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "ವರ್ಬೋಸ್ ಕ್ರಮಕ್ಕಾಗಿನ ಬೆಂಬಲವಿಲ್ಲದೆ Croma ಅನ್ನು ಕಂಪೈಲ್ ಮಾಡಲಾಗಿದೆ\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1462,7 +1462,7 @@ msgstr "ವಿಂಡೊ ವ್ಯವಸ್ಥಾಪಕ ದೋಷ: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
+msgid "Croma"
 msgstr "ಮೆಟಾಸಿಟಿ"
 
 #. first time through

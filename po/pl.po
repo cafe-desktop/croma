@@ -732,7 +732,7 @@ msgstr "Typ wizualnego sygnału dźwiękowego"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -740,7 +740,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Opcja określa, w jaki sposób Marco ma graficznie przedstawić odtworzenie "
+"Opcja określa, w jaki sposób Croma ma graficznie przedstawić odtworzenie "
 "dźwięku przez brzęczyk systemowy lub program, który z niego korzysta. "
 "Aktualnie obsługiwane są dwie wartości: \"fullscreen\", która powoduje "
 "mignięcie całego ekranu na czarno i biało oraz \"frame_flash\", która "
@@ -754,8 +754,8 @@ msgid "Compositing Manager"
 msgstr "Menedżer składania"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Określa, czy program Marco ma być menedżerem składania."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Określa, czy program Croma ma być menedżerem składania."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -783,7 +783,7 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Ustawienie tej opcji spowoduje, że menedżer Marco ograniczy interakcję z "
+"Ustawienie tej opcji spowoduje, że menedżer Croma ograniczy interakcję z "
 "użytkownikiem poprzez użycie ramek przy skalowaniu okien, wyłączenie "
 "animacji i podobne. Dla wielu użytkowników może być to znaczące ograniczenie"
 " funkcjonalności, ale może pozwolić starszym programom i terminalom na "
@@ -798,7 +798,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -806,7 +806,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Ustawienie tej opcji powoduje, że menedżer Marco pracuje w ramach programów,"
+"Ustawienie tej opcji powoduje, że menedżer Croma pracuje w ramach programów,"
 " nie okien. Pojęcie to jest nieco abstrakcyjne, ale ogólnie ustawienia "
 "oparte na programach przypominają raczej działanie systemu MacOS niż systemu"
 " Windows. Gdy menedżer pracuje w trybie programów, po uaktywnieniu okna "
@@ -821,12 +821,12 @@ msgstr "Wyłącza własności, które wymagane są przez stare i błędne progra
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Niektóre programy nie stosują się do specyfikacji, co może powodować "
-"nieprawidłowe zachowanie menedżera okien. Ta opcja przestawia Marco w tryb "
+"nieprawidłowe zachowanie menedżera okien. Ta opcja przestawia Croma w tryb "
 "ściśle prawidłowy, w którym interfejs użytkownika jest bardziej spójny, o "
 "ile nie są uruchamiane żadne programy łamiące specyfikacje."
 
@@ -1327,8 +1327,8 @@ msgid "Disable connection to session manager"
 msgstr "Rozłącza połączenie z menedżerem sesji"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Podmienia uruchomionego menedżera okien na Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Podmienia uruchomionego menedżera okien na Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1529,9 +1529,9 @@ msgid "Opened log file %s\n"
 msgstr "Otwarty plik dziennika %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr ""
-"Program Marco został skompilowany bez obsługi trybu z obszerną informacją\n"
+"Program Croma został skompilowany bez obsługi trybu z obszerną informacją\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1552,8 +1552,8 @@ msgstr "Błąd menedżera okien: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

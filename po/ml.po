@@ -696,7 +696,7 @@ msgstr "വിശ്വല്‍ ബെല്‍ രീതി"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -717,7 +717,7 @@ msgid "Compositing Manager"
 msgstr "കംപോസിറ്റിങ് മാനേജര്‍"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
+msgid "Determines whether Croma is a compositing manager."
 msgstr "മെറ്റാസിറ്റി ഒരു കംപോസിറ്റിങ് മാനേജറാണെന്നു് നിശ്ചയിക്കുന്നു."
 
 #: src/org.mate.croma.gschema.xml:156
@@ -757,7 +757,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -782,7 +782,7 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
@@ -1235,7 +1235,7 @@ msgid "Disable connection to session manager"
 msgstr "സെഷന്‍ മാനേജറിലേക്കുള്ള കണക്ഷന്‍ പ്രവര്‍ത്തന രഹിതമാക്കുക"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
+msgid "Replace the running window manager with Croma"
 msgstr ""
 "പ്രവര്‍ത്തനത്തിലുള്ള ജാലകത്തിന്റെ മാനേജറിനെ മെറ്റാസിറ്റി ഉപയോഗിച്ച് മാറ്റുക"
 
@@ -1438,7 +1438,7 @@ msgid "Opened log file %s\n"
 msgstr "തുറന്ന ഒരു ലോഗ് രചന %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr "verbose-നുള്ള പിന്തുണ ഇല്ലാതെയാണ് മെറ്റാ സിറ്റി തയ്യാറാക്കിയത്\n"
 
 #: src/core/util.c:227
@@ -1460,7 +1460,7 @@ msgstr "ജാലക പാലകന്റെ തെറ്റ്:‌‌"
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
+msgid "Croma"
 msgstr "മെറ്റാസിറ്റി"
 
 #. first time through

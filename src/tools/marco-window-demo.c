@@ -1,4 +1,4 @@
-/* Marco window types/properties demo app */
+/* Croma window types/properties demo app */
 
 /*
  * Copyright (C) 2002 Havoc Pennington

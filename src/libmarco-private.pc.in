@@ -5,7 +5,7 @@ includedir=@includedir@
 libmate_serverdir=@libexecdir@
 
 Name: libcroma-private
-Description: Marco internals shared 
+Description: Croma internals shared 
 Requires: gtk+-3.0
 Version: @VERSION@
 Libs: -L${libdir} -lcroma-private

@@ -7,7 +7,7 @@
 
   <bookinfo>
 
-    <title>Understanding Marco Themes</title>
+    <title>Understanding Croma Themes</title>
 
     <authorgroup>
       <author>
@@ -46,10 +46,10 @@
 <chapter id="sec-introduction">
 <title>Introduction</title>
 
-<para>This is an article about how to theme Marco.  It is a work in progress, and I have had to dig deeply to find some answers; I may well have made mistakes and I welcome corrections and suggestions.</para>
-<para>MATE lets you theme a bunch of different things, but we're only talking about <literal>window border</literal> themes here, which some people call Marco themes; <ulink url="http://en.wikipedia.org/wiki/Marco#Themes">Wikipedia begins a sentence</ulink> with &quot;Despite the incomplete state of Marco theme development documentation&quot;, and though there <emphasis>is</emphasis> <ulink url="http://svn.mate.org/viewvc/croma/trunk/doc/theme-format.txt?view=markup">documentation in the source</ulink>, apparently not many people find it, and it's written more for programmers than theme designers.  Glynn Foster also wrote <ulink url="http://developer.mate.org/doc/tutorials/croma/croma-themes.html">a very good introduction to Marco themes</ulink> (<ulink url="http://home.arcor.de/rybaczyk/documents/tutorials/croma/croma-themes.de.html">[de]</ulink>) six years ago, but things have changed a little since then.  <ulink url="http://lists.freedesktop.org/archives/compiz/2006-September/000445.html">Marco themes can also be used by Compiz</ulink>, and perhaps by other window managers for all I know.</para>
+<para>This is an article about how to theme Croma.  It is a work in progress, and I have had to dig deeply to find some answers; I may well have made mistakes and I welcome corrections and suggestions.</para>
+<para>MATE lets you theme a bunch of different things, but we're only talking about <literal>window border</literal> themes here, which some people call Croma themes; <ulink url="http://en.wikipedia.org/wiki/Croma#Themes">Wikipedia begins a sentence</ulink> with &quot;Despite the incomplete state of Croma theme development documentation&quot;, and though there <emphasis>is</emphasis> <ulink url="http://svn.mate.org/viewvc/croma/trunk/doc/theme-format.txt?view=markup">documentation in the source</ulink>, apparently not many people find it, and it's written more for programmers than theme designers.  Glynn Foster also wrote <ulink url="http://developer.mate.org/doc/tutorials/croma/croma-themes.html">a very good introduction to Croma themes</ulink> (<ulink url="http://home.arcor.de/rybaczyk/documents/tutorials/croma/croma-themes.de.html">[de]</ulink>) six years ago, but things have changed a little since then.  <ulink url="http://lists.freedesktop.org/archives/compiz/2006-September/000445.html">Croma themes can also be used by Compiz</ulink>, and perhaps by other window managers for all I know.</para>
 
-<para>So, a Marco theme is a set of instructions about how to &quot;decorate&quot; (draw the borders around) a window.  Presumably you don't want to style all windows identically, so the format lets you specify details for different kinds of window:</para>
+<para>So, a Croma theme is a set of instructions about how to &quot;decorate&quot; (draw the borders around) a window.  Presumably you don't want to style all windows identically, so the format lets you specify details for different kinds of window:</para>
 
 <para>
 <variablelist>
@@ -93,7 +93,7 @@ for a theme installed for all users.</para></listitem>
 
 <para>where <varname>N</varname> is the name of the theme and <varname>V</varname> is the version of the format.  Version 2, <ulink url="http://svn.mate.org/viewvc/croma?view=revision&amp;revision=2973">introduced in October 2006</ulink>, adds a few extra features, but it's rarely used.  Version 1 is the original format.  The formats are fixed once they're stable for both backwards and forwards compatibility; <ulink url="http://bugzilla.mate.org/show_bug.cgi?id=482165">new features</ulink> can't be added without introducing a new version number, which is why improvements come out rarely and in large clumps.  <literal>croma-1</literal> in the names is a fossil and doesn't mean version 1 of anything.</para>
 
-<para>The croma-theme-V.xml files are <ulink url="http://blogs.mate.org/tthurman/2008/02/14/gmarkup/">GMarkup files</ulink>, which are very similar to XML.  For now, you actually have to write these in a text editor or something; you can either start with a blank page, or modify a theme someone else has made.  (I am thinking of writing a general theme editor program, but that'll have to wait until I've reduced Marco's open bug queue a little.)  If you want to see a fully-fledged one, you can look at <ulink url="http://svn.mate.org/viewvc/croma/trunk/src/themes/Atlanta/croma-theme-1.xml?view=markup">the current version of &quot;Atlanta&quot;</ulink>, one of the simplest themes, but even that is quite complicated-looking at first.</para>
+<para>The croma-theme-V.xml files are <ulink url="http://blogs.mate.org/tthurman/2008/02/14/gmarkup/">GMarkup files</ulink>, which are very similar to XML.  For now, you actually have to write these in a text editor or something; you can either start with a blank page, or modify a theme someone else has made.  (I am thinking of writing a general theme editor program, but that'll have to wait until I've reduced Croma's open bug queue a little.)  If you want to see a fully-fledged one, you can look at <ulink url="http://svn.mate.org/viewvc/croma/trunk/src/themes/Atlanta/croma-theme-1.xml?view=markup">the current version of &quot;Atlanta&quot;</ulink>, one of the simplest themes, but even that is quite complicated-looking at first.</para>
 <para>So, let's talk about what actually goes inside the files.  As in any XML file, &lt;!-<!-- x -->- &#8230; <!-- x -->&gt; are comments.  At its most basic, it would go:</para>
 
 <para>
@@ -136,7 +136,7 @@ for a theme installed for all users.</para></listitem>
     <term>window</term><listitem><para>You see that at the top level we have a list of &lt;window&gt; tags, one for each window state we discussed above.  The style_set argument of each of these gives the name of a frame_style_set.</para></listitem>
   </varlistentry>
   <varlistentry>
-    <term>frame_style_set:</term><listitem><para>tells Marco how to draw windows according to whether they're focused or not, maximised or not, shaded or not, and allowing resizing vertically, horizontally, both, or neither.  It looks like this:</para></listitem>
+    <term>frame_style_set:</term><listitem><para>tells Croma how to draw windows according to whether they're focused or not, maximised or not, shaded or not, and allowing resizing vertically, horizontally, both, or neither.  It looks like this:</para></listitem>
   </varlistentry>
 </variablelist>
 </para>
@@ -171,9 +171,9 @@ for a theme installed for all users.</para></listitem>
 <para>
 <varname>N</varname> is the name of a <literal>frame_style</literal> to apply to a window which has these attributes.</para>
 
-<para>A <literal>frame_style_set</literal> tag may also have a &quot;parent&quot; tag, which should be the name of another <literal>frame_style_set</literal>. This means that if Marco wants to know about a kind of window which that <literal>frame_style_set</literal> doesn't describe, it should look in the parent.  Most of the more complicated tags in Marco theme files also have a &quot;parent&quot; attribute which work the same way.  This is particularly useful because, taken together, all the <literal>frame_style_set</literal>s in a theme file must be capable of matching every possible kind of window; if a window turns up that they can't match, there will be an error at runtime.</para>
+<para>A <literal>frame_style_set</literal> tag may also have a &quot;parent&quot; tag, which should be the name of another <literal>frame_style_set</literal>. This means that if Croma wants to know about a kind of window which that <literal>frame_style_set</literal> doesn't describe, it should look in the parent.  Most of the more complicated tags in Croma theme files also have a &quot;parent&quot; attribute which work the same way.  This is particularly useful because, taken together, all the <literal>frame_style_set</literal>s in a theme file must be capable of matching every possible kind of window; if a window turns up that they can't match, there will be an error at runtime.</para>
 
-<para>Let's recap what we've seen so far. The combination of a <literal>window</literal>, which matches a window's state (normal, dialog, and so forth), with an entry in the corresponding <literal>frame_style_set</literal>, which matches its focus, shadedness, maximisedness, and resize permissions where relevant, will allow you to make a list of rules to match any window against.  The next piece of this puzzle lets you specify what Marco should do with such windows once it's matched them.</para>
+<para>Let's recap what we've seen so far. The combination of a <literal>window</literal>, which matches a window's state (normal, dialog, and so forth), with an entry in the corresponding <literal>frame_style_set</literal>, which matches its focus, shadedness, maximisedness, and resize permissions where relevant, will allow you to make a list of rules to match any window against.  The next piece of this puzzle lets you specify what Croma should do with such windows once it's matched them.</para>
 
 </chapter>
 
@@ -200,7 +200,7 @@ for a theme installed for all users.</para></listitem>
 </programlisting>
 </para>
 
-<para>The <literal>pieces</literal> are pieces of the window frame.  When Marco draws a window frame, it renders its various pieces always in the same order.  The bolded parts are all the possible values of P:</para>
+<para>The <literal>pieces</literal> are pieces of the window frame.  When Croma draws a window frame, it renders its various pieces always in the same order.  The bolded parts are all the possible values of P:</para>
 
 <para>
 <itemizedlist>
@@ -216,11 +216,11 @@ for a theme installed for all users.</para></listitem>
 </itemizedlist>
 </para>
 
-<para><emphasis>What</emphasis> Marco draws in these pieces is decided by the theme.  If a <literal>frame_style</literal> or its parents don't specify a particular piece, nothing will be drawn for that piece.  You have two ways to specify what to draw: one is that the <literal>piece</literal> tag can have a <literal>draw_ops</literal> tag inside it which lists a sequence of drawing operations in Marco's custom format.  <ulink url="http://bugzilla.mate.org/show_bug.cgi?id=107012">You might ask why we don't use SVG</ulink>; one answer is that SVG support wasn't very strong when this format was designed, and another answer is that these days you can use SVG all you like; just include it as an image and Marco will know what to do.</para>
+<para><emphasis>What</emphasis> Croma draws in these pieces is decided by the theme.  If a <literal>frame_style</literal> or its parents don't specify a particular piece, nothing will be drawn for that piece.  You have two ways to specify what to draw: one is that the <literal>piece</literal> tag can have a <literal>draw_ops</literal> tag inside it which lists a sequence of drawing operations in Croma's custom format.  <ulink url="http://bugzilla.mate.org/show_bug.cgi?id=107012">You might ask why we don't use SVG</ulink>; one answer is that SVG support wasn't very strong when this format was designed, and another answer is that these days you can use SVG all you like; just include it as an image and Croma will know what to do.</para>
 
-<para>An alternative to including a draw_ops tag inside a piece tag is to add a draw_ops attribute to the piece tag.  Then you can add a draw_ops tag at top level (inside the croma_theme tag) with a name attribute, and Marco will use that.  This is useful if you use similar draw_ops over and over.</para>
+<para>An alternative to including a draw_ops tag inside a piece tag is to add a draw_ops attribute to the piece tag.  Then you can add a draw_ops tag at top level (inside the croma_theme tag) with a name attribute, and Croma will use that.  This is useful if you use similar draw_ops over and over.</para>
 <para>I'm not going to document draw_ops at present, because this is already very long.  I will write it up later and link it from here.</para>
-<para>The <literal>button</literal> tag tells Marco how, but not where, to draw buttons.  Buttons are drawn after all the pieces are finished, and the way to draw them is also given using draw_ops.  You ought to provide buttons for all the possible kinds of button; if you don't give one it won't be drawn, which is unfortunate for the user who wants to use it:</para>
+<para>The <literal>button</literal> tag tells Croma how, but not where, to draw buttons.  Buttons are drawn after all the pieces are finished, and the way to draw them is also given using draw_ops.  You ought to provide buttons for all the possible kinds of button; if you don't give one it won't be drawn, which is unfortunate for the user who wants to use it:</para>
 
 <para>
 <itemizedlist>
@@ -268,7 +268,7 @@ for a theme installed for all users.</para></listitem>
 <para>and view it on the whole desktop using
 <command>mateconftool -<!-- x -->-type=string -<!-- x -->-set /apps/croma/general/theme YourThemeName</command></para>
 
-<para>Whenever you change the selected theme in MateConf, Marco will load the newly-chosen theme.  This is how control-center does it.  But when you change a theme, as you're working on it, you might want to ask Marco to reload the theme which is currently used on the whole desktop to reflect your changes.  You can do this using the little-known <command>croma-message</command> program, with the command <literal>croma-message reload-theme</literal>.  This works by sending the ClientMessage <literal>_MARCO_RELOAD_THEME_MESSAGE</literal> to the root window, in case you're interested.</para>
+<para>Whenever you change the selected theme in MateConf, Croma will load the newly-chosen theme.  This is how control-center does it.  But when you change a theme, as you're working on it, you might want to ask Croma to reload the theme which is currently used on the whole desktop to reflect your changes.  You can do this using the little-known <command>croma-message</command> program, with the command <literal>croma-message reload-theme</literal>.  This works by sending the ClientMessage <literal>_MARCO_RELOAD_THEME_MESSAGE</literal> to the root window, in case you're interested.</para>
 
 <para>Once you're done with your theme, consider submitting it to <ulink url="http://art.mate.org/themes/croma/">the art.mate.org site</ulink>, or <ulink url="http://www.mate-look.org/index.php?xcontentmode=101">the mate-look site</ulink>.</para>
 
@@ -277,8 +277,8 @@ for a theme installed for all users.</para></listitem>
 <chapter>
 <title>The future</title>
 
-<para>Please feel free to link to this so people don't have to keep asking the basic questions and can start asking the deeper ones.  One of the important deeper ones is: where should we go in the future?  Since this format is becoming something of a de facto standard between window managers, should we set up some kind of freedesktop.org standards discussion?  Would it be useful to spin off Marco's theme parsing code into a separate, LGPL-licensed library so that other applications could use it more easily?</para>
-<para>What would a version 3 of this format look like?  Could we simplify the window / frame_style_set system? (I can imagine abolishing both, and being able to write <literal>&lt;frame_style for=&quot;normal+unfocused+maximized&quot;&gt;&#8230;</literal> and having Marco assume it applied to all resize permissions and shadednesses.) Maybe we should try to do everything with SVG we can? Getting more wild and handwavey, is it worth keeping XML-like?  Maybe if other window managers were dealing with the files, .ini-style files would be more universally useful? Or perhaps not.  And then of course we need a decent graphical editor for it.  I have a few ideas, but if anyone fancies jumping in...</para>
+<para>Please feel free to link to this so people don't have to keep asking the basic questions and can start asking the deeper ones.  One of the important deeper ones is: where should we go in the future?  Since this format is becoming something of a de facto standard between window managers, should we set up some kind of freedesktop.org standards discussion?  Would it be useful to spin off Croma's theme parsing code into a separate, LGPL-licensed library so that other applications could use it more easily?</para>
+<para>What would a version 3 of this format look like?  Could we simplify the window / frame_style_set system? (I can imagine abolishing both, and being able to write <literal>&lt;frame_style for=&quot;normal+unfocused+maximized&quot;&gt;&#8230;</literal> and having Croma assume it applied to all resize permissions and shadednesses.) Maybe we should try to do everything with SVG we can? Getting more wild and handwavey, is it worth keeping XML-like?  Maybe if other window managers were dealing with the files, .ini-style files would be more universally useful? Or perhaps not.  And then of course we need a decent graphical editor for it.  I have a few ideas, but if anyone fancies jumping in...</para>
 </chapter>
 
 </book>

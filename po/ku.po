@@ -616,7 +616,7 @@ msgstr "Cureyê Zengila Dîtbarî"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -630,7 +630,7 @@ msgid "Compositing Manager"
 msgstr ""
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
+msgid "Determines whether Croma is a compositing manager."
 msgstr ""
 
 #: src/org.mate.croma.gschema.xml:156
@@ -665,7 +665,7 @@ msgstr "(Hê nehatiye sepandin) Gerîn, ne gorî sepanan gorî paceyan dixebite.
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -681,7 +681,7 @@ msgstr "Taybetiyên çewt yên sepanên kevn yan jî sepanên çewt bigire"
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
@@ -1116,8 +1116,8 @@ msgid "Disable connection to session manager"
 msgstr "Girêdana bi rêveberiyê hatiye kirin betal bike"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Gerînendeyê paceyan yê dixebite bi Marco biguherîne"
+msgid "Replace the running window manager with Croma"
+msgstr "Gerînendeyê paceyan yê dixebite bi Croma biguherîne"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1304,8 +1304,8 @@ msgid "Opened log file %s\n"
 msgstr "Pelê rojane yê %s vebû\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Marco, bêyî ku desteka moda kîtekît hebe hatiye berhevkirin.\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Croma, bêyî ku desteka moda kîtekît hebe hatiye berhevkirin.\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1326,8 +1326,8 @@ msgstr "Çewtiya rêveberiya paceyan: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

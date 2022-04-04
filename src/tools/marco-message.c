@@ -1,4 +1,4 @@
-/* Marco send-magic-messages app */
+/* Croma send-magic-messages app */
 
 /*
  * Copyright (C) 2002 Havoc Pennington
@@ -173,7 +173,7 @@ main (int argc, char **argv)
   else if (strcmp (argv[1], "toggle-verbose") == 0)
     {
 #ifndef WITH_VERBOSE_MODE
-      g_printerr (_("Marco was compiled without support for verbose mode\n"));
+      g_printerr (_("Croma was compiled without support for verbose mode\n"));
       return 1;
 #else
       send_toggle_verbose ();

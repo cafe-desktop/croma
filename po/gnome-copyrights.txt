@@ -89,7 +89,7 @@
 
 
 ========== bn.po ==========
-# Bengali Translation for Marco 2.4
+# Bengali Translation for Croma 2.4
 # Copyright (C) 2003 Free Software Foundation
 # This file is distributed under the same license as the MARCO package.
 # Dr Anirban Mitra <mitra_anirban@yahoo.co.in>, 2003.
@@ -104,7 +104,7 @@
 
 ========== bn_IN.po ==========
 # translation of bn_IN.po to Bengali INDIA
-# Bengali India Translation for Marco 2.4
+# Bengali India Translation for Croma 2.4
 # Copyright (C) 2003 Free Software Foundation
 # This file is distributed under the same license as the MARCO package.
 #
@@ -138,7 +138,7 @@
 
 
 ========== ca.po ==========
-# Catalan translation of Marco.
+# Catalan translation of Croma.
 # Copyright © 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the croma package.
 # Softcatala <info@softcatala.org>, 2002.
@@ -151,7 +151,7 @@
 
 
 ========== ca@valencia.po ==========
-# Catalan translation of Marco.
+# Catalan translation of Croma.
 # Copyright © 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the croma package.
 # Softcatala <info@softcatala.org>, 2002.
@@ -174,8 +174,8 @@
 
 
 ========== cs.po ==========
-# Czech translation of Marco.
-# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 the author(s) of Marco.
+# Czech translation of Croma.
+# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 the author(s) of Croma.
 # Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
 # This file is distributed under the same license as the croma package.
 # Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
@@ -201,7 +201,7 @@
 
 
 ========== da.po ==========
-# Danish translation of Marco.
+# Danish translation of Croma.
 # Copyright (C) 2002-2009
 # This file is distributed under the same license as the croma package.
 # Kjartan Maraas <kmaraas@gnome.org>, 2002
@@ -221,7 +221,7 @@
 
 
 ========== de.po ==========
-# German Marco translation.
+# German Croma translation.
 # Copyright (C) 2002-2004 Free Software Foundation, Inc.
 #
 # #
@@ -270,7 +270,7 @@
 
 
 ========== en@shaw.po ==========
-# Shavian translation of Marco.
+# Shavian translation of Croma.
 # This file is distributed under the same licence as the croma package.
 
 
@@ -316,7 +316,7 @@
 
 ========== es.po ==========
 # translation of croma.HEAD.po to Español
-# Spanish trasnlation for Marco
+# Spanish trasnlation for Croma
 # Copyright © 2001,2002,2003, 2006, 2007, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the croma package.
 #
@@ -329,8 +329,8 @@
 
 
 ========== et.po ==========
-# Marco eesti tõlge.
-# Estonian translation of Marco
+# Croma eesti tõlge.
+# Estonian translation of Croma
 #
 # Copyright (C) 2004-2005 The Free Software Foundation
 # Copyright (C) 2006-2010 The MATE Project.
@@ -369,7 +369,7 @@
 
 
 ========== fi.po ==========
-# Marco Finnish translation.
+# Croma Finnish translation.
 # Suomennos: http://mate-fi.sourceforge.net/
 #
 # Copyright (C) 2003 Free Software Foundation, Inc.
@@ -415,7 +415,7 @@
 
 
 ========== gl.po ==========
-# translation of croma.HEAD.gl.po to Galician translation of Marco, a tiny WM for MATE.
+# translation of croma.HEAD.gl.po to Galician translation of Croma, a tiny WM for MATE.
 # Copyright (C) 2001, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 #
 # Manuel A. Fernández Montecelo <manuel@sindominio.net>, 2001, 2005.
@@ -526,7 +526,7 @@
 
 
 ========== it.po ==========
-# Italian translation of Marco.
+# Italian translation of Croma.
 # This file is distributed under the same license as croma package
 # Copyright (C) 2002,2003,2004,2005,2006,2007,2008,2009,2010 Free Software Foundation, Inc.
 # Pier Luigi Fiorini <plfiorini@libero.it>, 2002.
@@ -553,7 +553,7 @@
 ========== ka.po ==========
 # translation of ka.po to Georgian
 # translation of ka.po to
-# Georgian translation for Marco
+# Georgian translation for Croma
 # Copyright © 2006 Canonical Ltd. and Rosetta Contributors.
 # This file is distributed under the same license as the croma package.
 #
@@ -595,9 +595,9 @@
 
 
 ========== la.po ==========
-# Marco - Latin translation
+# Croma - Latin translation
 # Copyright (C) 2008 Thomas Thurman.
-# This file is distributed under the same license as Marco itself.
+# This file is distributed under the same license as Croma itself.
 # Thomas Thurman <tthurman@gnome.org>, 2008.
 #
 
@@ -710,7 +710,7 @@
 
 
 ========== ms.po ==========
-# terjemahan Marco untuk Bahasa Melayu.
+# terjemahan Croma untuk Bahasa Melayu.
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # 1. Hasbullah Bin Pit <sebol@ikhlas.com>, 2002i-2003.
 # 2. ??
@@ -764,7 +764,7 @@
 
 ========== nn.po ==========
 # translation of croma to Norwegian Nynorsk
-# This file is distributed under the same license as the Marco package.
+# This file is distributed under the same license as the Croma package.
 # Copyright (C) 2003 Åsmund Skjæveland.
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2003, 2004, 2006.
 # Eskild Hustvedt <eskildh@gnome.org>, 2008.
@@ -984,7 +984,7 @@
 
 ========== ta.po ==========
 # translation of croma.master.ta.po to Tamil
-# Tamil translation of Tamil Marco 2.4.
+# Tamil translation of Tamil Croma 2.4.
 # Copyright (C) 2003, 2004, 2006, 2007, 2009 Free Software Foundation, Inc.
 #
 #
@@ -1056,7 +1056,7 @@
 
 
 ========== vi.po ==========
-# Vietnamese translation for Marco.
+# Vietnamese translation for Croma.
 # Copyright © 2008 MATE i18n Project for Vietnamese.
 # Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002-2004, 2007, 2008.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2008.

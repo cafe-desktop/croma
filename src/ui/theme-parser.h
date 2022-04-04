@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco theme parsing */
+/* Croma theme parsing */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

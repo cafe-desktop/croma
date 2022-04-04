@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco theme parsing */
+/* Croma theme parsing */
 
 /*
  * Copyright (C) 2001 Havoc Pennington
@@ -3464,7 +3464,7 @@ find_version (const char **attribute_names,
 /* Returns whether the version element was successfully parsed.
  * If successfully parsed, then two additional items are returned:
  *
- * satisfied:        whether this version of Marco meets the version check
+ * satisfied:        whether this version of Croma meets the version check
  * minimum_required: minimum version of theme format required by version check
  */
 static gboolean

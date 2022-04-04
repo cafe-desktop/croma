@@ -169,7 +169,7 @@ typedef struct _MetaCompScreen
 typedef struct _MetaCompWindow
 {
   MetaScreen *screen;
-  MetaWindow *window; /* May be NULL if this window isn't managed by Marco */
+  MetaWindow *window; /* May be NULL if this window isn't managed by Croma */
   Window id;
   XWindowAttributes attrs;
 
@@ -2067,7 +2067,7 @@ add_win (MetaScreen *screen,
     }
   get_window_type (display, cw);
 
-  /* If Marco has decided not to manage this window then the input events
+  /* If Croma has decided not to manage this window then the input events
      won't have been set on the window */
   event_mask = cw->attrs.your_event_mask | PropertyChangeMask;
 
@@ -3085,7 +3085,7 @@ xrender_process_event (MetaCompositor *compositor,
   /*
    * This trap is so that none of the compositor functions cause
    * X errors. This is really a hack, but I'm afraid I don't understand
-   * enough about Marco/X to know how else you are supposed to do it
+   * enough about Croma/X to know how else you are supposed to do it
    */
   meta_error_trap_push (xrc->display);
   switch (event->type)

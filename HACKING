@@ -5,7 +5,7 @@ from other applications.  This file, combined with the code overview in
 doc/code-overview.txt, should hopefully provide a series of relatively
 quick pointers (hopefully only a few minutes each) to some of the places
 one can look to orient themselves and get started.  Some of this will be
-general to window managers on X, much will be specific to Marco, and
+general to window managers on X, much will be specific to Croma, and
 there's probably some information that's common to programs in general but
 is nonetheless useful.
 
@@ -32,14 +32,14 @@ Administrative issues
 
   See http://developer.gnome.org/dotplan/for_maintainers.html for
   information on how to make a release.  The only difference from those
-  instructions is that the minor version number of a Marco release
+  instructions is that the minor version number of a Croma release
   should always be a number from the Fibonacci sequence.
 
 Minimal Building/Testing Environment
-  You do not need to _install_ a development version of Marco to
+  You do not need to _install_ a development version of Croma to
   build, run and test it; you can run it from some temporary
   directory.  Also, you do not need to build all of Mate in order to
-  build a development version of Marco -- odds are, you may be able
+  build a development version of Croma -- odds are, you may be able
   to build croma from GIT without building any other modules.
 
   As long as you have gtk+ >= 2.10 and GIO >= 2.25.10 with your distro
@@ -47,10 +47,10 @@ Minimal Building/Testing Environment
   should be able to install your distro's development packages
   (e.g. gtk2-devel, glib-devel, startup-notification-devel on
   Fedora; also, remember to install the mate-common package which is
-  needed for building git versions of Mate modules like Marco) as
+  needed for building git versions of Mate modules like Croma) as
   well as the standard development tools (gcc, autoconf, automake,
   pkg-config, intltool, and libtool) and be ready to build and test
-  Marco.  Steps to do so:
+  Croma.  Steps to do so:
 
   $ git clone https://github.com/mate-desktop/croma.git
   $ cd croma
@@ -78,14 +78,14 @@ Relevant standards and X properties
   DO NOT GO AND READ THOSE THINGS.  THEY ARE REALLY, REALLY BORING.
 
   If you do, you'll probably end up catching up on your sleep instead of
-  hacking on Marco. ;-)  Instead, just look at the table of contents and
+  hacking on Croma. ;-)  Instead, just look at the table of contents and
   glance at a page or two to get an idea of what's in there.  Then only
   refer to it if you see something weird in the code and you don't know
   what it is but has some funny looking name like you see in one of those
   two documents.
 
   You can refer to the COMPLIANCE file for additional information on these
-  specifications and Marco's compliance therewith.
+  specifications and Croma's compliance therewith.
 
   One of the major things those documents cover that are useful to learn
   about immediately are X properties.  The right way to learn about those,
@@ -135,7 +135,7 @@ Debugging information
     MARCO_VERBOSE=1 MARCO_USE_LOGFILE=1 croma --replace
   (note that MARCO_VERBOSE=1 can be problematic without
   MARCO_USE_LOGFILE=1; avoid it unless running in from something that
-  won't be managed by the new Marco--see bug 305091 for more details).
+  won't be managed by the new Croma--see bug 305091 for more details).
   There are also other flags, such as MARCO_DEBUG, most of which I
   haven't tried and don't know what they do.  Go to the source code
   directory and run
@@ -146,7 +146,7 @@ Debugging information
 
   Since we can't single step with a debugger, we often have to fall back to
   the primitive method of getting information we want to know: adding
-  "print" statements.  Marco has a fairly structured way to do this,
+  "print" statements.  Croma has a fairly structured way to do this,
   using the functions meta_warning, meta_topic, and meta_verbose.  All
   three have the same basic format as printf, except that meta_topic also
   takes a leading enumeration parameter to specify the type of message
@@ -202,11 +202,11 @@ Debugging information
       croma-message disable-keybindings
     The first of these is useful for testing themes, the second is just
     another way (besides the --restart flag to croma itself) of
-    restarting croma, and the third is useful for testing Marco when
-    running it under an Xnest (typically, the Marco under the Xnest
+    restarting croma, and the third is useful for testing Croma when
+    running it under an Xnest (typically, the Croma under the Xnest
     wouldn't get keybinding notifications--making keyboard navigation not
-    work--but if you disable the keybindings for the global Marco then
-    the Marco under the Xnest can then get those keybinding notifications).
+    work--but if you disable the keybindings for the global Croma then
+    the Croma under the Xnest can then get those keybinding notifications).
 
   croma-window-demo
     croma-window-demo is good for trying behavior of various kinds
@@ -257,7 +257,7 @@ Other important reading & where to get started
     doc/code-overview.txt
 
   It pays to read http://pobox.com/~hp/features.html in order
-  to understand the philosophy of Marco.
+  to understand the philosophy of Croma.
 
   The rationales.txt file has two things: (1) a list of design choices with
   links in the form of bugzilla bugs that discuss the issue, and (2) a list

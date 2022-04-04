@@ -646,7 +646,7 @@ msgstr "Karazan'ilay lakolosy hita maso"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -654,7 +654,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Milaza ny Marco ny fomba anehoana hoe naneno ny feon'ny rafitra na ny "
+"Milaza ny Croma ny fomba anehoana hoe naneno ny feon'ny rafitra na ny "
 "feon'ny rindranasa hafa. amin'izao aloha dia sanda roa ihany no ekena: "
 "\"fullscreen\" izay mahatonga ny efijery hitselatselatra (loko fotsy sy "
 "mainty) ary \"frame_flash\" izay mahatonga ny anjan-dohatenin'ilay "
@@ -667,8 +667,8 @@ msgid "Compositing Manager"
 msgstr "Mpandrindra fanambarana"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Mamaritra ny hoe mpandrindra fanambarana ny Marco na tsia."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Mamaritra ny hoe mpandrindra fanambarana ny Croma na tsia."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -695,7 +695,7 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Raha toa ka marina, dia tsy dia hamaly firy ny mpampiasa ny Marco satria "
+"Raha toa ka marina, dia tsy dia hamaly firy ny mpampiasa ny Croma satria "
 "hampiasa wireframe, tsy hampiasa sary mihetsika na fomba hafa. Tena "
 "fampihenan-danja lehibe ny fiasa izany ho an'ny mpampiasa maro, nefa "
 "ahafahan'ny rindranasa tranainy mbola miasa ary mety ho fanampiana tsara ho "
@@ -711,7 +711,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -720,7 +720,7 @@ msgid ""
 "unimplemented at the moment."
 msgstr ""
 "Raha toa ka marina, dia mifototra amin'ny rindranasa fa tsy amin'ny "
-"fikandrana ny fiasan'ny Marco. Somary saro-takarina ilay takakevitra, fa "
+"fikandrana ny fiasan'ny Croma. Somary saro-takarina ilay takakevitra, fa "
 "amin'ny ankapobeny dia mitovy kokoa amin'ny Mac noho ny amin'ny Windows ny "
 "kirakira mifototra amina rindranasa. Rehefa manasongadina fikandrana amin'ny"
 " fomba mifototra amina rindranasa ianao, dia hakarina daholo ireo fikandrana"
@@ -737,13 +737,13 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Ny rindranasa sasany dia tsy mandraharaha ireo fifaritra ka miteraka tsy "
 "fahalavorarian'ny fahasahazan'ny mpandrindra fikandrana. Ity safidy ity dia "
-"mametra ny Marco anaty fomba tena hentitra tsara, izay manome mpaneram-"
+"mametra ny Croma anaty fomba tena hentitra tsara, izay manome mpaneram-"
 "pivatsy marim-pototra kokoa raha tsy ilaina ny mandefa rindranasa tsy "
 "mandeha tsara."
 
@@ -1178,8 +1178,8 @@ msgid "Disable connection to session manager"
 msgstr "Manatsahatra ny fifandraisana amin'ny mpandrindra session"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Soloy an'ny Marco ny mpandrindra fikandrana miasa"
+msgid "Replace the running window manager with Croma"
+msgstr "Soloy an'ny Croma ny mpandrindra fikandrana miasa"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1374,10 +1374,10 @@ msgid "Opened log file %s\n"
 msgstr "Voasokatra ny raki-tatitra %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr ""
 "Tsy navadika niaraka tamin'ny fandraisana an-tànana ny fomba be resaka ny "
-"Marco\n"
+"Croma\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1398,8 +1398,8 @@ msgstr "Tsy fetezan'ny mpandrindra fikandrana:"
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

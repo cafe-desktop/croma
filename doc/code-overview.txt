@@ -34,9 +34,9 @@ Major data structures and their relationships
   uses such as Display, Screen, Window, etc.  Note that when I refer to a
   display below, I'm meaning a MetaDisplay and not a Display.
 
-  Don't confuse displays and screens.  While Marco can run with multiple
+  Don't confuse displays and screens.  While Croma can run with multiple
   displays, it is kind of useless since you might as well just run two
-  copies of Marco.  However, having multiple screens per display is
+  copies of Croma.  However, having multiple screens per display is
   useful and increasingly common (known as "multiscreen" and "xinerama"
   setups, where users make use of more than one monitor).  You should
   basically think of a display as a combination of one or more monitors

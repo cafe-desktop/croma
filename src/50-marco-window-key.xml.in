@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<KeyListEntries name="Window Management" wm_name="Metacity (Marco)" package="croma" schema="org.mate.Marco.window-keybindings">
+<KeyListEntries name="Window Management" wm_name="Metacity (Croma)" package="croma" schema="org.mate.Croma.window-keybindings">
 
 	<KeyListEntry
 	name="activate-window-menu"
@@ -46,7 +46,7 @@
 	description="Toggle whether window is on all workspaces or just one"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -150,7 +150,7 @@
 	description="Move window to workspace 1"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -158,7 +158,7 @@
 	description="Move window to workspace 2"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -166,7 +166,7 @@
 	description="Move window to workspace 3"
 	value="2"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -174,7 +174,7 @@
 	description="Move window to workspace 4"
 	value="3"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -182,7 +182,7 @@
 	description="Move window to workspace 5"
 	value="4"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -190,7 +190,7 @@
 	description="Move window to workspace 6"
 	value="5"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -198,7 +198,7 @@
 	description="Move window to workspace 7"
 	value="6"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -206,7 +206,7 @@
 	description="Move window to workspace 8"
 	value="7"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -214,7 +214,7 @@
 	description="Move window to workspace 9"
 	value="8"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -222,7 +222,7 @@
 	description="Move window to workspace 10"
 	value="9"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -230,7 +230,7 @@
 	description="Move window to workspace 11"
 	value="10"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -238,7 +238,7 @@
 	description="Move window to workspace 12"
 	value="11"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -246,7 +246,7 @@
 	description="Move window one workspace to the left"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -254,7 +254,7 @@
 	description="Move window one workspace to the right"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -262,7 +262,7 @@
 	description="Move window one workspace up"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry
@@ -270,7 +270,7 @@
 	description="Move window one workspace down"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 </KeyListEntries>

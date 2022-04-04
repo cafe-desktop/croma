@@ -425,7 +425,7 @@ msgstr ""
 "esquerda da xanela da dereita, e os nomes dos botóns están separados por "
 "vírgulas. Non están permitidos os botóns duplicados. Os nomes de botóns "
 "descoñecidos son ignorados silenciosamente, para que se poidan engadir "
-"botóns en futuras versións do Marco sen romper as versións anteriores. "
+"botóns en futuras versións do Croma sen romper as versións anteriores. "
 "Pódese usar unha etiqueta separadora especial para inserir un pouco de "
 "espazo entre dous botóns adxacentes."
 
@@ -725,7 +725,7 @@ msgstr "Tipo de ton de campá visual"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -733,7 +733,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Dílle ao Marco como implementar a indicación visual de que soou a campá do "
+"Dílle ao Croma como implementar a indicación visual de que soou a campá do "
 "sistema ou a campá de indicación doutra aplicación. Actualmente hai dous "
 "valores válidos, «fullscreen», que causa un escintileo en branco e negro en "
 "toda a pantalla e «frame_flash» que provoca que a barra de títulos da xanela"
@@ -747,8 +747,8 @@ msgid "Compositing Manager"
 msgstr "Xestor de composición"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Determina se o Marco é un xestor de composición."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Determina se o Croma é un xestor de composición."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -779,7 +779,7 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Se é verdadeiro, o Marco daralle ao usuario unha menor retroacción usando "
+"Se é verdadeiro, o Croma daralle ao usuario unha menor retroacción usando "
 "contornos de liña, evitando animacións ou outros medios. Isto é unha "
 "redución significativa da usabilidade para moitos usuarios, mais pode "
 "permitir funcionar as aplicacións antigas e tamén é unha boa solución de "
@@ -795,7 +795,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -803,7 +803,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Se é verdadeiro, entón o Marco funciona en termos de aplicacións en vez de "
+"Se é verdadeiro, entón o Croma funciona en termos de aplicacións en vez de "
 "en xanelas. O concepto é un pouco abstracto, mais en xeral unha "
 "configuración baseada en aplicacións é máis parecida a un Mac e menos a un "
 "Windows. Cando enfoca unha xanela no modo baseado en aplicación, elevaranse "
@@ -820,13 +820,13 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Algunhas aplicacións non consideran as especificacións en formas que teñen "
 "como resultado un comportamento incorrecto do xestor de xanelas. Esta opción"
-" pon ao Marco nun modo rigorosamente correcto, o que dá unha interface de "
+" pon ao Croma nun modo rigorosamente correcto, o que dá unha interface de "
 "usuario máis consistente, sempre que non se necesite executar ningunha "
 "aplicación que sexa problemática."
 
@@ -1328,8 +1328,8 @@ msgid "Disable connection to session manager"
 msgstr "Desactivar a conexión co xestor de sesións"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Substituír o xestor de xanelas en execución co Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Substituír o xestor de xanelas en execución co Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1529,8 +1529,8 @@ msgid "Opened log file %s\n"
 msgstr "Ficheiro de rexistro %s aberto\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "O Marco compilouse sen capacidade para o modo detallado\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "O Croma compilouse sen capacidade para o modo detallado\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1551,8 +1551,8 @@ msgstr "Erro do xestor de xanelas: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

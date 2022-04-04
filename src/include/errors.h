@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco X error handling */
+/* Croma X error handling */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

@@ -1,4 +1,4 @@
-/* Marco window menu */
+/* Croma window menu */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

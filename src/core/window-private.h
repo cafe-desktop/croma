@@ -1,7 +1,7 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
 /**
- * \file window-private.h  Windows which Marco manages
+ * \file window-private.h  Windows which Croma manages
  *
  * Managing X windows.
  * This file contains methods on this class which are available to

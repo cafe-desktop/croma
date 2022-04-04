@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco utilities */
+/* Croma utilities */
 
 /*
  * Copyright (C) 2001 Havoc Pennington
@@ -133,7 +133,7 @@ meta_set_verbose (gboolean setting)
 {
 #ifndef WITH_VERBOSE_MODE
   if (setting)
-    meta_fatal (_("Marco was compiled without support for verbose mode\n"));
+    meta_fatal (_("Croma was compiled without support for verbose mode\n"));
 #else
   if (setting)
     ensure_logfile ();
@@ -557,7 +557,7 @@ meta_show_dialog (const char *type,
   argvl[i++] = "croma-dialog";
   argvl[i++] = "--title";
   /* Translators: This is the title used on dialog boxes */
-  argvl[i++] = _("Marco");
+  argvl[i++] = _("Croma");
   argvl[i++] = "--text";
   argvl[i++] = message;
 
@@ -655,7 +655,7 @@ meta_show_entry_dialog(const char *message,
   argvl[i++] = "croma-dialog";
   argvl[i++] = "--title";
   /* Translators: This is the title used on dialog boxes */
-  argvl[i++] = _ ("Marco");
+  argvl[i++] = _ ("Croma");
   argvl[i++] = "--text";
   argvl[i++] = message;
   

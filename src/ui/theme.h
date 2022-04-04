@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco Theme Rendering */
+/* Croma Theme Rendering */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

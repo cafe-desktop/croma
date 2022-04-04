@@ -1,4 +1,4 @@
-/* Marco interface for talking to GTK+ UI module */
+/* Croma interface for talking to GTK+ UI module */
 
 /*
  * Copyright (C) 2002 Havoc Pennington

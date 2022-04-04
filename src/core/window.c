@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco X managed windows */
+/* Croma X managed windows */
 
 /*
  * Copyright (C) 2001 Havoc Pennington, Anders Carlsson
@@ -1249,7 +1249,7 @@ set_wm_state (MetaWindow *window,
   meta_verbose ("Setting wm state %s on %s\n",
                 wm_state_to_string (state), window->desc);
 
-  /* Marco doesn't use icon windows, so data[1] should be None
+  /* Croma doesn't use icon windows, so data[1] should be None
    * according to the ICCCM 2.0 Section 4.1.3.1.
    */
   data[0] = state;
@@ -3230,7 +3230,7 @@ window_activate (MetaWindow     *window,
 }
 
 /* This function exists since most of the functionality in window_activate
- * is useful for Marco, but Marco shouldn't need to specify a client
+ * is useful for Croma, but Croma shouldn't need to specify a client
  * type for itself.  ;-)
  */
 void
@@ -8855,13 +8855,13 @@ meta_window_get_xwindow (MetaWindow *window)
  *
  * Returns the #MetaWindow for the window that is pointed to by the
  * WM_TRANSIENT_FOR hint on this window (see XGetTransientForHint()
- * or XSetTransientForHint()). Marco keeps transient windows above their
+ * or XSetTransientForHint()). Croma keeps transient windows above their
  * parents. A typical usage of this hint is for a dialog that wants to stay
  * above its associated window.
  *
  * Return value: (transfer none): the window this window is transient for, or
  * %NULL if the WM_TRANSIENT_FOR hint is unset or does not point to a toplevel
- * window that Marco knows about.
+ * window that Croma knows about.
  */
 MetaWindow *
 meta_window_get_transient_for (MetaWindow *window)

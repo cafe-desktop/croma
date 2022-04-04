@@ -683,7 +683,7 @@ msgstr "Kiểu Chuông hình"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -691,7 +691,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Cho Marco biết cách thực hiện cái hiển thị khi có chuông từ hệ thống hoặc từ"
+"Cho Croma biết cách thực hiện cái hiển thị khi có chuông từ hệ thống hoặc từ"
 " ứng dụng khác. Hiện thời chỉ có hai gia trị hợp lệ là «fullscreen» (toàn "
 "màn hình), làm chớp trắng-đen toàn màn hình, và «frame_flash» (khung chớp) "
 "làm chớp thanh tựa đề của ứng dụng rung chuông. Nếu không biết ứng dụng nào "
@@ -703,8 +703,8 @@ msgid "Compositing Manager"
 msgstr "Bộ Quản lý Ghép lại"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Quyết định nếu trình Marco là bộ quản lý ghép lại hay không."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Quyết định nếu trình Croma là bộ quản lý ghép lại hay không."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -746,7 +746,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -754,7 +754,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Nếu bật thì trình Marco hoạt động như theo ứng dụng hơn là theo cửa sổ. Khái"
+"Nếu bật thì trình Croma hoạt động như theo ứng dụng hơn là theo cửa sổ. Khái"
 " niệm này hơi trừu tượng, nhưng nói chung một thiết lập dựa trên ứng dụng "
 "thì giống như Mac hơn Windows. Khi bạn đặt tiêu điểm lên một cửa sổ trong "
 "chế độ dựa trên ứng dụng, mọi cửa sổ trong ứng dụng đó sẽ được hiển thị. "
@@ -769,12 +769,12 @@ msgstr "Tắt «tính năng sai» là cần thiết đối với các ứng dụ
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Một số ứng dụng riêng bỏ qua đặc tả, gây ra bộ quản lý cửa sổ không hoạt "
-"động cho đúng. Tùy chọn này đặt Marco trong chế độ đúng chính xác, mà bảo "
+"động cho đúng. Tùy chọn này đặt Croma trong chế độ đúng chính xác, mà bảo "
 "tồn một giao diện người dùng thống nhất hơn, nếu bạn không cần chạy ứng dụng"
 " nào chạy sai."
 
@@ -1207,8 +1207,8 @@ msgid "Disable connection to session manager"
 msgstr "Tắt kết nối với trình quản lý phiên chạy"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Thay thế bộ quản lý cửa sổ đang chạy bằng Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Thay thế bộ quản lý cửa sổ đang chạy bằng Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1402,8 +1402,8 @@ msgid "Opened log file %s\n"
 msgstr "Đã mở tập tin ghi lưu %s.\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Marco đã được biên dịch không hỗ trợ phương thức chi tiết.\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Croma đã được biên dịch không hỗ trợ phương thức chi tiết.\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1424,8 +1424,8 @@ msgstr "Lỗi bộ quản lý cửa sổ: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

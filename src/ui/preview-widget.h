@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco theme preview widget */
+/* Croma theme preview widget */
 
 /*
  * Copyright (C) 2002 Havoc Pennington

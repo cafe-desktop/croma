@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco window deletion */
+/* Croma window deletion */
 
 /*
  * Copyright (C) 2001, 2002 Havoc Pennington

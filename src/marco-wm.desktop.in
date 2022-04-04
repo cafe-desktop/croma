@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=Application
-Name=Marco
+Name=Croma
 Exec=croma
 # name of loadable control center module
 X-MATE-WMSettingsModule=croma
 # name we put on the WM spec check window
-X-MATE-WMName=Marco
+X-MATE-WMName=Croma
 # back compat only 
 X-MateWMSettingsLibrary=croma
 X-MATE-Bugzilla-Bugzilla=MATE

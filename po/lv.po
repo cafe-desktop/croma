@@ -685,7 +685,7 @@ msgstr "Vizuālā zvana tips"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -693,7 +693,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Nosaka, kā Marco vajadzētu īstenot vizuālo indikāciju, ka sistēmas zvans vai"
+"Nosaka, kā Croma vajadzētu īstenot vizuālo indikāciju, ka sistēmas zvans vai"
 " citas programmas 'zvana' indikators ir iedarbojies. Šobrīd ir divas derīgas"
 " vērtības: \"fullscreen\", kas izraisa zibsni pa visu ekrānu, un "
 "\"frame_flash\", kas liek iezibsnīties izsaucošās programmas virsraksta "
@@ -705,8 +705,8 @@ msgid "Compositing Manager"
 msgstr "Kompozicionēšanas pārvaldnieks"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Nosaka, vai Marco ir kompozicionēšanas pārvaldnieks."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Nosaka, vai Croma ir kompozicionēšanas pārvaldnieks."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -734,10 +734,10 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Ja patiess, Marco sniegs lietotājam mazāk informācijas, izmantojot "
+"Ja patiess, Croma sniegs lietotājam mazāk informācijas, izmantojot "
 "vadrāmjus, izvairoties no animācijām u.tml. Tas samazina lietojamību, taču "
 "var noderēt darbā ar vecākām programmām vai terminālserveru risinājumos. Ja "
-"aktivizētas pieejamības funkcijas, Marco tomēr nelietos vadrāmjus."
+"aktivizētas pieejamības funkcijas, Croma tomēr nelietos vadrāmjus."
 
 #: src/org.mate.croma.gschema.xml:166
 msgid ""
@@ -746,7 +746,7 @@ msgstr "(Nav iestrādāts) Navigācija darbojas vairāk pēc lietotnēm nekā lo
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -754,7 +754,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Ja patiess, tad Marco darbojas drīzāk ar lietotnēm nekā logiem. Varētu "
+"Ja patiess, tad Croma darbojas drīzāk ar lietotnēm nekā logiem. Varētu "
 "teikt, vairāk kā Mac nekā Windows. Kad fokusējat logu lietotņu režīmā, visi "
 "lietotnes logi tiek aktivizēti. Tāpat arī lietotņu režīmā fokusēšanas "
 "klikšķi netiek nodoti logiem citās lietotnēs. Šis režīms gan vēl nav īsti "
@@ -767,12 +767,12 @@ msgstr "Atslēgt īpatnības, kas nepieciešamas vecām vai līkām lietotnēm"
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Dažas programmas neievēro specifikācijas, un logu pārvaldniekiem nākas "
-"pielāgoties. Šī vērtība ieslēdz Marco strikto režīmu, kas nodrošina "
+"pielāgoties. Šī vērtība ieslēdz Croma strikto režīmu, kas nodrošina "
 "saskanīgāku lietotāja saskarni, ja jums nav vajadzīgas nepaklausīgās "
 "programmas."
 
@@ -1213,8 +1213,8 @@ msgid "Disable connection to session manager"
 msgstr "Atvienoties no sesiju pārvaldnieka"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Aizvietot darbojošos logu pārvaldnieku ar Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Aizvietot darbojošos logu pārvaldnieku ar Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1409,8 +1409,8 @@ msgid "Opened log file %s\n"
 msgstr "Atvērtais žurnālfails %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Marco tika kompilēts bez daudzvārdīgā režīma atbalsta\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Croma tika kompilēts bez daudzvārdīgā režīma atbalsta\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1431,8 +1431,8 @@ msgstr "Logu pārvaldnieka kļūda: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

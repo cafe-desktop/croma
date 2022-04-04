@@ -691,7 +691,7 @@ msgstr "Lloji i sinjalit të dukshëm"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -699,7 +699,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Tregon sesi Marco kryen njoftimin viziv që zilja e sistemit apo ndonjë "
+"Tregon sesi Croma kryen njoftimin viziv që zilja e sistemit apo ndonjë "
 "tregues tjetër \"zileje\" aplikativi është duke rënë. Tani për tani pranohen"
 " dy vlera: \"fullscreen\", që shkakton një flash në bardhë e zi në të gjithë"
 " ekranin, dhe \"frame_flash\" që shkakton ndriçimin e shtyllës së titullit "
@@ -712,8 +712,8 @@ msgid "Compositing Manager"
 msgstr "Përgjegjësi i kompozimit"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Përcakton se kur është Marco përgjegjësi i kompozimit."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Përcakton se kur është Croma përgjegjësi i kompozimit."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -756,7 +756,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -764,7 +764,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Nëse caktuar në E VËRTETË, Marco funksionon në terme aplikativësh në vend të"
+"Nëse caktuar në E VËRTETË, Croma funksionon në terme aplikativësh në vend të"
 " dritaresh. Koncepti është pak abstrakt, por në vija të përgjithshme një "
 "konfigurim i bazuar tek aplikativët është më shumë i ngjashëm me Mac sesa me"
 " Windows. Kur i jepet fokusi një dritareje në modalitetin e bazuar tek "
@@ -781,12 +781,12 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Disa aplikativë nuk respektojnë specifikat duke shkaktuar funksionime të "
-"gabuara tek window manager. Ky opsion vendos Marco në një modalitet "
+"gabuara tek window manager. Ky opsion vendos Croma në një modalitet "
 "rigorozisht korrekt, që afron një interfaqe përdoruesi jokontradiktore, me "
 "përjashtim të rasteve kur duhet ekzekutuar ndonjë aplikativ keqfunksionues."
 
@@ -1232,8 +1232,8 @@ msgid "Disable connection to session manager"
 msgstr "Çaktivizo lidhjen me menaxhuesin e seancës"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Zëvendëson window manager në ekzekutim me Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Zëvendëson window manager në ekzekutim me Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1433,9 +1433,9 @@ msgid "Opened log file %s\n"
 msgstr "File i log %s u hap\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr ""
-"Marco është kompiluar pa përfshirë suportin për menyrën bashkë-dialoguese\n"
+"Croma është kompiluar pa përfshirë suportin për menyrën bashkë-dialoguese\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1456,8 +1456,8 @@ msgstr "Gabim i administruesit të dritares: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

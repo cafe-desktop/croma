@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco popup window thing showing windows you can tab to */
+/* Croma popup window thing showing windows you can tab to */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

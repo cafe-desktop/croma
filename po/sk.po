@@ -671,7 +671,7 @@ msgstr ""
 "druhého pracovného priestoru. Ak je nastavená na „no wrap“, nič sa nestane, "
 "ak sa pokúsite prepnúť do pracovného priestoru okolo hranice prepínača "
 "pracovného priestoru. Ak je nastavený na „klasické“, použije sa staré "
-"správanie Marco: koniec jedného riadka vedie k začiatku ďalšieho a koniec "
+"správanie Croma: koniec jedného riadka vedie k začiatku ďalšieho a koniec "
 "stĺpca vedie k začiatku nasledujúceho. Ak je nastavený na „toroidný“, "
 "pracovné priestory sú spojené ako šiška: koniec každého riadku vedie k jeho "
 "vlastnému začiatku a na konci každého stĺpca vedie k jeho vlastnému "
@@ -709,7 +709,7 @@ msgstr "Typ vizuálneho zvončeka"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -717,7 +717,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Určuje, ako má Marco implementovať vizuálne zobrazenie pípnutia programom "
+"Určuje, ako má Croma implementovať vizuálne zobrazenie pípnutia programom "
 "alebo systémom. Momentálne existujú dve platné hodnoty, „fullscreen“, ktorá "
 "čiernobielo blikne celou obrazovkou a „frame_flash“, kde blikne titulok "
 "okna, v ktorom je pípajúci program. Ak nie je možné určiť pípajúci program "
@@ -728,8 +728,8 @@ msgid "Compositing Manager"
 msgstr "Kompozitný správca okien"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Určuje, či je Marco kompozitný správca okien."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Určuje, či je Croma kompozitný správca okien."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -757,7 +757,7 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Ak je táto možnosť vybraná, Marco bude poskytovať používateľovi menej "
+"Ak je táto možnosť vybraná, Croma bude poskytovať používateľovi menej "
 "spätnej väzby pomocou obrysov, vynechaním animácií, a pod. Toto pre mnohých "
 "používateľov znamená výrazné zníženie použiteľnosti, ale môže umožniť "
 "pracovať starým programom a terminálovým serverom, ktoré by inak boli "
@@ -771,7 +771,7 @@ msgstr "(Neimplementované) Navigácia medzi programami, nie oknami"
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -779,7 +779,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Ak je táto možnosť vybraná, Marco funguje v rámci programov, a nie okien. Je"
+"Ak je táto možnosť vybraná, Croma funguje v rámci programov, a nie okien. Je"
 " to trochu abstraktnejšie, ale všeobecne sa dá povedať, že nastavenie "
 "vzhľadom k programom sa podobá viac systému Mac a menej systému Windows. Ak "
 "urobíte okno aktívnym v režime programov, všetky okná tohto programu sa "
@@ -795,12 +795,12 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Niektoré programy nerešpektujú špecifikácie spôsobom, ktorý vedie k chybnému"
-" správaniu správcu okien. Táto možnosť prepne Marco do úplne korektného "
+" správaniu správcu okien. Táto možnosť prepne Croma do úplne korektného "
 "režimu, čo prináša konzistentnejšie používateľské rozhranie, ak teda "
 "nepotrebujete spúšťať nijaké nekorektné programy."
 
@@ -1264,8 +1264,8 @@ msgid "Disable connection to session manager"
 msgstr "Zakázať spojenie k správcovi relácií"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Nahradiť bežiaceho správcu okien správcom Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Nahradiť bežiaceho správcu okien správcom Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1461,8 +1461,8 @@ msgid "Opened log file %s\n"
 msgstr "Otvorený súbor so záznamom %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Marco bol skompilovaný bez podpory zobrazovania informácií\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Croma bol skompilovaný bez podpory zobrazovania informácií\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1483,8 +1483,8 @@ msgstr "Chyba správcu okien: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

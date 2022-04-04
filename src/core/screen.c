@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco X screen handler */
+/* Croma X screen handler */
 
 /*
  * Copyright (C) 2001, 2002 Havoc Pennington
@@ -221,7 +221,7 @@ reload_xinerama_infos (MetaScreen *screen)
     }
 #else
   meta_topic (META_DEBUG_XINERAMA,
-              "Marco compiled without XFree86 Xinerama support\n");
+              "Croma compiled without XFree86 Xinerama support\n");
 #endif /* HAVE_XFREE_XINERAMA */
 
 #ifdef HAVE_SOLARIS_XINERAMA
@@ -280,7 +280,7 @@ reload_xinerama_infos (MetaScreen *screen)
     }
 #else
   meta_topic (META_DEBUG_XINERAMA,
-              "Marco compiled without Solaris Xinerama support\n");
+              "Croma compiled without Solaris Xinerama support\n");
 #endif /* HAVE_SOLARIS_XINERAMA */
 
 
@@ -1081,7 +1081,7 @@ set_desktop_viewport_hint (MetaScreen *screen)
     return;
 
   /*
-   * Marco does not implement viewports, so this is a fixed 0,0
+   * Croma does not implement viewports, so this is a fixed 0,0
    */
   data[0] = 0;
   data[1] = 0;

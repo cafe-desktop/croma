@@ -638,7 +638,7 @@ msgstr "दृष्टिगोच़र घंटी प्रकार"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -659,8 +659,8 @@ msgid "Compositing Manager"
 msgstr "कंपोजिटिंग प्रबंधक"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "निर्धारित करू जे Marco एकटा कंपोजिटिंग प्रबंधक अछि."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "निर्धारित करू जे Croma एकटा कंपोजिटिंग प्रबंधक अछि."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -700,7 +700,7 @@ msgstr "(कार्यान्वित नहि) सँ चलन अनु
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -723,12 +723,12 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "किछु अनुप्रयोग विशेषताकेँ महत्व नहि देत अछि जे विंडो प्रबंधक मिसफीचरमे "
-"परिणाम आनैत अछिई विकल्प Marco केँ काफी सही मोडमे राखैत अछि जे बेसी संगत "
+"परिणाम आनैत अछिई विकल्प Croma केँ काफी सही मोडमे राखैत अछि जे बेसी संगत "
 "प्रयोक्ता अंतरफलक देत अछि जँ कोनो गलत अनुप्रयोग नहि चलाए रहल अछि."
 
 #: src/org.mate.croma.gschema.xml:176
@@ -1160,7 +1160,7 @@ msgid "Disable connection to session manager"
 msgstr "सत्र प्रबंधकसँ संपर्क रद करू"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
+msgid "Replace the running window manager with Croma"
 msgstr "मेटासिटी क' सात कार्यशील विंडो प्रबंधक बदलू"
 
 #: src/core/main.c:282
@@ -1350,7 +1350,7 @@ msgid "Opened log file %s\n"
 msgstr "लॉग फ़ाइल %s  खोललक \n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr "मेटासिटीकेँ वर्बोज विधि क' बगैर कम्पाइल कएल गेल अछि\n"
 
 #: src/core/util.c:227
@@ -1372,7 +1372,7 @@ msgstr "विंडो प्रबंधक त्रुटिः"
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
+msgid "Croma"
 msgstr "मेटासिटी"
 
 #. first time through

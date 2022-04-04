@@ -1,4 +1,4 @@
-/* Marco X display handler */
+/* Croma X display handler */
 
 /*
  * Copyright (C) 2001 Havoc Pennington
@@ -499,7 +499,7 @@ gboolean meta_display_focus_sentinel_clear (MetaDisplay *display);
 
 /* meta_display_set_input_focus_window is like XSetInputFocus, except
  * that (a) it can't detect timestamps later than the current time,
- * since Marco isn't part of the XServer, and thus gives erroneous
+ * since Croma isn't part of the XServer, and thus gives erroneous
  * behavior in this circumstance (so don't do it), (b) it uses
  * display->last_focus_time since we don't have access to the true
  * Xserver one, (c) it makes use of display->user_time since checking

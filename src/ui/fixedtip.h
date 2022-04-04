@@ -20,7 +20,7 @@
  */
 
 /**
- * \file fixedtip.h  Marco fixed tooltip routine
+ * \file fixedtip.h  Croma fixed tooltip routine
  *
  * Sometimes we want to display a small floating rectangle with helpful
  * text near the pointer.  For example, if the user holds the mouse over

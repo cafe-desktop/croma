@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco Theme Rendering */
+/* Croma Theme Rendering */
 
 /*
  * Copyright (C) 2001 Havoc Pennington
@@ -22,11 +22,11 @@
  */
 
 /**
- * \file theme.c    Making Marco look pretty
+ * \file theme.c    Making Croma look pretty
  *
- * The window decorations drawn by Marco are described by files on disk
+ * The window decorations drawn by Croma are described by files on disk
  * known internally as "themes" (externally as "window border themes" on
- * http://art.gnome.org/themes/croma/ or "Marco themes"). This file
+ * http://art.gnome.org/themes/croma/ or "Croma themes"). This file
  * contains most of the code necessary to support themes; it does not
  * contain the XML parser, which is in theme-parser.c.
  *
@@ -2553,7 +2553,7 @@ do_operations (PosExpr *exprs,
  * (The value is always an integer.)
  *
  * There are supposedly some circumstances in which this function can be
- * called from outside Marco, in which case env->theme will be NULL, and
+ * called from outside Croma, in which case env->theme will be NULL, and
  * therefore we can't use it to find out quark values, so we do the comparison
  * using strcmp, which is slower.
  *

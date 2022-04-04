@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco visual bell */
+/* Croma visual bell */
 
 /*
  * Copyright (C) 2002 Sun Microsystems Inc.
@@ -25,7 +25,7 @@
 /**
  * \file bell.c Ring the bell or flash the screen
  *
- * Sometimes, X programs "ring the bell", whatever that means. Marco lets
+ * Sometimes, X programs "ring the bell", whatever that means. Croma lets
  * the user configure the bell to be audible or visible (aka visual), and
  * if it's visual it can be configured to be frame-flash or fullscreen-flash.
  * We never get told about audible bells; X handles them just fine by itself.

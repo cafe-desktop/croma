@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco main */
+/* Croma main */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

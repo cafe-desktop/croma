@@ -10,7 +10,7 @@ The subdirectory name is "metacity-1" in all versions.
 
 As you might expect, older versions of croma will not understand
 newer theme formats. However, newer versions will use old themes.
-Marco will always use the newest theme format it understands that
+Croma will always use the newest theme format it understands that
 the X server supports. Some format versions are only supported if you
 have the right X server features.
 
@@ -137,7 +137,7 @@ Fallback icons can be specified using <fallback>. There are two
 optional arguments, icon and mini_icon. The values of these arguments
 are identical to that of the filename attribute of <image>. Fallback
 icons are used when a window does not supply its own icon. If a fallback
-icon is not specified with <fallback>, Marco will use a built-in
+icon is not specified with <fallback>, Croma will use a built-in
 icon, as in metacity-theme-1.
 
 The <arc> element, as well as the original start_angle and end_angle

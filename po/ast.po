@@ -410,7 +410,7 @@ msgstr ""
 "separten la esquina esquierda de la ventana de la esquina drecha y los nomes"
 " de los botones tan separtaos por comes. Nun se permiten botones duplicaos. "
 "Los nomes desconocíos de botones inórense ensin avisar, d'esta miente esos "
-"botones pueden amestase en versiones futures de Marco ensin desiguar les "
+"botones pueden amestase en versiones futures de Croma ensin desiguar les "
 "versiones más antigües. Puede emplegase una etiqueta espaciadora pa inxertar"
 " dellos espacios entre dos botones que tean xuntos."
 
@@ -679,7 +679,7 @@ msgstr "Tipu de Avisu Visual"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -687,7 +687,7 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Diz-y a Marco como implementar la indicación visual de que la campana del "
+"Diz-y a Croma como implementar la indicación visual de que la campana del "
 "sistema o la campana d'indicación d'otra aplicación sonaron. Anguaño hi dos "
 "valores válidos, «fullscreen», que causa un ceguñu en blancu y negru en tola"
 " pantalla y  «frame_flash» que causa que la barra de títulos de la ventana "
@@ -701,8 +701,8 @@ msgid "Compositing Manager"
 msgstr "Alministrador de composición"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Determina cuando Marco ye un xestor compuestu."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Determina cuando Croma ye un xestor compuestu."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -744,7 +744,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -752,7 +752,7 @@ msgid ""
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Si ye verdá, entós Marco furrula en términos d'aplicaciones en vez de "
+"Si ye verdá, entós Croma furrula en términos d'aplicaciones en vez de "
 "ventanes. El conceutu ye un pocu abstrautu, pero en xeneral una "
 "configuración sofitada en aplicaciones aseméyase más a un Mac y menos a "
 "Windows. Cuando enfoca un ventanu nel mou sofitáu en aplicación tolos "
@@ -770,13 +770,13 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "Delles aplicaciones nun faen casu de les especificaciones en formes que "
 "resulten en comportamientu incorreutu del xestor de ventanes. Esta opción "
-"pon a Marco n'un mou percorrechu, lo que da un interfaz d'usuariu más "
+"pon a Croma n'un mou percorrechu, lo que da un interfaz d'usuariu más "
 "consistente, porque ún nun tien qu'arrancar denguna aplicación que nun "
 "furrule."
 
@@ -1216,8 +1216,8 @@ msgid "Disable connection to session manager"
 msgstr "Desactivar la conexón col alministrador de sesiones"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "Camuda'l xestor ventanes por Marco"
+msgid "Replace the running window manager with Croma"
+msgstr "Camuda'l xestor ventanes por Croma"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1409,8 +1409,8 @@ msgid "Opened log file %s\n"
 msgstr "Abiertu archivu log %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Marco fue compiláu ensín soporte pal modu testu\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Croma fue compiláu ensín soporte pal modu testu\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1431,8 +1431,8 @@ msgstr "Error xestor ventanes: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

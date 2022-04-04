@@ -676,7 +676,7 @@ msgstr "दृश्य बेल प्रकार"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -685,7 +685,7 @@ msgid ""
 "focused window's titlebar is flashed."
 msgstr ""
 "प्रणाली घंटा किंवा अन्य अनुप्रयोगाची 'घंटा' वाजविली अल्यास दृश्नीय सूचक कसे "
-"कार्यरत करायचे ते Marco ला कळविते. सद्या दोन वैध मुल्य, \"पूर्णपडदा\", "
+"कार्यरत करायचे ते Croma ला कळविते. सद्या दोन वैध मुल्य, \"पूर्णपडदा\", "
 "ज्यामुळे पूर्णपडदा पांढरे-काळे असे दिसून पडते, व \"फेम_फ्लॅश\" ज्यामुळे "
 "अनुप्रयोगची शिर्षकपट्टी दिसण्यास सुरू होते. ज्या अनुप्रयोगने संकेत पाठविले "
 "ते अपरिचीत असल्यास (जे मुलभूत \"प्रणाली बीप\" करीता स्वरूप आहे), सद्याचे "
@@ -696,8 +696,8 @@ msgid "Compositing Manager"
 msgstr "कंपोजीटींग व्यवस्थापक"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
-msgstr "Marco संयोजना व्यस्थापक आहे का ते निश्चित करते."
+msgid "Determines whether Croma is a compositing manager."
+msgstr "Croma संयोजना व्यस्थापक आहे का ते निश्चित करते."
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -738,7 +738,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -760,12 +760,12 @@ msgstr "जुन्या व टाकाऊ कार्यक्रम आ�
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "काहीक अनुप्रयोग संयोजनाचे उल्लंगन करते ज्यामुळे पटल व्यवस्थापकचे वैशिष्ट्ये "
-"सदोषीत होते. या पर्याय Marco ला योग्य पध्तीत कार्यरत करतो, ज्यामुळे सुस्थित "
+"सदोषीत होते. या पर्याय Croma ला योग्य पध्तीत कार्यरत करतो, ज्यामुळे सुस्थित "
 "वापरकर्ता संवाद प्राप्त होते, व त्याकरीता एवढीच अट अशी आहे की त्याक्षणी "
 "असुसंगती अनुप्रयोग चालवायचे नाही."
 
@@ -1206,8 +1206,8 @@ msgid "Disable connection to session manager"
 msgstr "सत्र व्यवस्थापकशी जुळवणी अकार्यान्वीत करा"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
-msgstr "सध्याचे कार्यरत पटल व्यवस्थापक Marco शी बदलवा"
+msgid "Replace the running window manager with Croma"
+msgstr "सध्याचे कार्यरत पटल व्यवस्थापक Croma शी बदलवा"
 
 #: src/core/main.c:282
 msgid "Specify session management ID"
@@ -1404,8 +1404,8 @@ msgid "Opened log file %s\n"
 msgstr "लॉग फाइल %s उघडली\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
-msgstr "Marco शब्दबंबाळ रितीव्यतिरिक्त कम्पाइल केला होता\n"
+msgid "Croma was compiled without support for verbose mode\n"
+msgstr "Croma शब्दबंबाळ रितीव्यतिरिक्त कम्पाइल केला होता\n"
 
 #: src/core/util.c:227
 msgid "Window manager: "
@@ -1426,8 +1426,8 @@ msgstr "पटल व्यवस्थापक त्रुटी: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
-msgstr "Marco"
+msgid "Croma"
+msgstr "Croma"
 
 #. first time through
 #: src/core/window.c:6004

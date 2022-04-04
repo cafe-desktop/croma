@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco common types shared by core.h and ui.h */
+/* Croma common types shared by core.h and ui.h */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

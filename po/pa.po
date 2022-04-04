@@ -669,7 +669,7 @@ msgstr "ਦਿੱਖ ਘੰਟੀ ਕਿਸਮ"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -689,7 +689,7 @@ msgid "Compositing Manager"
 msgstr "ਕੰਪੋਜਿੰਗ ਮੈਨੇਜਰ"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
+msgid "Determines whether Croma is a compositing manager."
 msgstr "ਜਾਂਚ ਕਰੋ ਕਿ ਕੀ ਮੈਟਾਸਿਟੀ ਇੱਕ ਕੰਪੋਜਟਿੰਗ ਮੈਨੇਜਰ ਹੈ।"
 
 #: src/org.mate.croma.gschema.xml:156
@@ -728,7 +728,7 @@ msgstr "(ਲਾਗੂ ਨਹੀ ਕੀਤਾ) ਸੰਚਾਲਨ ਕਾਰਜ �
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -751,7 +751,7 @@ msgstr ""
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
@@ -1195,7 +1195,7 @@ msgid "Disable connection to session manager"
 msgstr "ਸ਼ੈਸ਼ਨ ਮੈਨੇਜਰ ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਬੰਦ ਕਰੋ"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
+msgid "Replace the running window manager with Croma"
 msgstr "ਚੱਲ ਰਹੇ ਵਿੰਡੋ ਮੈਨੇਜਰ ਨੂੰ ਮੈਟਾਸਿਟੀ ਨਾਲ ਤਬਦੀਲ"
 
 #: src/core/main.c:282
@@ -1385,7 +1385,7 @@ msgid "Opened log file %s\n"
 msgstr "ਖੁੱਲ੍ਹੀ ਲਾਗ ਫਾਇਲ %s\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr "ਮੈਟਾਸਿਟੀ, ਵਰਬੋਜ਼ ਮੋਡ ਲਈ ਸਹਾਰੇ ਤੋਂ ਬਿਨਾਂ ਕੰਪਾਇਲ ਹੋਇਆ\n"
 
 #: src/core/util.c:227
@@ -1407,7 +1407,7 @@ msgstr "ਵਿੰਡੋ ਮੈਨੇਜਰ ਗਲਤੀ: "
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
+msgid "Croma"
 msgstr "ਮੈਟਾਸਿਟੀ"
 
 #. first time through

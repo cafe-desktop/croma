@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Marco X property convenience routines */
+/* Croma X property convenience routines */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

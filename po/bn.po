@@ -677,7 +677,7 @@ msgstr "দৃশ্য ঘন্টীর প্রকার"
 
 #: src/org.mate.croma.gschema.xml:147
 msgid ""
-"Tells Marco how to implement the visual indication that the system bell or "
+"Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
 "valid values, \"fullscreen\", which causes a fullscreen white-black flash, "
 "and \"frame_flash\" which causes the titlebar of the application which sent "
@@ -698,9 +698,9 @@ msgid "Compositing Manager"
 msgstr "কম্পোসিটিং ব্যবস্থাপক"
 
 #: src/org.mate.croma.gschema.xml:152
-msgid "Determines whether Marco is a compositing manager."
+msgid "Determines whether Croma is a compositing manager."
 msgstr ""
-"কমপোসিটিং ব্যবস্থাপক রূপে Marco প্রয়োগ করা হবে কি না তা ধার্য করা হবে।"
+"কমপোসিটিং ব্যবস্থাপক রূপে Croma প্রয়োগ করা হবে কি না তা ধার্য করা হবে।"
 
 #: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
@@ -742,7 +742,7 @@ msgstr ""
 
 #: src/org.mate.croma.gschema.xml:167
 msgid ""
-"If true, then Marco works in terms of applications rather than windows. The "
+"If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
 " like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
@@ -767,12 +767,12 @@ msgstr "পুরোনো বা ভাঙ্গা প্রোগ্রাম
 #: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
-"manager misfeatures. This option puts Marco in a rigorously correct mode, "
+"manager misfeatures. This option puts Croma in a rigorously correct mode, "
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
 "কয়েকটি অ্যাপ্লিকেশন দ্বারা সুনির্দিষ্ট বৈশিষ্ট্যের মান অগ্রাহ্য করা হয় যার "
-"ফলে উইন্ডো ব্যবস্থাপক ক্ষতিগ্রস্ত হয়। এই বিকল্পের দ্বারা Marco সুস্পষ্টরূপে "
+"ফলে উইন্ডো ব্যবস্থাপক ক্ষতিগ্রস্ত হয়। এই বিকল্পের দ্বারা Croma সুস্পষ্টরূপে "
 "সঠিক চালনার মোডে স্থাপিত হবে যার ফলে ইউজার ইন্টারফেস তুলনামূলকরূপে স্থায়ী "
 "হবে যদি কোনো অ্যাপ্লিকেশনের গতিবিধি উশৃঙ্খল না হয়ে থাকে।"
 
@@ -1212,7 +1212,7 @@ msgid "Disable connection to session manager"
 msgstr "সেশন ব্যবস্থাপকের সাথে সংযোগ নিষ্ক্রিয় করুন"
 
 #: src/core/main.c:276
-msgid "Replace the running window manager with Marco"
+msgid "Replace the running window manager with Croma"
 msgstr "চলন্ত উইন্ডো ব্যবস্থাপককে মেটাসিটি দিয়ে বদল করো"
 
 #: src/core/main.c:282
@@ -1412,7 +1412,7 @@ msgid "Opened log file %s\n"
 msgstr "লগ ফাইল %sখুলেছি\n"
 
 #: src/core/util.c:136 src/tools/croma-message.c:176
-msgid "Marco was compiled without support for verbose mode\n"
+msgid "Croma was compiled without support for verbose mode\n"
 msgstr "মেটাসিটি ভার্বোস মোডের সহায়তা ছাড়াই কম্পাইল করা হয়েছে\n"
 
 #: src/core/util.c:227
@@ -1434,7 +1434,7 @@ msgstr "উইন্ডো প্রবন্ধক এর ভুল :"
 #. Translators: This is the title used on dialog boxes
 #: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
 #: src/croma-wm.desktop.in:4
-msgid "Marco"
+msgid "Croma"
 msgstr "মেটাসিটি"
 
 #. first time through

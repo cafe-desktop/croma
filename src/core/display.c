@@ -1,4 +1,4 @@
-/* Marco X display handler */
+/* Croma X display handler */
 
 /*
  * Copyright (C) 2001 Havoc Pennington
@@ -669,7 +669,7 @@ meta_display_open (void)
     meta_prop_set_utf8_string_hint (the_display,
                                     the_display->leader_window,
                                     the_display->atom__NET_WM_NAME,
-                                    "Metacity (Marco)");
+                                    "Metacity (Croma)");
 
     meta_prop_set_utf8_string_hint (the_display,
                                     the_display->leader_window,
@@ -1642,7 +1642,7 @@ mouse_event_is_in_tab_popup (MetaDisplay *display,
 
 /**
  * This is the most important function in the whole program. It is the heart,
- * it is the nexus, it is the Grand Central Station of Marco's world.
+ * it is the nexus, it is the Grand Central Station of Croma's world.
  * When we create a MetaDisplay, we ask GDK to pass *all* events for *all*
  * windows to this function. So every time anything happens that we might
  * want to know about, this function gets called. You see why it gets a bit
@@ -4309,7 +4309,7 @@ static gboolean is_syncing = FALSE;
  *
  * \bug This is *only* called by meta_display_open, but by that time
  * we have already turned syncing on or off on startup, and we don't
- * have any way to do so while Marco is running, so it's rather
+ * have any way to do so while Croma is running, so it's rather
  * pointless.
  */
 gboolean

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<KeyListEntries name="Window Management" wm_name="Metacity (Marco)" package="croma" schema="org.mate.Marco.global-keybindings">
+<KeyListEntries name="Window Management" wm_name="Metacity (Croma)" package="croma" schema="org.mate.Croma.global-keybindings">
 
 	<KeyListEntry name="switch-windows" description="Move between windows, using a popup window" />
 
@@ -19,112 +19,112 @@
 	description="Switch to workspace 1"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-2"
 	description="Switch to workspace 2"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-3"
 	description="Switch to workspace 3"
 	value="2"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-4"
 	description="Switch to workspace 4"
 	value="3"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-5"
 	description="Switch to workspace 5"
 	value="4"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-6"
 	description="Switch to workspace 6"
 	value="5"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-7"
 	description="Switch to workspace 7"
 	value="6"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-8"
 	description="Switch to workspace 8"
 	value="7"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-9"
 	description="Switch to workspace 9"
 	value="8"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-10"
 	description="Switch to workspace 10"
 	value="9"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-11"
 	description="Switch to workspace 11"
 	value="10"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-12"
 	description="Switch to workspace 12"
 	value="11"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-left"
 	description="Switch to workspace on the left of the current workspace"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-right"
 	description="Switch to workspace on the right of the current workspace"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-up"
 	description="Switch to workspace above the current workspace"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-down"
 	description="Switch to workspace below the current workspace"
 	value="1"
 	key="num-workspaces"
-	schema="org.mate.Marco.general"
+	schema="org.mate.Croma.general"
 	comparison="gt" />
 
 	<KeyListEntry name="switch-to-workspace-prev"
