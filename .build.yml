@@ -22,6 +22,7 @@ requires:
     - libpango1.0-dev
     - libsm-dev
     - libstartup-notification0-dev
+    - libtool
     - libx11-dev
     - libxcomposite-dev
     - libxcursor-dev
