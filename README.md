@@ -1,7 +1,7 @@
 Croma [![Build Status](https://travis-ci.org/cafe-desktop/croma.svg?branch=master)](https://travis-ci.org/cafe-desktop/croma)
 ===
 
-MATE Croma is a fork of GNOME Metacity.
+CAFE Croma is a fork of GNOME Metacity.
 
 COMPILING CROMA
 ===
@@ -72,7 +72,7 @@ CROMA FEATURES
    etc. come from GTK+ theme.
 
  - Does not expose the concept of "window manager" to the user.  Some
-   of the features in the MATE control panel and other parts of the
+   of the features in the CAFE control panel and other parts of the
    desktop happen to be implemented in croma, such as changing your
    window border theme, or changing your window navigation shortcuts,
    but the user doesn't need to know this.
@@ -81,14 +81,14 @@ CROMA FEATURES
    environment. The pager, configuration, etc. are all separate and
    modular. The "libwnck" library (which I also wrote) is available
    for writing croma extensions, pagers, and so on. (But libwnck
-   isn't croma specific, or MATE-dependent; it requires only GTK,
+   isn't croma specific, or CAFE-dependent; it requires only GTK,
    and should work with KWin, fvwm2, and other EWMH-compliant WMs.)
 
  - Has a simple theme system and a couple of extra themes come with it.
    Change themes via gsettings:
      ```
      gsettings set org.cafe.Croma.general theme Menta
-     gsettings set org.cafe.Croma.general theme BlackMATE
+     gsettings set org.cafe.Croma.general theme BlackCAFE
      gsettings set org.cafe.Croma.general theme TraditionalOk
      ```
 
@@ -100,7 +100,7 @@ CROMA FEATURES
      gsettings set org.cafe.Croma.general num-workspaces 5
      ```
 
-   Can also change workspaces from MATE 2 pager.
+   Can also change workspaces from CAFE 2 pager.
 
  - Change focus mode:
      ```
@@ -128,7 +128,7 @@ CROMA FEATURES
      gsettings set org.cafe.Croma.global-keybindings switch-to-workspace-1 '<Alt>F1'
      ```
 
-   Also try the MATE keyboard shortcuts control panel.
+   Also try the CAFE keyboard shortcuts control panel.
 
    See croma.schemas for all available bindings.
 
@@ -301,7 +301,7 @@ A: Croma only stores sizes/positions for apps that are session
     http://www.fifi.org/doc/xspecs/xsmp.txt.gz
     http://www.fifi.org/doc/xspecs/SMlib.txt.gz
 
-   See also the ICCCM section on SM. For MATE apps, use the
+   See also the ICCCM section on SM. For CAFE apps, use the
    CafeClient object. For a simple example of using libSM directly,
    twm/session.c in the twm source code is pretty easy to understand.
 
@@ -443,7 +443,7 @@ Q: I think croma sucks.
 A: Feel free to use any WM you like. The reason croma follows the
    ICCCM and EWMH specifications is that it makes croma a modular,
    interchangeable part in the desktop. libwnck-based apps such as the
-   MATE window list will work just fine with any EWMH-compliant WM.
+   CAFE window list will work just fine with any EWMH-compliant WM.
 
 Q: Did you spend a lot of time on this?
 

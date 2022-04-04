@@ -4,11 +4,11 @@ option('verbose-mode',
 
 option('sm',
   type: 'boolean', value: true,
-  description: 'session management support, for embedded/size-sensitive custom non-MATE builds')
+  description: 'session management support, for embedded/size-sensitive custom non-CAFE builds')
 
 option('startup-notification',
   type: 'boolean', value: true,
-  description: 'startup notification support, for embedded/size-sensitive custom non-MATE builds')
+  description: 'startup notification support, for embedded/size-sensitive custom non-CAFE builds')
 
 option('compositor',
   type: 'boolean', value: true,

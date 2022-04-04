@@ -4,14 +4,14 @@ Name=Croma
 Exec=croma
 NoDisplay=true
 # name of loadable control center module
-X-MATE-WMSettingsModule=croma
+X-CAFE-WMSettingsModule=croma
 # name we put on the WM spec check window
-X-MATE-WMName=Croma
+X-CAFE-WMName=Croma
 # back compat only 
 X-CafeWMSettingsLibrary=croma
-X-MATE-Bugzilla-Bugzilla=MATE
-X-MATE-Bugzilla-Product=croma
-X-MATE-Bugzilla-Component=general
-X-MATE-Autostart-Phase=WindowManager
-X-MATE-Provides=windowmanager
-X-MATE-Autostart-Notify=true
+X-CAFE-Bugzilla-Bugzilla=CAFE
+X-CAFE-Bugzilla-Product=croma
+X-CAFE-Bugzilla-Component=general
+X-CAFE-Autostart-Phase=WindowManager
+X-CAFE-Provides=windowmanager
+X-CAFE-Autostart-Notify=true

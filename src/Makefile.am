@@ -165,7 +165,7 @@ wmproperties_DATA = $(wmproperties_files)
 gsettings_SCHEMAS = org.cafe.croma.gschema.xml
 @GSETTINGS_RULES@
 
-xmldir = @MATE_KEYBINDINGS_KEYSDIR@
+xmldir = @CAFE_KEYBINDINGS_KEYSDIR@
 xml_in_files = \
 	50-croma-desktop-key.xml.in \
 	50-croma-window-key.xml.in \

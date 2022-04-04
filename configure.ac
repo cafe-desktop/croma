@@ -15,8 +15,8 @@ AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([subdir-objects no-dist-gzip dist-xz check-news])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 AM_MAINTAINER_MODE
-MATE_DEBUG_CHECK([no])
-MATE_COMPILE_WARNINGS([yes])
+CAFE_DEBUG_CHECK([no])
+CAFE_COMPILE_WARNINGS([yes])
 
 dnl **************************************************************************
 dnl Library version information
@@ -73,12 +73,12 @@ fi
 
 AC_ARG_ENABLE(sm,
   AC_HELP_STRING([--disable-sm],
-                 [disable croma's session management support, for embedded/size-sensitive custom non-MATE builds]),,
+                 [disable croma's session management support, for embedded/size-sensitive custom non-CAFE builds]),,
   enable_sm=auto)
 
 AC_ARG_ENABLE(startup-notification,
   AC_HELP_STRING([--disable-startup-notification],
-                 [disable croma's startup notification support, for embedded/size-sensitive custom non-MATE builds]),,
+                 [disable croma's startup notification support, for embedded/size-sensitive custom non-CAFE builds]),,
   enable_startup_notification=auto)
 
 AC_ARG_ENABLE(compositor,
@@ -109,8 +109,8 @@ PKG_CHECK_MODULES(CROMA_MESSAGE, gtk+-3.0 >= $GTK_MIN_VERSION)
 PKG_CHECK_MODULES(CROMA_WINDOW_DEMO, gtk+-3.0 >= $GTK_MIN_VERSION)
 
 # Unconditionally use this dir to avoid a circular dep with cafecc
-MATE_KEYBINDINGS_KEYSDIR="${datadir}/cafe-control-center/keybindings"
-AC_SUBST(MATE_KEYBINDINGS_KEYSDIR)
+CAFE_KEYBINDINGS_KEYSDIR="${datadir}/cafe-control-center/keybindings"
+AC_SUBST(CAFE_KEYBINDINGS_KEYSDIR)
 
 STARTUP_NOTIFICATION_VERSION=0.7
 AC_MSG_CHECKING([Startup notification library >= $STARTUP_NOTIFICATION_VERSION])

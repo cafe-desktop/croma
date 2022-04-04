@@ -66,16 +66,16 @@
 #define KEY_WORKSPACE_NAME_SCHEMA "org.cafe.Croma.workspace-names"
 #define KEY_WORKSPACE_NAME_PREFIX "name-"
 
-#define KEY_MATE_INTERFACE_SCHEMA "org.cafe.interface"
-#define KEY_MATE_INTERFACE_ACCESSIBILITY "accessibility"
-#define KEY_MATE_INTERFACE_ENABLE_ANIMATIONS "enable-animations"
+#define KEY_CAFE_INTERFACE_SCHEMA "org.cafe.interface"
+#define KEY_CAFE_INTERFACE_ACCESSIBILITY "accessibility"
+#define KEY_CAFE_INTERFACE_ENABLE_ANIMATIONS "enable-animations"
 
-#define KEY_MATE_TERMINAL_SCHEMA "org.cafe.applications-terminal"
-#define KEY_MATE_TERMINAL_COMMAND "exec"
+#define KEY_CAFE_TERMINAL_SCHEMA "org.cafe.applications-terminal"
+#define KEY_CAFE_TERMINAL_COMMAND "exec"
 
-#define KEY_MATE_MOUSE_SCHEMA "org.cafe.peripherals-mouse"
-#define KEY_MATE_MOUSE_CURSOR_THEME "cursor-theme"
-#define KEY_MATE_MOUSE_CURSOR_SIZE "cursor-size"
+#define KEY_CAFE_MOUSE_SCHEMA "org.cafe.peripherals-mouse"
+#define KEY_CAFE_MOUSE_CURSOR_THEME "cursor-theme"
+#define KEY_CAFE_MOUSE_CURSOR_SIZE "cursor-size"
 
 #define SETTINGS(s) g_hash_table_lookup (settings_schemas, (s))
 
@@ -391,14 +391,14 @@ static MetaBoolPreference preferences_bool[] =
       FALSE,
     },
     { "accessibility",
-      KEY_MATE_INTERFACE_SCHEMA,
-      META_PREF_MATE_ACCESSIBILITY,
+      KEY_CAFE_INTERFACE_SCHEMA,
+      META_PREF_CAFE_ACCESSIBILITY,
       &cafe_accessibility,
       FALSE,
     },
     { "enable-animations",
-      KEY_MATE_INTERFACE_SCHEMA,
-      META_PREF_MATE_ANIMATIONS,
+      KEY_CAFE_INTERFACE_SCHEMA,
+      META_PREF_CAFE_ANIMATIONS,
       &cafe_animations,
       TRUE,
     },
@@ -479,8 +479,8 @@ static MetaStringPreference preferences_string[] =
       titlebar_handler,
       NULL,
     },
-    { KEY_MATE_TERMINAL_COMMAND,
-      KEY_MATE_TERMINAL_SCHEMA,
+    { KEY_CAFE_TERMINAL_COMMAND,
+      KEY_CAFE_TERMINAL_SCHEMA,
       META_PREF_TERMINAL_COMMAND,
       NULL,
       &terminal_command,
@@ -492,7 +492,7 @@ static MetaStringPreference preferences_string[] =
       NULL,
     },
     { "cursor-theme",
-      KEY_MATE_MOUSE_SCHEMA,
+      KEY_CAFE_MOUSE_SCHEMA,
       META_PREF_CURSOR_THEME,
       NULL,
       &cursor_theme,
@@ -526,7 +526,7 @@ static MetaIntPreference preferences_int[] =
       /* @@@ Get rid of MAX_REASONABLE_AUTO_RAISE_DELAY */
     },
     { "cursor-size",
-      KEY_MATE_MOUSE_SCHEMA,
+      KEY_CAFE_MOUSE_SCHEMA,
       META_PREF_CURSOR_SIZE,
       &cursor_size,
       1, 128, 24,
@@ -942,9 +942,9 @@ meta_prefs_init (void)
   settings_screen_bindings = g_settings_new (KEY_SCREEN_BINDINGS_SCHEMA);
   settings_window_bindings = g_settings_new (KEY_WINDOW_BINDINGS_SCHEMA);
   settings_workspace_names = g_settings_new (KEY_WORKSPACE_NAME_SCHEMA);
-  settings_cafe_interface = g_settings_new (KEY_MATE_INTERFACE_SCHEMA);
-  settings_cafe_terminal = g_settings_new (KEY_MATE_TERMINAL_SCHEMA);
-  settings_cafe_mouse = g_settings_new (KEY_MATE_MOUSE_SCHEMA);
+  settings_cafe_interface = g_settings_new (KEY_CAFE_INTERFACE_SCHEMA);
+  settings_cafe_terminal = g_settings_new (KEY_CAFE_TERMINAL_SCHEMA);
+  settings_cafe_mouse = g_settings_new (KEY_CAFE_MOUSE_SCHEMA);
 
   settings_schemas = g_hash_table_new_full (g_str_hash, g_str_equal, NULL, g_object_unref);
   g_hash_table_insert (settings_schemas, KEY_GENERAL_SCHEMA, settings_general);
@@ -952,9 +952,9 @@ meta_prefs_init (void)
   g_hash_table_insert (settings_schemas, KEY_SCREEN_BINDINGS_SCHEMA, settings_screen_bindings);
   g_hash_table_insert (settings_schemas, KEY_WINDOW_BINDINGS_SCHEMA, settings_window_bindings);
   g_hash_table_insert (settings_schemas, KEY_WORKSPACE_NAME_SCHEMA, settings_workspace_names);
-  g_hash_table_insert (settings_schemas, KEY_MATE_INTERFACE_SCHEMA, settings_cafe_interface);
-  g_hash_table_insert (settings_schemas, KEY_MATE_TERMINAL_SCHEMA, settings_cafe_terminal);
-  g_hash_table_insert (settings_schemas, KEY_MATE_MOUSE_SCHEMA, settings_cafe_mouse);
+  g_hash_table_insert (settings_schemas, KEY_CAFE_INTERFACE_SCHEMA, settings_cafe_interface);
+  g_hash_table_insert (settings_schemas, KEY_CAFE_TERMINAL_SCHEMA, settings_cafe_terminal);
+  g_hash_table_insert (settings_schemas, KEY_CAFE_MOUSE_SCHEMA, settings_cafe_mouse);
 
   g_signal_connect (settings_general, "changed", G_CALLBACK (change_notify), NULL);
   g_signal_connect (settings_command, "changed", G_CALLBACK (change_notify), NULL);
@@ -962,11 +962,11 @@ meta_prefs_init (void)
   g_signal_connect (settings_window_bindings, "changed", G_CALLBACK (change_notify), NULL);
   g_signal_connect (settings_workspace_names, "changed", G_CALLBACK (change_notify), NULL);
 
-  g_signal_connect (settings_cafe_interface, "changed::" KEY_MATE_INTERFACE_ACCESSIBILITY, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_cafe_interface, "changed::" KEY_MATE_INTERFACE_ENABLE_ANIMATIONS, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_cafe_terminal, "changed::" KEY_MATE_TERMINAL_COMMAND, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_cafe_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_THEME, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_cafe_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_SIZE, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_interface, "changed::" KEY_CAFE_INTERFACE_ACCESSIBILITY, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_interface, "changed::" KEY_CAFE_INTERFACE_ENABLE_ANIMATIONS, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_terminal, "changed::" KEY_CAFE_TERMINAL_COMMAND, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_mouse, "changed::" KEY_CAFE_MOUSE_CURSOR_THEME, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_mouse, "changed::" KEY_CAFE_MOUSE_CURSOR_SIZE, G_CALLBACK (change_notify), NULL);
 
   /* Pick up initial values. */
 
@@ -1662,11 +1662,11 @@ meta_preference_to_string (MetaPreference pref)
     case META_PREF_REDUCED_RESOURCES:
       return "REDUCED_RESOURCES";
 
-    case META_PREF_MATE_ACCESSIBILITY:
-      return "MATE_ACCESSIBILTY";
+    case META_PREF_CAFE_ACCESSIBILITY:
+      return "CAFE_ACCESSIBILTY";
 
-    case META_PREF_MATE_ANIMATIONS:
-      return "MATE_ANIMATIONS";
+    case META_PREF_CAFE_ANIMATIONS:
+      return "CAFE_ANIMATIONS";
 
     case META_PREF_CURSOR_THEME:
       return "CURSOR_THEME";
@@ -2084,7 +2084,7 @@ meta_prefs_get_terminal_command (void)
 const char*
 meta_prefs_get_settings_key_for_terminal_command (void)
 {
-  return KEY_MATE_TERMINAL_COMMAND;
+  return KEY_CAFE_TERMINAL_COMMAND;
 }
 
 static gboolean

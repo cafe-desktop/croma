@@ -43,7 +43,7 @@
   * eOS theme: strip png images of all profiles and comments
   * eOS theme: make transparent the button-box outer region
   * theme: Render window control buttons and icons as surfaces
-  * Set compiler debug flags using MATE_DEBUG_CHECK
+  * Set compiler debug flags using CAFE_DEBUG_CHECK
   * window decoration themes: Add Atlanta, Esco, Gorilla, Motif, Raleigh
   * Print CFLAGS and WARN_CFLAGS in configure summary
   * Set --enable-compile-warnings=yes by default
