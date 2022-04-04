@@ -35,6 +35,7 @@ requires:
     - libxt-dev
     - make
     - meson
+    - wget
     - x11proto-present-dev
     - yelp-tools
     - zenity
