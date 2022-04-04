@@ -6,7 +6,7 @@ libcafe_serverdir=@libexecdir@
 
 Name: libcroma-private
 Description: Croma internals shared 
-Requires: gtk+-3.0
+Requires: ctk+-3.0
 Version: @VERSION@
 Libs: -L${libdir} -lcroma-private
 Cflags: -I${includedir}/croma-1

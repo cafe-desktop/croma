@@ -1893,46 +1893,46 @@ msgstr "Farveovergange skal mindst have to farver"
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 "Den tilpassede GTK-farvespecifikation skal have farvenavn og reserve i "
-"parentes, f.eks. gtk:custom(foo,bar) kunne ikke fortolke »%s«"
+"parentes, f.eks. ctk:custom(foo,bar) kunne ikke fortolke »%s«"
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
-"Ugyldigt tegn »%c« i parameteren color_name for gtk:custom, kun A-Za-z0-9-_ "
+"Ugyldigt tegn »%c« i parameteren color_name for ctk:custom, kun A-Za-z0-9-_ "
 "er gyldige"
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"Forcafet Gtk:custom  »gtk:custom(color_name,fallback)«, »%s« passer ikke med"
+"Forcafet Gtk:custom  »ctk:custom(color_name,fallback)«, »%s« passer ikke med"
 " forcafet"
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "GTK-farvespecifikation skal have tilstanden i firkantede klammer, f.eks. "
-"gtk:fg[NORMAL] hvor NORMAL er tilstanden; kunne ikke fortolke »%s«"
+"ctk:fg[NORMAL] hvor NORMAL er tilstanden; kunne ikke fortolke »%s«"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "GTK-farvespecifikation skal have en afsluttende klamme efter tilstanden, "
-"f.eks. gtk:fg[NORMAL] hvor NORMAL er tilstanden; kunne ikke fortolke »%s«"
+"f.eks. ctk:fg[NORMAL] hvor NORMAL er tilstanden; kunne ikke fortolke »%s«"
 
 #: src/ui/theme.c:1496
 #, c-format

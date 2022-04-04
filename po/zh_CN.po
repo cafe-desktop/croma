@@ -1735,37 +1735,37 @@ msgstr "渐变应至少有两种颜色"
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"GTK自定义颜色规范必须在括号中具有颜色名称'color_name'和后备'fallback'，例如gtk:custom(foo,bar);无法解析\"%s\""
+"GTK自定义颜色规范必须在括号中具有颜色名称'color_name'和后备'fallback'，例如ctk:custom(foo,bar);无法解析\"%s\""
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
-msgstr "gtk:custom的color_name参数中的字符'%c'无效，只有A-Za-z0-9-_有效"
+msgstr "ctk:custom的color_name参数中的字符'%c'无效，只有A-Za-z0-9-_有效"
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
-msgstr "Gtk:custom格式为 \"gtk:custom(color_name,fallback)\", \"%s\" 不符合格式"
+msgstr "Gtk:custom格式为 \"ctk:custom(color_name,fallback)\", \"%s\" 不符合格式"
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
-msgstr "GTK 颜色规范必须将状态包含在方括号中，例如 gtk:fg[NORMAL]其中 NORMAL 是状态；无法解析“%s”"
+msgstr "GTK 颜色规范必须将状态包含在方括号中，例如 ctk:fg[NORMAL]其中 NORMAL 是状态；无法解析“%s”"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
-msgstr "GTK 颜色规范必须在状态后有一个闭方括号，例如 gtk:fg[NORMAL]，其中 NORMAL 是状态；无法解析“%s”"
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+msgstr "GTK 颜色规范必须在状态后有一个闭方括号，例如 ctk:fg[NORMAL]，其中 NORMAL 是状态；无法解析“%s”"
 
 #: src/ui/theme.c:1496
 #, c-format

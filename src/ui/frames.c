@@ -184,21 +184,21 @@ create_style_context (MetaFrames  *frames,
   GdkScreen *screen;
   char *theme_name;
 
-  screen = gtk_widget_get_screen (GTK_WIDGET (frames));
-  g_object_get (gtk_settings_get_for_screen (screen),
-                "gtk-theme-name", &theme_name,
+  screen = ctk_widget_get_screen (GTK_WIDGET (frames));
+  g_object_get (ctk_settings_get_for_screen (screen),
+                "ctk-theme-name", &theme_name,
                 NULL);
 
-  style = gtk_style_context_new ();
-  gtk_style_context_set_path (style,
-                              gtk_widget_get_path (GTK_WIDGET (frames)));
+  style = ctk_style_context_new ();
+  ctk_style_context_set_path (style,
+                              ctk_widget_get_path (GTK_WIDGET (frames)));
 
   if (theme_name && *theme_name)
     {
       GtkCssProvider *provider;
 
-      provider = gtk_css_provider_get_named (theme_name, variant);
-      gtk_style_context_add_provider (style,
+      provider = ctk_css_provider_get_named (theme_name, variant);
+      ctk_style_context_add_provider (style,
                                       GTK_STYLE_PROVIDER (provider),
                                       GTK_STYLE_PROVIDER_PRIORITY_SETTINGS);
     }
@@ -502,7 +502,7 @@ meta_frames_ensure_layout (MetaFrames  *frames,
   MetaFrameType type;
   MetaFrameStyle *style;
 
-  g_return_if_fail (gtk_widget_get_realized (GTK_WIDGET (frames)));
+  g_return_if_fail (ctk_widget_get_realized (GTK_WIDGET (frames)));
 
   widget = GTK_WIDGET (frames);
 
@@ -540,14 +540,14 @@ meta_frames_ensure_layout (MetaFrames  *frames,
                                           type,
                                           flags);
 
-      frame->text_layout = gtk_widget_create_pango_layout (widget, frame->title);
+      frame->text_layout = ctk_widget_create_pango_layout (widget, frame->title);
 
       pango_layout_set_ellipsize (frame->text_layout, PANGO_ELLIPSIZE_END);
       pango_layout_set_auto_dir (frame->text_layout, FALSE);
 
       pango_layout_set_single_paragraph_mode (frame->text_layout, TRUE);
 
-      font_desc = meta_gtk_widget_get_font_desc (widget, scale,
+      font_desc = meta_ctk_widget_get_font_desc (widget, scale,
                                                  meta_prefs_get_titlebar_font ());
 
       size = pango_font_description_get_size (font_desc);
@@ -562,7 +562,7 @@ meta_frames_ensure_layout (MetaFrames  *frames,
         {
           frame->text_height =
             meta_pango_font_desc_get_text_height (font_desc,
-                                                  gtk_widget_get_pango_context (widget));
+                                                  ctk_widget_get_pango_context (widget));
 
           g_hash_table_replace (frames->text_heights,
                                 GINT_TO_POINTER (size),
@@ -631,8 +631,8 @@ meta_frames_new (void)
    * and ignore it, and we need this window to get frame-synchronization
    * messages so that GTK+'s style change handling works.
    */
-  gtk_window_move (GTK_WINDOW (frames), -200, -200);
-  gtk_window_resize (GTK_WINDOW (frames), 1, 1);
+  ctk_window_move (GTK_WINDOW (frames), -200, -200);
+  ctk_window_resize (GTK_WINDOW (frames), 1, 1);
 
   return frames;
 }
@@ -1124,7 +1124,7 @@ meta_frames_apply_shapes (MetaFrames *frames,
                   "Frame 0x%lx needs to incorporate client shape\n",
                   frame->xwindow);
 
-      screen = gtk_widget_get_screen (GTK_WIDGET (frames));
+      screen = ctk_widget_get_screen (GTK_WIDGET (frames));
       screen_number = gdk_x11_screen_get_screen_number (screen);
 
       attrs.override_redirect = True;
@@ -2480,7 +2480,7 @@ find_frame_to_draw (MetaFrames *frames,
 
   g_hash_table_iter_init (&iter, frames->frames);
   while (g_hash_table_iter_next (&iter, NULL, (gpointer *) &frame))
-    if (gtk_cairo_should_draw_window (cr, frame->window))
+    if (ctk_cairo_should_draw_window (cr, frame->window))
       return frame;
 
   return NULL;

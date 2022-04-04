@@ -43,7 +43,7 @@
 #include <X11/Xutil.h>
 #include <cairo.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 typedef struct _MetaGroup MetaGroup;
 typedef struct _MetaWindowQueue MetaWindowQueue;
@@ -127,7 +127,7 @@ struct _MetaWindow
   char *sm_client_id;
   char *wm_client_machine;
   char *startup_id;
-  char *gtk_theme_variant;
+  char *ctk_theme_variant;
 
   int net_wm_pid;
 

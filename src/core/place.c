@@ -388,7 +388,7 @@ avoid_being_obscured_as_second_modal_dialog (MetaWindow       *window,
    * second modal dialog for some app while the focus window is the
    * first modal dialog.  We should probably make them simultaneously
    * visible in general, but it becomes mandatory to do so due to
-   * buggy apps (e.g. those using gtk+ *sigh*) because in those cases
+   * buggy apps (e.g. those using ctk+ *sigh*) because in those cases
    * this second modal dialog also happens to be modal to the first
    * dialog in addition to the main window, while it has only let us
    * know about the modal-to-the-main-window part.

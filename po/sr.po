@@ -1875,46 +1875,46 @@ msgstr "Градијенти морају имати најмање две бо�
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 "Спецификација произвољне ГТК боје мора имати назив боје и пребацивање у "
-"загради, на пример gtk:custom(foo,bar); не могу да обрадим „%s“"
+"загради, на пример ctk:custom(foo,bar); не могу да обрадим „%s“"
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
-"Неисправан знак „%c“ параметра назив_боје у „gtk:custom“, иасправни су само "
+"Неисправан знак „%c“ параметра назив_боје у „ctk:custom“, иасправни су само "
 "A-Za-z0-9-_"
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"Гтк:произвољни формат је „gtk:custom(назив_боје,пребацивање)“, „%s“ се не "
+"Гтк:произвољни формат је „ctk:custom(назив_боје,пребацивање)“, „%s“ се не "
 "уклапа у формат"
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Одредба Гтк боје мора имати стање у загради, на пример „gtk:fg[NORMAL]“ где "
+"Одредба Гтк боје мора имати стање у загради, на пример „ctk:fg[NORMAL]“ где "
 "је „NORMAL“ стање; не могу да обрадим „%s“"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "Одредба Гтк боје мора имати затворену заграду након стања, на пример "
-"„gtk:fg[NORMAL]“ где је „NORMAL“ стање; не могу да обрадим „%s“"
+"„ctk:fg[NORMAL]“ где је „NORMAL“ стање; не могу да обрадим „%s“"
 
 #: src/ui/theme.c:1496
 #, c-format

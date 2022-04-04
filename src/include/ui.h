@@ -24,7 +24,7 @@
 #ifndef META_UI_H
 #define META_UI_H
 
-/* Don't include gtk.h or gdk.h here */
+/* Don't include ctk.h or gdk.h here */
 #include "common.h"
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>

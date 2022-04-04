@@ -14,15 +14,15 @@
 
   Focused colors
   ==============
-  Light   gtk:base[SELECTED]
-  Normal  gtk:bg[SELECTED]
-  Dark    gtk:fg[SELECTED]
+  Light   ctk:base[SELECTED]
+  Normal  ctk:bg[SELECTED]
+  Dark    ctk:fg[SELECTED]
 
   Unfocused colors
   ================
-  Light   gtk:base[NORMAL]
-  Normal  gtk:bg[NORMAL]
-  Dark    gtk:fg[NORMAL]
+  Light   ctk:base[NORMAL]
+  Normal  ctk:bg[NORMAL]
+  Dark    ctk:fg[NORMAL]
 
 #######################################################
 # FRAME GEOMETRY
@@ -81,66 +81,66 @@
   <!-- special to draw just a border without interiour, used for title bar to get text cropoff -->
   <draw_ops name="draw_relief_focused">
     <!-- light -->
-    <line color="gtk:light[SELECTED]" x1="0" y1="0" x2="width-1" y2="0"/>
-    <line color="gtk:light[SELECTED]" x1="0" y1="1" x2="0" y2="height-1"/>
+    <line color="ctk:light[SELECTED]" x1="0" y1="0" x2="width-1" y2="0"/>
+    <line color="ctk:light[SELECTED]" x1="0" y1="1" x2="0" y2="height-1"/>
     <!-- dark -->
-    <line color="gtk:dark[SELECTED]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
-    <line color="gtk:dark[SELECTED]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
+    <line color="ctk:dark[SELECTED]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
+    <line color="ctk:dark[SELECTED]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
   </draw_ops>
   <draw_ops name="draw_relief_unfocused">
     <!-- dark -->
-    <line color="gtk:light[NORMAL]" x1="0" y1="0" x2="width-1" y2="0"/>
-    <line color="gtk:light[NORMAL]" x1="0" y1="1" x2="0" y2="height-1"/>
+    <line color="ctk:light[NORMAL]" x1="0" y1="0" x2="width-1" y2="0"/>
+    <line color="ctk:light[NORMAL]" x1="0" y1="1" x2="0" y2="height-1"/>
     <!-- light -->
-    <line color="gtk:dark[NORMAL]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
-    <line color="gtk:dark[NORMAL]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
+    <line color="ctk:dark[NORMAL]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
+    <line color="ctk:dark[NORMAL]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
   </draw_ops>
   <draw_ops name="draw_relief_pressed_focused">
     <!-- light -->
-    <line color="gtk:dark[SELECTED]" x1="0" y1="0" x2="width-1" y2="0"/>
-    <line color="gtk:dark[SELECTED]" x1="0" y1="1" x2="0" y2="height-1"/>
+    <line color="ctk:dark[SELECTED]" x1="0" y1="0" x2="width-1" y2="0"/>
+    <line color="ctk:dark[SELECTED]" x1="0" y1="1" x2="0" y2="height-1"/>
     <!-- dark -->
-    <line color="gtk:light[SELECTED]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
-    <line color="gtk:light[SELECTED]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
+    <line color="ctk:light[SELECTED]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
+    <line color="ctk:light[SELECTED]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
   </draw_ops>
   <draw_ops name="draw_relief_pressed_unfocused">
     <!-- dark -->
-    <line color="gtk:dark[NORMAL]" x1="0" y1="0" x2="width-1" y2="0"/>
-    <line color="gtk:dark[NORMAL]" x1="0" y1="1" x2="0" y2="height-1"/>
+    <line color="ctk:dark[NORMAL]" x1="0" y1="0" x2="width-1" y2="0"/>
+    <line color="ctk:dark[NORMAL]" x1="0" y1="1" x2="0" y2="height-1"/>
     <!-- light -->
-    <line color="gtk:light[NORMAL]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
-    <line color="gtk:light[NORMAL]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
+    <line color="ctk:light[NORMAL]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
+    <line color="ctk:light[NORMAL]" x1="width-1" y1="1" x2="width-1" y2="height-1"/>
   </draw_ops>
   <draw_ops name="draw_panel_focused">
     <!-- normal -->
-    <rectangle color="gtk:bg[SELECTED]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
+    <rectangle color="ctk:bg[SELECTED]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
     <include name="draw_relief_focused"/>
   </draw_ops>
   <draw_ops name="draw_panel_pressed_focused">
     <!-- normal -->
-    <rectangle color="gtk:bg[SELECTED]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
+    <rectangle color="ctk:bg[SELECTED]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
     <include name="draw_relief_pressed_focused"/>
   </draw_ops>
   <draw_ops name="draw_panel_unfocused">
     <!-- normal -->
-    <rectangle color="gtk:bg[NORMAL]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
+    <rectangle color="ctk:bg[NORMAL]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
     <include name="draw_relief_unfocused"/>
   </draw_ops>
   <draw_ops name="draw_panel_pressed_unfocused">
     <!-- normal -->
-    <rectangle color="gtk:bg[NORMAL]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
+    <rectangle color="ctk:bg[NORMAL]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
     <include name="draw_relief_pressed_unfocused"/>
   </draw_ops>
   <draw_ops name="draw_title_focused">
     <!-- normal -->
-    <rectangle color="gtk:bg[SELECTED]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
-    <title color="gtk:fg[SELECTED]" x="(width-title_width)/2 `max` 10" y="(height-title_height)/2"/>
+    <rectangle color="ctk:bg[SELECTED]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
+    <title color="ctk:fg[SELECTED]" x="(width-title_width)/2 `max` 10" y="(height-title_height)/2"/>
     <include name="draw_relief_focused"/>
   </draw_ops>
   <draw_ops name="draw_title_unfocused">
     <!-- normal -->
-    <rectangle color="gtk:bg[NORMAL]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
-    <title color="gtk:fg[NORMAL]" x="(width-title_width)/2 `max` 10" y="(height-title_height)/2"/>
+    <rectangle color="ctk:bg[NORMAL]" x="1" y="1" width="width-2" height="height-2" filled="true"/>
+    <title color="ctk:fg[NORMAL]" x="(width-title_width)/2 `max` 10" y="(height-title_height)/2"/>
     <include name="draw_relief_unfocused"/>
   </draw_ops>
 <!--
@@ -150,76 +150,76 @@
 -->
   <draw_ops name="draw_border_corners_focused">
     <!-- top left -->
-    <line color="gtk:dark[SELECTED]" x1="top_height-1" y1="1" x2="top_height-1" y2="bottom_height-1"/>
-    <line color="gtk:light[SELECTED]" x1="top_height" y1="1" x2="top_height" y2="bottom_height-1"/>
+    <line color="ctk:dark[SELECTED]" x1="top_height-1" y1="1" x2="top_height-1" y2="bottom_height-1"/>
+    <line color="ctk:light[SELECTED]" x1="top_height" y1="1" x2="top_height" y2="bottom_height-1"/>
     <!-- top right -->
-    <line color="gtk:dark[SELECTED]" x1="width-top_height-1" y1="1" x2="width-top_height-1" y2="bottom_height-1"/>
-    <line color="gtk:light[SELECTED]" x1="width-top_height" y1="1" x2="width-top_height" y2="bottom_height-1"/>
+    <line color="ctk:dark[SELECTED]" x1="width-top_height-1" y1="1" x2="width-top_height-1" y2="bottom_height-1"/>
+    <line color="ctk:light[SELECTED]" x1="width-top_height" y1="1" x2="width-top_height" y2="bottom_height-1"/>
     <!-- right top -->
-    <line color="gtk:dark[SELECTED]" x1="width-right_width+1" y1="top_height-1" x2="width-2" y2="top_height-1"/>
-    <line color="gtk:light[SELECTED]" x1="width-right_width+1" y1="top_height" x2="width-2" y2="top_height"/>
+    <line color="ctk:dark[SELECTED]" x1="width-right_width+1" y1="top_height-1" x2="width-2" y2="top_height-1"/>
+    <line color="ctk:light[SELECTED]" x1="width-right_width+1" y1="top_height" x2="width-2" y2="top_height"/>
     <!-- right bottom -->
-    <line color="gtk:dark[SELECTED]" x1="width-right_width+1" y1="height-top_height-1" x2="width-2" y2="height-top_height-1"/>
-    <line color="gtk:light[SELECTED]" x1="width-right_width+1" y1="height-top_height" x2="width-2" y2="height-top_height"/>
+    <line color="ctk:dark[SELECTED]" x1="width-right_width+1" y1="height-top_height-1" x2="width-2" y2="height-top_height-1"/>
+    <line color="ctk:light[SELECTED]" x1="width-right_width+1" y1="height-top_height" x2="width-2" y2="height-top_height"/>
     <!-- bottom right -->
-    <line color="gtk:dark[SELECTED]" x1="width-top_height-1" y1="height-bottom_height+1" x2="width-top_height-1" y2="height-2"/>
-    <line color="gtk:light[SELECTED]" x1="width-top_height" y1="height-bottom_height+1" x2="width-top_height" y2="height-2"/>
+    <line color="ctk:dark[SELECTED]" x1="width-top_height-1" y1="height-bottom_height+1" x2="width-top_height-1" y2="height-2"/>
+    <line color="ctk:light[SELECTED]" x1="width-top_height" y1="height-bottom_height+1" x2="width-top_height" y2="height-2"/>
     <!-- bottom left -->
-    <line color="gtk:dark[SELECTED]" x1="top_height-1" y1="height-bottom_height+1" x2="top_height-1" y2="height-2"/>
-    <line color="gtk:light[SELECTED]" x1="top_height" y1="height-bottom_height+1" x2="top_height" y2="height-2"/>
+    <line color="ctk:dark[SELECTED]" x1="top_height-1" y1="height-bottom_height+1" x2="top_height-1" y2="height-2"/>
+    <line color="ctk:light[SELECTED]" x1="top_height" y1="height-bottom_height+1" x2="top_height" y2="height-2"/>
     <!-- left bottom -->
-    <line color="gtk:dark[SELECTED]" x1="1" y1="height-top_height-1" x2="left_width-1" y2="height-top_height-1"/>
-    <line color="gtk:light[SELECTED]" x1="1" y1="height-top_height" x2="left_width-1" y2="height-top_height"/>
+    <line color="ctk:dark[SELECTED]" x1="1" y1="height-top_height-1" x2="left_width-1" y2="height-top_height-1"/>
+    <line color="ctk:light[SELECTED]" x1="1" y1="height-top_height" x2="left_width-1" y2="height-top_height"/>
     <!-- left top -->
-    <line color="gtk:dark[SELECTED]" x1="1" y1="top_height-1" x2="left_width-1" y2="top_height-1"/>
-    <line color="gtk:light[SELECTED]" x1="1" y1="top_height" x2="left_width-1" y2="top_height"/>
+    <line color="ctk:dark[SELECTED]" x1="1" y1="top_height-1" x2="left_width-1" y2="top_height-1"/>
+    <line color="ctk:light[SELECTED]" x1="1" y1="top_height" x2="left_width-1" y2="top_height"/>
   </draw_ops>
   <draw_ops name="draw_border_corners_unfocused">
     <!-- top left -->
-    <line color="gtk:dark[NORMAL]" x1="top_height-1" y1="1" x2="top_height-1" y2="bottom_height-1"/>
-    <line color="gtk:light[NORMAL]" x1="top_height" y1="1" x2="top_height" y2="bottom_height-1"/>
+    <line color="ctk:dark[NORMAL]" x1="top_height-1" y1="1" x2="top_height-1" y2="bottom_height-1"/>
+    <line color="ctk:light[NORMAL]" x1="top_height" y1="1" x2="top_height" y2="bottom_height-1"/>
     <!-- top right -->
-    <line color="gtk:dark[NORMAL]" x1="width-top_height-1" y1="1" x2="width-top_height-1" y2="bottom_height-1"/>
-    <line color="gtk:light[NORMAL]" x1="width-top_height" y1="1" x2="width-top_height" y2="bottom_height-1"/>
+    <line color="ctk:dark[NORMAL]" x1="width-top_height-1" y1="1" x2="width-top_height-1" y2="bottom_height-1"/>
+    <line color="ctk:light[NORMAL]" x1="width-top_height" y1="1" x2="width-top_height" y2="bottom_height-1"/>
     <!-- right top -->
-    <line color="gtk:dark[NORMAL]" x1="width-right_width+1" y1="top_height-1" x2="width-2" y2="top_height-1"/>
-    <line color="gtk:light[NORMAL]" x1="width-right_width+1" y1="top_height" x2="width-2" y2="top_height"/>
+    <line color="ctk:dark[NORMAL]" x1="width-right_width+1" y1="top_height-1" x2="width-2" y2="top_height-1"/>
+    <line color="ctk:light[NORMAL]" x1="width-right_width+1" y1="top_height" x2="width-2" y2="top_height"/>
     <!-- right bottom -->
-    <line color="gtk:dark[NORMAL]" x1="width-right_width+1" y1="height-top_height-1" x2="width-2" y2="height-top_height-1"/>
-    <line color="gtk:light[NORMAL]" x1="width-right_width+1" y1="height-top_height" x2="width-2" y2="height-top_height"/>
+    <line color="ctk:dark[NORMAL]" x1="width-right_width+1" y1="height-top_height-1" x2="width-2" y2="height-top_height-1"/>
+    <line color="ctk:light[NORMAL]" x1="width-right_width+1" y1="height-top_height" x2="width-2" y2="height-top_height"/>
     <!-- bottom right -->
-    <line color="gtk:dark[NORMAL]" x1="width-top_height-1" y1="height-bottom_height+1" x2="width-top_height-1" y2="height-2"/>
-    <line color="gtk:light[NORMAL]" x1="width-top_height" y1="height-bottom_height+1" x2="width-top_height" y2="height-2"/>
+    <line color="ctk:dark[NORMAL]" x1="width-top_height-1" y1="height-bottom_height+1" x2="width-top_height-1" y2="height-2"/>
+    <line color="ctk:light[NORMAL]" x1="width-top_height" y1="height-bottom_height+1" x2="width-top_height" y2="height-2"/>
     <!-- bottom left -->
-    <line color="gtk:dark[NORMAL]" x1="top_height-1" y1="height-bottom_height+1" x2="top_height-1" y2="height-2"/>
-    <line color="gtk:light[NORMAL]" x1="top_height" y1="height-bottom_height+1" x2="top_height" y2="height-2"/>
+    <line color="ctk:dark[NORMAL]" x1="top_height-1" y1="height-bottom_height+1" x2="top_height-1" y2="height-2"/>
+    <line color="ctk:light[NORMAL]" x1="top_height" y1="height-bottom_height+1" x2="top_height" y2="height-2"/>
     <!-- left bottom -->
-    <line color="gtk:dark[NORMAL]" x1="1" y1="height-top_height-1" x2="left_width-1" y2="height-top_height-1"/>
-    <line color="gtk:light[NORMAL]" x1="1" y1="height-top_height" x2="left_width-1" y2="height-top_height"/>
+    <line color="ctk:dark[NORMAL]" x1="1" y1="height-top_height-1" x2="left_width-1" y2="height-top_height-1"/>
+    <line color="ctk:light[NORMAL]" x1="1" y1="height-top_height" x2="left_width-1" y2="height-top_height"/>
     <!-- left top -->
-    <line color="gtk:dark[NORMAL]" x1="1" y1="top_height-1" x2="left_width-1" y2="top_height-1"/>
-    <line color="gtk:light[NORMAL]" x1="1" y1="top_height" x2="left_width-1" y2="top_height"/>
+    <line color="ctk:dark[NORMAL]" x1="1" y1="top_height-1" x2="left_width-1" y2="top_height-1"/>
+    <line color="ctk:light[NORMAL]" x1="1" y1="top_height" x2="left_width-1" y2="top_height"/>
   </draw_ops>
   <draw_ops name="draw_border_base_focused">
     <!-- background -->
-    <rectangle color="gtk:bg[SELECTED]" x="0" y="0" width="width" height="right_width" filled="true"/>
-    <rectangle color="gtk:bg[SELECTED]" x="0" y="0" width="left_width" height="height" filled="true"/>
-    <rectangle color="gtk:bg[SELECTED]" x="width-right_width" y="0" width="right_width" height="height" filled="true"/>
-    <rectangle color="gtk:bg[SELECTED]" x="0" y="height-right_width" width="width" height="right_width" filled="true"/>
+    <rectangle color="ctk:bg[SELECTED]" x="0" y="0" width="width" height="right_width" filled="true"/>
+    <rectangle color="ctk:bg[SELECTED]" x="0" y="0" width="left_width" height="height" filled="true"/>
+    <rectangle color="ctk:bg[SELECTED]" x="width-right_width" y="0" width="right_width" height="height" filled="true"/>
+    <rectangle color="ctk:bg[SELECTED]" x="0" y="height-right_width" width="width" height="right_width" filled="true"/>
     <!-- light -->
-    <line color="gtk:light[SELECTED]" x1="0" y1="0" x2="width-1" y2="0"/>
-    <line color="gtk:light[SELECTED]" x1="0" y1="1" x2="width-2" y2="1"/>
-    <line color="gtk:light[SELECTED]" x1="0" y1="2" x2="0" y2="height-1"/>
-    <line color="gtk:light[SELECTED]" x1="1" y1="2" x2="1" y2="height-2"/>
-    <line color="gtk:light[SELECTED]" x1="left_width" y1="height-right_width" x2="width-right_width" y2="height-right_width"/>
-    <line color="gtk:light[SELECTED]" x1="width-right_width" y1="right_width" x2="width-right_width" y2="height-right_width-1"/>
+    <line color="ctk:light[SELECTED]" x1="0" y1="0" x2="width-1" y2="0"/>
+    <line color="ctk:light[SELECTED]" x1="0" y1="1" x2="width-2" y2="1"/>
+    <line color="ctk:light[SELECTED]" x1="0" y1="2" x2="0" y2="height-1"/>
+    <line color="ctk:light[SELECTED]" x1="1" y1="2" x2="1" y2="height-2"/>
+    <line color="ctk:light[SELECTED]" x1="left_width" y1="height-right_width" x2="width-right_width" y2="height-right_width"/>
+    <line color="ctk:light[SELECTED]" x1="width-right_width" y1="right_width" x2="width-right_width" y2="height-right_width-1"/>
     <!-- dark -->
-    <line color="gtk:dark[SELECTED]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
-    <line color="gtk:dark[SELECTED]" x1="2" y1="height-2" x2="width-1" y2="height-2"/>
-    <line color="gtk:dark[SELECTED]" x1="width-1" y1="1" x2="width-1" y2="height-3"/>
-    <line color="gtk:dark[SELECTED]" x1="width-2" y1="2" x2="width-2" y2="height-3"/>
-    <line color="gtk:dark[SELECTED]" x1="left_width-1" y1="right_width-1" x2="width-right_width" y2="right_width-1"/>
-    <line color="gtk:dark[SELECTED]" x1="left_width-1" y1="right_width" x2="left_width-1" y2="height-right_width"/>
+    <line color="ctk:dark[SELECTED]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
+    <line color="ctk:dark[SELECTED]" x1="2" y1="height-2" x2="width-1" y2="height-2"/>
+    <line color="ctk:dark[SELECTED]" x1="width-1" y1="1" x2="width-1" y2="height-3"/>
+    <line color="ctk:dark[SELECTED]" x1="width-2" y1="2" x2="width-2" y2="height-3"/>
+    <line color="ctk:dark[SELECTED]" x1="left_width-1" y1="right_width-1" x2="width-right_width" y2="right_width-1"/>
+    <line color="ctk:dark[SELECTED]" x1="left_width-1" y1="right_width" x2="left_width-1" y2="height-right_width"/>
   </draw_ops>
   <draw_ops name="draw_border_focused">
     <include name="draw_border_base_focused"/>
@@ -230,24 +230,24 @@
   </draw_ops>
   <draw_ops name="draw_border_base_unfocused">
     <!-- background -->
-    <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="right_width" filled="true"/>
-    <rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="left_width" height="height" filled="true"/>
-    <rectangle color="gtk:bg[NORMAL]" x="width-right_width" y="0" width="right_width" height="height" filled="true"/>
-    <rectangle color="gtk:bg[NORMAL]" x="0" y="height-right_width" width="width" height="right_width" filled="true"/>
+    <rectangle color="ctk:bg[NORMAL]" x="0" y="0" width="width" height="right_width" filled="true"/>
+    <rectangle color="ctk:bg[NORMAL]" x="0" y="0" width="left_width" height="height" filled="true"/>
+    <rectangle color="ctk:bg[NORMAL]" x="width-right_width" y="0" width="right_width" height="height" filled="true"/>
+    <rectangle color="ctk:bg[NORMAL]" x="0" y="height-right_width" width="width" height="right_width" filled="true"/>
     <!-- light -->
-    <line color="gtk:light[NORMAL]" x1="0" y1="0" x2="width-1" y2="0"/>
-    <line color="gtk:light[NORMAL]" x1="0" y1="1" x2="width-2" y2="1"/>
-    <line color="gtk:light[NORMAL]" x1="0" y1="2" x2="0" y2="height-1"/>
-    <line color="gtk:light[NORMAL]" x1="1" y1="2" x2="1" y2="height-2"/>
-    <line color="gtk:light[NORMAL]" x1="left_width" y1="height-right_width" x2="width-right_width" y2="height-right_width"/>
-    <line color="gtk:light[NORMAL]" x1="width-right_width" y1="right_width" x2="width-right_width" y2="height-right_width-1"/>
+    <line color="ctk:light[NORMAL]" x1="0" y1="0" x2="width-1" y2="0"/>
+    <line color="ctk:light[NORMAL]" x1="0" y1="1" x2="width-2" y2="1"/>
+    <line color="ctk:light[NORMAL]" x1="0" y1="2" x2="0" y2="height-1"/>
+    <line color="ctk:light[NORMAL]" x1="1" y1="2" x2="1" y2="height-2"/>
+    <line color="ctk:light[NORMAL]" x1="left_width" y1="height-right_width" x2="width-right_width" y2="height-right_width"/>
+    <line color="ctk:light[NORMAL]" x1="width-right_width" y1="right_width" x2="width-right_width" y2="height-right_width-1"/>
     <!-- dark -->
-    <line color="gtk:dark[NORMAL]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
-    <line color="gtk:dark[NORMAL]" x1="2" y1="height-2" x2="width-1" y2="height-2"/>
-    <line color="gtk:dark[NORMAL]" x1="width-1" y1="1" x2="width-1" y2="height-3"/>
-    <line color="gtk:dark[NORMAL]" x1="width-2" y1="2" x2="width-2" y2="height-3"/>
-    <line color="gtk:dark[NORMAL]" x1="left_width-1" y1="right_width-1" x2="width-right_width" y2="right_width-1"/>
-    <line color="gtk:dark[NORMAL]" x1="left_width-1" y1="right_width" x2="left_width-1" y2="height-right_width"/>
+    <line color="ctk:dark[NORMAL]" x1="1" y1="height-1" x2="width-1" y2="height-1"/>
+    <line color="ctk:dark[NORMAL]" x1="2" y1="height-2" x2="width-1" y2="height-2"/>
+    <line color="ctk:dark[NORMAL]" x1="width-1" y1="1" x2="width-1" y2="height-3"/>
+    <line color="ctk:dark[NORMAL]" x1="width-2" y1="2" x2="width-2" y2="height-3"/>
+    <line color="ctk:dark[NORMAL]" x1="left_width-1" y1="right_width-1" x2="width-right_width" y2="right_width-1"/>
+    <line color="ctk:dark[NORMAL]" x1="left_width-1" y1="right_width" x2="left_width-1" y2="height-right_width"/>
   </draw_ops>
   <draw_ops name="draw_border_unfocused">
     <include name="draw_border_base_unfocused"/>
@@ -267,10 +267,10 @@
   <!-- MENU BUTTON -->
   <draw_ops name="draw_button_menu_icon_focused">
     <!-- draw menu icon -->
-    <line color="gtk:dark[SELECTED]" x1="width-5" y1="height/2-1" x2="width-5" y2="height/2+2"/>
-    <line color="gtk:dark[SELECTED]" x1="4" y1="height/2+2" x2="width-5" y2="height/2+2"/>
-    <line color="gtk:light[SELECTED]" x1="4" y1="height/2-1" x2="width-5" y2="height/2-1"/>
-    <line color="gtk:light[SELECTED]" x1="4" y1="height/2-1" x2="4" y2="height/2+2"/>
+    <line color="ctk:dark[SELECTED]" x1="width-5" y1="height/2-1" x2="width-5" y2="height/2+2"/>
+    <line color="ctk:dark[SELECTED]" x1="4" y1="height/2+2" x2="width-5" y2="height/2+2"/>
+    <line color="ctk:light[SELECTED]" x1="4" y1="height/2-1" x2="width-5" y2="height/2-1"/>
+    <line color="ctk:light[SELECTED]" x1="4" y1="height/2-1" x2="4" y2="height/2+2"/>
   </draw_ops>
   <draw_ops name="draw_button_menu_focused">
     <include name="draw_panel_focused"/>
@@ -283,10 +283,10 @@
   <!-- MINIMIZE BUTTON -->
   <draw_ops name="draw_button_minimize_icon_focused">
     <!-- draw minimize icon -->
-    <line color="gtk:light[SELECTED]" x1="width/2-2" y1="height/2-1" x2="width/2+1" y2="height/2-1"/>
-    <line color="gtk:light[SELECTED]" x1="width/2-2" y1="height/2-1" x2="width/2-2" y2="height/2+2"/>
-    <line color="gtk:dark[SELECTED]" x1="width/2+1" y1="height/2" x2="width/2+1" y2="height/2+2"/>
-    <line color="gtk:dark[SELECTED]" x1="width/2-1" y1="height/2+2" x2="width/2+1" y2="height/2+2"/>
+    <line color="ctk:light[SELECTED]" x1="width/2-2" y1="height/2-1" x2="width/2+1" y2="height/2-1"/>
+    <line color="ctk:light[SELECTED]" x1="width/2-2" y1="height/2-1" x2="width/2-2" y2="height/2+2"/>
+    <line color="ctk:dark[SELECTED]" x1="width/2+1" y1="height/2" x2="width/2+1" y2="height/2+2"/>
+    <line color="ctk:dark[SELECTED]" x1="width/2-1" y1="height/2+2" x2="width/2+1" y2="height/2+2"/>
   </draw_ops>
   <draw_ops name="draw_button_minimize_focused">
     <include name="draw_panel_focused"/>
@@ -299,10 +299,10 @@
   <!-- MAXIMIZE BUTTON -->
   <draw_ops name="draw_button_maximize_icon_focused">
     <!-- draw maximize icon -->
-    <line color="gtk:light[SELECTED]" x1="4" y1="4" x2="width-5" y2="4"/>
-    <line color="gtk:light[SELECTED]" x1="4" y1="4" x2="4" y2="height-5"/>
-    <line color="gtk:dark[SELECTED]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
-    <line color="gtk:dark[SELECTED]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
+    <line color="ctk:light[SELECTED]" x1="4" y1="4" x2="width-5" y2="4"/>
+    <line color="ctk:light[SELECTED]" x1="4" y1="4" x2="4" y2="height-5"/>
+    <line color="ctk:dark[SELECTED]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
+    <line color="ctk:dark[SELECTED]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
   </draw_ops>
   <draw_ops name="draw_button_maximize_focused">
     <include name="draw_panel_focused"/>
@@ -315,10 +315,10 @@
   <!-- RESTORE BUTTON -->
   <draw_ops name="draw_button_restore_icon_focused">
     <!-- draw restore icon -->
-    <line color="gtk:dark[SELECTED]" x1="4" y1="4" x2="width-5" y2="4"/>
-    <line color="gtk:dark[SELECTED]" x1="4" y1="4" x2="4" y2="height-5"/>
-    <line color="gtk:light[SELECTED]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
-    <line color="gtk:light[SELECTED]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
+    <line color="ctk:dark[SELECTED]" x1="4" y1="4" x2="width-5" y2="4"/>
+    <line color="ctk:dark[SELECTED]" x1="4" y1="4" x2="4" y2="height-5"/>
+    <line color="ctk:light[SELECTED]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
+    <line color="ctk:light[SELECTED]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
   </draw_ops>
   <draw_ops name="draw_button_restore_focused">
     <include name="draw_panel_focused"/>
@@ -331,20 +331,20 @@
   <!-- CLOSE BUTTON -->
   <draw_ops name="draw_button_close_icon_focused">
     <!-- draw close icon -->
-    <line color="gtk:light[SELECTED]" x1="4" y1="height-7" x2="width-7" y2="4"/>
-    <line color="gtk:dark[SELECTED]" x1="6" y1="height-5" x2="width-5" y2="6"/>
-    <line color="gtk:light[SELECTED]" x1="4" y1="6" x2="width-7" y2="height-5"/>
-    <line color="gtk:dark[SELECTED]" x1="6" y1="4" x2="width-5" y2="height-7"/>
-    <line color="gtk:dark[SELECTED]" x1="5" y1="height-6" x2="6" y2="height-5"/>
-    <line color="gtk:light[SELECTED]" x1="4" y1="6" x2="6" y2="4"/>
-    <line color="gtk:dark[SELECTED]" x1="width-7" y1="height-5" x2="width-5" y2="height-7"/>
-    <line color="gtk:dark[SELECTED]" x1="width-6" y1="5" x2="width-5" y2="6"/>
-    <line color="gtk:bg[SELECTED]" x1="5" y1="height-5" x2="width-6" y2="6"/>
-    <line color="gtk:bg[SELECTED]" x1="6" y1="height-7" x2="width-7" y2="6"/>
-    <line color="gtk:bg[SELECTED]" x1="4" y1="height-6" x2="width-7" y2="5"/>
-    <line color="gtk:bg[SELECTED]" x1="5" y1="6" x2="width-7" y2="height-6"/>
-    <line color="gtk:bg[SELECTED]" x1="6" y1="6" x2="width-7" y2="height-7"/>
-    <line color="gtk:bg[SELECTED]" x1="7" y1="6" x2="width-6" y2="height-7"/>
+    <line color="ctk:light[SELECTED]" x1="4" y1="height-7" x2="width-7" y2="4"/>
+    <line color="ctk:dark[SELECTED]" x1="6" y1="height-5" x2="width-5" y2="6"/>
+    <line color="ctk:light[SELECTED]" x1="4" y1="6" x2="width-7" y2="height-5"/>
+    <line color="ctk:dark[SELECTED]" x1="6" y1="4" x2="width-5" y2="height-7"/>
+    <line color="ctk:dark[SELECTED]" x1="5" y1="height-6" x2="6" y2="height-5"/>
+    <line color="ctk:light[SELECTED]" x1="4" y1="6" x2="6" y2="4"/>
+    <line color="ctk:dark[SELECTED]" x1="width-7" y1="height-5" x2="width-5" y2="height-7"/>
+    <line color="ctk:dark[SELECTED]" x1="width-6" y1="5" x2="width-5" y2="6"/>
+    <line color="ctk:bg[SELECTED]" x1="5" y1="height-5" x2="width-6" y2="6"/>
+    <line color="ctk:bg[SELECTED]" x1="6" y1="height-7" x2="width-7" y2="6"/>
+    <line color="ctk:bg[SELECTED]" x1="4" y1="height-6" x2="width-7" y2="5"/>
+    <line color="ctk:bg[SELECTED]" x1="5" y1="6" x2="width-7" y2="height-6"/>
+    <line color="ctk:bg[SELECTED]" x1="6" y1="6" x2="width-7" y2="height-7"/>
+    <line color="ctk:bg[SELECTED]" x1="7" y1="6" x2="width-6" y2="height-7"/>
   </draw_ops>
   <draw_ops name="draw_button_close_focused">
     <include name="draw_panel_focused"/>
@@ -362,10 +362,10 @@
   <!-- MENU BUTTON -->
   <draw_ops name="draw_button_menu_icon_unfocused">
     <!-- draw menu icon -->
-    <line color="gtk:dark[NORMAL]" x1="width-5" y1="height/2-1" x2="width-5" y2="height/2+2"/>
-    <line color="gtk:dark[NORMAL]" x1="4" y1="height/2+2" x2="width-5" y2="height/2+2"/>
-    <line color="gtk:light[NORMAL]" x1="4" y1="height/2-1" x2="width-5" y2="height/2-1"/>
-    <line color="gtk:light[NORMAL]" x1="4" y1="height/2-1" x2="4" y2="height/2+2"/>
+    <line color="ctk:dark[NORMAL]" x1="width-5" y1="height/2-1" x2="width-5" y2="height/2+2"/>
+    <line color="ctk:dark[NORMAL]" x1="4" y1="height/2+2" x2="width-5" y2="height/2+2"/>
+    <line color="ctk:light[NORMAL]" x1="4" y1="height/2-1" x2="width-5" y2="height/2-1"/>
+    <line color="ctk:light[NORMAL]" x1="4" y1="height/2-1" x2="4" y2="height/2+2"/>
   </draw_ops>
   <draw_ops name="draw_button_menu_unfocused">
     <include name="draw_panel_unfocused"/>
@@ -378,10 +378,10 @@
   <!-- MINIMIZE BUTTON -->
   <draw_ops name="draw_button_minimize_icon_unfocused">
     <!-- draw minimize icon -->
-    <line color="gtk:light[NORMAL]" x1="width/2-2" y1="height/2-1" x2="width/2+1" y2="height/2-1"/>
-    <line color="gtk:light[NORMAL]" x1="width/2-2" y1="height/2-1" x2="width/2-2" y2="height/2+2"/>
-    <line color="gtk:dark[NORMAL]" x1="width/2+1" y1="height/2" x2="width/2+1" y2="height/2+2"/>
-    <line color="gtk:dark[NORMAL]" x1="width/2-1" y1="height/2+2" x2="width/2+1" y2="height/2+2"/>
+    <line color="ctk:light[NORMAL]" x1="width/2-2" y1="height/2-1" x2="width/2+1" y2="height/2-1"/>
+    <line color="ctk:light[NORMAL]" x1="width/2-2" y1="height/2-1" x2="width/2-2" y2="height/2+2"/>
+    <line color="ctk:dark[NORMAL]" x1="width/2+1" y1="height/2" x2="width/2+1" y2="height/2+2"/>
+    <line color="ctk:dark[NORMAL]" x1="width/2-1" y1="height/2+2" x2="width/2+1" y2="height/2+2"/>
   </draw_ops>
   <draw_ops name="draw_button_minimize_unfocused">
     <include name="draw_panel_unfocused"/>
@@ -394,10 +394,10 @@
   <!-- MAXIMIZE BUTTON -->
   <draw_ops name="draw_button_maximize_icon_unfocused">
     <!-- draw maximize icon -->
-    <line color="gtk:light[NORMAL]" x1="4" y1="4" x2="width-5" y2="4"/>
-    <line color="gtk:light[NORMAL]" x1="4" y1="4" x2="4" y2="height-5"/>
-    <line color="gtk:dark[NORMAL]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
-    <line color="gtk:dark[NORMAL]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
+    <line color="ctk:light[NORMAL]" x1="4" y1="4" x2="width-5" y2="4"/>
+    <line color="ctk:light[NORMAL]" x1="4" y1="4" x2="4" y2="height-5"/>
+    <line color="ctk:dark[NORMAL]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
+    <line color="ctk:dark[NORMAL]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
   </draw_ops>
   <draw_ops name="draw_button_maximize_unfocused">
     <include name="draw_panel_unfocused"/>
@@ -410,10 +410,10 @@
   <!-- RESTORE BUTTON -->
   <draw_ops name="draw_button_restore_icon_unfocused">
     <!-- draw maximize icon -->
-    <line color="gtk:dark[NORMAL]" x1="4" y1="4" x2="width-5" y2="4"/>
-    <line color="gtk:dark[NORMAL]" x1="4" y1="4" x2="4" y2="height-5"/>
-    <line color="gtk:light[NORMAL]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
-    <line color="gtk:light[NORMAL]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
+    <line color="ctk:dark[NORMAL]" x1="4" y1="4" x2="width-5" y2="4"/>
+    <line color="ctk:dark[NORMAL]" x1="4" y1="4" x2="4" y2="height-5"/>
+    <line color="ctk:light[NORMAL]" x1="width-5" y1="5" x2="width-5" y2="height-5"/>
+    <line color="ctk:light[NORMAL]" x1="5" y1="height-5" x2="width-5" y2="height-5"/>
   </draw_ops>
   <draw_ops name="draw_button_restore_unfocused">
     <include name="draw_panel_unfocused"/>
@@ -426,20 +426,20 @@
   <!-- CLOSE BUTTON -->
   <draw_ops name="draw_button_close_icon_unfocused">
     <!-- draw close icon -->
-    <line color="gtk:light[NORMAL]" x1="4" y1="height-7" x2="width-7" y2="4"/>
-    <line color="gtk:dark[NORMAL]" x1="6" y1="height-5" x2="width-5" y2="6"/>
-    <line color="gtk:light[NORMAL]" x1="4" y1="6" x2="width-7" y2="height-5"/>
-    <line color="gtk:dark[NORMAL]" x1="6" y1="4" x2="width-5" y2="height-7"/>
-    <line color="gtk:dark[NORMAL]" x1="5" y1="height-6" x2="6" y2="height-5"/>
-    <line color="gtk:light[NORMAL]" x1="4" y1="6" x2="6" y2="4"/>
-    <line color="gtk:dark[NORMAL]" x1="width-7" y1="height-5" x2="width-5" y2="height-7"/>
-    <line color="gtk:dark[NORMAL]" x1="width-6" y1="5" x2="width-5" y2="6"/>
-    <line color="gtk:bg[NORMAL]" x1="5" y1="height-5" x2="width-6" y2="6"/>
-    <line color="gtk:bg[NORMAL]" x1="6" y1="height-7" x2="width-7" y2="6"/>
-    <line color="gtk:bg[NORMAL]" x1="4" y1="height-6" x2="width-7" y2="5"/>
-    <line color="gtk:bg[NORMAL]" x1="5" y1="6" x2="width-7" y2="height-6"/>
-    <line color="gtk:bg[NORMAL]" x1="6" y1="6" x2="width-7" y2="height-7"/>
-    <line color="gtk:bg[NORMAL]" x1="7" y1="6" x2="width-6" y2="height-7"/>
+    <line color="ctk:light[NORMAL]" x1="4" y1="height-7" x2="width-7" y2="4"/>
+    <line color="ctk:dark[NORMAL]" x1="6" y1="height-5" x2="width-5" y2="6"/>
+    <line color="ctk:light[NORMAL]" x1="4" y1="6" x2="width-7" y2="height-5"/>
+    <line color="ctk:dark[NORMAL]" x1="6" y1="4" x2="width-5" y2="height-7"/>
+    <line color="ctk:dark[NORMAL]" x1="5" y1="height-6" x2="6" y2="height-5"/>
+    <line color="ctk:light[NORMAL]" x1="4" y1="6" x2="6" y2="4"/>
+    <line color="ctk:dark[NORMAL]" x1="width-7" y1="height-5" x2="width-5" y2="height-7"/>
+    <line color="ctk:dark[NORMAL]" x1="width-6" y1="5" x2="width-5" y2="6"/>
+    <line color="ctk:bg[NORMAL]" x1="5" y1="height-5" x2="width-6" y2="6"/>
+    <line color="ctk:bg[NORMAL]" x1="6" y1="height-7" x2="width-7" y2="6"/>
+    <line color="ctk:bg[NORMAL]" x1="4" y1="height-6" x2="width-7" y2="5"/>
+    <line color="ctk:bg[NORMAL]" x1="5" y1="6" x2="width-7" y2="height-6"/>
+    <line color="ctk:bg[NORMAL]" x1="6" y1="6" x2="width-7" y2="height-7"/>
+    <line color="ctk:bg[NORMAL]" x1="7" y1="6" x2="width-6" y2="height-7"/>
   </draw_ops>
   <draw_ops name="draw_button_close_unfocused">
     <include name="draw_panel_unfocused"/>

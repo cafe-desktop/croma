@@ -25,13 +25,13 @@
 #ifndef META_TABPOPUP_H
 #define META_TABPOPUP_H
 
-/* Don't include gtk.h or gdk.h here */
+/* Don't include ctk.h or gdk.h here */
 #include "common.h"
 #include "boxes.h"
 #include <X11/Xlib.h>
 #include <glib.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 typedef struct _MetaTabEntry MetaTabEntry;
 typedef struct _MetaTabPopup MetaTabPopup;

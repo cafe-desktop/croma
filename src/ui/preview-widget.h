@@ -22,7 +22,7 @@
  */
 
 #include "theme.h"
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <cairo/cairo.h>
 
 #ifndef META_PREVIEW_WIDGET_H

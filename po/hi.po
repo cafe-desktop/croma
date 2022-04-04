@@ -1795,40 +1795,40 @@ msgstr "अनुपात में कम से कम दो रंग ह�
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"जीटीके रंग लक्षण कोष्ठक में स्थिति (स्टेट) होने चाहिएँ जैसे-  gtk:fg[NORMAL]"
+"जीटीके रंग लक्षण कोष्ठक में स्थिति (स्टेट) होने चाहिएँ जैसे-  ctk:fg[NORMAL]"
 " यहाँ NORMAL स्थिति है;  \"%s\" की व्याख्या नहीं कर सका"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "जीटीके रंग लक्षण स्थिति के बाद बंद कोष्ठक में होने चाहिएँ जैसे-  "
-"gtk:fg[NORMAL] यहाँ NORMAL स्थिति है;  \"%s\" की व्याख्या नहीं कर सका"
+"ctk:fg[NORMAL] यहाँ NORMAL स्थिति है;  \"%s\" की व्याख्या नहीं कर सका"
 
 #: src/ui/theme.c:1496
 #, c-format

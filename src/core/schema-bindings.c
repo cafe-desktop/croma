@@ -162,7 +162,7 @@ main (int argc, char **argv)
   target_filename = argv[2];
 
   /* Translators: Please don't translate "Control", "Shift", etc, since these
-   * are hardcoded (in gtk/gtkaccelgroup.c; it's not croma's fault).
+   * are hardcoded (in ctk/ctkaccelgroup.c; it's not croma's fault).
    * "disabled" must also stay as it is.
    */
   about_keybindings = g_markup_escape_text(_( \

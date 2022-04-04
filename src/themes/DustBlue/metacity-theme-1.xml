@@ -63,22 +63,22 @@
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width+9" height="height">
         <!--<color value="#80594D"/>-->
-        <color value="shade/gtk:bg[SELECTED]/0.6"/>
-        <color value="shade/gtk:bg[NORMAL]/0.29" />
-        <color value="shade/gtk:bg[NORMAL]/0.27" />
-        <color value="shade/gtk:bg[NORMAL]/0.25" />
-        <color value="shade/gtk:bg[NORMAL]/0.24" />
+        <color value="shade/ctk:bg[SELECTED]/0.6"/>
+        <color value="shade/ctk:bg[NORMAL]/0.29" />
+        <color value="shade/ctk:bg[NORMAL]/0.27" />
+        <color value="shade/ctk:bg[NORMAL]/0.25" />
+        <color value="shade/ctk:bg[NORMAL]/0.24" />
     </gradient>
     
     <!-- Topmost dark line -->
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="width" y1="0" y2="0"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="width" y1="0" y2="0"/>
     
     <!-- Darkening of the left arch -->
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="4" y1="1" y2="1"/>
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="2" y1="2" y2="2"/>
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="1" y1="3" y2="3"/>
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="1" y1="4" y2="4"/>
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="0" y1="5" y2="20"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="4" y1="1" y2="1"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="2" y1="2" y2="2"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="1" y1="3" y2="3"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="1" y1="4" y2="4"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="0" y1="5" y2="20"/>
     
     <!-- Top highlight -->
     <!-- This uses <tint> (which supports alpha) instead of <line> (which doesn't) -->
@@ -115,33 +115,33 @@
 <draw_ops name="draw_title_inactive">
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width+9" height="height">
-        <color value="shade/gtk:bg[NORMAL]/0.27" />
-        <color value="shade/gtk:bg[NORMAL]/0.24" />
+        <color value="shade/ctk:bg[NORMAL]/0.27" />
+        <color value="shade/ctk:bg[NORMAL]/0.24" />
     </gradient>
         
     <!-- Topmost dark line -->
-    <line color="shade/gtk:bg[NORMAL]/0.25" x1="1" x2="width-2" y1="0" y2="0"/>
+    <line color="shade/ctk:bg[NORMAL]/0.25" x1="1" x2="width-2" y1="0" y2="0"/>
     <!-- Top highlight -->
     <tint color="#ffffff" alpha="0.2" x="5" y="1" width="width - 10" height="1"/> 
     
     <!-- Lower-left highlight -->
-    <line color="shade/gtk:bg[NORMAL]/0.33" x1="3" x2 ="4" y1="2" y2="2" />
-    <line color="shade/gtk:bg[NORMAL]/0.32" x1="2" x2 ="2" y1="3" y2="4" />
+    <line color="shade/ctk:bg[NORMAL]/0.33" x1="3" x2 ="4" y1="2" y2="2" />
+    <line color="shade/ctk:bg[NORMAL]/0.32" x1="2" x2 ="2" y1="3" y2="4" />
     
     <!-- Lower-left higlight fade -->
     <gradient type="vertical" x="1" y="5" width="1" height="title_height - 4">
-        <color value="shade/gtk:bg[NORMAL]/0.30"/>
-        <color value="shade/gtk:bg[NORMAL]/0.25"/>
+        <color value="shade/ctk:bg[NORMAL]/0.30"/>
+        <color value="shade/ctk:bg[NORMAL]/0.25"/>
     </gradient> 
     
     <!-- Upper right highlight -->
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="width-5" x2 ="width-4" y1="2" y2="2" />
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="width-3" x2 ="width-3" y1="3" y2="4" />
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="width-5" x2 ="width-4" y1="2" y2="2" />
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="width-3" x2 ="width-3" y1="3" y2="4" />
     
     <!-- Lower-left higlight fade -->
     <gradient type="vertical" x="width-2" y="5" width="1" height="title_height - 4">
-        <color value="shade/gtk:bg[NORMAL]/0.30"/>
-        <color value="shade/gtk:bg[NORMAL]/0.25"/>
+        <color value="shade/ctk:bg[NORMAL]/0.30"/>
+        <color value="shade/ctk:bg[NORMAL]/0.25"/>
     </gradient> 
 </draw_ops>
 
@@ -149,15 +149,15 @@
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width+9" height="height">
         <!--<color value="#80594D"/>-->
-        <color value="shade/gtk:bg[SELECTED]/0.6"/>
-        <color value="shade/gtk:bg[NORMAL]/0.29" />
-        <color value="shade/gtk:bg[NORMAL]/0.27" />
-        <color value="shade/gtk:bg[NORMAL]/0.25" />
-        <color value="shade/gtk:bg[NORMAL]/0.24" />
+        <color value="shade/ctk:bg[SELECTED]/0.6"/>
+        <color value="shade/ctk:bg[NORMAL]/0.29" />
+        <color value="shade/ctk:bg[NORMAL]/0.27" />
+        <color value="shade/ctk:bg[NORMAL]/0.25" />
+        <color value="shade/ctk:bg[NORMAL]/0.24" />
     </gradient>
     
     <!-- Topmost dark line -->
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="width" y1="0" y2="0"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="width" y1="0" y2="0"/>
     
     <!-- Top highlight -->
     <!-- This uses <tint> (which supports alpha) instead of <line> (which doesn't) -->
@@ -169,12 +169,12 @@
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width+9" height="height">
         <!--<color value="#80594D"/>-->
-        <color value="shade/gtk:bg[NORMAL]/0.27" />
-        <color value="shade/gtk:bg[NORMAL]/0.24" />
+        <color value="shade/ctk:bg[NORMAL]/0.27" />
+        <color value="shade/ctk:bg[NORMAL]/0.24" />
     </gradient>
     
     <!-- Topmost dark line -->
-    <line color="shade/gtk:bg[NORMAL]/0.30" x1="0" x2="width" y1="0" y2="0"/>
+    <line color="shade/ctk:bg[NORMAL]/0.30" x1="0" x2="width" y1="0" y2="0"/>
     
     <!-- Top highlight -->
     <!-- This uses <tint> (which supports alpha) instead of <line> (which doesn't) -->
@@ -187,21 +187,21 @@
 -->
 
 <draw_ops name="draw_frame">
-	<rectangle color="shade/gtk:bg[NORMAL]/0.25" x="0" y="0" width="width" height="height" filled="true"/>
+	<rectangle color="shade/ctk:bg[NORMAL]/0.25" x="0" y="0" width="width" height="height" filled="true"/>
 	<!-- RSC: Subtle gradient on left/right edges to match the menubar -->
     <gradient type="vertical" x="0" y="0" width="width" height="100">
-        <color value="shade/gtk:bg[NORMAL]/0.25"/>
-        <color value="shade/gtk:bg[NORMAL]/0.15"/>
-        <color value="shade/gtk:bg[NORMAL]/0.25"/>
+        <color value="shade/ctk:bg[NORMAL]/0.25"/>
+        <color value="shade/ctk:bg[NORMAL]/0.15"/>
+        <color value="shade/ctk:bg[NORMAL]/0.25"/>
     </gradient> 
 </draw_ops>
 
 <!--Borderless only: make bottom border less apparent. We can do this now since our statusbars are light.-->
 <draw_ops name="bottom_edge">
-    <rectangle color="shade/gtk:bg[NORMAL]/0.25" x="0" y="0" width="width" height="height" filled="true"/>
+    <rectangle color="shade/ctk:bg[NORMAL]/0.25" x="0" y="0" width="width" height="height" filled="true"/>
     <gradient type="vertical" x="1" y="height-6" width="width-2" height="5">
-        <color value="shade/gtk:bg[NORMAL]/0.85"/>
-        <color value="shade/gtk:bg[NORMAL]/0.5"/>
+        <color value="shade/ctk:bg[NORMAL]/0.85"/>
+        <color value="shade/ctk:bg[NORMAL]/0.5"/>
     </gradient>
 </draw_ops>
 

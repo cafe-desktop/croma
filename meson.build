@@ -142,39 +142,39 @@ pkgdatadir = join_paths(datadir, package_name)
 
 dbusdir = join_paths(datadir, 'dbus-1')
 glibdir = join_paths(datadir, 'glib-2.0')
-gtkdocdir = join_paths(datadir, 'gtk-doc')
+ctkdocdir = join_paths(datadir, 'ctk-doc')
 localdir = join_paths(datadir, 'local')
 vapidir = join_paths(datadir, 'vala', 'vapi')
 
 # Dependencies
 glib_req = '>= 2.58.0'
 gio_req = '>= 2.25.10'
-gtk_req = '>= 3.22.0'
+ctk_req = '>= 3.22.0'
 pango_req = '>= 1.2.0'
-libcanberra_gtk_req = '>= 3.22.0'
+libcanberra_ctk_req = '>= 3.22.0'
 startup_notification_req = '>= 0.7'
 
 glib_dep = dependency('glib-2.0', version: glib_req)
-gtk_dep = dependency('gtk+-3.0', version: gtk_req)
+ctk_dep = dependency('ctk+-3.0', version: ctk_req)
 gio_dep = dependency('gio-2.0', version: gio_req)
 pango_dep = dependency('pango', version: pango_req)
-libcanberra_gtk_dep = dependency('libcanberra-gtk3')
+libcanberra_ctk_dep = dependency('libcanberra-ctk3')
 x11_dep = dependency('x11')
 
 croma_deps = [
   glib_dep,
-  gtk_dep,
+  ctk_dep,
   gio_dep,
   pango_dep,
-  libcanberra_gtk_dep,
+  libcanberra_ctk_dep,
 ]
 
 croma_message_deps = [
-  gtk_dep,
+  ctk_dep,
   x11_dep,
 ]
 croma_window_demo_deps = [
-  gtk_dep,
+  ctk_dep,
   x11_dep,
 ]
 

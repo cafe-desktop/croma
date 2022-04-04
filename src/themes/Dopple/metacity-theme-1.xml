@@ -50,88 +50,88 @@
  
     <!-- Dark lines -->
     <!-- Top line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="2"       y1="0" 
           x2="width-3" y2="0" />
 
     <!-- Left line -->
     <gradient type="vertical" x="0" y="2" width="1" height="(height-4)">
-        <color value="shade/gtk:bg[NORMAL]/0.8" />
-        <color value="shade/gtk:bg[NORMAL]/0.675" />
+        <color value="shade/ctk:bg[NORMAL]/0.8" />
+        <color value="shade/ctk:bg[NORMAL]/0.675" />
     </gradient>
 
     <!-- Right line -->
     <gradient type="vertical" x="width - 1" y="2" width="1" height="(height-4)">
-        <color value="shade/gtk:bg[NORMAL]/0.8" />
-        <color value="shade/gtk:bg[NORMAL]/0.675" />
+        <color value="shade/ctk:bg[NORMAL]/0.8" />
+        <color value="shade/ctk:bg[NORMAL]/0.675" />
     </gradient>
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[NORMAL]/0.675" 
+    <line color="shade/ctk:bg[NORMAL]/0.675" 
           x1="2"       y1="height-1" 
           x2="width-3" y2="height-1" />
 
     <!-- TL Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="1" y1="1" 
           x2="1" y2="1" />
 
     <!-- TR Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="width-2" y1="1" 
           x2="width-2" y2="1" />
 
     <!-- LL Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.675" 
+    <line color="shade/ctk:bg[NORMAL]/0.675" 
           x1="1" y1="height-2" 
           x2="1" y2="height-2" />
 
     <!-- LR Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.675" 
+    <line color="shade/ctk:bg[NORMAL]/0.675" 
           x1="width-2" y1="height-2" 
           x2="width-2" y2="height-2" />
 
     <!-- Lighter Inside -->
     
     <!-- Top line -->
-    <line color="shade/gtk:bg[NORMAL]/1.2" 
+    <line color="shade/ctk:bg[NORMAL]/1.2" 
           x1="2"       y1="1" 
           x2="width-3" y2="1" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[NORMAL]/0.90" 
+    <line color="shade/ctk:bg[NORMAL]/0.90" 
           x1="2"       y1="height-2" 
           x2="width-3" y2="height-2" />
 
     <!-- Left line -->
-<!--    <line color="shade/gtk:bg[NORMAL]/" 
+<!--    <line color="shade/ctk:bg[NORMAL]/" 
           x1="1" y1="2" 
           x2="1" y2="height-3" /> -->
     <gradient type="vertical" x="1" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[NORMAL]/1.2" />
-        <color value="shade/gtk:bg[NORMAL]/0.90" />
+        <color value="shade/ctk:bg[NORMAL]/1.2" />
+        <color value="shade/ctk:bg[NORMAL]/0.90" />
     </gradient>
 
     <!-- Right line -->
-<!--    <line color="blend/gtk:bg[NORMAL]/#ffffff/0.18" 
+<!--    <line color="blend/ctk:bg[NORMAL]/#ffffff/0.18" 
           x1="width-2" y1="2" 
           x2="width-2" y2="height-3" /> -->
     <gradient type="vertical" x="width-2" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[NORMAL]/1.2" />
-        <color value="shade/gtk:bg[NORMAL]/0.90" />
+        <color value="shade/ctk:bg[NORMAL]/1.2" />
+        <color value="shade/ctk:bg[NORMAL]/0.90" />
     </gradient>
 
     <!-- Corners -->
-    <line color="shade/gtk:bg[NORMAL]/1.1" 
+    <line color="shade/ctk:bg[NORMAL]/1.1" 
           x1="2" y1="2" 
           x2="2" y2="2" />
-    <line color="shade/gtk:bg[NORMAL]/1.1" 
+    <line color="shade/ctk:bg[NORMAL]/1.1" 
           x1="width-3" y1="2" 
           x2="width-3" y2="2" />
-    <line color="shade/gtk:bg[NORMAL]/0.9" 
+    <line color="shade/ctk:bg[NORMAL]/0.9" 
           x1="2" y1="height-3" 
           x2="2" y2="height-3" />
-    <line color="shade/gtk:bg[NORMAL]/0.9" 
+    <line color="shade/ctk:bg[NORMAL]/0.9" 
           x1="width-3" y1="height-3" 
           x2="width-3" y2="height-3" />
 </draw_ops>
@@ -139,92 +139,92 @@
 <draw_ops name="button_bg_prelight_unfocused">
 
     <gradient type="vertical" x="1" y="1" width="width-2" height="height-2">
-        <color value="shade/gtk:bg[NORMAL]/1.15" />
-        <color value="shade/gtk:bg[NORMAL]/0.95" />
+        <color value="shade/ctk:bg[NORMAL]/1.15" />
+        <color value="shade/ctk:bg[NORMAL]/0.95" />
     </gradient>
 
     <!-- Dark lines -->
     <!-- Top line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="2"       y1="0" 
           x2="width-3" y2="0" />
 
     <!-- Left line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="0" y1="2" 
           x2="0" y2="height-3" />
 
     <!-- Right line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="width-1" y1="2" 
           x2="width-1" y2="height-3" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="2"       y1="height-1" 
           x2="width-3" y2="height-1" />
 
     <!-- TL Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="1" y1="1" 
           x2="1" y2="1" />
 
     <!-- TR Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="width-2" y1="1" 
           x2="width-2" y2="1" />
 
     <!-- LL Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="1" y1="height-2" 
           x2="1" y2="height-2" />
 
     <!-- LR Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="width-2" y1="height-2" 
           x2="width-2" y2="height-2" />
 
     <!-- Lighter Inside -->
     
     <!-- Top line -->
-    <line color="shade/gtk:bg[NORMAL]/1.25" 
+    <line color="shade/ctk:bg[NORMAL]/1.25" 
           x1="2"       y1="1" 
           x2="width-3" y2="1" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[NORMAL]/1.05" 
+    <line color="shade/ctk:bg[NORMAL]/1.05" 
           x1="2"       y1="height-2" 
           x2="width-3" y2="height-2" />
 
     <!-- Left line -->
-<!--    <line color="shade/gtk:bg[NORMAL]/" 
+<!--    <line color="shade/ctk:bg[NORMAL]/" 
           x1="1" y1="2" 
           x2="1" y2="height-3" /> -->
     <gradient type="vertical" x="1" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[NORMAL]/1.25" />
-        <color value="shade/gtk:bg[NORMAL]/1.05" />
+        <color value="shade/ctk:bg[NORMAL]/1.25" />
+        <color value="shade/ctk:bg[NORMAL]/1.05" />
     </gradient>
 
     <!-- Right line -->
-<!--    <line color="blend/gtk:bg[NORMAL]/#ffffff/0.18" 
+<!--    <line color="blend/ctk:bg[NORMAL]/#ffffff/0.18" 
           x1="width-2" y1="2" 
           x2="width-2" y2="height-3" /> -->
     <gradient type="vertical" x="width-2" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[NORMAL]/1.25" />
-        <color value="shade/gtk:bg[NORMAL]/1.05" />
+        <color value="shade/ctk:bg[NORMAL]/1.25" />
+        <color value="shade/ctk:bg[NORMAL]/1.05" />
     </gradient>
 
     <!-- Corners -->
-    <line color="shade/gtk:bg[NORMAL]/1.2" 
+    <line color="shade/ctk:bg[NORMAL]/1.2" 
           x1="2" y1="2" 
           x2="2" y2="2" />
-    <line color="shade/gtk:bg[NORMAL]/1.2" 
+    <line color="shade/ctk:bg[NORMAL]/1.2" 
           x1="width-3" y1="2" 
           x2="width-3" y2="2" />
-    <line color="shade/gtk:bg[NORMAL]/1.0" 
+    <line color="shade/ctk:bg[NORMAL]/1.0" 
           x1="2" y1="height-3" 
           x2="2" y2="height-3" />
-    <line color="shade/gtk:bg[NORMAL]/1.0" 
+    <line color="shade/ctk:bg[NORMAL]/1.0" 
           x1="width-3" y1="height-3" 
           x2="width-3" y2="height-3" />
 
@@ -233,86 +233,86 @@
 <draw_ops name="button_pressed_bg_unfocused">
 
     <gradient type="vertical" x="1" y="1" width="width-2" height="height-2">
-        <color value="shade/gtk:bg[NORMAL]/0.95" />
-        <color value="shade/gtk:bg[NORMAL]/0.95" />
+        <color value="shade/ctk:bg[NORMAL]/0.95" />
+        <color value="shade/ctk:bg[NORMAL]/0.95" />
     </gradient>
 
     <!-- Dark lines -->
     <!-- Top line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="2"       y1="0" 
           x2="width-3" y2="0" />
 
     <!-- Left line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="0" y1="2" 
           x2="0" y2="height-3" />
 
     <!-- Right line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="width-1" y1="2" 
           x2="width-1" y2="height-3" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="2"       y1="height-1" 
           x2="width-3" y2="height-1" />
 
     <!-- TL Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="1" y1="1" 
           x2="1" y2="1" />
 
     <!-- TR Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="width-2" y1="1" 
           x2="width-2" y2="1" />
 
     <!-- LL Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="1" y1="height-2" 
           x2="1" y2="height-2" />
 
     <!-- LR Corner -->
-    <line color="shade/gtk:bg[NORMAL]/0.8" 
+    <line color="shade/ctk:bg[NORMAL]/0.8" 
           x1="width-2" y1="height-2" 
           x2="width-2" y2="height-2" />
 
     <!-- Lighter Inside -->
     
     <!-- Top line -->
-<!--    <line color="shade/gtk:bg[NORMAL]/1.25" 
+<!--    <line color="shade/ctk:bg[NORMAL]/1.25" 
           x1="2"       y1="1" 
           x2="width-3" y2="1" /> -->
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[NORMAL]/1.05" 
+    <line color="shade/ctk:bg[NORMAL]/1.05" 
           x1="2"       y1="height-2" 
           x2="width-3" y2="height-2" />
 
     <!-- Left line -->
-<!--    <line color="shade/gtk:bg[NORMAL]/" 
+<!--    <line color="shade/ctk:bg[NORMAL]/" 
           x1="1" y1="2" 
           x2="1" y2="height-3" /> -->
 <!--    <gradient type="vertical" x="1" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[NORMAL]/1.25" />
-        <color value="shade/gtk:bg[NORMAL]/1.05" />
+        <color value="shade/ctk:bg[NORMAL]/1.25" />
+        <color value="shade/ctk:bg[NORMAL]/1.05" />
     </gradient> -->
 
     <!-- Right line -->
-<!--    <line color="blend/gtk:bg[NORMAL]/#ffffff/0.18" 
+<!--    <line color="blend/ctk:bg[NORMAL]/#ffffff/0.18" 
           x1="width-2" y1="2" 
           x2="width-2" y2="height-3" /> -->
     <gradient type="vertical" x="width-2" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[NORMAL]/1.00" />
-        <color value="shade/gtk:bg[NORMAL]/1.05" />
+        <color value="shade/ctk:bg[NORMAL]/1.00" />
+        <color value="shade/ctk:bg[NORMAL]/1.05" />
     </gradient>
 
     <!-- Corners -->
-    <line color="shade/gtk:bg[NORMAL]/1.0" 
+    <line color="shade/ctk:bg[NORMAL]/1.0" 
           x1="2" y1="height-3" 
           x2="2" y2="height-3" />
-    <line color="shade/gtk:bg[NORMAL]/1.0" 
+    <line color="shade/ctk:bg[NORMAL]/1.0" 
           x1="width-3" y1="height-3" 
           x2="width-3" y2="height-3" />
 </draw_ops>
@@ -322,95 +322,95 @@
  
     <!-- Dark lines -->
     <!-- Top line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="2"       y1="0" 
           x2="width-3" y2="0" />
 
     <!-- Left line -->
-<!--    <line color="shade/gtk:bg[SELECTED]/0.7" 
+<!--    <line color="shade/ctk:bg[SELECTED]/0.7" 
           x1="0" y1="2" 
           x2="0" y2="height-3" /> -->
     <gradient type="vertical" x="0" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/0.8" />
-        <color value="shade/gtk:bg[SELECTED]/0.7" />
+        <color value="shade/ctk:bg[SELECTED]/0.8" />
+        <color value="shade/ctk:bg[SELECTED]/0.7" />
     </gradient>
 
     <!-- Right line -->
-<!--    <line color="shade/gtk:bg[SELECTED]/0.7" 
+<!--    <line color="shade/ctk:bg[SELECTED]/0.7" 
           x1="width-1" y1="2" 
           x2="width-1" y2="height-3" /> -->
 
     <gradient type="vertical" x="width-1" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/0.8" />
-        <color value="shade/gtk:bg[SELECTED]/0.7" />
+        <color value="shade/ctk:bg[SELECTED]/0.8" />
+        <color value="shade/ctk:bg[SELECTED]/0.7" />
     </gradient>
     
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[SELECTED]/0.7" 
+    <line color="shade/ctk:bg[SELECTED]/0.7" 
           x1="2"       y1="height-1" 
           x2="width-3" y2="height-1" />
 
     <!-- TL Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="1" y1="1" 
           x2="1" y2="1" />
 
     <!-- TR Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="width-2" y1="1" 
           x2="width-2" y2="1" />
 
     <!-- LL Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.7" 
+    <line color="shade/ctk:bg[SELECTED]/0.7" 
           x1="1" y1="height-2" 
           x2="1" y2="height-2" />
 
     <!-- LR Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.7" 
+    <line color="shade/ctk:bg[SELECTED]/0.7" 
           x1="width-2" y1="height-2" 
           x2="width-2" y2="height-2" />
 
     <!-- Lighter Inside -->
     
     <!-- Top line -->
-    <line color="shade/gtk:bg[SELECTED]/1.22" 
+    <line color="shade/ctk:bg[SELECTED]/1.22" 
           x1="2"       y1="1" 
           x2="width-3" y2="1" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[SELECTED]/1.07" 
+    <line color="shade/ctk:bg[SELECTED]/1.07" 
           x1="2"       y1="height-2" 
           x2="width-3" y2="height-2" />
 
     <!-- Left line -->
-<!--    <line color="shade/gtk:bg[SELECTED]/" 
+<!--    <line color="shade/ctk:bg[SELECTED]/" 
           x1="1" y1="2" 
           x2="1" y2="height-3" /> -->
     <gradient type="vertical" x="1" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/1.22" />
-        <color value="shade/gtk:bg[SELECTED]/1.07" />
+        <color value="shade/ctk:bg[SELECTED]/1.22" />
+        <color value="shade/ctk:bg[SELECTED]/1.07" />
     </gradient>
 
     <!-- Right line -->
-<!--    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.18" 
+<!--    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.18" 
           x1="width-2" y1="2" 
           x2="width-2" y2="height-3" /> -->
     <gradient type="vertical" x="width-2" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/1.22" />
-        <color value="shade/gtk:bg[SELECTED]/1.07" />
+        <color value="shade/ctk:bg[SELECTED]/1.22" />
+        <color value="shade/ctk:bg[SELECTED]/1.07" />
     </gradient>
 
     <!-- Corners -->
-    <line color="shade/gtk:bg[SELECTED]/1.1" 
+    <line color="shade/ctk:bg[SELECTED]/1.1" 
           x1="2" y1="2" 
           x2="2" y2="2" />
-    <line color="shade/gtk:bg[SELECTED]/1.1" 
+    <line color="shade/ctk:bg[SELECTED]/1.1" 
           x1="width-3" y1="2" 
           x2="width-3" y2="2" />
-    <line color="shade/gtk:bg[SELECTED]/0.975" 
+    <line color="shade/ctk:bg[SELECTED]/0.975" 
           x1="2" y1="height-3" 
           x2="2" y2="height-3" />
-    <line color="shade/gtk:bg[SELECTED]/0.975" 
+    <line color="shade/ctk:bg[SELECTED]/0.975" 
           x1="width-3" y1="height-3" 
           x2="width-3" y2="height-3" />
 </draw_ops>
@@ -418,92 +418,92 @@
 <draw_ops name="button_bg_prelight">
 
     <gradient type="vertical" x="1" y="1" width="width-2" height="height-2">
-        <color value="shade/gtk:bg[SELECTED]/1.15" />
-        <color value="shade/gtk:bg[SELECTED]/0.95" />
+        <color value="shade/ctk:bg[SELECTED]/1.15" />
+        <color value="shade/ctk:bg[SELECTED]/0.95" />
     </gradient>
 
     <!-- Dark lines -->
     <!-- Top line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="2"       y1="0" 
           x2="width-3" y2="0" />
 
     <!-- Left line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="0" y1="2" 
           x2="0" y2="height-3" />
 
     <!-- Right line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="width-1" y1="2" 
           x2="width-1" y2="height-3" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="2"       y1="height-1" 
           x2="width-3" y2="height-1" />
 
     <!-- TL Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="1" y1="1" 
           x2="1" y2="1" />
 
     <!-- TR Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="width-2" y1="1" 
           x2="width-2" y2="1" />
 
     <!-- LL Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="1" y1="height-2" 
           x2="1" y2="height-2" />
 
     <!-- LR Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="width-2" y1="height-2" 
           x2="width-2" y2="height-2" />
 
     <!-- Lighter Inside -->
     
     <!-- Top line -->
-    <line color="shade/gtk:bg[SELECTED]/1.25" 
+    <line color="shade/ctk:bg[SELECTED]/1.25" 
           x1="2"       y1="1" 
           x2="width-3" y2="1" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[SELECTED]/1.05" 
+    <line color="shade/ctk:bg[SELECTED]/1.05" 
           x1="2"       y1="height-2" 
           x2="width-3" y2="height-2" />
 
     <!-- Left line -->
-<!--    <line color="shade/gtk:bg[SELECTED]/" 
+<!--    <line color="shade/ctk:bg[SELECTED]/" 
           x1="1" y1="2" 
           x2="1" y2="height-3" /> -->
     <gradient type="vertical" x="1" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/1.25" />
-        <color value="shade/gtk:bg[SELECTED]/1.05" />
+        <color value="shade/ctk:bg[SELECTED]/1.25" />
+        <color value="shade/ctk:bg[SELECTED]/1.05" />
     </gradient>
 
     <!-- Right line -->
-<!--    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.18" 
+<!--    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.18" 
           x1="width-2" y1="2" 
           x2="width-2" y2="height-3" /> -->
     <gradient type="vertical" x="width-2" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/1.25" />
-        <color value="shade/gtk:bg[SELECTED]/1.05" />
+        <color value="shade/ctk:bg[SELECTED]/1.25" />
+        <color value="shade/ctk:bg[SELECTED]/1.05" />
     </gradient>
 
     <!-- Corners -->
-    <line color="shade/gtk:bg[SELECTED]/1.2" 
+    <line color="shade/ctk:bg[SELECTED]/1.2" 
           x1="2" y1="2" 
           x2="2" y2="2" />
-    <line color="shade/gtk:bg[SELECTED]/1.2" 
+    <line color="shade/ctk:bg[SELECTED]/1.2" 
           x1="width-3" y1="2" 
           x2="width-3" y2="2" />
-    <line color="shade/gtk:bg[SELECTED]/1.0" 
+    <line color="shade/ctk:bg[SELECTED]/1.0" 
           x1="2" y1="height-3" 
           x2="2" y2="height-3" />
-    <line color="shade/gtk:bg[SELECTED]/1.0" 
+    <line color="shade/ctk:bg[SELECTED]/1.0" 
           x1="width-3" y1="height-3" 
           x2="width-3" y2="height-3" />
 
@@ -512,86 +512,86 @@
 <draw_ops name="button_pressed_bg">
 
     <gradient type="vertical" x="1" y="1" width="width-2" height="height-2">
-        <color value="shade/gtk:bg[SELECTED]/0.95" />
-        <color value="shade/gtk:bg[SELECTED]/0.95" />
+        <color value="shade/ctk:bg[SELECTED]/0.95" />
+        <color value="shade/ctk:bg[SELECTED]/0.95" />
     </gradient>
 
     <!-- Dark lines -->
     <!-- Top line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="2"       y1="0" 
           x2="width-3" y2="0" />
 
     <!-- Left line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="0" y1="2" 
           x2="0" y2="height-3" />
 
     <!-- Right line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="width-1" y1="2" 
           x2="width-1" y2="height-3" />
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="2"       y1="height-1" 
           x2="width-3" y2="height-1" />
 
     <!-- TL Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="1" y1="1" 
           x2="1" y2="1" />
 
     <!-- TR Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="width-2" y1="1" 
           x2="width-2" y2="1" />
 
     <!-- LL Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="1" y1="height-2" 
           x2="1" y2="height-2" />
 
     <!-- LR Corner -->
-    <line color="shade/gtk:bg[SELECTED]/0.8" 
+    <line color="shade/ctk:bg[SELECTED]/0.8" 
           x1="width-2" y1="height-2" 
           x2="width-2" y2="height-2" />
 
     <!-- Lighter Inside -->
     
     <!-- Top line -->
-<!--    <line color="shade/gtk:bg[SELECTED]/1.25" 
+<!--    <line color="shade/ctk:bg[SELECTED]/1.25" 
           x1="2"       y1="1" 
           x2="width-3" y2="1" /> -->
 
     <!-- Bottom line -->
-    <line color="shade/gtk:bg[SELECTED]/1.05" 
+    <line color="shade/ctk:bg[SELECTED]/1.05" 
           x1="2"       y1="height-2" 
           x2="width-3" y2="height-2" />
 
     <!-- Left line -->
-<!--    <line color="shade/gtk:bg[SELECTED]/" 
+<!--    <line color="shade/ctk:bg[SELECTED]/" 
           x1="1" y1="2" 
           x2="1" y2="height-3" /> -->
 <!--    <gradient type="vertical" x="1" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/1.25" />
-        <color value="shade/gtk:bg[SELECTED]/1.05" />
+        <color value="shade/ctk:bg[SELECTED]/1.25" />
+        <color value="shade/ctk:bg[SELECTED]/1.05" />
     </gradient> -->
 
     <!-- Right line -->
-<!--    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.18" 
+<!--    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.18" 
           x1="width-2" y1="2" 
           x2="width-2" y2="height-3" /> -->
     <gradient type="vertical" x="width-2" y="2" width="1" height="(height-3)-1">
-        <color value="shade/gtk:bg[SELECTED]/1.00" />
-        <color value="shade/gtk:bg[SELECTED]/1.05" />
+        <color value="shade/ctk:bg[SELECTED]/1.00" />
+        <color value="shade/ctk:bg[SELECTED]/1.05" />
     </gradient>
 
     <!-- Corners -->
-    <line color="shade/gtk:bg[SELECTED]/1.0" 
+    <line color="shade/ctk:bg[SELECTED]/1.0" 
           x1="2" y1="height-3" 
           x2="2" y2="height-3" />
-    <line color="shade/gtk:bg[SELECTED]/1.0" 
+    <line color="shade/ctk:bg[SELECTED]/1.0" 
           x1="width-3" y1="height-3" 
           x2="width-3" y2="height-3" />
 </draw_ops>
@@ -609,48 +609,48 @@
 </draw_ops>
 
 <draw_ops name="close_glyph">
-    <line color="blend/white/gtk:bg[SELECTED]/0.5" x1="3" y1="2" x2="width-3" y2="height-4"/>
-    <line color="blend/white/gtk:bg[SELECTED]/0.5" x1="2" y1="3" x2="width-4" y2="height-3"/>
-    <line color="blend/white/gtk:bg[SELECTED]/0.5" x1="2" y1="height-4" x2="width-4" y2="2"/>
-    <line color="blend/white/gtk:bg[SELECTED]/0.5" x1="3" y1="height-3" x2="width-3" y2="3"/>
+    <line color="blend/white/ctk:bg[SELECTED]/0.5" x1="3" y1="2" x2="width-3" y2="height-4"/>
+    <line color="blend/white/ctk:bg[SELECTED]/0.5" x1="2" y1="3" x2="width-4" y2="height-3"/>
+    <line color="blend/white/ctk:bg[SELECTED]/0.5" x1="2" y1="height-4" x2="width-4" y2="2"/>
+    <line color="blend/white/ctk:bg[SELECTED]/0.5" x1="3" y1="height-3" x2="width-3" y2="3"/>
     <line color="white" x1="2" y1="2" x2="width-3" y2="height-3"/>
     <line color="white" x1="2" y1="height-3" x2="width-3" y2="2"/>
 </draw_ops>
 
 <draw_ops name="close_glyph_shadow">
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="3" y1="2" x2="width-3" y2="height-4"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="2" y1="3" x2="width-4" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="2" y1="height-4" x2="width-4" y2="2"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="3" y1="height-3" x2="width-3" y2="3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="2" y1="2" x2="width-3" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="2" y1="height-3" x2="width-3" y2="2"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="3" y1="2" x2="width-3" y2="height-4"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="2" y1="3" x2="width-4" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="2" y1="height-4" x2="width-4" y2="2"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="3" y1="height-3" x2="width-3" y2="3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="2" y1="2" x2="width-3" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="2" y1="height-3" x2="width-3" y2="2"/>
 </draw_ops>
 
 <draw_ops name="close_glyph_shadow_dark">
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="3" y1="2" x2="width-3" y2="height-4"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="2" y1="3" x2="width-4" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="2" y1="height-4" x2="width-4" y2="2"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="3" y1="height-3" x2="width-3" y2="3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="2" y1="2" x2="width-3" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="2" y1="height-3" x2="width-3" y2="2"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="3" y1="2" x2="width-3" y2="height-4"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="2" y1="3" x2="width-4" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="2" y1="height-4" x2="width-4" y2="2"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="3" y1="height-3" x2="width-3" y2="3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="2" y1="2" x2="width-3" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="2" y1="height-3" x2="width-3" y2="2"/>
 </draw_ops>
 
 <draw_ops name="close_glyph_unfocused">
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="3" y1="2" x2="width-3" y2="height-4"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="2" y1="3" x2="width-4" y2="height-3"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="2" y1="height-4" x2="width-4" y2="2"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="3" y1="height-3" x2="width-3" y2="3"/>
-    <line color="gtk:fg[NORMAL]" x1="2" y1="2" x2="width-3" y2="height-3"/>
-    <line color="gtk:fg[NORMAL]" x1="2" y1="height-3" x2="width-3" y2="2"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="3" y1="2" x2="width-3" y2="height-4"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="2" y1="3" x2="width-4" y2="height-3"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="2" y1="height-4" x2="width-4" y2="2"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="3" y1="height-3" x2="width-3" y2="3"/>
+    <line color="ctk:fg[NORMAL]" x1="2" y1="2" x2="width-3" y2="height-3"/>
+    <line color="ctk:fg[NORMAL]" x1="2" y1="height-3" x2="width-3" y2="2"/>
 </draw_ops>
 
 <draw_ops name="close_glyph_unfocused_lighter">
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.75" x1="3" y1="2" x2="width-3" y2="height-4"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.75" x1="2" y1="3" x2="width-4" y2="height-3"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.75" x1="2" y1="height-4" x2="width-4" y2="2"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.75" x1="3" y1="height-3" x2="width-3" y2="3"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="2" y1="2" x2="width-3" y2="height-3"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="2" y1="height-3" x2="width-3" y2="2"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.75" x1="3" y1="2" x2="width-3" y2="height-4"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.75" x1="2" y1="3" x2="width-4" y2="height-3"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.75" x1="2" y1="height-4" x2="width-4" y2="2"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.75" x1="3" y1="height-3" x2="width-3" y2="3"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="2" y1="2" x2="width-3" y2="height-3"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="2" y1="height-3" x2="width-3" y2="2"/>
 </draw_ops>
 
 <draw_ops name="maximize_glyph">
@@ -660,30 +660,30 @@
     <line color="white" x1="width-3" y1="2" x2="width-3" y2="height-3"/>
 </draw_ops>
 <draw_ops name="maximize_glyph_shadow">
-    <rectangle color="shade/gtk:bg[SELECTED]/0.85" x="2" y="2" width="width-4" height="height/4" filled="true"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="2" y1="2" x2="2" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.85" x1="width-3" y1="2" x2="width-3" y2="height-3"/>
+    <rectangle color="shade/ctk:bg[SELECTED]/0.85" x="2" y="2" width="width-4" height="height/4" filled="true"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="2" y1="2" x2="2" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.85" x1="width-3" y1="2" x2="width-3" y2="height-3"/>
 </draw_ops>
 
 <draw_ops name="maximize_glyph_shadow_dark">
-    <rectangle color="shade/gtk:bg[SELECTED]/0.8" x="2" y="2" width="width-4" height="height/4" filled="true"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="2" y1="2" x2="2" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
-    <line color="shade/gtk:bg[SELECTED]/0.8" x1="width-3" y1="2" x2="width-3" y2="height-3"/>
+    <rectangle color="shade/ctk:bg[SELECTED]/0.8" x="2" y="2" width="width-4" height="height/4" filled="true"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="2" y1="2" x2="2" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
+    <line color="shade/ctk:bg[SELECTED]/0.8" x1="width-3" y1="2" x2="width-3" y2="height-3"/>
 </draw_ops>
 
 <draw_ops name="maximize_glyph_unfocused">
-  <rectangle color="gtk:fg[NORMAL]" x="2" y="2" width="width-4" height="height/4" filled="true"/>
-    <line color="gtk:fg[NORMAL]" x1="2" y1="2" x2="2" y2="height-3"/>
-    <line color="gtk:fg[NORMAL]" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
-    <line color="gtk:fg[NORMAL]" x1="width-3" y1="2" x2="width-3" y2="height-3"/> 
+  <rectangle color="ctk:fg[NORMAL]" x="2" y="2" width="width-4" height="height/4" filled="true"/>
+    <line color="ctk:fg[NORMAL]" x1="2" y1="2" x2="2" y2="height-3"/>
+    <line color="ctk:fg[NORMAL]" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
+    <line color="ctk:fg[NORMAL]" x1="width-3" y1="2" x2="width-3" y2="height-3"/> 
 </draw_ops>
 <draw_ops name="maximize_glyph_unfocused_lighter">
-    <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x="2" y="2" width="width-4" height="height/4" filled="true"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="2" y1="2" x2="2" y2="height-3"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
-    <line color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x1="width-3" y1="2" x2="width-3" y2="height-3"/> 
+    <rectangle color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x="2" y="2" width="width-4" height="height/4" filled="true"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="2" y1="2" x2="2" y2="height-3"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="2" y1="height-3" x2="width-3" y2="height-3"/>
+    <line color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x1="width-3" y1="2" x2="width-3" y2="height-3"/> 
 
 
 </draw_ops>
@@ -693,19 +693,19 @@
 </draw_ops>
 
 <draw_ops name="minimize_glyph_shadow">
-    <rectangle color="shade/gtk:bg[SELECTED]/0.85" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
+    <rectangle color="shade/ctk:bg[SELECTED]/0.85" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
 </draw_ops>
 
 <draw_ops name="minimize_glyph_shadow_dark">
-    <rectangle color="shade/gtk:bg[SELECTED]/0.8" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
+    <rectangle color="shade/ctk:bg[SELECTED]/0.8" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
 </draw_ops>
 
 <draw_ops name="minimize_glyph_unfocused">
-    <rectangle color="gtk:fg[NORMAL]" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
+    <rectangle color="ctk:fg[NORMAL]" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
 </draw_ops>
 
 <draw_ops name="minimize_glyph_unfocused_lighter">
-    <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.5" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
+    <rectangle color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.5" x="2" y="height * 2 / 3" width="width-4" height="height - (height * 2 / 3) - 2" filled="true" />
 </draw_ops>
 
 <draw_ops name="menu_button">
@@ -776,11 +776,11 @@
 </draw_ops>
 
 <draw_ops name="mini_window_icon">
-  <rectangle color="gtk:bg[NORMAL]" filled="true"
+  <rectangle color="ctk:bg[NORMAL]" filled="true"
              x="0" y="0" width="width-1" height="height-1"/>
-  <rectangle color="gtk:fg[NORMAL]" filled="false"
+  <rectangle color="ctk:fg[NORMAL]" filled="false"
              x="0" y="0" width="width-1" height="height-1"/>
-  <line color="gtk:fg[NORMAL]" width="2"
+  <line color="ctk:fg[NORMAL]" width="2"
         x1="0" y1="1" x2="width" y2="1"/>
 </draw_ops>
 
@@ -839,145 +839,145 @@
 </draw_ops>
 
 <draw_ops name="outer_bevel">
-  <rectangle color="shade/gtk:bg[NORMAL]/0.5"
+  <rectangle color="shade/ctk:bg[NORMAL]/0.5"
       x="0" y="0" width="width-1" height="height-1"/>
 </draw_ops>
 
 <draw_ops name="outer_bevel_unfocused">  
-  <rectangle color="shade/gtk:bg[NORMAL]/0.7"
+  <rectangle color="shade/ctk:bg[NORMAL]/0.7"
       x="0" y="0" width="width-1" height="height-1"/>
 </draw_ops>
 
 <draw_ops name="title_background">
     
-    <rectangle color="shade/gtk:bg[SELECTED]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
+    <rectangle color="shade/ctk:bg[SELECTED]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
 <!--
-    <rectangle color="blend/gtk:bg[SELECTED]/#ffffff/0.27" x="1" y="1" width="width-3" height="height-3"/> 
-    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.27" x1="width-2" y1="1" x2="width-2" y2="height-2"/>
+    <rectangle color="blend/ctk:bg[SELECTED]/#ffffff/0.27" x="1" y="1" width="width-3" height="height-3"/> 
+    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.27" x1="width-2" y1="1" x2="width-2" y2="height-2"/>
 -->
-    <rectangle color="shade/gtk:bg[SELECTED]/1.2" x="1" y="1" width="width-3" height="height-3"/> 
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="width-2" y1="1" x2="width-2" y2="height-2"/>
+    <rectangle color="shade/ctk:bg[SELECTED]/1.2" x="1" y="1" width="width-3" height="height-3"/> 
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="width-2" y1="1" x2="width-2" y2="height-2"/>
 
     <gradient type="vertical" x="2" y="2" width="width-4" height="height-3">
-        <color value="shade/gtk:bg[SELECTED]/1.1"/>
-	<color value="shade/gtk:bg[SELECTED]/0.9"/>
+        <color value="shade/ctk:bg[SELECTED]/1.1"/>
+	<color value="shade/ctk:bg[SELECTED]/0.9"/>
     </gradient> 
     
-    <line color="shade/gtk:bg[SELECTED]/0.7"
+    <line color="shade/ctk:bg[SELECTED]/0.7"
         x1="3" y1="height-1"
         x2="width-4" y2="height-1" />
 
-    <line color="shade/gtk:bg[SELECTED]/0.975"
+    <line color="shade/ctk:bg[SELECTED]/0.975"
         x1="2" y1="height-2"
         x2="width-3" y2="height-2" />
 
-    <line color="shade/gtk:bg[SELECTED]/0.7" x1="1" y1="3" x2="3" y2="1" />
-    <line color="shade/gtk:bg[SELECTED]/0.7" x1="1" y1="4" x2="1" y2="4" />
-    <line color="shade/gtk:bg[SELECTED]/0.7" x1="4" y1="1" x2="4" y2="1" />
+    <line color="shade/ctk:bg[SELECTED]/0.7" x1="1" y1="3" x2="3" y2="1" />
+    <line color="shade/ctk:bg[SELECTED]/0.7" x1="1" y1="4" x2="1" y2="4" />
+    <line color="shade/ctk:bg[SELECTED]/0.7" x1="4" y1="1" x2="4" y2="1" />
 
-    <line color="shade/gtk:bg[SELECTED]/0.7" x1="width-2" y1="3" x2="width-4" y2="1" />
-    <line color="shade/gtk:bg[SELECTED]/0.7" x1="width-5" y1="1" x2="width-5" y2="1" />
-    <line color="shade/gtk:bg[SELECTED]/0.7" x1="width-2" y1="3" x2="width-2" y2="4" />
+    <line color="shade/ctk:bg[SELECTED]/0.7" x1="width-2" y1="3" x2="width-4" y2="1" />
+    <line color="shade/ctk:bg[SELECTED]/0.7" x1="width-5" y1="1" x2="width-5" y2="1" />
+    <line color="shade/ctk:bg[SELECTED]/0.7" x1="width-2" y1="3" x2="width-2" y2="4" />
 <!--
-    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.27" x1="2" y1="3" x2="2" y2="4" />
-    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.27" x1="3" y1="2" x2="4" y2="2" />
+    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.27" x1="2" y1="3" x2="2" y2="4" />
+    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.27" x1="3" y1="2" x2="4" y2="2" />
 
-    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.27" x1="width-3" y1="3" x2="width-3" y2="4" />
-    <line color="blend/gtk:bg[SELECTED]/#ffffff/0.27" x1="width-5" y1="2" x2="width-4" y2="2" />
+    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.27" x1="width-3" y1="3" x2="width-3" y2="4" />
+    <line color="blend/ctk:bg[SELECTED]/#ffffff/0.27" x1="width-5" y1="2" x2="width-4" y2="2" />
 -->
 
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="2" y1="3" x2="2" y2="4" />
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="3" y1="2" x2="4" y2="2" />
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="2" y1="3" x2="2" y2="4" />
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="3" y1="2" x2="4" y2="2" />
 
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="width-3" y1="3" x2="width-3" y2="4" />
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="width-5" y1="2" x2="width-4" y2="2" />
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="width-3" y1="3" x2="width-3" y2="4" />
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="width-5" y1="2" x2="width-4" y2="2" />
 
   <!--  <gradient type="vertical" x="1" y="5" width="1" height="height-6">
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.27" />
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.09" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.27" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.09" />
     </gradient>
 
     <gradient type="vertical" x="width-2" y="5" width="1" height="height-6">
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.27" />
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.09" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.27" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.09" />
     </gradient> -->
 
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="1" y1="height-1" x2="1" y2="height-1" />
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="width-2" y1="height-1" x2="width-2" y2="height-1" />
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="1" y1="height-1" x2="1" y2="height-1" />
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="width-2" y1="height-1" x2="width-2" y2="height-1" />
 </draw_ops>
 
 <draw_ops name="title_background_maximized">
-    <rectangle color="shade/gtk:bg[SELECTED]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
-    <rectangle color="shade/gtk:bg[SELECTED]/1.2" x="0" y="1" width="width-2" height="height-3"/>
+    <rectangle color="shade/ctk:bg[SELECTED]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
+    <rectangle color="shade/ctk:bg[SELECTED]/1.2" x="0" y="1" width="width-2" height="height-3"/>
     
-    <line color="shade/gtk:bg[SELECTED]/1.2" x1="width-1" y1="1" x2="width-1" y2="height-2"/>
+    <line color="shade/ctk:bg[SELECTED]/1.2" x1="width-1" y1="1" x2="width-1" y2="height-2"/>
     
     <gradient type="vertical" x="1" y="2" width="width-2" height="height-3">
-    	<color value="shade/gtk:bg[SELECTED]/1.1"/>
-    	<color value="shade/gtk:bg[SELECTED]/0.9"/>
+    	<color value="shade/ctk:bg[SELECTED]/1.1"/>
+    	<color value="shade/ctk:bg[SELECTED]/0.9"/>
     </gradient>
     
-    <rectangle color="shade/gtk:bg[SELECTED]/1.2" x="0" y="1" width="width-1" height="height-3"/>
+    <rectangle color="shade/ctk:bg[SELECTED]/1.2" x="0" y="1" width="width-1" height="height-3"/>
     
-    <line color="shade/gtk:bg[SELECTED]/0.7"
+    <line color="shade/ctk:bg[SELECTED]/0.7"
         x1="0" y1="height-1"
         x2="width-1" y2="height-1" />
 
-    <line color="shade/gtk:bg[SELECTED]/0.95"
+    <line color="shade/ctk:bg[SELECTED]/0.95"
         x1="0" y1="height-2"
         x2="width-1" y2="height-2" />
 
 <!--    <gradient type="vertical" x="0" y="1" width="1" height="height-2">
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.27" />
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.09" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.27" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.09" />
     </gradient>
 
     <gradient type="vertical" x="width-1" y="1" width="1" height="height-2">
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.27" />
-        <color value="blend/gtk:bg[SELECTED]/#ffffff/0.09" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.27" />
+        <color value="blend/ctk:bg[SELECTED]/#ffffff/0.09" />
     </gradient> -->
 </draw_ops>
 
 <draw_ops name="title_unfocused_background">
-    <rectangle color="shade/gtk:bg[NORMAL]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
+    <rectangle color="shade/ctk:bg[NORMAL]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
    
     <gradient type="vertical" x="1" y="1" width="width-2" height="height-1">
-   	<color value="shade/gtk:bg[NORMAL]/1.05"/>
-	<color value="shade/gtk:bg[NORMAL]/0.85"/>
+   	<color value="shade/ctk:bg[NORMAL]/1.05"/>
+	<color value="shade/ctk:bg[NORMAL]/0.85"/>
     </gradient>
 
-    <line color="shade/gtk:bg[NORMAL]/0.945" x1="1" y1="height-2" x2="width-3" y2="height-2" />
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="0" y1="height-1" x2="width-1" y2="height-1" />
+    <line color="shade/ctk:bg[NORMAL]/0.945" x1="1" y1="height-2" x2="width-3" y2="height-2" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="0" y1="height-1" x2="width-1" y2="height-1" />
 
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="1" y1="1" x2="width-2" y2="1"/>
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="1" y1="1" x2="1" y2="height-1"/>
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="1" y1="1" x2="width-2" y2="1"/>
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="1" y1="1" x2="1" y2="height-1"/>
 
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="width-2" y1="1" x2="width-2" y2="height" />
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="width-2" y1="1" x2="width-2" y2="height" />
 
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="1" y1="3" x2="3" y2="1" />
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="1" y1="4" x2="1" y2="4" />
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="4" y1="1" x2="4" y2="1" />
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="width-2" y1="3" x2="width-4" y2="1" />
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="width-5" y1="1" x2="width-5" y2="1" />
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="width-2" y1="3" x2="width-2" y2="4" />
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="2" y1="3" x2="2" y2="4" />
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="3" y1="2" x2="4" y2="2" />
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="width-3" y1="3" x2="width-3" y2="4" />
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="width-5" y1="2" x2="width-4" y2="2" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="1" y1="3" x2="3" y2="1" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="1" y1="4" x2="1" y2="4" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="4" y1="1" x2="4" y2="1" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="width-2" y1="3" x2="width-4" y2="1" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="width-5" y1="1" x2="width-5" y2="1" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="width-2" y1="3" x2="width-2" y2="4" />
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="2" y1="3" x2="2" y2="4" />
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="3" y1="2" x2="4" y2="2" />
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="width-3" y1="3" x2="width-3" y2="4" />
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="width-5" y1="2" x2="width-4" y2="2" />
 
 
 </draw_ops>
 
 <draw_ops name="title_unfocused_background_maximized">
-    <rectangle color="shade/gtk:bg[NORMAL]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
+    <rectangle color="shade/ctk:bg[NORMAL]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
    
     <gradient type="vertical" x="0" y="1" width="width" height="height-1">
-   	<color value="shade/gtk:bg[NORMAL]/1.05"/>
-	<color value="shade/gtk:bg[NORMAL]/0.85"/>
+   	<color value="shade/ctk:bg[NORMAL]/1.05"/>
+	<color value="shade/ctk:bg[NORMAL]/0.85"/>
     </gradient>
-    <line color="shade/gtk:bg[NORMAL]/0.945" x1="0" y1="height-2" x2="width-1" y2="height-2" />
-    <line color="shade/gtk:bg[NORMAL]/0.7" x1="0" y1="height-1" x2="width-1" y2="height-1" />
-    <line color="shade/gtk:bg[NORMAL]/1.2" x1="0" y1="1" x2="width-1" y2="1"/>
+    <line color="shade/ctk:bg[NORMAL]/0.945" x1="0" y1="height-2" x2="width-1" y2="height-2" />
+    <line color="shade/ctk:bg[NORMAL]/0.7" x1="0" y1="height-1" x2="width-1" y2="height-1" />
+    <line color="shade/ctk:bg[NORMAL]/1.2" x1="0" y1="1" x2="width-1" y2="1"/>
 
 </draw_ops>
 
@@ -986,15 +986,15 @@
 </draw_ops>
 
 <draw_ops name="focus_outline">
-    <rectangle x="0" y="0" width="width-1" height="height-1" color="shade/gtk:bg[SELECTED]/0.7" />
-    <rectangle x="1" y="1" width="width-3" height="height-3" color="shade/gtk:bg[SELECTED]/1.2" />
-    <rectangle x="2" y="2" width="width-5" height="height-5" color="shade/gtk:bg[SELECTED]/0.7" />
+    <rectangle x="0" y="0" width="width-1" height="height-1" color="shade/ctk:bg[SELECTED]/0.7" />
+    <rectangle x="1" y="1" width="width-3" height="height-3" color="shade/ctk:bg[SELECTED]/1.2" />
+    <rectangle x="2" y="2" width="width-5" height="height-5" color="shade/ctk:bg[SELECTED]/0.7" />
 </draw_ops>
 
 <draw_ops name="unfocus_outline">
-    <rectangle x="0" y="0" width="width-1" height="height-1" color="shade/gtk:bg[NORMAL]/0.7" />
-    <rectangle x="1" y="1" width="width-3" height="height-3" color="shade/gtk:bg[NORMAL]/1.2" />
-    <rectangle x="2" y="2" width="width-5" height="height-5" color="shade/gtk:bg[NORMAL]/0.7" />
+    <rectangle x="0" y="0" width="width-1" height="height-1" color="shade/ctk:bg[NORMAL]/0.7" />
+    <rectangle x="1" y="1" width="width-3" height="height-3" color="shade/ctk:bg[NORMAL]/1.2" />
+    <rectangle x="2" y="2" width="width-5" height="height-5" color="shade/ctk:bg[NORMAL]/0.7" />
 </draw_ops>
 
 <draw_ops name="focus_background">
@@ -1007,20 +1007,20 @@
 
 <draw_ops name="title_text_focused_with_icon">
 
-    <title color="shade/gtk:bg[SELECTED]/0.8"
+    <title color="shade/ctk:bg[SELECTED]/0.8"
            x="(((width  - title_width)  / 2) `max` 0) - 1"
            y="(((height - title_height) / 2) `max` 0) - 1"/>
 
      
-    <title color="shade/gtk:bg[SELECTED]/0.8"
+    <title color="shade/ctk:bg[SELECTED]/0.8"
            x="(((width  - title_width)  / 2) `max` 0) - 1"
            y="(((height - title_height) / 2) `max` 0) + 1"/> 
 
-    <title color="shade/gtk:bg[SELECTED]/0.8"
+    <title color="shade/ctk:bg[SELECTED]/0.8"
            x="(((width  - title_width)  / 2) `max` 0) + 1"
            y="(((height - title_height) / 2) `max` 0) + 1"/> 
 
-    <title color="shade/gtk:bg[SELECTED]/0.8"
+    <title color="shade/ctk:bg[SELECTED]/0.8"
            x="(((width  - title_width)  / 2) `max` 0) + 1"
            y="(((height - title_height) / 2) `max` 0) - 1"/>
         
@@ -1031,7 +1031,7 @@
 </draw_ops>
 
 <draw_ops name="title_text_with_icon">
-    <title color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.4"
+    <title color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.4"
            x="(((width - title_width)  / 2) `max` 0)"
            y="((height - title_height) / 2) `max` 0"/> 
 </draw_ops>

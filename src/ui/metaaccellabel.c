@@ -28,12 +28,12 @@
  * Modified by the GTK+ Team and others 1997-2001.  See the AUTHORS
  * file for a list of people on the GTK+ Team.  See the ChangeLog
  * files for a list of changes.  These files are distributed with
- * GTK+ at ftp://ftp.gtk.org/pub/gtk/.
+ * GTK+ at ftp://ftp.ctk.org/pub/ctk/.
  */
 
 #include <config.h>
 #include "metaaccellabel.h"
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <string.h>
 #include "util.h"
 
@@ -156,7 +156,7 @@ meta_accel_label_new_with_mnemonic (const gchar *string)
 
   accel_label = g_object_new (META_TYPE_ACCEL_LABEL, NULL);
 
-  gtk_label_set_text_with_mnemonic (GTK_LABEL (accel_label), string);
+  ctk_label_set_text_with_mnemonic (GTK_LABEL (accel_label), string);
 
   return GTK_WIDGET (accel_label);
 }
@@ -223,7 +223,7 @@ meta_accel_label_get_preferred_width (GtkWidget *widget,
 
   GTK_WIDGET_CLASS (meta_accel_label_parent_class)->get_preferred_width (widget, minimum, natural);
 
-  layout = gtk_widget_create_pango_layout (widget, accel_label->accel_string);
+  layout = ctk_widget_create_pango_layout (widget, accel_label->accel_string);
   pango_layout_get_pixel_size (layout, &width, NULL);
   accel_label->accel_string_width = width;
 
@@ -248,10 +248,10 @@ meta_accel_label_draw (GtkWidget *widget,
   GtkAllocation allocation;
   GtkRequisition requisition;
 
-  direction = gtk_widget_get_direction (widget);
+  direction = ctk_widget_get_direction (widget);
   ac_width = meta_accel_label_get_accel_width (accel_label);
-  gtk_widget_get_allocation (widget, &allocation);
-  gtk_widget_get_preferred_size (widget,
+  ctk_widget_get_allocation (widget, &allocation);
+  ctk_widget_get_preferred_size (widget,
                                  &requisition, NULL);
 
   if (allocation.width >= requisition.width + ac_width)
@@ -264,8 +264,8 @@ meta_accel_label_draw (GtkWidget *widget,
       gint margin_start, margin_end, margin_top, margin_bottom;
       gfloat yalign;
 
-      label_layout = gtk_label_get_layout (GTK_LABEL (accel_label));
-      yalign = gtk_label_get_yalign (GTK_LABEL (accel_label));
+      label_layout = ctk_label_get_layout (GTK_LABEL (accel_label));
+      yalign = ctk_label_get_yalign (GTK_LABEL (accel_label));
 
       cairo_save (cr);
 
@@ -273,29 +273,29 @@ meta_accel_label_draw (GtkWidget *widget,
        * properly in its draw function that we chain to. */
       if (direction == GTK_TEXT_DIR_RTL)
         cairo_translate (cr, ac_width, 0);
-      if (gtk_label_get_ellipsize (label))
+      if (ctk_label_get_ellipsize (label))
         pango_layout_set_width (label_layout,
                                 pango_layout_get_width (label_layout)
                                 - ac_width * PANGO_SCALE);
 
       allocation.width -= ac_width;
-      gtk_widget_set_allocation (widget, &allocation);
+      ctk_widget_set_allocation (widget, &allocation);
       if (GTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw)
         GTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw (widget,
                                                                cr);
       allocation.width += ac_width;
-      gtk_widget_set_allocation (widget, &allocation);
-      if (gtk_label_get_ellipsize (label))
+      ctk_widget_set_allocation (widget, &allocation);
+      if (ctk_label_get_ellipsize (label))
         pango_layout_set_width (label_layout,
                                 pango_layout_get_width (label_layout)
                                 + ac_width * PANGO_SCALE);
 
       cairo_restore (cr);
 
-      margin_start = gtk_widget_get_margin_start (widget);
-      margin_end = gtk_widget_get_margin_end (widget);
-      margin_top = gtk_widget_get_margin_top (widget);
-      margin_bottom = gtk_widget_get_margin_bottom (widget);
+      margin_start = ctk_widget_get_margin_start (widget);
+      margin_end = ctk_widget_get_margin_end (widget);
+      margin_top = ctk_widget_get_margin_top (widget);
+      margin_bottom = ctk_widget_get_margin_bottom (widget);
 
       xpad = margin_start + margin_end;
       ypad = margin_top + margin_bottom;
@@ -303,23 +303,23 @@ meta_accel_label_draw (GtkWidget *widget,
       if (direction == GTK_TEXT_DIR_RTL)
         x = xpad;
       else
-        x = gtk_widget_get_allocated_width (widget) - xpad - ac_width;
+        x = ctk_widget_get_allocated_width (widget) - xpad - ac_width;
 
-      gtk_label_get_layout_offsets (GTK_LABEL (accel_label), NULL, &y);
+      ctk_label_get_layout_offsets (GTK_LABEL (accel_label), NULL, &y);
 
-      accel_layout = gtk_widget_create_pango_layout (widget, accel_label->accel_string);
+      accel_layout = ctk_widget_create_pango_layout (widget, accel_label->accel_string);
 
       y = (allocation.height - (requisition.height - ypad * 2)) * yalign + 1.5;
 
-      style = gtk_widget_get_style_context (widget);
-      gtk_style_context_save (style);
-      gtk_style_context_set_state (style,
-                                   gtk_widget_get_state_flags (widget));
-      gtk_render_layout (gtk_widget_get_style_context (widget),
+      style = ctk_widget_get_style_context (widget);
+      ctk_style_context_save (style);
+      ctk_style_context_set_state (style,
+                                   ctk_widget_get_state_flags (widget));
+      ctk_render_layout (ctk_widget_get_style_context (widget),
                          cr,
                          x, y,
                          accel_layout);
-      gtk_style_context_restore (style);
+      ctk_style_context_restore (style);
 
       g_object_unref (accel_layout);
     }
@@ -443,7 +443,7 @@ meta_accel_label_update (MetaAccelLabel *accel_label)
     {
       gchar *tmp;
 
-      tmp = gtk_accelerator_name (accel_label->accel_key, 0);
+      tmp = ctk_accelerator_name (accel_label->accel_key, 0);
       if (tmp[0] != 0 && tmp[1] == 0)
         tmp[0] = g_ascii_toupper (tmp[0]);
       g_string_append (gstring, tmp);
@@ -457,5 +457,5 @@ meta_accel_label_update (MetaAccelLabel *accel_label)
   g_assert (accel_label->accel_string);
   /* accel_label->accel_string = g_strdup ("-/-"); */
 
-  gtk_widget_queue_resize (GTK_WIDGET (accel_label));
+  ctk_widget_queue_resize (GTK_WIDGET (accel_label));
 }

@@ -201,7 +201,7 @@ meta_core_get (Display *xdisplay,
         *((gint*)answer) = window->frame->rect.height;
         break;
       case META_CORE_GET_THEME_VARIANT:
-        *((char**)answer) = window->gtk_theme_variant;
+        *((char**)answer) = window->ctk_theme_variant;
         break;
       case META_CORE_GET_SCREEN_WIDTH:
         *((gint*)answer) = window->screen->rect.width;

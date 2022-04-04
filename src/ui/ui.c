@@ -58,7 +58,7 @@ void meta_ui_init(int* argc, char*** argv)
    */
   gdk_disable_multidevice ();
 
-	if (!gtk_init_check (argc, argv))
+	if (!ctk_init_check (argc, argv))
 	{
 		meta_fatal ("Unable to open X display %s\n", XDisplayName (NULL));
 	}
@@ -137,13 +137,13 @@ maybe_redirect_mouse_event (XEvent *xevent)
     case ButtonRelease:
       if (xevent->type == ButtonPress)
         {
-          GtkSettings *settings = gtk_settings_get_default ();
+          GtkSettings *settings = ctk_settings_get_default ();
           int double_click_time;
           int double_click_distance;
 
           g_object_get (settings,
-                        "gtk-double-click-time", &double_click_time,
-                        "gtk-double-click-distance", &double_click_distance,
+                        "ctk-double-click-time", &double_click_time,
+                        "ctk-double-click-distance", &double_click_distance,
                         NULL);
 
           if (xevent->xbutton.button == ui->button_click_number &&
@@ -197,7 +197,7 @@ maybe_redirect_mouse_event (XEvent *xevent)
 
   /* If we've gotten here, we've filled in the gdk_event and should send it on */
   gdk_event_set_device (gevent, gdevice);
-  gtk_main_do_event (gevent);
+  ctk_main_do_event (gevent);
   gdk_event_free (gevent);
 
   return TRUE;
@@ -277,7 +277,7 @@ meta_ui_new (Display *xdisplay,
    * and fully tracked as a MetaWindow. Horrible, but mostly harmless -
    * the window is a 1x1 overide redirect window positioned offscreen.
    */
-  gtk_widget_show (GTK_WIDGET (ui->frames));
+  ctk_widget_show (GTK_WIDGET (ui->frames));
 
   g_object_set_data (G_OBJECT (gdisplay), "meta-ui", ui);
 
@@ -289,7 +289,7 @@ meta_ui_free (MetaUI *ui)
 {
   GdkDisplay *gdisplay;
 
-  gtk_widget_destroy (GTK_WIDGET (ui->frames));
+  ctk_widget_destroy (GTK_WIDGET (ui->frames));
 
   gdisplay = gdk_x11_lookup_xdisplay (ui->xdisplay);
   g_object_set_data (G_OBJECT (gdisplay), "meta-ui", NULL);
@@ -598,15 +598,15 @@ meta_ui_pop_delay_exposes  (MetaUI *ui)
 static GdkPixbuf *
 load_default_window_icon (int size, int scale)
 {
-  GtkIconTheme *theme = gtk_icon_theme_get_default ();
+  GtkIconTheme *theme = ctk_icon_theme_get_default ();
   const char *icon_name;
 
-  if (gtk_icon_theme_has_icon (theme, META_DEFAULT_ICON_NAME))
+  if (ctk_icon_theme_has_icon (theme, META_DEFAULT_ICON_NAME))
     icon_name = META_DEFAULT_ICON_NAME;
   else
     icon_name = "image-missing";
 
-  return gtk_icon_theme_load_icon_for_scale (theme, icon_name, size, scale, 0, NULL);
+  return ctk_icon_theme_load_icon_for_scale (theme, icon_name, size, scale, 0, NULL);
 }
 
 GdkPixbuf*
@@ -619,7 +619,7 @@ meta_ui_get_default_window_icon (MetaUI *ui)
   int scale;
   if (default_icon == NULL || current_icon_size != icon_size)
     {
-      scale = gtk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
+      scale = ctk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (current_icon_size, scale);
       g_assert (default_icon);
       icon_size = current_icon_size;
@@ -638,7 +638,7 @@ meta_ui_get_default_mini_icon (MetaUI *ui)
 
   if (default_icon == NULL)
     {
-      scale = gtk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
+      scale = ctk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (META_MINI_ICON_WIDTH, scale);
       g_assert (default_icon);
     }
@@ -682,7 +682,7 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
 
   if (meta_ui_have_a_theme ())
     {
-      context = gtk_widget_get_pango_context (GTK_WIDGET (ui->frames));
+      context = ctk_widget_get_pango_context (GTK_WIDGET (ui->frames));
       font_desc = meta_prefs_get_titlebar_font ();
 
       if (!font_desc)
@@ -691,21 +691,21 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
           GdkScreen *screen = gdk_display_get_default_screen (display);
           GtkWidgetPath *widget_path;
 
-          style = gtk_style_context_new ();
-          gtk_style_context_set_screen (style, screen);
-          widget_path = gtk_widget_path_new ();
-          gtk_widget_path_append_type (widget_path, GTK_TYPE_WINDOW);
-          gtk_style_context_set_path (style, widget_path);
-          gtk_widget_path_free (widget_path);
+          style = ctk_style_context_new ();
+          ctk_style_context_set_screen (style, screen);
+          widget_path = ctk_widget_path_new ();
+          ctk_widget_path_append_type (widget_path, GTK_TYPE_WINDOW);
+          ctk_style_context_set_path (style, widget_path);
+          ctk_widget_path_free (widget_path);
 
-          gtk_style_context_save (style);
-          gtk_style_context_set_state (style, GTK_STATE_FLAG_NORMAL);
-          gtk_style_context_get (style,
-                                 gtk_style_context_get_state (style),
+          ctk_style_context_save (style);
+          ctk_style_context_set_state (style, GTK_STATE_FLAG_NORMAL);
+          ctk_style_context_get (style,
+                                 ctk_style_context_get_state (style),
                                  "font",
                                  &free_font_desc,
                                  NULL);
-          gtk_style_context_restore (style);
+          ctk_style_context_restore (style);
           font_desc = (const PangoFontDescription *) free_font_desc;
         }
 
@@ -754,7 +754,7 @@ meta_ui_accelerator_parse (const char      *accel,
       *keymask = 0;
     }
   else
-    gtk_accelerator_parse (accel, keysym, keymask);
+    ctk_accelerator_parse (accel, keysym, keymask);
 }
 
 gboolean
@@ -844,7 +844,7 @@ meta_ui_accelerator_name  (unsigned int        keysym,
   if (mask & META_VIRTUAL_META_MASK)
     mods |= GDK_META_MASK;
 
-  return gtk_accelerator_name (keysym, mods);
+  return ctk_accelerator_name (keysym, mods);
 
 }
 
@@ -925,16 +925,16 @@ typedef struct {
 int meta_ui_get_drag_threshold(MetaUI* ui)
 {
 	int threshold = 8;
-	GtkSettings* settings = gtk_widget_get_settings(GTK_WIDGET(ui->frames));
+	GtkSettings* settings = ctk_widget_get_settings(GTK_WIDGET(ui->frames));
 
-	g_object_get(G_OBJECT(settings), "gtk-dnd-drag-threshold", &threshold, NULL);
+	g_object_get(G_OBJECT(settings), "ctk-dnd-drag-threshold", &threshold, NULL);
 
 	return threshold;
 }
 
 MetaUIDirection meta_ui_get_direction(void)
 {
-	if (gtk_widget_get_default_direction() == GTK_TEXT_DIR_RTL)
+	if (ctk_widget_get_default_direction() == GTK_TEXT_DIR_RTL)
 	{
 		return META_UI_DIRECTION_RTL;
 	}

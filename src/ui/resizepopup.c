@@ -24,7 +24,7 @@
 #include <config.h>
 #include "resizepopup.h"
 #include "util.h"
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkx.h>
 
 struct _MetaResizePopup
@@ -62,7 +62,7 @@ meta_ui_resize_popup_free (MetaResizePopup *popup)
   g_return_if_fail (popup != NULL);
 
   if (popup->size_window)
-    gtk_widget_destroy (popup->size_window);
+    ctk_widget_destroy (popup->size_window);
 
   g_free (popup);
 }
@@ -75,29 +75,29 @@ ensure_size_window (MetaResizePopup *popup)
   if (popup->size_window)
     return;
 
-  popup->size_window = gtk_window_new (GTK_WINDOW_POPUP);
+  popup->size_window = ctk_window_new (GTK_WINDOW_POPUP);
 
-  gtk_window_set_screen (GTK_WINDOW (popup->size_window),
+  ctk_window_set_screen (GTK_WINDOW (popup->size_window),
 			 gdk_display_get_default_screen (gdk_x11_lookup_xdisplay (popup->display)));
 
   /* never shrink the size window */
-  gtk_window_set_resizable (GTK_WINDOW (popup->size_window),
+  ctk_window_set_resizable (GTK_WINDOW (popup->size_window),
                             TRUE);
 
-  frame = gtk_frame_new (NULL);
-  gtk_frame_set_shadow_type (GTK_FRAME (frame), GTK_SHADOW_OUT);
+  frame = ctk_frame_new (NULL);
+  ctk_frame_set_shadow_type (GTK_FRAME (frame), GTK_SHADOW_OUT);
 
-  gtk_container_add (GTK_CONTAINER (popup->size_window), frame);
+  ctk_container_add (GTK_CONTAINER (popup->size_window), frame);
 
-  popup->size_label = gtk_label_new ("");
-  gtk_widget_set_margin_start (popup->size_label, 3);
-  gtk_widget_set_margin_end (popup->size_label, 3);
-  gtk_widget_set_margin_top (popup->size_label, 3);
-  gtk_widget_set_margin_bottom (popup->size_label, 3);
+  popup->size_label = ctk_label_new ("");
+  ctk_widget_set_margin_start (popup->size_label, 3);
+  ctk_widget_set_margin_end (popup->size_label, 3);
+  ctk_widget_set_margin_top (popup->size_label, 3);
+  ctk_widget_set_margin_bottom (popup->size_label, 3);
 
-  gtk_container_add (GTK_CONTAINER (frame), popup->size_label);
+  ctk_container_add (GTK_CONTAINER (frame), popup->size_label);
 
-  gtk_widget_show_all (frame);
+  ctk_widget_show_all (frame);
 }
 
 static void
@@ -110,7 +110,7 @@ update_size_window (MetaResizePopup *popup)
 
   g_return_if_fail (popup->size_window != NULL);
 
-  scale = gtk_widget_get_scale_factor (GTK_WIDGET (popup->size_window));
+  scale = ctk_widget_get_scale_factor (GTK_WIDGET (popup->size_window));
   /* Translators: This represents the size of a window.  The first number is
    * the width of the window and the second is the height.
    */
@@ -118,11 +118,11 @@ update_size_window (MetaResizePopup *popup)
                          popup->horizontal_size,
                          popup->vertical_size);
 
-  gtk_label_set_text (GTK_LABEL (popup->size_label), str);
+  ctk_label_set_text (GTK_LABEL (popup->size_label), str);
 
   g_free (str);
 
-  gtk_window_get_size (GTK_WINDOW (popup->size_window), &width, &height);
+  ctk_window_get_size (GTK_WINDOW (popup->size_window), &width, &height);
 
   x = popup->rect.x + (popup->rect.width - width) / 2;
   y = popup->rect.y + (popup->rect.height - height) / 2;
@@ -133,16 +133,16 @@ update_size_window (MetaResizePopup *popup)
       y = y / scale;
     }
 
-  if (gtk_widget_get_realized (popup->size_window))
+  if (ctk_widget_get_realized (popup->size_window))
     {
       /* using move_resize to avoid jumpiness */
-      gdk_window_move_resize (gtk_widget_get_window (popup->size_window),
+      gdk_window_move_resize (ctk_widget_get_window (popup->size_window),
                               x, y,
                               width, height);
     }
   else
     {
-      gtk_window_move   (GTK_WINDOW (popup->size_window),
+      ctk_window_move   (GTK_WINDOW (popup->size_window),
                          x, y);
     }
 }
@@ -153,15 +153,15 @@ sync_showing (MetaResizePopup *popup)
   if (popup->showing)
     {
       if (popup->size_window)
-        gtk_widget_show (popup->size_window);
+        ctk_widget_show (popup->size_window);
 
-      if (popup->size_window && gtk_widget_get_realized (popup->size_window))
-        gdk_window_raise (gtk_widget_get_window(GTK_WIDGET(popup->size_window)));
+      if (popup->size_window && ctk_widget_get_realized (popup->size_window))
+        gdk_window_raise (ctk_widget_get_window(GTK_WIDGET(popup->size_window)));
     }
   else
     {
       if (popup->size_window)
-        gtk_widget_hide (popup->size_window);
+        ctk_widget_hide (popup->size_window);
     }
 }
 
