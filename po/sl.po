@@ -1807,7 +1807,7 @@ msgstr "Prelivi bi morali imeti vsaj dve barvi"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1828,19 +1828,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Navedba barve GTK mora vsebovati stanje v oglatih oklepajih, npr. "
+"Navedba barve CTK mora vsebovati stanje v oglatih oklepajih, npr. "
 "ctk:fg[NORMAL], kjer je NORMAL stanje; ni mogoče razčleniti \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Navedbi barve GTK manjka oglati zaklepaj za stanjem, npr. ctk:fg[NORMAL], "
+"Navedbi barve CTK manjka oglati zaklepaj za stanjem, npr. ctk:fg[NORMAL], "
 "kjer je NORMAL stanje; ni mogoče razčleniti \"%s\""
 
 #: src/ui/theme.c:1496

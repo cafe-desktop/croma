@@ -1720,7 +1720,7 @@ msgstr "Ana son grediyant ya ƙunsa da a ƙalla launuka guda biyu"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1741,20 +1741,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Tilas ne buƙatan launi na GTK ya ƙayyade halin cikin baka biyu, misali "
+"Tilas ne buƙatan launi na CTK ya ƙayyade halin cikin baka biyu, misali "
 "ctk:fg[NA KULLUM] inda NA KULLUM halinsa kenan; kuma an kasa yin parse ga "
 "\"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Tilas ne buƙatan launi na GTK ya zaɓi wata rufaffiyar baka biyu bayan halin,"
+"Tilas ne buƙatan launi na CTK ya zaɓi wata rufaffiyar baka biyu bayan halin,"
 " misali, ctk:fg[NA KULLUM] inda NA KULLUM watau halinsa kenan; kuma an kasa "
 "yin parse ga \"%s\""
 

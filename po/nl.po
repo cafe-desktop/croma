@@ -1937,10 +1937,10 @@ msgstr "Kleurverloop moet tenminste twee kleuren hebben"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"Kon '%s' niet lezen; een aangepaste kleurspecificatie voor GTK moet "
+"Kon '%s' niet lezen; een aangepaste kleurspecificatie voor CTK moet "
 "kleurnaam en terugvalwaarde tussen haakjes hebben, bijv. "
 "ctk:aangepast(foo,bar)"
 
@@ -1965,19 +1965,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-kleurspecificatie moet de toestand in rechte haken hebben, bijv. "
+"CTK-kleurspecificatie moet de toestand in rechte haken hebben, bijv. "
 "ctk:fg[NORMAL] waarbij NORMAL de toestand is; kon ‘%s’ niet lezen"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-kleurspecificatie moet een sluithaakje hebben na de status, dus: ctk: "
+"CTK-kleurspecificatie moet een sluithaakje hebben na de status, dus: ctk: "
 "fg[NORMAL] waarbij NORMAL de status is; kon ‘%s’ niet lezen"
 
 #: src/ui/theme.c:1496

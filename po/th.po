@@ -1798,7 +1798,7 @@ msgstr "การไล่สีควรใช้อย่างน้อยส
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1819,19 +1819,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"การกำหนดสี GTK ต้องเขียนสถานะในวงเล็บเหลี่ยม เช่น ctk:fg[NORMAL] เมื่อ "
+"การกำหนดสี CTK ต้องเขียนสถานะในวงเล็บเหลี่ยม เช่น ctk:fg[NORMAL] เมื่อ "
 "NORMAL เป็นสถานะ; ไม่สามารถแจงค่า \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"การกำหนดสี GTK ต้องมีวงเล็บเหลี่ยมปิดหลังสถานะด้วย เช่น ctk:fg[NORMAL] เมื่อ"
+"การกำหนดสี CTK ต้องมีวงเล็บเหลี่ยมปิดหลังสถานะด้วย เช่น ctk:fg[NORMAL] เมื่อ"
 " NORMAL เป็นสถานะ; ไม่สามารถแจงค่า \"%s\""
 
 #: src/ui/theme.c:1496

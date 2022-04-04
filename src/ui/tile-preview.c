@@ -106,11 +106,11 @@ on_preview_window_style_set (CtkWidget *widget,
   CtkWidgetPath *path = ctk_widget_path_new ();
   guchar alpha = 0xFF;
 
-  ctk_widget_path_append_type (path, GTK_TYPE_ICON_VIEW);
+  ctk_widget_path_append_type (path, CTK_TYPE_ICON_VIEW);
   ctk_style_context_set_path (context, path);
 
   ctk_style_context_save (context);
-  ctk_style_context_set_state (context, GTK_STATE_FLAG_SELECTED);
+  ctk_style_context_set_state (context, CTK_STATE_FLAG_SELECTED);
   ctk_style_context_get (context, ctk_style_context_get_state (context),
                          "background-color",
                          &preview->preview_color, NULL);
@@ -133,9 +133,9 @@ meta_tile_preview_new (void)
 
   preview = g_new (MetaTilePreview, 1);
 
-  preview->preview_window = ctk_window_new (GTK_WINDOW_POPUP);
+  preview->preview_window = ctk_window_new (CTK_WINDOW_POPUP);
 
-  ctk_window_set_screen (GTK_WINDOW (preview->preview_window), screen);
+  ctk_window_set_screen (CTK_WINDOW (preview->preview_window), screen);
   ctk_widget_set_app_paintable (preview->preview_window, TRUE);
 
   preview->preview_color = NULL;

@@ -32,12 +32,12 @@ New Features in Theme Format Version 3.4
 ========================================
 
 An additional color type is added to pick up custom colors defined
-in the GTK+ theme's CSS:
+in the CTK+ theme's CSS:
 
   ctk:custom(name,fallback)
 
 where <name> refers to a custom color defined with @define-color in
-the GTK+ theme, and <fallback> provides an alternative color definition
+the CTK+ theme, and <fallback> provides an alternative color definition
 in case the color referenced by <name> is not found.
 
 New Features in Theme Format Version 3.3
@@ -390,7 +390,7 @@ Overview of Theme Format Version 1
 
 
 <!-- For menu icons, drawing methods are needed for the same 
-     four types as the buttons, and GTK states
+     four types as the buttons, and CTK states
      (insensitive,prelight,normal,etc.)
   -->
 

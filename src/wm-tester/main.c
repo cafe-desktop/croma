@@ -119,9 +119,9 @@ evil_timeout (gpointer data)
       int t;
       CtkWidget *parent;
 
-      w = ctk_window_new (GTK_WINDOW_TOPLEVEL);
+      w = ctk_window_new (CTK_WINDOW_TOPLEVEL);
 
-      ctk_window_move (GTK_WINDOW (w),
+      ctk_window_move (CTK_WINDOW (w),
                        g_random_int_range (0,
                                            WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ()))),
                        g_random_int_range (0,
@@ -138,7 +138,7 @@ evil_timeout (gpointer data)
               parent = g_slist_nth_data (evil_windows, t);
 
               if (parent != NULL)
-                ctk_window_set_transient_for (GTK_WINDOW (w), GTK_WINDOW (parent));
+                ctk_window_set_transient_for (CTK_WINDOW (w), CTK_WINDOW (parent));
             }
         }
 
@@ -146,7 +146,7 @@ evil_timeout (gpointer data)
         c = ctk_button_new_with_label ("Evil Transient!");
       else
         c = ctk_button_new_with_label ("Evil Window!");
-      ctk_container_add (GTK_CONTAINER (w), c);
+      ctk_container_add (CTK_CONTAINER (w), c);
 
       ctk_widget_show_all (w);
 
@@ -204,31 +204,31 @@ set_up_icon_windows (void)
       GdkPixbuf *pix;
       int size  = 0;
 
-      w = ctk_window_new (GTK_WINDOW_TOPLEVEL);
+      w = ctk_window_new (CTK_WINDOW_TOPLEVEL);
       c = ctk_button_new_with_label ("Icon window");
-      ctk_container_add (GTK_CONTAINER (w), c);
+      ctk_container_add (CTK_CONTAINER (w), c);
 
       icons = NULL;
 
-      ctk_icon_size_lookup (GTK_ICON_SIZE_LARGE_TOOLBAR, NULL, &size);
+      ctk_icon_size_lookup (CTK_ICON_SIZE_LARGE_TOOLBAR, NULL, &size);
       pix = ctk_icon_theme_load_icon (ctk_icon_theme_get_default (), "ctk-save", size, 0, NULL);
       icons = g_list_append (icons, pix);
 
       if (i % 2)
         {
-          ctk_icon_size_lookup (GTK_ICON_SIZE_DIALOG, NULL, &size);
+          ctk_icon_size_lookup (CTK_ICON_SIZE_DIALOG, NULL, &size);
           pix = ctk_icon_theme_load_icon (ctk_icon_theme_get_default (), "ctk-save", size, 0, NULL);
           icons = g_list_append (icons, pix);
         }
 
       if (i % 3)
         {
-          ctk_icon_size_lookup (GTK_ICON_SIZE_MENU, NULL, &size);
+          ctk_icon_size_lookup (CTK_ICON_SIZE_MENU, NULL, &size);
           pix = ctk_icon_theme_load_icon (ctk_icon_theme_get_default (), "ctk-save", size, 0, NULL);
           icons = g_list_append (icons, pix);
         }
 
-      ctk_window_set_icon_list (GTK_WINDOW (w), icons);
+      ctk_window_set_icon_list (CTK_WINDOW (w), icons);
 
       g_list_free_full (icons, g_object_unref);
 

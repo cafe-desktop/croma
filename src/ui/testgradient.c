@@ -269,22 +269,22 @@ create_gradient_window (const char *title,
   CtkWidget *window;
   CtkWidget *drawing_area;
 
-  window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
+  window = ctk_window_new (CTK_WINDOW_TOPLEVEL);
 
-  ctk_window_set_title (GTK_WINDOW (window), title);
+  ctk_window_set_title (CTK_WINDOW (window), title);
 
   drawing_area = ctk_drawing_area_new ();
 
   ctk_widget_set_size_request (drawing_area, 1, 1);
 
-  ctk_window_set_default_size (GTK_WINDOW (window), 175, 175);
+  ctk_window_set_default_size (CTK_WINDOW (window), 175, 175);
 
   g_signal_connect (G_OBJECT (drawing_area),
                     "draw",
                     G_CALLBACK (draw_callback),
                     func);
 
-  ctk_container_add (GTK_CONTAINER (window), drawing_area);
+  ctk_container_add (CTK_CONTAINER (window), drawing_area);
 
   ctk_widget_show_all (window);
 

@@ -1832,7 +1832,7 @@ msgstr "গ্রেডিয়েন্টের ক্ষেত্রে দু�
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1853,20 +1853,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-র রং সংক্রান্ত মান ধার্য করা সময়, বন্ধনি চিহ্নের মধ্যে অবস্থা লেখা "
+"CTK-র রং সংক্রান্ত মান ধার্য করা সময়, বন্ধনি চিহ্নের মধ্যে অবস্থা লেখা "
 "আবশ্যক। উদাহরণ: ctk:fg[NORMAL], এই ক্ষেত্রে NORMAL একটি অবস্থা চিহ্নিত করে; "
 "\"%s\" পার্স করতে ব্যর্থ"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-র রং সংক্রান্ত মান ধার্য করা সময়, অবস্থা লেখার পরে বন্ধনি চিহ্ন লেখা "
+"CTK-র রং সংক্রান্ত মান ধার্য করা সময়, অবস্থা লেখার পরে বন্ধনি চিহ্ন লেখা "
 "আবশ্যক। উদাহরণ: ctk:fg[NORMAL], এই ক্ষেত্রে NORMAL একটি অবস্থা চিহ্নিত করে; "
 "\"%s\" পার্স করতে ব্যর্থ"
 

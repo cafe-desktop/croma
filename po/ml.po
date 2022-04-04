@@ -1837,7 +1837,7 @@ msgstr "ഗ്രേഡിയന്റ്സിനു് കുറഞ്ഞത�
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1858,19 +1858,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK നിറം വിവരണത്തില്‍ ബ്രാക്കറ്റുകളില്‍ അവസ്ഥയുണ്ടായിരിക്കണം, ഉദാ. "
+"CTK നിറം വിവരണത്തില്‍ ബ്രാക്കറ്റുകളില്‍ അവസ്ഥയുണ്ടായിരിക്കണം, ഉദാ. "
 "ctk:fg[NORMAL], ഇവിടെ NORMAL ആണു് അവസ്ഥ, \"%s\" പാഴ്സ് ചെയ്യുവാനായില്ല"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"അവസ്ഥയ്ക്കു് ശേഷം GTK നിറം വിവരണത്തില്‍ ഒരു അടയ്ക്കുന്ന "
+"അവസ്ഥയ്ക്കു് ശേഷം CTK നിറം വിവരണത്തില്‍ ഒരു അടയ്ക്കുന്ന "
 "ബ്രാക്കറ്റുണ്ടായിരിക്കണം, ഉദാ. ctk:fg[NORMAL], ഇവിടെ NORMAL ആണു് അവസ്ഥ, "
 "\"%s\" പാഴ്സ് ചെയ്യുവാനായില്ല"
 

@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Croma interface used by GTK+ UI to talk to core */
+/* Croma interface used by CTK+ UI to talk to core */
 
 /*
  * Copyright (C) 2001 Havoc Pennington

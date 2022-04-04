@@ -1889,7 +1889,7 @@ msgstr "Gradientes deverão ter pelo menos duas cores"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1910,19 +1910,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Especificação de cor GTK tem de ter o estado entre parentesis retos, por ex."
+"Especificação de cor CTK tem de ter o estado entre parentesis retos, por ex."
 " ctk:fg[NORMAL] em que NORMAL é o estado; incapaz de processar \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Especificação de cor GTK deve ter um parêntesis reto de fecho após o estado,"
+"Especificação de cor CTK deve ter um parêntesis reto de fecho após o estado,"
 " por ex. ctk:fg[NORMAL] em que NORMAL é o estado; incapaz de processar "
 "\"%s\""
 

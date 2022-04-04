@@ -258,7 +258,7 @@ reload_ctk_frame_extents (MetaWindow    *window,
     {
       if (value->v.cardinal_list.n_cardinals != 4)
         {
-          meta_verbose ("_GTK_FRAME_EXTENTS on %s has %d values instead of 4\n",
+          meta_verbose ("_CTK_FRAME_EXTENTS on %s has %d values instead of 4\n",
                         window->desc, value->v.cardinal_list.n_cardinals);
         }
       else
@@ -1600,8 +1600,8 @@ meta_display_init_window_prop_hooks (MetaDisplay *display)
     { XA_WM_HINTS,                     META_PROP_VALUE_WM_HINTS,  reload_wm_hints },
     { XA_WM_TRANSIENT_FOR,             META_PROP_VALUE_WINDOW,    reload_transient_for },
     { display->atom__NET_WM_USER_TIME_WINDOW, META_PROP_VALUE_WINDOW, reload_net_wm_user_time_window },
-    { display->atom__GTK_THEME_VARIANT, META_PROP_VALUE_UTF8, reload_ctk_theme_variant, },
-    { display->atom__GTK_FRAME_EXTENTS, META_PROP_VALUE_CARDINAL_LIST, reload_ctk_frame_extents },
+    { display->atom__CTK_THEME_VARIANT, META_PROP_VALUE_UTF8, reload_ctk_theme_variant, },
+    { display->atom__CTK_FRAME_EXTENTS, META_PROP_VALUE_CARDINAL_LIST, reload_ctk_frame_extents },
     { 0 },
   };
 

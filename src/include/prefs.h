@@ -95,7 +95,7 @@ MetaFocusNewWindows         meta_prefs_get_focus_new_windows  (void);
 gboolean                    meta_prefs_get_attach_modal_dialogs (void);
 gboolean                    meta_prefs_get_raise_on_click     (void);
 const char*                 meta_prefs_get_theme              (void);
-/* returns NULL if GTK default should be used */
+/* returns NULL if CTK default should be used */
 const PangoFontDescription* meta_prefs_get_titlebar_font      (void);
 int                         meta_prefs_get_num_workspaces     (void);
 gboolean                    meta_prefs_get_application_based  (void);

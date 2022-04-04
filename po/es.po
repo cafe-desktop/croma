@@ -1943,10 +1943,10 @@ msgstr "Los degradados deben tener al menos dos colores"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"La especificación de color personalizado de GTK debe tener el nombre del "
+"La especificación de color personalizado de CTK debe tener el nombre del "
 "color y el respaldo entre paréntesis, por ejemplo, ctk:custom(foo,bar); no "
 "se ha podido interpretar «%s»"
 
@@ -1971,20 +1971,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"La especificación de color de GTK debe tener el estado entre corchetes, "
+"La especificación de color de CTK debe tener el estado entre corchetes, "
 "ejemplo. ctk:fg[NORMAL] donde NORMAL es el estado ; no se ha podido "
 "interpretar «%s»"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"La especificación de color de GTK debe tener un corchete cerrado después del"
+"La especificación de color de CTK debe tener un corchete cerrado después del"
 " estado, por ejemplo ctk:fg[NORMAL] donde NORMAL es el estado ; no se ha "
 "podido interpretar «%s»"
 

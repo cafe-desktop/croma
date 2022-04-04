@@ -1746,7 +1746,7 @@ msgstr "अनुपातमे कम सँ कम दुइ रँग हए
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1767,7 +1767,7 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "जीटीके रँग लक्षण कोष्ठकमे स्थिति (स्टेट) हए चाही जहिना-  ctk:fg[NORMAL] एतय "
@@ -1776,7 +1776,7 @@ msgstr ""
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "जीटीके रँग लक्षण स्थिति क' बाद बन्न कोष्ठकमे हए चाही. जहिना-  ctk:fg[NORMAL]"

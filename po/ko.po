@@ -1764,7 +1764,7 @@ msgstr "서서히 변하는 색으로 지정하려면 최소 2색이 필요합�
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1785,18 +1785,18 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK 색상 지정은 중괄호안에 있어야 합니다, 예: ctk:fg[NORMAL] NORMAL은 값; \"%s\"을(를) 분석할 수 없습니다"
+"CTK 색상 지정은 중괄호안에 있어야 합니다, 예: ctk:fg[NORMAL] NORMAL은 값; \"%s\"을(를) 분석할 수 없습니다"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK 색상 지정은 값 뒤에 중괄호로 닫혀 있어야 합니다, 예: ctk:fg[NORMAL]NORMAL은 값; \"%s\"을(를) 분석할 "
+"CTK 색상 지정은 값 뒤에 중괄호로 닫혀 있어야 합니다, 예: ctk:fg[NORMAL]NORMAL은 값; \"%s\"을(를) 분석할 "
 "수 없습니다"
 
 #: src/ui/theme.c:1496

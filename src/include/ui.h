@@ -1,6 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 
-/* Croma interface for talking to GTK+ UI module */
+/* Croma interface for talking to CTK+ UI module */
 
 /*
  * Copyright (C) 2001 Havoc Pennington
@@ -32,7 +32,7 @@
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <cairo/cairo.h>
 
-/* This is between GTK_PRIORITY_RESIZE (+10) and GDK_PRIORITY_REDRAW (+20) */
+/* This is between CTK_PRIORITY_RESIZE (+10) and GDK_PRIORITY_REDRAW (+20) */
 #define META_PRIORITY_RESIZE    (G_PRIORITY_HIGH_IDLE + 15)
 
 typedef struct _MetaUI MetaUI;

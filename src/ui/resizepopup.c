@@ -75,19 +75,19 @@ ensure_size_window (MetaResizePopup *popup)
   if (popup->size_window)
     return;
 
-  popup->size_window = ctk_window_new (GTK_WINDOW_POPUP);
+  popup->size_window = ctk_window_new (CTK_WINDOW_POPUP);
 
-  ctk_window_set_screen (GTK_WINDOW (popup->size_window),
+  ctk_window_set_screen (CTK_WINDOW (popup->size_window),
 			 gdk_display_get_default_screen (gdk_x11_lookup_xdisplay (popup->display)));
 
   /* never shrink the size window */
-  ctk_window_set_resizable (GTK_WINDOW (popup->size_window),
+  ctk_window_set_resizable (CTK_WINDOW (popup->size_window),
                             TRUE);
 
   frame = ctk_frame_new (NULL);
-  ctk_frame_set_shadow_type (GTK_FRAME (frame), GTK_SHADOW_OUT);
+  ctk_frame_set_shadow_type (CTK_FRAME (frame), CTK_SHADOW_OUT);
 
-  ctk_container_add (GTK_CONTAINER (popup->size_window), frame);
+  ctk_container_add (CTK_CONTAINER (popup->size_window), frame);
 
   popup->size_label = ctk_label_new ("");
   ctk_widget_set_margin_start (popup->size_label, 3);
@@ -95,7 +95,7 @@ ensure_size_window (MetaResizePopup *popup)
   ctk_widget_set_margin_top (popup->size_label, 3);
   ctk_widget_set_margin_bottom (popup->size_label, 3);
 
-  ctk_container_add (GTK_CONTAINER (frame), popup->size_label);
+  ctk_container_add (CTK_CONTAINER (frame), popup->size_label);
 
   ctk_widget_show_all (frame);
 }
@@ -110,7 +110,7 @@ update_size_window (MetaResizePopup *popup)
 
   g_return_if_fail (popup->size_window != NULL);
 
-  scale = ctk_widget_get_scale_factor (GTK_WIDGET (popup->size_window));
+  scale = ctk_widget_get_scale_factor (CTK_WIDGET (popup->size_window));
   /* Translators: This represents the size of a window.  The first number is
    * the width of the window and the second is the height.
    */
@@ -118,11 +118,11 @@ update_size_window (MetaResizePopup *popup)
                          popup->horizontal_size,
                          popup->vertical_size);
 
-  ctk_label_set_text (GTK_LABEL (popup->size_label), str);
+  ctk_label_set_text (CTK_LABEL (popup->size_label), str);
 
   g_free (str);
 
-  ctk_window_get_size (GTK_WINDOW (popup->size_window), &width, &height);
+  ctk_window_get_size (CTK_WINDOW (popup->size_window), &width, &height);
 
   x = popup->rect.x + (popup->rect.width - width) / 2;
   y = popup->rect.y + (popup->rect.height - height) / 2;
@@ -142,7 +142,7 @@ update_size_window (MetaResizePopup *popup)
     }
   else
     {
-      ctk_window_move   (GTK_WINDOW (popup->size_window),
+      ctk_window_move   (CTK_WINDOW (popup->size_window),
                          x, y);
     }
 }
@@ -156,7 +156,7 @@ sync_showing (MetaResizePopup *popup)
         ctk_widget_show (popup->size_window);
 
       if (popup->size_window && ctk_widget_get_realized (popup->size_window))
-        gdk_window_raise (ctk_widget_get_window(GTK_WIDGET(popup->size_window)));
+        gdk_window_raise (ctk_widget_get_window(CTK_WIDGET(popup->size_window)));
     }
   else
     {

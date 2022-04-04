@@ -33,7 +33,7 @@
 #include <X11/extensions/sync.h>
 #endif
 
-/* Copied from Lesstif by way of GTK. Rudimentary docs can be
+/* Copied from Lesstif by way of CTK. Rudimentary docs can be
  * found in some Motif reference guides online.
  */
 typedef struct {

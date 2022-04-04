@@ -1808,7 +1808,7 @@ msgstr "Los dilíos tienen que tener polo menos dos colores"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1829,20 +1829,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"La especificación de color GTK tien que tener l'estáu entre corchetes, "
+"La especificación de color CTK tien que tener l'estáu entre corchetes, "
 "exemplu. ctk:fg[NORMAL] onde NORMAL ye l'estáu; nun se fue quien a analizar "
 "\"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"La especificación de color GTK tien que tener un corchete zarráu dempués del"
+"La especificación de color CTK tien que tener un corchete zarráu dempués del"
 " estáu, exemplu. ctk:fg[NORMAL] onde NORMAL ye l'estáu; nun se fue quien a "
 "interpretar «%s»"
 

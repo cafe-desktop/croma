@@ -1838,7 +1838,7 @@ msgstr "ಗ್ರೇಡಿಯಂಟ್‌ ಕನಿಷ್ಟ ಎರಡು ಬಣ
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1859,20 +1859,20 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK ಬಣ್ಣವನ್ನು ಸೂಚಿಸುವಿಕೆಗಾಗಿ ಸ್ಥಿತಿಯಲ್ಲಿ ಆವರಣ ಚಿಹ್ನೆಯು ಇರಬೇಕು, ಉದಾ. "
+"CTK ಬಣ್ಣವನ್ನು ಸೂಚಿಸುವಿಕೆಗಾಗಿ ಸ್ಥಿತಿಯಲ್ಲಿ ಆವರಣ ಚಿಹ್ನೆಯು ಇರಬೇಕು, ಉದಾ. "
 "ctk:fg[NORMAL] ಆಗಿರುತ್ತದೆ, ಇಲ್ಲಿ NORMAL ಸ್ಥಿತಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ; \"%s\" "
 "ಅನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK ಬಣ್ಣವನ್ನು ಸೂಚಿಸುವಿಕೆಗಾಗಿ ಸ್ಥಿತಿಯ ನಂತರ ಮುಚ್ಚಲಾದ ಒಂದು ಆವರಣ ಚಿಹ್ನೆಯನ್ನು "
+"CTK ಬಣ್ಣವನ್ನು ಸೂಚಿಸುವಿಕೆಗಾಗಿ ಸ್ಥಿತಿಯ ನಂತರ ಮುಚ್ಚಲಾದ ಒಂದು ಆವರಣ ಚಿಹ್ನೆಯನ್ನು "
 "ಸೂಚಿಸಬೇಕು, ಉದಾ. ctk:fg[NORMAL] ಆಗಿರುತ್ತದೆ, ಇಲ್ಲಿ NORMAL ಸ್ಥಿತಿಯನ್ನು "
 "ಸೂಚಿಸುತ್ತದೆ; \"%s\" ಅನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
 

@@ -1,4 +1,4 @@
-/* Croma interface for talking to GTK+ UI module */
+/* Croma interface for talking to CTK+ UI module */
 
 /*
  * Copyright (C) 2002 Havoc Pennington
@@ -70,12 +70,12 @@ Display* meta_ui_get_display(void)
 }
 
 /* We do some of our event handling in frames.c, which expects
- * GDK events delivered by GTK+.  However, since the transition to
+ * GDK events delivered by CTK+.  However, since the transition to
  * client side windows, we can't let GDK see button events, since the
  * client-side tracking of implicit and explicit grabs it does will
  * get confused by our direct use of X grabs in the core code.
  *
- * So we do a very minimal GDK => GTK event conversion here and send on the
+ * So we do a very minimal GDK => CTK event conversion here and send on the
  * events we care about, and then filter them out so they don't go
  * through the normal GDK event handling.
  *
@@ -271,13 +271,13 @@ meta_ui_new (Display *xdisplay,
 
   g_assert (xdisplay == GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()));
   ui->frames = meta_frames_new ();
-  /* GTK+ needs the frame-sync protocol to work in order to properly
+  /* CTK+ needs the frame-sync protocol to work in order to properly
    * handle style changes. This means that the dummy widget we create
    * to get the style for title bars actually needs to be mapped
    * and fully tracked as a MetaWindow. Horrible, but mostly harmless -
    * the window is a 1x1 overide redirect window positioned offscreen.
    */
-  ctk_widget_show (GTK_WIDGET (ui->frames));
+  ctk_widget_show (CTK_WIDGET (ui->frames));
 
   g_object_set_data (G_OBJECT (gdisplay), "meta-ui", ui);
 
@@ -289,7 +289,7 @@ meta_ui_free (MetaUI *ui)
 {
   GdkDisplay *gdisplay;
 
-  ctk_widget_destroy (GTK_WIDGET (ui->frames));
+  ctk_widget_destroy (CTK_WIDGET (ui->frames));
 
   gdisplay = gdk_x11_lookup_xdisplay (ui->xdisplay);
   g_object_set_data (G_OBJECT (gdisplay), "meta-ui", NULL);
@@ -619,7 +619,7 @@ meta_ui_get_default_window_icon (MetaUI *ui)
   int scale;
   if (default_icon == NULL || current_icon_size != icon_size)
     {
-      scale = ctk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
+      scale = ctk_widget_get_scale_factor (CTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (current_icon_size, scale);
       g_assert (default_icon);
       icon_size = current_icon_size;
@@ -638,7 +638,7 @@ meta_ui_get_default_mini_icon (MetaUI *ui)
 
   if (default_icon == NULL)
     {
-      scale = ctk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
+      scale = ctk_widget_get_scale_factor (CTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (META_MINI_ICON_WIDTH, scale);
       g_assert (default_icon);
     }
@@ -682,7 +682,7 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
 
   if (meta_ui_have_a_theme ())
     {
-      context = ctk_widget_get_pango_context (GTK_WIDGET (ui->frames));
+      context = ctk_widget_get_pango_context (CTK_WIDGET (ui->frames));
       font_desc = meta_prefs_get_titlebar_font ();
 
       if (!font_desc)
@@ -694,12 +694,12 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
           style = ctk_style_context_new ();
           ctk_style_context_set_screen (style, screen);
           widget_path = ctk_widget_path_new ();
-          ctk_widget_path_append_type (widget_path, GTK_TYPE_WINDOW);
+          ctk_widget_path_append_type (widget_path, CTK_TYPE_WINDOW);
           ctk_style_context_set_path (style, widget_path);
           ctk_widget_path_free (widget_path);
 
           ctk_style_context_save (style);
-          ctk_style_context_set_state (style, GTK_STATE_FLAG_NORMAL);
+          ctk_style_context_set_state (style, CTK_STATE_FLAG_NORMAL);
           ctk_style_context_get (style,
                                  ctk_style_context_get_state (style),
                                  "font",
@@ -925,7 +925,7 @@ typedef struct {
 int meta_ui_get_drag_threshold(MetaUI* ui)
 {
 	int threshold = 8;
-	CtkSettings* settings = ctk_widget_get_settings(GTK_WIDGET(ui->frames));
+	CtkSettings* settings = ctk_widget_get_settings(CTK_WIDGET(ui->frames));
 
 	g_object_get(G_OBJECT(settings), "ctk-dnd-drag-threshold", &threshold, NULL);
 
@@ -934,7 +934,7 @@ int meta_ui_get_drag_threshold(MetaUI* ui)
 
 MetaUIDirection meta_ui_get_direction(void)
 {
-	if (ctk_widget_get_default_direction() == GTK_TEXT_DIR_RTL)
+	if (ctk_widget_get_default_direction() == CTK_TEXT_DIR_RTL)
 	{
 		return META_UI_DIRECTION_RTL;
 	}

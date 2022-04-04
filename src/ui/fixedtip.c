@@ -75,32 +75,32 @@ meta_fixed_tip_show (int root_x, int root_y,
     {
       GdkVisual *visual;
 
-      tip = ctk_window_new (GTK_WINDOW_POPUP);
+      tip = ctk_window_new (CTK_WINDOW_POPUP);
 
-      ctk_window_set_type_hint (GTK_WINDOW(tip), GDK_WINDOW_TYPE_HINT_TOOLTIP);
+      ctk_window_set_type_hint (CTK_WINDOW(tip), GDK_WINDOW_TYPE_HINT_TOOLTIP);
       ctk_style_context_add_class (ctk_widget_get_style_context (tip),
-                                   GTK_STYLE_CLASS_TOOLTIP);
+                                   CTK_STYLE_CLASS_TOOLTIP);
 
       screen = gdk_display_get_default_screen (gdk_display_get_default ());
       visual = gdk_screen_get_rgba_visual (screen);
 
-      ctk_window_set_screen (GTK_WINDOW (tip), screen);
+      ctk_window_set_screen (CTK_WINDOW (tip), screen);
 
       if (visual != NULL)
         ctk_widget_set_visual (tip, visual);
 
       ctk_widget_set_app_paintable (tip, TRUE);
-      ctk_window_set_resizable (GTK_WINDOW (tip), FALSE);
+      ctk_window_set_resizable (CTK_WINDOW (tip), FALSE);
       g_signal_connect (tip, "draw", G_CALLBACK (draw_handler), NULL);
 
       label = ctk_label_new (NULL);
-      ctk_label_set_line_wrap (GTK_LABEL (label), TRUE);
-      ctk_label_set_xalign (GTK_LABEL (label), 0.5);
-      ctk_label_set_yalign (GTK_LABEL (label), 0.5);
+      ctk_label_set_line_wrap (CTK_LABEL (label), TRUE);
+      ctk_label_set_xalign (CTK_LABEL (label), 0.5);
+      ctk_label_set_yalign (CTK_LABEL (label), 0.5);
       ctk_widget_show (label);
 
-      ctk_container_set_border_width (GTK_CONTAINER (tip), 4);
-      ctk_container_add (GTK_CONTAINER (tip), label);
+      ctk_container_set_border_width (CTK_CONTAINER (tip), 4);
+      ctk_container_add (CTK_CONTAINER (tip), label);
 
       g_signal_connect (tip, "destroy",
 			G_CALLBACK (ctk_widget_destroyed), &tip);
@@ -110,9 +110,9 @@ meta_fixed_tip_show (int root_x, int root_y,
   gdk_monitor_get_geometry (mon_num, &monitor);
   screen_right_edge = monitor.x + monitor.width;
 
-  ctk_label_set_markup (GTK_LABEL (label), markup_text);
+  ctk_label_set_markup (CTK_LABEL (label), markup_text);
 
-  ctk_window_get_size (GTK_WINDOW (tip), &w, &h);
+  ctk_window_get_size (CTK_WINDOW (tip), &w, &h);
 
   if (meta_ui_get_direction() == META_UI_DIRECTION_RTL)
       root_x = MAX(0, root_x - w);
@@ -120,7 +120,7 @@ meta_fixed_tip_show (int root_x, int root_y,
   if ((root_x + w) > screen_right_edge)
     root_x -= (root_x + w) - screen_right_edge;
 
-  ctk_window_move (GTK_WINDOW (tip), root_x, root_y);
+  ctk_window_move (CTK_WINDOW (tip), root_x, root_y);
 
   ctk_widget_show (tip);
 }

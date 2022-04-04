@@ -107,7 +107,7 @@ static void popup_position_func(CtkMenu* menu, gint* x, gint* y, gboolean* push_
 
 	pos = user_data;
 
-	ctk_widget_get_preferred_size (GTK_WIDGET (menu), &req, NULL);
+	ctk_widget_get_preferred_size (CTK_WIDGET (menu), &req, NULL);
 
 	*x = pos->x;
 	*y = pos->y;
@@ -145,7 +145,7 @@ static void activate_cb(CtkWidget* menuitem, gpointer data)
 {
   MenuData* md;
 
-  g_return_if_fail (GTK_IS_WIDGET (menuitem));
+  g_return_if_fail (CTK_IS_WIDGET (menuitem));
 
   md = data;
 
@@ -268,25 +268,25 @@ static CtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
 	}
 	else if (menuitem->type == MENU_ITEM_IMAGE)
 	{
-		CtkWidget* image = ctk_image_new_from_icon_name(menuitem->stock_id, GTK_ICON_SIZE_MENU);
+		CtkWidget* image = ctk_image_new_from_icon_name(menuitem->stock_id, CTK_ICON_SIZE_MENU);
 
 		mi = ctk_image_menu_item_new();
 
-		ctk_image_menu_item_set_image(GTK_IMAGE_MENU_ITEM(mi), image);
+		ctk_image_menu_item_set_image(CTK_IMAGE_MENU_ITEM(mi), image);
 		ctk_widget_show(image);
 	}
 	else if (menuitem->type == MENU_ITEM_CHECKBOX)
 	{
 		mi = ctk_check_menu_item_new ();
 
-		ctk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(mi), menuitem->checked);
+		ctk_check_menu_item_set_active(CTK_CHECK_MENU_ITEM(mi), menuitem->checked);
     }
 	else if (menuitem->type == MENU_ITEM_RADIOBUTTON)
 	{
 		mi = ctk_check_menu_item_new ();
 
-		ctk_check_menu_item_set_draw_as_radio (GTK_CHECK_MENU_ITEM (mi), TRUE);
-		ctk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi), menuitem->checked);
+		ctk_check_menu_item_set_draw_as_radio (CTK_CHECK_MENU_ITEM (mi), TRUE);
+		ctk_check_menu_item_set_active (CTK_CHECK_MENU_ITEM (mi), menuitem->checked);
 	}
 	else if (menuitem->type == MENU_ITEM_WORKSPACE_LIST)
 	{
@@ -301,9 +301,9 @@ static CtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
 	meta_core_get_menu_accelerator (menuitem->op, workspace_id, &key, &mods);
 
 	accel_label = meta_accel_label_new_with_mnemonic (i18n_label);
-	ctk_widget_set_halign (accel_label, GTK_ALIGN_START);
+	ctk_widget_set_halign (accel_label, CTK_ALIGN_START);
 
-	ctk_container_add (GTK_CONTAINER (mi), accel_label);
+	ctk_container_add (CTK_CONTAINER (mi), accel_label);
 	ctk_widget_show (accel_label);
 
 	meta_accel_label_set_accelerator (META_ACCEL_LABEL (accel_label), key, mods);
@@ -341,8 +341,8 @@ meta_window_menu_new   (MetaFrames         *frames,
 
   menu->menu = ctk_menu_new ();
 
-  ctk_menu_set_screen (GTK_MENU (menu->menu),
-                       ctk_widget_get_screen (GTK_WIDGET (frames)));
+  ctk_menu_set_screen (CTK_MENU (menu->menu),
+                       ctk_widget_get_screen (CTK_WIDGET (frames)));
 
   for (i = 0; i < (int) G_N_ELEMENTS (menuitems); i++)
     {
@@ -360,11 +360,11 @@ meta_window_menu_new   (MetaFrames         *frames,
           switch (menuitem.op)
             {
             case META_MENU_OP_STICK:
-              ctk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi),
+              ctk_check_menu_item_set_active (CTK_CHECK_MENU_ITEM (mi),
                                               active_workspace == 0xFFFFFFFF);
               break;
             case META_MENU_OP_UNSTICK:
-              ctk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi),
+              ctk_check_menu_item_set_active (CTK_CHECK_MENU_ITEM (mi),
                                               active_workspace != 0xFFFFFFFF);
               break;
             default:
@@ -391,7 +391,7 @@ meta_window_menu_new   (MetaFrames         *frames,
                   meta_verbose ("Creating %d-workspace menu current space %lu\n",
                       n_workspaces, active_workspace);
 
-                  window = ctk_widget_get_window (GTK_WIDGET (frames));
+                  window = ctk_widget_get_window (CTK_WIDGET (frames));
 
                   display = GDK_WINDOW_XDISPLAY (window);
 
@@ -402,7 +402,7 @@ meta_window_menu_new   (MetaFrames         *frames,
 
                   g_assert (mi==NULL);
                   mi = menu_item_new (&to_another_workspace, -1);
-                  ctk_menu_item_set_submenu (GTK_MENU_ITEM (mi), submenu);
+                  ctk_menu_item_set_submenu (CTK_MENU_ITEM (mi), submenu);
 
                   for (j = 0; j < n_workspaces; j++)
                     {
@@ -444,7 +444,7 @@ meta_window_menu_new   (MetaFrames         *frames,
                           md,
                           (GClosureNotify) g_free, 0);
 
-                      ctk_menu_shell_append (GTK_MENU_SHELL (submenu), submi);
+                      ctk_menu_shell_append (CTK_MENU_SHELL (submenu), submi);
 
                       ctk_widget_show (submi);
                     }
@@ -474,7 +474,7 @@ meta_window_menu_new   (MetaFrames         *frames,
 
           if (mi)
             {
-              ctk_menu_shell_append (GTK_MENU_SHELL (menu->menu), mi);
+              ctk_menu_shell_append (CTK_MENU_SHELL (menu->menu), mi);
 
               ctk_widget_show (mi);
             }
@@ -498,7 +498,7 @@ void meta_window_menu_popup(MetaWindowMenu* menu, int root_x, int root_y, int bu
 	pt->x = root_x / scale;
 	pt->y = root_y / scale;
 
-	ctk_menu_popup(GTK_MENU (menu->menu), NULL, NULL, popup_position_func, pt, button, timestamp);
+	ctk_menu_popup(CTK_MENU (menu->menu), NULL, NULL, popup_position_func, pt, button, timestamp);
 
     if (!ctk_widget_get_visible (menu->menu))
       meta_warning("CtkMenu failed to grab the pointer\n");

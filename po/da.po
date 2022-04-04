@@ -1892,10 +1892,10 @@ msgstr "Farveovergange skal mindst have to farver"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"Den tilpassede GTK-farvespecifikation skal have farvenavn og reserve i "
+"Den tilpassede CTK-farvespecifikation skal have farvenavn og reserve i "
 "parentes, f.eks. ctk:custom(foo,bar) kunne ikke fortolke »%s«"
 
 #: src/ui/theme.c:1413
@@ -1919,19 +1919,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-farvespecifikation skal have tilstanden i firkantede klammer, f.eks. "
+"CTK-farvespecifikation skal have tilstanden i firkantede klammer, f.eks. "
 "ctk:fg[NORMAL] hvor NORMAL er tilstanden; kunne ikke fortolke »%s«"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-farvespecifikation skal have en afsluttende klamme efter tilstanden, "
+"CTK-farvespecifikation skal have en afsluttende klamme efter tilstanden, "
 "f.eks. ctk:fg[NORMAL] hvor NORMAL er tilstanden; kunne ikke fortolke »%s«"
 
 #: src/ui/theme.c:1496

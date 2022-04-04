@@ -1885,10 +1885,10 @@ msgstr "Přechody by měly mít alespoň dvě barvy"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
-"Specifikace vlastní barvy GTK musí mít v parametrech název barvy a fallback,"
+"Specifikace vlastní barvy CTK musí mít v parametrech název barvy a fallback,"
 "  například ctk:custom(foo,bar); nelze zpracovat „%s”"
 
 #: src/ui/theme.c:1413
@@ -1912,19 +1912,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Specifikace GTK barvy musí mít stav v hranatých závorkách, např. "
+"Specifikace CTK barvy musí mít stav v hranatých závorkách, např. "
 "ctk:fg[NORMAL], kde NORMAL je stav; nelze analyzovat \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Specifikace GTK barvy musí mít za stavem hranatou závorku, např. "
+"Specifikace CTK barvy musí mít za stavem hranatou závorku, např. "
 "ctk:fg[NORMAL], kde NORMAL je stav; nelze analyzovat \"%s\""
 
 #: src/ui/theme.c:1496

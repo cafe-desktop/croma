@@ -15,13 +15,13 @@ Jobs of various files
 
   src/frames.c is the CtkWidget that handles drawing window frames.
 
-  src/core.h defines the interface used by the GTK portion of the window
+  src/core.h defines the interface used by the CTK portion of the window
   manager to talk to the other portions. There's some cruft in here that's
   unused, since nearly all window operations have moved out of this file so
   frameless apps can have window operations.
 
   src/ui.h defines the interface the plain Xlib portion of the window
-  manager uses to talk to the GTK portion.
+  manager uses to talk to the CTK portion.
 
   src/theme.c and src/theme-parser.c have the theme system; this is
   well-modularized from the rest of the code, since the theme viewer app

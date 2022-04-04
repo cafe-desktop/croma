@@ -622,7 +622,7 @@ meta_window_new_with_attrs (MetaDisplay       *display,
   initial_props[i++] = XA_WM_TRANSIENT_FOR;
   initial_props[i++] = display->atom__NET_WM_USER_TIME_WINDOW;
   initial_props[i++] = display->atom__NET_WM_FULLSCREEN_MONITORS;
-  initial_props[i++] = display->atom__GTK_THEME_VARIANT;
+  initial_props[i++] = display->atom__CTK_THEME_VARIANT;
   g_assert (N_INITIAL_PROPS == i);
 
   meta_window_reload_properties (window, initial_props, N_INITIAL_PROPS, TRUE);
@@ -5583,7 +5583,7 @@ meta_window_client_message (MetaWindow *window,
       meta_window_update_fullscreen_monitors (window, top, bottom, left, right);
     }
   else if (event->xclient.message_type ==
-           display->atom__GTK_SHOW_WINDOW_MENU)
+           display->atom__CTK_SHOW_WINDOW_MENU)
     {
       gulong x_root, y_root;
       guint32 timestamp;
@@ -8888,8 +8888,8 @@ gboolean
 meta_window_is_client_decorated (MetaWindow *window)
 {
   /* Currently the implementation here is hackish -
-   * has_custom_frame_extents() is set if _GTK_FRAME_EXTENTS is set
-   * to any value even 0. GTK+ always sets _GTK_FRAME_EXTENTS for
+   * has_custom_frame_extents() is set if _CTK_FRAME_EXTENTS is set
+   * to any value even 0. CTK+ always sets _CTK_FRAME_EXTENTS for
    * client-side-decorated window, even if the value is 0 because
    * the window is maxized and has no invisible borders or shadows.
    */

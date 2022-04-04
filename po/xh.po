@@ -1723,7 +1723,7 @@ msgstr "Ukuthambeka kufuneka kube nemibala emibini ubuncinane"
 #: src/ui/theme.c:1397
 #, c-format
 msgid ""
-"GTK custom color specification must have color name and fallback in "
+"CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
@@ -1744,19 +1744,19 @@ msgstr ""
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Ubalulo lombala we-GTK kufuneka ube nemeko kwizibiyeli, umz. ctk:fg[NORMAL] "
+"Ubalulo lombala we-CTK kufuneka ube nemeko kwizibiyeli, umz. ctk:fg[NORMAL] "
 "apho u-QHELEKILEYO eyimeko; alunokwahlula njengezijungqu \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
-"GTK color specification must have a close bracket after the state, e.g. "
+"CTK color specification must have a close bracket after the state, e.g. "
 "ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Ubalulo lombala we-GTK kufuneka ube nesibiyeli esikufuphi emva kwemeko, umz."
+"Ubalulo lombala we-CTK kufuneka ube nesibiyeli esikufuphi emva kwemeko, umz."
 " ctk:fg[NORMAL] apho u-QHELEKILEYO eyimeko; alunokwahlula njengezijungqe "
 "\"%s\""
 

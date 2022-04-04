@@ -2,7 +2,7 @@
 
 /* Croma hacked-up CtkAccelLabel */
 /* Copyright (C) 2002 Red Hat, Inc. */
-/* GTK - The GIMP Toolkit
+/* CTK - The GIMP Toolkit
  * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald
  *
  * MetaAccelLabel: CtkLabel with accelerator monitoring facilities.
@@ -25,10 +25,10 @@
  */
 
 /*
- * Modified by the GTK+ Team and others 1997-2001.  See the AUTHORS
- * file for a list of people on the GTK+ Team.  See the ChangeLog
+ * Modified by the CTK+ Team and others 1997-2001.  See the AUTHORS
+ * file for a list of people on the CTK+ Team.  See the ChangeLog
  * files for a list of changes.  These files are distributed with
- * GTK+ at ftp://ftp.ctk.org/pub/ctk/.
+ * CTK+ at ftp://ftp.ctk.org/pub/ctk/.
  */
 
 #include <config.h>
@@ -54,13 +54,13 @@ static gboolean meta_accel_label_draw         (CtkWidget           *widget,
                                                cairo_t             *cr);
 
 
-G_DEFINE_TYPE (MetaAccelLabel, meta_accel_label, GTK_TYPE_LABEL);
+G_DEFINE_TYPE (MetaAccelLabel, meta_accel_label, CTK_TYPE_LABEL);
 
 static void
 meta_accel_label_class_init (MetaAccelLabelClass *class)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (class);
-  CtkWidgetClass *widget_class = GTK_WIDGET_CLASS (class);
+  CtkWidgetClass *widget_class = CTK_WIDGET_CLASS (class);
 
   gobject_class->finalize = meta_accel_label_finalize;
 
@@ -156,9 +156,9 @@ meta_accel_label_new_with_mnemonic (const gchar *string)
 
   accel_label = g_object_new (META_TYPE_ACCEL_LABEL, NULL);
 
-  ctk_label_set_text_with_mnemonic (GTK_LABEL (accel_label), string);
+  ctk_label_set_text_with_mnemonic (CTK_LABEL (accel_label), string);
 
-  return GTK_WIDGET (accel_label);
+  return CTK_WIDGET (accel_label);
 }
 
 static void
@@ -173,7 +173,7 @@ meta_accel_label_destroy (CtkWidget *object)
   accel_label->accel_mods = 0;
   accel_label->accel_key = 0;
 
-  GTK_WIDGET_CLASS (meta_accel_label_parent_class)->destroy (object);
+  CTK_WIDGET_CLASS (meta_accel_label_parent_class)->destroy (object);
 }
 
 static void
@@ -221,7 +221,7 @@ meta_accel_label_get_preferred_width (CtkWidget *widget,
   PangoLayout *layout;
   gint width;
 
-  GTK_WIDGET_CLASS (meta_accel_label_parent_class)->get_preferred_width (widget, minimum, natural);
+  CTK_WIDGET_CLASS (meta_accel_label_parent_class)->get_preferred_width (widget, minimum, natural);
 
   layout = ctk_widget_create_pango_layout (widget, accel_label->accel_string);
   pango_layout_get_pixel_size (layout, &width, NULL);
@@ -235,7 +235,7 @@ meta_accel_label_get_preferred_height (CtkWidget *widget,
                                        gint      *minimum,
                                        gint      *natural)
 {
-  GTK_WIDGET_CLASS (meta_accel_label_parent_class)->get_preferred_height (widget, minimum, natural);
+  CTK_WIDGET_CLASS (meta_accel_label_parent_class)->get_preferred_height (widget, minimum, natural);
 }
 
 static gboolean
@@ -259,19 +259,19 @@ meta_accel_label_draw (CtkWidget *widget,
       CtkStyleContext *style;
       PangoLayout *label_layout;
       PangoLayout *accel_layout;
-      CtkLabel *label = GTK_LABEL (widget);
+      CtkLabel *label = CTK_LABEL (widget);
       gint x, y, xpad, ypad;
       gint margin_start, margin_end, margin_top, margin_bottom;
       gfloat yalign;
 
-      label_layout = ctk_label_get_layout (GTK_LABEL (accel_label));
-      yalign = ctk_label_get_yalign (GTK_LABEL (accel_label));
+      label_layout = ctk_label_get_layout (CTK_LABEL (accel_label));
+      yalign = ctk_label_get_yalign (CTK_LABEL (accel_label));
 
       cairo_save (cr);
 
       /* XXX: Mad hack: We modify the label's width so it renders
        * properly in its draw function that we chain to. */
-      if (direction == GTK_TEXT_DIR_RTL)
+      if (direction == CTK_TEXT_DIR_RTL)
         cairo_translate (cr, ac_width, 0);
       if (ctk_label_get_ellipsize (label))
         pango_layout_set_width (label_layout,
@@ -280,8 +280,8 @@ meta_accel_label_draw (CtkWidget *widget,
 
       allocation.width -= ac_width;
       ctk_widget_set_allocation (widget, &allocation);
-      if (GTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw)
-        GTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw (widget,
+      if (CTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw)
+        CTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw (widget,
                                                                cr);
       allocation.width += ac_width;
       ctk_widget_set_allocation (widget, &allocation);
@@ -300,12 +300,12 @@ meta_accel_label_draw (CtkWidget *widget,
       xpad = margin_start + margin_end;
       ypad = margin_top + margin_bottom;
 
-      if (direction == GTK_TEXT_DIR_RTL)
+      if (direction == CTK_TEXT_DIR_RTL)
         x = xpad;
       else
         x = ctk_widget_get_allocated_width (widget) - xpad - ac_width;
 
-      ctk_label_get_layout_offsets (GTK_LABEL (accel_label), NULL, &y);
+      ctk_label_get_layout_offsets (CTK_LABEL (accel_label), NULL, &y);
 
       accel_layout = ctk_widget_create_pango_layout (widget, accel_label->accel_string);
 
@@ -325,8 +325,8 @@ meta_accel_label_draw (CtkWidget *widget,
     }
   else
     {
-      if (GTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw)
-        GTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw (widget, cr);
+      if (CTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw)
+        CTK_WIDGET_CLASS (meta_accel_label_parent_class)->draw (widget, cr);
     }
 
   return FALSE;
@@ -457,5 +457,5 @@ meta_accel_label_update (MetaAccelLabel *accel_label)
   g_assert (accel_label->accel_string);
   /* accel_label->accel_string = g_strdup ("-/-"); */
 
-  ctk_widget_queue_resize (GTK_WIDGET (accel_label));
+  ctk_widget_queue_resize (CTK_WIDGET (accel_label));
 }
