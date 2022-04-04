@@ -57,7 +57,7 @@ blank_pixbuf (int width, int height)
   if (!buf)
     return NULL;
 
-  return gdk_pixbuf_new_from_data (buf, CDK_COLORSPACE_RGB,
+  return gdk_pixbuf_new_from_data (buf, GDK_COLORSPACE_RGB,
                                    TRUE, 8,
                                    width, height, rowstride,
                                    free_buffer, NULL);
@@ -468,7 +468,7 @@ meta_gradient_create_multi_diagonal (int width, int height,
   else if (height == 1)
     return meta_gradient_create_multi_horizontal (width, height, colors, count);
 
-  pixbuf = gdk_pixbuf_new (CDK_COLORSPACE_RGB, FALSE, 8,
+  pixbuf = gdk_pixbuf_new (GDK_COLORSPACE_RGB, FALSE, 8,
                            width, height);
   if (pixbuf == NULL)
     return NULL;
