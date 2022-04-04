@@ -35,7 +35,7 @@
 #include "../core/frame-private.h"
 #include "draw-workspace.h"
 #include <ctk/ctk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include <math.h>
 
 #define OUTSIDE_SELECT_RECT 8
@@ -97,7 +97,7 @@ outline_window_draw (CtkWidget *widget,
 
   te = popup->current_selected_entry;
 
-  gdk_cairo_set_source_rgba (cr, &black);
+  cdk_cairo_set_source_rgba (cr, &black);
   cairo_paint (cr);
 
   cairo_set_line_width (cr, 1.0);
@@ -125,10 +125,10 @@ popup_window_screen_changed (CtkWidget *widget,
 {
   /* To check if the display supports alpha channels, get the visual */
   GdkScreen *screen = ctk_widget_get_screen (widget);
-  GdkVisual *visual = gdk_screen_get_rgba_visual (screen);
+  GdkVisual *visual = cdk_screen_get_rgba_visual (screen);
 
   if (!visual)
-    visual = gdk_screen_get_system_visual (screen);
+    visual = cdk_screen_get_system_visual (screen);
 
   ctk_widget_set_visual(widget, visual);
 }
@@ -141,22 +141,22 @@ dimm_icon (GdkPixbuf *pixbuf)
   int w, h;
   GdkPixbuf *dimmed_pixbuf;
 
-  if (gdk_pixbuf_get_has_alpha (pixbuf))
+  if (cdk_pixbuf_get_has_alpha (pixbuf))
     {
-      dimmed_pixbuf = gdk_pixbuf_copy (pixbuf);
+      dimmed_pixbuf = cdk_pixbuf_copy (pixbuf);
     }
   else
     {
-      dimmed_pixbuf = gdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
+      dimmed_pixbuf = cdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
     }
 
-  w = gdk_pixbuf_get_width (dimmed_pixbuf);
-  h = gdk_pixbuf_get_height (dimmed_pixbuf);
+  w = cdk_pixbuf_get_width (dimmed_pixbuf);
+  h = cdk_pixbuf_get_height (dimmed_pixbuf);
 
   pixel_stride = 4;
 
-  row = gdk_pixbuf_get_pixels (dimmed_pixbuf);
-  row_stride = gdk_pixbuf_get_rowstride (dimmed_pixbuf);
+  row = cdk_pixbuf_get_pixels (dimmed_pixbuf);
+  row_stride = cdk_pixbuf_get_rowstride (dimmed_pixbuf);
 
   for (y = 0; y < h; y++)
     {
@@ -256,7 +256,7 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
 
   popup = g_new (MetaTabPopup, 1);
 
-  screen = gdk_display_get_default_screen (gdk_display_get_default ());
+  screen = cdk_display_get_default_screen (cdk_display_get_default ());
 
   if (border & BORDER_OUTLINE_WINDOW)
     {
@@ -504,7 +504,7 @@ meta_ui_tab_popup_set_showing (MetaTabPopup *popup,
         {
           meta_verbose ("Hiding tab popup window\n");
           ctk_widget_hide (popup->window);
-          meta_core_increment_event_serial (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()));
+          meta_core_increment_event_serial (GDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
         }
     }
 }
@@ -536,8 +536,8 @@ display_entry (MetaTabPopup *popup,
 
       window = ctk_widget_get_window (popup->outline_window);
       /* Do stuff behind ctk's back */
-      gdk_window_hide (window);
-      meta_core_increment_event_serial (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()));
+      cdk_window_hide (window);
+      meta_core_increment_event_serial (GDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
 
       rect = te->rect;
       rect.x = 0;
@@ -549,12 +549,12 @@ display_entry (MetaTabPopup *popup,
       region = cairo_region_create_rectangle (&rect);
       cairo_region_subtract_rectangle (region, &te->inner_rect);
 
-      gdk_window_shape_combine_region (ctk_widget_get_window (popup->outline_window),
+      cdk_window_shape_combine_region (ctk_widget_get_window (popup->outline_window),
                                        region,
                                        0, 0);
 
       cairo_region_destroy (region);
-      gdk_window_show_unraised (window);
+      cdk_window_show_unraised (window);
     }
 
   /* Must be before we handle an expose for the outline window */
@@ -761,7 +761,7 @@ selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface)
       cairo_surface_t *surface;
 
       scale = ctk_widget_get_scale_factor (widget);
-      surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale, NULL);
+      surface = cdk_cairo_surface_create_from_pixbuf (pixbuf, scale, NULL);
 
       ctk_image_set_from_surface (CTK_IMAGE (widget), surface);
 

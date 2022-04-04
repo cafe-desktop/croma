@@ -5674,7 +5674,7 @@ meta_window_notify_focus (MetaWindow *window,
               meta_event_detail_to_string (event->xfocus.detail) : "n/a");
 
   /* FIXME our pointer tracking is broken; see how
-   * ctk+/gdk/x11/gdkevents-x11.c or XFree86/xc/programs/xterm/misc.c
+   * ctk+/cdk/x11/cdkevents-x11.c or XFree86/xc/programs/xterm/misc.c
    * handle it for the correct way.  In brief you need to track
    * pointer focus and regular focus, and handle EnterNotify in
    * PointerRoot mode with no window manager.  However as noted above,
@@ -8262,7 +8262,7 @@ meta_window_refresh_resize_popup (MetaWindow *window)
 
   if (window->display->grab_resize_popup == NULL)
     {
-      gint scale = gdk_window_get_scale_factor (gdk_get_default_root_window ());
+      gint scale = cdk_window_get_scale_factor (cdk_get_default_root_window ());
       /* Display the resize popup only for windows that report an
        * increment hint that's larger than the scale factor. */
       if (window->size_hints.width_inc > scale ||

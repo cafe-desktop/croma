@@ -26,7 +26,7 @@
 #define META_CORE_H
 
 /* Don't include core headers here */
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include "common.h"
 
 typedef enum

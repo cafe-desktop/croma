@@ -24,12 +24,12 @@
 #ifndef META_RESIZEPOPUP_H
 #define META_RESIZEPOPUP_H
 
-/* Don't include ctk.h or gdk.h here */
+/* Don't include ctk.h or cdk.h here */
 #include "boxes.h"
 #include "common.h"
 #include <X11/Xlib.h>
 #include <glib.h>
-#include <gdk-pixbuf/gdk-pixbuf.h>
+#include <cdk-pixbuf/cdk-pixbuf.h>
 
 MetaResizePopup* meta_ui_resize_popup_new          (Display *display,
                                                     int      screen_number);

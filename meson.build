@@ -286,7 +286,7 @@ if get_option('sm') and sm_dep.found() and ice_dep.found()
   croma_message_deps += [ sm_dep, ice_dep ]
 endif
 
-gdk_pixbuf_csource = find_program('gdk-pixbuf-csource')
+cdk_pixbuf_csource = find_program('cdk-pixbuf-csource')
 zenity = find_program('zenity')
 
 libxext = cc.find_library('Xext', required: false)

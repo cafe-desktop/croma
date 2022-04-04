@@ -81,8 +81,8 @@ meta_fixed_tip_show (int root_x, int root_y,
       ctk_style_context_add_class (ctk_widget_get_style_context (tip),
                                    CTK_STYLE_CLASS_TOOLTIP);
 
-      screen = gdk_display_get_default_screen (gdk_display_get_default ());
-      visual = gdk_screen_get_rgba_visual (screen);
+      screen = cdk_display_get_default_screen (cdk_display_get_default ());
+      visual = cdk_screen_get_rgba_visual (screen);
 
       ctk_window_set_screen (CTK_WINDOW (tip), screen);
 
@@ -106,8 +106,8 @@ meta_fixed_tip_show (int root_x, int root_y,
 			G_CALLBACK (ctk_widget_destroyed), &tip);
     }
 
-  mon_num = gdk_display_get_monitor_at_point (gdk_screen_get_display (screen), root_x, root_y);
-  gdk_monitor_get_geometry (mon_num, &monitor);
+  mon_num = cdk_display_get_monitor_at_point (cdk_screen_get_display (screen), root_x, root_y);
+  cdk_monitor_get_geometry (mon_num, &monitor);
   screen_right_edge = monitor.x + monitor.width;
 
   ctk_label_set_markup (CTK_LABEL (label), markup_text);

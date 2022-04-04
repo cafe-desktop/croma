@@ -81,7 +81,7 @@ get_background_color (CtkStyleContext *context,
                          NULL);
 
   *color = *c;
-  gdk_rgba_free (c);
+  cdk_rgba_free (c);
 }
 
 static void
@@ -110,7 +110,7 @@ draw_window (CtkWidget                   *widget,
   else
     get_background_color (style, state, &color);
 
-  gdk_cairo_set_source_rgba (cr, &color);
+  cdk_cairo_set_source_rgba (cr, &color);
 
   cairo_rectangle (cr,
                    winrect->x + 1, winrect->y + 1,
@@ -119,7 +119,7 @@ draw_window (CtkWidget                   *widget,
 
   scale = ctk_widget_get_scale_factor (widget);
 
-  icon = gdk_cairo_surface_create_from_pixbuf (win->icon, scale, NULL);
+  icon = cdk_cairo_surface_create_from_pixbuf (win->icon, scale, NULL);
 
   icon_w = icon_h = 0;
 
@@ -132,7 +132,7 @@ draw_window (CtkWidget                   *widget,
       if (icon_w > (winrect->width - 2) || icon_h > (winrect->height - 2))
         {
           cairo_surface_destroy (icon);
-          icon = gdk_cairo_surface_create_from_pixbuf (win->mini_icon, scale, NULL);
+          icon = cdk_cairo_surface_create_from_pixbuf (win->mini_icon, scale, NULL);
           if (icon)
             {
               icon_w = cairo_image_surface_get_width (icon) / scale;
@@ -164,7 +164,7 @@ draw_window (CtkWidget                   *widget,
     }
 
   ctk_style_context_get_color (style, state, &color);
-  gdk_cairo_set_source_rgba (cr, &color);
+  cdk_cairo_set_source_rgba (cr, &color);
 
   cairo_set_line_width (cr, 1.0);
   cairo_rectangle (cr,
@@ -211,7 +211,7 @@ wnck_draw_workspace (CtkWidget                   *widget,
 
   if (workspace_background)
     {
-      gdk_cairo_set_source_pixbuf (cr, workspace_background, x, y);
+      cdk_cairo_set_source_pixbuf (cr, workspace_background, x, y);
       cairo_paint (cr);
     }
   else
@@ -221,7 +221,7 @@ wnck_draw_workspace (CtkWidget                   *widget,
       meta_ctk_style_get_dark_color (style, state, &color);
       color.alpha = 0.25;
 
-      gdk_cairo_set_source_rgba (cr, &color);
+      cdk_cairo_set_source_rgba (cr, &color);
       cairo_rectangle (cr, x, y, width, height);
       cairo_fill (cr);
     }

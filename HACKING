@@ -213,9 +213,9 @@ Debugging information
     of window without launching a full desktop.
 
 Technical gotchas to keep in mind
-  Files that include gdk.h or ctk.h are not supposed to include
+  Files that include cdk.h or ctk.h are not supposed to include
   display.h or window.h or other core files.  Files in the core
-  (display.[hc], window.[hc]) are not supposed to include gdk.h or
+  (display.[hc], window.[hc]) are not supposed to include cdk.h or
   ctk.h.  Reasons:
 
     "Basically you don't want GDK most of the time. It adds

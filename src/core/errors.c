@@ -27,27 +27,27 @@
 #include "display-private.h"
 #include <errno.h>
 #include <stdlib.h>
-#include <gdk/gdk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdk.h>
+#include <cdk/cdkx.h>
 #include <ctk/ctk.h>
 
 void
 meta_error_trap_push (MetaDisplay *display)
 {
-  gdk_x11_display_error_trap_push (gdk_x11_lookup_xdisplay (meta_display_get_xdisplay (display)));
+  cdk_x11_display_error_trap_push (cdk_x11_lookup_xdisplay (meta_display_get_xdisplay (display)));
 }
 
 void
 meta_error_trap_pop (MetaDisplay *display,
                      gboolean     last_request_was_roundtrip)
 {
-  gdk_x11_display_error_trap_pop_ignored (gdk_x11_lookup_xdisplay (meta_display_get_xdisplay (display)));
+  cdk_x11_display_error_trap_pop_ignored (cdk_x11_lookup_xdisplay (meta_display_get_xdisplay (display)));
 }
 
 int
 meta_error_trap_pop_with_return  (MetaDisplay *display,
                                   gboolean     last_request_was_roundtrip)
 {
-  return gdk_x11_display_error_trap_pop (gdk_x11_lookup_xdisplay (meta_display_get_xdisplay (display)));
+  return cdk_x11_display_error_trap_pop (cdk_x11_lookup_xdisplay (meta_display_get_xdisplay (display)));
 }
 

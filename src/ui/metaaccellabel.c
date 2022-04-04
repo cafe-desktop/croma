@@ -422,7 +422,7 @@ meta_accel_label_update (MetaAccelLabel *accel_label)
   if (seen_mod)
     g_string_append (gstring, class->mod_separator);
 
-  ch = gdk_keyval_to_unicode (accel_label->accel_key);
+  ch = cdk_keyval_to_unicode (accel_label->accel_key);
   if (ch && (g_unichar_isgraph (ch) || ch == ' ') &&
       (ch < 0x80 || class->latin1_to_char))
     {
