@@ -3565,7 +3565,7 @@ scale_and_alpha_pixbuf (GdkPixbuf             *src,
             {
               temp_pixbuf = gdk_pixbuf_scale_simple (src,
                                                      dest_w, dest_h,
-                                                     CDK_INTERP_BILINEAR);
+                                                     GDK_INTERP_BILINEAR);
             }
 
           /* prefer to replicate_cols if possible, as that
@@ -7154,7 +7154,7 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
                                     gdk_pixbuf_get_height (pixbuf),
                                     0.0, 0.0, /* offsets */
                                     1.0, 1.0, /* scale */
-                                    CDK_INTERP_BILINEAR,
+                                    GDK_INTERP_BILINEAR,
                                     255 * alpha,
                                     0, 0,     /* check offsets */
                                     0,        /* check size */
@@ -7261,7 +7261,7 @@ draw_bg_gradient_composite (const MetaTextureSpec *bg,
                               gdk_pixbuf_get_height (fg_pixbuf),
                               0.0, 0.0, /* offsets */
                               1.0, 1.0, /* scale */
-                              CDK_INTERP_BILINEAR,
+                              GDK_INTERP_BILINEAR,
                               255 * alpha);
 
         cdk_cairo_set_source_pixbuf (cr, composited, x, y);
