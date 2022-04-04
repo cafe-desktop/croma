@@ -14,7 +14,7 @@ requires:
     - gcc
     - git
     - intltool
-    - libcanberra-ctk3-dev
+    - libcanberra-gtk3-dev
     - libglib2.0-dev
     - libgtop2-dev
     - libice-dev
