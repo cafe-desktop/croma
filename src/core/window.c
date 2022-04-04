@@ -6138,8 +6138,8 @@ redraw_icon (MetaWindow *window)
 void
 meta_window_update_icon_now (MetaWindow *window)
 {
-  CdkPixbuf *icon;
-  CdkPixbuf *mini_icon;
+  GdkPixbuf *icon;
+  GdkPixbuf *mini_icon;
 
   icon = NULL;
   mini_icon = NULL;

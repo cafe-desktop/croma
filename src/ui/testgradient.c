@@ -85,7 +85,7 @@ render_simple (
                MetaGradientType type,
                gboolean    with_alpha)
 {
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
   CdkRGBA from, to;
 
   cdk_rgba_parse (&from, "blue");
@@ -101,7 +101,7 @@ render_simple (
 
       if (!gdk_pixbuf_get_has_alpha (pixbuf))
         {
-          CdkPixbuf *new_pixbuf;
+          GdkPixbuf *new_pixbuf;
 
           new_pixbuf = gdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
           g_object_unref (G_OBJECT (pixbuf));
@@ -160,7 +160,7 @@ render_multi (
               int width, int height,
               MetaGradientType type)
 {
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
 #define N_COLORS 5
 
   CdkRGBA colors[N_COLORS];
@@ -212,7 +212,7 @@ render_interwoven_func (
                         cairo_t     *cr,
                         int width, int height)
 {
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
 #define N_COLORS 4
 
   CdkRGBA colors[N_COLORS];

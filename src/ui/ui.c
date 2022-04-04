@@ -530,8 +530,8 @@ meta_ui_window_menu_free (MetaWindowMenu *menu)
   meta_window_menu_free (menu);
 }
 
-CdkPixbuf*
-meta_gdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
+GdkPixbuf*
+meta_gdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
                                  Pixmap       xpixmap,
                                  int          src_x,
                                  int          src_y,
@@ -546,7 +546,7 @@ meta_gdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
   int x_ret, y_ret;
   unsigned int w_ret, h_ret, bw_ret, depth_ret;
   XWindowAttributes attrs;
-  CdkPixbuf *retval;
+  GdkPixbuf *retval;
 
   display = CDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
 
@@ -595,7 +595,7 @@ meta_ui_pop_delay_exposes  (MetaUI *ui)
   meta_frames_pop_delay_exposes (ui->frames);
 }
 
-static CdkPixbuf *
+static GdkPixbuf *
 load_default_window_icon (int size, int scale)
 {
   CtkIconTheme *theme = ctk_icon_theme_get_default ();
@@ -609,10 +609,10 @@ load_default_window_icon (int size, int scale)
   return ctk_icon_theme_load_icon_for_scale (theme, icon_name, size, scale, 0, NULL);
 }
 
-CdkPixbuf*
+GdkPixbuf*
 meta_ui_get_default_window_icon (MetaUI *ui)
 {
-  static CdkPixbuf *default_icon = NULL;
+  static GdkPixbuf *default_icon = NULL;
   static int icon_size = 0;
   int current_icon_size = meta_prefs_get_icon_size();
 
@@ -630,10 +630,10 @@ meta_ui_get_default_window_icon (MetaUI *ui)
   return default_icon;
 }
 
-CdkPixbuf*
+GdkPixbuf*
 meta_ui_get_default_mini_icon (MetaUI *ui)
 {
-  static CdkPixbuf *default_icon = NULL;
+  static GdkPixbuf *default_icon = NULL;
   int scale;
 
   if (default_icon == NULL)
@@ -942,7 +942,7 @@ MetaUIDirection meta_ui_get_direction(void)
 	return META_UI_DIRECTION_LTR;
 }
 
-CdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface)
+GdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface)
 {
 	gint width;
 	gint height;

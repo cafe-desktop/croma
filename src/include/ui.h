@@ -137,7 +137,7 @@ void            meta_ui_window_menu_popup (MetaWindowMenu     *menu,
                                            guint32             timestamp);
 void            meta_ui_window_menu_free  (MetaWindowMenu     *menu);
 
-CdkPixbuf* meta_gdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
+GdkPixbuf* meta_gdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
                                             Pixmap       xpixmap,
                                             int          src_x,
                                             int          src_y,
@@ -153,8 +153,8 @@ CdkPixbuf* meta_gdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
 void      meta_ui_push_delay_exposes (MetaUI *ui);
 void      meta_ui_pop_delay_exposes  (MetaUI *ui);
 
-CdkPixbuf* meta_ui_get_default_window_icon (MetaUI *ui);
-CdkPixbuf* meta_ui_get_default_mini_icon (MetaUI *ui);
+GdkPixbuf* meta_ui_get_default_window_icon (MetaUI *ui);
+GdkPixbuf* meta_ui_get_default_mini_icon (MetaUI *ui);
 
 gboolean  meta_ui_window_should_not_cause_focus (Display *xdisplay,
                                                  Window   xwindow);
@@ -180,7 +180,7 @@ int      meta_ui_get_drag_threshold       (MetaUI *ui);
 
 MetaUIDirection meta_ui_get_direction (void);
 
-CdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface);
+GdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface);
 
 #include "tabpopup.h"
 #include "tile-preview.h"

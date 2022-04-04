@@ -34,8 +34,8 @@
 
 typedef struct
 {
-  CdkPixbuf *icon;
-  CdkPixbuf *mini_icon;
+  GdkPixbuf *icon;
+  GdkPixbuf *mini_icon;
   int x;
   int y;
   int width;
@@ -53,7 +53,7 @@ void wnck_draw_workspace (CtkWidget                   *widget,
                           int                          height,
                           int                          screen_width,
                           int                          screen_height,
-                          CdkPixbuf                   *workspace_background,
+                          GdkPixbuf                   *workspace_background,
                           gboolean                     is_active,
                           const WnckWindowDisplayInfo *windows,
                           int                          n_windows);

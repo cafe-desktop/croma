@@ -174,10 +174,10 @@ meta_core_get (Display *xdisplay,
           break;
           }
       case META_CORE_GET_MINI_ICON:
-        *((CdkPixbuf**)answer) = window->mini_icon;
+        *((GdkPixbuf**)answer) = window->mini_icon;
         break;
       case META_CORE_GET_ICON:
-        *((CdkPixbuf**)answer) = window->icon;
+        *((GdkPixbuf**)answer) = window->icon;
         break;
       case META_CORE_GET_X:
         meta_window_get_position (window, (int*)answer, NULL);

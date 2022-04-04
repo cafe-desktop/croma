@@ -146,7 +146,7 @@ scale_surface (cairo_surface_t *surface,
 }
 
 static cairo_surface_t *
-get_surface_from_pixbuf (CdkPixbuf         *pixbuf,
+get_surface_from_pixbuf (GdkPixbuf         *pixbuf,
                          MetaImageFillType  fill_type,
                          gdouble            width,
                          gdouble            height,
@@ -204,11 +204,11 @@ get_surface_from_pixbuf (CdkPixbuf         *pixbuf,
   return copy;
 }
 
-static CdkPixbuf *
-colorize_pixbuf (CdkPixbuf *orig,
+static GdkPixbuf *
+colorize_pixbuf (GdkPixbuf *orig,
                  CdkRGBA   *new_color)
 {
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
   double intensity;
   int x, y;
   const guchar *src;
@@ -3339,12 +3339,12 @@ meta_draw_op_free (MetaDrawOp *op)
   g_free (op);
 }
 
-static CdkPixbuf*
-apply_alpha (CdkPixbuf             *pixbuf,
+static GdkPixbuf*
+apply_alpha (GdkPixbuf             *pixbuf,
              MetaAlphaGradientSpec *spec,
              gboolean               force_copy)
 {
-  CdkPixbuf *new_pixbuf;
+  GdkPixbuf *new_pixbuf;
   gboolean needs_alpha;
 
   g_return_val_if_fail (CDK_IS_PIXBUF (pixbuf), NULL);
@@ -3375,12 +3375,12 @@ apply_alpha (CdkPixbuf             *pixbuf,
   return pixbuf;
 }
 
-static CdkPixbuf*
-pixbuf_tile (CdkPixbuf *tile,
+static GdkPixbuf*
+pixbuf_tile (GdkPixbuf *tile,
              int        width,
              int        height)
 {
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
   int tile_width;
   int tile_height;
   int i, j;
@@ -3418,8 +3418,8 @@ pixbuf_tile (CdkPixbuf *tile,
   return pixbuf;
 }
 
-static CdkPixbuf *
-replicate_rows (CdkPixbuf  *src,
+static GdkPixbuf *
+replicate_rows (GdkPixbuf  *src,
                 int         src_x,
                 int         src_y,
                 int         width,
@@ -3430,7 +3430,7 @@ replicate_rows (CdkPixbuf  *src,
   unsigned char *pixels = (gdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
                            * n_channels);
   unsigned char *dest_pixels;
-  CdkPixbuf *result;
+  GdkPixbuf *result;
   unsigned int dest_rowstride;
   int i;
 
@@ -3445,8 +3445,8 @@ replicate_rows (CdkPixbuf  *src,
   return result;
 }
 
-static CdkPixbuf *
-replicate_cols (CdkPixbuf  *src,
+static GdkPixbuf *
+replicate_cols (GdkPixbuf  *src,
                 int         src_x,
                 int         src_y,
                 int         width,
@@ -3457,7 +3457,7 @@ replicate_cols (CdkPixbuf  *src,
   unsigned char *pixels = (gdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
                            * n_channels);
   unsigned char *dest_pixels;
-  CdkPixbuf *result;
+  GdkPixbuf *result;
   unsigned int dest_rowstride;
   int i, j;
 
@@ -3503,8 +3503,8 @@ replicate_cols (CdkPixbuf  *src,
   return result;
 }
 
-static CdkPixbuf*
-scale_and_alpha_pixbuf (CdkPixbuf             *src,
+static GdkPixbuf*
+scale_and_alpha_pixbuf (GdkPixbuf             *src,
                         MetaAlphaGradientSpec *alpha_spec,
                         MetaImageFillType      fill_type,
                         int                    width,
@@ -3512,8 +3512,8 @@ scale_and_alpha_pixbuf (CdkPixbuf             *src,
                         gboolean               vertical_stripes,
                         gboolean               horizontal_stripes)
 {
-  CdkPixbuf *pixbuf;
-  CdkPixbuf *temp_pixbuf;
+  GdkPixbuf *pixbuf;
+  GdkPixbuf *temp_pixbuf;
 
   pixbuf = NULL;
 
@@ -3594,7 +3594,7 @@ scale_and_alpha_pixbuf (CdkPixbuf             *src,
   return pixbuf;
 }
 
-static CdkPixbuf*
+static GdkPixbuf*
 draw_op_as_pixbuf (const MetaDrawOp    *op,
                    CtkStyleContext     *style,
                    const MetaDrawInfo  *info,
@@ -3605,7 +3605,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
    * matches the width/height passed in. return NULL
    * if the op can't be converted to an equivalent pixbuf.
    */
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
 
   pixbuf = NULL;
 
@@ -4092,7 +4092,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
           }
         else
           {
-            CdkPixbuf *pixbuf;
+            GdkPixbuf *pixbuf;
 
             pixbuf = draw_op_as_pixbuf (op, style_ctk, info,
                                         rwidth, rheight);
@@ -4966,8 +4966,8 @@ meta_frame_style_draw_with_style (MetaFrameStyle          *style,
                                   PangoLayout             *title_layout,
                                   int                      text_height,
                                   MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                                  CdkPixbuf               *mini_icon,
-                                  CdkPixbuf               *icon)
+                                  GdkPixbuf               *mini_icon,
+                                  GdkPixbuf               *icon)
 {
     /* BOOKMARK */
   int i, j;
@@ -5206,8 +5206,8 @@ meta_frame_style_draw (MetaFrameStyle          *style,
                        PangoLayout             *title_layout,
                        int                      text_height,
                        MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                       CdkPixbuf               *mini_icon,
-                       CdkPixbuf               *icon)
+                       GdkPixbuf               *mini_icon,
+                       GdkPixbuf               *icon)
 {
   meta_frame_style_draw_with_style (style,
                                     ctk_widget_get_style_context (widget),
@@ -5638,13 +5638,13 @@ meta_theme_validate (MetaTheme *theme,
   return TRUE;
 }
 
-CdkPixbuf*
+GdkPixbuf*
 meta_theme_load_image (MetaTheme  *theme,
                        const char *filename,
                        guint size_of_theme_icons,
                        GError    **error)
 {
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
   int scale;
 
   pixbuf = g_hash_table_lookup (theme->images_by_filename,
@@ -5839,8 +5839,8 @@ meta_theme_draw_frame (MetaTheme              *theme,
                        int                     text_height,
                        const MetaButtonLayout *button_layout,
                        MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                       CdkPixbuf              *mini_icon,
-                       CdkPixbuf              *icon)
+                       GdkPixbuf              *mini_icon,
+                       GdkPixbuf              *icon)
 {
   MetaFrameGeometry fgeom;
   MetaFrameStyle *style;
@@ -5884,8 +5884,8 @@ meta_theme_draw_frame_by_name (MetaTheme              *theme,
                                int                     text_height,
                                const MetaButtonLayout *button_layout,
                                MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                               CdkPixbuf              *mini_icon,
-                               CdkPixbuf              *icon)
+                               GdkPixbuf              *mini_icon,
+                               GdkPixbuf              *icon)
 {
   MetaFrameGeometry fgeom;
   MetaFrameStyle *style;
@@ -7127,8 +7127,8 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
       /* FALL THRU */
     case META_TEXTURE_IMAGE:
       {
-        CdkPixbuf *pixbuf;
-        CdkPixbuf *composited;
+        GdkPixbuf *pixbuf;
+        GdkPixbuf *composited;
 
         pixbuf = meta_texture_spec_render (fg, widget, mode, 255,
                                            width, height);
@@ -7209,9 +7209,9 @@ draw_bg_gradient_composite (const MetaTextureSpec *bg,
     case META_TEXTURE_GRADIENT:
     case META_TEXTURE_IMAGE:
       {
-        CdkPixbuf *bg_pixbuf;
-        CdkPixbuf *fg_pixbuf;
-        CdkPixbuf *composited;
+        GdkPixbuf *bg_pixbuf;
+        GdkPixbuf *fg_pixbuf;
+        GdkPixbuf *composited;
         int fg_width, fg_height;
 
         bg_pixbuf = meta_texture_spec_render (bg, widget, mode, 255,

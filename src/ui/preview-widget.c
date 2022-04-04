@@ -421,10 +421,10 @@ meta_preview_set_button_layout (MetaPreview            *preview,
   ctk_widget_queue_draw (CTK_WIDGET (preview));
 }
 
-CdkPixbuf*
+GdkPixbuf*
 meta_preview_get_icon (void)
 {
-  static CdkPixbuf *default_icon = NULL;
+  static GdkPixbuf *default_icon = NULL;
 
   if (default_icon == NULL)
     {
@@ -454,10 +454,10 @@ meta_preview_get_icon (void)
   return default_icon;
 }
 
-CdkPixbuf*
+GdkPixbuf*
 meta_preview_get_mini_icon (void)
 {
-  static CdkPixbuf *default_icon = NULL;
+  static GdkPixbuf *default_icon = NULL;
 
   if (default_icon == NULL)
     {
