@@ -6,7 +6,7 @@
 -->
 
 <!-- Top-level element -->
-<!ELEMENT marco_theme (info,(window|frame_style_set|frame_style|frame_geometry|constant|draw_ops|menu_icon)+)>
+<!ELEMENT croma_theme (info,(window|frame_style_set|frame_style|frame_geometry|constant|draw_ops|menu_icon)+)>
 
 <!-- Theme metadata -->
 <!ELEMENT info (name?|author?|copyright?|date?|description?)*>

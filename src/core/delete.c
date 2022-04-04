@@ -213,7 +213,7 @@ meta_window_present_delete_dialog (MetaWindow *window, guint32 timestamp)
       GSList *tmp;
 
       /* Activate transient for window that belongs to
-       * marco-dialog
+       * croma-dialog
        */
 
       windows = meta_display_list_windows (window->display);
@@ -224,7 +224,7 @@ meta_window_present_delete_dialog (MetaWindow *window, guint32 timestamp)
 
           if (w->xtransient_for == window->xwindow &&
               w->res_class &&
-              g_ascii_strcasecmp (w->res_class, "marco-dialog") == 0)
+              g_ascii_strcasecmp (w->res_class, "croma-dialog") == 0)
             {
               meta_window_activate (w, timestamp);
               break;

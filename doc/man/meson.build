@@ -1,6 +1,6 @@
-install_man(['marco.1',
-  'marco-theme-viewer.1',
-  'marco-window-demo.1',
-  'marco-message.1']
+install_man(['croma.1',
+  'croma-theme-viewer.1',
+  'croma-window-demo.1',
+  'croma-message.1']
   )
 

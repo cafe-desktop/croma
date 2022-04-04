@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR MATE Desktop Environment team
-# This file is distributed under the same license as the marco package.
+# This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -18,8 +18,8 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: marco 1.23.1\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/marco\n"
+"Project-Id-Version: croma 1.23.1\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/croma\n"
 "POT-Creation-Date: 2019-11-18 19:44+0100\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: liulitchi <xingzuo88@qq.com>, 2020\n"
@@ -30,343 +30,343 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/50-marco-desktop-key.xml.in:2
+#: src/50-croma-desktop-key.xml.in:2
 msgid "Desktop"
 msgstr "桌面"
 
-#: src/50-marco-desktop-key.xml.in:4
+#: src/50-croma-desktop-key.xml.in:4
 msgid "Show the panel's &quot;Run Application&quot; dialog box"
 msgstr "显示面板的&quot;运行应用程序&quot;对话框"
 
-#: src/50-marco-desktop-key.xml.in:6 src/org.mate.marco.gschema.xml:629
+#: src/50-croma-desktop-key.xml.in:6 src/org.mate.croma.gschema.xml:629
 msgid "Show the panel's main menu"
 msgstr "显示面板主菜单"
 
-#: src/50-marco-desktop-key.xml.in:8 src/org.mate.marco.gschema.xml:639
+#: src/50-croma-desktop-key.xml.in:8 src/org.mate.croma.gschema.xml:639
 msgid "Take a screenshot"
 msgstr "屏幕抓图"
 
-#: src/50-marco-desktop-key.xml.in:10 src/org.mate.marco.gschema.xml:644
+#: src/50-croma-desktop-key.xml.in:10 src/org.mate.croma.gschema.xml:644
 msgid "Take a screenshot of a window"
 msgstr "窗口抓图"
 
-#: src/50-marco-desktop-key.xml.in:12 src/org.mate.marco.gschema.xml:649
+#: src/50-croma-desktop-key.xml.in:12 src/org.mate.croma.gschema.xml:649
 msgid "Run a terminal"
 msgstr "运行终端"
 
-#: src/50-marco-desktop-key.xml.in:14 src/org.mate.marco.gschema.xml:654
+#: src/50-croma-desktop-key.xml.in:14 src/org.mate.croma.gschema.xml:654
 msgid "Rename current workspace"
 msgstr "重命名当前工作区"
 
-#: src/50-marco-global-key.xml.in:2 src/50-marco-window-key.xml.in:2
+#: src/50-croma-global-key.xml.in:2 src/50-croma-window-key.xml.in:2
 msgid "Window Management"
 msgstr "窗口管理"
 
-#: src/50-marco-global-key.xml.in:4 src/org.mate.marco.gschema.xml:564
+#: src/50-croma-global-key.xml.in:4 src/org.mate.croma.gschema.xml:564
 msgid "Move between windows, using a popup window"
 msgstr "在窗口之间移动，使用弹出窗口"
 
-#: src/50-marco-global-key.xml.in:6 src/org.mate.marco.gschema.xml:554
+#: src/50-croma-global-key.xml.in:6 src/org.mate.croma.gschema.xml:554
 msgid "Move between windows of an application, using a popup window"
 msgstr "在应用程序的窗口之间移动，使用弹出窗口"
 
-#: src/50-marco-global-key.xml.in:8 src/org.mate.marco.gschema.xml:584
+#: src/50-croma-global-key.xml.in:8 src/org.mate.croma.gschema.xml:584
 msgid "Move between panels and the desktop, using a popup window"
 msgstr "在面板和桌面之间移动，使用弹出窗口"
 
-#: src/50-marco-global-key.xml.in:10 src/org.mate.marco.gschema.xml:604
+#: src/50-croma-global-key.xml.in:10 src/org.mate.croma.gschema.xml:604
 msgid "Move between windows immediately"
 msgstr "在窗口之间立即移动焦点"
 
-#: src/50-marco-global-key.xml.in:12 src/org.mate.marco.gschema.xml:594
+#: src/50-croma-global-key.xml.in:12 src/org.mate.croma.gschema.xml:594
 msgid "Move between windows of an application immediately"
 msgstr "在应用程序的窗口之间立即移动焦点"
 
-#: src/50-marco-global-key.xml.in:14 src/org.mate.marco.gschema.xml:614
+#: src/50-croma-global-key.xml.in:14 src/org.mate.croma.gschema.xml:614
 msgid "Move between panels and the desktop immediately"
 msgstr "在面板和桌面之间立即移动焦点"
 
-#: src/50-marco-global-key.xml.in:16 src/org.mate.marco.gschema.xml:624
+#: src/50-croma-global-key.xml.in:16 src/org.mate.croma.gschema.xml:624
 msgid "Hide all normal windows and set focus to the desktop"
 msgstr "隐藏所有正常窗口并将桌面设置为焦点"
 
-#: src/50-marco-global-key.xml.in:23 src/org.mate.marco.gschema.xml:469
+#: src/50-croma-global-key.xml.in:23 src/org.mate.croma.gschema.xml:469
 msgid "Switch to workspace 1"
 msgstr "切换到工作区 1"
 
-#: src/50-marco-global-key.xml.in:30 src/org.mate.marco.gschema.xml:474
+#: src/50-croma-global-key.xml.in:30 src/org.mate.croma.gschema.xml:474
 msgid "Switch to workspace 2"
 msgstr "切换到工作区 2"
 
-#: src/50-marco-global-key.xml.in:37 src/org.mate.marco.gschema.xml:479
+#: src/50-croma-global-key.xml.in:37 src/org.mate.croma.gschema.xml:479
 msgid "Switch to workspace 3"
 msgstr "切换到工作区 3"
 
-#: src/50-marco-global-key.xml.in:44 src/org.mate.marco.gschema.xml:484
+#: src/50-croma-global-key.xml.in:44 src/org.mate.croma.gschema.xml:484
 msgid "Switch to workspace 4"
 msgstr "切换到工作区 4"
 
-#: src/50-marco-global-key.xml.in:51 src/org.mate.marco.gschema.xml:489
+#: src/50-croma-global-key.xml.in:51 src/org.mate.croma.gschema.xml:489
 msgid "Switch to workspace 5"
 msgstr "切换到工作区 5"
 
-#: src/50-marco-global-key.xml.in:58 src/org.mate.marco.gschema.xml:494
+#: src/50-croma-global-key.xml.in:58 src/org.mate.croma.gschema.xml:494
 msgid "Switch to workspace 6"
 msgstr "切换到工作区 6"
 
-#: src/50-marco-global-key.xml.in:65 src/org.mate.marco.gschema.xml:499
+#: src/50-croma-global-key.xml.in:65 src/org.mate.croma.gschema.xml:499
 msgid "Switch to workspace 7"
 msgstr "切换到工作区 7"
 
-#: src/50-marco-global-key.xml.in:72 src/org.mate.marco.gschema.xml:504
+#: src/50-croma-global-key.xml.in:72 src/org.mate.croma.gschema.xml:504
 msgid "Switch to workspace 8"
 msgstr "切换到工作区 8"
 
-#: src/50-marco-global-key.xml.in:79 src/org.mate.marco.gschema.xml:509
+#: src/50-croma-global-key.xml.in:79 src/org.mate.croma.gschema.xml:509
 msgid "Switch to workspace 9"
 msgstr "切换到工作区 9"
 
-#: src/50-marco-global-key.xml.in:86 src/org.mate.marco.gschema.xml:514
+#: src/50-croma-global-key.xml.in:86 src/org.mate.croma.gschema.xml:514
 msgid "Switch to workspace 10"
 msgstr "切换到工作区 10"
 
-#: src/50-marco-global-key.xml.in:93 src/org.mate.marco.gschema.xml:519
+#: src/50-croma-global-key.xml.in:93 src/org.mate.croma.gschema.xml:519
 msgid "Switch to workspace 11"
 msgstr "切换到工作区 11"
 
-#: src/50-marco-global-key.xml.in:100 src/org.mate.marco.gschema.xml:524
+#: src/50-croma-global-key.xml.in:100 src/org.mate.croma.gschema.xml:524
 msgid "Switch to workspace 12"
 msgstr "切换到工作区 12"
 
-#: src/50-marco-global-key.xml.in:107 src/org.mate.marco.gschema.xml:529
+#: src/50-croma-global-key.xml.in:107 src/org.mate.croma.gschema.xml:529
 msgid "Switch to workspace on the left of the current workspace"
 msgstr "切换到当前工作区左侧的工作区"
 
-#: src/50-marco-global-key.xml.in:114 src/org.mate.marco.gschema.xml:534
+#: src/50-croma-global-key.xml.in:114 src/org.mate.croma.gschema.xml:534
 msgid "Switch to workspace on the right of the current workspace"
 msgstr "切换到当前工作区右侧的工作区"
 
-#: src/50-marco-global-key.xml.in:121 src/org.mate.marco.gschema.xml:539
+#: src/50-croma-global-key.xml.in:121 src/org.mate.croma.gschema.xml:539
 msgid "Switch to workspace above the current workspace"
 msgstr "切换到当前工作区上方的工作区"
 
-#: src/50-marco-global-key.xml.in:128 src/org.mate.marco.gschema.xml:544
+#: src/50-croma-global-key.xml.in:128 src/org.mate.croma.gschema.xml:544
 msgid "Switch to workspace below the current workspace"
 msgstr "切换到当前工作区下方的工作区"
 
-#: src/50-marco-global-key.xml.in:131 src/org.mate.marco.gschema.xml:549
+#: src/50-croma-global-key.xml.in:131 src/org.mate.croma.gschema.xml:549
 msgid "Switch to previously selected workspace"
 msgstr "切换到之前选定的工作区"
 
-#: src/50-marco-window-key.xml.in:6 src/org.mate.marco.gschema.xml:735
+#: src/50-croma-window-key.xml.in:6 src/org.mate.croma.gschema.xml:735
 msgid "Activate the window menu"
 msgstr "激活窗口菜单"
 
-#: src/50-marco-window-key.xml.in:10 src/org.mate.marco.gschema.xml:740
+#: src/50-croma-window-key.xml.in:10 src/org.mate.croma.gschema.xml:740
 msgid "Toggle fullscreen mode"
 msgstr "切换全屏模式"
 
-#: src/50-marco-window-key.xml.in:14 src/org.mate.marco.gschema.xml:745
+#: src/50-croma-window-key.xml.in:14 src/org.mate.croma.gschema.xml:745
 msgid "Toggle maximization state"
 msgstr "切换最大化状态"
 
-#: src/50-marco-window-key.xml.in:18 src/org.mate.marco.gschema.xml:755
+#: src/50-croma-window-key.xml.in:18 src/org.mate.croma.gschema.xml:755
 msgid "Maximize window"
 msgstr "最大化窗口"
 
-#: src/50-marco-window-key.xml.in:22 src/org.mate.marco.gschema.xml:760
+#: src/50-croma-window-key.xml.in:22 src/org.mate.croma.gschema.xml:760
 msgid "Restore window"
 msgstr "恢复窗口"
 
-#: src/50-marco-window-key.xml.in:26 src/org.mate.marco.gschema.xml:765
+#: src/50-croma-window-key.xml.in:26 src/org.mate.croma.gschema.xml:765
 msgid "Toggle shaded state"
 msgstr "切换卷起状态"
 
-#: src/50-marco-window-key.xml.in:30 src/org.mate.marco.gschema.xml:775
+#: src/50-croma-window-key.xml.in:30 src/org.mate.croma.gschema.xml:775
 msgid "Close window"
 msgstr "关闭窗口"
 
-#: src/50-marco-window-key.xml.in:34 src/org.mate.marco.gschema.xml:770
+#: src/50-croma-window-key.xml.in:34 src/org.mate.croma.gschema.xml:770
 msgid "Minimize window"
 msgstr "最小化窗口"
 
-#: src/50-marco-window-key.xml.in:38 src/org.mate.marco.gschema.xml:780
+#: src/50-croma-window-key.xml.in:38 src/org.mate.croma.gschema.xml:780
 msgid "Move window"
 msgstr "移动窗口"
 
-#: src/50-marco-window-key.xml.in:42 src/org.mate.marco.gschema.xml:785
+#: src/50-croma-window-key.xml.in:42 src/org.mate.croma.gschema.xml:785
 msgid "Resize window"
 msgstr "改变窗口大小"
 
-#: src/50-marco-window-key.xml.in:50 src/org.mate.marco.gschema.xml:790
+#: src/50-croma-window-key.xml.in:50 src/org.mate.croma.gschema.xml:790
 msgid "Toggle whether window is on all workspaces or just one"
 msgstr "在窗口位于所有或仅一个工作区间切换"
 
-#: src/50-marco-window-key.xml.in:54 src/org.mate.marco.gschema.xml:875
+#: src/50-croma-window-key.xml.in:54 src/org.mate.croma.gschema.xml:875
 msgid "Raise window if it's covered by another window, otherwise lower it"
 msgstr "如果窗口被其他窗口遮盖，则提升它，否则降低它"
 
-#: src/50-marco-window-key.xml.in:58 src/org.mate.marco.gschema.xml:880
+#: src/50-croma-window-key.xml.in:58 src/org.mate.croma.gschema.xml:880
 msgid "Raise window above other windows"
 msgstr "将窗口提升到其它窗口之上"
 
-#: src/50-marco-window-key.xml.in:62 src/org.mate.marco.gschema.xml:885
+#: src/50-croma-window-key.xml.in:62 src/org.mate.croma.gschema.xml:885
 msgid "Lower window below other windows"
 msgstr "将窗口降低到其它窗口之下"
 
-#: src/50-marco-window-key.xml.in:66 src/org.mate.marco.gschema.xml:890
+#: src/50-croma-window-key.xml.in:66 src/org.mate.croma.gschema.xml:890
 msgid "Maximize window vertically"
 msgstr "垂直最大化窗口"
 
-#: src/50-marco-window-key.xml.in:70 src/org.mate.marco.gschema.xml:895
+#: src/50-croma-window-key.xml.in:70 src/org.mate.croma.gschema.xml:895
 msgid "Maximize window horizontally"
 msgstr "水平最大化窗口"
 
-#: src/50-marco-window-key.xml.in:74 src/org.mate.marco.gschema.xml:900
+#: src/50-croma-window-key.xml.in:74 src/org.mate.croma.gschema.xml:900
 msgid "Tile window to east (right) side of screen"
 msgstr "将窗口平铺到屏幕东（右）侧"
 
-#: src/50-marco-window-key.xml.in:78 src/org.mate.marco.gschema.xml:905
+#: src/50-croma-window-key.xml.in:78 src/org.mate.croma.gschema.xml:905
 msgid "Tile window to west (left) side of screen"
 msgstr "将窗口平铺到屏幕西（左）侧"
 
-#: src/50-marco-window-key.xml.in:82
+#: src/50-croma-window-key.xml.in:82
 msgid "Tile window to north-west (top left) corner"
 msgstr "将窗口平铺到西北（左上）角"
 
-#: src/50-marco-window-key.xml.in:86
+#: src/50-croma-window-key.xml.in:86
 msgid "Tile window to north-east (top right) corner"
 msgstr "将窗口平铺到东北（右上）角"
 
-#: src/50-marco-window-key.xml.in:90
+#: src/50-croma-window-key.xml.in:90
 msgid "Tile window to south-west (bottom left) corner"
 msgstr "将窗口平铺到西南（左下）角"
 
-#: src/50-marco-window-key.xml.in:94
+#: src/50-croma-window-key.xml.in:94
 msgid "Tile window to south-east (bottom right) corner"
 msgstr "将窗口平铺到东南（右下）角"
 
-#: src/50-marco-window-key.xml.in:98 src/org.mate.marco.gschema.xml:930
+#: src/50-croma-window-key.xml.in:98 src/org.mate.croma.gschema.xml:930
 msgid "Move window to north-west (top left) corner"
 msgstr "将窗口移到西北(左上)角"
 
-#: src/50-marco-window-key.xml.in:102 src/org.mate.marco.gschema.xml:935
+#: src/50-croma-window-key.xml.in:102 src/org.mate.croma.gschema.xml:935
 msgid "Move window to north-east (top right) corner"
 msgstr "将窗口移到东北(右上)角"
 
-#: src/50-marco-window-key.xml.in:106 src/org.mate.marco.gschema.xml:940
+#: src/50-croma-window-key.xml.in:106 src/org.mate.croma.gschema.xml:940
 msgid "Move window to south-west (bottom left) corner"
 msgstr "将窗口移到西南(左下)角"
 
-#: src/50-marco-window-key.xml.in:110 src/org.mate.marco.gschema.xml:945
+#: src/50-croma-window-key.xml.in:110 src/org.mate.croma.gschema.xml:945
 msgid "Move window to south-east (bottom right) corner"
 msgstr "将窗口移到东南(右下)角"
 
-#: src/50-marco-window-key.xml.in:114 src/org.mate.marco.gschema.xml:950
+#: src/50-croma-window-key.xml.in:114 src/org.mate.croma.gschema.xml:950
 msgid "Move window to north (top) side of screen"
 msgstr "将窗口移到屏幕北(顶)侧"
 
-#: src/50-marco-window-key.xml.in:118 src/org.mate.marco.gschema.xml:955
+#: src/50-croma-window-key.xml.in:118 src/org.mate.croma.gschema.xml:955
 msgid "Move window to south (bottom) side of screen"
 msgstr "将窗口移到屏幕南(底)侧"
 
-#: src/50-marco-window-key.xml.in:122 src/org.mate.marco.gschema.xml:960
+#: src/50-croma-window-key.xml.in:122 src/org.mate.croma.gschema.xml:960
 msgid "Move window to east (right) side of screen"
 msgstr "将窗口移到屏幕东(右)侧"
 
-#: src/50-marco-window-key.xml.in:126 src/org.mate.marco.gschema.xml:965
+#: src/50-croma-window-key.xml.in:126 src/org.mate.croma.gschema.xml:965
 msgid "Move window to west (left) side of screen"
 msgstr "将窗口移到屏幕西(左)侧"
 
-#: src/50-marco-window-key.xml.in:130 src/org.mate.marco.gschema.xml:970
+#: src/50-croma-window-key.xml.in:130 src/org.mate.croma.gschema.xml:970
 msgid "Move window to center of screen"
 msgstr "将窗口移到屏幕中心"
 
-#: src/50-marco-window-key.xml.in:134 src/org.mate.marco.gschema.xml:975
+#: src/50-croma-window-key.xml.in:134 src/org.mate.croma.gschema.xml:975
 msgid "Move window to north (top) monitor"
 msgstr "将窗口移到屏幕北（顶）侧"
 
-#: src/50-marco-window-key.xml.in:138 src/org.mate.marco.gschema.xml:980
+#: src/50-croma-window-key.xml.in:138 src/org.mate.croma.gschema.xml:980
 msgid "Move window to south (bottom) monitor"
 msgstr "将窗口移到屏幕南（底）侧"
 
-#: src/50-marco-window-key.xml.in:142 src/org.mate.marco.gschema.xml:985
+#: src/50-croma-window-key.xml.in:142 src/org.mate.croma.gschema.xml:985
 msgid "Move window to east (right) monitor"
 msgstr "将窗口移到屏幕东（右）侧"
 
-#: src/50-marco-window-key.xml.in:146 src/org.mate.marco.gschema.xml:990
+#: src/50-croma-window-key.xml.in:146 src/org.mate.croma.gschema.xml:990
 msgid "Move window to west (left) monitor"
 msgstr "将窗口移到屏幕西（左）侧"
 
-#: src/50-marco-window-key.xml.in:154 src/org.mate.marco.gschema.xml:795
+#: src/50-croma-window-key.xml.in:154 src/org.mate.croma.gschema.xml:795
 msgid "Move window to workspace 1"
 msgstr "将窗口移到工作区 1"
 
-#: src/50-marco-window-key.xml.in:162 src/org.mate.marco.gschema.xml:800
+#: src/50-croma-window-key.xml.in:162 src/org.mate.croma.gschema.xml:800
 msgid "Move window to workspace 2"
 msgstr "将窗口移到工作区 2"
 
-#: src/50-marco-window-key.xml.in:170 src/org.mate.marco.gschema.xml:805
+#: src/50-croma-window-key.xml.in:170 src/org.mate.croma.gschema.xml:805
 msgid "Move window to workspace 3"
 msgstr "将窗口移到工作区 3"
 
-#: src/50-marco-window-key.xml.in:178 src/org.mate.marco.gschema.xml:810
+#: src/50-croma-window-key.xml.in:178 src/org.mate.croma.gschema.xml:810
 msgid "Move window to workspace 4"
 msgstr "将窗口移到工作区 4"
 
-#: src/50-marco-window-key.xml.in:186 src/org.mate.marco.gschema.xml:815
+#: src/50-croma-window-key.xml.in:186 src/org.mate.croma.gschema.xml:815
 msgid "Move window to workspace 5"
 msgstr "将窗口移到工作区 5"
 
-#: src/50-marco-window-key.xml.in:194 src/org.mate.marco.gschema.xml:820
+#: src/50-croma-window-key.xml.in:194 src/org.mate.croma.gschema.xml:820
 msgid "Move window to workspace 6"
 msgstr "将窗口移到工作区 6"
 
-#: src/50-marco-window-key.xml.in:202 src/org.mate.marco.gschema.xml:825
+#: src/50-croma-window-key.xml.in:202 src/org.mate.croma.gschema.xml:825
 msgid "Move window to workspace 7"
 msgstr "将窗口移到工作区 7"
 
-#: src/50-marco-window-key.xml.in:210 src/org.mate.marco.gschema.xml:830
+#: src/50-croma-window-key.xml.in:210 src/org.mate.croma.gschema.xml:830
 msgid "Move window to workspace 8"
 msgstr "将窗口移到工作区 8"
 
-#: src/50-marco-window-key.xml.in:218 src/org.mate.marco.gschema.xml:835
+#: src/50-croma-window-key.xml.in:218 src/org.mate.croma.gschema.xml:835
 msgid "Move window to workspace 9"
 msgstr "将窗口移到工作区 9"
 
-#: src/50-marco-window-key.xml.in:226 src/org.mate.marco.gschema.xml:840
+#: src/50-croma-window-key.xml.in:226 src/org.mate.croma.gschema.xml:840
 msgid "Move window to workspace 10"
 msgstr "将窗口移到工作区 10"
 
-#: src/50-marco-window-key.xml.in:234 src/org.mate.marco.gschema.xml:845
+#: src/50-croma-window-key.xml.in:234 src/org.mate.croma.gschema.xml:845
 msgid "Move window to workspace 11"
 msgstr "将窗口移到工作区 11"
 
-#: src/50-marco-window-key.xml.in:242 src/org.mate.marco.gschema.xml:850
+#: src/50-croma-window-key.xml.in:242 src/org.mate.croma.gschema.xml:850
 msgid "Move window to workspace 12"
 msgstr "将窗口移到工作区 12"
 
-#: src/50-marco-window-key.xml.in:250 src/org.mate.marco.gschema.xml:855
+#: src/50-croma-window-key.xml.in:250 src/org.mate.croma.gschema.xml:855
 msgid "Move window one workspace to the left"
 msgstr "将窗口左移一个工作区"
 
-#: src/50-marco-window-key.xml.in:258 src/org.mate.marco.gschema.xml:860
+#: src/50-croma-window-key.xml.in:258 src/org.mate.croma.gschema.xml:860
 msgid "Move window one workspace to the right"
 msgstr "将窗口右移一个工作区"
 
-#: src/50-marco-window-key.xml.in:266 src/org.mate.marco.gschema.xml:865
+#: src/50-croma-window-key.xml.in:266 src/org.mate.croma.gschema.xml:865
 msgid "Move window one workspace up"
 msgstr "将窗口上移一个工作区"
 
-#: src/50-marco-window-key.xml.in:274 src/org.mate.marco.gschema.xml:870
+#: src/50-croma-window-key.xml.in:274 src/org.mate.croma.gschema.xml:870
 msgid "Move window one workspace down"
 msgstr "将窗口下移一个工作区"
 
-#: src/org.mate.marco.gschema.xml:50
+#: src/org.mate.croma.gschema.xml:50
 msgid "Modifier to use for modified window click actions"
 msgstr "用于修改窗口点击动作的修饰键"
 
-#: src/org.mate.marco.gschema.xml:51
+#: src/org.mate.croma.gschema.xml:51
 msgid ""
 "Clicking a window while holding down this modifier key will move the window "
 "(left click), resize the window (middle click), or show the window menu "
@@ -376,49 +376,49 @@ msgid ""
 msgstr ""
 "在按住此修改键的同时单击窗口将移动窗口（左键单击），调整窗口大小（中键单击）或显示窗口菜单（右键单击）。可以使用“鼠标右键调整”键交换中间和右键单击操作。例如，修饰符表示为“<Alt>”或“<Super>”。"
 
-#: src/org.mate.marco.gschema.xml:55
+#: src/org.mate.croma.gschema.xml:55
 msgid "Whether to resize with the right button"
 msgstr "是否使用右键更改大小"
 
-#: src/org.mate.marco.gschema.xml:56
+#: src/org.mate.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
 "middle button while holding down the key given in \"mouse_button_modifier\";"
 " set it to false to make it work the opposite way around."
 msgstr "设置这个为真来使用右键更改大小并且当按下“鼠标按钮修饰键”时使用中键来显示菜单，设置这个为假来实现相反的操作。"
 
-#: src/org.mate.marco.gschema.xml:60
+#: src/org.mate.croma.gschema.xml:60
 msgid "Whether to display preselected tab window border"
 msgstr "是否显示预选中的标签页的窗口边框"
 
-#: src/org.mate.marco.gschema.xml:61
+#: src/org.mate.croma.gschema.xml:61
 msgid ""
 "Set this to false to disable border of preselected window while performing "
 "tab switching."
 msgstr "将此值设置为 false 来禁用在切换标签页时显示预选中项目的窗口边框"
 
-#: src/org.mate.marco.gschema.xml:65
+#: src/org.mate.croma.gschema.xml:65
 msgid "Arrangement of buttons on the titlebar"
 msgstr "标题栏上按钮的排列"
 
-#: src/org.mate.marco.gschema.xml:66
+#: src/org.mate.croma.gschema.xml:66
 msgid ""
 "Arrangement of buttons on the titlebar. The value should be a string, such "
 "as \"menu:minimize,maximize,spacer,close\"; the colon separates the left "
 "corner of the window from the right corner, and the button names are comma-"
 "separated. Duplicate buttons are not allowed. Unknown button names are "
-"silently ignored so that buttons can be added in future marco versions "
+"silently ignored so that buttons can be added in future croma versions "
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
 "标题栏上按钮的排列。它的值必须是一个字符串，比如“menu:minimize,maximize,spacer,close”；窗口左上角和右上角的按钮用半角冒号，按钮名称之间用半角逗号分隔。不允许指定重复的按钮。未知的按钮名称将被忽略，因此在将来版本的"
-" marco 中可以添加新的按钮，而不至于破坏旧的版本。而特殊的 spacer 标记可在两个按钮之间添加一些空格。"
+" croma 中可以添加新的按钮，而不至于破坏旧的版本。而特殊的 spacer 标记可在两个按钮之间添加一些空格。"
 
-#: src/org.mate.marco.gschema.xml:70
+#: src/org.mate.croma.gschema.xml:70
 msgid "Window focus mode"
 msgstr "窗口焦点模式"
 
-#: src/org.mate.marco.gschema.xml:71
+#: src/org.mate.croma.gschema.xml:71
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
@@ -428,11 +428,11 @@ msgid ""
 msgstr ""
 "窗口焦点模式指明窗口的激活方式。它有三个可能的值；“click”表示必须单击窗口才能聚焦该窗口，“sloppy”表示当鼠标进入窗口时，即会聚焦该窗口，“mouse”表示当鼠标进入窗口时会聚焦该窗口，当鼠标离开该窗口时则会失去焦点。"
 
-#: src/org.mate.marco.gschema.xml:75
+#: src/org.mate.croma.gschema.xml:75
 msgid "Control how new windows get focus"
 msgstr "控制新窗口如何获取焦点"
 
-#: src/org.mate.marco.gschema.xml:76
+#: src/org.mate.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
 "focus. It has two possible values; \"smart\" applies the user's normal focus"
@@ -441,11 +441,11 @@ msgid ""
 msgstr ""
 "此选项提供了关于新创建的窗口如何获得焦点的额外控制。目前有效的选项包括，“smart”将应用用户普通的聚焦模式，而“strict”将使得通过终端启动的窗口不获得焦点。"
 
-#: src/org.mate.marco.gschema.xml:80
+#: src/org.mate.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
 msgstr "升起是否应作为其它用户交互的副作用"
 
-#: src/org.mate.marco.gschema.xml:81
+#: src/org.mate.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
 "strongly discouraged from changing it from the default of true. Many actions"
@@ -475,11 +475,11 @@ msgstr ""
 "时，来自应用软件的窗口前置程序要求无论原因为何都不会生效。如果您是一位应用程序开发者，接到某位用户抱怨说您的应用软件无法在此项设置为停用时正常工作的话，请告诉他们这是他们的错误而搞坏了窗口管理器，而他们需要将此项改回"
 " true，或是接受这个他们所要求的程序错误。"
 
-#: src/org.mate.marco.gschema.xml:85
+#: src/org.mate.croma.gschema.xml:85
 msgid "Action on title bar double-click"
 msgstr "双击标题栏时的动作"
 
-#: src/org.mate.marco.gschema.xml:86
+#: src/org.mate.croma.gschema.xml:86
 msgid ""
 "This option determines the effects of double-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -492,11 +492,11 @@ msgid ""
 msgstr ""
 "这个选项决定在标题栏上双击的效果。当前有效的选项包括，“toggle_shade”将卷起/展开窗口，“toggle_maximize”将最大化/还原窗口，“toggle_maximize_horizontally”和“toggle_maximize_vertically”将分别在水平和垂直方向上最大化窗口，“minimize”将最小化窗口，“shade”将卷起窗口，“menu”将显示窗口菜单，“lower”将把窗口推至最后b，而“none”将不执行任何操作。"
 
-#: src/org.mate.marco.gschema.xml:90
+#: src/org.mate.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
 msgstr "鼠标中键单击标题栏时的动作"
 
-#: src/org.mate.marco.gschema.xml:91
+#: src/org.mate.croma.gschema.xml:91
 msgid ""
 "This option determines the effects of middle-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -509,11 +509,11 @@ msgid ""
 msgstr ""
 "这个选项决定在标题栏上单击中键的效果。当前有效的选项包括，“toggle_shade”将卷起/展开窗口，“toggle_maximize”将最大化/还原窗口，“toggle_maximize_horizontally”和“toggle_maximize_vertically”将分别在水平和垂直方向上最大化窗口，“minimize”将最小化窗口，“shade”将卷起窗口，“menu”将显示窗口菜单，“lower”将把窗口推至最后b，而“none”将不执行任何操作。"
 
-#: src/org.mate.marco.gschema.xml:95
+#: src/org.mate.croma.gschema.xml:95
 msgid "Action on title bar right-click"
 msgstr "鼠标右键单击标题栏时的动作"
 
-#: src/org.mate.marco.gschema.xml:96
+#: src/org.mate.croma.gschema.xml:96
 msgid ""
 "This option determines the effects of right-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -526,11 +526,11 @@ msgid ""
 msgstr ""
 "这个选项决定在标题栏上单击右键的效果。当前有效的选项包括，“toggle_shade”将卷起/展开窗口，“toggle_maximize”将最大化/还原窗口，“toggle_maximize_horizontally”和“toggle_maximize_vertically”将分别在水平和垂直方向上最大化窗口，“minimize”将最小化窗口，“shade”将卷起窗口，“menu”将显示窗口菜单，“lower”将把窗口推至最后b，而“none”将不执行任何操作。"
 
-#: src/org.mate.marco.gschema.xml:100
+#: src/org.mate.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
 msgstr "自动提升获得焦点的窗口"
 
-#: src/org.mate.marco.gschema.xml:101
+#: src/org.mate.croma.gschema.xml:101
 msgid ""
 "If set to true, and the focus mode is either \"sloppy\" or \"mouse\" then "
 "the focused window will be automatically raised after a delay specified by "
@@ -540,41 +540,41 @@ msgstr ""
 "如果为真，而聚焦模式为“sloppy”或“mouse”，那么聚焦的窗口将会在指定延迟后自动升起，延迟的时间由 auto_raise_delay "
 "键指定。此选项与单击行为并没有什么关系，它也与拖放时进入窗口无关。"
 
-#: src/org.mate.marco.gschema.xml:105
+#: src/org.mate.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
 msgstr "自动提升延迟（毫秒）"
 
-#: src/org.mate.marco.gschema.xml:106
+#: src/org.mate.croma.gschema.xml:106
 msgid ""
 "The time delay before raising a window if auto_raise is set to true. The "
 "delay is given in thousandths of a second."
 msgstr "提升窗口前的延迟时间(如果 auto_raise 设置为真)。延迟时间的单位为毫秒。"
 
-#: src/org.mate.marco.gschema.xml:110
+#: src/org.mate.croma.gschema.xml:110
 msgid "Current theme"
 msgstr "当前主题"
 
-#: src/org.mate.marco.gschema.xml:111
+#: src/org.mate.croma.gschema.xml:111
 msgid ""
 "The theme determines the appearance of window borders, titlebar, and so "
 "forth."
 msgstr "主题决定窗口边框、标题栏等的外观。"
 
-#: src/org.mate.marco.gschema.xml:115
+#: src/org.mate.croma.gschema.xml:115
 msgid "Use standard system font in window titles"
 msgstr "在窗口标题中使用标准系统字体"
 
-#: src/org.mate.marco.gschema.xml:116
+#: src/org.mate.croma.gschema.xml:116
 msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
 msgstr "如果为真，则忽略 titlebar_font 选项，并为窗口标题使用标准应用程序字体。"
 
-#: src/org.mate.marco.gschema.xml:120
+#: src/org.mate.croma.gschema.xml:120
 msgid "Window title font"
 msgstr "窗口标题字体"
 
-#: src/org.mate.marco.gschema.xml:121
+#: src/org.mate.croma.gschema.xml:121
 msgid ""
 "A font description string describing a font for window titlebars. The size "
 "from the description will only be used if the titlebar_font_size option is "
@@ -584,62 +584,62 @@ msgstr ""
 "描述窗口标题栏所用字体的字体描述字符串。但是，只有在 titlebar_font_size 选项设置为 0 时，才使用该说明中的字体大小。同时，如果 "
 "titlebar_uses_desktop_font 选项设置为真，则禁用该选项。默认情况下不设置 titlebar_font。"
 
-#: src/org.mate.marco.gschema.xml:126
+#: src/org.mate.croma.gschema.xml:126
 msgid "Number of workspaces"
 msgstr "工作区数量"
 
-#: src/org.mate.marco.gschema.xml:127
+#: src/org.mate.croma.gschema.xml:127
 msgid ""
 "Number of workspaces. Must be more than zero, and has a fixed maximum to "
 "prevent making the desktop unusable by accidentally asking for too many "
 "workspaces."
 msgstr "工作区数量。必须大于零，并有一个固定的最大值，以防由于不小心请求调用太多工作区而摧毁您的桌面。"
 
-#: src/org.mate.marco.gschema.xml:131
+#: src/org.mate.croma.gschema.xml:131
 msgid "Workspace wrap style"
 msgstr "工作区换行风格"
 
-#: src/org.mate.marco.gschema.xml:132
+#: src/org.mate.croma.gschema.xml:132
 msgid ""
 "The wrap style is used to determine how to switch from one workspace to "
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
-"the workspace switcher. If set to \"classic\", the old marco behavior is "
+"the workspace switcher. If set to \"classic\", the old croma behavior is "
 "used: the end of one row leads to the beginning of the next and the end of a"
 " column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
 "换行风格决定如何从一个工作区切换到另一个工作区切换区的边界。当设置为“no "
-"wrap”，若您试图切换工作区到前一个工作区的切换器边界时，什么事都不会发生。若设置为“classic”，将会使用旧版 marco "
+"wrap”，若您试图切换工作区到前一个工作区的切换器边界时，什么事都不会发生。若设置为“classic”，将会使用旧版 croma "
 "的行为：一行的末端引出下一行的开始，一列的末端也会引出下一列的开始。若设置为“toroidal”，工作区将会像甜甜圈一样成环，每一行的末端会导向自己的开始，每列的末端也会导向自己的开始。"
 
-#: src/org.mate.marco.gschema.xml:136
+#: src/org.mate.croma.gschema.xml:136
 msgid "Enable Visual Bell"
 msgstr "启用视觉铃声"
 
-#: src/org.mate.marco.gschema.xml:137
+#: src/org.mate.croma.gschema.xml:137
 msgid ""
 "Turns on a visual indication when an application or the system issues a "
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr "当应用程序或系统发出“铃声”时，打开视觉标识；适合有听力障碍的用户以及在吵闹的环境中使用。"
 
-#: src/org.mate.marco.gschema.xml:141
+#: src/org.mate.croma.gschema.xml:141
 msgid "System Bell is Audible"
 msgstr "系统铃声发声"
 
-#: src/org.mate.marco.gschema.xml:142
+#: src/org.mate.croma.gschema.xml:142
 msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
 msgstr "决定应用程序或系统是否可以生成听得见的铃声；可以和“视觉铃声”一起使用，以便允许静默的铃声。"
 
-#: src/org.mate.marco.gschema.xml:146
+#: src/org.mate.croma.gschema.xml:146
 msgid "Visual Bell Type"
 msgstr "视觉铃声类型"
 
-#: src/org.mate.marco.gschema.xml:147
+#: src/org.mate.croma.gschema.xml:147
 msgid ""
 "Tells Marco how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
@@ -652,19 +652,19 @@ msgstr ""
 "通知 Marco "
 "如何实现系统铃声或其它应用程序响铃的视觉标识。目前有两种值，“全屏”将以黑白色闪烁整个屏幕，而“框架闪烁”将闪烁发出响铃信号的应用程序的标题栏。如果发送响铃的程序未知(通常是默认的“系统响铃”)，则闪烁当前窗口的标题栏。"
 
-#: src/org.mate.marco.gschema.xml:151
+#: src/org.mate.croma.gschema.xml:151
 msgid "Compositing Manager"
 msgstr "混成管理器"
 
-#: src/org.mate.marco.gschema.xml:152
+#: src/org.mate.croma.gschema.xml:152
 msgid "Determines whether Marco is a compositing manager."
 msgstr "决定 Marco 是否是混成管理器。"
 
-#: src/org.mate.marco.gschema.xml:156
+#: src/org.mate.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
 msgstr "对混成管理器使用高速 Alt-Tab (禁用缩略图)"
 
-#: src/org.mate.marco.gschema.xml:157
+#: src/org.mate.croma.gschema.xml:157
 msgid ""
 "If set to true, no window thumbnails will be displayed in the alt-tab popup "
 "window when the compositing manager is enabled. Application icons will be "
@@ -674,27 +674,27 @@ msgstr ""
 "如果设置此选项, 当混成器启用时, 将不会在 alt-tab "
 "弹出窗口显示缩略图。将仅显示应用图标。请注意，在具有许多可见窗口的高分辨率屏幕上，渲染时可能会出现明显的滞后。"
 
-#: src/org.mate.marco.gschema.xml:161
+#: src/org.mate.croma.gschema.xml:161
 msgid "If true, trade off usability for less resource usage"
 msgstr "如果为 true，则以可用性为代价降低资源占用"
 
-#: src/org.mate.marco.gschema.xml:162
+#: src/org.mate.croma.gschema.xml:162
 msgid ""
-"If true, marco will give the user less feedback by using wireframes, "
+"If true, croma will give the user less feedback by using wireframes, "
 "avoiding animations, or other means. This is a significant reduction in "
 "usability for many users, but may allow legacy applications to continue "
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"如果为真，marco "
+"如果为真，croma "
 "将会给用户提供较少的反馈，方法是使用线框而避免动画或者其它途径。这对许多用户来说，可用性大打折扣，但是这将允许较早的应用程序和终端服务器能够顺利运行。此外，如果开启了辅助功能，系统会自动禁用线框特性。"
 
-#: src/org.mate.marco.gschema.xml:166
+#: src/org.mate.croma.gschema.xml:166
 msgid ""
 "(Not implemented) Navigation works in terms of applications not windows"
 msgstr "(未实现)导航以应用程序而不是窗口的方式工作"
 
-#: src/org.mate.marco.gschema.xml:167
+#: src/org.mate.croma.gschema.xml:167
 msgid ""
 "If true, then Marco works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
@@ -707,11 +707,11 @@ msgstr ""
 "如果为真，那么 Marco 将以应用程序而不是窗口的方式工作。该概念有点抽象，但通常基于应用程序的设置更类似于 Mac 系统，而不太像 Windows "
 "系统。当您以基于应用程序的模式聚焦窗口时，该应用程序中的所有窗口都将被提升。同时，在基于应用程序的模式下，聚焦点击不会被传递到其它应用程序中的窗口。但是，基于应用程序的模式目前还基本没有实现。"
 
-#: src/org.mate.marco.gschema.xml:171
+#: src/org.mate.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
 msgstr "禁用旧的或有缺陷的应用程序所需的错误功能"
 
-#: src/org.mate.marco.gschema.xml:172
+#: src/org.mate.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
 "manager misfeatures. This option puts Marco in a rigorously correct mode, "
@@ -721,21 +721,21 @@ msgstr ""
 "某些应用程序破坏规定从而导致窗口管理器功能失常。该选项将 Marco "
 "置于完全正确模式下，这样的用户界面会更具有一致性，假定您不需要运行任何有缺陷的应用程序。"
 
-#: src/org.mate.marco.gschema.xml:176
+#: src/org.mate.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
 msgstr "决定是否在屏幕中心创建新窗口"
 
-#: src/org.mate.marco.gschema.xml:177
+#: src/org.mate.croma.gschema.xml:177
 msgid ""
 "If set to true, new windows are opened in the center of the screen. "
 "Otherwise, they are opened at the top left of the screen."
 msgstr "如设置为 true，将于屏幕中心打开新窗口。否则，将于屏幕左上角打开新窗口。"
 
-#: src/org.mate.marco.gschema.xml:181
+#: src/org.mate.croma.gschema.xml:181
 msgid "Whether to enable window tiling"
 msgstr "是否启用窗口平铺"
 
-#: src/org.mate.marco.gschema.xml:182
+#: src/org.mate.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
 "resizes them horizontally to cover half of the available area. Drag-dropping"
@@ -743,31 +743,31 @@ msgid ""
 msgstr ""
 "如果该选项被启用，那么将窗口拖动到屏幕左右边缘，会使它们在垂直方向上最大化，在水平方向上覆盖桌面可用空间的一半。而将窗口拖动到屏幕最上方将会最大化该窗口。"
 
-#: src/org.mate.marco.gschema.xml:186
+#: src/org.mate.croma.gschema.xml:186
 msgid "Whether to maximize the window when dragged to the top of the screen"
 msgstr "是否在将窗口移动到顶部时最大化"
 
-#: src/org.mate.marco.gschema.xml:187
+#: src/org.mate.croma.gschema.xml:187
 msgid ""
 "If enabled, drag-dropping a window to the top of the screen will maximize "
 "it. Only works when allow-tiling is enabled."
 msgstr "如果该选项被启用，将窗口拖拽到屏幕顶部将最大化该窗口。该特性仅在启用 allow-tiling 选项时可用。"
 
-#: src/org.mate.marco.gschema.xml:191
+#: src/org.mate.croma.gschema.xml:191
 msgid "Whether to enable cycling through different tile sizes"
 msgstr "是否启用平铺循环"
 
-#: src/org.mate.marco.gschema.xml:192
+#: src/org.mate.croma.gschema.xml:192
 msgid ""
 "If enabled, tiling a window will cycle through multiple different sizes by "
 "using the same keyboard shortcut multiple times in a row."
 msgstr "启用后，通过连续多次使用同一快捷键，平铺窗口可在不同的尺寸间循环。"
 
-#: src/org.mate.marco.gschema.xml:196
+#: src/org.mate.croma.gschema.xml:196
 msgid "Window placement mode"
 msgstr "窗口摆放模式"
 
-#: src/org.mate.marco.gschema.xml:197
+#: src/org.mate.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
 "\"automatic\" means the system chooses a location automatically based on the"
@@ -779,150 +779,150 @@ msgstr ""
 "窗口摆放模式指示新窗口将会怎样摆放。\"自动\"意味着系统会根据桌面可用空间摆放新窗口，如果没有可用空间将会重叠窗口; "
 "\"指针\"意味着新窗口将会根据鼠标当前位置摆放; \"手动\"意味着新窗口需要用户使用键盘或鼠标来手动摆放。"
 
-#: src/org.mate.marco.gschema.xml:201
+#: src/org.mate.croma.gschema.xml:201
 msgid "List of applications ignored by show-desktop"
 msgstr "在激活“显示桌面”按钮时不隐藏的应用程序"
 
-#: src/org.mate.marco.gschema.xml:202
+#: src/org.mate.croma.gschema.xml:202
 msgid ""
 "Comma separated class list. Each running GUI application referenced to given"
 " windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr "用逗号分隔的类列表。每个正在运行的图形应用程序引用的窗口管理器类将被“显示桌面”忽略（不隐藏）。"
 
-#: src/org.mate.marco.gschema.xml:207
+#: src/org.mate.croma.gschema.xml:207
 msgid "Icon size in alt-tab popup window"
 msgstr "alt-tab 弹出窗口中的图标大小"
 
-#: src/org.mate.marco.gschema.xml:208
+#: src/org.mate.croma.gschema.xml:208
 msgid ""
 "Size of the application icons displayed in alt-tab popup window. The "
 "screen's scale factor is applied to this value."
 msgstr "alt-tab弹出窗口中显示的应用程序图标的大小。屏幕的比例因素应用于此值。"
 
-#: src/org.mate.marco.gschema.xml:213
+#: src/org.mate.croma.gschema.xml:213
 msgid "Maximum number of columns in alt-tab popup window"
 msgstr "alt-tab弹出窗口中的最大列数"
 
-#: src/org.mate.marco.gschema.xml:214
+#: src/org.mate.croma.gschema.xml:214
 msgid ""
 "The popup window will be expanded to fit up to these many entries per row."
 msgstr "弹出窗口将展开以适应每行的这些条目。"
 
-#: src/org.mate.marco.gschema.xml:218
+#: src/org.mate.croma.gschema.xml:218
 msgid "Expand the alt-tab popup window to fit longer window titles"
 msgstr "展开alt-tab弹出窗口以适应更长的窗口标题"
 
-#: src/org.mate.marco.gschema.xml:219
+#: src/org.mate.croma.gschema.xml:219
 msgid ""
 "The popup window may be expanded up to the width determined by the config "
 "parameter 'alt-tab-max-columns'."
 msgstr "弹出窗口可以扩展到配置参数'alt-tab-max-columns'确定的宽度。"
 
-#: src/org.mate.marco.gschema.xml:226 src/org.mate.marco.gschema.xml:231
-#: src/org.mate.marco.gschema.xml:236 src/org.mate.marco.gschema.xml:241
-#: src/org.mate.marco.gschema.xml:246 src/org.mate.marco.gschema.xml:251
-#: src/org.mate.marco.gschema.xml:256 src/org.mate.marco.gschema.xml:261
-#: src/org.mate.marco.gschema.xml:266 src/org.mate.marco.gschema.xml:271
-#: src/org.mate.marco.gschema.xml:276 src/org.mate.marco.gschema.xml:281
-#: src/org.mate.marco.gschema.xml:286 src/org.mate.marco.gschema.xml:291
-#: src/org.mate.marco.gschema.xml:296 src/org.mate.marco.gschema.xml:301
-#: src/org.mate.marco.gschema.xml:306 src/org.mate.marco.gschema.xml:311
-#: src/org.mate.marco.gschema.xml:316 src/org.mate.marco.gschema.xml:321
-#: src/org.mate.marco.gschema.xml:326 src/org.mate.marco.gschema.xml:331
-#: src/org.mate.marco.gschema.xml:336 src/org.mate.marco.gschema.xml:341
-#: src/org.mate.marco.gschema.xml:346 src/org.mate.marco.gschema.xml:351
-#: src/org.mate.marco.gschema.xml:356 src/org.mate.marco.gschema.xml:361
-#: src/org.mate.marco.gschema.xml:366 src/org.mate.marco.gschema.xml:371
-#: src/org.mate.marco.gschema.xml:376 src/org.mate.marco.gschema.xml:381
-#: src/org.mate.marco.gschema.xml:386 src/org.mate.marco.gschema.xml:391
-#: src/org.mate.marco.gschema.xml:396 src/org.mate.marco.gschema.xml:401
+#: src/org.mate.croma.gschema.xml:226 src/org.mate.croma.gschema.xml:231
+#: src/org.mate.croma.gschema.xml:236 src/org.mate.croma.gschema.xml:241
+#: src/org.mate.croma.gschema.xml:246 src/org.mate.croma.gschema.xml:251
+#: src/org.mate.croma.gschema.xml:256 src/org.mate.croma.gschema.xml:261
+#: src/org.mate.croma.gschema.xml:266 src/org.mate.croma.gschema.xml:271
+#: src/org.mate.croma.gschema.xml:276 src/org.mate.croma.gschema.xml:281
+#: src/org.mate.croma.gschema.xml:286 src/org.mate.croma.gschema.xml:291
+#: src/org.mate.croma.gschema.xml:296 src/org.mate.croma.gschema.xml:301
+#: src/org.mate.croma.gschema.xml:306 src/org.mate.croma.gschema.xml:311
+#: src/org.mate.croma.gschema.xml:316 src/org.mate.croma.gschema.xml:321
+#: src/org.mate.croma.gschema.xml:326 src/org.mate.croma.gschema.xml:331
+#: src/org.mate.croma.gschema.xml:336 src/org.mate.croma.gschema.xml:341
+#: src/org.mate.croma.gschema.xml:346 src/org.mate.croma.gschema.xml:351
+#: src/org.mate.croma.gschema.xml:356 src/org.mate.croma.gschema.xml:361
+#: src/org.mate.croma.gschema.xml:366 src/org.mate.croma.gschema.xml:371
+#: src/org.mate.croma.gschema.xml:376 src/org.mate.croma.gschema.xml:381
+#: src/org.mate.croma.gschema.xml:386 src/org.mate.croma.gschema.xml:391
+#: src/org.mate.croma.gschema.xml:396 src/org.mate.croma.gschema.xml:401
 msgid "Name of workspace"
 msgstr "工作区名称"
 
-#: src/org.mate.marco.gschema.xml:227 src/org.mate.marco.gschema.xml:232
-#: src/org.mate.marco.gschema.xml:237 src/org.mate.marco.gschema.xml:242
-#: src/org.mate.marco.gschema.xml:247 src/org.mate.marco.gschema.xml:252
-#: src/org.mate.marco.gschema.xml:257 src/org.mate.marco.gschema.xml:262
-#: src/org.mate.marco.gschema.xml:267 src/org.mate.marco.gschema.xml:272
-#: src/org.mate.marco.gschema.xml:277 src/org.mate.marco.gschema.xml:282
-#: src/org.mate.marco.gschema.xml:287 src/org.mate.marco.gschema.xml:292
-#: src/org.mate.marco.gschema.xml:297 src/org.mate.marco.gschema.xml:302
-#: src/org.mate.marco.gschema.xml:307 src/org.mate.marco.gschema.xml:312
-#: src/org.mate.marco.gschema.xml:317 src/org.mate.marco.gschema.xml:322
-#: src/org.mate.marco.gschema.xml:327 src/org.mate.marco.gschema.xml:332
-#: src/org.mate.marco.gschema.xml:337 src/org.mate.marco.gschema.xml:342
-#: src/org.mate.marco.gschema.xml:347 src/org.mate.marco.gschema.xml:352
-#: src/org.mate.marco.gschema.xml:357 src/org.mate.marco.gschema.xml:362
-#: src/org.mate.marco.gschema.xml:367 src/org.mate.marco.gschema.xml:372
-#: src/org.mate.marco.gschema.xml:377 src/org.mate.marco.gschema.xml:382
-#: src/org.mate.marco.gschema.xml:387 src/org.mate.marco.gschema.xml:392
-#: src/org.mate.marco.gschema.xml:397 src/org.mate.marco.gschema.xml:402
+#: src/org.mate.croma.gschema.xml:227 src/org.mate.croma.gschema.xml:232
+#: src/org.mate.croma.gschema.xml:237 src/org.mate.croma.gschema.xml:242
+#: src/org.mate.croma.gschema.xml:247 src/org.mate.croma.gschema.xml:252
+#: src/org.mate.croma.gschema.xml:257 src/org.mate.croma.gschema.xml:262
+#: src/org.mate.croma.gschema.xml:267 src/org.mate.croma.gschema.xml:272
+#: src/org.mate.croma.gschema.xml:277 src/org.mate.croma.gschema.xml:282
+#: src/org.mate.croma.gschema.xml:287 src/org.mate.croma.gschema.xml:292
+#: src/org.mate.croma.gschema.xml:297 src/org.mate.croma.gschema.xml:302
+#: src/org.mate.croma.gschema.xml:307 src/org.mate.croma.gschema.xml:312
+#: src/org.mate.croma.gschema.xml:317 src/org.mate.croma.gschema.xml:322
+#: src/org.mate.croma.gschema.xml:327 src/org.mate.croma.gschema.xml:332
+#: src/org.mate.croma.gschema.xml:337 src/org.mate.croma.gschema.xml:342
+#: src/org.mate.croma.gschema.xml:347 src/org.mate.croma.gschema.xml:352
+#: src/org.mate.croma.gschema.xml:357 src/org.mate.croma.gschema.xml:362
+#: src/org.mate.croma.gschema.xml:367 src/org.mate.croma.gschema.xml:372
+#: src/org.mate.croma.gschema.xml:377 src/org.mate.croma.gschema.xml:382
+#: src/org.mate.croma.gschema.xml:387 src/org.mate.croma.gschema.xml:392
+#: src/org.mate.croma.gschema.xml:397 src/org.mate.croma.gschema.xml:402
 msgid "The name of a workspace."
 msgstr "工作区的名称。"
 
-#: src/org.mate.marco.gschema.xml:409 src/org.mate.marco.gschema.xml:414
-#: src/org.mate.marco.gschema.xml:419 src/org.mate.marco.gschema.xml:424
-#: src/org.mate.marco.gschema.xml:429 src/org.mate.marco.gschema.xml:434
-#: src/org.mate.marco.gschema.xml:439 src/org.mate.marco.gschema.xml:444
-#: src/org.mate.marco.gschema.xml:449 src/org.mate.marco.gschema.xml:454
-#: src/org.mate.marco.gschema.xml:459 src/org.mate.marco.gschema.xml:464
+#: src/org.mate.croma.gschema.xml:409 src/org.mate.croma.gschema.xml:414
+#: src/org.mate.croma.gschema.xml:419 src/org.mate.croma.gschema.xml:424
+#: src/org.mate.croma.gschema.xml:429 src/org.mate.croma.gschema.xml:434
+#: src/org.mate.croma.gschema.xml:439 src/org.mate.croma.gschema.xml:444
+#: src/org.mate.croma.gschema.xml:449 src/org.mate.croma.gschema.xml:454
+#: src/org.mate.croma.gschema.xml:459 src/org.mate.croma.gschema.xml:464
 msgid "Run a defined command"
 msgstr "运行定义的命令"
 
-#: src/org.mate.marco.gschema.xml:410 src/org.mate.marco.gschema.xml:415
-#: src/org.mate.marco.gschema.xml:420 src/org.mate.marco.gschema.xml:425
-#: src/org.mate.marco.gschema.xml:430 src/org.mate.marco.gschema.xml:435
-#: src/org.mate.marco.gschema.xml:440 src/org.mate.marco.gschema.xml:445
-#: src/org.mate.marco.gschema.xml:450 src/org.mate.marco.gschema.xml:455
-#: src/org.mate.marco.gschema.xml:460 src/org.mate.marco.gschema.xml:465
+#: src/org.mate.croma.gschema.xml:410 src/org.mate.croma.gschema.xml:415
+#: src/org.mate.croma.gschema.xml:420 src/org.mate.croma.gschema.xml:425
+#: src/org.mate.croma.gschema.xml:430 src/org.mate.croma.gschema.xml:435
+#: src/org.mate.croma.gschema.xml:440 src/org.mate.croma.gschema.xml:445
+#: src/org.mate.croma.gschema.xml:450 src/org.mate.croma.gschema.xml:455
+#: src/org.mate.croma.gschema.xml:460 src/org.mate.croma.gschema.xml:465
 msgid ""
 "The keybinding that runs the correspondingly-numbered command in "
-"/apps/marco/keybinding_commands The format looks like \"<Control>a\" or "
+"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
 "keybinding for this action."
 msgstr ""
-"在/apps/marco/keybinding_commands中运行相应编号命令的按键绑定格式类似于“<Control>a”或“<Shift><Alt>F1”。解析器相当自由，允许小写或大写，还有缩写，如“<Ctl>”和“<Ctrl>”。如果将选项设置为特殊字符串“disabled”，则此操作将没有按键绑定。"
+"在/apps/croma/keybinding_commands中运行相应编号命令的按键绑定格式类似于“<Control>a”或“<Shift><Alt>F1”。解析器相当自由，允许小写或大写，还有缩写，如“<Ctl>”和“<Ctrl>”。如果将选项设置为特殊字符串“disabled”，则此操作将没有按键绑定。"
 
-#: src/org.mate.marco.gschema.xml:470 src/org.mate.marco.gschema.xml:475
-#: src/org.mate.marco.gschema.xml:480 src/org.mate.marco.gschema.xml:485
-#: src/org.mate.marco.gschema.xml:490 src/org.mate.marco.gschema.xml:495
-#: src/org.mate.marco.gschema.xml:500 src/org.mate.marco.gschema.xml:505
-#: src/org.mate.marco.gschema.xml:510 src/org.mate.marco.gschema.xml:515
-#: src/org.mate.marco.gschema.xml:520 src/org.mate.marco.gschema.xml:525
-#: src/org.mate.marco.gschema.xml:530 src/org.mate.marco.gschema.xml:535
-#: src/org.mate.marco.gschema.xml:540 src/org.mate.marco.gschema.xml:545
-#: src/org.mate.marco.gschema.xml:550 src/org.mate.marco.gschema.xml:625
-#: src/org.mate.marco.gschema.xml:630 src/org.mate.marco.gschema.xml:635
-#: src/org.mate.marco.gschema.xml:640 src/org.mate.marco.gschema.xml:645
-#: src/org.mate.marco.gschema.xml:650 src/org.mate.marco.gschema.xml:655
-#: src/org.mate.marco.gschema.xml:736 src/org.mate.marco.gschema.xml:741
-#: src/org.mate.marco.gschema.xml:746 src/org.mate.marco.gschema.xml:751
-#: src/org.mate.marco.gschema.xml:756 src/org.mate.marco.gschema.xml:761
-#: src/org.mate.marco.gschema.xml:766 src/org.mate.marco.gschema.xml:771
-#: src/org.mate.marco.gschema.xml:776 src/org.mate.marco.gschema.xml:781
-#: src/org.mate.marco.gschema.xml:786 src/org.mate.marco.gschema.xml:791
-#: src/org.mate.marco.gschema.xml:796 src/org.mate.marco.gschema.xml:801
-#: src/org.mate.marco.gschema.xml:806 src/org.mate.marco.gschema.xml:811
-#: src/org.mate.marco.gschema.xml:816 src/org.mate.marco.gschema.xml:821
-#: src/org.mate.marco.gschema.xml:826 src/org.mate.marco.gschema.xml:831
-#: src/org.mate.marco.gschema.xml:836 src/org.mate.marco.gschema.xml:841
-#: src/org.mate.marco.gschema.xml:846 src/org.mate.marco.gschema.xml:851
-#: src/org.mate.marco.gschema.xml:856 src/org.mate.marco.gschema.xml:861
-#: src/org.mate.marco.gschema.xml:866 src/org.mate.marco.gschema.xml:871
-#: src/org.mate.marco.gschema.xml:876 src/org.mate.marco.gschema.xml:881
-#: src/org.mate.marco.gschema.xml:886 src/org.mate.marco.gschema.xml:891
-#: src/org.mate.marco.gschema.xml:896 src/org.mate.marco.gschema.xml:901
-#: src/org.mate.marco.gschema.xml:906 src/org.mate.marco.gschema.xml:911
-#: src/org.mate.marco.gschema.xml:916 src/org.mate.marco.gschema.xml:921
-#: src/org.mate.marco.gschema.xml:926 src/org.mate.marco.gschema.xml:931
-#: src/org.mate.marco.gschema.xml:936 src/org.mate.marco.gschema.xml:941
-#: src/org.mate.marco.gschema.xml:946 src/org.mate.marco.gschema.xml:951
-#: src/org.mate.marco.gschema.xml:956 src/org.mate.marco.gschema.xml:961
-#: src/org.mate.marco.gschema.xml:966 src/org.mate.marco.gschema.xml:971
-#: src/org.mate.marco.gschema.xml:976 src/org.mate.marco.gschema.xml:981
-#: src/org.mate.marco.gschema.xml:986 src/org.mate.marco.gschema.xml:991
+#: src/org.mate.croma.gschema.xml:470 src/org.mate.croma.gschema.xml:475
+#: src/org.mate.croma.gschema.xml:480 src/org.mate.croma.gschema.xml:485
+#: src/org.mate.croma.gschema.xml:490 src/org.mate.croma.gschema.xml:495
+#: src/org.mate.croma.gschema.xml:500 src/org.mate.croma.gschema.xml:505
+#: src/org.mate.croma.gschema.xml:510 src/org.mate.croma.gschema.xml:515
+#: src/org.mate.croma.gschema.xml:520 src/org.mate.croma.gschema.xml:525
+#: src/org.mate.croma.gschema.xml:530 src/org.mate.croma.gschema.xml:535
+#: src/org.mate.croma.gschema.xml:540 src/org.mate.croma.gschema.xml:545
+#: src/org.mate.croma.gschema.xml:550 src/org.mate.croma.gschema.xml:625
+#: src/org.mate.croma.gschema.xml:630 src/org.mate.croma.gschema.xml:635
+#: src/org.mate.croma.gschema.xml:640 src/org.mate.croma.gschema.xml:645
+#: src/org.mate.croma.gschema.xml:650 src/org.mate.croma.gschema.xml:655
+#: src/org.mate.croma.gschema.xml:736 src/org.mate.croma.gschema.xml:741
+#: src/org.mate.croma.gschema.xml:746 src/org.mate.croma.gschema.xml:751
+#: src/org.mate.croma.gschema.xml:756 src/org.mate.croma.gschema.xml:761
+#: src/org.mate.croma.gschema.xml:766 src/org.mate.croma.gschema.xml:771
+#: src/org.mate.croma.gschema.xml:776 src/org.mate.croma.gschema.xml:781
+#: src/org.mate.croma.gschema.xml:786 src/org.mate.croma.gschema.xml:791
+#: src/org.mate.croma.gschema.xml:796 src/org.mate.croma.gschema.xml:801
+#: src/org.mate.croma.gschema.xml:806 src/org.mate.croma.gschema.xml:811
+#: src/org.mate.croma.gschema.xml:816 src/org.mate.croma.gschema.xml:821
+#: src/org.mate.croma.gschema.xml:826 src/org.mate.croma.gschema.xml:831
+#: src/org.mate.croma.gschema.xml:836 src/org.mate.croma.gschema.xml:841
+#: src/org.mate.croma.gschema.xml:846 src/org.mate.croma.gschema.xml:851
+#: src/org.mate.croma.gschema.xml:856 src/org.mate.croma.gschema.xml:861
+#: src/org.mate.croma.gschema.xml:866 src/org.mate.croma.gschema.xml:871
+#: src/org.mate.croma.gschema.xml:876 src/org.mate.croma.gschema.xml:881
+#: src/org.mate.croma.gschema.xml:886 src/org.mate.croma.gschema.xml:891
+#: src/org.mate.croma.gschema.xml:896 src/org.mate.croma.gschema.xml:901
+#: src/org.mate.croma.gschema.xml:906 src/org.mate.croma.gschema.xml:911
+#: src/org.mate.croma.gschema.xml:916 src/org.mate.croma.gschema.xml:921
+#: src/org.mate.croma.gschema.xml:926 src/org.mate.croma.gschema.xml:931
+#: src/org.mate.croma.gschema.xml:936 src/org.mate.croma.gschema.xml:941
+#: src/org.mate.croma.gschema.xml:946 src/org.mate.croma.gschema.xml:951
+#: src/org.mate.croma.gschema.xml:956 src/org.mate.croma.gschema.xml:961
+#: src/org.mate.croma.gschema.xml:966 src/org.mate.croma.gschema.xml:971
+#: src/org.mate.croma.gschema.xml:976 src/org.mate.croma.gschema.xml:981
+#: src/org.mate.croma.gschema.xml:986 src/org.mate.croma.gschema.xml:991
 msgid ""
 "The format looks like \"<Control>a\" or \"<Shift><Alt>F1\". The parser is "
 "fairly liberal and allows lower or upper case, and also abbreviations such "
@@ -931,13 +931,13 @@ msgid ""
 msgstr ""
 "格式类似于“<Control>a”或“<Shift><Alt>F1”。解析器相当自由，允许小写或大写，还有缩写，如“<Ctl>”和“<Ctrl>”。如果将选项设置为特殊字符串“disabled”，则此操作将没有按键绑定。"
 
-#: src/org.mate.marco.gschema.xml:555 src/org.mate.marco.gschema.xml:560
-#: src/org.mate.marco.gschema.xml:565 src/org.mate.marco.gschema.xml:570
-#: src/org.mate.marco.gschema.xml:575 src/org.mate.marco.gschema.xml:580
-#: src/org.mate.marco.gschema.xml:585 src/org.mate.marco.gschema.xml:590
-#: src/org.mate.marco.gschema.xml:595 src/org.mate.marco.gschema.xml:600
-#: src/org.mate.marco.gschema.xml:605 src/org.mate.marco.gschema.xml:610
-#: src/org.mate.marco.gschema.xml:615 src/org.mate.marco.gschema.xml:620
+#: src/org.mate.croma.gschema.xml:555 src/org.mate.croma.gschema.xml:560
+#: src/org.mate.croma.gschema.xml:565 src/org.mate.croma.gschema.xml:570
+#: src/org.mate.croma.gschema.xml:575 src/org.mate.croma.gschema.xml:580
+#: src/org.mate.croma.gschema.xml:585 src/org.mate.croma.gschema.xml:590
+#: src/org.mate.croma.gschema.xml:595 src/org.mate.croma.gschema.xml:600
+#: src/org.mate.croma.gschema.xml:605 src/org.mate.croma.gschema.xml:610
+#: src/org.mate.croma.gschema.xml:615 src/org.mate.croma.gschema.xml:620
 msgid ""
 "The format looks like \"<Control>a\" or \"<Shift><Alt>F1\". The parser is "
 "fairly liberal and allows lower or upper case, and also abbreviations such "
@@ -948,106 +948,106 @@ msgid ""
 msgstr ""
 "格式类似于“<Control>a”或“<Shift><Alt>F1”。解析器相当自由，允许小写或大写，还有缩写，如“<Ctl>”和“<Ctrl>”。如果将选项设置为特殊字符串“disabled”，则此操作将没有按键绑定。通过按住“shift”键可以反转这种按键绑定;因此，“shift”不能成为它使用的关键之一。"
 
-#: src/org.mate.marco.gschema.xml:559
+#: src/org.mate.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
 msgstr "在应用程序的窗口之间反向移动，使用弹出窗口"
 
-#: src/org.mate.marco.gschema.xml:569
+#: src/org.mate.croma.gschema.xml:569
 msgid "Move backward between windows, using a popup window"
 msgstr "在窗口之间反向移动，使用弹出窗口"
 
-#: src/org.mate.marco.gschema.xml:574
+#: src/org.mate.croma.gschema.xml:574
 msgid "Move between windows on all workspaces, using a popup window"
 msgstr "使用弹出窗口，在各工作区中的窗口间切换"
 
-#: src/org.mate.marco.gschema.xml:579
+#: src/org.mate.croma.gschema.xml:579
 msgid "Move backward between windows on all workspaces, using a popup window"
 msgstr "使用弹出窗口，在各工作区中的窗口间逆向切换"
 
-#: src/org.mate.marco.gschema.xml:589
+#: src/org.mate.croma.gschema.xml:589
 msgid "Move backward between panels and the desktop, using a popup window"
 msgstr "在面板和桌面之间反向移动，使用弹出窗口"
 
-#: src/org.mate.marco.gschema.xml:599
+#: src/org.mate.croma.gschema.xml:599
 msgid "Move backward between windows of an application immediately"
 msgstr "在应用程序的窗口之间即时反向移动"
 
-#: src/org.mate.marco.gschema.xml:609
+#: src/org.mate.croma.gschema.xml:609
 msgid "Move backward between windows immediately"
 msgstr "在窗口之间即时反向移动"
 
-#: src/org.mate.marco.gschema.xml:619
+#: src/org.mate.croma.gschema.xml:619
 msgid "Move backward between panels and the desktop immediately"
 msgstr "在面板和桌面之间立即反向移动焦点"
 
-#: src/org.mate.marco.gschema.xml:634
+#: src/org.mate.croma.gschema.xml:634
 msgid "Show the panel's \"Run Application\" dialog box"
 msgstr "显示面板的“运行应用程序”对话框"
 
-#: src/org.mate.marco.gschema.xml:662 src/org.mate.marco.gschema.xml:667
-#: src/org.mate.marco.gschema.xml:672 src/org.mate.marco.gschema.xml:677
-#: src/org.mate.marco.gschema.xml:682 src/org.mate.marco.gschema.xml:687
-#: src/org.mate.marco.gschema.xml:692 src/org.mate.marco.gschema.xml:697
-#: src/org.mate.marco.gschema.xml:702 src/org.mate.marco.gschema.xml:707
-#: src/org.mate.marco.gschema.xml:712 src/org.mate.marco.gschema.xml:717
+#: src/org.mate.croma.gschema.xml:662 src/org.mate.croma.gschema.xml:667
+#: src/org.mate.croma.gschema.xml:672 src/org.mate.croma.gschema.xml:677
+#: src/org.mate.croma.gschema.xml:682 src/org.mate.croma.gschema.xml:687
+#: src/org.mate.croma.gschema.xml:692 src/org.mate.croma.gschema.xml:697
+#: src/org.mate.croma.gschema.xml:702 src/org.mate.croma.gschema.xml:707
+#: src/org.mate.croma.gschema.xml:712 src/org.mate.croma.gschema.xml:717
 msgid "Commands to run in response to keybindings"
 msgstr "按键组合对应的执行命令"
 
-#: src/org.mate.marco.gschema.xml:663 src/org.mate.marco.gschema.xml:668
-#: src/org.mate.marco.gschema.xml:673 src/org.mate.marco.gschema.xml:678
-#: src/org.mate.marco.gschema.xml:683 src/org.mate.marco.gschema.xml:688
-#: src/org.mate.marco.gschema.xml:693 src/org.mate.marco.gschema.xml:698
-#: src/org.mate.marco.gschema.xml:703 src/org.mate.marco.gschema.xml:708
-#: src/org.mate.marco.gschema.xml:713 src/org.mate.marco.gschema.xml:718
+#: src/org.mate.croma.gschema.xml:663 src/org.mate.croma.gschema.xml:668
+#: src/org.mate.croma.gschema.xml:673 src/org.mate.croma.gschema.xml:678
+#: src/org.mate.croma.gschema.xml:683 src/org.mate.croma.gschema.xml:688
+#: src/org.mate.croma.gschema.xml:693 src/org.mate.croma.gschema.xml:698
+#: src/org.mate.croma.gschema.xml:703 src/org.mate.croma.gschema.xml:708
+#: src/org.mate.croma.gschema.xml:713 src/org.mate.croma.gschema.xml:718
 msgid ""
-"The /apps/marco/global_keybindings/run_command_N keys define keybindings "
+"The /apps/croma/global_keybindings/run_command_N keys define keybindings "
 "that correspond to these commands. Pressing the keybinding for run_command_N"
 " will execute command_N."
 msgstr ""
-"/apps/marco/global_keybindings/run_command_N 键值定义这些命令对应的按键组合。按下 "
+"/apps/croma/global_keybindings/run_command_N 键值定义这些命令对应的按键组合。按下 "
 "run_command_N 对应的按键组合将执行命令 command_N。"
 
-#: src/org.mate.marco.gschema.xml:722
+#: src/org.mate.croma.gschema.xml:722
 msgid "The screenshot command"
 msgstr "截图命令"
 
-#: src/org.mate.marco.gschema.xml:723
+#: src/org.mate.croma.gschema.xml:723
 msgid ""
-"The /apps/marco/global_keybindings/run_command_screenshot key defines a "
+"The /apps/croma/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
-"/apps/marco/global_keybindings/run_command_screenshot 键值定义了导致调用此设置的按键组合。"
+"/apps/croma/global_keybindings/run_command_screenshot 键值定义了导致调用此设置的按键组合。"
 
-#: src/org.mate.marco.gschema.xml:727
+#: src/org.mate.croma.gschema.xml:727
 msgid "The window screenshot command"
 msgstr "窗口截图命令"
 
-#: src/org.mate.marco.gschema.xml:728
+#: src/org.mate.croma.gschema.xml:728
 msgid ""
-"The /apps/marco/global_keybindings/run_command_window_screenshot key defines"
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
 " a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
-"/apps/marco/global_keybindings/run_command_window_screenshot "
+"/apps/croma/global_keybindings/run_command_window_screenshot "
 "键值定义了导致调用此设置的按键组合。"
 
-#: src/org.mate.marco.gschema.xml:750
+#: src/org.mate.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
 msgstr "在窗口是否永远可见于其它窗口之上间切换"
 
-#: src/org.mate.marco.gschema.xml:910
+#: src/org.mate.croma.gschema.xml:910
 msgid "Tile window to north-west (upper left) corner of screen"
 msgstr "将窗口平铺到屏幕西北（左上）角"
 
-#: src/org.mate.marco.gschema.xml:915
+#: src/org.mate.croma.gschema.xml:915
 msgid "Tile window to north-east (upper right) corner of screen"
 msgstr "将窗口平铺到屏幕东北（右上）角"
 
-#: src/org.mate.marco.gschema.xml:920
+#: src/org.mate.croma.gschema.xml:920
 msgid "Tile window to south-east (lower right) corner of screen"
 msgstr "将窗口平铺到屏幕东南（右下）角"
 
-#: src/org.mate.marco.gschema.xml:925
+#: src/org.mate.croma.gschema.xml:925
 msgid "Tile window to south-west (lower left) corner of screen"
 msgstr "将窗口平铺到屏幕西南（左下）角"
 
@@ -1143,12 +1143,12 @@ msgstr "取消"
 #: src/core/main.c:132
 #, c-format
 msgid ""
-"marco %s\n"
+"croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
 "There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"marco %s\n"
+"croma %s\n"
 "版权所有 (C) 2001-%s Havoc Pennington, Red Hat, Inc., 以及其他人\n"
 "这是自由软件：版权条款请参见源码.\n"
 "不存在任何保证：即使是对适销性或者适合某种特定目的也不作保证。\n"
@@ -1301,8 +1301,8 @@ msgid "Failed to parse saved session file: %s\n"
 msgstr "无法解析保存的会话文件：%s\n"
 
 #: src/core/session.c:1183
-msgid "<marco_session> attribute seen but we already have the session ID"
-msgstr "<marco_session> 属性已看到，但我们已经拥有该会话 ID"
+msgid "<croma_session> attribute seen but we already have the session ID"
+msgstr "<croma_session> 属性已看到，但我们已经拥有该会话 ID"
 
 #: src/core/session.c:1196 src/core/session.c:1271 src/core/session.c:1303
 #: src/core/session.c:1375 src/core/session.c:1435
@@ -1340,7 +1340,7 @@ msgstr "无法对日志文件 %s 进行 fdopen() 操作：%s\n"
 msgid "Opened log file %s\n"
 msgstr "打开的日志文件 %s\n"
 
-#: src/core/util.c:136 src/tools/marco-message.c:176
+#: src/core/util.c:136 src/tools/croma-message.c:176
 msgid "Marco was compiled without support for verbose mode\n"
 msgstr "Marco 编译的时候没有加入详细模式的支持\n"
 
@@ -1361,8 +1361,8 @@ msgid "Window manager error: "
 msgstr "窗口管理器错误："
 
 #. Translators: This is the title used on dialog boxes
-#: src/core/util.c:560 src/core/util.c:658 src/marco.desktop.in:4
-#: src/marco-wm.desktop.in:4
+#: src/core/util.c:560 src/core/util.c:658 src/croma.desktop.in:4
+#: src/croma-wm.desktop.in:4
 msgid "Marco"
 msgstr "Marco"
 
@@ -1452,7 +1452,7 @@ msgid ""
 "list\n"
 msgstr "窗口 0x%2$lx 上的属性 %1$s 为列表中的条目 %3$d 包含无效的 UTF-8\n"
 
-#: src/tools/marco-message.c:150
+#: src/tools/croma-message.c:150
 #, c-format
 msgid "Usage: %s\n"
 msgstr "用法：%s\n"
@@ -2364,8 +2364,8 @@ msgid "%g milliseconds to draw one window frame"
 msgstr "%g 毫秒用来绘制一个窗口框架"
 
 #: src/ui/theme-viewer.c:876
-msgid "Usage: marco-theme-viewer [THEMENAME]\n"
-msgstr "用法：marco-theme-viewer [主题名称]\n"
+msgid "Usage: croma-theme-viewer [THEMENAME]\n"
+msgstr "用法：croma-theme-viewer [主题名称]\n"
 
 #: src/ui/theme-viewer.c:883
 #, c-format

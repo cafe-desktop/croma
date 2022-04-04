@@ -3,7 +3,7 @@
 /* Draw a workspace */
 
 /* This file should not be modified to depend on other files in
- * libwnck or marco, since it's used in both of them
+ * libwnck or croma, since it's used in both of them
  */
 
 /*

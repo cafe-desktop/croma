@@ -1,4 +1,4 @@
-lib_LTLIBRARIES = libmarco-private.la
+lib_LTLIBRARIES = libcroma-private.la
 
 SUBDIRS=wm-tester tools themes
 
@@ -9,19 +9,19 @@ AM_CPPFLAGS = \
 	-DMARCO_LOCALEDIR=\""$(datadir)/locale"\" \
 	-DMARCO_PKGDATADIR=\"$(pkgdatadir)\" \
 	-DMARCO_DATADIR=\"$(datadir)\" \
-	-DG_LOG_DOMAIN=\"marco\" \
+	-DG_LOG_DOMAIN=\"croma\" \
 	-DSN_API_NOT_YET_FROZEN=1 \
 	@MARCO_CFLAGS@ \
 	$(WARN_CFLAGS)
 
-marco_SOURCES= 				\
+croma_SOURCES= 				\
 	core/main.c				\
 	include/main.h
 
-# by setting libmarco_private_la_CFLAGS, the files shared with
-# marco proper will be compiled with different names.
-libmarco_private_la_CFLAGS =
-libmarco_private_la_SOURCES=			\
+# by setting libcroma_private_la_CFLAGS, the files shared with
+# croma proper will be compiled with different names.
+libcroma_private_la_CFLAGS =
+libcroma_private_la_SOURCES=			\
 	core/async-getprop.c \
 	core/async-getprop.h \
 	core/atomnames.h \
@@ -67,7 +67,7 @@ libmarco_private_la_SOURCES=			\
 	core/keybindings.h \
 	core/main.c \
 	include/main.h \
-	core/marco-Xatomtype.h \
+	core/croma-Xatomtype.h \
 	core/place.c \
 	core/place.h \
 	core/prefs.c \
@@ -117,12 +117,12 @@ libmarco_private_la_SOURCES=			\
 	ui/ui.c \
 	include/all-keybindings.h
 
-libmarco_private_la_LDFLAGS = -no-undefined -version-info $(LT_VERSION_INFO)
-libmarco_private_la_LIBADD = @MARCO_LIBS@
+libcroma_private_la_LDFLAGS = -no-undefined -version-info $(LT_VERSION_INFO)
+libcroma_private_la_LIBADD = @MARCO_LIBS@
 
-libmarcoincludedir = $(includedir)/marco-1/marco-private
+libcromaincludedir = $(includedir)/croma-1/croma-private
 
-libmarcoinclude_HEADERS = \
+libcromainclude_HEADERS = \
 	include/boxes.h \
 	ui/gradient.h \
 	include/util.h \
@@ -131,13 +131,13 @@ libmarcoinclude_HEADERS = \
 	ui/theme-parser.h \
 	ui/theme.h
 
-marco_theme_viewer_SOURCES= \
+croma_theme_viewer_SOURCES= \
 	ui/theme-viewer.c
 
-bin_PROGRAMS=marco marco-theme-viewer
+bin_PROGRAMS=croma croma-theme-viewer
 
-marco_LDADD=@MARCO_LIBS@ libmarco-private.la
-marco_theme_viewer_LDADD= @MARCO_LIBS@ libmarco-private.la
+croma_LDADD=@MARCO_LIBS@ libcroma-private.la
+croma_theme_viewer_LDADD= @MARCO_LIBS@ libcroma-private.la
 
 testboxes_SOURCES=include/util.h core/util.c include/boxes.h core/boxes.c core/testboxes.c
 testgradient_SOURCES=ui/gradient.h ui/gradient.c ui/testgradient.c
@@ -153,23 +153,23 @@ testasyncgetprop_LDADD= @MARCO_LIBS@
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 desktopfilesdir=$(datadir)/applications
-desktopfiles_in_files=marco.desktop.in
+desktopfiles_in_files=croma.desktop.in
 desktopfiles_files=$(desktopfiles_in_files:.desktop.in=.desktop)
 desktopfiles_DATA = $(desktopfiles_files)
 
 wmpropertiesdir=$(datadir)/mate/wm-properties
-wmproperties_in_files=marco-wm.desktop.in
+wmproperties_in_files=croma-wm.desktop.in
 wmproperties_files=$(wmproperties_in_files:.desktop.in=.desktop)
 wmproperties_DATA = $(wmproperties_files)
 
-gsettings_SCHEMAS = org.mate.marco.gschema.xml
+gsettings_SCHEMAS = org.mate.croma.gschema.xml
 @GSETTINGS_RULES@
 
 xmldir = @MATE_KEYBINDINGS_KEYSDIR@
 xml_in_files = \
-	50-marco-desktop-key.xml.in \
-	50-marco-window-key.xml.in \
-	50-marco-global-key.xml.in
+	50-croma-desktop-key.xml.in \
+	50-croma-window-key.xml.in \
+	50-croma-global-key.xml.in
 xml_DATA = $(xml_in_files:.xml.in=.xml)
 
 %.xml: %.xml.in
@@ -177,15 +177,15 @@ xml_DATA = $(xml_in_files:.xml.in=.xml)
 
 BUILT_SOURCES =
 CLEANFILES = \
-	marco.desktop \
-	marco-wm.desktop \
-	50-marco-desktop-key.xml \
-	50-marco-global-key.xml \
-	50-marco-window-key.xml
+	croma.desktop \
+	croma-wm.desktop \
+	50-croma-desktop-key.xml \
+	50-croma-global-key.xml \
+	50-croma-window-key.xml
 
 pkgconfigdir = $(libdir)/pkgconfig
 
-pkgconfig_DATA = libmarco-private.pc
+pkgconfig_DATA = libcroma-private.pc
 
 EXTRA_DIST= \
 	$(desktopfiles_files) \
@@ -195,7 +195,7 @@ EXTRA_DIST= \
 	$(desktopfiles_in_files) \
 	$(wmproperties_in_files) \
 	$(xml_in_files) \
-	libmarco-private.pc.in \
+	libcroma-private.pc.in \
 	meson.build
 
 

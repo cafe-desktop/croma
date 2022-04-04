@@ -5,7 +5,7 @@
 
 # The name of the directory in /usr/share/mate/help/, 
 # and the name of the main .xml file:
-HELP_ID = creating-marco-themes
+HELP_ID = creating-croma-themes
 
 # The names of any files included via entity declarations.
 HELP_FILES = index.docbook

@@ -2382,7 +2382,7 @@ error_on_command (int         command_index,
                   command_index, command, message);
 
   /*
-    marco-dialog said:
+    croma-dialog said:
 
     FIXME offer to change the value of the command's mateconf key
   */

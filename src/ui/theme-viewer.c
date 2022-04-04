@@ -873,7 +873,7 @@ main (int argc, char **argv)
     global_theme = meta_theme_load (argv[1], &err);
   else
     {
-      g_printerr (_("Usage: marco-theme-viewer [THEMENAME]\n"));
+      g_printerr (_("Usage: croma-theme-viewer [THEMENAME]\n"));
       exit (1);
     }
   end = clock ();

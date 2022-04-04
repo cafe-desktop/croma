@@ -18,384 +18,384 @@ msgstr ""
 "Language: frp\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../src/50-marco-desktop-key.xml.in.h:1
+#: ../src/50-croma-desktop-key.xml.in.h:1
 msgid "Desktop"
 msgstr "Chaplèta"
 
-#: ../src/50-marco-desktop-key.xml.in.h:2
-#: ../src/org.mate.marco.gschema.xml.h:98
+#: ../src/50-croma-desktop-key.xml.in.h:2
+#: ../src/org.mate.croma.gschema.xml.h:98
 msgid "Show the panel's \"Run Application\" dialog box"
 msgstr ""
 
-#: ../src/50-marco-desktop-key.xml.in.h:3
-#: ../src/org.mate.marco.gschema.xml.h:97
+#: ../src/50-croma-desktop-key.xml.in.h:3
+#: ../src/org.mate.croma.gschema.xml.h:97
 msgid "Show the panel's main menu"
 msgstr ""
 
-#: ../src/50-marco-desktop-key.xml.in.h:4
-#: ../src/org.mate.marco.gschema.xml.h:99
+#: ../src/50-croma-desktop-key.xml.in.h:4
+#: ../src/org.mate.croma.gschema.xml.h:99
 msgid "Take a screenshot"
 msgstr ""
 
-#: ../src/50-marco-desktop-key.xml.in.h:5
-#: ../src/org.mate.marco.gschema.xml.h:100
+#: ../src/50-croma-desktop-key.xml.in.h:5
+#: ../src/org.mate.croma.gschema.xml.h:100
 msgid "Take a screenshot of a window"
 msgstr ""
 
-#: ../src/50-marco-desktop-key.xml.in.h:6
-#: ../src/org.mate.marco.gschema.xml.h:101
+#: ../src/50-croma-desktop-key.xml.in.h:6
+#: ../src/org.mate.croma.gschema.xml.h:101
 msgid "Run a terminal"
 msgstr "Lancér un tèrminâl"
 
-#: ../src/50-marco-desktop-key.xml.in.h:7
-#: ../src/org.mate.marco.gschema.xml.h:102
+#: ../src/50-croma-desktop-key.xml.in.h:7
+#: ../src/org.mate.croma.gschema.xml.h:102
 msgid "Rename current workspace"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:1 ../src/50-marco-window-key.xml.in.h:1
+#: ../src/50-croma-global-key.xml.in.h:1 ../src/50-croma-window-key.xml.in.h:1
 msgid "Window Management"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:2
-#: ../src/org.mate.marco.gschema.xml.h:84
+#: ../src/50-croma-global-key.xml.in.h:2
+#: ../src/org.mate.croma.gschema.xml.h:84
 msgid "Move between windows, using a popup window"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:3
-#: ../src/org.mate.marco.gschema.xml.h:81
+#: ../src/50-croma-global-key.xml.in.h:3
+#: ../src/org.mate.croma.gschema.xml.h:81
 msgid "Move between windows of an application, using a popup window"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:4
-#: ../src/org.mate.marco.gschema.xml.h:88
+#: ../src/50-croma-global-key.xml.in.h:4
+#: ../src/org.mate.croma.gschema.xml.h:88
 msgid "Move between panels and the desktop, using a popup window"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:5
-#: ../src/org.mate.marco.gschema.xml.h:92
+#: ../src/50-croma-global-key.xml.in.h:5
+#: ../src/org.mate.croma.gschema.xml.h:92
 msgid "Move between windows immediately"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:6
-#: ../src/org.mate.marco.gschema.xml.h:90
+#: ../src/50-croma-global-key.xml.in.h:6
+#: ../src/org.mate.croma.gschema.xml.h:90
 msgid "Move between windows of an application immediately"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:7
-#: ../src/org.mate.marco.gschema.xml.h:94
+#: ../src/50-croma-global-key.xml.in.h:7
+#: ../src/org.mate.croma.gschema.xml.h:94
 msgid "Move between panels and the desktop immediately"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:8
-#: ../src/org.mate.marco.gschema.xml.h:96
+#: ../src/50-croma-global-key.xml.in.h:8
+#: ../src/org.mate.croma.gschema.xml.h:96
 msgid "Hide all normal windows and set focus to the desktop"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:9
-#: ../src/org.mate.marco.gschema.xml.h:63
+#: ../src/50-croma-global-key.xml.in.h:9
+#: ../src/org.mate.croma.gschema.xml.h:63
 msgid "Switch to workspace 1"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:10
-#: ../src/org.mate.marco.gschema.xml.h:65
+#: ../src/50-croma-global-key.xml.in.h:10
+#: ../src/org.mate.croma.gschema.xml.h:65
 msgid "Switch to workspace 2"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:11
-#: ../src/org.mate.marco.gschema.xml.h:66
+#: ../src/50-croma-global-key.xml.in.h:11
+#: ../src/org.mate.croma.gschema.xml.h:66
 msgid "Switch to workspace 3"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:12
-#: ../src/org.mate.marco.gschema.xml.h:67
+#: ../src/50-croma-global-key.xml.in.h:12
+#: ../src/org.mate.croma.gschema.xml.h:67
 msgid "Switch to workspace 4"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:13
-#: ../src/org.mate.marco.gschema.xml.h:68
+#: ../src/50-croma-global-key.xml.in.h:13
+#: ../src/org.mate.croma.gschema.xml.h:68
 msgid "Switch to workspace 5"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:14
-#: ../src/org.mate.marco.gschema.xml.h:69
+#: ../src/50-croma-global-key.xml.in.h:14
+#: ../src/org.mate.croma.gschema.xml.h:69
 msgid "Switch to workspace 6"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:15
-#: ../src/org.mate.marco.gschema.xml.h:70
+#: ../src/50-croma-global-key.xml.in.h:15
+#: ../src/org.mate.croma.gschema.xml.h:70
 msgid "Switch to workspace 7"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:16
-#: ../src/org.mate.marco.gschema.xml.h:71
+#: ../src/50-croma-global-key.xml.in.h:16
+#: ../src/org.mate.croma.gschema.xml.h:71
 msgid "Switch to workspace 8"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:17
-#: ../src/org.mate.marco.gschema.xml.h:72
+#: ../src/50-croma-global-key.xml.in.h:17
+#: ../src/org.mate.croma.gschema.xml.h:72
 msgid "Switch to workspace 9"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:18
-#: ../src/org.mate.marco.gschema.xml.h:73
+#: ../src/50-croma-global-key.xml.in.h:18
+#: ../src/org.mate.croma.gschema.xml.h:73
 msgid "Switch to workspace 10"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:19
-#: ../src/org.mate.marco.gschema.xml.h:74
+#: ../src/50-croma-global-key.xml.in.h:19
+#: ../src/org.mate.croma.gschema.xml.h:74
 msgid "Switch to workspace 11"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:20
-#: ../src/org.mate.marco.gschema.xml.h:75
+#: ../src/50-croma-global-key.xml.in.h:20
+#: ../src/org.mate.croma.gschema.xml.h:75
 msgid "Switch to workspace 12"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:21
-#: ../src/org.mate.marco.gschema.xml.h:76
+#: ../src/50-croma-global-key.xml.in.h:21
+#: ../src/org.mate.croma.gschema.xml.h:76
 msgid "Switch to workspace on the left of the current workspace"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:22
-#: ../src/org.mate.marco.gschema.xml.h:77
+#: ../src/50-croma-global-key.xml.in.h:22
+#: ../src/org.mate.croma.gschema.xml.h:77
 msgid "Switch to workspace on the right of the current workspace"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:23
-#: ../src/org.mate.marco.gschema.xml.h:78
+#: ../src/50-croma-global-key.xml.in.h:23
+#: ../src/org.mate.croma.gschema.xml.h:78
 msgid "Switch to workspace above the current workspace"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:24
-#: ../src/org.mate.marco.gschema.xml.h:79
+#: ../src/50-croma-global-key.xml.in.h:24
+#: ../src/org.mate.croma.gschema.xml.h:79
 msgid "Switch to workspace below the current workspace"
 msgstr ""
 
-#: ../src/50-marco-global-key.xml.in.h:25
-#: ../src/org.mate.marco.gschema.xml.h:80
+#: ../src/50-croma-global-key.xml.in.h:25
+#: ../src/org.mate.croma.gschema.xml.h:80
 msgid "Switch to previously selected workspace"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:2
-#: ../src/org.mate.marco.gschema.xml.h:109
+#: ../src/50-croma-window-key.xml.in.h:2
+#: ../src/org.mate.croma.gschema.xml.h:109
 msgid "Activate the window menu"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:3
-#: ../src/org.mate.marco.gschema.xml.h:110
+#: ../src/50-croma-window-key.xml.in.h:3
+#: ../src/org.mate.croma.gschema.xml.h:110
 msgid "Toggle fullscreen mode"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:4
-#: ../src/org.mate.marco.gschema.xml.h:111
+#: ../src/50-croma-window-key.xml.in.h:4
+#: ../src/org.mate.croma.gschema.xml.h:111
 msgid "Toggle maximization state"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:5
-#: ../src/org.mate.marco.gschema.xml.h:113
+#: ../src/50-croma-window-key.xml.in.h:5
+#: ../src/org.mate.croma.gschema.xml.h:113
 msgid "Maximize window"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:6
-#: ../src/org.mate.marco.gschema.xml.h:114
+#: ../src/50-croma-window-key.xml.in.h:6
+#: ../src/org.mate.croma.gschema.xml.h:114
 msgid "Restore window"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:7
-#: ../src/org.mate.marco.gschema.xml.h:115
+#: ../src/50-croma-window-key.xml.in.h:7
+#: ../src/org.mate.croma.gschema.xml.h:115
 msgid "Toggle shaded state"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:8
-#: ../src/org.mate.marco.gschema.xml.h:117
+#: ../src/50-croma-window-key.xml.in.h:8
+#: ../src/org.mate.croma.gschema.xml.h:117
 msgid "Close window"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:9
-#: ../src/org.mate.marco.gschema.xml.h:116
+#: ../src/50-croma-window-key.xml.in.h:9
+#: ../src/org.mate.croma.gschema.xml.h:116
 msgid "Minimize window"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:10
-#: ../src/org.mate.marco.gschema.xml.h:118
+#: ../src/50-croma-window-key.xml.in.h:10
+#: ../src/org.mate.croma.gschema.xml.h:118
 msgid "Move window"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:11
-#: ../src/org.mate.marco.gschema.xml.h:119
+#: ../src/50-croma-window-key.xml.in.h:11
+#: ../src/org.mate.croma.gschema.xml.h:119
 msgid "Resize window"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:12
-#: ../src/org.mate.marco.gschema.xml.h:120
+#: ../src/50-croma-window-key.xml.in.h:12
+#: ../src/org.mate.croma.gschema.xml.h:120
 msgid "Toggle whether window is on all workspaces or just one"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:13
-#: ../src/org.mate.marco.gschema.xml.h:137
+#: ../src/50-croma-window-key.xml.in.h:13
+#: ../src/org.mate.croma.gschema.xml.h:137
 msgid "Raise window if it's covered by another window, otherwise lower it"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:14
-#: ../src/org.mate.marco.gschema.xml.h:138
+#: ../src/50-croma-window-key.xml.in.h:14
+#: ../src/org.mate.croma.gschema.xml.h:138
 msgid "Raise window above other windows"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:15
-#: ../src/org.mate.marco.gschema.xml.h:139
+#: ../src/50-croma-window-key.xml.in.h:15
+#: ../src/org.mate.croma.gschema.xml.h:139
 msgid "Lower window below other windows"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:16
-#: ../src/org.mate.marco.gschema.xml.h:140
+#: ../src/50-croma-window-key.xml.in.h:16
+#: ../src/org.mate.croma.gschema.xml.h:140
 msgid "Maximize window vertically"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:17
-#: ../src/org.mate.marco.gschema.xml.h:141
+#: ../src/50-croma-window-key.xml.in.h:17
+#: ../src/org.mate.croma.gschema.xml.h:141
 msgid "Maximize window horizontally"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:18
-#: ../src/org.mate.marco.gschema.xml.h:142
+#: ../src/50-croma-window-key.xml.in.h:18
+#: ../src/org.mate.croma.gschema.xml.h:142
 msgid "Tile window to east (right) side of screen"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:19
-#: ../src/org.mate.marco.gschema.xml.h:143
+#: ../src/50-croma-window-key.xml.in.h:19
+#: ../src/org.mate.croma.gschema.xml.h:143
 msgid "Tile window to west (left) side of screen"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:20
-#: ../src/org.mate.marco.gschema.xml.h:144
+#: ../src/50-croma-window-key.xml.in.h:20
+#: ../src/org.mate.croma.gschema.xml.h:144
 msgid "Move window to north-west (top left) corner"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:21
-#: ../src/org.mate.marco.gschema.xml.h:145
+#: ../src/50-croma-window-key.xml.in.h:21
+#: ../src/org.mate.croma.gschema.xml.h:145
 msgid "Move window to north-east (top right) corner"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:22
-#: ../src/org.mate.marco.gschema.xml.h:146
+#: ../src/50-croma-window-key.xml.in.h:22
+#: ../src/org.mate.croma.gschema.xml.h:146
 msgid "Move window to south-west (bottom left) corner"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:23
-#: ../src/org.mate.marco.gschema.xml.h:147
+#: ../src/50-croma-window-key.xml.in.h:23
+#: ../src/org.mate.croma.gschema.xml.h:147
 msgid "Move window to south-east (bottom right) corner"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:24
-#: ../src/org.mate.marco.gschema.xml.h:148
+#: ../src/50-croma-window-key.xml.in.h:24
+#: ../src/org.mate.croma.gschema.xml.h:148
 msgid "Move window to north (top) side of screen"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:25
-#: ../src/org.mate.marco.gschema.xml.h:149
+#: ../src/50-croma-window-key.xml.in.h:25
+#: ../src/org.mate.croma.gschema.xml.h:149
 msgid "Move window to south (bottom) side of screen"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:26
-#: ../src/org.mate.marco.gschema.xml.h:150
+#: ../src/50-croma-window-key.xml.in.h:26
+#: ../src/org.mate.croma.gschema.xml.h:150
 msgid "Move window to east (right) side of screen"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:27
-#: ../src/org.mate.marco.gschema.xml.h:151
+#: ../src/50-croma-window-key.xml.in.h:27
+#: ../src/org.mate.croma.gschema.xml.h:151
 msgid "Move window to west (left) side of screen"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:28
-#: ../src/org.mate.marco.gschema.xml.h:152
+#: ../src/50-croma-window-key.xml.in.h:28
+#: ../src/org.mate.croma.gschema.xml.h:152
 msgid "Move window to center of screen"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:29
-#: ../src/org.mate.marco.gschema.xml.h:121
+#: ../src/50-croma-window-key.xml.in.h:29
+#: ../src/org.mate.croma.gschema.xml.h:121
 msgid "Move window to workspace 1"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:30
-#: ../src/org.mate.marco.gschema.xml.h:122
+#: ../src/50-croma-window-key.xml.in.h:30
+#: ../src/org.mate.croma.gschema.xml.h:122
 msgid "Move window to workspace 2"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:31
-#: ../src/org.mate.marco.gschema.xml.h:123
+#: ../src/50-croma-window-key.xml.in.h:31
+#: ../src/org.mate.croma.gschema.xml.h:123
 msgid "Move window to workspace 3"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:32
-#: ../src/org.mate.marco.gschema.xml.h:124
+#: ../src/50-croma-window-key.xml.in.h:32
+#: ../src/org.mate.croma.gschema.xml.h:124
 msgid "Move window to workspace 4"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:33
-#: ../src/org.mate.marco.gschema.xml.h:125
+#: ../src/50-croma-window-key.xml.in.h:33
+#: ../src/org.mate.croma.gschema.xml.h:125
 msgid "Move window to workspace 5"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:34
-#: ../src/org.mate.marco.gschema.xml.h:126
+#: ../src/50-croma-window-key.xml.in.h:34
+#: ../src/org.mate.croma.gschema.xml.h:126
 msgid "Move window to workspace 6"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:35
-#: ../src/org.mate.marco.gschema.xml.h:127
+#: ../src/50-croma-window-key.xml.in.h:35
+#: ../src/org.mate.croma.gschema.xml.h:127
 msgid "Move window to workspace 7"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:36
-#: ../src/org.mate.marco.gschema.xml.h:128
+#: ../src/50-croma-window-key.xml.in.h:36
+#: ../src/org.mate.croma.gschema.xml.h:128
 msgid "Move window to workspace 8"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:37
-#: ../src/org.mate.marco.gschema.xml.h:129
+#: ../src/50-croma-window-key.xml.in.h:37
+#: ../src/org.mate.croma.gschema.xml.h:129
 msgid "Move window to workspace 9"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:38
-#: ../src/org.mate.marco.gschema.xml.h:130
+#: ../src/50-croma-window-key.xml.in.h:38
+#: ../src/org.mate.croma.gschema.xml.h:130
 msgid "Move window to workspace 10"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:39
-#: ../src/org.mate.marco.gschema.xml.h:131
+#: ../src/50-croma-window-key.xml.in.h:39
+#: ../src/org.mate.croma.gschema.xml.h:131
 msgid "Move window to workspace 11"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:40
-#: ../src/org.mate.marco.gschema.xml.h:132
+#: ../src/50-croma-window-key.xml.in.h:40
+#: ../src/org.mate.croma.gschema.xml.h:132
 msgid "Move window to workspace 12"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:41
-#: ../src/org.mate.marco.gschema.xml.h:133
+#: ../src/50-croma-window-key.xml.in.h:41
+#: ../src/org.mate.croma.gschema.xml.h:133
 msgid "Move window one workspace to the left"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:42
-#: ../src/org.mate.marco.gschema.xml.h:134
+#: ../src/50-croma-window-key.xml.in.h:42
+#: ../src/org.mate.croma.gschema.xml.h:134
 msgid "Move window one workspace to the right"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:43
-#: ../src/org.mate.marco.gschema.xml.h:135
+#: ../src/50-croma-window-key.xml.in.h:43
+#: ../src/org.mate.croma.gschema.xml.h:135
 msgid "Move window one workspace up"
 msgstr ""
 
-#: ../src/50-marco-window-key.xml.in.h:44
-#: ../src/org.mate.marco.gschema.xml.h:136
+#: ../src/50-croma-window-key.xml.in.h:44
+#: ../src/org.mate.croma.gschema.xml.h:136
 msgid "Move window one workspace down"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:1
+#: ../src/org.mate.croma.gschema.xml.h:1
 msgid "Modifier to use for modified window click actions"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:2
+#: ../src/org.mate.croma.gschema.xml.h:2
 msgid ""
 "Clicking a window while holding down this modifier key will move the window "
 "(left click), resize the window (middle click), or show the window menu "
@@ -404,47 +404,47 @@ msgid ""
 "\"&lt;Alt&gt;\" or \"&lt;Super&gt;\" for example."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:3
+#: ../src/org.mate.croma.gschema.xml.h:3
 msgid "Whether to resize with the right button"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:4
+#: ../src/org.mate.croma.gschema.xml.h:4
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
 "middle button while holding down the key given in \"mouse_button_modifier\";"
 " set it to false to make it work the opposite way around."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:5
+#: ../src/org.mate.croma.gschema.xml.h:5
 msgid "Whether to display preselected tab window border"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:6
+#: ../src/org.mate.croma.gschema.xml.h:6
 msgid ""
 "Set this to false to disable border of preselected window while performing "
 "tab switching."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:7
+#: ../src/org.mate.croma.gschema.xml.h:7
 msgid "Arrangement of buttons on the titlebar"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:8
+#: ../src/org.mate.croma.gschema.xml.h:8
 msgid ""
 "Arrangement of buttons on the titlebar. The value should be a string, such "
 "as \"menu:minimize,maximize,spacer,close\"; the colon separates the left "
 "corner of the window from the right corner, and the button names are comma-"
 "separated. Duplicate buttons are not allowed. Unknown button names are "
-"silently ignored so that buttons can be added in future marco versions "
+"silently ignored so that buttons can be added in future croma versions "
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:9
+#: ../src/org.mate.croma.gschema.xml.h:9
 msgid "Window focus mode"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:10
+#: ../src/org.mate.croma.gschema.xml.h:10
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
@@ -453,11 +453,11 @@ msgid ""
 "and unfocused when the mouse leaves the window."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:11
+#: ../src/org.mate.croma.gschema.xml.h:11
 msgid "Control how new windows get focus"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:12
+#: ../src/org.mate.croma.gschema.xml.h:12
 msgid ""
 "This option provides additional control over how newly created windows get "
 "focus. It has two possible values; \"smart\" applies the user's normal focus"
@@ -465,11 +465,11 @@ msgid ""
 "given focus."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:13
+#: ../src/org.mate.croma.gschema.xml.h:13
 msgid "Whether raising should be a side-effect of other user interactions"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:14
+#: ../src/org.mate.croma.gschema.xml.h:14
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
 "strongly discouraged from changing it from the default of true. Many actions"
@@ -491,11 +491,11 @@ msgid ""
 "live with the \"bug\" they requested."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:15
+#: ../src/org.mate.croma.gschema.xml.h:15
 msgid "Action on title bar double-click"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:16
+#: ../src/org.mate.croma.gschema.xml.h:16
 msgid ""
 "This option determines the effects of double-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -507,11 +507,11 @@ msgid ""
 "the others, and 'none' which will not do anything."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:17
+#: ../src/org.mate.croma.gschema.xml.h:17
 msgid "Action on title bar middle-click"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:18
+#: ../src/org.mate.croma.gschema.xml.h:18
 msgid ""
 "This option determines the effects of middle-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -523,11 +523,11 @@ msgid ""
 "the others, and 'none' which will not do anything."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:19
+#: ../src/org.mate.croma.gschema.xml.h:19
 msgid "Action on title bar right-click"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:20
+#: ../src/org.mate.croma.gschema.xml.h:20
 msgid ""
 "This option determines the effects of right-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -539,11 +539,11 @@ msgid ""
 "the others, and 'none' which will not do anything."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:21
+#: ../src/org.mate.croma.gschema.xml.h:21
 msgid "Automatically raises the focused window"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:22
+#: ../src/org.mate.croma.gschema.xml.h:22
 msgid ""
 "If set to true, and the focus mode is either \"sloppy\" or \"mouse\" then "
 "the focused window will be automatically raised after a delay specified by "
@@ -551,41 +551,41 @@ msgid ""
 "raise it, nor to entering a window during drag-and-drop."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:23
+#: ../src/org.mate.croma.gschema.xml.h:23
 msgid "Delay in milliseconds for the auto raise option"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:24
+#: ../src/org.mate.croma.gschema.xml.h:24
 msgid ""
 "The time delay before raising a window if auto_raise is set to true. The "
 "delay is given in thousandths of a second."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:25
+#: ../src/org.mate.croma.gschema.xml.h:25
 msgid "Current theme"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:26
+#: ../src/org.mate.croma.gschema.xml.h:26
 msgid ""
 "The theme determines the appearance of window borders, titlebar, and so "
 "forth."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:27
+#: ../src/org.mate.croma.gschema.xml.h:27
 msgid "Use standard system font in window titles"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:28
+#: ../src/org.mate.croma.gschema.xml.h:28
 msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:29
+#: ../src/org.mate.croma.gschema.xml.h:29
 msgid "Window title font"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:30
+#: ../src/org.mate.croma.gschema.xml.h:30
 msgid ""
 "A font description string describing a font for window titlebars. The size "
 "from the description will only be used if the titlebar_font_size option is "
@@ -593,59 +593,59 @@ msgid ""
 "option is set to true."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:31
+#: ../src/org.mate.croma.gschema.xml.h:31
 msgid "Number of workspaces"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:32
+#: ../src/org.mate.croma.gschema.xml.h:32
 msgid ""
 "Number of workspaces. Must be more than zero, and has a fixed maximum to "
 "prevent making the desktop unusable by accidentally asking for too many "
 "workspaces."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:33
+#: ../src/org.mate.croma.gschema.xml.h:33
 msgid "Workspace wrap style"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:34
+#: ../src/org.mate.croma.gschema.xml.h:34
 msgid ""
 "The wrap style is used to determine how to switch from one workspace to "
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
-"the workspace switcher. If set to \"classic\", the old marco behavior is "
+"the workspace switcher. If set to \"classic\", the old croma behavior is "
 "used: the end of one row leads to the beginning of the next and the end of a"
 " column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:35
+#: ../src/org.mate.croma.gschema.xml.h:35
 msgid "Enable Visual Bell"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:36
+#: ../src/org.mate.croma.gschema.xml.h:36
 msgid ""
 "Turns on a visual indication when an application or the system issues a "
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:37
+#: ../src/org.mate.croma.gschema.xml.h:37
 msgid "System Bell is Audible"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:38
+#: ../src/org.mate.croma.gschema.xml.h:38
 msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:39
+#: ../src/org.mate.croma.gschema.xml.h:39
 msgid "Visual Bell Type"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:40
+#: ../src/org.mate.croma.gschema.xml.h:40
 msgid ""
 "Tells Marco how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
@@ -656,44 +656,44 @@ msgid ""
 "focused window's titlebar is flashed."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:41
+#: ../src/org.mate.croma.gschema.xml.h:41
 msgid "Compositing Manager"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:42
+#: ../src/org.mate.croma.gschema.xml.h:42
 msgid "Determines whether Marco is a compositing manager."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:43
+#: ../src/org.mate.croma.gschema.xml.h:43
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:44
+#: ../src/org.mate.croma.gschema.xml.h:44
 msgid ""
 "If set to true, no window thumbnails will be displayed in the alt-tab popup "
 "window when the compositing manager is enabled. Application icons will be "
 "displayed instead."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:45
+#: ../src/org.mate.croma.gschema.xml.h:45
 msgid "If true, trade off usability for less resource usage"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:46
+#: ../src/org.mate.croma.gschema.xml.h:46
 msgid ""
-"If true, marco will give the user less feedback by using wireframes, "
+"If true, croma will give the user less feedback by using wireframes, "
 "avoiding animations, or other means. This is a significant reduction in "
 "usability for many users, but may allow legacy applications to continue "
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:47
+#: ../src/org.mate.croma.gschema.xml.h:47
 msgid ""
 "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:48
+#: ../src/org.mate.croma.gschema.xml.h:48
 msgid ""
 "If true, then Marco works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
@@ -704,11 +704,11 @@ msgid ""
 "unimplemented at the moment."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:49
+#: ../src/org.mate.croma.gschema.xml.h:49
 msgid "Disable misfeatures that are required by old or broken applications"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:50
+#: ../src/org.mate.croma.gschema.xml.h:50
 msgid ""
 "Some applications disregard specifications in ways that result in window "
 "manager misfeatures. This option puts Marco in a rigorously correct mode, "
@@ -716,32 +716,32 @@ msgid ""
 "run any misbehaving applications."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:51
+#: ../src/org.mate.croma.gschema.xml.h:51
 msgid "Determines if new windows are created on the center of the screen"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:52
+#: ../src/org.mate.croma.gschema.xml.h:52
 msgid ""
 "If set to true, new windows are opened in the center of the screen. "
 "Otherwise, they are opened at the top left of the screen."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:53
+#: ../src/org.mate.croma.gschema.xml.h:53
 msgid "Whether to enable side-by-side tiling"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:54
+#: ../src/org.mate.croma.gschema.xml.h:54
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
 "resizes them horizontally to cover half of the available area. Drag-dropping"
 " to the top maximizes the window."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:55
+#: ../src/org.mate.croma.gschema.xml.h:55
 msgid "Window placement mode"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:56
+#: ../src/org.mate.croma.gschema.xml.h:56
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
 "\"automatic\" means the system chooses a location automatically based on the"
@@ -751,39 +751,39 @@ msgid ""
 " window with the mouse or keyboard."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:57
+#: ../src/org.mate.croma.gschema.xml.h:57
 msgid "List of applications ignored by show-desktop"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:58
+#: ../src/org.mate.croma.gschema.xml.h:58
 msgid ""
 "Comma separated class list. Each running GUI application referenced to given"
 " windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:59
+#: ../src/org.mate.croma.gschema.xml.h:59
 msgid "Name of workspace"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:60
+#: ../src/org.mate.croma.gschema.xml.h:60
 msgid "The name of a workspace."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:61
+#: ../src/org.mate.croma.gschema.xml.h:61
 msgid "Run a defined command"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:62
+#: ../src/org.mate.croma.gschema.xml.h:62
 msgid ""
 "The keybinding that runs the correspondingly-numbered command in "
-"/apps/marco/keybinding_commands The format looks like \"&lt;Control&gt;a\" "
+"/apps/croma/keybinding_commands The format looks like \"&lt;Control&gt;a\" "
 "or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows "
 "lower or upper case, and also abbreviations such as \"&lt;Ctl&gt;\" and "
 "\"&lt;Ctrl&gt;\". If you set the option to the special string \"disabled\", "
 "then there will be no keybinding for this action."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:64
+#: ../src/org.mate.croma.gschema.xml.h:64
 msgid ""
 "The format looks like \"&lt;Control&gt;a\" or "
 "\"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows "
@@ -792,7 +792,7 @@ msgid ""
 "then there will be no keybinding for this action."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:82
+#: ../src/org.mate.croma.gschema.xml.h:82
 msgid ""
 "The format looks like \"&lt;Control&gt;a\" or "
 "\"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows "
@@ -803,71 +803,71 @@ msgid ""
 "one of the keys it uses."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:83
+#: ../src/org.mate.croma.gschema.xml.h:83
 msgid "Move backward between windows of an application, using a popup window"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:85
+#: ../src/org.mate.croma.gschema.xml.h:85
 msgid "Move backward between windows, using a popup window"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:86
+#: ../src/org.mate.croma.gschema.xml.h:86
 msgid "Move between windows on all workspaces, using a popup window"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:87
+#: ../src/org.mate.croma.gschema.xml.h:87
 msgid "Move backward between windows on all workspaces, using a popup window"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:89
+#: ../src/org.mate.croma.gschema.xml.h:89
 msgid "Move backward between panels and the desktop, using a popup window"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:91
+#: ../src/org.mate.croma.gschema.xml.h:91
 msgid "Move backward between windows of an application immediately"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:93
+#: ../src/org.mate.croma.gschema.xml.h:93
 msgid "Move backward between windows immediately"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:95
+#: ../src/org.mate.croma.gschema.xml.h:95
 msgid "Move backward between panels and the desktop immediately"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:103
+#: ../src/org.mate.croma.gschema.xml.h:103
 msgid "Commands to run in response to keybindings"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:104
+#: ../src/org.mate.croma.gschema.xml.h:104
 msgid ""
-"The /apps/marco/global_keybindings/run_command_N keys define keybindings "
+"The /apps/croma/global_keybindings/run_command_N keys define keybindings "
 "that correspond to these commands. Pressing the keybinding for run_command_N"
 " will execute command_N."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:105
+#: ../src/org.mate.croma.gschema.xml.h:105
 msgid "The screenshot command"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:106
+#: ../src/org.mate.croma.gschema.xml.h:106
 msgid ""
-"The /apps/marco/global_keybindings/run_command_screenshot key defines a "
+"The /apps/croma/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:107
+#: ../src/org.mate.croma.gschema.xml.h:107
 msgid "The window screenshot command"
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:108
+#: ../src/org.mate.croma.gschema.xml.h:108
 msgid ""
-"The /apps/marco/global_keybindings/run_command_window_screenshot key defines"
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
 " a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 
-#: ../src/org.mate.marco.gschema.xml.h:112
+#: ../src/org.mate.croma.gschema.xml.h:112
 msgid "Toggle whether a window will always be visible over other windows"
 msgstr ""
 
@@ -963,7 +963,7 @@ msgstr ""
 #: ../src/core/main.c:131
 #, c-format
 msgid ""
-"marco %s\n"
+"croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
 "There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -1118,7 +1118,7 @@ msgstr ""
 
 #: ../src/core/session.c:1184
 #, c-format
-msgid "<marco_session> attribute seen but we already have the session ID"
+msgid "<croma_session> attribute seen but we already have the session ID"
 msgstr ""
 
 #: ../src/core/session.c:1197 ../src/core/session.c:1272
@@ -1159,7 +1159,7 @@ msgstr ""
 msgid "Opened log file %s\n"
 msgstr ""
 
-#: ../src/core/util.c:136 ../src/tools/marco-message.c:176
+#: ../src/core/util.c:136 ../src/tools/croma-message.c:176
 #, c-format
 msgid "Marco was compiled without support for verbose mode\n"
 msgstr ""
@@ -1181,8 +1181,8 @@ msgid "Window manager error: "
 msgstr ""
 
 #. Translators: This is the title used on dialog boxes
-#: ../src/core/util.c:569 ../src/core/util.c:667 ../src/marco.desktop.in.h:1
-#: ../src/marco-wm.desktop.in.h:1
+#: ../src/core/util.c:569 ../src/core/util.c:667 ../src/croma.desktop.in.h:1
+#: ../src/croma-wm.desktop.in.h:1
 msgid "Marco"
 msgstr ""
 
@@ -1265,7 +1265,7 @@ msgid ""
 "list\n"
 msgstr ""
 
-#: ../src/tools/marco-message.c:150
+#: ../src/tools/croma-message.c:150
 #, c-format
 msgid "Usage: %s\n"
 msgstr ""
@@ -2133,7 +2133,7 @@ msgstr ""
 
 #: ../src/ui/theme-viewer.c:847
 #, c-format
-msgid "Usage: marco-theme-viewer [THEMENAME]\n"
+msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr ""
 
 #: ../src/ui/theme-viewer.c:854

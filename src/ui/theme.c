@@ -26,7 +26,7 @@
  *
  * The window decorations drawn by Marco are described by files on disk
  * known internally as "themes" (externally as "window border themes" on
- * http://art.gnome.org/themes/marco/ or "Marco themes"). This file
+ * http://art.gnome.org/themes/croma/ or "Marco themes"). This file
  * contains most of the code necessary to support themes; it does not
  * contain the XML parser, which is in theme-parser.c.
  *

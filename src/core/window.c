@@ -3774,10 +3774,10 @@ meta_window_move_resize_internal (MetaWindow          *window,
     need_configure_notify = TRUE;
 
   /* MapRequest events with a PPosition or UPosition hint with a frame
-   * are moved by marco without resizing; send a configure notify
+   * are moved by croma without resizing; send a configure notify
    * in such cases.  See #322840.  (Note that window->constructing is
    * only true iff this call is due to a MapRequest, and when
-   * PPosition/UPosition hints aren't set, marco seems to send a
+   * PPosition/UPosition hints aren't set, croma seems to send a
    * ConfigureNotify anyway due to the above code.)
    */
   if (window->constructing && have_window_frame &&
@@ -5685,7 +5685,7 @@ meta_window_notify_focus (MetaWindow *window,
    *
    * My suggestion is to change it so that we clearly separate
    * actual keyboard focus tracking using the xterm algorithm,
-   * and marco's "pretend" focus window, and go through all
+   * and croma's "pretend" focus window, and go through all
    * the code and decide which one should be used in each place;
    * a hard bit is deciding on a policy for that.
    *
@@ -6529,8 +6529,8 @@ set_allowed_actions_hint (MetaWindow *window)
       data[i] = window->display->atom__NET_WM_ACTION_SHADE;
       ++i;
     }
-  /* sticky according to EWMH is different from marco's sticky;
-   * marco doesn't support EWMH sticky
+  /* sticky according to EWMH is different from croma's sticky;
+   * croma doesn't support EWMH sticky
    */
   if (window->has_maximize_func &&
       !window->minimized        &&

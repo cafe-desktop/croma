@@ -86,7 +86,7 @@ from The Open Group.
 #include "util.h"
 #include "async-getprop.h"
 #include "ui.h"
-#include "marco-Xatomtype.h"
+#include "croma-Xatomtype.h"
 #include <X11/Xatom.h>
 #include <string.h>
 #include "window-private.h"

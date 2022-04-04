@@ -2635,7 +2635,7 @@ process_create (MetaCompositorXRender *compositor,
 {
   MetaScreen *screen;
   /* We are only interested in top level windows, others will
-     be caught by normal marco functions */
+     be caught by normal croma functions */
 
   screen = meta_display_screen_for_root (compositor->display, event->parent);
   if (screen == NULL)

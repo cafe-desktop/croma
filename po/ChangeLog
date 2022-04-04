@@ -38,7 +38,7 @@
 2009-03-08  Petr Kovar  <pknbe@volny.cz>
 
 	* cs.po: Updated Czech translation.
-	* POTFILES.in: Removed "src/ui/marco-dialog.c".
+	* POTFILES.in: Removed "src/ui/croma-dialog.c".
 
 2009-03-02  Claude Paroz  <claude@2xlibre.net>
 
@@ -3857,7 +3857,7 @@
 
 	* *.po: change toggle_maximized to toggle_maximize and
 	toggle_shaded to toggle_shade in action_double_click_titlebar long
-	description to match the values used by marco
+	description to match the values used by croma
 
 2003-02-12  Christian Rose  <menthos@menthos.com>
 
@@ -4119,7 +4119,7 @@
 
 2002-12-11  Christian Neumair  <chris@gnome-de.org>
 
-	* POTFILES.in: Added src/tools/marco-message.c.
+	* POTFILES.in: Added src/tools/croma-message.c.
 	* de.po: Updated German translation.
 
 2002-12-11  Evandro Fernandes Giovanini <evandrofg@ig.com.br>

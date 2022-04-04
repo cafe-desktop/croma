@@ -1,5 +1,5 @@
 icondir=$(pkgdatadir)/icons
-icon_DATA=marco-window-demo.png
+icon_DATA=croma-window-demo.png
 
 AM_CPPFLAGS =					\
 	@MARCO_WINDOW_DEMO_CFLAGS@		\
@@ -8,16 +8,16 @@ AM_CPPFLAGS =					\
 	-DMARCO_LOCALEDIR=\"$(prefix)/@DATADIRNAME@/locale\" \
 	$(WARN_CFLAGS)
 
-marco_message_SOURCES= 				\
-	marco-message.c
+croma_message_SOURCES= 				\
+	croma-message.c
 
-marco_window_demo_SOURCES=				\
-	marco-window-demo.c
+croma_window_demo_SOURCES=				\
+	croma-window-demo.c
 
-bin_PROGRAMS=marco-message marco-window-demo
+bin_PROGRAMS=croma-message croma-window-demo
 
-marco_message_LDADD= @MARCO_MESSAGE_LIBS@
-marco_window_demo_LDADD= @MARCO_WINDOW_DEMO_LIBS@
+croma_message_LDADD= @MARCO_MESSAGE_LIBS@
+croma_window_demo_LDADD= @MARCO_WINDOW_DEMO_LIBS@
 
 EXTRA_DIST= \
 	meson.build \

@@ -156,7 +156,7 @@ keybind (panel-run-dialog, handle_panel, META_KEYBINDING_ACTION_PANEL_RUN_DIALOG
 
 /* Yes, the param is offset by one.  Historical reasons.  (Maybe worth fixing
  * at some point.)  The description is NULL here because the stanza is
- * irregularly shaped in marco.schemas.in.  This will probably be fixed
+ * irregularly shaped in croma.schemas.in.  This will probably be fixed
  * as well.
  */
 keybind (run-command-1,  handle_run_command,  0, 0)

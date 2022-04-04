@@ -292,7 +292,7 @@ typedef struct
 
 /* FIXMEs: */
 /* @@@ Don't use NULL lines at the end; glib can tell you how big it is */
-/* @@@ /apps/marco/general should be assumed if first char is not / */
+/* @@@ /apps/croma/general should be assumed if first char is not / */
 /* @@@ Will it ever be possible to merge init and update? If not, why not? */
 
 static MetaEnumPreference preferences_enum[] =

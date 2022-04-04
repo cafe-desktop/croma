@@ -129,7 +129,7 @@ version (void)
     /* didn't work?  fall back to decimal representation */
     g_sprintf (yearbuffer, "%d", latest_year);
 
-  g_print (_("marco %s\n"
+  g_print (_("croma %s\n"
              "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
              "This is free software; see the source for copying conditions.\n"
              "There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"),
@@ -329,10 +329,10 @@ meta_parse_options (int *argc, char ***argv,
   GError *error = NULL;
 
   ctx = g_option_context_new (NULL);
-  g_option_context_add_main_entries (ctx, options, "marco");
+  g_option_context_add_main_entries (ctx, options, "croma");
   if (!g_option_context_parse (ctx, argc, argv, &error))
     {
-      g_print ("marco: %s\n", error->message);
+      g_print ("croma: %s\n", error->message);
       exit(1);
     }
   g_option_context_free (ctx);

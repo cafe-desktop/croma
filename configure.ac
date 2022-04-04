@@ -1,12 +1,12 @@
 AC_PREREQ(2.50)
 
-m4_define([marco_major_version], [1])
-m4_define([marco_minor_version], [24])
-m4_define([marco_micro_version], [1])
+m4_define([croma_major_version], [1])
+m4_define([croma_minor_version], [24])
+m4_define([croma_micro_version], [1])
 
-m4_define([marco_version],
-          [marco_major_version.marco_minor_version.marco_micro_version])
-AC_INIT([marco], [marco_version], [https://github.com/mate-desktop/marco])
+m4_define([croma_version],
+          [croma_major_version.croma_minor_version.croma_micro_version])
+AC_INIT([croma], [croma_version], [https://github.com/mate-desktop/croma])
 
 AC_CONFIG_SRCDIR(src/core/display.c)
 AC_CONFIG_HEADERS(config.h)
@@ -32,7 +32,7 @@ AC_SUBST([LT_VERSION_INFO], [lt_version_info])
 # Honor aclocal flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
-GETTEXT_PACKAGE=marco
+GETTEXT_PACKAGE=croma
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[Name of default gettext domain])
 
@@ -64,7 +64,7 @@ GLIB_GSETTINGS
 
 AC_ARG_ENABLE(verbose-mode,
   AC_HELP_STRING([--disable-verbose-mode],
-                 [disable marco's ability to do verbose logging, for embedded/size-sensitive custom builds]),,
+                 [disable croma's ability to do verbose logging, for embedded/size-sensitive custom builds]),,
   enable_verbose_mode=yes)
 
 if test x$enable_verbose_mode = xyes; then
@@ -73,32 +73,32 @@ fi
 
 AC_ARG_ENABLE(sm,
   AC_HELP_STRING([--disable-sm],
-                 [disable marco's session management support, for embedded/size-sensitive custom non-MATE builds]),,
+                 [disable croma's session management support, for embedded/size-sensitive custom non-MATE builds]),,
   enable_sm=auto)
 
 AC_ARG_ENABLE(startup-notification,
   AC_HELP_STRING([--disable-startup-notification],
-                 [disable marco's startup notification support, for embedded/size-sensitive custom non-MATE builds]),,
+                 [disable croma's startup notification support, for embedded/size-sensitive custom non-MATE builds]),,
   enable_startup_notification=auto)
 
 AC_ARG_ENABLE(compositor,
   AC_HELP_STRING([--disable-compositor],
-                 [disable marco's compositing manager]),,
+                 [disable croma's compositing manager]),,
   enable_compositor=auto)
 
 AC_ARG_ENABLE(xsync,
   AC_HELP_STRING([--disable-xsync],
-                 [disable marco's use of the XSync extension]),,
+                 [disable croma's use of the XSync extension]),,
   enable_xsync=auto)
 
 AC_ARG_ENABLE(render,
   AC_HELP_STRING([--disable-render],
-                 [disable marco's use of the RENDER extension]),,
+                 [disable croma's use of the RENDER extension]),,
   enable_render=auto)
 
 AC_ARG_ENABLE(shape,
   AC_HELP_STRING([--disable-shape],
-                 [disable marco's use of the shaped window extension]),,
+                 [disable croma's use of the shaped window extension]),,
   enable_shape=auto)
 
 ## try definining HAVE_BACKTRACE
@@ -237,12 +237,12 @@ AC_PATH_XTRA
 ALL_X_LIBS="$X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
 
 # Check for Xinerama extension (Solaris impl or Xfree impl)
-marco_save_cppflags="$CPPFLAGS"
+croma_save_cppflags="$CPPFLAGS"
 CPPFLAGS="$CPPFLAGS $X_CFLAGS"
 
 AC_ARG_ENABLE(xinerama,
   AC_HELP_STRING([--disable-xinerama],
-                 [disable marco's use of the Xinerama extension]),
+                 [disable croma's use of the Xinerama extension]),
   try_xinerama=$enable_xinerama,try_xinerama=yes)
 
 use_solaris_xinerama=no
@@ -288,7 +288,7 @@ if test "${try_xinerama}" != no; then
     esac
 fi
 
-CPPFLAGS="$marco_save_cppflags"
+CPPFLAGS="$croma_save_cppflags"
 
 SHAPE_LIBS=
 found_shape=no
@@ -432,7 +432,7 @@ doc/creating_themes/Makefile
 doc/man/Makefile
 src/Makefile
 src/wm-tester/Makefile
-src/libmarco-private.pc
+src/libcroma-private.pc
 src/tools/Makefile
 src/themes/Makefile
 po/Makefile.in
@@ -443,14 +443,14 @@ AC_OUTPUT
 if test x$enable_verbose_mode = xno; then
 	echo "*** WARNING WARNING WARNING WARNING WARNING"
 	echo "*** Building without verbose mode"
-	echo "*** This means there's no way to debug marco problems."
-	echo "*** Please build normal desktop versions of marco"
+	echo "*** This means there's no way to debug croma problems."
+	echo "*** Please build normal desktop versions of croma"
 	echo "*** with verbose mode enabled so users can use it when they report bugs."
 fi
 
 dnl ==========================================================================
 echo "
-marco-$VERSION:
+croma-$VERSION:
 
 	prefix:                   ${prefix}
 	source code location:     ${srcdir}

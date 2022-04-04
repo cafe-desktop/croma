@@ -159,8 +159,8 @@ the ones I'm the most familiar with):
   bug 136581  window minimization vs. activation for mouse focus
   bug 144900  fix focus choice on "un-showing" the desktop
   bug 147475  don't lock keyboard on workspace change
-  bug 148364  DEMANDS_ATTENTION support for marco & libwnck (and other stuff)
-  bug 149028  focus-stealing-prevention for marco-dialog (and other stuff)
+  bug 148364  DEMANDS_ATTENTION support for croma & libwnck (and other stuff)
+  bug 149028  focus-stealing-prevention for croma-dialog (and other stuff)
   bug 149366  windows denied focus on map occur in wrong order in alt-tab list
   bug 149543  consistent focus window when unshowing desktop
   bug 149589  race in focus choice from libwnck messages

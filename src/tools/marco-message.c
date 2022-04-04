@@ -148,7 +148,7 @@ static void
 usage (void)
 {
   g_printerr (_("Usage: %s\n"),
-              "marco-message (restart|reload-theme|enable-keybindings|disable-keybindings|toggle-verbose)");
+              "croma-message (restart|reload-theme|enable-keybindings|disable-keybindings|toggle-verbose)");
   exit (1);
 }
 

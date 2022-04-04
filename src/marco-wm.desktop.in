@@ -1,15 +1,15 @@
 [Desktop Entry]
 Type=Application
 Name=Marco
-Exec=marco
+Exec=croma
 # name of loadable control center module
-X-MATE-WMSettingsModule=marco
+X-MATE-WMSettingsModule=croma
 # name we put on the WM spec check window
 X-MATE-WMName=Marco
 # back compat only 
-X-MateWMSettingsLibrary=marco
+X-MateWMSettingsLibrary=croma
 X-MATE-Bugzilla-Bugzilla=MATE
-X-MATE-Bugzilla-Product=marco
+X-MATE-Bugzilla-Product=croma
 X-MATE-Bugzilla-Component=general
 X-MATE-Autostart-Phase=WindowManager
 X-MATE-Provides=windowmanager

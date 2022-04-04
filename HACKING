@@ -40,7 +40,7 @@ Minimal Building/Testing Environment
   build, run and test it; you can run it from some temporary
   directory.  Also, you do not need to build all of Mate in order to
   build a development version of Marco -- odds are, you may be able
-  to build marco from GIT without building any other modules.
+  to build croma from GIT without building any other modules.
 
   As long as you have gtk+ >= 2.10 and GIO >= 2.25.10 with your distro
   (gtk+ >= 2.6 if you manually revert the change from bug 348633), you
@@ -52,11 +52,11 @@ Minimal Building/Testing Environment
   pkg-config, intltool, and libtool) and be ready to build and test
   Marco.  Steps to do so:
 
-  $ git clone https://github.com/mate-desktop/marco.git
-  $ cd marco
+  $ git clone https://github.com/mate-desktop/croma.git
+  $ cd croma
   $ ./autogen.sh --prefix /usr
   $ make
-  $ ./src/marco --replace
+  $ ./src/croma --replace
 
   Again, note that you do not need to run 'make install'.
 
@@ -119,20 +119,20 @@ Debugging information
 
   Debugging logs
 
-  First, note that you can start a new version of marco to replace the
+  First, note that you can start a new version of croma to replace the
   existing one by running
-    marco --replace
-  (which also comes in handy in the form "./src/marco --replace" when
-  trying to quickly test a small change while hacking on marco without
+    croma --replace
+  (which also comes in handy in the form "./src/croma --replace" when
+  trying to quickly test a small change while hacking on croma without
   doing a full "make install", though I'm going off topic...)  This will
   allow you to see any warnings printed at the terminal.  Sometimes it's
   useful to have these directed to a logfile instead, which you can do by
   running
-    MARCO_USE_LOGFILE=1 marco --replace
+    MARCO_USE_LOGFILE=1 croma --replace
   The logfile it uses will be printed in the terminal.  Sometimes, it's
   useful to get more information than just warnings.  You can set
   MARCO_VERBOSE to do that, like so:
-    MARCO_VERBOSE=1 MARCO_USE_LOGFILE=1 marco --replace
+    MARCO_VERBOSE=1 MARCO_USE_LOGFILE=1 croma --replace
   (note that MARCO_VERBOSE=1 can be problematic without
   MARCO_USE_LOGFILE=1; avoid it unless running in from something that
   won't be managed by the new Marco--see bug 305091 for more details).
@@ -169,7 +169,7 @@ Debugging information
   Valgrind is awesome for finding memory leaks or corruption and
   uninitialized variables.  But I also tend to use it in a non-traditional
   way as a partial substitute for a normal debugger: it can provide me with
-  a stack trace of where marco is crashing if I made a change that
+  a stack trace of where croma is crashing if I made a change that
   caused it to do so, which is one of the major uses of debuggers.  (And,
   what makes it cooler than a debugger is that there will also often be
   warnings pinpointing the cause of the crash from either some kind of
@@ -180,11 +180,11 @@ Debugging information
   used (yes, I could use meta_print_backtrace, but that means I have to
   turn verbosity on).
 
-  To run marco under valgrind, use options typical for any Mate
+  To run croma under valgrind, use options typical for any Mate
   program, such as
-    valgrind --log-file=marco.log --tool=memcheck --num-callers=48 \
+    valgrind --log-file=croma.log --tool=memcheck --num-callers=48 \
     --leak-check=yes --leak-resolution=high --show-reachable=yes     \
-    ./src/marco --replace
+    ./src/croma --replace
   where, again, the backslashes mean to join all the stuff on the following
   line with the previous one.
 
@@ -194,22 +194,22 @@ Debugging information
 
   Testing Utilities
 
-  marco-message
-    The tool marco-message can be used as follows:
-      marco-message reload-theme
-      marco-message restart
-      marco-message enable-keybindings
-      marco-message disable-keybindings
+  croma-message
+    The tool croma-message can be used as follows:
+      croma-message reload-theme
+      croma-message restart
+      croma-message enable-keybindings
+      croma-message disable-keybindings
     The first of these is useful for testing themes, the second is just
-    another way (besides the --restart flag to marco itself) of
-    restarting marco, and the third is useful for testing Marco when
+    another way (besides the --restart flag to croma itself) of
+    restarting croma, and the third is useful for testing Marco when
     running it under an Xnest (typically, the Marco under the Xnest
     wouldn't get keybinding notifications--making keyboard navigation not
     work--but if you disable the keybindings for the global Marco then
     the Marco under the Xnest can then get those keybinding notifications).
 
-  marco-window-demo
-    marco-window-demo is good for trying behavior of various kinds
+  croma-window-demo
+    croma-window-demo is good for trying behavior of various kinds
     of window without launching a full desktop.
 
 Technical gotchas to keep in mind
@@ -225,7 +225,7 @@ Technical gotchas to keep in mind
     things in weird ways where you have to be a GDK guru to figure
     them out. Owen also told me that they didn't want to start adding
     a lot of hacks to GDK to let a WM use it; we both agreed back in
-    the mists of time that marco would only use it for the "UI"
+    the mists of time that croma would only use it for the "UI"
     bits as it does.
 
     Having the split in the source code contains and makes very clear

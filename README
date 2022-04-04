@@ -1,4 +1,4 @@
-Marco [![Build Status](https://travis-ci.org/mate-desktop/marco.svg?branch=master)](https://travis-ci.org/mate-desktop/marco)
+Marco [![Build Status](https://travis-ci.org/mate-desktop/croma.svg?branch=master)](https://travis-ci.org/mate-desktop/croma)
 ===
 
 MATE Marco is a fork of GNOME Metacity.
@@ -13,7 +13,7 @@ http://www.freedesktop.org/software/startup-notification/.
 REPORTING BUGS AND SUBMITTING PATCHES
 ===
 
-Report new bugs on https://github.com/mate-desktop/marco.
+Report new bugs on https://github.com/mate-desktop/croma.
 Please check for duplicates, *especially* if you are reporting a feature
 request.
 
@@ -31,11 +31,11 @@ See the HACKING file for some notes on hacking Marco.
 SHRINKING MARCO
 ===
 
-Not that marco is huge, but a substantial amount of code is in
+Not that croma is huge, but a substantial amount of code is in
 preferences handling, in static strings that aren't essential, and in
 the theme engine.
 
-You can strip about 70K from the marco binary by compiling with
+You can strip about 70K from the croma binary by compiling with
 options such as:
 
  --disable-sm
@@ -44,7 +44,7 @@ options such as:
 
 However the result is no good for desktop use, all prefs have to be
 hardcoded in the binary, for example. If you wanted to make a really
-small marco, here's some additional stuff you might consider
+small croma, here's some additional stuff you might consider
 implementing:
 
  - add --disable-themes, which would replace theme.c and theme-parser.c
@@ -71,15 +71,15 @@ MARCO FEATURES
 
  - Does not expose the concept of "window manager" to the user.  Some
    of the features in the MATE control panel and other parts of the
-   desktop happen to be implemented in marco, such as changing your
+   desktop happen to be implemented in croma, such as changing your
    window border theme, or changing your window navigation shortcuts,
    but the user doesn't need to know this.
 
  - Includes only the window manager; does not try to be a desktop
    environment. The pager, configuration, etc. are all separate and
    modular. The "libwnck" library (which I also wrote) is available
-   for writing marco extensions, pagers, and so on. (But libwnck
-   isn't marco specific, or MATE-dependent; it requires only GTK,
+   for writing croma extensions, pagers, and so on. (But libwnck
+   isn't croma specific, or MATE-dependent; it requires only GTK,
    and should work with KWin, fvwm2, and other EWMH-compliant WMs.)
 
  - Has a simple theme system and a couple of extra themes come with it.
@@ -91,7 +91,7 @@ MARCO FEATURES
      ```
 
    See theme-format.txt for docs on the theme format. Use
-   marco-theme-viewer to preview themes.
+   croma-theme-viewer to preview themes.
 
  - Change number of workspaces via gsettings:
 
@@ -122,7 +122,7 @@ MARCO FEATURES
 
    Also try the MATE keyboard shortcuts control panel.
 
-   See marco.schemas for all available bindings.
+   See croma.schemas for all available bindings.
 
  - Window keybindings:
 
@@ -141,7 +141,7 @@ MARCO FEATURES
 
     Keybindings for things like maximize window, vertical maximize,
     etc. can be bound, but may not all exist by default. See
-    marco.schemas.
+    croma.schemas.
 
  - Window mouse bindings:
 
@@ -181,7 +181,7 @@ MARCO FEATURES
 
  - Marco implements much of the EWMH window manager specification
    from freedesktop.org, as well as the older ICCCM.  Please refer to
-   the COMPLIANCE file for information on marco compliance with
+   the COMPLIANCE file for information on croma compliance with
    these standards.
 
  - Uses Pango to render text, so has cool i18n capabilities.
@@ -200,7 +200,7 @@ MARCO FEATURES
  - handles the window manager selection from the ICCCM. Will exit if
    another WM claims it, and can claim it from another WM if you pass
    the --replace argument. So if you're running another
-   ICCCM-compliant WM, you can run "marco --replace" to replace it
+   ICCCM-compliant WM, you can run "croma --replace" to replace it
    with Marco.
 
  - does basic colormap handling
@@ -210,7 +210,7 @@ MARCO FEATURES
 HOW TO ADD EXTERNAL FEATURES
 ===
 
-You can write a marco "plugin" such as a pager, window list, icon
+You can write a croma "plugin" such as a pager, window list, icon
 box, task menu, or even things like "window matching" using the
 Extended Window Manager Hints. See http://www.freedesktop.org for the
 EWMH specification. An easy-to-use library called "libwnck" is
@@ -224,7 +224,7 @@ EWMH-compliant WMs).
 MARCO BUGS, NON-FEATURES, AND CAVEATS
 ===
 
-See github: https://github.com/mate-desktop/marco/issues
+See github: https://github.com/mate-desktop/croma/issues
 
 FAQ
 ===
@@ -381,12 +381,12 @@ A: You are probably getting the idea by now - check rationales.txt,
 
 Q: Your dumb web pages you made me read talk about solving problems in
    fundamental ways instead of adding preferences or workarounds.
-   What are some examples where marco has done this?
+   What are some examples where croma has done this?
 
 A: There are quite a few, though many opportunities remain.  Sometimes
-   the real fix involves application changes. The marco approach is
+   the real fix involves application changes. The croma approach is
    that it's OK to require apps to change, though there are also
-   plenty of workarounds in marco for battles considered too hard
+   plenty of workarounds in croma for battles considered too hard
    to fight.
 
    Here are some examples:
@@ -402,7 +402,7 @@ A: There are quite a few, though many opportunities remain.  Sometimes
      having both Alt+Tab and Alt+Esc
 
    - Whether to have a "kill" feature was solved by automatically
-     detecting and offering to kill stuck apps. Better, marco
+     detecting and offering to kill stuck apps. Better, croma
      actually does "kill -9" on the process, it doesn't just
      disconnect the process from the X server. You'll appreciate this
      if you ever did a "kill" on Netscape 4, and watched it keep
@@ -430,10 +430,10 @@ A: There are quite a few, though many opportunities remain.  Sometimes
 
    - and much more.
 
-Q: I think marco sucks.
+Q: I think croma sucks.
 
-A: Feel free to use any WM you like. The reason marco follows the
-   ICCCM and EWMH specifications is that it makes marco a modular,
+A: Feel free to use any WM you like. The reason croma follows the
+   ICCCM and EWMH specifications is that it makes croma a modular,
    interchangeable part in the desktop. libwnck-based apps such as the
    MATE window list will work just fine with any EWMH-compliant WM.
 

@@ -25,7 +25,7 @@
  * all-keybindings.h and turns them into a portion of
  * the MateConf .schemas file.
  *
- * FIXME: also need to make 50-marco-desktop-key.xml
+ * FIXME: also need to make 50-croma-desktop-key.xml
  */
 
 #include <stdio.h>
@@ -65,11 +65,11 @@ single_stanza (gboolean is_window, const char *name,
         g_markup_escape_text (default_value, -1);
 
   fprintf (target_file, "    <schema>\n");
-  fprintf (target_file, "      <key>/schemas/apps/marco/%s_keybindings/%s</key>\n",
+  fprintf (target_file, "      <key>/schemas/apps/croma/%s_keybindings/%s</key>\n",
             keybinding_type, name);
-  fprintf (target_file, "      <applyto>/apps/marco/%s_keybindings/%s</applyto>\n",
+  fprintf (target_file, "      <applyto>/apps/croma/%s_keybindings/%s</applyto>\n",
             keybinding_type, name);
-  fprintf (target_file, "      <owner>marco</owner>\n");
+  fprintf (target_file, "      <owner>croma</owner>\n");
   fprintf (target_file, "      <type>string</type>\n");
   fprintf (target_file, "      <default>%s</default>\n", escaped_default_value);
 
@@ -162,7 +162,7 @@ main (int argc, char **argv)
   target_filename = argv[2];
 
   /* Translators: Please don't translate "Control", "Shift", etc, since these
-   * are hardcoded (in gtk/gtkaccelgroup.c; it's not marco's fault).
+   * are hardcoded (in gtk/gtkaccelgroup.c; it's not croma's fault).
    * "disabled" must also stay as it is.
    */
   about_keybindings = g_markup_escape_text(_( \

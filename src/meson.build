@@ -1,4 +1,4 @@
-cargs = ['-DG_LOG_DOMAIN="marco"']
+cargs = ['-DG_LOG_DOMAIN="croma"']
 
 install_headers([
 	'include/boxes.h',
@@ -9,11 +9,11 @@ install_headers([
 	'ui/theme-parser.h',
 	'ui/theme.h'
   ],
-  subdir : 'marco-1/marco-private'
+  subdir : 'croma-1/croma-private'
 )
 
-libmarco = shared_library(
-  'marco-private',
+libcroma = shared_library(
+  'croma-private',
   sources : [
     'core/async-getprop.c',
     'core/async-getprop.h',
@@ -60,7 +60,7 @@ libmarco = shared_library(
     'core/keybindings.h',
     'core/main.c',
     'include/main.h',
-    'core/marco-Xatomtype.h',
+    'core/croma-Xatomtype.h',
     'core/place.c',
     'core/place.h',
     'core/prefs.c',
@@ -115,14 +115,14 @@ libmarco = shared_library(
     include_directories('..'),
     include_directories('include'),
   ],
-  dependencies : marco_deps,
+  dependencies : croma_deps,
   soversion: soversion,
   version: libversion,
   c_args : cargs,
   install: true,
 )
 
-executable('marco',
+executable('croma',
   'core/main.c',
   'include/main.h',
   include_directories : [
@@ -130,23 +130,23 @@ executable('marco',
     include_directories('..'),
     include_directories('./include'),
     ],
-  dependencies : marco_deps,
+  dependencies : croma_deps,
   link_with : [
-    libmarco
+    libcroma
     ],
   c_args : cargs,
   install: true,
 )
-executable('marco-theme-viewer',
+executable('croma-theme-viewer',
   'ui/theme-viewer.c',
   include_directories : [
     include_directories('.'),
     include_directories('..'),
     include_directories('./include'),
     ],
-  dependencies : marco_deps,
+  dependencies : croma_deps,
   link_with : [
-    libmarco,
+    libcroma,
     ],
   install: true,
 )
@@ -162,29 +162,29 @@ executable('testboxes',
     include_directories('..'),
     include_directories('./include'),
   ],
-  dependencies : marco_deps,
+  dependencies : croma_deps,
 )
 
 executable('testgradient',
   'ui/gradient.h',
   'ui/gradient.c',
   'ui/testgradient.c',
-  dependencies : marco_deps,
+  dependencies : croma_deps,
 )
 
 executable('testasyncgetprop',
   'core/async-getprop.h',
   'core/async-getprop.c',
   'core/testasyncgetprop.c',
-  dependencies : marco_deps,
+  dependencies : croma_deps,
 )
 
 gnome = import('gnome')
 i18n = import('i18n')
 
 i18n.merge_file(
-  input: 'marco.desktop.in',
-  output: 'marco.desktop',
+  input: 'croma.desktop.in',
+  output: 'croma.desktop',
   type: 'desktop',
   po_dir: join_paths(meson.source_root(), 'po'),
   install: true,
@@ -192,8 +192,8 @@ i18n.merge_file(
   )
 
 i18n.merge_file(
-  input: 'marco-wm.desktop.in',
-  output: 'marco-wm.desktop',
+  input: 'croma-wm.desktop.in',
+  output: 'croma-wm.desktop',
   type: 'desktop',
   po_dir: join_paths(meson.source_root(), 'po'),
   install: true,
@@ -201,13 +201,13 @@ i18n.merge_file(
   )
 
 compiled_schemas = gnome.compile_schemas()
-install_data('org.mate.marco.gschema.xml',
+install_data('org.mate.croma.gschema.xml',
                install_dir : 'share/glib-2.0/schemas')
 
 xml_files = [
-  '50-marco-desktop-key.xml',
-  '50-marco-window-key.xml',
-  '50-marco-global-key.xml',
+  '50-croma-desktop-key.xml',
+  '50-croma-window-key.xml',
+  '50-croma-global-key.xml',
   ]
 
 foreach xml : xml_files
@@ -230,8 +230,8 @@ pkconf.set('libexecdir', libexecdir)
 pkconf.set('VERSION', meson.project_version())
 
 pc = configure_file(
-  input : 'libmarco-private.pc.in',
-  output : 'libmarco-private.pc',
+  input : 'libcroma-private.pc.in',
+  output : 'libcroma-private.pc',
   configuration : pkconf
 )
 

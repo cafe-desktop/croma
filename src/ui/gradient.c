@@ -871,11 +871,11 @@ meta_gradient_add_alpha (GdkPixbuf       *pixbuf,
       break;
 
     case META_GRADIENT_VERTICAL:
-      g_printerr ("marco: vertical alpha channel gradient not implemented yet\n");
+      g_printerr ("croma: vertical alpha channel gradient not implemented yet\n");
       break;
 
     case META_GRADIENT_DIAGONAL:
-      g_printerr ("marco: diagonal alpha channel gradient not implemented yet\n");
+      g_printerr ("croma: diagonal alpha channel gradient not implemented yet\n");
       break;
 
     case META_GRADIENT_LAST:

@@ -556,7 +556,7 @@ meta_rectangle_get_minimal_spanning_set_for_region (
    *     possible, and I spent just a little while thinking about it, but n
    *     wasn't large enough to convince me to care yet.
    * (4) Some of the stuff Rob mentioned at http://mail.gnome.org/archives\
-   *     /marco-devel-list/2005-November/msg00028.html.  (Sorry for the
+   *     /croma-devel-list/2005-November/msg00028.html.  (Sorry for the
    *     URL splitting.)
    */
 

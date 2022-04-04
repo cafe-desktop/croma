@@ -1,5 +1,5 @@
 project(
-  'marco', 'c',
+  'croma', 'c',
   version: '1.24.1',
   meson_version: '>=0.47.0',
   license: 'GPL2',
@@ -161,7 +161,7 @@ pango_dep = dependency('pango', version: pango_req)
 libcanberra_gtk_dep = dependency('libcanberra-gtk3')
 x11_dep = dependency('x11')
 
-marco_deps = [
+croma_deps = [
   glib_dep,
   gtk_dep,
   gio_dep,
@@ -169,11 +169,11 @@ marco_deps = [
   libcanberra_gtk_dep,
 ]
 
-marco_message_deps = [
+croma_message_deps = [
   gtk_dep,
   x11_dep,
 ]
-marco_window_demo_deps = [
+croma_window_demo_deps = [
   gtk_dep,
   x11_dep,
 ]
@@ -204,32 +204,32 @@ if get_option('startup-notification') and startup_notification_dep.found()
   build_startup_notification = true
   config_h.set('HAVE_STARTUP_NOTIFICATION', 1, description: 'Building with startup notification support')
   config_h.set('SN_API_NOT_YET_FROZEN', 1)
-  marco_deps += [ startup_notification_dep ]
+  croma_deps += [ startup_notification_dep ]
 endif
 
 build_xcomposite = false
 if get_option('compositor') and xcomposite_dep.found()
   build_xcomposite = true
-  marco_deps += [ xcomposite_dep, dependency('xfixes'), xrender_dep, dependency('xdamage')]
+  croma_deps += [ xcomposite_dep, dependency('xfixes'), xrender_dep, dependency('xdamage')]
   config_h.set('HAVE_COMPOSITE_EXTENSIONS', 1)
 endif
 
 build_render = false
 if get_option('render') and xrender_dep.found()
   build_render = true
-  marco_deps += [xrender_dep]
+  croma_deps += [xrender_dep]
   config_h.set('HAVE_RENDER', 1, description: 'Building with Render extension support')
 endif
 
 build_xcursor = false
 if xcursor_dep.found()
   build_xcursor = true
-  marco_deps += [xcursor_dep]
+  croma_deps += [xcursor_dep]
   config_h.set('HAVE_XCURSOR', 1, description: 'Building with Render extension support')
 endif
 
 if libgtop_dep.found()
-  marco_deps += [libgtop_dep]
+  croma_deps += [libgtop_dep]
   config_h.set('HAVE_GTOP', 1, description: 'Building with libgtop')
 endif
 
@@ -238,7 +238,7 @@ if get_option('xinerama') and xinerama_dep.found()
   build_xinerama = true
   config_h.set('HAVE_XFREE_XINERAMA', 1)
   config_h.set('HAVE_XINERAMA', 1)
-  marco_deps += [xinerama_dep]
+  croma_deps += [xinerama_dep]
 endif
 
 #xext
@@ -256,7 +256,7 @@ build_randr = false
 if xrandr_dep.found()
   build_randr = true
   config_h.set('HAVE_RANDR', 1, description: 'Have the Xrandr extension library')
-  marco_deps += [ xrandr_dep ]
+  croma_deps += [ xrandr_dep ]
 endif
 
 #xext
@@ -269,12 +269,12 @@ endif
 build_xpresent = xpresent_dep.found()
 if build_xpresent
   config_h.set('HAVE_PRESENT', 1, description: 'Have the Xpresent extension library')
-  marco_deps += [ xpresent_dep ]
+  croma_deps += [ xpresent_dep ]
 endif
 
 libm = cc.find_library('m', required: false)
 if libm.found()
-  marco_deps += [libm]
+  croma_deps += [libm]
 endif
 
 build_sm = false
@@ -282,8 +282,8 @@ ice_dep = dependency('ice', required: false)
 if get_option('sm') and sm_dep.found() and ice_dep.found()
   build_sm = true
   config_h.set('HAVE_SM', 1)
-  marco_deps += [ sm_dep, ice_dep ]
-  marco_message_deps += [ sm_dep, ice_dep ]
+  croma_deps += [ sm_dep, ice_dep ]
+  croma_message_deps += [ sm_dep, ice_dep ]
 endif
 
 gdk_pixbuf_csource = find_program('gdk-pixbuf-csource')
@@ -291,7 +291,7 @@ zenity = find_program('zenity')
 
 libxext = cc.find_library('Xext', required: false)
 if build_xsync
-  marco_deps += [libxext]
+  croma_deps += [libxext]
 endif
 
 config_h.set_quoted('MARCO_LOCALEDIR', localdir)
@@ -309,7 +309,7 @@ subdir('po')
 
 summary = [
   '',
-  'marco-@0@:'.format(meson.project_version()),
+  'croma-@0@:'.format(meson.project_version()),
   '',
   '	prefix:                   @0@'.format(prefix),
   '	source code location:     @0@'.format(srcdir),

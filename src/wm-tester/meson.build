@@ -4,9 +4,9 @@ test1 = executable('wm-tester',
     include_directories('.'),
     include_directories('..'),
     ],
-  dependencies: marco_deps,
+  dependencies: croma_deps,
   link_with : [
-    libmarco
+    libcroma
     ],
 )
 
@@ -16,9 +16,9 @@ test2 = executable('test-gravity',
     include_directories('.'),
     include_directories('..'),
     ],
-  dependencies: marco_deps,
+  dependencies: croma_deps,
   link_with : [
-    libmarco
+    libcroma
     ],
 )
 
@@ -28,9 +28,9 @@ test3 = executable('test-resizing',
     include_directories('.'),
     include_directories('..'),
     ],
-  dependencies: marco_deps,
+  dependencies: croma_deps,
   link_with : [
-    libmarco
+    libcroma
     ],
 )
 
@@ -40,9 +40,9 @@ test4  = executable('focus-window',
     include_directories('.'),
     include_directories('..'),
     ],
-  dependencies: marco_deps,
+  dependencies: croma_deps,
   link_with : [
-    libmarco
+    libcroma
     ],
 )
 
@@ -52,9 +52,9 @@ test5 = executable('test-size-hints',
     include_directories('.'),
     include_directories('..'),
     ],
-  dependencies: marco_deps,
+  dependencies: croma_deps,
   link_with : [
-    libmarco
+    libcroma
     ],
 )
 

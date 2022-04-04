@@ -1,4 +1,4 @@
-### marco 1.24.1
+### croma 1.24.1
 
   * update translations
   * common: window icon (META_DEFAULT_ICON_NAME) is no longer available
@@ -18,13 +18,13 @@
   * theme: avoid deprecated g_memmove
   * frames: don't bother painting the background
 
-### marco 1.24.0
+### croma 1.24.0
 
   * update translations
   * frame: remove unused variable 'status'
   * Xprops fix memory leak.
 
-### marco 1.23.2
+### croma 1.23.2
 
   * update translations
   * Revert "compositor: fix possible crash closing/destroying window"
@@ -72,9 +72,9 @@
   * remove line for debug
   * fix make dist to remove .gmo files
   * bump LT_VERSION_INFO
-  * libmarco-private: add version information
+  * libcroma-private: add version information
 
-### marco 1.23.1
+### croma 1.23.1
 
   * update translations
   * Make alt+tab max columns configurable and consider window label width
@@ -136,11 +136,11 @@
   * libmetacity: use cairo to render gradient
   * gradient: sync code with mutter before it was removed
   * fix window type for splash
-  * Fix Could not parse desktop file marco.desktop
+  * Fix Could not parse desktop file croma.desktop
   * travis: use fedora-30 and ubuntu-19.10 for building
   * Migrate from intltool to gettext
 
-### marco 1.23.0
+### croma 1.23.0
 
   * update translations
   * ui: always set the frame background to None
@@ -161,7 +161,7 @@
   * Improve performance by removing unused assignments
   * window: avoid clang warning: garbage value
   * frames: avoid deprecated 'gtk_widget_set_double_buffered'
-  * [ci] Enable Clang Static Analyzer for marco
+  * [ci] Enable Clang Static Analyzer for croma
   * boxes: avoid false positive warning in Clang static analyzer
   * Do not judge whether the window is decorated or not
   * screen: Fix use of memory after it is freed
@@ -169,7 +169,7 @@
   * [Security] Use 'g_strlcpy' instead of 'strcpy'
   * compositor-xrender: Fix memory leak
 
-### marco 1.22.0
+### croma 1.22.0
 
   * update translations
   * Initialize travis support
@@ -184,7 +184,7 @@
   * frames.c: drop unused variables
   * compositor-xrender: avoid deprecated 'gdk_error_trap_push/pop'
 
-### marco 1.21.1
+### croma 1.21.1
 
   * update translations
   * theme: revert theme format version 3.6
@@ -193,7 +193,7 @@
   * theme: add invisible_border to metacity theme
   * add support for app-menu button in theme
   * remove option to attach modal dialogs
-  * theme: replace mutter/metacity with marco
+  * theme: replace mutter/metacity with croma
   * theme: Replace char array element comparisons with strncmp
   * tabpopup.c: always show 5px outline border
   * tabpopup.c: improve
@@ -211,7 +211,7 @@
   * metacity-theme-3.xml: Add a flexible version mechanism
   * theme-parser: Remove unused define
 
-### marco 1.21.0
+### croma 1.21.0
 
   * update translations
   * Correct resize popup position on HiDPI displays
@@ -226,7 +226,7 @@
   * avoid deprecated GtkStock
   * Fixes move_to_center moving window between monitors
 
-### marco 1.20.0
+### croma 1.20.0
 
   * Translations update
   * require GTK+ 3.22 and GLib 2.50
@@ -245,7 +245,7 @@
   * keybindings.c: Fix build warning:
   * Reset tile_resized to false when fullscreening
 
-### marco 1.19.2
+### croma 1.19.2
 
   * Translations update
   * building: add back README
@@ -264,7 +264,7 @@
   * Cancel present_pending flag when erroring out
   * XPresent extension support - first pass
 
-### marco 1.19.1
+### croma 1.19.1
 
   * Translations update
   * Store a window flag when user resizes from tiled
@@ -273,7 +273,7 @@
   * avoid deprecated gdk_screen_width/height
   * avoid deprecated gdk_screen_get_width
   * display: don't use deprecated GDK_DEVICE_MANAGER
-  * tools: remove marco-mag and marco-grayscaletools
+  * tools: remove croma-mag and croma-grayscaletools
   * Fix synthetic keybinding/button-grab window
   * Forces a window scale of 1 for the window manager,
     instead of using the default or user configured scale.
@@ -287,13 +287,13 @@
   * Added hotkey to rename current workspace
   * Restore Polish translation credits from GNOME
 
-### marco 1.19.0
+### croma 1.19.0
 
   * fix strange window switching foreground/background behavior
   * Translations update
   * fis come deprecations
 
-### marco 1.18.0
+### croma 1.18.0
 
   * NEWS: use consistent, project wide, markdown-like formatting to make
     generating release announcements easier
@@ -307,53 +307,53 @@
     modes (it was reversed somehow)
   * Translations update
 
-### marco 1.16.0
+### croma 1.16.0
 
   * Translations update
   * Make distcheck use currently selected GTK+ version
 
-### marco 1.14.2
+### croma 1.14.2
 
   * Translations update
   * GTK+3: fix a typo with deprecated GtkMisc
   * GTK+3 fixedtip: add style class tooltip
 
-### marco 1.14.1
+### croma 1.14.1
 
   * Fix crash on showing alt-tab thumbnails with compositor on
   * Translations update
 
-### marco 1.14.0
+### croma 1.14.0
 
   * Drop MateConf migration script
   * Fix visual glitches appearing after unmaximizing Chromium window
   * Correct description of compositing-fast-alt-tab GSettings key
       (mention that it disables thumbnails)
-  * Bump libmarco-private's sover for GTK+3 build
+  * Bump libcroma-private's sover for GTK+3 build
   * GTK+3: re-add ability to show alt-tab thumbnails when compositor is on
   * GTK+3: fix several deprecations
   * Translations update
   * Add Changelog generation
 
-### marco 1.12.1
+### croma 1.12.1
 
   * Fix animation issues that led to crashes and visual glitches
   * GTK+3 fixes
   * Translations update
 
-### marco 1.12.0
+### croma 1.12.0
 
   * Add manual and by-pointer window placement
   * Use Alt-` for switching between windows of the same application
   * GTK+3 fixes
   * Some more fixes and cleanups
 
-### marco 1.10.3
+### croma 1.10.3
 
   * Fix crash with minimize animation
   * Fix crash with moving a window in some distros
 
-### marco 1.10.2
+### croma 1.10.2
 
   * Remove outdated assertion.
   * Make minimize item insensitive when window should not be minimized.
@@ -361,22 +361,22 @@
   * Fix switching of fullscreen Direct3D applications running in Wine.
   * Update translations.
 
-### marco 1.10.1
+### croma 1.10.1
 
   * Assorted bugfixes
 
-### marco 1.10.0
+### croma 1.10.0
 
   * Use zenity instead of mate-dialogs
   * Bugfixes
 
-### marco 1.8.0
+### croma 1.8.0
 
   * Implement side-by-side tiling
   * Use yelp-tools instead of mate-doc-utils
   * Cut with fading the bar title when it's longer than the decoration bar
 
-### marco 1.6.0
+### croma 1.6.0
 
   * Migration to GSettings and dropped MateConf
   * Fix key handling while drag and drop is active

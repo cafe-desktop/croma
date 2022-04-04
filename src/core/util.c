@@ -86,7 +86,7 @@ ensure_logfile (void)
       int fd;
       GError *err;
 
-      tmpl = g_strdup_printf ("marco-%d-debug-log-XXXXXX",
+      tmpl = g_strdup_printf ("croma-%d-debug-log-XXXXXX",
                               (int) getpid ());
 
       err = NULL;
@@ -554,7 +554,7 @@ meta_show_dialog (const char *type,
   argvl[i++] = "--display";
   argvl[i++] = display;
   argvl[i++] = "--class";
-  argvl[i++] = "marco-dialog";
+  argvl[i++] = "croma-dialog";
   argvl[i++] = "--title";
   /* Translators: This is the title used on dialog boxes */
   argvl[i++] = _("Marco");
@@ -652,7 +652,7 @@ meta_show_entry_dialog(const char *message,
   argvl[i++] = "--display";
   argvl[i++] = display;
   argvl[i++] = "--class";
-  argvl[i++] = "marco-dialog";
+  argvl[i++] = "croma-dialog";
   argvl[i++] = "--title";
   /* Translators: This is the title used on dialog boxes */
   argvl[i++] = _ ("Marco");

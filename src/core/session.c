@@ -314,8 +314,8 @@ meta_session_init (const char *previous_client_id,
     prop1.type = SmARRAY8;
     prop1.num_vals = 1;
     prop1.vals = &prop1val;
-    prop1val.value = "marco";
-    prop1val.length = strlen ("marco");
+    prop1val.value = "croma";
+    prop1val.length = strlen ("croma");
 
     /* twm sets getuid() for this, but the SM spec plainly
      * says pw_name, twm is on crack
@@ -601,7 +601,7 @@ set_clone_restart_commands (void)
   g_return_if_fail (client_id);
 
   i = 0;
-  restartv[i] = "marco";
+  restartv[i] = "croma";
   ++i;
   restartv[i] = "--sm-client-id";
   ++i;
@@ -622,7 +622,7 @@ set_clone_restart_commands (void)
   /* Clone (no client ID) */
 
   i = 0;
-  clonev[i] = "marco";
+  clonev[i] = "croma";
   ++i;
   clonev[i] = NULL;
 
@@ -809,7 +809,7 @@ decode_text_from_utf8 (const char *text)
 static void
 save_state (void)
 {
-  char *marco_dir;
+  char *croma_dir;
   char *session_dir;
   FILE *outfile;
   GSList *windows;
@@ -828,19 +828,19 @@ save_state (void)
    * we probably already have full_save_path figured out and therefore
    * can just use the directory name from that.
    */
-  marco_dir = g_strconcat (g_get_user_config_dir (),
-                              G_DIR_SEPARATOR_S "marco",
+  croma_dir = g_strconcat (g_get_user_config_dir (),
+                              G_DIR_SEPARATOR_S "croma",
                               NULL);
 
-  session_dir = g_strconcat (marco_dir,
+  session_dir = g_strconcat (croma_dir,
                              G_DIR_SEPARATOR_S "sessions",
                              NULL);
 
-  if (mkdir (marco_dir, 0700) < 0 &&
+  if (mkdir (croma_dir, 0700) < 0 &&
       errno != EEXIST)
     {
       meta_warning (_("Could not create directory '%s': %s\n"),
-                    marco_dir, g_strerror (errno));
+                    croma_dir, g_strerror (errno));
     }
 
   if (mkdir (session_dir, 0700) < 0 &&
@@ -862,14 +862,14 @@ save_state (void)
     }
 
   /* The file format is:
-   * <marco_session id="foo">
+   * <croma_session id="foo">
    *   <window id="bar" class="XTerm" name="xterm" title="/foo/bar" role="blah" type="normal" stacking="5">
    *     <workspace index="2"/>
    *     <workspace index="4"/>
    *     <sticky/> <minimized/> <maximized/>
    *     <geometry x="100" y="100" width="200" height="200" gravity="northwest"/>
    *   </window>
-   * </marco_session>
+   * </croma_session>
    *
    * Note that attributes on <window> are the match info we use to
    * see if the saved state applies to a restored window, and
@@ -877,7 +877,7 @@ save_state (void)
    *
    */
 
-  fprintf (outfile, "<marco_session id=\"%s\">\n",
+  fprintf (outfile, "<croma_session id=\"%s\">\n",
            client_id);
 
   windows = meta_display_list_windows (meta_get_display ());
@@ -988,7 +988,7 @@ save_state (void)
 
   g_slist_free (windows);
 
-  fputs ("</marco_session>\n", outfile);
+  fputs ("</croma_session>\n", outfile);
 
  out:
   if (outfile)
@@ -1006,7 +1006,7 @@ save_state (void)
         }
     }
 
-  g_free (marco_dir);
+  g_free (croma_dir);
   g_free (session_dir);
 }
 
@@ -1045,7 +1045,7 @@ static void text_handler          (GMarkupParseContext  *context,
                                    gpointer              user_data,
                                    GError              **error);
 
-static GMarkupParser marco_session_parser = {
+static GMarkupParser croma_session_parser = {
   start_element_handler,
   end_element_handler,
   text_handler,
@@ -1066,7 +1066,7 @@ load_state (const char *previous_save_file)
   char *session_file;
 
   session_file = g_strconcat (g_get_user_config_dir (),
-                              G_DIR_SEPARATOR_S "marco"
+                              G_DIR_SEPARATOR_S "croma"
                               G_DIR_SEPARATOR_S "sessions" G_DIR_SEPARATOR_S,
                               previous_save_file,
                               NULL);
@@ -1079,9 +1079,9 @@ load_state (const char *previous_save_file)
     {
       char *canonical_session_file = session_file;
 
-      /* Maybe they were doing it the old way, with ~/.marco */
+      /* Maybe they were doing it the old way, with ~/.croma */
       session_file = g_strconcat (g_get_home_dir (),
-                                  G_DIR_SEPARATOR_S ".marco"
+                                  G_DIR_SEPARATOR_S ".croma"
                                   G_DIR_SEPARATOR_S "sessions"
                                   G_DIR_SEPARATOR_S,
                                   previous_save_file,
@@ -1110,7 +1110,7 @@ load_state (const char *previous_save_file)
   parse_data.info = NULL;
   parse_data.previous_id = NULL;
 
-  context = g_markup_parse_context_new (&marco_session_parser,
+  context = g_markup_parse_context_new (&croma_session_parser,
                                         0, &parse_data, NULL);
 
   error = NULL;
@@ -1161,7 +1161,7 @@ start_element_handler  (GMarkupParseContext *context,
 
   pd = user_data;
 
-  if (strcmp (element_name, "marco_session") == 0)
+  if (strcmp (element_name, "croma_session") == 0)
     {
       /* Get previous ID */
       int i;
@@ -1180,7 +1180,7 @@ start_element_handler  (GMarkupParseContext *context,
               g_set_error (error,
                            G_MARKUP_ERROR,
                        G_MARKUP_ERROR_PARSE,
-                           _("<marco_session> attribute seen but we already have the session ID"));
+                           _("<croma_session> attribute seen but we already have the session ID"));
               return;
             }
 
@@ -1194,7 +1194,7 @@ start_element_handler  (GMarkupParseContext *context,
                            G_MARKUP_ERROR,
                            G_MARKUP_ERROR_UNKNOWN_ATTRIBUTE,
                            _("Unknown attribute %s on <%s> element"),
-                           name, "marco_session");
+                           name, "croma_session");
               return;
             }
 
@@ -1703,7 +1703,7 @@ regenerate_save_file (void)
 
   if (client_id)
     full_save_path = g_strconcat (g_get_user_config_dir (),
-                                  G_DIR_SEPARATOR_S "marco"
+                                  G_DIR_SEPARATOR_S "croma"
                                   G_DIR_SEPARATOR_S "sessions" G_DIR_SEPARATOR_S,
                                   client_id,
                                   ".ms",

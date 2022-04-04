@@ -1,9 +1,9 @@
 [main]
 host = https://www.transifex.com
  
-[MATE.1-24--marco]
+[MATE.1-24--croma]
 file_filter = po/<lang>.po
-source_file = marco.pot
+source_file = croma.pot
 source_lang = en
 type = PO
 minimum_perc = 2

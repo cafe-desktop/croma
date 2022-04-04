@@ -251,7 +251,7 @@ static void text_handler          (GMarkupParseContext  *context,
  */
 #define ATTRIBUTE_NOT_FOUND _("No \"%s\" attribute on element <%s>")
 
-static GMarkupParser marco_theme_parser = {
+static GMarkupParser croma_theme_parser = {
   start_element_handler,
   end_element_handler,
   text_handler,
@@ -4294,7 +4294,7 @@ load_theme (const char *theme_dir,
 
   info.format_version = 1000 * major_version;
 
-  context = g_markup_parse_context_new (&marco_theme_parser, 0, &info, NULL);
+  context = g_markup_parse_context_new (&croma_theme_parser, 0, &info, NULL);
 
   if (!g_markup_parse_context_parse (context, text, length, error))
     goto out;
