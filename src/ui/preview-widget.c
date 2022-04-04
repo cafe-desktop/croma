@@ -25,7 +25,7 @@
 #define _XOPEN_SOURCE 600 /* for the maths routines over floats */
 
 #include <math.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include "preview-widget.h"
 
 static void     meta_preview_class_init    (MetaPreviewClass *klass);
@@ -61,7 +61,7 @@ meta_preview_class_init (MetaPreviewClass *class)
   widget_class->get_preferred_width = meta_preview_get_preferred_width;
   widget_class->get_preferred_height = meta_preview_get_preferred_height;
 
-  gtk_container_class_handle_border_width (GTK_CONTAINER_CLASS (class));
+  ctk_container_class_handle_border_width (GTK_CONTAINER_CLASS (class));
   widget_class->size_allocate = meta_preview_size_allocate;
 }
 
@@ -70,7 +70,7 @@ meta_preview_init (MetaPreview *preview)
 {
   int i;
 
-  gtk_widget_set_has_window (GTK_WIDGET (preview), FALSE);
+  ctk_widget_set_has_window (GTK_WIDGET (preview), FALSE);
 
   i = 0;
   while (i < MAX_BUTTONS_PER_CORNER)
@@ -145,14 +145,14 @@ ensure_info (MetaPreview *preview)
       else
         scale = 1.0;
 
-      preview->layout = gtk_widget_create_pango_layout (widget,
+      preview->layout = ctk_widget_create_pango_layout (widget,
                                                         preview->title);
 
-      font_desc = meta_gtk_widget_get_font_desc (widget, scale, NULL);
+      font_desc = meta_ctk_widget_get_font_desc (widget, scale, NULL);
 
       preview->text_height =
         meta_pango_font_desc_get_text_height (font_desc,
-                                              gtk_widget_get_pango_context (widget));
+                                              ctk_widget_get_pango_context (widget));
 
       attrs = pango_attr_list_new ();
 
@@ -208,9 +208,9 @@ meta_preview_draw (GtkWidget *widget,
 
   cairo_save (cr);
 
-  border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
 
-  gtk_widget_get_allocation (widget, &allocation);
+  ctk_widget_get_allocation (widget, &allocation);
   client_width = allocation.width - preview->borders.total.left - preview->borders.total.right - border_width * 2;
   client_height = allocation.height - preview->borders.total.top - preview->borders.total.bottom - border_width * 2;
 
@@ -222,7 +222,7 @@ meta_preview_draw (GtkWidget *widget,
   if (preview->theme)
     {
       meta_theme_draw_frame (preview->theme,
-                             gtk_widget_get_style_context (widget),
+                             ctk_widget_get_style_context (widget),
                              cr,
                              preview->type,
                              preview->flags,
@@ -256,12 +256,12 @@ meta_preview_get_preferred_width (GtkWidget *widget,
 
   *minimum = *natural = preview->borders.total.left + preview->borders.total.right;
 
-  child = gtk_bin_get_child (GTK_BIN (preview));
-  if (child && gtk_widget_get_visible (child))
+  child = ctk_bin_get_child (GTK_BIN (preview));
+  if (child && ctk_widget_get_visible (child))
     {
       gint child_min, child_nat;
 
-      gtk_widget_get_preferred_width (child, &child_min, &child_nat);
+      ctk_widget_get_preferred_width (child, &child_min, &child_nat);
 
       *minimum += child_min;
       *natural += child_nat;
@@ -272,7 +272,7 @@ meta_preview_get_preferred_width (GtkWidget *widget,
       *natural += NO_CHILD_WIDTH;
     }
 
-  border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
   *minimum += border_width * 2;
   *natural += border_width * 2;
 }
@@ -292,12 +292,12 @@ meta_preview_get_preferred_height (GtkWidget *widget,
 
   *minimum = *natural = preview->borders.total.top + preview->borders.total.bottom;
 
-  child = gtk_bin_get_child (GTK_BIN (preview));
-  if (child && gtk_widget_get_visible (child))
+  child = ctk_bin_get_child (GTK_BIN (preview));
+  if (child && ctk_widget_get_visible (child))
     {
       gint child_min, child_nat;
 
-      gtk_widget_get_preferred_height (child, &child_min, &child_nat);
+      ctk_widget_get_preferred_height (child, &child_min, &child_nat);
 
       *minimum += child_min;
       *natural += child_nat;
@@ -308,7 +308,7 @@ meta_preview_get_preferred_height (GtkWidget *widget,
       *natural += NO_CHILD_HEIGHT;
     }
 
-  border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
   *minimum += border_width * 2;
   *natural += border_width * 2;
 }
@@ -326,22 +326,22 @@ meta_preview_size_allocate (GtkWidget         *widget,
 
   ensure_info (preview);
 
-  gtk_widget_set_allocation (widget, allocation);
+  ctk_widget_set_allocation (widget, allocation);
 
-  border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
+  border_width = ctk_container_get_border_width (GTK_CONTAINER (widget));
 
-  child = gtk_bin_get_child (GTK_BIN (widget));
+  child = ctk_bin_get_child (GTK_BIN (widget));
   if (child &&
-      gtk_widget_get_visible (child))
+      ctk_widget_get_visible (child))
     {
-      gtk_widget_get_allocation (widget, &widget_allocation);
+      ctk_widget_get_allocation (widget, &widget_allocation);
       child_allocation.x = widget_allocation.x + border_width + preview->borders.total.left;
       child_allocation.y = widget_allocation.y + border_width + preview->borders.total.top;
 
       child_allocation.width = MAX (1, widget_allocation.width - border_width * 2 - preview->borders.total.left - preview->borders.total.right);
       child_allocation.height = MAX (1, widget_allocation.height - border_width * 2 - preview->borders.total.top - preview->borders.total.bottom);
 
-      gtk_widget_size_allocate (gtk_bin_get_child (GTK_BIN (widget)), &child_allocation);
+      ctk_widget_size_allocate (ctk_bin_get_child (GTK_BIN (widget)), &child_allocation);
     }
 }
 
@@ -367,7 +367,7 @@ meta_preview_set_theme (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  gtk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (GTK_WIDGET (preview));
 }
 
 void
@@ -381,7 +381,7 @@ meta_preview_set_title (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  gtk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (GTK_WIDGET (preview));
 }
 
 void
@@ -394,7 +394,7 @@ meta_preview_set_frame_type (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  gtk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (GTK_WIDGET (preview));
 }
 
 void
@@ -407,7 +407,7 @@ meta_preview_set_frame_flags (MetaPreview    *preview,
 
   clear_cache (preview);
 
-  gtk_widget_queue_resize (GTK_WIDGET (preview));
+  ctk_widget_queue_resize (GTK_WIDGET (preview));
 }
 
 void
@@ -418,7 +418,7 @@ meta_preview_set_button_layout (MetaPreview            *preview,
 
   preview->button_layout = *button_layout;
 
-  gtk_widget_queue_draw (GTK_WIDGET (preview));
+  ctk_widget_queue_draw (GTK_WIDGET (preview));
 }
 
 GdkPixbuf*
@@ -431,18 +431,18 @@ meta_preview_get_icon (void)
       GtkIconTheme *theme;
       gboolean icon_exists;
 
-      theme = gtk_icon_theme_get_default ();
+      theme = ctk_icon_theme_get_default ();
 
-      icon_exists = gtk_icon_theme_has_icon (theme, META_DEFAULT_ICON_NAME);
+      icon_exists = ctk_icon_theme_has_icon (theme, META_DEFAULT_ICON_NAME);
 
       if (icon_exists)
-          default_icon = gtk_icon_theme_load_icon (theme,
+          default_icon = ctk_icon_theme_load_icon (theme,
                                                    META_DEFAULT_ICON_NAME,
                                                    META_DEFAULT_ICON_SIZE,
                                                    0,
                                                    NULL);
       else
-          default_icon = gtk_icon_theme_load_icon (theme,
+          default_icon = ctk_icon_theme_load_icon (theme,
                                                    "image-missing",
                                                    META_DEFAULT_ICON_SIZE,
                                                    0,
@@ -464,18 +464,18 @@ meta_preview_get_mini_icon (void)
       GtkIconTheme *theme;
       gboolean icon_exists;
 
-      theme = gtk_icon_theme_get_default ();
+      theme = ctk_icon_theme_get_default ();
 
-      icon_exists = gtk_icon_theme_has_icon (theme, META_DEFAULT_ICON_NAME);
+      icon_exists = ctk_icon_theme_has_icon (theme, META_DEFAULT_ICON_NAME);
 
       if (icon_exists)
-          default_icon = gtk_icon_theme_load_icon (theme,
+          default_icon = ctk_icon_theme_load_icon (theme,
                                                    META_DEFAULT_ICON_NAME,
                                                    META_MINI_ICON_WIDTH,
                                                    0,
                                                    NULL);
       else
-          default_icon = gtk_icon_theme_load_icon (theme,
+          default_icon = ctk_icon_theme_load_icon (theme,
                                                    "image-missing",
                                                    META_MINI_ICON_WIDTH,
                                                    0,

@@ -24,7 +24,7 @@
 #ifndef META_FRAMES_H
 #define META_FRAMES_H
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkx.h>
 #include "common.h"
 #include "theme.h"

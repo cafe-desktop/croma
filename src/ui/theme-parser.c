@@ -2328,7 +2328,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       push_state (info, STATE_IMAGE);
     }
-  else if (ELEMENT_IS ("gtk_arrow"))
+  else if (ELEMENT_IS ("ctk_arrow"))
     {
       MetaDrawOp *op;
       const char *state;
@@ -2372,7 +2372,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
       if (filled && !parse_boolean (filled, &filled_val, context, error))
         return;
 
-      state_val = meta_gtk_state_from_string (state);
+      state_val = meta_ctk_state_from_string (state);
       if (((int) state_val) == -1)
         {
           set_error (error, context, G_MARKUP_ERROR,
@@ -2382,7 +2382,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
           return;
         }
 
-      shadow_val = meta_gtk_shadow_from_string (shadow);
+      shadow_val = meta_ctk_shadow_from_string (shadow);
       if (((int) shadow_val) == -1)
         {
           set_error (error, context, G_MARKUP_ERROR,
@@ -2392,7 +2392,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
           return;
         }
 
-      arrow_val = meta_gtk_arrow_from_string (arrow);
+      arrow_val = meta_ctk_arrow_from_string (arrow);
       if (((int) arrow_val) == -1)
         {
           set_error (error, context, G_MARKUP_ERROR,
@@ -2404,16 +2404,16 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       op = meta_draw_op_new (META_DRAW_GTK_ARROW);
 
-      op->data.gtk_arrow.x = meta_draw_spec_new (info->theme, x, NULL);
-      op->data.gtk_arrow.y = meta_draw_spec_new (info->theme, y, NULL);
-      op->data.gtk_arrow.width = meta_draw_spec_new (info->theme, width, NULL);
-      op->data.gtk_arrow.height = meta_draw_spec_new (info->theme,
+      op->data.ctk_arrow.x = meta_draw_spec_new (info->theme, x, NULL);
+      op->data.ctk_arrow.y = meta_draw_spec_new (info->theme, y, NULL);
+      op->data.ctk_arrow.width = meta_draw_spec_new (info->theme, width, NULL);
+      op->data.ctk_arrow.height = meta_draw_spec_new (info->theme,
                                                       height, NULL);
 
-      op->data.gtk_arrow.filled = filled_val;
-      op->data.gtk_arrow.state = state_val;
-      op->data.gtk_arrow.shadow = shadow_val;
-      op->data.gtk_arrow.arrow = arrow_val;
+      op->data.ctk_arrow.filled = filled_val;
+      op->data.ctk_arrow.state = state_val;
+      op->data.ctk_arrow.shadow = shadow_val;
+      op->data.ctk_arrow.arrow = arrow_val;
 
       g_assert (info->op_list);
 
@@ -2421,7 +2421,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       push_state (info, STATE_GTK_ARROW);
     }
-  else if (ELEMENT_IS ("gtk_box"))
+  else if (ELEMENT_IS ("ctk_box"))
     {
       MetaDrawOp *op;
       const char *state;
@@ -2455,7 +2455,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
       if (!check_expression (height, FALSE, info->theme, context, error))
         return;
 #endif
-      state_val = meta_gtk_state_from_string (state);
+      state_val = meta_ctk_state_from_string (state);
       if (((int) state_val) == -1)
         {
           set_error (error, context, G_MARKUP_ERROR,
@@ -2465,7 +2465,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
           return;
         }
 
-      shadow_val = meta_gtk_shadow_from_string (shadow);
+      shadow_val = meta_ctk_shadow_from_string (shadow);
       if (((int) shadow_val) == -1)
         {
           set_error (error, context, G_MARKUP_ERROR,
@@ -2477,13 +2477,13 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       op = meta_draw_op_new (META_DRAW_GTK_BOX);
 
-      op->data.gtk_box.x = meta_draw_spec_new (info->theme, x, NULL);
-      op->data.gtk_box.y = meta_draw_spec_new (info->theme, y, NULL);
-      op->data.gtk_box.width = meta_draw_spec_new (info->theme, width, NULL);
-      op->data.gtk_box.height = meta_draw_spec_new (info->theme, height, NULL);
+      op->data.ctk_box.x = meta_draw_spec_new (info->theme, x, NULL);
+      op->data.ctk_box.y = meta_draw_spec_new (info->theme, y, NULL);
+      op->data.ctk_box.width = meta_draw_spec_new (info->theme, width, NULL);
+      op->data.ctk_box.height = meta_draw_spec_new (info->theme, height, NULL);
 
-      op->data.gtk_box.state = state_val;
-      op->data.gtk_box.shadow = shadow_val;
+      op->data.ctk_box.state = state_val;
+      op->data.ctk_box.shadow = shadow_val;
 
       g_assert (info->op_list);
 
@@ -2491,7 +2491,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       push_state (info, STATE_GTK_BOX);
     }
-  else if (ELEMENT_IS ("gtk_vline"))
+  else if (ELEMENT_IS ("ctk_vline"))
     {
       MetaDrawOp *op;
       const char *state;
@@ -2518,7 +2518,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
         return;
 #endif
 
-      state_val = meta_gtk_state_from_string (state);
+      state_val = meta_ctk_state_from_string (state);
       if (((int) state_val) == -1)
         {
           set_error (error, context, G_MARKUP_ERROR,
@@ -2530,11 +2530,11 @@ parse_draw_op_element (GMarkupParseContext  *context,
 
       op = meta_draw_op_new (META_DRAW_GTK_VLINE);
 
-      op->data.gtk_vline.x = meta_draw_spec_new (info->theme, x, NULL);
-      op->data.gtk_vline.y1 = meta_draw_spec_new (info->theme, y1, NULL);
-      op->data.gtk_vline.y2 = meta_draw_spec_new (info->theme, y2, NULL);
+      op->data.ctk_vline.x = meta_draw_spec_new (info->theme, x, NULL);
+      op->data.ctk_vline.y1 = meta_draw_spec_new (info->theme, y1, NULL);
+      op->data.ctk_vline.y2 = meta_draw_spec_new (info->theme, y2, NULL);
 
-      op->data.gtk_vline.state = state_val;
+      op->data.ctk_vline.state = state_val;
 
       g_assert (info->op_list);
 
@@ -4191,13 +4191,13 @@ text_handler (GMarkupParseContext *context,
       NO_TEXT ("image");
       break;
     case STATE_GTK_ARROW:
-      NO_TEXT ("gtk_arrow");
+      NO_TEXT ("ctk_arrow");
       break;
     case STATE_GTK_BOX:
-      NO_TEXT ("gtk_box");
+      NO_TEXT ("ctk_box");
       break;
     case STATE_GTK_VLINE:
-      NO_TEXT ("gtk_vline");
+      NO_TEXT ("ctk_vline");
       break;
     case STATE_ICON:
       NO_TEXT ("icon");

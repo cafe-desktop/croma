@@ -58,7 +58,7 @@ AC_C_BIGENDIAN
 GIO_MIN_VERSION=2.25.10
 GTK_MIN_VERSION=3.22.0
 
-CROMA_PC_MODULES="gtk+-3.0 >= $GTK_MIN_VERSION gio-2.0 >= $GIO_MIN_VERSION pango >= 1.2.0 libcanberra-gtk3"
+CROMA_PC_MODULES="ctk+-3.0 >= $GTK_MIN_VERSION gio-2.0 >= $GIO_MIN_VERSION pango >= 1.2.0 libcanberra-ctk3"
 
 GLIB_GSETTINGS
 
@@ -105,8 +105,8 @@ AC_ARG_ENABLE(shape,
 AC_CHECK_HEADERS(execinfo.h, [AC_CHECK_FUNCS(backtrace)])
 
 PKG_CHECK_MODULES(ALL, glib-2.0 >= 2.58.0)
-PKG_CHECK_MODULES(CROMA_MESSAGE, gtk+-3.0 >= $GTK_MIN_VERSION)
-PKG_CHECK_MODULES(CROMA_WINDOW_DEMO, gtk+-3.0 >= $GTK_MIN_VERSION)
+PKG_CHECK_MODULES(CROMA_MESSAGE, ctk+-3.0 >= $GTK_MIN_VERSION)
+PKG_CHECK_MODULES(CROMA_WINDOW_DEMO, ctk+-3.0 >= $GTK_MIN_VERSION)
 
 # Unconditionally use this dir to avoid a circular dep with cafecc
 CAFE_KEYBINDINGS_KEYSDIR="${datadir}/cafe-control-center/keybindings"

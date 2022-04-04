@@ -81,7 +81,7 @@
 	#include <X11/extensions/Xcomposite.h>
 	#include <X11/extensions/Xdamage.h>
 	#include <X11/extensions/Xfixes.h>
-	#include <gtk/gtk.h>
+	#include <ctk/ctk.h>
 #endif
 
 #include <gdk/gdkx.h>
@@ -1433,7 +1433,7 @@ handle_net_restack_window (MetaDisplay* display,
  * https://github.com/stefano-k/Cafe-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
  */
 
-static gboolean maybe_send_event_to_gtk(MetaDisplay* display, XEvent* xevent)
+static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 {
 	/* We're always using the default display */
 	GdkDisplay* gdk_display = gdk_display_get_default();
@@ -1499,14 +1499,14 @@ static gboolean maybe_send_event_to_gtk(MetaDisplay* display, XEvent* xevent)
 
 			if (xevent->type == ButtonPress)
 			{
-				GtkSettings* settings = gtk_settings_get_default();
+				GtkSettings* settings = ctk_settings_get_default();
 
 				int double_click_time;
 				int double_click_distance;
 
 				g_object_get (settings,
-					"gtk-double-click-time", &double_click_time,
-					"gtk-double-click-distance", &double_click_distance,
+					"ctk-double-click-time", &double_click_time,
+					"ctk-double-click-distance", &double_click_distance,
 					NULL);
 
 				if (xevent->xbutton.button == display->button_click_number &&
@@ -1588,7 +1588,7 @@ static gboolean maybe_send_event_to_gtk(MetaDisplay* display, XEvent* xevent)
 	gdk_event_set_device (gdk_event, device);
 
 	/* If we've gotten here, we've filled in the gdk_event and should send it on */
-	gtk_main_do_event(gdk_event);
+	ctk_main_do_event(gdk_event);
 
 	gdk_event_free(gdk_event);
 	return TRUE;
@@ -1615,7 +1615,7 @@ mouse_event_is_in_tab_popup (MetaDisplay *display,
       GtkWidget *popup_widget = meta_ui_tab_popup_get_widget (screen->tab_popup);
       if (ok1 && popup_widget != NULL) 
         {
-          GdkWindow * window = gtk_widget_get_window (popup_widget);
+          GdkWindow * window = ctk_widget_get_window (popup_widget);
           if (window == NULL)
             return FALSE;
 
@@ -1627,7 +1627,7 @@ mouse_event_is_in_tab_popup (MetaDisplay *display,
     
           if (ok2 && child1 == popup_xid)
             {
-              int scale = gtk_widget_get_scale_factor (popup_widget);
+              int scale = ctk_widget_get_scale_factor (popup_widget);
               if (scale != 0)
                 {
                   *popup_x /= scale;
@@ -2622,7 +2622,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
                       process_pong_message (display, event);
 
                       /* We don't want ping reply events going into
-                       * the GTK+ event loop because gtk+ will treat
+                       * the GTK+ event loop because ctk+ will treat
                        * them as ping requests and send more replies.
                        */
                       filter_out_event = TRUE;
@@ -2702,7 +2702,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
 	/* generates event on wrong window.
   	 * https://github.com/stefano-k/Cafe-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
   	 */
-	if (maybe_send_event_to_gtk(display, event))
+	if (maybe_send_event_to_ctk(display, event))
 	{
 		filter_out_event = TRUE;
 	}

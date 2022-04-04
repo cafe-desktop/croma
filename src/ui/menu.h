@@ -22,7 +22,7 @@
 #ifndef META_MENU_H
 #define META_MENU_H
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include "frames.h"
 
 /* Stock icons */

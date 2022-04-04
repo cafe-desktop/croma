@@ -27,7 +27,7 @@
 #include "boxes.h"
 #include "gradient.h"
 #include "common.h"
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 typedef struct _MetaFrameStyle MetaFrameStyle;
 typedef struct _MetaFrameStyleSet MetaFrameStyleSet;
@@ -262,11 +262,11 @@ struct _MetaColorSpec
     struct {
       MetaGtkColorComponent component;
       GtkStateFlags state;
-    } gtk;
+    } ctk;
     struct {
       char *color_name;
       MetaColorSpec *fallback;
-    } gtkcustom;
+    } ctkcustom;
     struct {
       MetaColorSpec *foreground;
       MetaColorSpec *background;
@@ -514,7 +514,7 @@ struct _MetaDrawOp
       MetaDrawSpec *y;
       MetaDrawSpec *width;
       MetaDrawSpec *height;
-    } gtk_arrow;
+    } ctk_arrow;
 
     struct {
       GtkStateFlags state;
@@ -523,14 +523,14 @@ struct _MetaDrawOp
       MetaDrawSpec *y;
       MetaDrawSpec *width;
       MetaDrawSpec *height;
-    } gtk_box;
+    } ctk_box;
 
     struct {
       GtkStateFlags state;
       MetaDrawSpec *x;
       MetaDrawSpec *y1;
       MetaDrawSpec *y2;
-    } gtk_vline;
+    } ctk_vline;
 
     struct {
       MetaAlphaGradientSpec *alpha_spec;
@@ -905,11 +905,11 @@ void          meta_draw_spec_free (MetaDrawSpec *spec);
 MetaColorSpec* meta_color_spec_new             (MetaColorSpecType  type);
 MetaColorSpec* meta_color_spec_new_from_string (const char        *str,
                                                 GError           **err);
-MetaColorSpec* meta_color_spec_new_gtk         (MetaGtkColorComponent component,
+MetaColorSpec* meta_color_spec_new_ctk         (MetaGtkColorComponent component,
                                                 GtkStateFlags         state);
 void           meta_color_spec_free            (MetaColorSpec     *spec);
 void           meta_color_spec_render          (MetaColorSpec     *spec,
-                                                GtkStyleContext   *style_gtk,
+                                                GtkStyleContext   *style_ctk,
                                                 GdkRGBA           *color);
 
 MetaDrawOp*    meta_draw_op_new  (MetaDrawType        type);
@@ -922,7 +922,7 @@ void           meta_draw_op_draw (const MetaDrawOp    *op,
                                   MetaRectangle        logical_region);
 
 void           meta_draw_op_draw_with_style (const MetaDrawOp    *op,
-                                             GtkStyleContext     *style_gtk,
+                                             GtkStyleContext     *style_ctk,
                                              cairo_t             *cr,
                                              const MetaDrawInfo  *info,
                                              /* logical region being drawn */
@@ -937,7 +937,7 @@ void            meta_draw_op_list_draw  (const MetaDrawOpList *op_list,
                                          const MetaDrawInfo   *info,
                                          MetaRectangle         rect);
 void            meta_draw_op_list_draw_with_style  (const MetaDrawOpList *op_list,
-                                                    GtkStyleContext      *style_gtk,
+                                                    GtkStyleContext      *style_ctk,
                                                     cairo_t              *cr,
                                                     const MetaDrawInfo   *info,
                                                     MetaRectangle         rect);
@@ -985,7 +985,7 @@ void meta_frame_style_draw (MetaFrameStyle          *style,
 
 
 void meta_frame_style_draw_with_style (MetaFrameStyle          *style,
-                                       GtkStyleContext         *style_gtk,
+                                       GtkStyleContext         *style_ctk,
                                        cairo_t                 *cr,
                                        const MetaFrameGeometry *fgeom,
                                        int                      client_width,
@@ -1030,7 +1030,7 @@ double meta_theme_get_title_scale (MetaTheme     *theme,
                                    MetaFrameFlags flags);
 
 void meta_theme_draw_frame (MetaTheme              *theme,
-                            GtkStyleContext        *style_gtk,
+                            GtkStyleContext        *style_ctk,
                             cairo_t                *cr,
                             MetaFrameType           type,
                             MetaFrameFlags          flags,
@@ -1122,7 +1122,7 @@ gboolean     meta_theme_replace_constants     (MetaTheme    *theme,
 
 /* random stuff */
 
-PangoFontDescription* meta_gtk_widget_get_font_desc        (GtkWidget            *widget,
+PangoFontDescription* meta_ctk_widget_get_font_desc        (GtkWidget            *widget,
                                                             double                scale,
 							    const PangoFontDescription *override);
 int                   meta_pango_font_desc_get_text_height (const PangoFontDescription *font_desc,
@@ -1149,17 +1149,17 @@ MetaFrameType         meta_frame_type_from_string      (const char            *s
 const char*           meta_frame_type_to_string        (MetaFrameType          type);
 MetaGradientType      meta_gradient_type_from_string   (const char            *str);
 const char*           meta_gradient_type_to_string     (MetaGradientType       type);
-GtkStateFlags         meta_gtk_state_from_string       (const char            *str);
-GtkShadowType         meta_gtk_shadow_from_string      (const char            *str);
-const char*           meta_gtk_shadow_to_string        (GtkShadowType          shadow);
-GtkArrowType          meta_gtk_arrow_from_string       (const char            *str);
-const char*           meta_gtk_arrow_to_string         (GtkArrowType           arrow);
+GtkStateFlags         meta_ctk_state_from_string       (const char            *str);
+GtkShadowType         meta_ctk_shadow_from_string      (const char            *str);
+const char*           meta_ctk_shadow_to_string        (GtkShadowType          shadow);
+GtkArrowType          meta_ctk_arrow_from_string       (const char            *str);
+const char*           meta_ctk_arrow_to_string         (GtkArrowType           arrow);
 MetaImageFillType     meta_image_fill_type_from_string (const char            *str);
 const char*           meta_image_fill_type_to_string   (MetaImageFillType      fill_type);
-void                  meta_gtk_style_get_light_color   (GtkStyleContext      *style,
+void                  meta_ctk_style_get_light_color   (GtkStyleContext      *style,
                                                         GtkStateFlags         state,
                                                         GdkRGBA              *color);
-void                  meta_gtk_style_get_dark_color    (GtkStyleContext      *style,
+void                  meta_ctk_style_get_dark_color    (GtkStyleContext      *style,
                                                         GtkStateFlags         state,
                                                         GdkRGBA              *color);
 

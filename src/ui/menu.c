@@ -107,7 +107,7 @@ static void popup_position_func(GtkMenu* menu, gint* x, gint* y, gboolean* push_
 
 	pos = user_data;
 
-	gtk_widget_get_preferred_size (GTK_WIDGET (menu), &req, NULL);
+	ctk_widget_get_preferred_size (GTK_WIDGET (menu), &req, NULL);
 
 	*x = pos->x;
 	*y = pos->y;
@@ -134,7 +134,7 @@ static void menu_closed(GtkMenu* widget, gpointer data)
 		menu,
 		GDK_DISPLAY_XDISPLAY(gdk_display_get_default()),
 		menu->client_xwindow,
-		gtk_get_current_event_time (),
+		ctk_get_current_event_time (),
 		0, 0,
 		menu->data);
 
@@ -155,7 +155,7 @@ static void activate_cb(GtkWidget* menuitem, gpointer data)
 		md->menu,
 		GDK_DISPLAY_XDISPLAY (gdk_display_get_default()),
 		md->menu->client_xwindow,
-		gtk_get_current_event_time(),
+		ctk_get_current_event_time(),
 		md->op,
 		GPOINTER_TO_INT(g_object_get_data(G_OBJECT(menuitem), "workspace")),
 		md->menu->data);
@@ -264,29 +264,29 @@ static GtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
 
 	if (menuitem->type == MENU_ITEM_NORMAL)
 	{
-		mi = gtk_menu_item_new ();
+		mi = ctk_menu_item_new ();
 	}
 	else if (menuitem->type == MENU_ITEM_IMAGE)
 	{
-		GtkWidget* image = gtk_image_new_from_icon_name(menuitem->stock_id, GTK_ICON_SIZE_MENU);
+		GtkWidget* image = ctk_image_new_from_icon_name(menuitem->stock_id, GTK_ICON_SIZE_MENU);
 
-		mi = gtk_image_menu_item_new();
+		mi = ctk_image_menu_item_new();
 
-		gtk_image_menu_item_set_image(GTK_IMAGE_MENU_ITEM(mi), image);
-		gtk_widget_show(image);
+		ctk_image_menu_item_set_image(GTK_IMAGE_MENU_ITEM(mi), image);
+		ctk_widget_show(image);
 	}
 	else if (menuitem->type == MENU_ITEM_CHECKBOX)
 	{
-		mi = gtk_check_menu_item_new ();
+		mi = ctk_check_menu_item_new ();
 
-		gtk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(mi), menuitem->checked);
+		ctk_check_menu_item_set_active(GTK_CHECK_MENU_ITEM(mi), menuitem->checked);
     }
 	else if (menuitem->type == MENU_ITEM_RADIOBUTTON)
 	{
-		mi = gtk_check_menu_item_new ();
+		mi = ctk_check_menu_item_new ();
 
-		gtk_check_menu_item_set_draw_as_radio (GTK_CHECK_MENU_ITEM (mi), TRUE);
-		gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi), menuitem->checked);
+		ctk_check_menu_item_set_draw_as_radio (GTK_CHECK_MENU_ITEM (mi), TRUE);
+		ctk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi), menuitem->checked);
 	}
 	else if (menuitem->type == MENU_ITEM_WORKSPACE_LIST)
 	{
@@ -294,17 +294,17 @@ static GtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
 	}
 	else
 	{
-		return gtk_separator_menu_item_new();
+		return ctk_separator_menu_item_new();
 	}
 
 	i18n_label = _(menuitem->label);
 	meta_core_get_menu_accelerator (menuitem->op, workspace_id, &key, &mods);
 
 	accel_label = meta_accel_label_new_with_mnemonic (i18n_label);
-	gtk_widget_set_halign (accel_label, GTK_ALIGN_START);
+	ctk_widget_set_halign (accel_label, GTK_ALIGN_START);
 
-	gtk_container_add (GTK_CONTAINER (mi), accel_label);
-	gtk_widget_show (accel_label);
+	ctk_container_add (GTK_CONTAINER (mi), accel_label);
+	ctk_widget_show (accel_label);
 
 	meta_accel_label_set_accelerator (META_ACCEL_LABEL (accel_label), key, mods);
 
@@ -339,10 +339,10 @@ meta_window_menu_new   (MetaFrames         *frames,
   menu->ops = ops;
   menu->insensitive = insensitive;
 
-  menu->menu = gtk_menu_new ();
+  menu->menu = ctk_menu_new ();
 
-  gtk_menu_set_screen (GTK_MENU (menu->menu),
-                       gtk_widget_get_screen (GTK_WIDGET (frames)));
+  ctk_menu_set_screen (GTK_MENU (menu->menu),
+                       ctk_widget_get_screen (GTK_WIDGET (frames)));
 
   for (i = 0; i < (int) G_N_ELEMENTS (menuitems); i++)
     {
@@ -360,11 +360,11 @@ meta_window_menu_new   (MetaFrames         *frames,
           switch (menuitem.op)
             {
             case META_MENU_OP_STICK:
-              gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi),
+              ctk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi),
                                               active_workspace == 0xFFFFFFFF);
               break;
             case META_MENU_OP_UNSTICK:
-              gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi),
+              ctk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (mi),
                                               active_workspace != 0xFFFFFFFF);
               break;
             default:
@@ -391,18 +391,18 @@ meta_window_menu_new   (MetaFrames         *frames,
                   meta_verbose ("Creating %d-workspace menu current space %lu\n",
                       n_workspaces, active_workspace);
 
-                  window = gtk_widget_get_window (GTK_WIDGET (frames));
+                  window = ctk_widget_get_window (GTK_WIDGET (frames));
 
                   display = GDK_WINDOW_XDISPLAY (window);
 
                   screen = gdk_window_get_screen (window);
                   xroot = GDK_WINDOW_XID (gdk_screen_get_root_window (screen));
 
-                  submenu = gtk_menu_new ();
+                  submenu = ctk_menu_new ();
 
                   g_assert (mi==NULL);
                   mi = menu_item_new (&to_another_workspace, -1);
-                  gtk_menu_item_set_submenu (GTK_MENU_ITEM (mi), submenu);
+                  ctk_menu_item_set_submenu (GTK_MENU_ITEM (mi), submenu);
 
                   for (j = 0; j < n_workspaces; j++)
                     {
@@ -427,7 +427,7 @@ meta_window_menu_new   (MetaFrames         *frames,
                       g_free (label);
 
                       if ((active_workspace == (unsigned)j) && (ops & META_MENU_OP_UNSTICK))
-                        gtk_widget_set_sensitive (submi, FALSE);
+                        ctk_widget_set_sensitive (submi, FALSE);
 
                       md = g_new (MenuData, 1);
 
@@ -444,9 +444,9 @@ meta_window_menu_new   (MetaFrames         *frames,
                           md,
                           (GClosureNotify) g_free, 0);
 
-                      gtk_menu_shell_append (GTK_MENU_SHELL (submenu), submi);
+                      ctk_menu_shell_append (GTK_MENU_SHELL (submenu), submi);
 
-                      gtk_widget_show (submi);
+                      ctk_widget_show (submi);
                     }
                   }
                 else
@@ -458,7 +458,7 @@ meta_window_menu_new   (MetaFrames         *frames,
                                               &key, &mods);
 
               if (insensitive & menuitem.op)
-                gtk_widget_set_sensitive (mi, FALSE);
+                ctk_widget_set_sensitive (mi, FALSE);
 
               md = g_new (MenuData, 1);
 
@@ -474,9 +474,9 @@ meta_window_menu_new   (MetaFrames         *frames,
 
           if (mi)
             {
-              gtk_menu_shell_append (GTK_MENU_SHELL (menu->menu), mi);
+              ctk_menu_shell_append (GTK_MENU_SHELL (menu->menu), mi);
 
-              gtk_widget_show (mi);
+              ctk_widget_show (mi);
             }
         }
     }
@@ -494,18 +494,18 @@ void meta_window_menu_popup(MetaWindowMenu* menu, int root_x, int root_y, int bu
 
 	g_object_set_data_full(G_OBJECT(menu->menu), "destroy-point", pt, g_free);
 
-	scale = gtk_widget_get_scale_factor (menu->menu);
+	scale = ctk_widget_get_scale_factor (menu->menu);
 	pt->x = root_x / scale;
 	pt->y = root_y / scale;
 
-	gtk_menu_popup(GTK_MENU (menu->menu), NULL, NULL, popup_position_func, pt, button, timestamp);
+	ctk_menu_popup(GTK_MENU (menu->menu), NULL, NULL, popup_position_func, pt, button, timestamp);
 
-    if (!gtk_widget_get_visible (menu->menu))
+    if (!ctk_widget_get_visible (menu->menu))
       meta_warning("GtkMenu failed to grab the pointer\n");
 }
 
 void meta_window_menu_free(MetaWindowMenu* menu)
 {
-	gtk_widget_destroy(menu->menu);
+	ctk_widget_destroy(menu->menu);
 	g_free(menu);
 }

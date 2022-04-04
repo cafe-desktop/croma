@@ -35,7 +35,7 @@
 
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #include <cairo/cairo-xlib.h>
 

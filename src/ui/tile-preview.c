@@ -23,7 +23,7 @@
 
 #include <config.h>
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <cairo.h>
 
 #include "tile-preview.h"
@@ -102,24 +102,24 @@ on_preview_window_style_set (GtkWidget *widget,
                              gpointer   user_data)
 {
   MetaTilePreview *preview = user_data;
-  GtkStyleContext *context = gtk_style_context_new ();
-  GtkWidgetPath *path = gtk_widget_path_new ();
+  GtkStyleContext *context = ctk_style_context_new ();
+  GtkWidgetPath *path = ctk_widget_path_new ();
   guchar alpha = 0xFF;
 
-  gtk_widget_path_append_type (path, GTK_TYPE_ICON_VIEW);
-  gtk_style_context_set_path (context, path);
+  ctk_widget_path_append_type (path, GTK_TYPE_ICON_VIEW);
+  ctk_style_context_set_path (context, path);
 
-  gtk_style_context_save (context);
-  gtk_style_context_set_state (context, GTK_STATE_FLAG_SELECTED);
-  gtk_style_context_get (context, gtk_style_context_get_state (context),
+  ctk_style_context_save (context);
+  ctk_style_context_set_state (context, GTK_STATE_FLAG_SELECTED);
+  ctk_style_context_get (context, ctk_style_context_get_state (context),
                          "background-color",
                          &preview->preview_color, NULL);
-  gtk_style_context_get_style (context, "selection-box-alpha", &alpha, NULL);
-  gtk_style_context_restore (context);
+  ctk_style_context_get_style (context, "selection-box-alpha", &alpha, NULL);
+  ctk_style_context_restore (context);
 
   preview->preview_color->alpha = (double)alpha / 0xFF;
 
-  gtk_widget_path_free (path);
+  ctk_widget_path_free (path);
   g_object_unref (context);
 }
 
@@ -133,23 +133,23 @@ meta_tile_preview_new (void)
 
   preview = g_new (MetaTilePreview, 1);
 
-  preview->preview_window = gtk_window_new (GTK_WINDOW_POPUP);
+  preview->preview_window = ctk_window_new (GTK_WINDOW_POPUP);
 
-  gtk_window_set_screen (GTK_WINDOW (preview->preview_window), screen);
-  gtk_widget_set_app_paintable (preview->preview_window, TRUE);
+  ctk_window_set_screen (GTK_WINDOW (preview->preview_window), screen);
+  ctk_widget_set_app_paintable (preview->preview_window, TRUE);
 
   preview->preview_color = NULL;
 
   preview->tile_rect.x = preview->tile_rect.y = 0;
   preview->tile_rect.width = preview->tile_rect.height = 0;
 
-  gtk_widget_set_visual (preview->preview_window,
+  ctk_widget_set_visual (preview->preview_window,
                          gdk_screen_get_rgba_visual (screen));
 
   g_signal_connect (preview->preview_window, "style-set",
                     G_CALLBACK (on_preview_window_style_set), preview);
 
-  gtk_widget_realize (preview->preview_window);
+  ctk_widget_realize (preview->preview_window);
 
   g_signal_connect (preview->preview_window, "draw",
                     G_CALLBACK (meta_tile_preview_draw), preview);
@@ -160,7 +160,7 @@ meta_tile_preview_new (void)
 void
 meta_tile_preview_free (MetaTilePreview *preview)
 {
-  gtk_widget_destroy (preview->preview_window);
+  ctk_widget_destroy (preview->preview_window);
 
   if (preview->preview_color)
     gdk_rgba_free (preview->preview_color);
@@ -177,23 +177,23 @@ meta_tile_preview_show (MetaTilePreview *preview,
   GdkRectangle old_rect;
   gint scale;
 
-  scale = gtk_widget_get_scale_factor (preview->preview_window);
+  scale = ctk_widget_get_scale_factor (preview->preview_window);
   tile_rect->x /= scale;
   tile_rect->y /= scale;
   tile_rect->width /= scale;
   tile_rect->height /= scale;
 
-  if (gtk_widget_get_visible (preview->preview_window)
+  if (ctk_widget_get_visible (preview->preview_window)
       && preview->tile_rect.x == tile_rect->x
       && preview->tile_rect.y == tile_rect->y
       && preview->tile_rect.width == tile_rect->width
       && preview->tile_rect.height == tile_rect->height)
     return; /* nothing to do */
 
-  window = gtk_widget_get_window (preview->preview_window);
+  window = ctk_widget_get_window (preview->preview_window);
   meta_core_lower_beneath_focus_window (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
                                         GDK_WINDOW_XID (window),
-                                        gtk_get_current_event_time ());
+                                        ctk_get_current_event_time ());
 
   old_rect.x = old_rect.y = 0;
   old_rect.width = preview->tile_rect.width;
@@ -201,7 +201,7 @@ meta_tile_preview_show (MetaTilePreview *preview,
 
   gdk_window_invalidate_rect (window, &old_rect, FALSE);
 
-  gtk_widget_show (preview->preview_window);
+  ctk_widget_show (preview->preview_window);
 
   preview->tile_rect = *tile_rect;
 
@@ -234,7 +234,7 @@ meta_tile_preview_show (MetaTilePreview *preview,
       cairo_region_subtract (outer_region, inner_region);
       cairo_region_destroy (inner_region);
 
-      gtk_widget_shape_combine_region (preview->preview_window, outer_region);
+      ctk_widget_shape_combine_region (preview->preview_window, outer_region);
       cairo_region_destroy (outer_region);
     } else {
       gdk_window_shape_combine_region (window, NULL, 0, 0);
@@ -244,5 +244,5 @@ meta_tile_preview_show (MetaTilePreview *preview,
 void
 meta_tile_preview_hide (MetaTilePreview *preview)
 {
-  gtk_widget_hide (preview->preview_window);
+  ctk_widget_hide (preview->preview_window);
 }

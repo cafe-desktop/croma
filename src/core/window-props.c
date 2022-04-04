@@ -216,7 +216,7 @@ reload_kwm_win_icon (MetaWindow    *window,
 }
 
 static gboolean
-gtk_border_equal (GtkBorder *a,
+ctk_border_equal (GtkBorder *a,
                   GtkBorder *b)
 {
   return (a->left == b->left &&
@@ -231,7 +231,7 @@ meta_window_set_custom_frame_extents (MetaWindow *window,
 {
   if (extents)
     {
-      if (window->has_custom_frame_extents && gtk_border_equal (&window->custom_frame_extents, extents))
+      if (window->has_custom_frame_extents && ctk_border_equal (&window->custom_frame_extents, extents))
         return;
 
       window->has_custom_frame_extents = TRUE;
@@ -250,7 +250,7 @@ meta_window_set_custom_frame_extents (MetaWindow *window,
 }
 
 static void
-reload_gtk_frame_extents (MetaWindow    *window,
+reload_ctk_frame_extents (MetaWindow    *window,
                           MetaPropValue *value,
                           gboolean       initial)
 {
@@ -1531,12 +1531,12 @@ reload_transient_for (MetaWindow    *window,
 }
 
 static void
-reload_gtk_theme_variant (MetaWindow    *window,
+reload_ctk_theme_variant (MetaWindow    *window,
                           MetaPropValue *value,
                           gboolean       initial)
 {
   char *requested_variant = NULL;
-  char *current_variant = window->gtk_theme_variant;
+  char *current_variant = window->ctk_theme_variant;
 
   if (value->type != META_PROP_VALUE_INVALID)
     {
@@ -1549,7 +1549,7 @@ reload_gtk_theme_variant (MetaWindow    *window,
     {
       g_free (current_variant);
 
-      window->gtk_theme_variant = g_strdup (requested_variant);
+      window->ctk_theme_variant = g_strdup (requested_variant);
       if (window->frame)
         meta_ui_update_frame_style (window->screen->ui, window->frame->xwindow);
     }
@@ -1600,8 +1600,8 @@ meta_display_init_window_prop_hooks (MetaDisplay *display)
     { XA_WM_HINTS,                     META_PROP_VALUE_WM_HINTS,  reload_wm_hints },
     { XA_WM_TRANSIENT_FOR,             META_PROP_VALUE_WINDOW,    reload_transient_for },
     { display->atom__NET_WM_USER_TIME_WINDOW, META_PROP_VALUE_WINDOW, reload_net_wm_user_time_window },
-    { display->atom__GTK_THEME_VARIANT, META_PROP_VALUE_UTF8, reload_gtk_theme_variant, },
-    { display->atom__GTK_FRAME_EXTENTS, META_PROP_VALUE_CARDINAL_LIST, reload_gtk_frame_extents },
+    { display->atom__GTK_THEME_VARIANT, META_PROP_VALUE_UTF8, reload_ctk_theme_variant, },
+    { display->atom__GTK_FRAME_EXTENTS, META_PROP_VALUE_CARDINAL_LIST, reload_ctk_frame_extents },
     { 0 },
   };
 

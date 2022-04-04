@@ -1932,47 +1932,47 @@ msgstr "Gradienty powinny się składać co najmniej z dwóch kolorów"
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 "Niestandardowa specyfikacja kolorów biblioteki GTK musi mieć nazwę koloru, "
-"oraz kolor zapasowy w nawiasie, np. gtk:custom(foo,bar); nie można "
+"oraz kolor zapasowy w nawiasie, np. ctk:custom(foo,bar); nie można "
 "przetworzyć \"%s\""
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
-"Niepoprawny znak '%c' w parametrze color_name od gtk:custom, tylko "
+"Niepoprawny znak '%c' w parametrze color_name od ctk:custom, tylko "
 "A-Za-z0-9-_ są prawidłowe."
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"Forcafem Gtk:custom jest \"gtk:custom(color_name,fallback)\", \"%s\" nie "
+"Forcafem Gtk:custom jest \"ctk:custom(color_name,fallback)\", \"%s\" nie "
 "pasuje do formatu"
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "Specyfikacja koloru GTK+ musi zawierać stan w nawiasach kwadratowych, np. "
-"gtk:fg[NORMAL], gdzie NORMAL jest nazwą stanu; nie można przetworzyć \"%s\""
+"ctk:fg[NORMAL], gdzie NORMAL jest nazwą stanu; nie można przetworzyć \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "Specyfikacja koloru GTK+ musi po nazwie stanu zawierać zamykający nawias "
-"kwadratowy, np. gtk:fg[NORMAL], gdzie NORMAL jest nazwą stanu; nie można "
+"kwadratowy, np. ctk:fg[NORMAL], gdzie NORMAL jest nazwą stanu; nie można "
 "przetworzyć \"%s\""
 
 #: src/ui/theme.c:1496

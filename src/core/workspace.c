@@ -29,7 +29,7 @@
 #include "prefs.h"
 #include <X11/Xatom.h>
 #include <string.h>
-#include <canberra-gtk.h>
+#include <canberra-ctk.h>
 
 void meta_workspace_queue_calc_showing   (MetaWorkspace *workspace);
 static void set_active_space_hint        (MetaScreen *screen);
@@ -355,7 +355,7 @@ static void workspace_switch_sound(MetaWorkspace *from,
     goto finish;
   }
 
-  ca_context_play(ca_gtk_context_get(), 1,
+  ca_context_play(ca_ctk_context_get(), 1,
                   CA_PROP_EVENT_ID, e,
                   CA_PROP_EVENT_DESCRIPTION, "Desktop switched",
                   CA_PROP_CANBERRA_CACHE_CONTROL, "permanent",

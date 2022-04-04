@@ -28,7 +28,7 @@
 /* Don't include core headers here */
 #include <X11/Xlib.h>
 #include <glib.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 typedef struct _MetaResizePopup MetaResizePopup;
 

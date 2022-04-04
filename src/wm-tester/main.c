@@ -19,7 +19,7 @@
  * 02110-1301, USA.
  */
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkx.h>
 
 #include <stdlib.h>
@@ -45,7 +45,7 @@ main (int argc, char **argv)
   gboolean do_evil;
   gboolean do_icon_windows;
 
-  gtk_init (&argc, &argv);
+  ctk_init (&argc, &argv);
 
   do_evil = FALSE;
   do_icon_windows = FALSE;
@@ -79,7 +79,7 @@ main (int argc, char **argv)
   if (do_icon_windows)
     set_up_icon_windows ();
 
-  gtk_main ();
+  ctk_main ();
 
   return 0;
 }
@@ -119,9 +119,9 @@ evil_timeout (gpointer data)
       int t;
       GtkWidget *parent;
 
-      w = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+      w = ctk_window_new (GTK_WINDOW_TOPLEVEL);
 
-      gtk_window_move (GTK_WINDOW (w),
+      ctk_window_move (GTK_WINDOW (w),
                        g_random_int_range (0,
                                            WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ()))),
                        g_random_int_range (0,
@@ -138,17 +138,17 @@ evil_timeout (gpointer data)
               parent = g_slist_nth_data (evil_windows, t);
 
               if (parent != NULL)
-                gtk_window_set_transient_for (GTK_WINDOW (w), GTK_WINDOW (parent));
+                ctk_window_set_transient_for (GTK_WINDOW (w), GTK_WINDOW (parent));
             }
         }
 
       if (parent != NULL)
-        c = gtk_button_new_with_label ("Evil Transient!");
+        c = ctk_button_new_with_label ("Evil Transient!");
       else
-        c = gtk_button_new_with_label ("Evil Window!");
-      gtk_container_add (GTK_CONTAINER (w), c);
+        c = ctk_button_new_with_label ("Evil Window!");
+      ctk_container_add (GTK_CONTAINER (w), c);
 
-      gtk_widget_show_all (w);
+      ctk_widget_show_all (w);
 
       evil_windows = g_slist_prepend (evil_windows, w);
 
@@ -170,7 +170,7 @@ evil_timeout (gpointer data)
             {
               --len;
               evil_windows = g_slist_remove (evil_windows, w);
-              gtk_widget_destroy (w);
+              ctk_widget_destroy (w);
             }
 
           ++i;
@@ -204,35 +204,35 @@ set_up_icon_windows (void)
       GdkPixbuf *pix;
       int size  = 0;
 
-      w = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-      c = gtk_button_new_with_label ("Icon window");
-      gtk_container_add (GTK_CONTAINER (w), c);
+      w = ctk_window_new (GTK_WINDOW_TOPLEVEL);
+      c = ctk_button_new_with_label ("Icon window");
+      ctk_container_add (GTK_CONTAINER (w), c);
 
       icons = NULL;
 
-      gtk_icon_size_lookup (GTK_ICON_SIZE_LARGE_TOOLBAR, NULL, &size);
-      pix = gtk_icon_theme_load_icon (gtk_icon_theme_get_default (), "gtk-save", size, 0, NULL);
+      ctk_icon_size_lookup (GTK_ICON_SIZE_LARGE_TOOLBAR, NULL, &size);
+      pix = ctk_icon_theme_load_icon (ctk_icon_theme_get_default (), "ctk-save", size, 0, NULL);
       icons = g_list_append (icons, pix);
 
       if (i % 2)
         {
-          gtk_icon_size_lookup (GTK_ICON_SIZE_DIALOG, NULL, &size);
-          pix = gtk_icon_theme_load_icon (gtk_icon_theme_get_default (), "gtk-save", size, 0, NULL);
+          ctk_icon_size_lookup (GTK_ICON_SIZE_DIALOG, NULL, &size);
+          pix = ctk_icon_theme_load_icon (ctk_icon_theme_get_default (), "ctk-save", size, 0, NULL);
           icons = g_list_append (icons, pix);
         }
 
       if (i % 3)
         {
-          gtk_icon_size_lookup (GTK_ICON_SIZE_MENU, NULL, &size);
-          pix = gtk_icon_theme_load_icon (gtk_icon_theme_get_default (), "gtk-save", size, 0, NULL);
+          ctk_icon_size_lookup (GTK_ICON_SIZE_MENU, NULL, &size);
+          pix = ctk_icon_theme_load_icon (ctk_icon_theme_get_default (), "ctk-save", size, 0, NULL);
           icons = g_list_append (icons, pix);
         }
 
-      gtk_window_set_icon_list (GTK_WINDOW (w), icons);
+      ctk_window_set_icon_list (GTK_WINDOW (w), icons);
 
       g_list_free_full (icons, g_object_unref);
 
-      gtk_widget_show_all (w);
+      ctk_widget_show_all (w);
 
       ++i;
     }

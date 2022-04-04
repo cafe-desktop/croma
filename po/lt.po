@@ -1892,46 +1892,46 @@ msgstr "Aprašant persiliejančias spalvas reikia nurodyti bent dvi spalvas"
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 "GTK pasirinktų spalvų aprašymas turi turėti palvos pavadinimą ir atsarginę "
-"spalvą skliaustuose, pvz. gtk:custom(foo,bar); could not parse \"%s\""
+"spalvą skliaustuose, pvz. ctk:custom(foo,bar); could not parse \"%s\""
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
-"Netinkamas simbolis „%c“ gtk:custom color_name parametre, tinka tik "
+"Netinkamas simbolis „%c“ ctk:custom color_name parametre, tinka tik "
 "A-Za-z0-9-_"
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"Gtk:custom formatas yra „gtk:custom(color_name,fallback“, „%s“ netinka"
+"Gtk:custom formatas yra „ctk:custom(color_name,fallback“, „%s“ netinka"
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "GTK spalvų aprašymas turi turėti būsenos aprašymą patalpintą tarp laužtinių "
-"skliaustų, pvz., gtk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
+"skliaustų, pvz., ctk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
 "\"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "GTK spalvų aprašymas po būsenos turi turėti uždarančius laužtinius "
-"skliaustus, pvz., gtk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
+"skliaustus, pvz., ctk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
 "\"%s\""
 
 #: src/ui/theme.c:1496

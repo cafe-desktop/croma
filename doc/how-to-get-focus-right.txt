@@ -146,7 +146,7 @@ the ones I'm the most familiar with):
   bug 108643  focus in MRU order instead of stack order
   bug 110970  moving a window to another workspace loses focus
   bug 112031  closing a dialog can result in a strange focus window
-  bug 115650  add _NET_WM_USER_TIME support to gtk+ (see also 150502)
+  bug 115650  add _NET_WM_USER_TIME support to ctk+ (see also 150502)
   bug 120100  panel shouldn't be focused after workspace applet usage
   bug 123803  need final EnterNotify after workspace switch (see also 124798)
   bug 124981  focus clicked window in pager only if on current workspace
@@ -165,7 +165,7 @@ the ones I'm the most familiar with):
   bug 149543  consistent focus window when unshowing desktop
   bug 149589  race in focus choice from libwnck messages
   bug 150271  make sure "run application" dialog gets focused
-  bug 150668  update gtk+ _NET_ACTIVE_WINDOW support
+  bug 150668  update ctk+ _NET_ACTIVE_WINDOW support
   bug 151245  application startup notification forwarding (partially rejected)
   bug 151984  Soeren's idea--backup timestamp when startup notification not used
   bug 151990  prevent focus inconsistencies by only providing one focus method

@@ -1783,40 +1783,40 @@ msgstr "Gradientar må ha minst to fargar"
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"GTK-fargespesifikasjon må ha tilstand i klammer, t.d. gtk:fs[NORMAL], der "
+"GTK-fargespesifikasjon må ha tilstand i klammer, t.d. ctk:fs[NORMAL], der "
 "NORMAL er tilstanden: Kunne ikkje tolka «%s»"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "GTK-fargespesifikasjon må ha ei avsluttande klamme etter tilstanden, t.d. "
-"gtk:fs[NORMAL], der NORMAL er tilstanden: Kunne ikkje tolka «%s»"
+"ctk:fs[NORMAL], der NORMAL er tilstanden: Kunne ikkje tolka «%s»"
 
 #: src/ui/theme.c:1496
 #, c-format

@@ -75,7 +75,7 @@ get_background_color (GtkStyleContext *context,
   g_return_if_fail (color != NULL);
   g_return_if_fail (GTK_IS_STYLE_CONTEXT (context));
 
-  gtk_style_context_get (context,
+  ctk_style_context_get (context,
                          state,
                          "background-color", &c,
                          NULL);
@@ -104,9 +104,9 @@ draw_window (GtkWidget                   *widget,
   cairo_rectangle (cr, winrect->x, winrect->y, winrect->width, winrect->height);
   cairo_clip (cr);
 
-  style = gtk_widget_get_style_context (widget);
+  style = ctk_widget_get_style_context (widget);
   if (is_active)
-    meta_gtk_style_get_light_color (style, state, &color);
+    meta_ctk_style_get_light_color (style, state, &color);
   else
     get_background_color (style, state, &color);
 
@@ -117,7 +117,7 @@ draw_window (GtkWidget                   *widget,
                    MAX (0, winrect->width - 2), MAX (0, winrect->height - 2));
   cairo_fill (cr);
 
-  scale = gtk_widget_get_scale_factor (widget);
+  scale = ctk_widget_get_scale_factor (widget);
 
   icon = gdk_cairo_surface_create_from_pixbuf (win->icon, scale, NULL);
 
@@ -163,7 +163,7 @@ draw_window (GtkWidget                   *widget,
       cairo_surface_destroy (icon);
     }
 
-  gtk_style_context_get_color (style, state, &color);
+  ctk_style_context_get_color (style, state, &color);
   gdk_cairo_set_source_rgba (cr, &color);
 
   cairo_set_line_width (cr, 1.0);
@@ -206,7 +206,7 @@ wnck_draw_workspace (GtkWidget                   *widget,
   else
     state = GTK_STATE_FLAG_NORMAL;
 
-  style = gtk_widget_get_style_context (widget);
+  style = ctk_widget_get_style_context (widget);
   cairo_save (cr);
 
   if (workspace_background)
@@ -218,7 +218,7 @@ wnck_draw_workspace (GtkWidget                   *widget,
     {
       GdkRGBA color;
 
-      meta_gtk_style_get_dark_color (style, state, &color);
+      meta_ctk_style_get_dark_color (style, state, &color);
       color.alpha = 0.25;
 
       gdk_cairo_set_source_rgba (cr, &color);

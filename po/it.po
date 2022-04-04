@@ -1944,47 +1944,47 @@ msgstr "I gradienti dovrebbero avere almeno due colori"
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 "Le specifiche di colore GTK personalizzate devono avere il nome di colore e "
-"fallback tra parentesi, es. gtk:custom(foo,bar); impossibile analizzare "
+"fallback tra parentesi, es. ctk:custom(foo,bar); impossibile analizzare "
 "\"%s\"."
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
-"Carattere '%c' non valido nel parametro color_name di gtk:custom, sono "
+"Carattere '%c' non valido nel parametro color_name di ctk:custom, sono "
 "ammessi solo A-Za-z0-9-_"
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"Il formato di Gtk:custom è \"gtk:custom(color_name,fallback)\", \"%s\" non "
+"Il formato di Gtk:custom è \"ctk:custom(color_name,fallback)\", \"%s\" non "
 "corrisponde a questo formato"
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "La specificazione del colore GTK deve avere lo stato fra parentesi, per es. "
-"gtk:fg[NORMAL] dove NORMAL è lo stato; impossibile analizzare \"%s\""
+"ctk:fg[NORMAL] dove NORMAL è lo stato; impossibile analizzare \"%s\""
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "La specificazione del colore GTK deve avere una parentesi di chiusura dopo "
-"lo stato, per es. gtk:fg[NORMAL] dove NORMAL è lo stato; impossibile "
+"lo stato, per es. ctk:fg[NORMAL] dove NORMAL è lo stato; impossibile "
 "analizzare \"%s\""
 
 #: src/ui/theme.c:1496

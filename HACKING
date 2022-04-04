@@ -42,10 +42,10 @@ Minimal Building/Testing Environment
   build a development version of Croma -- odds are, you may be able
   to build croma from GIT without building any other modules.
 
-  As long as you have gtk+ >= 2.10 and GIO >= 2.25.10 with your distro
-  (gtk+ >= 2.6 if you manually revert the change from bug 348633), you
+  As long as you have ctk+ >= 2.10 and GIO >= 2.25.10 with your distro
+  (ctk+ >= 2.6 if you manually revert the change from bug 348633), you
   should be able to install your distro's development packages
-  (e.g. gtk2-devel, glib-devel, startup-notification-devel on
+  (e.g. ctk2-devel, glib-devel, startup-notification-devel on
   Fedora; also, remember to install the cafe-common package which is
   needed for building git versions of Cafe modules like Croma) as
   well as the standard development tools (gcc, autoconf, automake,
@@ -213,10 +213,10 @@ Debugging information
     of window without launching a full desktop.
 
 Technical gotchas to keep in mind
-  Files that include gdk.h or gtk.h are not supposed to include
+  Files that include gdk.h or ctk.h are not supposed to include
   display.h or window.h or other core files.  Files in the core
   (display.[hc], window.[hc]) are not supposed to include gdk.h or
-  gtk.h.  Reasons:
+  ctk.h.  Reasons:
 
     "Basically you don't want GDK most of the time. It adds
     abstractions that cause problems, because they aren't designed to

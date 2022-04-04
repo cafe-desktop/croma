@@ -21,7 +21,7 @@
  * 02110-1301, USA.  */
 
 #include "gradient.h"
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 typedef void (* RenderGradientFunc) (
                                      cairo_t     *cr,
@@ -243,14 +243,14 @@ draw_callback (GtkWidget *widget,
   GtkStyleContext *style;
   GdkRGBA color;
 
-  style = gtk_widget_get_style_context (widget);
+  style = ctk_widget_get_style_context (widget);
 
-  gtk_style_context_save (style);
-  gtk_style_context_set_state (style, gtk_widget_get_state_flags (widget));
-  gtk_style_context_lookup_color (style, "foreground-color", &color);
-  gtk_style_context_restore (style);
+  ctk_style_context_save (style);
+  ctk_style_context_set_state (style, ctk_widget_get_state_flags (widget));
+  ctk_style_context_lookup_color (style, "foreground-color", &color);
+  ctk_style_context_restore (style);
 
-  gtk_widget_get_allocation (widget, &allocation);
+  ctk_widget_get_allocation (widget, &allocation);
 
   cairo_set_source_rgba (cr, color.red, color.green, color.blue, color.alpha);
 
@@ -269,24 +269,24 @@ create_gradient_window (const char *title,
   GtkWidget *window;
   GtkWidget *drawing_area;
 
-  window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+  window = ctk_window_new (GTK_WINDOW_TOPLEVEL);
 
-  gtk_window_set_title (GTK_WINDOW (window), title);
+  ctk_window_set_title (GTK_WINDOW (window), title);
 
-  drawing_area = gtk_drawing_area_new ();
+  drawing_area = ctk_drawing_area_new ();
 
-  gtk_widget_set_size_request (drawing_area, 1, 1);
+  ctk_widget_set_size_request (drawing_area, 1, 1);
 
-  gtk_window_set_default_size (GTK_WINDOW (window), 175, 175);
+  ctk_window_set_default_size (GTK_WINDOW (window), 175, 175);
 
   g_signal_connect (G_OBJECT (drawing_area),
                     "draw",
                     G_CALLBACK (draw_callback),
                     func);
 
-  gtk_container_add (GTK_CONTAINER (window), drawing_area);
+  ctk_container_add (GTK_CONTAINER (window), drawing_area);
 
-  gtk_widget_show_all (window);
+  ctk_widget_show_all (window);
 
   return window;
 }
@@ -323,11 +323,11 @@ meta_gradient_test (void)
 int
 main (int argc, char **argv)
 {
-  gtk_init (&argc, &argv);
+  ctk_init (&argc, &argv);
 
   meta_gradient_test ();
 
-  gtk_main ();
+  ctk_main ();
 
   return 0;
 }

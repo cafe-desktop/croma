@@ -1874,48 +1874,48 @@ msgstr "A színátmenetnek legalább két színűnek kell lennie"
 #, c-format
 msgid ""
 "GTK custom color specification must have color name and fallback in "
-"parentheses, e.g. gtk:custom(foo,bar); could not parse \"%s\""
+"parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 "A GTK színmeghatározásnál kötelező a zárójelek között megadott színnév és a "
-"tartalék érték. Például: gtk:custom(foo,bar); Nem sikerült értelmezni a "
+"tartalék érték. Például: ctk:custom(foo,bar); Nem sikerült értelmezni a "
 "következőt: „%s”."
 
 #: src/ui/theme.c:1413
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of gtk:custom, only "
+"Invalid character '%c' in color_name parameter of ctk:custom, only "
 "A-Za-z0-9-_ are valid"
 msgstr ""
-"Érvénytelen karakter „%c” a gtk:custom beállítás color_name paraméterében. "
+"Érvénytelen karakter „%c” a ctk:custom beállítás color_name paraméterében. "
 "Kizárólag a „A-Za-z0-9-_” értékek érvényesek."
 
 #: src/ui/theme.c:1427
 #, c-format
 msgid ""
-"Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
+"Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"A Gtk:custom formátuma: „gtk:custom(color_name,fallback)”, A „%s” nem ilyen "
+"A Gtk:custom formátuma: „ctk:custom(color_name,fallback)”, A „%s” nem ilyen "
 "formátumú."
 
 #: src/ui/theme.c:1471
 #, c-format
 msgid ""
-"GTK color specification must have the state in brackets, e.g. gtk:fg[NORMAL]"
+"GTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
 " where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "GTK szín meghatározásnál az állapotnak szögletes zárójelben kell lennie, "
-"pl.gtk:fg[NORMAL] ahol NORMAL az állapot; nem lehetett feldolgozni a "
+"pl.ctk:fg[NORMAL] ahol NORMAL az állapot; nem lehetett feldolgozni a "
 "következőt: „%s”"
 
 #: src/ui/theme.c:1485
 #, c-format
 msgid ""
 "GTK color specification must have a close bracket after the state, e.g. "
-"gtk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "A GTK színmeghatározásnál kötelező záró szögletes zárójelet tenni az állapot"
-" után, például gtk:fg[NORMAL], ahol NORMAL az állapot; nem sikerült "
+" után, például ctk:fg[NORMAL], ahol NORMAL az állapot; nem sikerült "
 "értelmezni a következőt: „%s”"
 
 #: src/ui/theme.c:1496

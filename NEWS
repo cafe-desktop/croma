@@ -144,7 +144,7 @@
 
   * update translations
   * ui: always set the frame background to None
-  * theme-viewer: avoid deprecated gtk_widget_override_background_color
+  * theme-viewer: avoid deprecated ctk_widget_override_background_color
   * window: set atom__NET_WM_STATE_FOCUSED for meta_window_appears_focused
   * window: make docks and spashscreens appear focused
   * Limit icon size to 480
@@ -160,7 +160,7 @@
   * Fix -Werror=cast-function-type
   * Improve performance by removing unused assignments
   * window: avoid clang warning: garbage value
-  * frames: avoid deprecated 'gtk_widget_set_double_buffered'
+  * frames: avoid deprecated 'ctk_widget_set_double_buffered'
   * [ci] Enable Clang Static Analyzer for croma
   * boxes: avoid false positive warning in Clang static analyzer
   * Do not judge whether the window is decorated or not
@@ -198,7 +198,7 @@
   * tabpopup.c: always show 5px outline border
   * tabpopup.c: improve
   * Don't show the ws switcher if we only have one
-  * theme: Allow disabling fallback colors in gtk:custom()
+  * theme: Allow disabling fallback colors in ctk:custom()
   * theme: Allow using custom colors from the GTK+ theme
   * theme: Add tiled_left/tiled_right frame states
   * theme: Add background functions for single buttons
@@ -238,7 +238,7 @@
   * schema: fix typos
   * compositor: don't try to paint window that is not viewable, fix #324
   * Fix wrong result in meta_window_titlebar_is_onscreen() for windows without a frame
-  * Add support for gtk3 _GTK_SHOW_WINDOW_MENU event
+  * Add support for ctk3 _GTK_SHOW_WINDOW_MENU event
   * More elegant solution for handling new move-to-workspace keybinds
   * Implemented a setting to disable top tiling
   * Implemented tabpopup when moving window to different workspace
@@ -269,7 +269,7 @@
   * Translations update
   * Store a window flag when user resizes from tiled
   * Allow tiled windows to be resized horizontally
-  * gtk 3.22: avoid deprecated gdk_screen_get_monitor... functions:
+  * ctk 3.22: avoid deprecated gdk_screen_get_monitor... functions:
   * avoid deprecated gdk_screen_width/height
   * avoid deprecated gdk_screen_get_width
   * display: don't use deprecated GDK_DEVICE_MANAGER
@@ -297,7 +297,7 @@
 
   * NEWS: use consistent, project wide, markdown-like formatting to make
     generating release announcements easier
-  * Move to GTK+3 (require GTK+ >= 3.14), drop GTK+2 code and --with-gtk
+  * Move to GTK+3 (require GTK+ >= 3.14), drop GTK+2 code and --with-ctk
     build option
   * Theme viewer: fix build for GTK+3 and fix some GTK+ deprecations
   * Add ability to disable showing preselected window border on alt-tab

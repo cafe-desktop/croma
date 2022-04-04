@@ -444,7 +444,7 @@ meta_screen_new (MetaDisplay *display,
   meta_error_trap_push (display);
 
   /* We need to or with the existing event mask since
-   * gtk+ may be interested in other events.
+   * ctk+ may be interested in other events.
    */
   XGetWindowAttributes (xdisplay, xroot, &attr);
   XSelectInput (xdisplay,

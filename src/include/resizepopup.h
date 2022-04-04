@@ -24,7 +24,7 @@
 #ifndef META_RESIZEPOPUP_H
 #define META_RESIZEPOPUP_H
 
-/* Don't include gtk.h or gdk.h here */
+/* Don't include ctk.h or gdk.h here */
 #include "boxes.h"
 #include "common.h"
 #include <X11/Xlib.h>

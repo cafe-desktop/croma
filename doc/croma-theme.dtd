@@ -42,11 +42,11 @@
 (entire_background|titlebar|titlebar_middle|left_titlebar_edge|right_titlebar_edge|top_titlebar_edge|bottom_titlebar_edge|title|left_edge|right_edge|bottom_edge|overlay)
 ">
 
-<!ENTITY % gtk-state "
+<!ENTITY % ctk-state "
 	state (normal|prelight|active|selected|insensitive) #REQUIRED
 ">
 
-<!ENTITY % gtk-shadow "
+<!ENTITY % ctk-shadow "
 	shadow (none|in|out|etched_in|etched_out) #REQUIRED
 ">
 
@@ -127,7 +127,7 @@
 	value		CDATA #REQUIRED
 >
 
-<!ELEMENT draw_ops (line|rectangle|arc|tint|gradient|image|gtk_arrow|gtk_box|gtk_vline|icon|title|clip|include|tile)*>
+<!ELEMENT draw_ops (line|rectangle|arc|tint|gradient|image|ctk_arrow|ctk_box|ctk_vline|icon|title|clip|include|tile)*>
 <!-- not sure about this.. maybe it should be removed. see #3478 in theme-parser.c -->
 <!ATTLIST draw_ops
 	name		CDATA #IMPLIED
@@ -213,27 +213,27 @@
 	alpha		CDATA #REQUIRED
 >
 
-<!ELEMENT gtk_box EMPTY>
-<!ATTLIST gtk_box
-	%gtk-state;
-	%gtk-shadow;
+<!ELEMENT ctk_box EMPTY>
+<!ATTLIST ctk_box
+	%ctk-state;
+	%ctk-shadow;
 	%xyrequired;
 	%widthheightrequired;
 >
 
-<!ELEMENT gtk_arrow EMPTY>
-<!ATTLIST gtk_arrow
-	%gtk-state;
-	%gtk-shadow;
+<!ELEMENT ctk_arrow EMPTY>
+<!ATTLIST ctk_arrow
+	%ctk-state;
+	%ctk-shadow;
 	arrow		(up|down|left|right) #REQUIRED
 	%xyrequired;
 	%widthheightrequired;
 	filed			CDATA #IMPLIED
 >
 
-<!ELEMENT gtk_vline EMPTY>
-<!ATTLIST gtk_vline
-	%gtk-state;
+<!ELEMENT ctk_vline EMPTY>
+<!ATTLIST ctk_vline
+	%ctk-state;
 	x			CDATA #REQUIRED
 	y1			CDATA #REQUIRED
 	y2			CDATA #REQUIRED
@@ -268,6 +268,6 @@
 <!ELEMENT menu_icon (draw_ops?)>
 <!ATTLIST menu_icon
 	function		(close|maximize|minimize|unmaximize) #REQUIRED
-	%gtk-state;
+	%ctk-state;
 	draw_ops		CDATA #IMPLIED
 >

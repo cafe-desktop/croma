@@ -34,7 +34,7 @@ New Features in Theme Format Version 3.4
 An additional color type is added to pick up custom colors defined
 in the GTK+ theme's CSS:
 
-  gtk:custom(name,fallback)
+  ctk:custom(name,fallback)
 
 where <name> refers to a custom color defined with @define-color in
 the GTK+ theme, and <fallback> provides an alternative color definition
@@ -110,7 +110,7 @@ Anywhere you can use a positive integer, you can use an integer constant.
 As well as constant integers and reals, you may define constant colours,
 thus:
   <constant name="RevoltingPink" value="#FF00FF"/>
-  <constant name="Background" value="gtk:bg[NORMAL]"/>
+  <constant name="Background" value="ctk:bg[NORMAL]"/>
 
 <frame_style> has two new optional attributes, background and alpha.
 If you specify alpha, you must specify background. background is a
@@ -245,10 +245,10 @@ Overview of Theme Format Version 1
 
 <draw_ops name="demo_all_ops">
   <line color="#00FF00" x1="LineOffset" y1="0" x2="0" y2="height"/>
-  <line color="gtk:fg[NORMAL]" 
+  <line color="ctk:fg[NORMAL]" 
         x1="width - 1" y1="0" x2="width - 1" y2="height" 
         width="3" dash_on_length="2" dash_off_length="3"/>
-  <rectangle color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.7"
+  <rectangle color="blend/ctk:fg[NORMAL]/ctk:bg[NORMAL]/0.7"
              x="0" y="0" width="width - 1" height="height - 1" filled="true"/>
   <arc color="dark gray" x="0" y="0" width="width - 1" height="height - 1" 
        filled="false" start_angle="30" extent_angle="180"/>
@@ -258,28 +258,28 @@ Overview of Theme Format Version 1
             x="10" y="30" width="width / 3" height="height / 4">
     <!-- any number of colors allowed here. A color can be 
          a color name like "blue" (look at gcolorsel), a hex color
-         as in HTML (#FFBB99), or a color from the gtk theme 
-         given as "gtk:base[NORMAL]", "gtk:fg[ACTIVE]", etc.
+         as in HTML (#FFBB99), or a color from the ctk theme 
+         given as "ctk:base[NORMAL]", "ctk:fg[ACTIVE]", etc.
        -->
-    <color value="gtk:fg[SELECTED]"/>
+    <color value="ctk:fg[SELECTED]"/>
     <!-- color obtained by a 0.5 alpha composite of the second color onto the first -->
-    <color value="blend/gtk:bg[SELECTED]/gtk:fg[SELECTED]/0.5"/>
+    <color value="blend/ctk:bg[SELECTED]/ctk:fg[SELECTED]/0.5"/>
   </gradient>
   <!-- image has an optional colorize="#color" attribute to give the
        image a certain color -->
   <image filename="foo.png" alpha="0.7"
          x="10" y="30" width="width / 3" height="height / 4"/>
-  <gtk_arrow state="normal" shadow="in" arrow="up"
+  <ctk_arrow state="normal" shadow="in" arrow="up"
              filled="true"
              x="2" y="2" width="width - 4" height="height - 4"/>
-  <gtk_box state="normal" shadow="out"
+  <ctk_box state="normal" shadow="out"
            x="2" y="2" width="width - 4" height="height - 4"/>
-  <gtk_vline state="normal" x="2" y1="0" y2="height"/>
+  <ctk_vline state="normal" x="2" y1="0" y2="height"/>
   <!-- window's icon -->
   <icon alpha="0.7"
         x="10" y="30" width="width / 3" height="height / 4"/>
   <!-- window's title -->
-  <title color="gtk:text[NORMAL]" x="20" y="30"/>
+  <title color="ctk:text[NORMAL]" x="20" y="30"/>
   <!-- include another draw ops list; has optional x/y/width/height attrs -->
   <include name="some_other_draw_ops"/>
   <!-- tile another draw ops list; has optional
@@ -359,9 +359,9 @@ Overview of Theme Format Version 1
 <frame_style name="focused" parent="normal">
   <piece position="title">
     <draw_ops>
-      <rectangle color="gtk:bg[SELECTED]"
+      <rectangle color="ctk:bg[SELECTED]"
                  x="0" y="0" width="width-1" height="height-1"/>
-      <title color="gtk:fg[SELECTED]" x="(width - title_width) / 2"
+      <title color="ctk:fg[SELECTED]" x="(width - title_width) / 2"
                                       y="(height - title_height) / 2"/>
     </draw_ops>
   </piece>

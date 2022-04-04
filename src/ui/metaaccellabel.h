@@ -28,13 +28,13 @@
  * Modified by the GTK+ Team and others 1997-2001.  See the AUTHORS
  * file for a list of people on the GTK+ Team.  See the ChangeLog
  * files for a list of changes.  These files are distributed with
- * GTK+ at ftp://ftp.gtk.org/pub/gtk/.
+ * GTK+ at ftp://ftp.ctk.org/pub/ctk/.
  */
 
 #ifndef __META_ACCEL_LABEL_H__
 #define __META_ACCEL_LABEL_H__
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include "common.h"
 
 #ifdef __cplusplus
@@ -85,10 +85,10 @@ struct _MetaAccelLabelClass
   guint		 latin1_to_char : 1;
 
   /* Padding for future expansion */
-  void (*_gtk_reserved1) (void);
-  void (*_gtk_reserved2) (void);
-  void (*_gtk_reserved3) (void);
-  void (*_gtk_reserved4) (void);
+  void (*_ctk_reserved1) (void);
+  void (*_ctk_reserved2) (void);
+  void (*_ctk_reserved3) (void);
+  void (*_ctk_reserved4) (void);
 };
 
 GType	   meta_accel_label_get_type          (void) G_GNUC_CONST;

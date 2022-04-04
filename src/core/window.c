@@ -563,7 +563,7 @@ meta_window_new_with_attrs (MetaDisplay       *display,
   window->sm_client_id = NULL;
   window->wm_client_machine = NULL;
   window->startup_id = NULL;
-  window->gtk_theme_variant = NULL;
+  window->ctk_theme_variant = NULL;
 
   window->net_wm_pid = -1;
 
@@ -1236,7 +1236,7 @@ meta_window_free (MetaWindow  *window,
   g_free (window->title);
   g_free (window->icon_name);
   g_free (window->desc);
-  g_free (window->gtk_theme_variant);
+  g_free (window->ctk_theme_variant);
   g_free (window);
 }
 
@@ -1918,7 +1918,7 @@ intervening_user_event_occurred (MetaWindow *window)
 
   /* To determine the "launch" time of an application,
    * startup-notification can set the TIMESTAMP and the
-   * application (usually via its toolkit such as gtk or qt) can
+   * application (usually via its toolkit such as ctk or qt) can
    * set the _NET_WM_USER_TIME.  If both are set, we need to be
    * using the newer of the two values.
    *
@@ -5674,7 +5674,7 @@ meta_window_notify_focus (MetaWindow *window,
               meta_event_detail_to_string (event->xfocus.detail) : "n/a");
 
   /* FIXME our pointer tracking is broken; see how
-   * gtk+/gdk/x11/gdkevents-x11.c or XFree86/xc/programs/xterm/misc.c
+   * ctk+/gdk/x11/gdkevents-x11.c or XFree86/xc/programs/xterm/misc.c
    * handle it for the correct way.  In brief you need to track
    * pointer focus and regular focus, and handle EnterNotify in
    * PointerRoot mode with no window manager.  However as noted above,

@@ -20,7 +20,7 @@
  */
 
 #include <config.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkx.h>
 #include <stdlib.h>
 #include <string.h>
@@ -157,7 +157,7 @@ main (int argc, char **argv)
 {
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 
-  gtk_init (&argc, &argv);
+  ctk_init (&argc, &argv);
 
   if (argc < 2)
     usage ();
