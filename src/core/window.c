@@ -7806,7 +7806,7 @@ check_use_this_motion_notify (MetaWindow *window,
   EventScannerData esd;
   XEvent useless;
 
-  /* This code is copied from Owen's GDK code. */
+  /* This code is copied from Owen's CDK code. */
 
   if (window->display->grab_motion_notify_time != 0)
     {

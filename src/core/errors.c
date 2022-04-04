@@ -3,7 +3,7 @@
 /* Croma X error handling */
 
 /*
- * Copyright (C) 2001 Havoc Pennington, error trapping inspired by GDK
+ * Copyright (C) 2001 Havoc Pennington, error trapping inspired by CDK
  * code copyrighted by the CTK team.
  *
  * This program is free software; you can redistribute it and/or

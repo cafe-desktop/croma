@@ -77,7 +77,7 @@ meta_fixed_tip_show (int root_x, int root_y,
 
       tip = ctk_window_new (CTK_WINDOW_POPUP);
 
-      ctk_window_set_type_hint (CTK_WINDOW(tip), GDK_WINDOW_TYPE_HINT_TOOLTIP);
+      ctk_window_set_type_hint (CTK_WINDOW(tip), CDK_WINDOW_TYPE_HINT_TOOLTIP);
       ctk_style_context_add_class (ctk_widget_get_style_context (tip),
                                    CTK_STYLE_CLASS_TOOLTIP);
 

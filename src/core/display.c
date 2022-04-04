@@ -385,7 +385,7 @@ meta_display_open (void)
   the_display->grab_sync_request_alarm = None;
 #endif
 
-  /* FIXME copy the checks from GDK probably */
+  /* FIXME copy the checks from CDK probably */
   the_display->static_gravity_works = g_getenv ("CROMA_USE_STATIC_GRAVITY") != NULL;
 
   the_display->tab_popup_mouse_pressed = FALSE;
@@ -1417,14 +1417,14 @@ handle_net_restack_window (MetaDisplay* display,
 #endif
 
 /* We do some of our event handling in core/frames.c, which expects
- * GDK events delivered by CTK+.  However, since the transition to
- * client side windows, we can't let GDK see button events, since the
+ * CDK events delivered by CTK+.  However, since the transition to
+ * client side windows, we can't let CDK see button events, since the
  * client-side tracking of implicit and explicit grabs it does will
  * get confused by our direct use of X grabs.
  *
- * So we do a very minimal GDK => CTK event conversion here and send on the
+ * So we do a very minimal CDK => CTK event conversion here and send on the
  * events we care about, and then filter them out so they don't go
- * through the normal GDK event handling.
+ * through the normal CDK event handling.
  *
  * To reduce the amount of code, the only events fields filled out
  * below are the ones that frames.c uses. If frames.c is modified to
@@ -1471,7 +1471,7 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 		return FALSE;
 	}
 
-	/* If GDK already things it has a grab, we better let it see events; this
+	/* If CDK already things it has a grab, we better let it see events; this
 	 * is the menu-navigation case and events need to get sent to the appropriate
 	 * (client-side) subwindow for individual menu items.
 	 */
@@ -1515,12 +1515,12 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 					ABS(xevent->xbutton.x - display->button_click_x) <= double_click_distance &&
 					ABS (xevent->xbutton.y - display->button_click_y) <= double_click_distance)
 				{
-					cdk_event = cdk_event_new(GDK_2BUTTON_PRESS);
+					cdk_event = cdk_event_new(CDK_2BUTTON_PRESS);
 					display->button_click_number = 0;
 				}
 				else
 				{
-					cdk_event = cdk_event_new(GDK_BUTTON_PRESS);
+					cdk_event = cdk_event_new(CDK_BUTTON_PRESS);
 					display->button_click_number = xevent->xbutton.button;
 					display->button_click_window = xevent->xbutton.window;
 					display->button_click_time = xevent->xbutton.time;
@@ -1530,7 +1530,7 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 			}
 			else
 			{
-				cdk_event = cdk_event_new(GDK_BUTTON_RELEASE);
+				cdk_event = cdk_event_new(CDK_BUTTON_RELEASE);
 			}
 
 			cdk_event->button.window = g_object_ref(cdk_window);
@@ -1548,7 +1548,7 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 			break;
 
 		case MotionNotify:
-			cdk_event = cdk_event_new(GDK_MOTION_NOTIFY);
+			cdk_event = cdk_event_new(CDK_MOTION_NOTIFY);
 			cdk_event->motion.window = g_object_ref(cdk_window);
 			cdk_event->motion.send_event = FALSE;
 			cdk_event->motion.time = 0;
@@ -1565,7 +1565,7 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 		case EnterNotify:
 
 		case LeaveNotify:
-			cdk_event = cdk_event_new(xevent->type == EnterNotify ? GDK_ENTER_NOTIFY : GDK_LEAVE_NOTIFY);
+			cdk_event = cdk_event_new(xevent->type == EnterNotify ? CDK_ENTER_NOTIFY : CDK_LEAVE_NOTIFY);
 			cdk_event->crossing.window = g_object_ref(cdk_window);
 			cdk_event->crossing.send_event = 0;
 			cdk_event->crossing.subwindow = NULL;
@@ -1643,7 +1643,7 @@ mouse_event_is_in_tab_popup (MetaDisplay *display,
 /**
  * This is the most important function in the whole program. It is the heart,
  * it is the nexus, it is the Grand Central Station of Croma's world.
- * When we create a MetaDisplay, we ask GDK to pass *all* events for *all*
+ * When we create a MetaDisplay, we ask CDK to pass *all* events for *all*
  * windows to this function. So every time anything happens that we might
  * want to know about, this function gets called. You see why it gets a bit
  * busy around here. Most of this function is a ginormous switch statement

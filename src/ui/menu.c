@@ -132,7 +132,7 @@ static void menu_closed(CtkMenu* widget, gpointer data)
 
 	(*menu->func)(
 		menu,
-		GDK_DISPLAY_XDISPLAY(cdk_display_get_default()),
+		CDK_DISPLAY_XDISPLAY(cdk_display_get_default()),
 		menu->client_xwindow,
 		ctk_get_current_event_time (),
 		0, 0,
@@ -153,7 +153,7 @@ static void activate_cb(CtkWidget* menuitem, gpointer data)
 
 	(*md->menu->func)(
 		md->menu,
-		GDK_DISPLAY_XDISPLAY (cdk_display_get_default()),
+		CDK_DISPLAY_XDISPLAY (cdk_display_get_default()),
 		md->menu->client_xwindow,
 		ctk_get_current_event_time(),
 		md->op,
@@ -393,10 +393,10 @@ meta_window_menu_new   (MetaFrames         *frames,
 
                   window = ctk_widget_get_window (CTK_WIDGET (frames));
 
-                  display = GDK_WINDOW_XDISPLAY (window);
+                  display = CDK_WINDOW_XDISPLAY (window);
 
                   screen = cdk_window_get_screen (window);
-                  xroot = GDK_WINDOW_XID (cdk_screen_get_root_window (screen));
+                  xroot = CDK_WINDOW_XID (cdk_screen_get_root_window (screen));
 
                   submenu = ctk_menu_new ();
 

@@ -504,7 +504,7 @@ meta_ui_tab_popup_set_showing (MetaTabPopup *popup,
         {
           meta_verbose ("Hiding tab popup window\n");
           ctk_widget_hide (popup->window);
-          meta_core_increment_event_serial (GDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
+          meta_core_increment_event_serial (CDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
         }
     }
 }
@@ -537,7 +537,7 @@ display_entry (MetaTabPopup *popup,
       window = ctk_widget_get_window (popup->outline_window);
       /* Do stuff behind ctk's back */
       cdk_window_hide (window);
-      meta_core_increment_event_serial (GDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
+      meta_core_increment_event_serial (CDK_DISPLAY_XDISPLAY (cdk_display_get_default ()));
 
       rect = te->rect;
       rect.x = 0;

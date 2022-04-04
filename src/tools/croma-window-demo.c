@@ -53,9 +53,9 @@ set_cdk_window_struts (CdkWindow *window,
   vals[10] = 200;
   vals[11] = 800;
 
-  XChangeProperty (GDK_WINDOW_XDISPLAY (window),
-                   GDK_WINDOW_XID (window),
-                   XInternAtom (GDK_WINDOW_XDISPLAY (window),
+  XChangeProperty (CDK_WINDOW_XDISPLAY (window),
+                   CDK_WINDOW_XID (window),
+                   XInternAtom (CDK_WINDOW_XDISPLAY (window),
                                 "_NET_WM_STRUT_PARTIAL", False),
                    XA_CARDINAL, 32, PropModeReplace,
                    (guchar *)vals, 12);
@@ -124,12 +124,12 @@ set_cdk_window_type (CdkWindow  *window,
 {
   Atom atoms[2] = { None, None };
 
-  atoms[0] = XInternAtom (GDK_WINDOW_XDISPLAY (window),
+  atoms[0] = XInternAtom (CDK_WINDOW_XDISPLAY (window),
                           type, False);
 
-  XChangeProperty (GDK_WINDOW_XDISPLAY (window),
-                   GDK_WINDOW_XID (window),
-                   XInternAtom (GDK_WINDOW_XDISPLAY (window), "_NET_WM_WINDOW_TYPE", False),
+  XChangeProperty (CDK_WINDOW_XDISPLAY (window),
+                   CDK_WINDOW_XID (window),
+                   XInternAtom (CDK_WINDOW_XDISPLAY (window), "_NET_WM_WINDOW_TYPE", False),
                    XA_ATOM, 32, PropModeReplace,
                    (guchar *)atoms,
                    1);
@@ -178,7 +178,7 @@ set_ctk_window_type (CtkWindow  *window,
 static void
 set_cdk_window_border_only (CdkWindow *window)
 {
-  cdk_window_set_decorations (window, GDK_DECOR_BORDER);
+  cdk_window_set_decorations (window, CDK_DECOR_BORDER);
 }
 
 static void
@@ -749,7 +749,7 @@ toggle_aspect_ratio (GSimpleAction *action,
     ctk_window_set_geometry_hints (CTK_WINDOW (window),
 				   CTK_WIDGET (data),
 				   &geom,
-				   GDK_HINT_ASPECT);
+				   CDK_HINT_ASPECT);
 
 }
 
