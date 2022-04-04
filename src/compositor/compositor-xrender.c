@@ -2837,7 +2837,7 @@ xrender_manage_screen (MetaCompositor *compositor,
   MetaCompScreen *info;
   MetaDisplay *display = meta_screen_get_display (screen);
   Display *xdisplay = meta_display_get_xdisplay (display);
-  GdkDisplay *cdk_display = cdk_x11_lookup_xdisplay (xdisplay);
+  CdkDisplay *cdk_display = cdk_x11_lookup_xdisplay (xdisplay);
   XRenderPictureAttributes pa;
   XRenderPictFormat *visual_format;
   int screen_number = meta_screen_get_screen_number (screen);

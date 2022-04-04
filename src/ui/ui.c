@@ -33,7 +33,7 @@
 
 #include <cairo-xlib.h>
 
-static void meta_ui_accelerator_parse(const char* accel, guint* keysym, guint* keycode, GdkModifierType* keymask);
+static void meta_ui_accelerator_parse(const char* accel, guint* keysym, guint* keycode, CdkModifierType* keymask);
 
 struct _MetaUI {
 	Display* xdisplay;
@@ -50,7 +50,7 @@ struct _MetaUI {
 
 void meta_ui_init(int* argc, char*** argv)
 {
-  /* As of 2.91.7, Gdk uses XI2 by default, which conflicts with the
+  /* As of 2.91.7, Cdk uses XI2 by default, which conflicts with the
    * direct X calls we use - in particular, events caused by calls to
    * XGrabPointer/XGrabKeyboard are no longer understood by GDK, while
    * GDK will no longer generate the core XEvents we process.
@@ -87,12 +87,12 @@ Display* meta_ui_get_display(void)
 static gboolean
 maybe_redirect_mouse_event (XEvent *xevent)
 {
-  GdkDisplay *gdisplay;
+  CdkDisplay *gdisplay;
   MetaUI *ui;
-  GdkSeat *seat;
-  GdkDevice *gdevice;
-  GdkEvent *gevent;
-  GdkWindow *cdk_window;
+  CdkSeat *seat;
+  CdkDevice *gdevice;
+  CdkEvent *gevent;
+  CdkWindow *cdk_window;
   Window window;
 
   switch (xevent->type)
@@ -213,9 +213,9 @@ struct _EventFunc
 
 static EventFunc *ef = NULL;
 
-static GdkFilterReturn
-filter_func (GdkXEvent *xevent,
-             GdkEvent *event,
+static CdkFilterReturn
+filter_func (CdkXEvent *xevent,
+             CdkEvent *event,
              gpointer data)
 {
   g_return_val_if_fail (ef != NULL, GDK_FILTER_CONTINUE);
@@ -259,7 +259,7 @@ MetaUI*
 meta_ui_new (Display *xdisplay,
              Screen  *screen)
 {
-  GdkDisplay *gdisplay;
+  CdkDisplay *gdisplay;
   MetaUI *ui;
 
   ui = g_new0 (MetaUI, 1);
@@ -287,7 +287,7 @@ meta_ui_new (Display *xdisplay,
 void
 meta_ui_free (MetaUI *ui)
 {
-  GdkDisplay *gdisplay;
+  CdkDisplay *gdisplay;
 
   ctk_widget_destroy (CTK_WIDGET (ui->frames));
 
@@ -338,12 +338,12 @@ meta_ui_create_frame_window (MetaUI *ui,
 			     gint width,
 			     gint height)
 {
-  GdkDisplay *display = cdk_x11_lookup_xdisplay (xdisplay);
-  GdkScreen *screen = cdk_display_get_default_screen (display);
-  GdkWindowAttr attrs;
+  CdkDisplay *display = cdk_x11_lookup_xdisplay (xdisplay);
+  CdkScreen *screen = cdk_display_get_default_screen (display);
+  CdkWindowAttr attrs;
   gint attributes_mask;
-  GdkWindow *window;
-  GdkVisual *visual;
+  CdkWindow *window;
+  CdkVisual *visual;
 
   /* Default depth/visual handles clients with weird visuals; they can
    * always be children of the root depth/visual obviously, but
@@ -416,9 +416,9 @@ void
 meta_ui_map_frame   (MetaUI *ui,
                      Window  xwindow)
 {
-  GdkWindow *window;
+  CdkWindow *window;
 
-  GdkDisplay *display;
+  CdkDisplay *display;
 
   display = cdk_x11_lookup_xdisplay (ui->xdisplay);
   window = cdk_x11_window_lookup_for_display (display, xwindow);
@@ -431,9 +431,9 @@ void
 meta_ui_unmap_frame (MetaUI *ui,
                      Window  xwindow)
 {
-  GdkWindow *window;
+  CdkWindow *window;
 
-  GdkDisplay *display;
+  CdkDisplay *display;
 
   display = cdk_x11_lookup_xdisplay (ui->xdisplay);
   window = cdk_x11_window_lookup_for_display (display, xwindow);
@@ -530,8 +530,8 @@ meta_ui_window_menu_free (MetaWindowMenu *menu)
   meta_window_menu_free (menu);
 }
 
-GdkPixbuf*
-meta_cdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
+CdkPixbuf*
+meta_cdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
                                  Pixmap       xpixmap,
                                  int          src_x,
                                  int          src_y,
@@ -546,7 +546,7 @@ meta_cdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
   int x_ret, y_ret;
   unsigned int w_ret, h_ret, bw_ret, depth_ret;
   XWindowAttributes attrs;
-  GdkPixbuf *retval;
+  CdkPixbuf *retval;
 
   display = GDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
 
@@ -595,7 +595,7 @@ meta_ui_pop_delay_exposes  (MetaUI *ui)
   meta_frames_pop_delay_exposes (ui->frames);
 }
 
-static GdkPixbuf *
+static CdkPixbuf *
 load_default_window_icon (int size, int scale)
 {
   CtkIconTheme *theme = ctk_icon_theme_get_default ();
@@ -609,10 +609,10 @@ load_default_window_icon (int size, int scale)
   return ctk_icon_theme_load_icon_for_scale (theme, icon_name, size, scale, 0, NULL);
 }
 
-GdkPixbuf*
+CdkPixbuf*
 meta_ui_get_default_window_icon (MetaUI *ui)
 {
-  static GdkPixbuf *default_icon = NULL;
+  static CdkPixbuf *default_icon = NULL;
   static int icon_size = 0;
   int current_icon_size = meta_prefs_get_icon_size();
 
@@ -630,10 +630,10 @@ meta_ui_get_default_window_icon (MetaUI *ui)
   return default_icon;
 }
 
-GdkPixbuf*
+CdkPixbuf*
 meta_ui_get_default_mini_icon (MetaUI *ui)
 {
-  static GdkPixbuf *default_icon = NULL;
+  static CdkPixbuf *default_icon = NULL;
   int scale;
 
   if (default_icon == NULL)
@@ -652,9 +652,9 @@ gboolean
 meta_ui_window_should_not_cause_focus (Display *xdisplay,
                                        Window   xwindow)
 {
-  GdkWindow *window;
+  CdkWindow *window;
 
-  GdkDisplay *display;
+  CdkDisplay *display;
 
   display = cdk_x11_lookup_xdisplay (xdisplay);
   window = cdk_x11_window_lookup_for_display (display, xwindow);
@@ -687,8 +687,8 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
 
       if (!font_desc)
         {
-          GdkDisplay *display = cdk_x11_lookup_xdisplay (ui->xdisplay);
-          GdkScreen *screen = cdk_display_get_default_screen (display);
+          CdkDisplay *display = cdk_x11_lookup_xdisplay (ui->xdisplay);
+          CdkScreen *screen = cdk_display_get_default_screen (display);
           CtkWidgetPath *widget_path;
 
           style = ctk_style_context_new ();
@@ -745,7 +745,7 @@ static void
 meta_ui_accelerator_parse (const char      *accel,
                            guint           *keysym,
                            guint           *keycode,
-                           GdkModifierType *keymask)
+                           CdkModifierType *keymask)
 {
   if (accel[0] == '0' && accel[1] == 'x')
     {
@@ -763,7 +763,7 @@ meta_ui_parse_accelerator (const char          *accel,
                            unsigned int        *keycode,
                            MetaVirtualModifier *mask)
 {
-  GdkModifierType cdk_mask = 0;
+  CdkModifierType cdk_mask = 0;
   guint cdk_sym = 0;
   guint cdk_code = 0;
 
@@ -816,7 +816,7 @@ gchar*
 meta_ui_accelerator_name  (unsigned int        keysym,
                            MetaVirtualModifier mask)
 {
-  GdkModifierType mods = 0;
+  CdkModifierType mods = 0;
 
   if (keysym == 0 && mask == 0)
     {
@@ -852,7 +852,7 @@ gboolean
 meta_ui_parse_modifier (const char          *accel,
                         MetaVirtualModifier *mask)
 {
-  GdkModifierType cdk_mask = 0;
+  CdkModifierType cdk_mask = 0;
   guint cdk_sym = 0;
   guint cdk_code = 0;
 
@@ -899,9 +899,9 @@ gboolean
 meta_ui_window_is_widget (MetaUI *ui,
                           Window  xwindow)
 {
-  GdkWindow *window;
+  CdkWindow *window;
 
-  GdkDisplay *display;
+  CdkDisplay *display;
   display = cdk_x11_lookup_xdisplay (ui->xdisplay);
   window = cdk_x11_window_lookup_for_display (display, xwindow);
 
@@ -942,7 +942,7 @@ MetaUIDirection meta_ui_get_direction(void)
 	return META_UI_DIRECTION_LTR;
 }
 
-GdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface)
+CdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface)
 {
 	gint width;
 	gint height;

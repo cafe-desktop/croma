@@ -368,7 +368,7 @@ menu_contents (void)
 
 static void
 override_background_color (CtkWidget *widget,
-                           GdkRGBA   *rgba)
+                           CdkRGBA   *rgba)
 {
   gchar          *css;
   CtkCssProvider *provider;
@@ -392,7 +392,7 @@ border_only_contents (void)
   CtkWidget *event_box;
   CtkWidget *vbox;
   CtkWidget *w;
-  GdkRGBA color;
+  CdkRGBA color;
 
   event_box = ctk_event_box_new ();
 
@@ -534,7 +534,7 @@ preview_collection (int font_size,
 {
   CtkWidget *box;
   CtkWidget *sw;
-  GdkRGBA desktop_color;
+  CdkRGBA desktop_color;
   int i;
   CtkWidget *eventbox;
 
@@ -762,7 +762,7 @@ previews_of_button_layouts (void)
   static gboolean initted = FALSE;
   CtkWidget *box;
   CtkWidget *sw;
-  GdkRGBA desktop_color;
+  CdkRGBA desktop_color;
   int i;
   CtkWidget *eventbox;
 

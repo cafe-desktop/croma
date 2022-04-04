@@ -37,7 +37,7 @@
 struct _MetaTilePreview {
   CtkWidget     *preview_window;
 
-  GdkRGBA       *preview_color;
+  CdkRGBA       *preview_color;
 
   MetaRectangle  tile_rect;
 
@@ -66,8 +66,8 @@ meta_tile_preview_draw (CtkWidget *widget,
     }
   else
     {
-      GdkRGBA black = {.0, .0, .0, 1.0};
-      GdkRGBA white = {1.0, 1.0, 1.0, 1.0};
+      CdkRGBA black = {.0, .0, .0, 1.0};
+      CdkRGBA white = {1.0, 1.0, 1.0, 1.0};
 
       cdk_cairo_set_source_rgba (cr, &black);
       cairo_paint (cr);
@@ -127,7 +127,7 @@ MetaTilePreview *
 meta_tile_preview_new (void)
 {
   MetaTilePreview *preview;
-  GdkScreen *screen;
+  CdkScreen *screen;
 
   screen = cdk_display_get_default_screen (cdk_display_get_default ());
 
@@ -173,8 +173,8 @@ meta_tile_preview_show (MetaTilePreview *preview,
                         MetaRectangle   *tile_rect,
                         MetaScreen      *screen)
 {
-  GdkWindow *window;
-  GdkRectangle old_rect;
+  CdkWindow *window;
+  CdkRectangle old_rect;
   gint scale;
 
   scale = ctk_widget_get_scale_factor (preview->preview_window);

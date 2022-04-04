@@ -1436,12 +1436,12 @@ handle_net_restack_window (MetaDisplay* display,
 static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 {
 	/* We're always using the default display */
-	GdkDisplay* cdk_display = cdk_display_get_default();
-	GdkEvent* cdk_event = NULL;
-	GdkWindow* cdk_window;
+	CdkDisplay* cdk_display = cdk_display_get_default();
+	CdkEvent* cdk_event = NULL;
+	CdkWindow* cdk_window;
 	Window window;
-	GdkSeat *seat;
-	GdkDevice *device;
+	CdkSeat *seat;
+	CdkDevice *device;
 
 	switch (xevent->type)
 	{
@@ -1615,7 +1615,7 @@ mouse_event_is_in_tab_popup (MetaDisplay *display,
       CtkWidget *popup_widget = meta_ui_tab_popup_get_widget (screen->tab_popup);
       if (ok1 && popup_widget != NULL) 
         {
-          GdkWindow * window = ctk_widget_get_window (popup_widget);
+          CdkWindow * window = ctk_widget_get_window (popup_widget);
           if (window == NULL)
             return FALSE;
 

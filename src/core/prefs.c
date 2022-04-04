@@ -1135,7 +1135,7 @@ meta_prefs_get_cursor_theme (void)
 int
 meta_prefs_get_cursor_size (void)
 {
-  GdkWindow *window = cdk_get_default_root_window ();
+  CdkWindow *window = cdk_get_default_root_window ();
   gint scale = cdk_window_get_scale_factor (window);
 
   return cursor_size * scale;
@@ -1144,7 +1144,7 @@ meta_prefs_get_cursor_size (void)
 int
 meta_prefs_get_icon_size (void)
 {
-  GdkWindow *window = cdk_get_default_root_window ();
+  CdkWindow *window = cdk_get_default_root_window ();
   gint scale = cdk_window_get_scale_factor (window);
 
   return icon_size * scale;

@@ -412,7 +412,7 @@ main (int argc, char **argv)
   sigset_t empty_mask;
   MetaArguments meta_args;
   const gchar *log_domains[] = {
-    NULL, G_LOG_DOMAIN, "Ctk", "Gdk", "GLib",
+    NULL, G_LOG_DOMAIN, "Ctk", "Cdk", "GLib",
     "Pango", "GLib-GObject", "GThread"
   };
   guint i;

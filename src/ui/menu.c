@@ -103,7 +103,7 @@ static MenuItem menuitems[] = {
 static void popup_position_func(CtkMenu* menu, gint* x, gint* y, gboolean* push_in, gpointer user_data)
 {
 	CtkRequisition req;
-	GdkPoint* pos;
+	CdkPoint* pos;
 
 	pos = user_data;
 
@@ -377,8 +377,8 @@ meta_window_menu_new   (MetaFrames         *frames,
                 {
                   Display *display;
                   Window xroot;
-                  GdkScreen *screen;
-                  GdkWindow *window;
+                  CdkScreen *screen;
+                  CdkWindow *window;
                   CtkWidget *submenu;
                   int j;
 
@@ -489,7 +489,7 @@ meta_window_menu_new   (MetaFrames         *frames,
 
 void meta_window_menu_popup(MetaWindowMenu* menu, int root_x, int root_y, int button, guint32 timestamp)
 {
-	GdkPoint* pt = g_new(GdkPoint, 1);
+	CdkPoint* pt = g_new(CdkPoint, 1);
 	gint scale;
 
 	g_object_set_data_full(G_OBJECT(menu->menu), "destroy-point", pt, g_free);

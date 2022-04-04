@@ -81,8 +81,8 @@
 #define CLAMP_UCHAR(v) ((guchar) (CLAMP (((int)v), (int)0, (int)255)))
 #define INTENSITY(r, g, b) ((r) * 0.30 + (g) * 0.59 + (b) * 0.11)
 
-static void ctk_style_shade		(GdkRGBA	 *a,
-					 GdkRGBA	 *b,
+static void ctk_style_shade		(CdkRGBA	 *a,
+					 CdkRGBA	 *b,
 					 gdouble	  k);
 static void rgb_to_hls			(gdouble	 *r,
 					 gdouble	 *g,
@@ -146,7 +146,7 @@ scale_surface (cairo_surface_t *surface,
 }
 
 static cairo_surface_t *
-get_surface_from_pixbuf (GdkPixbuf         *pixbuf,
+get_surface_from_pixbuf (CdkPixbuf         *pixbuf,
                          MetaImageFillType  fill_type,
                          gdouble            width,
                          gdouble            height,
@@ -204,11 +204,11 @@ get_surface_from_pixbuf (GdkPixbuf         *pixbuf,
   return copy;
 }
 
-static GdkPixbuf *
-colorize_pixbuf (GdkPixbuf *orig,
-                 GdkRGBA   *new_color)
+static CdkPixbuf *
+colorize_pixbuf (CdkPixbuf *orig,
+                 CdkRGBA   *new_color)
 {
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   double intensity;
   int x, y;
   const guchar *src;
@@ -283,10 +283,10 @@ colorize_pixbuf (GdkPixbuf *orig,
 }
 
 static void
-color_composite (const GdkRGBA *bg,
-                 const GdkRGBA *fg,
+color_composite (const CdkRGBA *bg,
+                 const CdkRGBA *fg,
                  double         alpha,
-                 GdkRGBA       *color)
+                 CdkRGBA       *color)
 {
   *color = *bg;
   color->red = color->red + (fg->red - color->red) * alpha;
@@ -692,7 +692,7 @@ rect_for_function (MetaFrameGeometry *fgeom,
 
 static gboolean
 strip_button (MetaButtonSpace *func_rects[MAX_BUTTONS_PER_CORNER],
-              GdkRectangle    *bg_rects[MAX_BUTTONS_PER_CORNER],
+              CdkRectangle    *bg_rects[MAX_BUTTONS_PER_CORNER],
               int             *n_rects,
               MetaButtonSpace *to_strip)
 {
@@ -749,9 +749,9 @@ meta_frame_layout_calc_geometry (const MetaFrameLayout  *layout,
    */
   MetaButtonSpace *left_func_rects[MAX_BUTTONS_PER_CORNER];
   MetaButtonSpace *right_func_rects[MAX_BUTTONS_PER_CORNER];
-  GdkRectangle *left_bg_rects[MAX_BUTTONS_PER_CORNER];
+  CdkRectangle *left_bg_rects[MAX_BUTTONS_PER_CORNER];
   gboolean left_buttons_has_spacer[MAX_BUTTONS_PER_CORNER];
-  GdkRectangle *right_bg_rects[MAX_BUTTONS_PER_CORNER];
+  CdkRectangle *right_bg_rects[MAX_BUTTONS_PER_CORNER];
   gboolean right_buttons_has_spacer[MAX_BUTTONS_PER_CORNER];
 
   MetaFrameBorders borders;
@@ -1132,7 +1132,7 @@ create_cairo_pattern_from_gradient_spec (const MetaGradientSpec      *spec,
   tmp = spec->color_specs;
   while (tmp != NULL)
     {
-      GdkRGBA color;
+      CdkRGBA color;
 
       meta_color_spec_render (tmp->data, context, &color);
 
@@ -1680,9 +1680,9 @@ meta_color_spec_new_ctk (MetaCtkColorComponent component,
 static void
 get_background_color_real (CtkStyleContext *context,
                            CtkStateFlags    state,
-                           GdkRGBA         *color)
+                           CdkRGBA         *color)
 {
-  GdkRGBA *c;
+  CdkRGBA *c;
 
   g_return_if_fail (color != NULL);
   g_return_if_fail (CTK_IS_STYLE_CONTEXT (context));
@@ -1699,10 +1699,10 @@ get_background_color_real (CtkStyleContext *context,
 static void
 get_background_color (CtkStyleContext *context,
                       CtkStateFlags    state,
-                      GdkRGBA         *color)
+                      CdkRGBA         *color)
 {
-  GdkRGBA empty = { 0.0, 0.0, 0.0, 0.0 };
-  GdkRGBA rgba;
+  CdkRGBA empty = { 0.0, 0.0, 0.0, 0.0 };
+  CdkRGBA rgba;
 
   get_background_color_real (context, state, &rgba);
 
@@ -1728,7 +1728,7 @@ get_background_color (CtkStyleContext *context,
 void
 meta_ctk_style_get_light_color (CtkStyleContext *style,
                                 CtkStateFlags    state,
-                                GdkRGBA         *color)
+                                CdkRGBA         *color)
 {
   get_background_color (style, state, color);
   ctk_style_shade (color, color, LIGHTNESS_MULT);
@@ -1737,19 +1737,19 @@ meta_ctk_style_get_light_color (CtkStyleContext *style,
 void
 meta_ctk_style_get_dark_color (CtkStyleContext *style,
                                CtkStateFlags    state,
-                               GdkRGBA         *color)
+                               CdkRGBA         *color)
 {
   get_background_color (style, state, color);
   ctk_style_shade (color, color, DARKNESS_MULT);
 }
 
 static void
-meta_set_color_from_style (GdkRGBA               *color,
+meta_set_color_from_style (CdkRGBA               *color,
                            CtkStyleContext       *context,
                            CtkStateFlags          state,
                            MetaCtkColorComponent  component)
 {
-  GdkRGBA other;
+  CdkRGBA other;
 
   /* Add background class to context to get the correct colors from the CTK+
      theme instead of white text over black background. */
@@ -1794,7 +1794,7 @@ meta_set_color_from_style (GdkRGBA               *color,
 }
 
 static void
-meta_set_custom_color_from_style (GdkRGBA         *color,
+meta_set_custom_color_from_style (CdkRGBA         *color,
                                   CtkStyleContext *context,
                                   char            *color_name,
                                   MetaColorSpec   *fallback)
@@ -1806,7 +1806,7 @@ meta_set_custom_color_from_style (GdkRGBA         *color,
 void
 meta_color_spec_render (MetaColorSpec *spec,
                         CtkStyleContext *style,
-                        GdkRGBA         *color)
+                        CdkRGBA         *color)
 {
   g_return_if_fail (spec != NULL);
 
@@ -1834,7 +1834,7 @@ meta_color_spec_render (MetaColorSpec *spec,
 
     case META_COLOR_SPEC_BLEND:
       {
-        GdkRGBA bg, fg;
+        CdkRGBA bg, fg;
 
         meta_color_spec_render (spec->data.blend.background, style, &bg);
         meta_color_spec_render (spec->data.blend.foreground, style, &fg);
@@ -3339,12 +3339,12 @@ meta_draw_op_free (MetaDrawOp *op)
   g_free (op);
 }
 
-static GdkPixbuf*
-apply_alpha (GdkPixbuf             *pixbuf,
+static CdkPixbuf*
+apply_alpha (CdkPixbuf             *pixbuf,
              MetaAlphaGradientSpec *spec,
              gboolean               force_copy)
 {
-  GdkPixbuf *new_pixbuf;
+  CdkPixbuf *new_pixbuf;
   gboolean needs_alpha;
 
   g_return_val_if_fail (GDK_IS_PIXBUF (pixbuf), NULL);
@@ -3375,12 +3375,12 @@ apply_alpha (GdkPixbuf             *pixbuf,
   return pixbuf;
 }
 
-static GdkPixbuf*
-pixbuf_tile (GdkPixbuf *tile,
+static CdkPixbuf*
+pixbuf_tile (CdkPixbuf *tile,
              int        width,
              int        height)
 {
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   int tile_width;
   int tile_height;
   int i, j;
@@ -3418,8 +3418,8 @@ pixbuf_tile (GdkPixbuf *tile,
   return pixbuf;
 }
 
-static GdkPixbuf *
-replicate_rows (GdkPixbuf  *src,
+static CdkPixbuf *
+replicate_rows (CdkPixbuf  *src,
                 int         src_x,
                 int         src_y,
                 int         width,
@@ -3430,7 +3430,7 @@ replicate_rows (GdkPixbuf  *src,
   unsigned char *pixels = (cdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
                            * n_channels);
   unsigned char *dest_pixels;
-  GdkPixbuf *result;
+  CdkPixbuf *result;
   unsigned int dest_rowstride;
   int i;
 
@@ -3445,8 +3445,8 @@ replicate_rows (GdkPixbuf  *src,
   return result;
 }
 
-static GdkPixbuf *
-replicate_cols (GdkPixbuf  *src,
+static CdkPixbuf *
+replicate_cols (CdkPixbuf  *src,
                 int         src_x,
                 int         src_y,
                 int         width,
@@ -3457,7 +3457,7 @@ replicate_cols (GdkPixbuf  *src,
   unsigned char *pixels = (cdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
                            * n_channels);
   unsigned char *dest_pixels;
-  GdkPixbuf *result;
+  CdkPixbuf *result;
   unsigned int dest_rowstride;
   int i, j;
 
@@ -3503,8 +3503,8 @@ replicate_cols (GdkPixbuf  *src,
   return result;
 }
 
-static GdkPixbuf*
-scale_and_alpha_pixbuf (GdkPixbuf             *src,
+static CdkPixbuf*
+scale_and_alpha_pixbuf (CdkPixbuf             *src,
                         MetaAlphaGradientSpec *alpha_spec,
                         MetaImageFillType      fill_type,
                         int                    width,
@@ -3512,8 +3512,8 @@ scale_and_alpha_pixbuf (GdkPixbuf             *src,
                         gboolean               vertical_stripes,
                         gboolean               horizontal_stripes)
 {
-  GdkPixbuf *pixbuf;
-  GdkPixbuf *temp_pixbuf;
+  CdkPixbuf *pixbuf;
+  CdkPixbuf *temp_pixbuf;
 
   pixbuf = NULL;
 
@@ -3594,7 +3594,7 @@ scale_and_alpha_pixbuf (GdkPixbuf             *src,
   return pixbuf;
 }
 
-static GdkPixbuf*
+static CdkPixbuf*
 draw_op_as_pixbuf (const MetaDrawOp    *op,
                    CtkStyleContext     *style,
                    const MetaDrawInfo  *info,
@@ -3605,7 +3605,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
    * matches the width/height passed in. return NULL
    * if the op can't be converted to an equivalent pixbuf.
    */
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
 
   pixbuf = NULL;
 
@@ -3617,7 +3617,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
     case META_DRAW_RECTANGLE:
       if (op->data.rectangle.filled)
         {
-          GdkRGBA color;
+          CdkRGBA color;
 
           meta_color_spec_render (op->data.rectangle.color_spec,
                                   style,
@@ -3639,7 +3639,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
 
     case META_DRAW_TINT:
       {
-        GdkRGBA color;
+        CdkRGBA color;
         guint32 rgba;
         gboolean has_alpha;
 
@@ -3688,7 +3688,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
       {
 	if (op->data.image.colorize_spec)
 	  {
-	    GdkRGBA color;
+	    CdkRGBA color;
 
             meta_color_spec_render (op->data.image.colorize_spec,
                                     style, &color);
@@ -3782,7 +3782,7 @@ draw_op_as_surface (const MetaDrawOp   *op,
       {
         if (op->data.image.colorize_spec)
           {
-            GdkRGBA color;
+            CdkRGBA color;
 
             meta_color_spec_render (op->data.image.colorize_spec,
                                     style, &color);
@@ -3911,7 +3911,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
                             MetaRectangle        rect,
                             MetaPositionExprEnv *env)
 {
-  GdkRGBA color;
+  CdkRGBA color;
 
   cairo_save (cr);
   ctk_style_context_save (style_ctk);
@@ -4092,7 +4092,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
           }
         else
           {
-            GdkPixbuf *pixbuf;
+            CdkPixbuf *pixbuf;
 
             pixbuf = draw_op_as_pixbuf (op, style_ctk, info,
                                         rwidth, rheight);
@@ -4870,7 +4870,7 @@ static void
 get_button_rect (MetaButtonType           type,
                  const MetaFrameGeometry *fgeom,
                  int                      middle_background_offset,
-                 GdkRectangle            *rect)
+                 CdkRectangle            *rect)
 {
   switch (type)
     {
@@ -4966,18 +4966,18 @@ meta_frame_style_draw_with_style (MetaFrameStyle          *style,
                                   PangoLayout             *title_layout,
                                   int                      text_height,
                                   MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                                  GdkPixbuf               *mini_icon,
-                                  GdkPixbuf               *icon)
+                                  CdkPixbuf               *mini_icon,
+                                  CdkPixbuf               *icon)
 {
     /* BOOKMARK */
   int i, j;
-  GdkRectangle visible_rect;
-  GdkRectangle titlebar_rect;
-  GdkRectangle left_titlebar_edge;
-  GdkRectangle right_titlebar_edge;
-  GdkRectangle bottom_titlebar_edge;
-  GdkRectangle top_titlebar_edge;
-  GdkRectangle left_edge, right_edge, bottom_edge;
+  CdkRectangle visible_rect;
+  CdkRectangle titlebar_rect;
+  CdkRectangle left_titlebar_edge;
+  CdkRectangle right_titlebar_edge;
+  CdkRectangle bottom_titlebar_edge;
+  CdkRectangle top_titlebar_edge;
+  CdkRectangle left_edge, right_edge, bottom_edge;
   PangoRectangle extents;
   MetaDrawInfo draw_info;
   const MetaFrameBorders *borders;
@@ -5044,7 +5044,7 @@ meta_frame_style_draw_with_style (MetaFrameStyle          *style,
   i = 0;
   while (i < META_FRAME_PIECE_LAST)
     {
-      GdkRectangle rect;
+      CdkRectangle rect;
 
       switch ((MetaFramePiece) i)
         {
@@ -5206,8 +5206,8 @@ meta_frame_style_draw (MetaFrameStyle          *style,
                        PangoLayout             *title_layout,
                        int                      text_height,
                        MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                       GdkPixbuf               *mini_icon,
-                       GdkPixbuf               *icon)
+                       CdkPixbuf               *mini_icon,
+                       CdkPixbuf               *icon)
 {
   meta_frame_style_draw_with_style (style,
                                     ctk_widget_get_style_context (widget),
@@ -5638,13 +5638,13 @@ meta_theme_validate (MetaTheme *theme,
   return TRUE;
 }
 
-GdkPixbuf*
+CdkPixbuf*
 meta_theme_load_image (MetaTheme  *theme,
                        const char *filename,
                        guint size_of_theme_icons,
                        GError    **error)
 {
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   int scale;
 
   pixbuf = g_hash_table_lookup (theme->images_by_filename,
@@ -5839,8 +5839,8 @@ meta_theme_draw_frame (MetaTheme              *theme,
                        int                     text_height,
                        const MetaButtonLayout *button_layout,
                        MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                       GdkPixbuf              *mini_icon,
-                       GdkPixbuf              *icon)
+                       CdkPixbuf              *mini_icon,
+                       CdkPixbuf              *icon)
 {
   MetaFrameGeometry fgeom;
   MetaFrameStyle *style;
@@ -5884,8 +5884,8 @@ meta_theme_draw_frame_by_name (MetaTheme              *theme,
                                int                     text_height,
                                const MetaButtonLayout *button_layout,
                                MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                               GdkPixbuf              *mini_icon,
-                               GdkPixbuf              *icon)
+                               CdkPixbuf              *mini_icon,
+                               CdkPixbuf              *icon)
 {
   MetaFrameGeometry fgeom;
   MetaFrameStyle *style;
@@ -6875,8 +6875,8 @@ meta_image_fill_type_to_string (MetaImageFillType fill_type)
  * \param k  amount to scale lightness and saturation by
  */
 static void
-ctk_style_shade (GdkRGBA *a,
-                 GdkRGBA *b,
+ctk_style_shade (CdkRGBA *a,
+                 CdkRGBA *b,
                  gdouble  k)
 {
   gdouble red;
@@ -7082,8 +7082,8 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
                          const MetaTextureSpec *fg,
                          double                 alpha,
                          CtkWidget             *widget,
-                         GdkDrawable           *drawable,
-                         const GdkRectangle    *clip,
+                         CdkDrawable           *drawable,
+                         const CdkRectangle    *clip,
                          MetaTextureDrawMode    mode,
                          double                 xalign,
                          double                 yalign,
@@ -7092,7 +7092,7 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
                          int                    width,
                          int                    height)
 {
-  GdkColor bg_color;
+  CdkColor bg_color;
 
   g_assert (bg->type == META_TEXTURE_SOLID);
   g_assert (fg->type != META_TEXTURE_COMPOSITE);
@@ -7106,7 +7106,7 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
     {
     case META_TEXTURE_SOLID:
       {
-        GdkColor fg_color;
+        CdkColor fg_color;
 
         meta_color_spec_render (fg->data.solid.color_spec,
                                 widget,
@@ -7127,8 +7127,8 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
       /* FALL THRU */
     case META_TEXTURE_IMAGE:
       {
-        GdkPixbuf *pixbuf;
-        GdkPixbuf *composited;
+        CdkPixbuf *pixbuf;
+        CdkPixbuf *composited;
 
         pixbuf = meta_texture_spec_render (fg, widget, mode, 255,
                                            width, height);
@@ -7189,8 +7189,8 @@ draw_bg_gradient_composite (const MetaTextureSpec *bg,
                             const MetaTextureSpec *fg,
                             double                 alpha,
                             CtkWidget             *widget,
-                            GdkDrawable           *drawable,
-                            const GdkRectangle    *clip,
+                            CdkDrawable           *drawable,
+                            const CdkRectangle    *clip,
                             MetaTextureDrawMode    mode,
                             double                 xalign,
                             double                 yalign,
@@ -7209,9 +7209,9 @@ draw_bg_gradient_composite (const MetaTextureSpec *bg,
     case META_TEXTURE_GRADIENT:
     case META_TEXTURE_IMAGE:
       {
-        GdkPixbuf *bg_pixbuf;
-        GdkPixbuf *fg_pixbuf;
-        GdkPixbuf *composited;
+        CdkPixbuf *bg_pixbuf;
+        CdkPixbuf *fg_pixbuf;
+        CdkPixbuf *composited;
         int fg_width, fg_height;
 
         bg_pixbuf = meta_texture_spec_render (bg, widget, mode, 255,

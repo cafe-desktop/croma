@@ -41,7 +41,7 @@ free_buffer (guchar *pixels, gpointer data)
   g_free (pixels);
 }
 
-static GdkPixbuf*
+static CdkPixbuf*
 blank_pixbuf (int width, int height)
 {
   guchar *buf;
@@ -67,23 +67,23 @@ blank_pixbuf (int width, int height)
  *----------------------------------------------------------------------
  * meta_gradient_create_horizontal--
  * 	Renders a horizontal linear gradient of the specified size in the
- * GdkPixbuf format with a border of the specified type.
+ * CdkPixbuf format with a border of the specified type.
  *
  * Returns:
- * 	A 24bit GdkPixbuf with the gradient (no alpha channel).
+ * 	A 24bit CdkPixbuf with the gradient (no alpha channel).
  *
  * Side effects:
  * 	None
  *----------------------------------------------------------------------
  */
-static GdkPixbuf*
+static CdkPixbuf*
 meta_gradient_create_horizontal (int width, int height,
-                                 const GdkRGBA *from,
-                                 const GdkRGBA *to)
+                                 const CdkRGBA *from,
+                                 const CdkRGBA *to)
 {
   int i;
   long r, g, b, a, dr, dg, db, da;
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   unsigned char *ptr;
   unsigned char *pixels;
   int r0, g0, b0, a0;
@@ -141,23 +141,23 @@ meta_gradient_create_horizontal (int width, int height,
  *----------------------------------------------------------------------
  * meta_gradient_create_vertical--
  *      Renders a vertical linear gradient of the specified size in the
- * GdkPixbuf format with a border of the specified type.
+ * CdkPixbuf format with a border of the specified type.
  *
  * Returns:
- *      A 24bit GdkPixbuf with the gradient (no alpha channel).
+ *      A 24bit CdkPixbuf with the gradient (no alpha channel).
  *
  * Side effects:
  *      None
  *----------------------------------------------------------------------
  */
-static GdkPixbuf*
+static CdkPixbuf*
 meta_gradient_create_vertical (int width, int height,
-                               const GdkRGBA *from,
-                               const GdkRGBA *to)
+                               const CdkRGBA *from,
+                               const CdkRGBA *to)
 {
   int i, j;
   long r, g, b, a, dr, dg, db, da;
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   unsigned char *ptr;
   int r0, g0, b0, a0;
   int rf, gf, bf, af;
@@ -216,10 +216,10 @@ meta_gradient_create_vertical (int width, int height,
  *----------------------------------------------------------------------
  * meta_gradient_create_diagonal--
  *      Renders a diagonal linear gradient of the specified size in the
- * GdkPixbuf format with a border of the specified type.
+ * CdkPixbuf format with a border of the specified type.
  *
  * Returns:
- *      A 24bit GdkPixbuf with the gradient (no alpha channel).
+ *      A 24bit CdkPixbuf with the gradient (no alpha channel).
  *
  * Side effects:
  *      None
@@ -227,12 +227,12 @@ meta_gradient_create_vertical (int width, int height,
  */
 
 
-static GdkPixbuf*
+static CdkPixbuf*
 meta_gradient_create_diagonal (int width, int height,
-                               const GdkRGBA *from,
-                               const GdkRGBA *to)
+                               const CdkRGBA *from,
+                               const CdkRGBA *to)
 {
-  GdkPixbuf *pixbuf, *tmp;
+  CdkPixbuf *pixbuf, *tmp;
   int j;
   float a, offset;
   unsigned char *ptr;
@@ -275,14 +275,14 @@ meta_gradient_create_diagonal (int width, int height,
 }
 
 
-static GdkPixbuf*
+static CdkPixbuf*
 meta_gradient_create_multi_horizontal (int width, int height,
-                                       const GdkRGBA *colors,
+                                       const CdkRGBA *colors,
                                        int count)
 {
   int i, j, k;
   long r, g, b, a, dr, dg, db, da;
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   unsigned char *ptr;
   unsigned char *pixels;
   int width2;
@@ -353,14 +353,14 @@ meta_gradient_create_multi_horizontal (int width, int height,
   return pixbuf;
 }
 
-static GdkPixbuf*
+static CdkPixbuf*
 meta_gradient_create_multi_vertical (int width, int height,
-                                     const GdkRGBA *colors,
+                                     const CdkRGBA *colors,
                                      int count)
 {
   int i, j, k;
   long r, g, b, a, dr, dg, db, da;
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   unsigned char *ptr, *tmp, *pixels;
   int height2;
   int x;
@@ -449,12 +449,12 @@ meta_gradient_create_multi_vertical (int width, int height,
 }
 
 
-static GdkPixbuf*
+static CdkPixbuf*
 meta_gradient_create_multi_diagonal (int width, int height,
-                                     const GdkRGBA *colors,
+                                     const CdkRGBA *colors,
                                      int count)
 {
-  GdkPixbuf *pixbuf, *tmp;
+  CdkPixbuf *pixbuf, *tmp;
   float a, offset;
   int j;
   unsigned char *ptr;
@@ -513,7 +513,7 @@ meta_gradient_create_multi_diagonal (int width, int height,
 }
 
 static void
-simple_multiply_alpha (GdkPixbuf *pixbuf,
+simple_multiply_alpha (CdkPixbuf *pixbuf,
                        guchar     alpha)
 {
   guchar *pixels;
@@ -561,7 +561,7 @@ simple_multiply_alpha (GdkPixbuf *pixbuf,
 }
 
 static void
-meta_gradient_add_alpha_horizontal (GdkPixbuf           *pixbuf,
+meta_gradient_add_alpha_horizontal (CdkPixbuf           *pixbuf,
                                     const unsigned char *alphas,
                                     int                  n_alphas)
 {
@@ -666,11 +666,11 @@ meta_gradient_add_alpha_horizontal (GdkPixbuf           *pixbuf,
  *
  * Returns: (transfer full): A new linear gradient
  */
-GdkPixbuf*
+CdkPixbuf*
 meta_gradient_create_simple (int              width,
                              int              height,
-                             const GdkRGBA   *from,
-                             const GdkRGBA   *to,
+                             const CdkRGBA   *from,
+                             const CdkRGBA   *to,
                              MetaGradientType style)
 {
   switch (style)
@@ -705,10 +705,10 @@ meta_gradient_create_simple (int              width,
  *
  * Returns: (transfer full): A new multi-step linear gradient
  */
-GdkPixbuf*
+CdkPixbuf*
 meta_gradient_create_multi (int              width,
                             int              height,
-                            const GdkRGBA   *colors,
+                            const CdkRGBA   *colors,
                             int              n_colors,
                             MetaGradientType style)
 {
@@ -759,19 +759,19 @@ meta_gradient_create_multi (int              width,
  * are alternated. I'm not sure what it's good for, just copied since
  * WindowMaker had it.
  */
-GdkPixbuf*
+CdkPixbuf*
 meta_gradient_create_interwoven (int            width,
                                  int            height,
-                                 const GdkRGBA  colors1[2],
+                                 const CdkRGBA  colors1[2],
                                  int            thickness1,
-                                 const GdkRGBA  colors2[2],
+                                 const CdkRGBA  colors2[2],
                                  int            thickness2)
 {
 
   int i, j, k, l, ll;
   long r1, g1, b1, a1, dr1, dg1, db1, da1;
   long r2, g2, b2, a2, dr2, dg2, db2, da2;
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   unsigned char *ptr;
   unsigned char *pixels;
   int rowstride;
@@ -855,7 +855,7 @@ meta_gradient_create_interwoven (int            width,
 }
 
 void
-meta_gradient_add_alpha (GdkPixbuf       *pixbuf,
+meta_gradient_add_alpha (CdkPixbuf       *pixbuf,
                          const guchar    *alphas,
                          int              n_alphas,
                          MetaGradientType type)

@@ -48,7 +48,7 @@ struct _MetaTabEntry
 {
   MetaTabEntryKey  key;
   const char      *title;
-  GdkPixbuf       *icon;
+  CdkPixbuf       *icon;
   cairo_surface_t *win_surface;
   MetaRectangle    rect;
   MetaRectangle    inner_rect;

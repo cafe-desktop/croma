@@ -32,8 +32,8 @@ static void
 get_window_rect (const WnckWindowDisplayInfo *win,
                  int                    screen_width,
                  int                    screen_height,
-                 const GdkRectangle    *workspace_rect,
-                 GdkRectangle          *rect)
+                 const CdkRectangle    *workspace_rect,
+                 CdkRectangle          *rect)
 {
   double width_ratio, height_ratio;
   int x, y, width, height;
@@ -68,9 +68,9 @@ get_window_rect (const WnckWindowDisplayInfo *win,
 static void
 get_background_color (CtkStyleContext *context,
                       CtkStateFlags    state,
-                      GdkRGBA         *color)
+                      CdkRGBA         *color)
 {
-  GdkRGBA *c;
+  CdkRGBA *c;
 
   g_return_if_fail (color != NULL);
   g_return_if_fail (CTK_IS_STYLE_CONTEXT (context));
@@ -88,13 +88,13 @@ static void
 draw_window (CtkWidget                   *widget,
              cairo_t                     *cr,
              const WnckWindowDisplayInfo *win,
-             const GdkRectangle          *winrect,
+             const CdkRectangle          *winrect,
              CtkStateType                state)
 {
   cairo_surface_t *icon;
   int icon_x, icon_y, icon_w, icon_h, scale;
   gboolean is_active;
-  GdkRGBA color;
+  CdkRGBA color;
   CtkStyleContext *style;
 
   is_active = win->is_active;
@@ -184,13 +184,13 @@ wnck_draw_workspace (CtkWidget                   *widget,
                      int                          height,
                      int                          screen_width,
                      int                          screen_height,
-                     GdkPixbuf                   *workspace_background,
+                     CdkPixbuf                   *workspace_background,
                      gboolean                     is_active,
                      const WnckWindowDisplayInfo *windows,
                      int                          n_windows)
 {
   int i;
-  GdkRectangle workspace_rect;
+  CdkRectangle workspace_rect;
   CtkStateFlags state;
   CtkStyleContext *style;
 
@@ -216,7 +216,7 @@ wnck_draw_workspace (CtkWidget                   *widget,
     }
   else
     {
-      GdkRGBA color;
+      CdkRGBA color;
 
       meta_ctk_style_get_dark_color (style, state, &color);
       color.alpha = 0.25;
@@ -230,7 +230,7 @@ wnck_draw_workspace (CtkWidget                   *widget,
   while (i < n_windows)
     {
       const WnckWindowDisplayInfo *win = &windows[i];
-      GdkRectangle winrect;
+      CdkRectangle winrect;
 
       get_window_rect (win, screen_width,
                        screen_height, &workspace_rect, &winrect);
