@@ -160,8 +160,8 @@ get_surface_from_pixbuf (CdkPixbuf         *pixbuf,
   cairo_surface_t *copy;
   cairo_t *cr;
 
-  pixbuf_width = cdk_pixbuf_get_width (pixbuf);
-  pixbuf_height = cdk_pixbuf_get_height (pixbuf);
+  pixbuf_width = gdk_pixbuf_get_width (pixbuf);
+  pixbuf_height = gdk_pixbuf_get_height (pixbuf);
   surface = cdk_cairo_surface_create_from_pixbuf (pixbuf, 1, NULL);
 
   if (pixbuf_width == width && pixbuf_height == height)
@@ -220,20 +220,20 @@ colorize_pixbuf (CdkPixbuf *orig,
   const guchar *src_pixels;
   guchar *dest_pixels;
 
-  pixbuf = cdk_pixbuf_new (cdk_pixbuf_get_colorspace (orig), cdk_pixbuf_get_has_alpha (orig),
-			   cdk_pixbuf_get_bits_per_sample (orig),
-			   cdk_pixbuf_get_width (orig), cdk_pixbuf_get_height (orig));
+  pixbuf = gdk_pixbuf_new (gdk_pixbuf_get_colorspace (orig), gdk_pixbuf_get_has_alpha (orig),
+			   gdk_pixbuf_get_bits_per_sample (orig),
+			   gdk_pixbuf_get_width (orig), gdk_pixbuf_get_height (orig));
 
   if (pixbuf == NULL)
     return NULL;
 
-  orig_rowstride = cdk_pixbuf_get_rowstride (orig);
-  dest_rowstride = cdk_pixbuf_get_rowstride (pixbuf);
-  width = cdk_pixbuf_get_width (pixbuf);
-  height = cdk_pixbuf_get_height (pixbuf);
-  has_alpha = cdk_pixbuf_get_has_alpha (orig);
-  src_pixels = cdk_pixbuf_get_pixels (orig);
-  dest_pixels = cdk_pixbuf_get_pixels (pixbuf);
+  orig_rowstride = gdk_pixbuf_get_rowstride (orig);
+  dest_rowstride = gdk_pixbuf_get_rowstride (pixbuf);
+  width = gdk_pixbuf_get_width (pixbuf);
+  height = gdk_pixbuf_get_height (pixbuf);
+  has_alpha = gdk_pixbuf_get_has_alpha (orig);
+  src_pixels = gdk_pixbuf_get_pixels (orig);
+  dest_pixels = gdk_pixbuf_get_pixels (pixbuf);
 
   for (y = 0; y < height; y++)
     {
@@ -3355,20 +3355,20 @@ apply_alpha (CdkPixbuf             *pixbuf,
   if (!needs_alpha)
     return pixbuf;
 
-  if (!cdk_pixbuf_get_has_alpha (pixbuf))
+  if (!gdk_pixbuf_get_has_alpha (pixbuf))
     {
-      new_pixbuf = cdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
+      new_pixbuf = gdk_pixbuf_add_alpha (pixbuf, FALSE, 0, 0, 0);
       g_object_unref (G_OBJECT (pixbuf));
       pixbuf = new_pixbuf;
     }
   else if (force_copy)
     {
-      new_pixbuf = cdk_pixbuf_copy (pixbuf);
+      new_pixbuf = gdk_pixbuf_copy (pixbuf);
       g_object_unref (G_OBJECT (pixbuf));
       pixbuf = new_pixbuf;
     }
 
-  g_assert (cdk_pixbuf_get_has_alpha (pixbuf));
+  g_assert (gdk_pixbuf_get_has_alpha (pixbuf));
 
   meta_gradient_add_alpha (pixbuf, spec->alphas, spec->n_alphas, spec->type);
 
@@ -3385,11 +3385,11 @@ pixbuf_tile (CdkPixbuf *tile,
   int tile_height;
   int i, j;
 
-  tile_width = cdk_pixbuf_get_width (tile);
-  tile_height = cdk_pixbuf_get_height (tile);
+  tile_width = gdk_pixbuf_get_width (tile);
+  tile_height = gdk_pixbuf_get_height (tile);
 
-  pixbuf = cdk_pixbuf_new (CDK_COLORSPACE_RGB,
-                           cdk_pixbuf_get_has_alpha (tile),
+  pixbuf = gdk_pixbuf_new (CDK_COLORSPACE_RGB,
+                           gdk_pixbuf_get_has_alpha (tile),
                            8, width, height);
 
   i = 0;
@@ -3403,7 +3403,7 @@ pixbuf_tile (CdkPixbuf *tile,
           w = MIN (tile_width, width - i);
           h = MIN (tile_height, height - j);
 
-          cdk_pixbuf_copy_area (tile,
+          gdk_pixbuf_copy_area (tile,
                                 0, 0,
                                 w, h,
                                 pixbuf,
@@ -3425,19 +3425,19 @@ replicate_rows (CdkPixbuf  *src,
                 int         width,
                 int         height)
 {
-  unsigned int n_channels = cdk_pixbuf_get_n_channels (src);
-  unsigned int src_rowstride = cdk_pixbuf_get_rowstride (src);
-  unsigned char *pixels = (cdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
+  unsigned int n_channels = gdk_pixbuf_get_n_channels (src);
+  unsigned int src_rowstride = gdk_pixbuf_get_rowstride (src);
+  unsigned char *pixels = (gdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
                            * n_channels);
   unsigned char *dest_pixels;
   CdkPixbuf *result;
   unsigned int dest_rowstride;
   int i;
 
-  result = cdk_pixbuf_new (CDK_COLORSPACE_RGB, n_channels == 4, 8,
+  result = gdk_pixbuf_new (CDK_COLORSPACE_RGB, n_channels == 4, 8,
                            width, height);
-  dest_rowstride = cdk_pixbuf_get_rowstride (result);
-  dest_pixels = cdk_pixbuf_get_pixels (result);
+  dest_rowstride = gdk_pixbuf_get_rowstride (result);
+  dest_pixels = gdk_pixbuf_get_pixels (result);
 
   for (i = 0; i < height; i++)
     memcpy (dest_pixels + dest_rowstride * i, pixels, n_channels * width);
@@ -3452,19 +3452,19 @@ replicate_cols (CdkPixbuf  *src,
                 int         width,
                 int         height)
 {
-  unsigned int n_channels = cdk_pixbuf_get_n_channels (src);
-  unsigned int src_rowstride = cdk_pixbuf_get_rowstride (src);
-  unsigned char *pixels = (cdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
+  unsigned int n_channels = gdk_pixbuf_get_n_channels (src);
+  unsigned int src_rowstride = gdk_pixbuf_get_rowstride (src);
+  unsigned char *pixels = (gdk_pixbuf_get_pixels (src) + src_y * src_rowstride + src_x
                            * n_channels);
   unsigned char *dest_pixels;
   CdkPixbuf *result;
   unsigned int dest_rowstride;
   int i, j;
 
-  result = cdk_pixbuf_new (CDK_COLORSPACE_RGB, n_channels == 4, 8,
+  result = gdk_pixbuf_new (CDK_COLORSPACE_RGB, n_channels == 4, 8,
                            width, height);
-  dest_rowstride = cdk_pixbuf_get_rowstride (result);
-  dest_pixels = cdk_pixbuf_get_pixels (result);
+  dest_rowstride = gdk_pixbuf_get_rowstride (result);
+  dest_pixels = gdk_pixbuf_get_pixels (result);
 
   for (i = 0; i < height; i++)
     {
@@ -3519,8 +3519,8 @@ scale_and_alpha_pixbuf (CdkPixbuf             *src,
 
   pixbuf = src;
 
-  if (cdk_pixbuf_get_width (pixbuf) == width &&
-      cdk_pixbuf_get_height (pixbuf) == height)
+  if (gdk_pixbuf_get_width (pixbuf) == width &&
+      gdk_pixbuf_get_height (pixbuf) == height)
     {
       g_object_ref (G_OBJECT (pixbuf));
     }
@@ -3533,21 +3533,21 @@ scale_and_alpha_pixbuf (CdkPixbuf             *src,
       else
         {
     	  int src_h, src_w, dest_h, dest_w;
-          src_h = cdk_pixbuf_get_height (src);
-          src_w = cdk_pixbuf_get_width (src);
+          src_h = gdk_pixbuf_get_height (src);
+          src_w = gdk_pixbuf_get_width (src);
 
           /* prefer to replicate_cols if possible, as that
            * is faster (no memory reads)
            */
           if (horizontal_stripes)
             {
-              dest_w = cdk_pixbuf_get_width (src);
+              dest_w = gdk_pixbuf_get_width (src);
               dest_h = height;
             }
           else if (vertical_stripes)
             {
               dest_w = width;
-              dest_h = cdk_pixbuf_get_height (src);
+              dest_h = gdk_pixbuf_get_height (src);
             }
 
           else
@@ -3563,7 +3563,7 @@ scale_and_alpha_pixbuf (CdkPixbuf             *src,
             }
           else
             {
-              temp_pixbuf = cdk_pixbuf_scale_simple (src,
+              temp_pixbuf = gdk_pixbuf_scale_simple (src,
                                                      dest_w, dest_h,
                                                      CDK_INTERP_BILINEAR);
             }
@@ -3623,11 +3623,11 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
                                   style,
                                   &color);
 
-          pixbuf = cdk_pixbuf_new (CDK_COLORSPACE_RGB,
+          pixbuf = gdk_pixbuf_new (CDK_COLORSPACE_RGB,
                                    FALSE,
                                    8, width, height);
 
-          cdk_pixbuf_fill (pixbuf, CDK_COLOR_RGBA (color));
+          gdk_pixbuf_fill (pixbuf, CDK_COLOR_RGBA (color));
         }
       break;
 
@@ -3652,7 +3652,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
           (op->data.tint.alpha_spec->n_alphas > 1 ||
            op->data.tint.alpha_spec->alphas[0] != 0xff);
 
-        pixbuf = cdk_pixbuf_new (CDK_COLORSPACE_RGB,
+        pixbuf = gdk_pixbuf_new (CDK_COLORSPACE_RGB,
                                  has_alpha,
                                  8, width, height);
 
@@ -3660,7 +3660,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
           {
             rgba = CDK_COLOR_RGBA (color);
 
-            cdk_pixbuf_fill (pixbuf, rgba);
+            gdk_pixbuf_fill (pixbuf, rgba);
           }
         else if (op->data.tint.alpha_spec->n_alphas == 1)
           {
@@ -3668,13 +3668,13 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
             rgba &= ~0xff;
             rgba |= op->data.tint.alpha_spec->alphas[0];
 
-            cdk_pixbuf_fill (pixbuf, rgba);
+            gdk_pixbuf_fill (pixbuf, rgba);
           }
         else
           {
             rgba = CDK_COLOR_RGBA (color);
 
-            cdk_pixbuf_fill (pixbuf, rgba);
+            gdk_pixbuf_fill (pixbuf, rgba);
 
             meta_gradient_add_alpha (pixbuf,
                                      op->data.tint.alpha_spec->alphas,
@@ -3737,8 +3737,8 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
 
     case META_DRAW_ICON:
       if (info->mini_icon &&
-          width <= cdk_pixbuf_get_width (info->mini_icon) &&
-          height <= cdk_pixbuf_get_height (info->mini_icon))
+          width <= gdk_pixbuf_get_width (info->mini_icon) &&
+          height <= gdk_pixbuf_get_height (info->mini_icon))
         pixbuf = scale_and_alpha_pixbuf (info->mini_icon,
                                          op->data.icon.alpha_spec,
                                          op->data.icon.fill_type,
@@ -3823,8 +3823,8 @@ draw_op_as_surface (const MetaDrawOp   *op,
 
     case META_DRAW_ICON:
       if (info->mini_icon &&
-          width <= cdk_pixbuf_get_width (info->mini_icon) &&
-          height <= cdk_pixbuf_get_height (info->mini_icon))
+          width <= gdk_pixbuf_get_width (info->mini_icon) &&
+          height <= gdk_pixbuf_get_height (info->mini_icon))
         surface = get_surface_from_pixbuf (info->mini_icon, op->data.icon.fill_type,
                                            width, height, FALSE, FALSE);
       else if (info->icon)
@@ -3882,10 +3882,10 @@ fill_env (MetaPositionExprEnv *env,
       env->frame_y_center = 0;
     }
 
-  env->mini_icon_width = info->mini_icon ? cdk_pixbuf_get_width (info->mini_icon) : 0;
-  env->mini_icon_height = info->mini_icon ? cdk_pixbuf_get_height (info->mini_icon) : 0;
-  env->icon_width = info->icon ? cdk_pixbuf_get_width (info->icon) : 0;
-  env->icon_height = info->icon ? cdk_pixbuf_get_height (info->icon) : 0;
+  env->mini_icon_width = info->mini_icon ? gdk_pixbuf_get_width (info->mini_icon) : 0;
+  env->mini_icon_height = info->mini_icon ? gdk_pixbuf_get_height (info->mini_icon) : 0;
+  env->icon_width = info->icon ? gdk_pixbuf_get_width (info->icon) : 0;
+  env->icon_height = info->icon ? gdk_pixbuf_get_height (info->icon) : 0;
 
   env->title_width = info->title_layout_width;
   env->title_height = info->title_layout_height;
@@ -4134,8 +4134,8 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
 
         if (op->data.image.pixbuf)
           {
-            env->object_width = cdk_pixbuf_get_width (op->data.image.pixbuf) / scale;
-            env->object_height = cdk_pixbuf_get_height (op->data.image.pixbuf) / scale;
+            env->object_width = gdk_pixbuf_get_width (op->data.image.pixbuf) / scale;
+            env->object_height = gdk_pixbuf_get_height (op->data.image.pixbuf) / scale;
           }
 
         rwidth = parse_size_unchecked (op->data.image.width, env) * scale;
@@ -5674,7 +5674,7 @@ meta_theme_load_image (MetaTheme  *theme,
 
           gint width, height;
 
-          if (cdk_pixbuf_get_file_info (full_path, &width, &height) == NULL)
+          if (gdk_pixbuf_get_file_info (full_path, &width, &height) == NULL)
             {
               g_free (full_path);
               return NULL;
@@ -5683,7 +5683,7 @@ meta_theme_load_image (MetaTheme  *theme,
           width *= scale;
           height *= scale;
 
-          pixbuf = cdk_pixbuf_new_from_file_at_size (full_path, width, height, error);
+          pixbuf = gdk_pixbuf_new_from_file_at_size (full_path, width, height, error);
 
           if (pixbuf == NULL)
             {
@@ -7136,10 +7136,10 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
         if (pixbuf == NULL)
           return;
 
-        composited = cdk_pixbuf_new (CDK_COLORSPACE_RGB,
-                                     cdk_pixbuf_get_has_alpha (pixbuf), 8,
-                                     cdk_pixbuf_get_width (pixbuf),
-                                     cdk_pixbuf_get_height (pixbuf));
+        composited = gdk_pixbuf_new (CDK_COLORSPACE_RGB,
+                                     gdk_pixbuf_get_has_alpha (pixbuf), 8,
+                                     gdk_pixbuf_get_width (pixbuf),
+                                     gdk_pixbuf_get_height (pixbuf));
 
         if (composited == NULL)
           {
@@ -7147,11 +7147,11 @@ draw_bg_solid_composite (const MetaTextureSpec *bg,
             return;
           }
 
-        cdk_pixbuf_composite_color (pixbuf,
+        gdk_pixbuf_composite_color (pixbuf,
                                     composited,
                                     0, 0,
-                                    cdk_pixbuf_get_width (pixbuf),
-                                    cdk_pixbuf_get_height (pixbuf),
+                                    gdk_pixbuf_get_width (pixbuf),
+                                    gdk_pixbuf_get_height (pixbuf),
                                     0.0, 0.0, /* offsets */
                                     1.0, 1.0, /* scale */
                                     CDK_INTERP_BILINEAR,
@@ -7230,13 +7230,13 @@ draw_bg_gradient_composite (const MetaTextureSpec *bg,
           }
 
         /* gradients always fill the entire target area */
-        g_assert (cdk_pixbuf_get_width (bg_pixbuf) == width);
-        g_assert (cdk_pixbuf_get_height (bg_pixbuf) == height);
+        g_assert (gdk_pixbuf_get_width (bg_pixbuf) == width);
+        g_assert (gdk_pixbuf_get_height (bg_pixbuf) == height);
 
-        composited = cdk_pixbuf_new (CDK_COLORSPACE_RGB,
-                                     cdk_pixbuf_get_has_alpha (bg_pixbuf), 8,
-                                     cdk_pixbuf_get_width (bg_pixbuf),
-                                     cdk_pixbuf_get_height (bg_pixbuf));
+        composited = gdk_pixbuf_new (CDK_COLORSPACE_RGB,
+                                     gdk_pixbuf_get_has_alpha (bg_pixbuf), 8,
+                                     gdk_pixbuf_get_width (bg_pixbuf),
+                                     gdk_pixbuf_get_height (bg_pixbuf));
 
         if (composited == NULL)
           {
@@ -7245,20 +7245,20 @@ draw_bg_gradient_composite (const MetaTextureSpec *bg,
             return;
           }
 
-        fg_width = cdk_pixbuf_get_width (fg_pixbuf);
-        fg_height = cdk_pixbuf_get_height (fg_pixbuf);
+        fg_width = gdk_pixbuf_get_width (fg_pixbuf);
+        fg_height = gdk_pixbuf_get_height (fg_pixbuf);
 
         /* If we wanted to be all cool we could deal with the
          * offsets and try to composite only in the clip rectangle,
          * but I just don't care enough to figure it out.
          */
 
-        cdk_pixbuf_composite (fg_pixbuf,
+        gdk_pixbuf_composite (fg_pixbuf,
                               composited,
                               x + (width - fg_width) * xalign,
                               y + (height - fg_height) * yalign,
-                              cdk_pixbuf_get_width (fg_pixbuf),
-                              cdk_pixbuf_get_height (fg_pixbuf),
+                              gdk_pixbuf_get_width (fg_pixbuf),
+                              gdk_pixbuf_get_height (fg_pixbuf),
                               0.0, 0.0, /* offsets */
                               1.0, 1.0, /* scale */
                               CDK_INTERP_BILINEAR,

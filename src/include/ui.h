@@ -137,7 +137,7 @@ void            meta_ui_window_menu_popup (MetaWindowMenu     *menu,
                                            guint32             timestamp);
 void            meta_ui_window_menu_free  (MetaWindowMenu     *menu);
 
-CdkPixbuf* meta_cdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
+CdkPixbuf* meta_gdk_pixbuf_get_from_pixmap (CdkPixbuf   *dest,
                                             Pixmap       xpixmap,
                                             int          src_x,
                                             int          src_y,
