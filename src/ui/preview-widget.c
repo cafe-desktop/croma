@@ -31,13 +31,13 @@
 static void     meta_preview_class_init    (MetaPreviewClass *klass);
 static void     meta_preview_init          (MetaPreview      *preview);
 
-static void meta_preview_get_preferred_width(GtkWidget *widget,
+static void meta_preview_get_preferred_width(CtkWidget *widget,
                                              gint *minimal, gint *natural);
-static void meta_preview_get_preferred_height(GtkWidget *widget,
+static void meta_preview_get_preferred_height(CtkWidget *widget,
                                               gint *minimal, gint *natural);
-static void     meta_preview_size_allocate (GtkWidget        *widget,
-                                            GtkAllocation    *allocation);
-static gboolean meta_preview_draw           (GtkWidget          *widget,
+static void     meta_preview_size_allocate (CtkWidget        *widget,
+                                            CtkAllocation    *allocation);
+static gboolean meta_preview_draw           (CtkWidget          *widget,
                                              cairo_t            *cr);
 static void     meta_preview_finalize      (GObject          *object);
 
@@ -50,9 +50,9 @@ static void
 meta_preview_class_init (MetaPreviewClass *class)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (class);
-  GtkWidgetClass *widget_class;
+  CtkWidgetClass *widget_class;
 
-  widget_class = (GtkWidgetClass*) class;
+  widget_class = (CtkWidgetClass*) class;
   meta_preview_parent_class = g_type_class_peek (GTK_TYPE_BIN);
 
   gobject_class->finalize = meta_preview_finalize;
@@ -101,7 +101,7 @@ meta_preview_init (MetaPreview *preview)
   preview->borders_cached = FALSE;
 }
 
-GtkWidget*
+CtkWidget*
 meta_preview_new (void)
 {
   MetaPreview *preview;
@@ -127,7 +127,7 @@ meta_preview_finalize (GObject *object)
 static void
 ensure_info (MetaPreview *preview)
 {
-  GtkWidget *widget;
+  CtkWidget *widget;
 
   widget = GTK_WIDGET (preview);
 
@@ -184,11 +184,11 @@ ensure_info (MetaPreview *preview)
 }
 
 static gboolean
-meta_preview_draw (GtkWidget *widget,
+meta_preview_draw (CtkWidget *widget,
                    cairo_t   *cr)
 {
   MetaPreview *preview;
-  GtkAllocation allocation;
+  CtkAllocation allocation;
   int border_width;
   int client_width;
   int client_height;
@@ -242,13 +242,13 @@ meta_preview_draw (GtkWidget *widget,
 }
 
 static void
-meta_preview_get_preferred_width (GtkWidget *widget,
+meta_preview_get_preferred_width (CtkWidget *widget,
                                   gint      *minimum,
                                   gint      *natural)
 {
   MetaPreview *preview;
   int border_width;
-  GtkWidget *child;
+  CtkWidget *child;
 
   preview = META_PREVIEW (widget);
 
@@ -278,13 +278,13 @@ meta_preview_get_preferred_width (GtkWidget *widget,
 }
 
 static void
-meta_preview_get_preferred_height (GtkWidget *widget,
+meta_preview_get_preferred_height (CtkWidget *widget,
                                    gint      *minimum,
                                    gint      *natural)
 {
   MetaPreview *preview;
   int border_width;
-  GtkWidget *child;
+  CtkWidget *child;
 
   preview = META_PREVIEW (widget);
 
@@ -314,13 +314,13 @@ meta_preview_get_preferred_height (GtkWidget *widget,
 }
 
 static void
-meta_preview_size_allocate (GtkWidget         *widget,
-                            GtkAllocation     *allocation)
+meta_preview_size_allocate (CtkWidget         *widget,
+                            CtkAllocation     *allocation)
 {
   MetaPreview *preview;
   int border_width;
-  GtkAllocation widget_allocation, child_allocation;
-  GtkWidget *child;
+  CtkAllocation widget_allocation, child_allocation;
+  CtkWidget *child;
 
   preview = META_PREVIEW (widget);
 
@@ -428,7 +428,7 @@ meta_preview_get_icon (void)
 
   if (default_icon == NULL)
     {
-      GtkIconTheme *theme;
+      CtkIconTheme *theme;
       gboolean icon_exists;
 
       theme = ctk_icon_theme_get_default ();
@@ -461,7 +461,7 @@ meta_preview_get_mini_icon (void)
 
   if (default_icon == NULL)
     {
-      GtkIconTheme *theme;
+      CtkIconTheme *theme;
       gboolean icon_exists;
 
       theme = ctk_icon_theme_get_default ();

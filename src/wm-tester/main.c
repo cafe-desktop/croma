@@ -114,10 +114,10 @@ evil_timeout (gpointer data)
   i = 0;
   while (i < n_windows)
     {
-      GtkWidget *w;
-      GtkWidget *c;
+      CtkWidget *w;
+      CtkWidget *c;
       int t;
-      GtkWidget *parent;
+      CtkWidget *parent;
 
       w = ctk_window_new (GTK_WINDOW_TOPLEVEL);
 
@@ -162,7 +162,7 @@ evil_timeout (gpointer data)
       i = 0;
       while (i < n_windows)
         {
-          GtkWidget *w;
+          CtkWidget *w;
 
           w = g_slist_nth_data (evil_windows,
                                 g_random_int_range (0, len));
@@ -198,8 +198,8 @@ set_up_icon_windows (void)
   i = 0;
   while (i < n_windows)
     {
-      GtkWidget *w;
-      GtkWidget *c;
+      CtkWidget *w;
+      CtkWidget *c;
       GList *icons;
       GdkPixbuf *pix;
       int size  = 0;

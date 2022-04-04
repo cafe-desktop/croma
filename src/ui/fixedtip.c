@@ -27,23 +27,23 @@
 #include "ui.h"
 
 /**
- * The floating rectangle.  This is a GtkWindow, and it contains
+ * The floating rectangle.  This is a CtkWindow, and it contains
  * the "label" widget, below.
  */
-static GtkWidget *tip = NULL;
+static CtkWidget *tip = NULL;
 
 /**
  * The actual text that gets displayed.
  */
-static GtkWidget *label = NULL;
+static CtkWidget *label = NULL;
 
 static GdkScreen *screen = NULL;
 
 static gboolean
-draw_handler (GtkWidget *widget,
+draw_handler (CtkWidget *widget,
               cairo_t   *cr)
 {
-  GtkStyleContext *context;
+  CtkStyleContext *context;
   gint width;
   gint height;
 

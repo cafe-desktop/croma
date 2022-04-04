@@ -300,7 +300,7 @@ color_composite (const GdkRGBA *bg,
  * \param border The border whose fields should be reset.
  */
 static void
-init_border (GtkBorder *border)
+init_border (CtkBorder *border)
 {
   border->top = -1;
   border->bottom = -1;
@@ -357,7 +357,7 @@ meta_frame_layout_new  (void)
  *
  */
 static gboolean
-validate_border (const GtkBorder *border,
+validate_border (const CtkBorder *border,
                  const char     **bad)
 {
   *bad = NULL;
@@ -405,7 +405,7 @@ validate_geometry_value (int         val,
 }
 
 static gboolean
-validate_geometry_border (const GtkBorder *border,
+validate_geometry_border (const CtkBorder *border,
                           const char      *name,
                           GError         **error)
 {
@@ -1105,7 +1105,7 @@ meta_gradient_spec_new (MetaGradientType type)
 static cairo_pattern_t *
 create_cairo_pattern_from_gradient_spec (const MetaGradientSpec      *spec,
                                          const MetaAlphaGradientSpec *alpha_spec,
-                                         GtkStyleContext             *context)
+                                         CtkStyleContext             *context)
 {
   gint n_colors;
   cairo_pattern_t *pattern;
@@ -1188,7 +1188,7 @@ void
 meta_gradient_spec_render (const MetaGradientSpec      *spec,
                            const MetaAlphaGradientSpec *alpha_spec,
                            cairo_t                     *cr,
-                           GtkStyleContext             *context,
+                           CtkStyleContext             *context,
                            gint                         x,
                            gint                         y,
                            gint                         width,
@@ -1424,7 +1424,7 @@ meta_color_spec_new_from_string (const char *str,
         {
           g_set_error (err, META_THEME_ERROR,
                        META_THEME_ERROR_FAILED,
-                       _("Gtk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not fit the format"),
+                       _("Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not fit the format"),
                        str);
           return NULL;
         }
@@ -1457,8 +1457,8 @@ meta_color_spec_new_from_string (const char *str,
       const char *bracket;
       const char *end_bracket;
       char *tmp;
-      GtkStateFlags state;
-      MetaGtkColorComponent component;
+      CtkStateFlags state;
+      MetaCtkColorComponent component;
 
       bracket = str;
       while (*bracket && *bracket != '[')
@@ -1664,8 +1664,8 @@ meta_color_spec_new_from_string (const char *str,
 }
 
 MetaColorSpec*
-meta_color_spec_new_ctk (MetaGtkColorComponent component,
-                         GtkStateFlags         state)
+meta_color_spec_new_ctk (MetaCtkColorComponent component,
+                         CtkStateFlags         state)
 {
   MetaColorSpec *spec;
 
@@ -1678,8 +1678,8 @@ meta_color_spec_new_ctk (MetaGtkColorComponent component,
 }
 
 static void
-get_background_color_real (GtkStyleContext *context,
-                           GtkStateFlags    state,
+get_background_color_real (CtkStyleContext *context,
+                           CtkStateFlags    state,
                            GdkRGBA         *color)
 {
   GdkRGBA *c;
@@ -1697,8 +1697,8 @@ get_background_color_real (GtkStyleContext *context,
 }
 
 static void
-get_background_color (GtkStyleContext *context,
-                      GtkStateFlags    state,
+get_background_color (CtkStyleContext *context,
+                      CtkStateFlags    state,
                       GdkRGBA         *color)
 {
   GdkRGBA empty = { 0.0, 0.0, 0.0, 0.0 };
@@ -1708,8 +1708,8 @@ get_background_color (GtkStyleContext *context,
 
   if (gdk_rgba_equal (&rgba, &empty))
     {
-      GtkWidget *toplevel;
-      GtkStyleContext *tmp;
+      CtkWidget *toplevel;
+      CtkStyleContext *tmp;
 
       toplevel = ctk_window_new (GTK_WINDOW_TOPLEVEL);
       tmp = ctk_widget_get_style_context (toplevel);
@@ -1726,8 +1726,8 @@ get_background_color (GtkStyleContext *context,
 #define LIGHTNESS_MULT 1.3
 #define DARKNESS_MULT  0.7
 void
-meta_ctk_style_get_light_color (GtkStyleContext *style,
-                                GtkStateFlags    state,
+meta_ctk_style_get_light_color (CtkStyleContext *style,
+                                CtkStateFlags    state,
                                 GdkRGBA         *color)
 {
   get_background_color (style, state, color);
@@ -1735,8 +1735,8 @@ meta_ctk_style_get_light_color (GtkStyleContext *style,
 }
 
 void
-meta_ctk_style_get_dark_color (GtkStyleContext *style,
-                               GtkStateFlags    state,
+meta_ctk_style_get_dark_color (CtkStyleContext *style,
+                               CtkStateFlags    state,
                                GdkRGBA         *color)
 {
   get_background_color (style, state, color);
@@ -1745,9 +1745,9 @@ meta_ctk_style_get_dark_color (GtkStyleContext *style,
 
 static void
 meta_set_color_from_style (GdkRGBA               *color,
-                           GtkStyleContext       *context,
-                           GtkStateFlags          state,
-                           MetaGtkColorComponent  component)
+                           CtkStyleContext       *context,
+                           CtkStateFlags          state,
+                           MetaCtkColorComponent  component)
 {
   GdkRGBA other;
 
@@ -1795,7 +1795,7 @@ meta_set_color_from_style (GdkRGBA               *color,
 
 static void
 meta_set_custom_color_from_style (GdkRGBA         *color,
-                                  GtkStyleContext *context,
+                                  CtkStyleContext *context,
                                   char            *color_name,
                                   MetaColorSpec   *fallback)
 {
@@ -1805,7 +1805,7 @@ meta_set_custom_color_from_style (GdkRGBA         *color,
 
 void
 meta_color_spec_render (MetaColorSpec *spec,
-                        GtkStyleContext *style,
+                        CtkStyleContext *style,
                         GdkRGBA         *color)
 {
   g_return_if_fail (spec != NULL);
@@ -3596,7 +3596,7 @@ scale_and_alpha_pixbuf (GdkPixbuf             *src,
 
 static GdkPixbuf*
 draw_op_as_pixbuf (const MetaDrawOp    *op,
-                   GtkStyleContext     *style,
+                   CtkStyleContext     *style,
                    const MetaDrawInfo  *info,
                    int                  width,
                    int                  height)
@@ -3767,7 +3767,7 @@ draw_op_as_pixbuf (const MetaDrawOp    *op,
 
 static cairo_surface_t *
 draw_op_as_surface (const MetaDrawOp   *op,
-                    GtkStyleContext    *style,
+                    CtkStyleContext    *style,
                     const MetaDrawInfo *info,
                     gdouble             width,
                     gdouble             height)
@@ -3905,7 +3905,7 @@ fill_env (MetaPositionExprEnv *env,
  */
 static void
 meta_draw_op_draw_with_env (const MetaDrawOp    *op,
-                            GtkStyleContext     *style_ctk,
+                            CtkStyleContext     *style_ctk,
                             cairo_t             *cr,
                             const MetaDrawInfo  *info,
                             MetaRectangle        rect,
@@ -4425,7 +4425,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
 
 void
 meta_draw_op_draw_with_style (const MetaDrawOp    *op,
-                              GtkStyleContext     *style_ctk,
+                              CtkStyleContext     *style_ctk,
                               cairo_t             *cr,
                               const MetaDrawInfo  *info,
                               MetaRectangle        logical_region)
@@ -4444,7 +4444,7 @@ meta_draw_op_draw_with_style (const MetaDrawOp    *op,
 
 void
 meta_draw_op_draw (const MetaDrawOp    *op,
-                   GtkWidget           *widget,
+                   CtkWidget           *widget,
                    cairo_t             *cr,
                    const MetaDrawInfo  *info,
                    MetaRectangle        logical_region)
@@ -4504,7 +4504,7 @@ meta_draw_op_list_unref (MetaDrawOpList *op_list)
 
 void
 meta_draw_op_list_draw_with_style  (const MetaDrawOpList *op_list,
-                                    GtkStyleContext      *style_ctk,
+                                    CtkStyleContext      *style_ctk,
                                     cairo_t              *cr,
                                     const MetaDrawInfo   *info,
                                     MetaRectangle         rect)
@@ -4561,7 +4561,7 @@ meta_draw_op_list_draw_with_style  (const MetaDrawOpList *op_list,
 
 void
 meta_draw_op_list_draw  (const MetaDrawOpList *op_list,
-                         GtkWidget            *widget,
+                         CtkWidget            *widget,
                          cairo_t              *cr,
                          const MetaDrawInfo   *info,
                          MetaRectangle         rect)
@@ -4958,7 +4958,7 @@ get_button_rect (MetaButtonType           type,
 
 void
 meta_frame_style_draw_with_style (MetaFrameStyle          *style,
-                                  GtkStyleContext         *style_ctk,
+                                  CtkStyleContext         *style_ctk,
                                   cairo_t                 *cr,
                                   const MetaFrameGeometry *fgeom,
                                   int                      client_width,
@@ -5198,7 +5198,7 @@ meta_frame_style_draw_with_style (MetaFrameStyle          *style,
 
 void
 meta_frame_style_draw (MetaFrameStyle          *style,
-                       GtkWidget               *widget,
+                       CtkWidget               *widget,
                        cairo_t                 *cr,
                        const MetaFrameGeometry *fgeom,
                        int                      client_width,
@@ -5829,7 +5829,7 @@ meta_theme_get_title_scale (MetaTheme     *theme,
 
 void
 meta_theme_draw_frame (MetaTheme              *theme,
-                       GtkStyleContext        *style_ctk,
+                       CtkStyleContext        *style_ctk,
                        cairo_t                *cr,
                        MetaFrameType           type,
                        MetaFrameFlags          flags,
@@ -5874,7 +5874,7 @@ meta_theme_draw_frame (MetaTheme              *theme,
 
 void
 meta_theme_draw_frame_by_name (MetaTheme              *theme,
-                               GtkWidget              *widget,
+                               CtkWidget              *widget,
                                cairo_t                *cr,
                                const gchar             *style_name,
                                MetaFrameFlags          flags,
@@ -6236,14 +6236,14 @@ meta_theme_lookup_color_constant (MetaTheme   *theme,
 
 
 PangoFontDescription*
-meta_ctk_widget_get_font_desc (GtkWidget *widget,
+meta_ctk_widget_get_font_desc (CtkWidget *widget,
                                double     scale,
 			       const PangoFontDescription *override)
 {
   PangoFontDescription *font_desc;
 
-  GtkStyleContext *style = ctk_widget_get_style_context (widget);
-  GtkStateFlags state = ctk_widget_get_state_flags (widget);
+  CtkStyleContext *style = ctk_widget_get_style_context (widget);
+  CtkStateFlags state = ctk_widget_get_state_flags (widget);
   ctk_style_context_get(style, state, GTK_STYLE_PROPERTY_FONT, &font_desc, NULL);
   font_desc = pango_font_description_copy (font_desc);
 
@@ -6282,7 +6282,7 @@ meta_pango_font_desc_get_text_height (const PangoFontDescription *font_desc,
   return retval;
 }
 
-MetaGtkColorComponent
+MetaCtkColorComponent
 meta_color_component_from_string (const char *str)
 {
   if (strcmp ("fg", str) == 0)
@@ -6306,7 +6306,7 @@ meta_color_component_from_string (const char *str)
 }
 
 const char*
-meta_color_component_to_string (MetaGtkColorComponent component)
+meta_color_component_to_string (MetaCtkColorComponent component)
 {
   switch (component)
     {
@@ -6729,7 +6729,7 @@ meta_gradient_type_to_string (MetaGradientType type)
   return "<unknown>";
 }
 
-GtkStateFlags
+CtkStateFlags
 meta_ctk_state_from_string (const char *str)
 {
   if (g_ascii_strcasecmp ("normal", str) == 0)
@@ -6752,7 +6752,7 @@ meta_ctk_state_from_string (const char *str)
     return -1; /* hack */
 }
 
-GtkShadowType
+CtkShadowType
 meta_ctk_shadow_from_string (const char *str)
 {
   if (strcmp ("none", str) == 0)
@@ -6770,7 +6770,7 @@ meta_ctk_shadow_from_string (const char *str)
 }
 
 const char*
-meta_ctk_shadow_to_string (GtkShadowType shadow)
+meta_ctk_shadow_to_string (CtkShadowType shadow)
 {
   switch (shadow)
     {
@@ -6789,7 +6789,7 @@ meta_ctk_shadow_to_string (GtkShadowType shadow)
   return "<unknown>";
 }
 
-GtkArrowType
+CtkArrowType
 meta_ctk_arrow_from_string (const char *str)
 {
   if (strcmp ("up", str) == 0)
@@ -6807,7 +6807,7 @@ meta_ctk_arrow_from_string (const char *str)
 }
 
 const char*
-meta_ctk_arrow_to_string (GtkArrowType arrow)
+meta_ctk_arrow_to_string (CtkArrowType arrow)
 {
   switch (arrow)
     {
@@ -7081,7 +7081,7 @@ static void
 draw_bg_solid_composite (const MetaTextureSpec *bg,
                          const MetaTextureSpec *fg,
                          double                 alpha,
-                         GtkWidget             *widget,
+                         CtkWidget             *widget,
                          GdkDrawable           *drawable,
                          const GdkRectangle    *clip,
                          MetaTextureDrawMode    mode,
@@ -7188,7 +7188,7 @@ static void
 draw_bg_gradient_composite (const MetaTextureSpec *bg,
                             const MetaTextureSpec *fg,
                             double                 alpha,
-                            GtkWidget             *widget,
+                            CtkWidget             *widget,
                             GdkDrawable           *drawable,
                             const GdkRectangle    *clip,
                             MetaTextureDrawMode    mode,

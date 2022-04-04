@@ -29,8 +29,8 @@
 
 struct _MetaResizePopup
 {
-  GtkWidget *size_window;
-  GtkWidget *size_label;
+  CtkWidget *size_window;
+  CtkWidget *size_label;
   Display *display;
   int screen_number;
 
@@ -70,7 +70,7 @@ meta_ui_resize_popup_free (MetaResizePopup *popup)
 static void
 ensure_size_window (MetaResizePopup *popup)
 {
-  GtkWidget *frame;
+  CtkWidget *frame;
 
   if (popup->size_window)
     return;

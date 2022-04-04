@@ -58,7 +58,7 @@ struct _MenuData {
 	MetaMenuOp op;
 };
 
-static void activate_cb(GtkWidget* menuitem, gpointer data);
+static void activate_cb(CtkWidget* menuitem, gpointer data);
 
 static MenuItem menuitems[] = {
 	/* Translators: Translate this string the same way as you do in libwnck! */
@@ -100,9 +100,9 @@ static MenuItem menuitems[] = {
 	{META_MENU_OP_DELETE, MENU_ITEM_IMAGE, CROMA_STOCK_DELETE, FALSE, N_("_Close")}
 };
 
-static void popup_position_func(GtkMenu* menu, gint* x, gint* y, gboolean* push_in, gpointer user_data)
+static void popup_position_func(CtkMenu* menu, gint* x, gint* y, gboolean* push_in, gpointer user_data)
 {
-	GtkRequisition req;
+	CtkRequisition req;
 	GdkPoint* pos;
 
 	pos = user_data;
@@ -122,7 +122,7 @@ static void popup_position_func(GtkMenu* menu, gint* x, gint* y, gboolean* push_
 	*y = CLAMP (*y, 0, MAX(0, HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - req.height));
 }
 
-static void menu_closed(GtkMenu* widget, gpointer data)
+static void menu_closed(CtkMenu* widget, gpointer data)
 {
 	MetaWindowMenu *menu;
 
@@ -141,7 +141,7 @@ static void menu_closed(GtkMenu* widget, gpointer data)
 	/* menu may now be freed */
 }
 
-static void activate_cb(GtkWidget* menuitem, gpointer data)
+static void activate_cb(CtkWidget* menuitem, gpointer data)
 {
   MenuData* md;
 
@@ -254,13 +254,13 @@ get_workspace_name_with_accel (Display *display,
     }
 }
 
-static GtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
+static CtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
 {
 	unsigned int key;
 	MetaVirtualModifier mods;
 	const char* i18n_label;
-	GtkWidget* mi;
-	GtkWidget* accel_label;
+	CtkWidget* mi;
+	CtkWidget* accel_label;
 
 	if (menuitem->type == MENU_ITEM_NORMAL)
 	{
@@ -268,7 +268,7 @@ static GtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
 	}
 	else if (menuitem->type == MENU_ITEM_IMAGE)
 	{
-		GtkWidget* image = ctk_image_new_from_icon_name(menuitem->stock_id, GTK_ICON_SIZE_MENU);
+		CtkWidget* image = ctk_image_new_from_icon_name(menuitem->stock_id, GTK_ICON_SIZE_MENU);
 
 		mi = ctk_image_menu_item_new();
 
@@ -349,7 +349,7 @@ meta_window_menu_new   (MetaFrames         *frames,
       MenuItem menuitem = menuitems[i];
       if (ops & menuitem.op || menuitem.op == 0)
         {
-          GtkWidget *mi;
+          CtkWidget *mi;
           MenuData *md;
           unsigned int key;
           MetaVirtualModifier mods;
@@ -379,7 +379,7 @@ meta_window_menu_new   (MetaFrames         *frames,
                   Window xroot;
                   GdkScreen *screen;
                   GdkWindow *window;
-                  GtkWidget *submenu;
+                  CtkWidget *submenu;
                   int j;
 
                   MenuItem to_another_workspace = {
@@ -411,7 +411,7 @@ meta_window_menu_new   (MetaFrames         *frames,
                       unsigned int key;
                       MetaVirtualModifier mods;
                       MenuItem moveitem;
-                      GtkWidget *submi;
+                      CtkWidget *submi;
 
                       meta_core_get_menu_accelerator (META_MENU_OP_WORKSPACES,
                           j + 1,
@@ -501,7 +501,7 @@ void meta_window_menu_popup(MetaWindowMenu* menu, int root_x, int root_y, int bu
 	ctk_menu_popup(GTK_MENU (menu->menu), NULL, NULL, popup_position_func, pt, button, timestamp);
 
     if (!ctk_widget_get_visible (menu->menu))
-      meta_warning("GtkMenu failed to grab the pointer\n");
+      meta_warning("CtkMenu failed to grab the pointer\n");
 }
 
 void meta_window_menu_free(MetaWindowMenu* menu)

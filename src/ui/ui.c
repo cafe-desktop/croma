@@ -137,7 +137,7 @@ maybe_redirect_mouse_event (XEvent *xevent)
     case ButtonRelease:
       if (xevent->type == ButtonPress)
         {
-          GtkSettings *settings = ctk_settings_get_default ();
+          CtkSettings *settings = ctk_settings_get_default ();
           int double_click_time;
           int double_click_distance;
 
@@ -598,7 +598,7 @@ meta_ui_pop_delay_exposes  (MetaUI *ui)
 static GdkPixbuf *
 load_default_window_icon (int size, int scale)
 {
-  GtkIconTheme *theme = ctk_icon_theme_get_default ();
+  CtkIconTheme *theme = ctk_icon_theme_get_default ();
   const char *icon_name;
 
   if (ctk_icon_theme_has_icon (theme, META_DEFAULT_ICON_NAME))
@@ -675,7 +675,7 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
                                  MetaFrameBorders *borders)
 {
   int text_height;
-  GtkStyleContext *style = NULL;
+  CtkStyleContext *style = NULL;
   PangoFontDescription *free_font_desc = NULL;
   PangoContext *context;
   const PangoFontDescription *font_desc;
@@ -689,7 +689,7 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
         {
           GdkDisplay *display = gdk_x11_lookup_xdisplay (ui->xdisplay);
           GdkScreen *screen = gdk_display_get_default_screen (display);
-          GtkWidgetPath *widget_path;
+          CtkWidgetPath *widget_path;
 
           style = ctk_style_context_new ();
           ctk_style_context_set_screen (style, screen);
@@ -925,7 +925,7 @@ typedef struct {
 int meta_ui_get_drag_threshold(MetaUI* ui)
 {
 	int threshold = 8;
-	GtkSettings* settings = ctk_widget_get_settings(GTK_WIDGET(ui->frames));
+	CtkSettings* settings = ctk_widget_get_settings(GTK_WIDGET(ui->frames));
 
 	g_object_get(G_OBJECT(settings), "ctk-dnd-drag-threshold", &threshold, NULL);
 

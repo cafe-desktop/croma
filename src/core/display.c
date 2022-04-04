@@ -1499,7 +1499,7 @@ static gboolean maybe_send_event_to_ctk(MetaDisplay* display, XEvent* xevent)
 
 			if (xevent->type == ButtonPress)
 			{
-				GtkSettings* settings = ctk_settings_get_default();
+				CtkSettings* settings = ctk_settings_get_default();
 
 				int double_click_time;
 				int double_click_distance;
@@ -1612,7 +1612,7 @@ mouse_event_is_in_tab_popup (MetaDisplay *display,
                                             event_x, event_y,
                                             &x, &y, &child1);
 
-      GtkWidget *popup_widget = meta_ui_tab_popup_get_widget (screen->tab_popup);
+      CtkWidget *popup_widget = meta_ui_tab_popup_get_widget (screen->tab_popup);
       if (ok1 && popup_widget != NULL) 
         {
           GdkWindow * window = ctk_widget_get_window (popup_widget);

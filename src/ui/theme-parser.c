@@ -1534,7 +1534,7 @@ parse_border (GMarkupParseContext  *context,
   int bottom_val;
   int left_val;
   int right_val;
-  GtkBorder *border;
+  CtkBorder *border;
 
   if (!locate_attributes (context, element_name, attribute_names, attribute_values,
                           error,
@@ -2340,9 +2340,9 @@ parse_draw_op_element (GMarkupParseContext  *context,
       const char *height;
       const char *filled;
       gboolean filled_val;
-      GtkStateType state_val;
-      GtkShadowType shadow_val;
-      GtkArrowType arrow_val;
+      CtkStateType state_val;
+      CtkShadowType shadow_val;
+      CtkArrowType arrow_val;
 
       if (!locate_attributes (context, element_name, attribute_names, attribute_values,
                               error,
@@ -2430,8 +2430,8 @@ parse_draw_op_element (GMarkupParseContext  *context,
       const char *y;
       const char *width;
       const char *height;
-      GtkStateType state_val;
-      GtkShadowType shadow_val;
+      CtkStateType state_val;
+      CtkShadowType shadow_val;
 
       if (!locate_attributes (context, element_name, attribute_names, attribute_values,
                               error,
@@ -2498,7 +2498,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
       const char *x;
       const char *y1;
       const char *y2;
-      GtkStateType state_val;
+      CtkStateType state_val;
 
       if (!locate_attributes (context, element_name, attribute_names, attribute_values,
                               error,

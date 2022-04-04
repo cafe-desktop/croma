@@ -216,8 +216,8 @@ reload_kwm_win_icon (MetaWindow    *window,
 }
 
 static gboolean
-ctk_border_equal (GtkBorder *a,
-                  GtkBorder *b)
+ctk_border_equal (CtkBorder *a,
+                  CtkBorder *b)
 {
   return (a->left == b->left &&
           a->right == b->right &&
@@ -227,7 +227,7 @@ ctk_border_equal (GtkBorder *a,
 
 static void
 meta_window_set_custom_frame_extents (MetaWindow *window,
-                                      GtkBorder  *extents)
+                                      CtkBorder  *extents)
 {
   if (extents)
     {
@@ -263,7 +263,7 @@ reload_ctk_frame_extents (MetaWindow    *window,
         }
       else
         {
-          GtkBorder extents;
+          CtkBorder extents;
           extents.left   = (int)value->v.cardinal_list.cardinals[0];
           extents.right  = (int)value->v.cardinal_list.cardinals[1];
           extents.top    = (int)value->v.cardinal_list.cardinals[2];
