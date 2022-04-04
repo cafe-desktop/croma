@@ -32,10 +32,10 @@
 
 static void
 get_fallback_icons (MetaScreen     *screen,
-                    CdkPixbuf     **iconp,
+                    GdkPixbuf     **iconp,
                     int             ideal_width,
                     int             ideal_height,
-                    CdkPixbuf     **mini_iconp,
+                    GdkPixbuf     **mini_iconp,
                     int             ideal_mini_width,
                     int             ideal_mini_height)
 {
@@ -323,13 +323,13 @@ get_pixmap_geometry (MetaDisplay *display,
     *d = depth;
 }
 
-static CdkPixbuf*
-apply_mask (CdkPixbuf *pixbuf,
-            CdkPixbuf *mask)
+static GdkPixbuf*
+apply_mask (GdkPixbuf *pixbuf,
+            GdkPixbuf *mask)
 {
   int w, h;
   int i, j;
-  CdkPixbuf *with_alpha;
+  GdkPixbuf *with_alpha;
   guchar *src;
   guchar *dest;
   int src_stride;
@@ -376,15 +376,15 @@ static gboolean
 try_pixmap_and_mask (MetaDisplay *display,
                      Pixmap       src_pixmap,
                      Pixmap       src_mask,
-                     CdkPixbuf  **iconp,
+                     GdkPixbuf  **iconp,
                      int          ideal_width,
                      int          ideal_height,
-                     CdkPixbuf  **mini_iconp,
+                     GdkPixbuf  **mini_iconp,
                      int          ideal_mini_width,
                      int          ideal_mini_height)
 {
-  CdkPixbuf *unscaled = NULL;
-  CdkPixbuf *mask = NULL;
+  GdkPixbuf *unscaled = NULL;
+  GdkPixbuf *mask = NULL;
   int w, h;
 
   if (src_pixmap == None)
@@ -412,7 +412,7 @@ try_pixmap_and_mask (MetaDisplay *display,
 
   if (mask)
     {
-      CdkPixbuf *masked;
+      GdkPixbuf *masked;
 
       masked = apply_mask (unscaled, mask);
       g_object_unref (G_OBJECT (unscaled));
@@ -611,8 +611,8 @@ meta_icon_cache_get_icon_invalidated (MetaIconCache *icon_cache)
 static void
 replace_cache (MetaIconCache *icon_cache,
                IconOrigin     origin,
-               CdkPixbuf     *new_icon,
-               CdkPixbuf     *new_mini_icon)
+               GdkPixbuf     *new_icon,
+               GdkPixbuf     *new_mini_icon)
 {
   clear_icon_cache (icon_cache, FALSE);
 
@@ -631,15 +631,15 @@ replace_cache (MetaIconCache *icon_cache,
 #endif
 }
 
-static CdkPixbuf*
+static GdkPixbuf*
 scaled_from_pixdata (guchar *pixdata,
                      int     w,
                      int     h,
                      int     new_w,
                      int     new_h)
 {
-  CdkPixbuf *src;
-  CdkPixbuf *dest;
+  GdkPixbuf *src;
+  GdkPixbuf *dest;
 
   src = gdk_pixbuf_new_from_data (pixdata,
                                   CDK_COLORSPACE_RGB,
@@ -654,7 +654,7 @@ scaled_from_pixdata (guchar *pixdata,
 
   if (w != h)
     {
-      CdkPixbuf *tmp;
+      GdkPixbuf *tmp;
       int size;
 
       size = MAX (w, h);
@@ -693,10 +693,10 @@ meta_read_icons (MetaScreen     *screen,
                  MetaIconCache  *icon_cache,
                  Pixmap          wm_hints_pixmap,
                  Pixmap          wm_hints_mask,
-                 CdkPixbuf     **iconp,
+                 GdkPixbuf     **iconp,
                  int             ideal_width,
                  int             ideal_height,
-                 CdkPixbuf     **mini_iconp,
+                 GdkPixbuf     **mini_iconp,
                  int             ideal_mini_width,
                  int             ideal_mini_height)
 {

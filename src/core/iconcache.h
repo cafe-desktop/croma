@@ -70,10 +70,10 @@ gboolean meta_read_icons         (MetaScreen     *screen,
                                   MetaIconCache  *icon_cache,
                                   Pixmap          wm_hints_pixmap,
                                   Pixmap          wm_hints_mask,
-                                  CdkPixbuf     **iconp,
+                                  GdkPixbuf     **iconp,
                                   int             ideal_width,
                                   int             ideal_height,
-                                  CdkPixbuf     **mini_iconp,
+                                  GdkPixbuf     **mini_iconp,
                                   int             ideal_mini_width,
                                   int             ideal_mini_height);
 

@@ -218,7 +218,7 @@ int
 main (int argc, char **argv)
 {
   GList *list;
-  CdkPixbuf *pixbuf;
+  GdkPixbuf *pixbuf;
   GError *err;
 
   ctk_init (&argc, &argv);

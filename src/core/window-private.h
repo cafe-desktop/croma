@@ -109,8 +109,8 @@ struct _MetaWindow
   char *title;
 
   char *icon_name;
-  CdkPixbuf *icon;
-  CdkPixbuf *mini_icon;
+  GdkPixbuf *icon;
+  GdkPixbuf *mini_icon;
   MetaIconCache icon_cache;
   Pixmap wm_hints_pixmap;
   Pixmap wm_hints_mask;

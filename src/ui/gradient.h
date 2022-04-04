@@ -43,17 +43,17 @@ typedef enum
   META_GRADIENT_LAST
 } MetaGradientType;
 
-CdkPixbuf* meta_gradient_create_simple     (int               width,
+GdkPixbuf* meta_gradient_create_simple     (int               width,
                                             int               height,
                                             const CdkRGBA    *from,
                                             const CdkRGBA    *to,
                                             MetaGradientType  style);
-CdkPixbuf* meta_gradient_create_multi      (int               width,
+GdkPixbuf* meta_gradient_create_multi      (int               width,
                                             int               height,
                                             const CdkRGBA    *colors,
                                             int               n_colors,
                                             MetaGradientType  style);
-CdkPixbuf* meta_gradient_create_interwoven (int               width,
+GdkPixbuf* meta_gradient_create_interwoven (int               width,
                                             int               height,
                                             const CdkRGBA     colors1[2],
                                             int               thickness1,
@@ -64,7 +64,7 @@ CdkPixbuf* meta_gradient_create_interwoven (int               width,
 /* Generate an alpha gradient and multiply it with the existing alpha
  * channel of the given pixbuf
  */
-void meta_gradient_add_alpha (CdkPixbuf       *pixbuf,
+void meta_gradient_add_alpha (GdkPixbuf       *pixbuf,
                               const guchar    *alphas,
                               int              n_alphas,
                               MetaGradientType type);

@@ -49,7 +49,7 @@ struct _TabEntry
   char            *title;
   gint             grid_left;
   gint             grid_top;
-  CdkPixbuf       *icon, *dimmed_icon;
+  GdkPixbuf       *icon, *dimmed_icon;
   cairo_surface_t *win_surface;
   CtkWidget       *widget;
   CdkRectangle     rect;
@@ -69,7 +69,7 @@ struct _MetaTabPopup
   gint border;
 };
 
-static CtkWidget* selectable_image_new (CdkPixbuf *pixbuf, cairo_surface_t *win_surface);
+static CtkWidget* selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface);
 static void       select_image         (CtkWidget *widget);
 static void       unselect_image       (CtkWidget *widget);
 
@@ -133,13 +133,13 @@ popup_window_screen_changed (CtkWidget *widget,
   ctk_widget_set_visual(widget, visual);
 }
 
-static CdkPixbuf*
-dimm_icon (CdkPixbuf *pixbuf)
+static GdkPixbuf*
+dimm_icon (GdkPixbuf *pixbuf)
 {
   int x, y, pixel_stride, row_stride;
   guchar *row, *pixels;
   int w, h;
-  CdkPixbuf *dimmed_pixbuf;
+  GdkPixbuf *dimmed_pixbuf;
 
   if (gdk_pixbuf_get_has_alpha (pixbuf))
     {
@@ -749,7 +749,7 @@ struct _MetaSelectImageClass
 static GType meta_select_image_get_type (void) G_GNUC_CONST;
 
 static CtkWidget*
-selectable_image_new (CdkPixbuf *pixbuf, cairo_surface_t *win_surface)
+selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface)
 {
   CtkWidget *widget;
 

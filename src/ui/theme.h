@@ -296,8 +296,8 @@ struct _MetaAlphaGradientSpec
 
 struct _MetaDrawInfo
 {
-  CdkPixbuf   *mini_icon;
-  CdkPixbuf   *icon;
+  GdkPixbuf   *mini_icon;
+  GdkPixbuf   *icon;
   PangoLayout *title_layout;
   int title_layout_width;
   int title_layout_height;
@@ -491,14 +491,14 @@ struct _MetaDrawOp
     struct {
       MetaColorSpec *colorize_spec;
       MetaAlphaGradientSpec *alpha_spec;
-      CdkPixbuf *pixbuf;
+      GdkPixbuf *pixbuf;
       MetaDrawSpec *x;
       MetaDrawSpec *y;
       MetaDrawSpec *width;
       MetaDrawSpec *height;
 
       guint32 colorize_cache_pixel;
-      CdkPixbuf *colorize_cache_pixbuf;
+      GdkPixbuf *colorize_cache_pixbuf;
       MetaImageFillType fill_type;
       unsigned int vertical_stripes : 1;
       unsigned int horizontal_stripes : 1;
@@ -980,8 +980,8 @@ void meta_frame_style_draw (MetaFrameStyle          *style,
                             PangoLayout             *title_layout,
                             int                      text_height,
                             MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                            CdkPixbuf               *mini_icon,
-                            CdkPixbuf               *icon);
+                            GdkPixbuf               *mini_icon,
+                            GdkPixbuf               *icon);
 
 
 void meta_frame_style_draw_with_style (MetaFrameStyle          *style,
@@ -993,8 +993,8 @@ void meta_frame_style_draw_with_style (MetaFrameStyle          *style,
                                        PangoLayout             *title_layout,
                                        int                      text_height,
                                        MetaButtonState          button_states[META_BUTTON_TYPE_LAST],
-                                       CdkPixbuf               *mini_icon,
-                                       CdkPixbuf               *icon);
+                                       GdkPixbuf               *mini_icon,
+                                       GdkPixbuf               *icon);
 
 
 gboolean       meta_frame_style_validate (MetaFrameStyle    *style,
@@ -1016,7 +1016,7 @@ MetaTheme* meta_theme_new      (void);
 void       meta_theme_free     (MetaTheme *theme);
 gboolean   meta_theme_validate (MetaTheme *theme,
                                 GError   **error);
-CdkPixbuf* meta_theme_load_image (MetaTheme  *theme,
+GdkPixbuf* meta_theme_load_image (MetaTheme  *theme,
                                   const char *filename,
                                   guint       size_of_theme_icons,
                                   GError    **error);
@@ -1040,8 +1040,8 @@ void meta_theme_draw_frame (MetaTheme              *theme,
                             int                     text_height,
                             const MetaButtonLayout *button_layout,
                             MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                            CdkPixbuf              *mini_icon,
-                            CdkPixbuf              *icon);
+                            GdkPixbuf              *mini_icon,
+                            GdkPixbuf              *icon);
 
 void meta_theme_draw_frame_by_name (MetaTheme              *theme,
                                     CtkWidget              *widget,
@@ -1054,8 +1054,8 @@ void meta_theme_draw_frame_by_name (MetaTheme              *theme,
                                     int                     text_height,
                                     const MetaButtonLayout *button_layout,
                                     MetaButtonState         button_states[META_BUTTON_TYPE_LAST],
-                                    CdkPixbuf              *mini_icon,
-                                    CdkPixbuf              *icon);
+                                    GdkPixbuf              *mini_icon,
+                                    GdkPixbuf              *icon);
 
 
 void meta_theme_get_frame_borders (MetaTheme         *theme,

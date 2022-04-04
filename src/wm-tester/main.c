@@ -201,7 +201,7 @@ set_up_icon_windows (void)
       CtkWidget *w;
       CtkWidget *c;
       GList *icons;
-      CdkPixbuf *pix;
+      GdkPixbuf *pix;
       int size  = 0;
 
       w = ctk_window_new (CTK_WINDOW_TOPLEVEL);
