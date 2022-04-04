@@ -377,7 +377,7 @@ effects_draw_box_animation_timeout (BoxAnimationContext *context)
   draw_rect.width += (context->end_rect.width - context->start_rect.width) * fraction;
   draw_rect.height += (context->end_rect.height - context->start_rect.height) * fraction;
 
-  /* don't confuse X or cdk-pixbuf with bogus rectangles */
+  /* don't confuse X or gdk-pixbuf with bogus rectangles */
   if (draw_rect.width < 1)
     draw_rect.width = 1;
   if (draw_rect.height < 1)

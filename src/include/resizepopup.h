@@ -29,7 +29,7 @@
 #include "common.h"
 #include <X11/Xlib.h>
 #include <glib.h>
-#include <cdk-pixbuf/cdk-pixbuf.h>
+#include <gdk-pixbuf/gdk-pixbuf.h>
 
 MetaResizePopup* meta_ui_resize_popup_new          (Display *display,
                                                     int      screen_number);

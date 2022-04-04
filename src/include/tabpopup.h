@@ -30,7 +30,7 @@
 #include "boxes.h"
 #include <X11/Xlib.h>
 #include <glib.h>
-#include <cdk-pixbuf/cdk-pixbuf.h>
+#include <gdk-pixbuf/gdk-pixbuf.h>
 #include <ctk/ctk.h>
 
 typedef struct _MetaTabEntry MetaTabEntry;
