@@ -521,7 +521,7 @@ simple_multiply_alpha (GdkPixbuf *pixbuf,
   int height;
   int row;
 
-  g_return_if_fail (CDK_IS_PIXBUF (pixbuf));
+  g_return_if_fail (GDK_IS_PIXBUF (pixbuf));
 
   if (alpha == 255)
     return;
@@ -860,7 +860,7 @@ meta_gradient_add_alpha (GdkPixbuf       *pixbuf,
                          int              n_alphas,
                          MetaGradientType type)
 {
-  g_return_if_fail (CDK_IS_PIXBUF (pixbuf));
+  g_return_if_fail (GDK_IS_PIXBUF (pixbuf));
   g_return_if_fail (gdk_pixbuf_get_has_alpha (pixbuf));
   g_return_if_fail (n_alphas > 0);
 
