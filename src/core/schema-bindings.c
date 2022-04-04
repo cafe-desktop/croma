@@ -23,7 +23,7 @@
  *
  * This program simply takes the items given in the binding list in
  * all-keybindings.h and turns them into a portion of
- * the MateConf .schemas file.
+ * the CafeConf .schemas file.
  *
  * FIXME: also need to make 50-croma-desktop-key.xml
  */

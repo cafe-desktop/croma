@@ -268,7 +268,7 @@ for a theme installed for all users.</para></listitem>
 <para>and view it on the whole desktop using
 <command>cafeconftool -<!-- x -->-type=string -<!-- x -->-set /apps/croma/general/theme YourThemeName</command></para>
 
-<para>Whenever you change the selected theme in MateConf, Croma will load the newly-chosen theme.  This is how control-center does it.  But when you change a theme, as you're working on it, you might want to ask Croma to reload the theme which is currently used on the whole desktop to reflect your changes.  You can do this using the little-known <command>croma-message</command> program, with the command <literal>croma-message reload-theme</literal>.  This works by sending the ClientMessage <literal>_CROMA_RELOAD_THEME_MESSAGE</literal> to the root window, in case you're interested.</para>
+<para>Whenever you change the selected theme in CafeConf, Croma will load the newly-chosen theme.  This is how control-center does it.  But when you change a theme, as you're working on it, you might want to ask Croma to reload the theme which is currently used on the whole desktop to reflect your changes.  You can do this using the little-known <command>croma-message</command> program, with the command <literal>croma-message reload-theme</literal>.  This works by sending the ClientMessage <literal>_CROMA_RELOAD_THEME_MESSAGE</literal> to the root window, in case you're interested.</para>
 
 <para>Once you're done with your theme, consider submitting it to <ulink url="http://art.cafe.org/themes/croma/">the art.cafe.org site</ulink>, or <ulink url="http://www.cafe-look.org/index.php?xcontentmode=101">the cafe-look site</ulink>.</para>
 

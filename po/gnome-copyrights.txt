@@ -251,7 +251,7 @@
 ========== el.po ==========
 # translation of croma.cafe-2-26.po to Greek
 # kostas: 17Jul2003, 412 messages, updated translation for 2.4.
-# kostas: 30Oct2003,459 messages updated translation for Mate 2.6.
+# kostas: 30Oct2003,459 messages updated translation for Cafe 2.6.
 # kostas:03Feb2004, 465 messages update.
 # Simos Xenitellis ,<simos@hellug.gr>, 2002.
 # Nikos Charonitakis <frolix68@yahoo.gr>, 2003.
@@ -289,7 +289,7 @@
 
 ========== en_GB.po ==========
 # English (British) translation for croma.
-# Copyright (C) 2002 The Mate Foundation.
+# Copyright (C) 2002 The Cafe Foundation.
 # This file is distributed under the same licence as the croma package.
 # Robert Brady <rwb197@ecs.soton.ac.uk>, Bastien Nocera <hadess@hadess.net>, 2002.
 # Gareth Owen <gowen72@yahoo.com>, 2004.
@@ -930,7 +930,7 @@
 #
 # Andraž Tori <andraz.tori1@guest.arnes.si>, 2000.
 # Matjaž Horvat <m@owca.info>, 2006.
-# Matej Urbančič <cafeju@svn.gnome.org>, 2007 - 2010.
+# Cafej Urbančič <cafeju@svn.gnome.org>, 2007 - 2010.
 #
 
 
@@ -1068,7 +1068,7 @@
 ========== wa.po ==========
 # Traduction into the walloon language.
 #
-# Si vos voloz donner on côp di spale pol ratournaedje di Mate (ou des
+# Si vos voloz donner on côp di spale pol ratournaedje di Cafe (ou des
 # ôtes libes programes) sicrijhoz mu a l' adresse emile
 # <pablo@walon.org>; nos avons co bråmint di l' ovraedje a fé.
 #

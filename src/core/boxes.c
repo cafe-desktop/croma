@@ -529,7 +529,7 @@ meta_rectangle_get_minimal_spanning_set_for_region (
    * is O(n^2) where n is the size of the list generated in this function).
    * This is made more onerous due to the fact that it involves a fair
    * number of memory allocation and deallocation calls.  However, n is 1
-   * for default installations of Mate (because partial struts aren't used
+   * for default installations of Cafe (because partial struts aren't used
    * by default and only partial struts increase the size of the spanning
    * set generated).  With one partial strut, n will be 2 or 3.  With 2
    * partial struts, n will probably be 4 or 5.  So, n probably isn't large

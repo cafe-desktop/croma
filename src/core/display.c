@@ -1430,7 +1430,7 @@ handle_net_restack_window (MetaDisplay* display,
  * below are the ones that frames.c uses. If frames.c is modified to
  * use more fields, more fields need to be filled out below.
  *
- * https://github.com/stefano-k/Mate-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
+ * https://github.com/stefano-k/Cafe-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
  */
 
 static gboolean maybe_send_event_to_gtk(MetaDisplay* display, XEvent* xevent)
@@ -2700,7 +2700,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
 	}
 
 	/* generates event on wrong window.
-  	 * https://github.com/stefano-k/Mate-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
+  	 * https://github.com/stefano-k/Cafe-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
   	 */
 	if (maybe_send_event_to_gtk(display, event))
 	{

@@ -1211,12 +1211,12 @@ msgid "Failed to restart: %s\n"
 msgstr "无法重启动：%s\n"
 
 #. FIXME: check if this can be avoided by GSettings
-#. FIXME! GSettings, instead of MateConf, has Minimum/Maximun in schema!
+#. FIXME! GSettings, instead of CafeConf, has Minimum/Maximun in schema!
 #. * But some preferences depends on costants for minimum/maximum values
 #: src/core/prefs.c:641 src/core/prefs.c:794
 #, c-format
 msgid "%d stored in GSettings key %s is out of range %d to %d\n"
-msgstr "存储在 MateConf 中的 %2$s 中的值 %1$d 超出了 %3$d 到 %4$d 的范围\n"
+msgstr "存储在 CafeConf 中的 %2$s 中的值 %1$d 超出了 %3$d 到 %4$d 的范围\n"
 
 #: src/core/prefs.c:1088
 msgid ""

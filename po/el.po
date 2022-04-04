@@ -1354,13 +1354,13 @@ msgid "Failed to restart: %s\n"
 msgstr "Αποτυχία επανεκκίνησης: %s\n"
 
 #. FIXME: check if this can be avoided by GSettings
-#. FIXME! GSettings, instead of MateConf, has Minimum/Maximun in schema!
+#. FIXME! GSettings, instead of CafeConf, has Minimum/Maximun in schema!
 #. * But some preferences depends on costants for minimum/maximum values
 #: src/core/prefs.c:641 src/core/prefs.c:794
 #, c-format
 msgid "%d stored in GSettings key %s is out of range %d to %d\n"
 msgstr ""
-"Το %d που αποθηκεύτηκε στο κλειδί MateConf %s είναι εκτός του εύρους %d έως "
+"Το %d που αποθηκεύτηκε στο κλειδί CafeConf %s είναι εκτός του εύρους %d έως "
 "%d\n"
 
 #: src/core/prefs.c:1088
@@ -1374,7 +1374,7 @@ msgstr ""
 #: src/core/prefs.c:1194
 #, c-format
 msgid "Could not parse font description \"%s\" from GSettings key %s\n"
-msgstr "Αδυναμία ανάλυσης περιγραφής γραμματοσειράς \"%s\" από κλειδί MateConf %s\n"
+msgstr "Αδυναμία ανάλυσης περιγραφής γραμματοσειράς \"%s\" από κλειδί CafeConf %s\n"
 
 #: src/core/prefs.c:1256
 #, c-format

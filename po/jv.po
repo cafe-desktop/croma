@@ -970,7 +970,7 @@ msgstr ""
 
 #: ../src/core/main.c:269
 msgid "Disable connection to session manager"
-msgstr "Mateni sambungan menyang manager sesi"
+msgstr "Cafeni sambungan menyang manager sesi"
 
 #: ../src/core/main.c:275
 msgid "Replace the running window manager with Croma"
@@ -1026,7 +1026,7 @@ msgid "Failed to restart: %s\n"
 msgstr ""
 
 #. FIXME: check if this can be avoided by GSettings
-#. FIXME! GSettings, instead of MateConf, has Minimum/Maximun in schema!
+#. FIXME! GSettings, instead of CafeConf, has Minimum/Maximun in schema!
 #. * But some preferences depends on costants for minimum/maximum values
 #: ../src/core/prefs.c:599 ../src/core/prefs.c:752
 #, c-format

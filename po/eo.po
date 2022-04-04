@@ -1161,7 +1161,7 @@ msgid "Failed to restart: %s\n"
 msgstr "Malsukcesis restartigi: %s\n"
 
 #. FIXME: check if this can be avoided by GSettings
-#. FIXME! GSettings, instead of MateConf, has Minimum/Maximun in schema!
+#. FIXME! GSettings, instead of CafeConf, has Minimum/Maximun in schema!
 #. * But some preferences depends on costants for minimum/maximum values
 #: src/core/prefs.c:641 src/core/prefs.c:794
 #, c-format
@@ -1196,7 +1196,7 @@ msgid ""
 "\"%s\" found in configuration database is not a valid value for keybinding "
 "\"%s\"\n"
 msgstr ""
-"Valoro %s, trovita en la MateConf-agordaro, ne estas valida kiel klavo-"
+"Valoro %s, trovita en la CafeConf-agordaro, ne estas valida kiel klavo-"
 "bindaĵo \"%s\".\n"
 
 #: src/core/prefs.c:2147

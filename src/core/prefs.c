@@ -789,7 +789,7 @@ handle_preference_update_int (const gchar *key, GSettings *settings)
 
   if (value < cursor->minimum || value > cursor->maximum)
     {
-      /* FIXME! GSettings, instead of MateConf, has Minimum/Maximun in schema!
+      /* FIXME! GSettings, instead of CafeConf, has Minimum/Maximun in schema!
        * But some preferences depends on costants for minimum/maximum values */
       meta_warning (_("%d stored in GSettings key %s is out of range %d to %d\n"),
                     value, cursor->key,

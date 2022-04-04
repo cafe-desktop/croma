@@ -1088,7 +1088,7 @@ msgid "Failed to restart: %s\n"
 msgstr ""
 
 #. FIXME: check if this can be avoided by GSettings
-#. FIXME! GSettings, instead of MateConf, has Minimum/Maximun in schema!
+#. FIXME! GSettings, instead of CafeConf, has Minimum/Maximun in schema!
 #. * But some preferences depends on costants for minimum/maximum values
 #: ../src/core/prefs.c:606 ../src/core/prefs.c:759
 #, c-format

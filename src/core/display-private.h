@@ -235,7 +235,7 @@ struct _MetaDisplay {
 
 	/* To detect double clicks
 	 *
-	 * https://github.com/stefano-k/Mate-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
+	 * https://github.com/stefano-k/Cafe-Desktop-Environment/commit/b0e5fb03eb21dae8f02692f11ef391bfc5ccba33
 	 */
 	guint button_click_number;
 	Window button_click_window;

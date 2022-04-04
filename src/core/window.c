@@ -1972,7 +1972,7 @@ __window_is_terminal (MetaWindow *window)
    */
 
   /* cafe-terminal -- if you couldn't guess */
-  if (strcmp (window->res_class, "Mate-terminal") == 0)
+  if (strcmp (window->res_class, "Cafe-terminal") == 0)
     return TRUE;
   /* xterm, rxvt, aterm */
   else if (strcmp (window->res_class, "XTerm") == 0)

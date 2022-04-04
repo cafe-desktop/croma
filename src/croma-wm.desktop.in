@@ -7,7 +7,7 @@ X-MATE-WMSettingsModule=croma
 # name we put on the WM spec check window
 X-MATE-WMName=Croma
 # back compat only 
-X-MateWMSettingsLibrary=croma
+X-CafeWMSettingsLibrary=croma
 X-MATE-Bugzilla-Bugzilla=MATE
 X-MATE-Bugzilla-Product=croma
 X-MATE-Bugzilla-Component=general

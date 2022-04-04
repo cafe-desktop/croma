@@ -325,7 +325,7 @@
 
 ### croma 1.14.0
 
-  * Drop MateConf migration script
+  * Drop CafeConf migration script
   * Fix visual glitches appearing after unmaximizing Chromium window
   * Correct description of compositing-fast-alt-tab GSettings key
       (mention that it disables thumbnails)
@@ -378,6 +378,6 @@
 
 ### croma 1.6.0
 
-  * Migration to GSettings and dropped MateConf
+  * Migration to GSettings and dropped CafeConf
   * Fix key handling while drag and drop is active
   * Add option to open new windows on the center of the screen

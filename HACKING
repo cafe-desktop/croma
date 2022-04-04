@@ -38,7 +38,7 @@ Administrative issues
 Minimal Building/Testing Environment
   You do not need to _install_ a development version of Croma to
   build, run and test it; you can run it from some temporary
-  directory.  Also, you do not need to build all of Mate in order to
+  directory.  Also, you do not need to build all of Cafe in order to
   build a development version of Croma -- odds are, you may be able
   to build croma from GIT without building any other modules.
 
@@ -47,7 +47,7 @@ Minimal Building/Testing Environment
   should be able to install your distro's development packages
   (e.g. gtk2-devel, glib-devel, startup-notification-devel on
   Fedora; also, remember to install the cafe-common package which is
-  needed for building git versions of Mate modules like Croma) as
+  needed for building git versions of Cafe modules like Croma) as
   well as the standard development tools (gcc, autoconf, automake,
   pkg-config, intltool, and libtool) and be ready to build and test
   Croma.  Steps to do so:
@@ -180,7 +180,7 @@ Debugging information
   used (yes, I could use meta_print_backtrace, but that means I have to
   turn verbosity on).
 
-  To run croma under valgrind, use options typical for any Mate
+  To run croma under valgrind, use options typical for any Cafe
   program, such as
     valgrind --log-file=croma.log --tool=memcheck --num-callers=48 \
     --leak-check=yes --leak-resolution=high --show-reachable=yes     \

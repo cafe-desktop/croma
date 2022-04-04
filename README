@@ -294,7 +294,7 @@ A: Croma only stores sizes/positions for apps that are session
     http://www.fifi.org/doc/xspecs/SMlib.txt.gz
 
    See also the ICCCM section on SM. For MATE apps, use the
-   MateClient object. For a simple example of using libSM directly,
+   CafeClient object. For a simple example of using libSM directly,
    twm/session.c in the twm source code is pretty easy to understand.
 
 Q: How about adding viewports in addition to workspaces?

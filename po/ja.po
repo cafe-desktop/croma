@@ -1243,7 +1243,7 @@ msgid "Failed to restart: %s\n"
 msgstr "再起動に失敗しました: %s\n"
 
 #. FIXME: check if this can be avoided by GSettings
-#. FIXME! GSettings, instead of MateConf, has Minimum/Maximun in schema!
+#. FIXME! GSettings, instead of CafeConf, has Minimum/Maximun in schema!
 #. * But some preferences depends on costants for minimum/maximum values
 #: src/core/prefs.c:641 src/core/prefs.c:794
 #, c-format
@@ -1266,7 +1266,7 @@ msgstr "GSettings の %2$s キーのフォントの説明 \"%1$s\" を解析で�
 msgid ""
 "\"%s\" found in configuration database is not a valid value for mouse button"
 " modifier\n"
-msgstr "MateConf の \"%s\" はマウス・ボタンの修飾キーとして妥当な値ではありません\n"
+msgstr "CafeConf の \"%s\" はマウス・ボタンの修飾キーとして妥当な値ではありません\n"
 
 #: src/core/prefs.c:1844
 #, c-format

@@ -498,7 +498,7 @@ save_yourself_callback (SmcConn   smc_conn,
    * is a special case (SM specs 7.2).
    */
 
-#if 0 /* I think the MateClient rationale for this doesn't apply */
+#if 0 /* I think the CafeClient rationale for this doesn't apply */
   if (current_state == STATE_REGISTERING)
     {
       current_state = STATE_IDLE;
