@@ -34,7 +34,6 @@ requires:
     - libxrender-dev
     - libxt-dev
     - make
-    - mate-common
     - meson
     - x11proto-present-dev
     - yelp-tools
