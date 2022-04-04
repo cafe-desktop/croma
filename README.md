@@ -1,4 +1,4 @@
-Croma [![Build Status](https://travis-ci.org/mate-desktop/croma.svg?branch=master)](https://travis-ci.org/mate-desktop/croma)
+Croma [![Build Status](https://travis-ci.org/cafe-desktop/croma.svg?branch=master)](https://travis-ci.org/cafe-desktop/croma)
 ===
 
 MATE Croma is a fork of GNOME Metacity.
@@ -13,7 +13,7 @@ http://www.freedesktop.org/software/startup-notification/.
 REPORTING BUGS AND SUBMITTING PATCHES
 ===
 
-Report new bugs on https://github.com/mate-desktop/croma.
+Report new bugs on https://github.com/cafe-desktop/croma.
 Please check for duplicates, *especially* if you are reporting a feature
 request.
 
@@ -87,9 +87,9 @@ CROMA FEATURES
  - Has a simple theme system and a couple of extra themes come with it.
    Change themes via gsettings:
      ```
-     gsettings set org.mate.Croma.general theme Menta
-     gsettings set org.mate.Croma.general theme BlackMATE
-     gsettings set org.mate.Croma.general theme TraditionalOk
+     gsettings set org.cafe.Croma.general theme Menta
+     gsettings set org.cafe.Croma.general theme BlackMATE
+     gsettings set org.cafe.Croma.general theme TraditionalOk
      ```
 
    See theme-format.txt for docs on the theme format. Use
@@ -97,16 +97,16 @@ CROMA FEATURES
 
  - Change number of workspaces via gsettings:
      ```
-     gsettings set org.mate.Croma.general num-workspaces 5
+     gsettings set org.cafe.Croma.general num-workspaces 5
      ```
 
    Can also change workspaces from MATE 2 pager.
 
  - Change focus mode:
      ```
-     gsettings set org.mate.Croma.general focus-mode mouse
-     gsettings set org.mate.Croma.general focus-mode sloppy
-     gsettings set org.mate.Croma.general focus-mode click
+     gsettings set org.cafe.Croma.general focus-mode mouse
+     gsettings set org.cafe.Croma.general focus-mode sloppy
+     gsettings set org.cafe.Croma.general focus-mode click
      ```
 
  - Global keybinding defaults include:
@@ -125,7 +125,7 @@ CROMA FEATURES
    Change keybindings for example:
 
      ```
-     gsettings set org.mate.Croma.global-keybindings switch-to-workspace-1 '<Alt>F1'
+     gsettings set org.cafe.Croma.global-keybindings switch-to-workspace-1 '<Alt>F1'
      ```
 
    Also try the MATE keyboard shortcuts control panel.
@@ -232,7 +232,7 @@ EWMH-compliant WMs).
 CROMA BUGS, NON-FEATURES, AND CAVEATS
 ===
 
-See github: https://github.com/mate-desktop/croma/issues
+See github: https://github.com/cafe-desktop/croma/issues
 
 FAQ
 ===

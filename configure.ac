@@ -6,7 +6,7 @@ m4_define([croma_micro_version], [1])
 
 m4_define([croma_version],
           [croma_major_version.croma_minor_version.croma_micro_version])
-AC_INIT([croma], [croma_version], [https://github.com/mate-desktop/croma])
+AC_INIT([croma], [croma_version], [https://github.com/cafe-desktop/croma])
 
 AC_CONFIG_SRCDIR(src/core/display.c)
 AC_CONFIG_HEADERS(config.h)
@@ -108,8 +108,8 @@ PKG_CHECK_MODULES(ALL, glib-2.0 >= 2.58.0)
 PKG_CHECK_MODULES(CROMA_MESSAGE, gtk+-3.0 >= $GTK_MIN_VERSION)
 PKG_CHECK_MODULES(CROMA_WINDOW_DEMO, gtk+-3.0 >= $GTK_MIN_VERSION)
 
-# Unconditionally use this dir to avoid a circular dep with matecc
-MATE_KEYBINDINGS_KEYSDIR="${datadir}/mate-control-center/keybindings"
+# Unconditionally use this dir to avoid a circular dep with cafecc
+MATE_KEYBINDINGS_KEYSDIR="${datadir}/cafe-control-center/keybindings"
 AC_SUBST(MATE_KEYBINDINGS_KEYSDIR)
 
 STARTUP_NOTIFICATION_VERSION=0.7

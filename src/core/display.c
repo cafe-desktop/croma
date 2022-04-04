@@ -2240,7 +2240,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
             {
               meta_topic (META_DEBUG_FOCUS,
                           "Focus got set to root window, probably due to "
-                          "mate-session logout dialog usage (see bug "
+                          "cafe-session logout dialog usage (see bug "
                           "153220).  Setting the default focus window.\n");
               meta_workspace_focus_default_window (screen->active_workspace,
                                                    NULL,
@@ -3684,7 +3684,7 @@ meta_display_begin_grab_op (MetaDisplay *display,
       display->grab_anchor_window_pos = display->grab_initial_window_pos;
 
       display->grab_wireframe_active =
-        (meta_prefs_get_reduced_resources () && !meta_prefs_get_mate_accessibility ())  &&
+        (meta_prefs_get_reduced_resources () && !meta_prefs_get_cafe_accessibility ())  &&
         (meta_grab_op_is_resizing (display->grab_op) ||
          meta_grab_op_is_moving (display->grab_op));
 
@@ -4484,7 +4484,7 @@ process_request_frame_extents (MetaDisplay    *display,
           return;
         }
 
-      /* Return estimated frame extents for a normal window. */
+      /* Return esticafed frame extents for a normal window. */
       meta_ui_theme_get_frame_borders (screen->ui,
                                        META_FRAME_TYPE_NORMAL,
                                        0,

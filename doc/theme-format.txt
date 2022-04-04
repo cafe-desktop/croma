@@ -125,9 +125,9 @@ This does not affect ordinary resizing. For example:
   <button function="close" state="normal">
     <draw_ops>
       <include name="active_button"/>
-      <image filename="theme:mate-logout" x="2" y="2"
+      <image filename="theme:cafe-logout" x="2" y="2"
           width="width-4" height="height-4"/>
-      <!-- Note: not "theme:mate-logout.png" or similar. -->
+      <!-- Note: not "theme:cafe-logout.png" or similar. -->
     </draw_ops>
   </button>
 

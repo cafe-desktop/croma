@@ -12,11 +12,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/croma\n"
+"Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
 "POT-Creation-Date: 2019-11-18 19:44+0100\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Hsiu-Ming Chang <cges30901@gmail.com>, 2020\n"
-"Language-Team: Chinese (Taiwan) (https://www.transifex.com/mate/teams/13566/zh_TW/)\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/cafe/teams/13566/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,23 +31,23 @@ msgstr "桌面"
 msgid "Show the panel's &quot;Run Application&quot; dialog box"
 msgstr "顯示面板的「執行程式」對話盒"
 
-#: src/50-croma-desktop-key.xml.in:6 src/org.mate.croma.gschema.xml:629
+#: src/50-croma-desktop-key.xml.in:6 src/org.cafe.croma.gschema.xml:629
 msgid "Show the panel's main menu"
 msgstr "顯示面板的主選單"
 
-#: src/50-croma-desktop-key.xml.in:8 src/org.mate.croma.gschema.xml:639
+#: src/50-croma-desktop-key.xml.in:8 src/org.cafe.croma.gschema.xml:639
 msgid "Take a screenshot"
 msgstr "擷取畫面快照"
 
-#: src/50-croma-desktop-key.xml.in:10 src/org.mate.croma.gschema.xml:644
+#: src/50-croma-desktop-key.xml.in:10 src/org.cafe.croma.gschema.xml:644
 msgid "Take a screenshot of a window"
 msgstr "拍下視窗的畫面快照"
 
-#: src/50-croma-desktop-key.xml.in:12 src/org.mate.croma.gschema.xml:649
+#: src/50-croma-desktop-key.xml.in:12 src/org.cafe.croma.gschema.xml:649
 msgid "Run a terminal"
 msgstr "執行終端機"
 
-#: src/50-croma-desktop-key.xml.in:14 src/org.mate.croma.gschema.xml:654
+#: src/50-croma-desktop-key.xml.in:14 src/org.cafe.croma.gschema.xml:654
 msgid "Rename current workspace"
 msgstr "重新命名目前的工作空間"
 
@@ -55,171 +55,171 @@ msgstr "重新命名目前的工作空間"
 msgid "Window Management"
 msgstr "視窗管理員"
 
-#: src/50-croma-global-key.xml.in:4 src/org.mate.croma.gschema.xml:564
+#: src/50-croma-global-key.xml.in:4 src/org.cafe.croma.gschema.xml:564
 msgid "Move between windows, using a popup window"
 msgstr "在視窗之間切換，使用彈出式視窗"
 
-#: src/50-croma-global-key.xml.in:6 src/org.mate.croma.gschema.xml:554
+#: src/50-croma-global-key.xml.in:6 src/org.cafe.croma.gschema.xml:554
 msgid "Move between windows of an application, using a popup window"
 msgstr "在應用程式的視窗之間切換，使用彈出式視窗"
 
-#: src/50-croma-global-key.xml.in:8 src/org.mate.croma.gschema.xml:584
+#: src/50-croma-global-key.xml.in:8 src/org.cafe.croma.gschema.xml:584
 msgid "Move between panels and the desktop, using a popup window"
 msgstr "在面板及桌面之間切換，使用彈出式視窗"
 
-#: src/50-croma-global-key.xml.in:10 src/org.mate.croma.gschema.xml:604
+#: src/50-croma-global-key.xml.in:10 src/org.cafe.croma.gschema.xml:604
 msgid "Move between windows immediately"
 msgstr "將輸入焦點在各視窗之間切換（立即模式）"
 
-#: src/50-croma-global-key.xml.in:12 src/org.mate.croma.gschema.xml:594
+#: src/50-croma-global-key.xml.in:12 src/org.cafe.croma.gschema.xml:594
 msgid "Move between windows of an application immediately"
 msgstr "在視窗及程式之間切換（立即模式）"
 
-#: src/50-croma-global-key.xml.in:14 src/org.mate.croma.gschema.xml:614
+#: src/50-croma-global-key.xml.in:14 src/org.cafe.croma.gschema.xml:614
 msgid "Move between panels and the desktop immediately"
 msgstr "將輸入焦點在面板及桌面之間切換（立即模式）"
 
-#: src/50-croma-global-key.xml.in:16 src/org.mate.croma.gschema.xml:624
+#: src/50-croma-global-key.xml.in:16 src/org.cafe.croma.gschema.xml:624
 msgid "Hide all normal windows and set focus to the desktop"
 msgstr "隱藏所有一般視窗並將焦點設至桌面"
 
-#: src/50-croma-global-key.xml.in:23 src/org.mate.croma.gschema.xml:469
+#: src/50-croma-global-key.xml.in:23 src/org.cafe.croma.gschema.xml:469
 msgid "Switch to workspace 1"
 msgstr "切換至第 1 個工作區"
 
-#: src/50-croma-global-key.xml.in:30 src/org.mate.croma.gschema.xml:474
+#: src/50-croma-global-key.xml.in:30 src/org.cafe.croma.gschema.xml:474
 msgid "Switch to workspace 2"
 msgstr "切換至第 2 個工作區"
 
-#: src/50-croma-global-key.xml.in:37 src/org.mate.croma.gschema.xml:479
+#: src/50-croma-global-key.xml.in:37 src/org.cafe.croma.gschema.xml:479
 msgid "Switch to workspace 3"
 msgstr "切換至第 3 個工作區"
 
-#: src/50-croma-global-key.xml.in:44 src/org.mate.croma.gschema.xml:484
+#: src/50-croma-global-key.xml.in:44 src/org.cafe.croma.gschema.xml:484
 msgid "Switch to workspace 4"
 msgstr "切換至第 4 個工作區"
 
-#: src/50-croma-global-key.xml.in:51 src/org.mate.croma.gschema.xml:489
+#: src/50-croma-global-key.xml.in:51 src/org.cafe.croma.gschema.xml:489
 msgid "Switch to workspace 5"
 msgstr "切換至第 5 個工作區"
 
-#: src/50-croma-global-key.xml.in:58 src/org.mate.croma.gschema.xml:494
+#: src/50-croma-global-key.xml.in:58 src/org.cafe.croma.gschema.xml:494
 msgid "Switch to workspace 6"
 msgstr "切換至第 6 個工作區"
 
-#: src/50-croma-global-key.xml.in:65 src/org.mate.croma.gschema.xml:499
+#: src/50-croma-global-key.xml.in:65 src/org.cafe.croma.gschema.xml:499
 msgid "Switch to workspace 7"
 msgstr "切換至第 7 個工作區"
 
-#: src/50-croma-global-key.xml.in:72 src/org.mate.croma.gschema.xml:504
+#: src/50-croma-global-key.xml.in:72 src/org.cafe.croma.gschema.xml:504
 msgid "Switch to workspace 8"
 msgstr "切換至第 8 個工作區"
 
-#: src/50-croma-global-key.xml.in:79 src/org.mate.croma.gschema.xml:509
+#: src/50-croma-global-key.xml.in:79 src/org.cafe.croma.gschema.xml:509
 msgid "Switch to workspace 9"
 msgstr "切換至第 9 個工作區"
 
-#: src/50-croma-global-key.xml.in:86 src/org.mate.croma.gschema.xml:514
+#: src/50-croma-global-key.xml.in:86 src/org.cafe.croma.gschema.xml:514
 msgid "Switch to workspace 10"
 msgstr "切換至第 10 個工作區"
 
-#: src/50-croma-global-key.xml.in:93 src/org.mate.croma.gschema.xml:519
+#: src/50-croma-global-key.xml.in:93 src/org.cafe.croma.gschema.xml:519
 msgid "Switch to workspace 11"
 msgstr "切換至第 11 個工作區"
 
-#: src/50-croma-global-key.xml.in:100 src/org.mate.croma.gschema.xml:524
+#: src/50-croma-global-key.xml.in:100 src/org.cafe.croma.gschema.xml:524
 msgid "Switch to workspace 12"
 msgstr "切換至第 12 個工作區"
 
-#: src/50-croma-global-key.xml.in:107 src/org.mate.croma.gschema.xml:529
+#: src/50-croma-global-key.xml.in:107 src/org.cafe.croma.gschema.xml:529
 msgid "Switch to workspace on the left of the current workspace"
 msgstr "切換至目前工作區的左方工作區"
 
-#: src/50-croma-global-key.xml.in:114 src/org.mate.croma.gschema.xml:534
+#: src/50-croma-global-key.xml.in:114 src/org.cafe.croma.gschema.xml:534
 msgid "Switch to workspace on the right of the current workspace"
 msgstr "切換至目前工作區的右方工作區"
 
-#: src/50-croma-global-key.xml.in:121 src/org.mate.croma.gschema.xml:539
+#: src/50-croma-global-key.xml.in:121 src/org.cafe.croma.gschema.xml:539
 msgid "Switch to workspace above the current workspace"
 msgstr "切換至目前工作區的上方工作區"
 
-#: src/50-croma-global-key.xml.in:128 src/org.mate.croma.gschema.xml:544
+#: src/50-croma-global-key.xml.in:128 src/org.cafe.croma.gschema.xml:544
 msgid "Switch to workspace below the current workspace"
 msgstr "切換至目前工作區的下方工作區"
 
-#: src/50-croma-global-key.xml.in:131 src/org.mate.croma.gschema.xml:549
+#: src/50-croma-global-key.xml.in:131 src/org.cafe.croma.gschema.xml:549
 msgid "Switch to previously selected workspace"
 msgstr "切換至前一個選取的工作區"
 
-#: src/50-croma-window-key.xml.in:6 src/org.mate.croma.gschema.xml:735
+#: src/50-croma-window-key.xml.in:6 src/org.cafe.croma.gschema.xml:735
 msgid "Activate the window menu"
 msgstr "使用視窗選單"
 
-#: src/50-croma-window-key.xml.in:10 src/org.mate.croma.gschema.xml:740
+#: src/50-croma-window-key.xml.in:10 src/org.cafe.croma.gschema.xml:740
 msgid "Toggle fullscreen mode"
 msgstr "切換全螢幕模式"
 
-#: src/50-croma-window-key.xml.in:14 src/org.mate.croma.gschema.xml:745
+#: src/50-croma-window-key.xml.in:14 src/org.cafe.croma.gschema.xml:745
 msgid "Toggle maximization state"
 msgstr "切換最大化狀態"
 
-#: src/50-croma-window-key.xml.in:18 src/org.mate.croma.gschema.xml:755
+#: src/50-croma-window-key.xml.in:18 src/org.cafe.croma.gschema.xml:755
 msgid "Maximize window"
 msgstr "視窗最大化"
 
-#: src/50-croma-window-key.xml.in:22 src/org.mate.croma.gschema.xml:760
+#: src/50-croma-window-key.xml.in:22 src/org.cafe.croma.gschema.xml:760
 msgid "Restore window"
 msgstr "還原視窗"
 
-#: src/50-croma-window-key.xml.in:26 src/org.mate.croma.gschema.xml:765
+#: src/50-croma-window-key.xml.in:26 src/org.cafe.croma.gschema.xml:765
 msgid "Toggle shaded state"
 msgstr "切換視窗收攏/鋪展狀態"
 
-#: src/50-croma-window-key.xml.in:30 src/org.mate.croma.gschema.xml:775
+#: src/50-croma-window-key.xml.in:30 src/org.cafe.croma.gschema.xml:775
 msgid "Close window"
 msgstr "關閉視窗"
 
-#: src/50-croma-window-key.xml.in:34 src/org.mate.croma.gschema.xml:770
+#: src/50-croma-window-key.xml.in:34 src/org.cafe.croma.gschema.xml:770
 msgid "Minimize window"
 msgstr "視窗最小化"
 
-#: src/50-croma-window-key.xml.in:38 src/org.mate.croma.gschema.xml:780
+#: src/50-croma-window-key.xml.in:38 src/org.cafe.croma.gschema.xml:780
 msgid "Move window"
 msgstr "移動視窗"
 
-#: src/50-croma-window-key.xml.in:42 src/org.mate.croma.gschema.xml:785
+#: src/50-croma-window-key.xml.in:42 src/org.cafe.croma.gschema.xml:785
 msgid "Resize window"
 msgstr "調整視窗大小"
 
-#: src/50-croma-window-key.xml.in:50 src/org.mate.croma.gschema.xml:790
+#: src/50-croma-window-key.xml.in:50 src/org.cafe.croma.gschema.xml:790
 msgid "Toggle whether window is on all workspaces or just one"
 msgstr "切換視窗是否在所有工作區顯示或是只顯示於其中之一"
 
-#: src/50-croma-window-key.xml.in:54 src/org.mate.croma.gschema.xml:875
+#: src/50-croma-window-key.xml.in:54 src/org.cafe.croma.gschema.xml:875
 msgid "Raise window if it's covered by another window, otherwise lower it"
 msgstr "若視窗被其他視窗遮蔽就抬升它，否則將它降下"
 
-#: src/50-croma-window-key.xml.in:58 src/org.mate.croma.gschema.xml:880
+#: src/50-croma-window-key.xml.in:58 src/org.cafe.croma.gschema.xml:880
 msgid "Raise window above other windows"
 msgstr "令某個視窗覆蓋其它視窗"
 
-#: src/50-croma-window-key.xml.in:62 src/org.mate.croma.gschema.xml:885
+#: src/50-croma-window-key.xml.in:62 src/org.cafe.croma.gschema.xml:885
 msgid "Lower window below other windows"
 msgstr "遮蔽某個視窗"
 
-#: src/50-croma-window-key.xml.in:66 src/org.mate.croma.gschema.xml:890
+#: src/50-croma-window-key.xml.in:66 src/org.cafe.croma.gschema.xml:890
 msgid "Maximize window vertically"
 msgstr "將視窗縱向最大化"
 
-#: src/50-croma-window-key.xml.in:70 src/org.mate.croma.gschema.xml:895
+#: src/50-croma-window-key.xml.in:70 src/org.cafe.croma.gschema.xml:895
 msgid "Maximize window horizontally"
 msgstr "將視窗橫向最大化"
 
-#: src/50-croma-window-key.xml.in:74 src/org.mate.croma.gschema.xml:900
+#: src/50-croma-window-key.xml.in:74 src/org.cafe.croma.gschema.xml:900
 msgid "Tile window to east (right) side of screen"
 msgstr "將視窗平鋪至畫面的東（右）方"
 
-#: src/50-croma-window-key.xml.in:78 src/org.mate.croma.gschema.xml:905
+#: src/50-croma-window-key.xml.in:78 src/org.cafe.croma.gschema.xml:905
 msgid "Tile window to west (left) side of screen"
 msgstr "將視窗平鋪至畫面的西（左）方"
 
@@ -239,127 +239,127 @@ msgstr "平鋪視窗到西南（左下）角"
 msgid "Tile window to south-east (bottom right) corner"
 msgstr "平鋪視窗到東南（右下）角"
 
-#: src/50-croma-window-key.xml.in:98 src/org.mate.croma.gschema.xml:930
+#: src/50-croma-window-key.xml.in:98 src/org.cafe.croma.gschema.xml:930
 msgid "Move window to north-west (top left) corner"
 msgstr "將視窗移至西北（左上）角"
 
-#: src/50-croma-window-key.xml.in:102 src/org.mate.croma.gschema.xml:935
+#: src/50-croma-window-key.xml.in:102 src/org.cafe.croma.gschema.xml:935
 msgid "Move window to north-east (top right) corner"
 msgstr "將視窗移至東北（右上）角"
 
-#: src/50-croma-window-key.xml.in:106 src/org.mate.croma.gschema.xml:940
+#: src/50-croma-window-key.xml.in:106 src/org.cafe.croma.gschema.xml:940
 msgid "Move window to south-west (bottom left) corner"
 msgstr "將視窗移至西南（左下）角"
 
-#: src/50-croma-window-key.xml.in:110 src/org.mate.croma.gschema.xml:945
+#: src/50-croma-window-key.xml.in:110 src/org.cafe.croma.gschema.xml:945
 msgid "Move window to south-east (bottom right) corner"
 msgstr "將視窗移至東南（右下）角"
 
-#: src/50-croma-window-key.xml.in:114 src/org.mate.croma.gschema.xml:950
+#: src/50-croma-window-key.xml.in:114 src/org.cafe.croma.gschema.xml:950
 msgid "Move window to north (top) side of screen"
 msgstr "將視窗移至畫面的北（上）方"
 
-#: src/50-croma-window-key.xml.in:118 src/org.mate.croma.gschema.xml:955
+#: src/50-croma-window-key.xml.in:118 src/org.cafe.croma.gschema.xml:955
 msgid "Move window to south (bottom) side of screen"
 msgstr "將視窗移至畫面的南（下）方"
 
-#: src/50-croma-window-key.xml.in:122 src/org.mate.croma.gschema.xml:960
+#: src/50-croma-window-key.xml.in:122 src/org.cafe.croma.gschema.xml:960
 msgid "Move window to east (right) side of screen"
 msgstr "將視窗移至畫面的東（右）方"
 
-#: src/50-croma-window-key.xml.in:126 src/org.mate.croma.gschema.xml:965
+#: src/50-croma-window-key.xml.in:126 src/org.cafe.croma.gschema.xml:965
 msgid "Move window to west (left) side of screen"
 msgstr "將視窗移至畫面的西（左）方"
 
-#: src/50-croma-window-key.xml.in:130 src/org.mate.croma.gschema.xml:970
+#: src/50-croma-window-key.xml.in:130 src/org.cafe.croma.gschema.xml:970
 msgid "Move window to center of screen"
 msgstr "將視窗移動至螢幕中央"
 
-#: src/50-croma-window-key.xml.in:134 src/org.mate.croma.gschema.xml:975
+#: src/50-croma-window-key.xml.in:134 src/org.cafe.croma.gschema.xml:975
 msgid "Move window to north (top) monitor"
 msgstr "將視窗移至螢幕的北方（頂端）"
 
-#: src/50-croma-window-key.xml.in:138 src/org.mate.croma.gschema.xml:980
+#: src/50-croma-window-key.xml.in:138 src/org.cafe.croma.gschema.xml:980
 msgid "Move window to south (bottom) monitor"
 msgstr "將視窗移至螢幕的南方（底部）"
 
-#: src/50-croma-window-key.xml.in:142 src/org.mate.croma.gschema.xml:985
+#: src/50-croma-window-key.xml.in:142 src/org.cafe.croma.gschema.xml:985
 msgid "Move window to east (right) monitor"
 msgstr "將視窗移至螢幕的東方（右邊）"
 
-#: src/50-croma-window-key.xml.in:146 src/org.mate.croma.gschema.xml:990
+#: src/50-croma-window-key.xml.in:146 src/org.cafe.croma.gschema.xml:990
 msgid "Move window to west (left) monitor"
 msgstr "將視窗移至螢幕的西方（左邊）"
 
-#: src/50-croma-window-key.xml.in:154 src/org.mate.croma.gschema.xml:795
+#: src/50-croma-window-key.xml.in:154 src/org.cafe.croma.gschema.xml:795
 msgid "Move window to workspace 1"
 msgstr "將視窗移至第 1 個工作區"
 
-#: src/50-croma-window-key.xml.in:162 src/org.mate.croma.gschema.xml:800
+#: src/50-croma-window-key.xml.in:162 src/org.cafe.croma.gschema.xml:800
 msgid "Move window to workspace 2"
 msgstr "將視窗移至第 2 個工作區"
 
-#: src/50-croma-window-key.xml.in:170 src/org.mate.croma.gschema.xml:805
+#: src/50-croma-window-key.xml.in:170 src/org.cafe.croma.gschema.xml:805
 msgid "Move window to workspace 3"
 msgstr "將視窗移至第 3 個工作區"
 
-#: src/50-croma-window-key.xml.in:178 src/org.mate.croma.gschema.xml:810
+#: src/50-croma-window-key.xml.in:178 src/org.cafe.croma.gschema.xml:810
 msgid "Move window to workspace 4"
 msgstr "將視窗移至第 4 個工作區"
 
-#: src/50-croma-window-key.xml.in:186 src/org.mate.croma.gschema.xml:815
+#: src/50-croma-window-key.xml.in:186 src/org.cafe.croma.gschema.xml:815
 msgid "Move window to workspace 5"
 msgstr "將視窗移至第 5 個工作區"
 
-#: src/50-croma-window-key.xml.in:194 src/org.mate.croma.gschema.xml:820
+#: src/50-croma-window-key.xml.in:194 src/org.cafe.croma.gschema.xml:820
 msgid "Move window to workspace 6"
 msgstr "將視窗移至第 6 個工作區"
 
-#: src/50-croma-window-key.xml.in:202 src/org.mate.croma.gschema.xml:825
+#: src/50-croma-window-key.xml.in:202 src/org.cafe.croma.gschema.xml:825
 msgid "Move window to workspace 7"
 msgstr "將視窗移至第 7 個工作區"
 
-#: src/50-croma-window-key.xml.in:210 src/org.mate.croma.gschema.xml:830
+#: src/50-croma-window-key.xml.in:210 src/org.cafe.croma.gschema.xml:830
 msgid "Move window to workspace 8"
 msgstr "將視窗移至第 8 個工作區"
 
-#: src/50-croma-window-key.xml.in:218 src/org.mate.croma.gschema.xml:835
+#: src/50-croma-window-key.xml.in:218 src/org.cafe.croma.gschema.xml:835
 msgid "Move window to workspace 9"
 msgstr "將視窗移至第 9 個工作區"
 
-#: src/50-croma-window-key.xml.in:226 src/org.mate.croma.gschema.xml:840
+#: src/50-croma-window-key.xml.in:226 src/org.cafe.croma.gschema.xml:840
 msgid "Move window to workspace 10"
 msgstr "將視窗移至第 10 個工作區"
 
-#: src/50-croma-window-key.xml.in:234 src/org.mate.croma.gschema.xml:845
+#: src/50-croma-window-key.xml.in:234 src/org.cafe.croma.gschema.xml:845
 msgid "Move window to workspace 11"
 msgstr "將視窗移至第 11 個工作區"
 
-#: src/50-croma-window-key.xml.in:242 src/org.mate.croma.gschema.xml:850
+#: src/50-croma-window-key.xml.in:242 src/org.cafe.croma.gschema.xml:850
 msgid "Move window to workspace 12"
 msgstr "將視窗移至第 12 個工作區"
 
-#: src/50-croma-window-key.xml.in:250 src/org.mate.croma.gschema.xml:855
+#: src/50-croma-window-key.xml.in:250 src/org.cafe.croma.gschema.xml:855
 msgid "Move window one workspace to the left"
 msgstr "將視窗移至左方的工作區"
 
-#: src/50-croma-window-key.xml.in:258 src/org.mate.croma.gschema.xml:860
+#: src/50-croma-window-key.xml.in:258 src/org.cafe.croma.gschema.xml:860
 msgid "Move window one workspace to the right"
 msgstr "將視窗移至右方的工作區"
 
-#: src/50-croma-window-key.xml.in:266 src/org.mate.croma.gschema.xml:865
+#: src/50-croma-window-key.xml.in:266 src/org.cafe.croma.gschema.xml:865
 msgid "Move window one workspace up"
 msgstr "將視窗移至上方的工作區"
 
-#: src/50-croma-window-key.xml.in:274 src/org.mate.croma.gschema.xml:870
+#: src/50-croma-window-key.xml.in:274 src/org.cafe.croma.gschema.xml:870
 msgid "Move window one workspace down"
 msgstr "將視窗移至下方的工作區"
 
-#: src/org.mate.croma.gschema.xml:50
+#: src/org.cafe.croma.gschema.xml:50
 msgid "Modifier to use for modified window click actions"
 msgstr "按下指定的特殊按鍵後，點擊動作會代表不同的操作程序"
 
-#: src/org.mate.croma.gschema.xml:51
+#: src/org.cafe.croma.gschema.xml:51
 msgid ""
 "Clicking a window while holding down this modifier key will move the window "
 "(left click), resize the window (middle click), or show the window menu "
@@ -369,11 +369,11 @@ msgid ""
 msgstr ""
 "當在視窗中按下滑鼠按鈕及本輔助按鍵會：移動視窗（左鍵點擊）、調整視窗大小（中鍵點擊）或顯示視窗選單（右鍵點擊）。使用「resize_with_right_button」設定鍵可以交換中和右鍵的操作。輔助按鍵可以表示為「<Alt>」或「<Super>」那樣。"
 
-#: src/org.mate.croma.gschema.xml:55
+#: src/org.cafe.croma.gschema.xml:55
 msgid "Whether to resize with the right button"
 msgstr "是否以右鍵調整大小"
 
-#: src/org.mate.croma.gschema.xml:56
+#: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
 "middle button while holding down the key given in \"mouse_button_modifier\";"
@@ -382,21 +382,21 @@ msgstr ""
 "將此項設為 true 則按下「mouse_button_modifier」指定的按鍵時，可用右鍵調整大小並以中鍵顯示選單；將它設為 false "
 "則會以相反的方式運作。"
 
-#: src/org.mate.croma.gschema.xml:60
+#: src/org.cafe.croma.gschema.xml:60
 msgid "Whether to display preselected tab window border"
 msgstr "是否顯示預先選擇的分頁視窗邊框"
 
-#: src/org.mate.croma.gschema.xml:61
+#: src/org.cafe.croma.gschema.xml:61
 msgid ""
 "Set this to false to disable border of preselected window while performing "
 "tab switching."
 msgstr "將這個設定為 false 以在執行分頁切換時停用預選擇的視窗邊框。"
 
-#: src/org.mate.croma.gschema.xml:65
+#: src/org.cafe.croma.gschema.xml:65
 msgid "Arrangement of buttons on the titlebar"
 msgstr "標題列上的按鈕排列"
 
-#: src/org.mate.croma.gschema.xml:66
+#: src/org.cafe.croma.gschema.xml:66
 msgid ""
 "Arrangement of buttons on the titlebar. The value should be a string, such "
 "as \"menu:minimize,maximize,spacer,close\"; the colon separates the left "
@@ -409,11 +409,11 @@ msgstr ""
 "標題列上的按鈕排列。設定值必須為字串，例如「menu:minimize,maximize,spacer,close」；冒號表示將視窗左上角及右上角分開，而按鈕名稱則以逗號分開。不會接受重複的按鈕名稱。不明的按鈕會忽略不理，使得在日後的"
 " croma 版本增加新的按鈕時也不會令舊版本無法使用。特殊的 spacer 標籤則是用來在兩個相鄰的按鈕之間加入空白。"
 
-#: src/org.mate.croma.gschema.xml:70
+#: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
 msgstr "視窗焦點模式"
 
-#: src/org.mate.croma.gschema.xml:71
+#: src/org.cafe.croma.gschema.xml:71
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
@@ -426,11 +426,11 @@ msgstr ""
 "「sloppy」表示當鼠標在某視窗上時會令該視窗獲取輸入焦點，最後\n"
 "「mouse」表示當鼠標在某視窗上時會令該視窗獲取輸入焦點，而且當鼠標移離視窗時輸入焦點也會脫離該視窗。"
 
-#: src/org.mate.croma.gschema.xml:75
+#: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
 msgstr "控制視窗如何取得焦點"
 
-#: src/org.mate.croma.gschema.xml:76
+#: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
 "focus. It has two possible values; \"smart\" applies the user's normal focus"
@@ -439,11 +439,11 @@ msgid ""
 msgstr ""
 "本選項會在新建視窗取得焦點上提供符加的控制。它有兩個可用的值：「smart」會套用使用者平常使用的焦點模式，及「strick」會導致在終端中執行的視窗在開始時不會取得焦點。"
 
-#: src/org.mate.croma.gschema.xml:80
+#: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
 msgstr "由於其他使用的動作，提升視窗取得焦點應否是一個副作用"
 
-#: src/org.mate.croma.gschema.xml:81
+#: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
 "strongly discouraged from changing it from the default of true. Many actions"
@@ -474,11 +474,11 @@ msgstr ""
 "時，將視窗前移的方法列表並不包括來自應用軟體的視窗前移程式要求；此類的要求將會被忽略不論要求的理由為何。如果您是一位應用軟體開發者，曾經接到某位使用者抱怨說，您的應用軟體無法在此項設定為停用時正常工作。請告訴他們這是他們的錯誤而破壞了視窗管理器，而他們需要將此項改回"
 " true，或是接受這個他們所要求的程式錯誤。"
 
-#: src/org.mate.croma.gschema.xml:85
+#: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
 msgstr "雙擊標題列所表示的動作"
 
-#: src/org.mate.croma.gschema.xml:86
+#: src/org.cafe.croma.gschema.xml:86
 msgid ""
 "This option determines the effects of double-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -491,11 +491,11 @@ msgid ""
 msgstr ""
 "本選項決定在標題列上雙擊滑鼠按鈕的效果。目前有效的選項為：「toggle_shade」會收攏/鋪展視窗，「toggle_maximize」會切換是否將視窗最大化，「toggle_maximize_horizontally」和「toggle_maximize_vertically」會根據其方向決定最大化的方式。「minimize」會將視窗最小化，「shade」會收攏視窗，「menu」會顯示視窗選單，「lower」會把視窗置於所有其他視窗之後，而「none」則不會作出任何反應。"
 
-#: src/org.mate.croma.gschema.xml:90
+#: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
 msgstr "中鍵點選標題列所表示的動作"
 
-#: src/org.mate.croma.gschema.xml:91
+#: src/org.cafe.croma.gschema.xml:91
 msgid ""
 "This option determines the effects of middle-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -508,11 +508,11 @@ msgid ""
 msgstr ""
 "本選項決定在標題列上按下滑鼠中鍵的效果。目前有效的選項為：「toggle_shade」會收攏/鋪展視窗，「toggle_maximize」會切換是否將視窗最大化，「toggle_maximize_horizontally」和「toggle_maximize_vertically」會根據其方向決定最大化的方式。「minimize」會將視窗最小化，「shade」會收攏視窗，「menu」會顯示視窗選單，「lower」會把視窗置於所有其他視窗之後，而「none」則不會作出任何反應。"
 
-#: src/org.mate.croma.gschema.xml:95
+#: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
 msgstr "右擊標題列所表示的動作"
 
-#: src/org.mate.croma.gschema.xml:96
+#: src/org.cafe.croma.gschema.xml:96
 msgid ""
 "This option determines the effects of right-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -525,11 +525,11 @@ msgid ""
 msgstr ""
 "本選項決定在標題列上安下滑鼠右鍵的效果。目前有效的選項為：「toggle_shade」會收攏/鋪展視窗，「toggle_maximize」會切換是否將視窗最大化，「toggle_maximize_horizontally」和「toggle_maximize_vertically」會根據其方向決定最大化的方式。「minimize」會將視窗最小化，「shade」會收攏視窗，「menu」會顯示視窗選單，「lower」會把視窗置於所有其他視窗之後，而「none」則不會作出任何反應。"
 
-#: src/org.mate.croma.gschema.xml:100
+#: src/org.cafe.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
 msgstr "焦點所在的視窗自動地覆蓋其他視窗"
 
-#: src/org.mate.croma.gschema.xml:101
+#: src/org.cafe.croma.gschema.xml:101
 msgid ""
 "If set to true, and the focus mode is either \"sloppy\" or \"mouse\" then "
 "the focused window will be automatically raised after a delay specified by "
@@ -539,41 +539,41 @@ msgstr ""
 "如設定為‘true’，而且焦點模式是「sloppy」或「mouse」的時候，輸入焦點所在的視窗經過某段時間後會自動完全顯示（auto_raise_delay"
 " 設定鍵值指定了延遲的時間）。這跟按下視窗將視窗升起，及以在拖曳時進入視窗無關。"
 
-#: src/org.mate.croma.gschema.xml:105
+#: src/org.cafe.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
 msgstr "某視窗自動覆蓋其它視窗前延遲的時間"
 
-#: src/org.mate.croma.gschema.xml:106
+#: src/org.cafe.croma.gschema.xml:106
 msgid ""
 "The time delay before raising a window if auto_raise is set to true. The "
 "delay is given in thousandths of a second."
 msgstr "如果選用 auto_raise 選項時，令視窗不被遮蔽的延遲時間。延遲的時間會以 1/1000 秒為單位來表示。"
 
-#: src/org.mate.croma.gschema.xml:110
+#: src/org.cafe.croma.gschema.xml:110
 msgid "Current theme"
 msgstr "目前的主題"
 
-#: src/org.mate.croma.gschema.xml:111
+#: src/org.cafe.croma.gschema.xml:111
 msgid ""
 "The theme determines the appearance of window borders, titlebar, and so "
 "forth."
 msgstr "主題可指定視窗邊框、標題列等的外觀。"
 
-#: src/org.mate.croma.gschema.xml:115
+#: src/org.cafe.croma.gschema.xml:115
 msgid "Use standard system font in window titles"
 msgstr "在視窗標題中使用標準系統字型"
 
-#: src/org.mate.croma.gschema.xml:116
+#: src/org.cafe.croma.gschema.xml:116
 msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
 msgstr "若設定為 true，則忽略 titlebar_font 選項，並在視窗標題中使用標準的應用程式字型。"
 
-#: src/org.mate.croma.gschema.xml:120
+#: src/org.cafe.croma.gschema.xml:120
 msgid "Window title font"
 msgstr "視窗標題列字型"
 
-#: src/org.mate.croma.gschema.xml:121
+#: src/org.cafe.croma.gschema.xml:121
 msgid ""
 "A font description string describing a font for window titlebars. The size "
 "from the description will only be used if the titlebar_font_size option is "
@@ -583,22 +583,22 @@ msgstr ""
 "視窗標題所使用的字型的描述字串。可是只有當 titlebar_font_size option 設定為 0 時才會採用本設定值中的字型大小。另外，當 "
 "titlebar_uses_desktop_font 設定為 true 時本設定值不會生效。"
 
-#: src/org.mate.croma.gschema.xml:126
+#: src/org.cafe.croma.gschema.xml:126
 msgid "Number of workspaces"
 msgstr "工作區數目"
 
-#: src/org.mate.croma.gschema.xml:127
+#: src/org.cafe.croma.gschema.xml:127
 msgid ""
 "Number of workspaces. Must be more than zero, and has a fixed maximum to "
 "prevent making the desktop unusable by accidentally asking for too many "
 "workspaces."
 msgstr "工作區數目。必須大於 0，並有固定的最大值（防止因工作區數目過多而破壞桌面）。"
 
-#: src/org.mate.croma.gschema.xml:131
+#: src/org.cafe.croma.gschema.xml:131
 msgid "Workspace wrap style"
 msgstr "工作區包裝風格"
 
-#: src/org.mate.croma.gschema.xml:132
+#: src/org.cafe.croma.gschema.xml:132
 msgid ""
 "The wrap style is used to determine how to switch from one workspace to "
 "another at the border of the workspace switcher. When set to \"no wrap\", "
@@ -613,32 +613,32 @@ msgstr ""
 "wrap」，若您試圖切換工作區到前一個工作區的切換器邊界時，什麼事都不會發生。若設定為「classic」，將會使用舊版 croma "
 "的行為：一排的末端引出下一個的起頭，一列的末端也會引出下一列的起頭。若設定為「toroidal」，工作區將會像甜甜圈一樣被連結，每一行的末端會導向自己的開頭，每列的末端也會導向自己的開頭。"
 
-#: src/org.mate.croma.gschema.xml:136
+#: src/org.cafe.croma.gschema.xml:136
 msgid "Enable Visual Bell"
 msgstr "啟用鈴聲視覺效果"
 
-#: src/org.mate.croma.gschema.xml:137
+#: src/org.cafe.croma.gschema.xml:137
 msgid ""
 "Turns on a visual indication when an application or the system issues a "
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr "當程式系統發出「聲響」或「鈴聲」時，以視覺方式表示。對於聽障人士、在嘈雜的環境中時，這個設定會比較有用。"
 
-#: src/org.mate.croma.gschema.xml:141
+#: src/org.cafe.croma.gschema.xml:141
 msgid "System Bell is Audible"
 msgstr "系統聲響可發出聲音"
 
-#: src/org.mate.croma.gschema.xml:142
+#: src/org.cafe.croma.gschema.xml:142
 msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
 msgstr "決定程式或系統可否發出可聽見的「聲響」；配合「鈴聲視覺效果」後，就可以產生不發出聲音的「聲響」。"
 
-#: src/org.mate.croma.gschema.xml:146
+#: src/org.cafe.croma.gschema.xml:146
 msgid "Visual Bell Type"
 msgstr "鈴聲視覺效果類型"
 
-#: src/org.mate.croma.gschema.xml:147
+#: src/org.cafe.croma.gschema.xml:147
 msgid ""
 "Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
@@ -652,19 +652,19 @@ msgstr ""
 "「fullscreen」令整個畫面以黑白方式閃爍\n"
 "「frame_flash」令發出鈴聲的程式的視窗標題列閃動。如果不知道發出鈴聲的是哪一個視窗（主要的例子為預設的「系統聲響」），則會令目前輸入焦點所在的視窗閃動標題列。"
 
-#: src/org.mate.croma.gschema.xml:151
+#: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
 msgstr "合成管理員"
 
-#: src/org.mate.croma.gschema.xml:152
+#: src/org.cafe.croma.gschema.xml:152
 msgid "Determines whether Croma is a compositing manager."
 msgstr "決定 Croma 是否為合成管理員。"
 
-#: src/org.mate.croma.gschema.xml:156
+#: src/org.cafe.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
 msgstr "與合成管理員一同運作的快速 Alt-Tab（停用縮圖）"
 
-#: src/org.mate.croma.gschema.xml:157
+#: src/org.cafe.croma.gschema.xml:157
 msgid ""
 "If set to true, no window thumbnails will be displayed in the alt-tab popup "
 "window when the compositing manager is enabled. Application icons will be "
@@ -674,11 +674,11 @@ msgstr ""
 "若設定為真，在 alt-tab "
 "彈出式視窗中若合成管理員啟用時將不會顯示縮圖。將會以應用程式圖示代替。注意，在高解析度螢幕而有許多可見的視窗時，繪製時可能會有感覺的到的延遲。"
 
-#: src/org.mate.croma.gschema.xml:161
+#: src/org.cafe.croma.gschema.xml:161
 msgid "If true, trade off usability for less resource usage"
 msgstr "如設定為「true」，則會以可用性來換取使用更少的資源"
 
-#: src/org.mate.croma.gschema.xml:162
+#: src/org.cafe.croma.gschema.xml:162
 msgid ""
 "If true, croma will give the user less feedback by using wireframes, "
 "avoiding animations, or other means. This is a significant reduction in "
@@ -689,12 +689,12 @@ msgstr ""
 "如設定為「true」，croma "
 "會給使用者更少的回饋：會使用線框、防止動畫或使用其它方法的使用。這很明顯會減低很多給使用者的可用性。但可能會使到在啟用此項前不能使用的舊程式及終端服務可以運作。但是，如果使用了無障礙環境，線框功能將會停用，以防止捆綁的桌面破損。"
 
-#: src/org.mate.croma.gschema.xml:166
+#: src/org.cafe.croma.gschema.xml:166
 msgid ""
 "(Not implemented) Navigation works in terms of applications not windows"
 msgstr "（未完成）使用桌面時以應用程式為主的方式運作，並非以視窗為主"
 
-#: src/org.mate.croma.gschema.xml:167
+#: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
@@ -707,11 +707,11 @@ msgstr ""
 "如設定為 true，Croma 會以應用程式而不是以視窗為主的方式運作。它的概念是比較抽象，但大致上，以應用程式為主的設定會類似 Mac 多於 "
 "Windows。在應用程式為主的模式中，當視窗獲得輸入焦點時，所有該程式的視窗都會完全顯示出來。另外，在應用程式為主的模式中，若在輸入焦點以外的視窗按滑鼠按鈕，只會令輸入焦點轉移，按該下按鈕不會令程式帶來其它變化。另外，應用程式為主的設定目前大致上仍未編寫完成。"
 
-#: src/org.mate.croma.gschema.xml:171
+#: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
 msgstr "停用舊式或不合規格的程式所需的功能"
 
-#: src/org.mate.croma.gschema.xml:172
+#: src/org.cafe.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
 "manager misfeatures. This option puts Croma in a rigorously correct mode, "
@@ -720,21 +720,21 @@ msgid ""
 msgstr ""
 "某些應用程式不符合規定，導致令視窗管理員要加入某些不應該有的功能。本選項會關閉對這些不合規格的程式的支援，如果您不需要執行任何不合規格的程式，這樣的使用者界面會較好。"
 
-#: src/org.mate.croma.gschema.xml:176
+#: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
 msgstr "決定是否新的視窗要在螢幕中心建立"
 
-#: src/org.mate.croma.gschema.xml:177
+#: src/org.cafe.croma.gschema.xml:177
 msgid ""
 "If set to true, new windows are opened in the center of the screen. "
 "Otherwise, they are opened at the top left of the screen."
 msgstr "若設定為真，新的視窗會在螢幕中央開啟。否則它們將在螢幕的左上角開啟。"
 
-#: src/org.mate.croma.gschema.xml:181
+#: src/org.cafe.croma.gschema.xml:181
 msgid "Whether to enable window tiling"
 msgstr "是否啟用視窗平鋪"
 
-#: src/org.mate.croma.gschema.xml:182
+#: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
 "resizes them horizontally to cover half of the available area. Drag-dropping"
@@ -742,31 +742,31 @@ msgid ""
 msgstr ""
 "若啟用，將視窗拖曳至螢幕邊緣將會把它們在垂直方向最大化，並在水平方向重新調整其大小以覆蓋可用區域的一半。當允許頂端平鋪啟用時，拖曳到頂端將會最大化視窗。"
 
-#: src/org.mate.croma.gschema.xml:186
+#: src/org.cafe.croma.gschema.xml:186
 msgid "Whether to maximize the window when dragged to the top of the screen"
 msgstr "是否在拖曳到螢幕頂端時最大化視窗"
 
-#: src/org.mate.croma.gschema.xml:187
+#: src/org.cafe.croma.gschema.xml:187
 msgid ""
 "If enabled, drag-dropping a window to the top of the screen will maximize "
 "it. Only works when allow-tiling is enabled."
 msgstr "若啟用，拖曳視窗到螢幕頂端會將其最大化。僅當允許平鋪啟用時運作。"
 
-#: src/org.mate.croma.gschema.xml:191
+#: src/org.cafe.croma.gschema.xml:191
 msgid "Whether to enable cycling through different tile sizes"
 msgstr "是否啟用循環切換不同的平鋪大小"
 
-#: src/org.mate.croma.gschema.xml:192
+#: src/org.cafe.croma.gschema.xml:192
 msgid ""
 "If enabled, tiling a window will cycle through multiple different sizes by "
 "using the same keyboard shortcut multiple times in a row."
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:196
+#: src/org.cafe.croma.gschema.xml:196
 msgid "Window placement mode"
 msgstr "視窗擺放模式"
 
-#: src/org.mate.croma.gschema.xml:197
+#: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
 "\"automatic\" means the system chooses a location automatically based on the"
@@ -777,102 +777,102 @@ msgid ""
 msgstr ""
 "視窗擺放模式指定了新的視窗要如何放置。「自動」意味著系統將會基於桌面上的可用空間自動選擇位置，或是如果沒有空間的話就疊上去；「游標」意味著新視窗將會放置在滑鼠游標處；「手動」意味著使用者必須使用滑鼠或鍵盤手動放置。"
 
-#: src/org.mate.croma.gschema.xml:201
+#: src/org.cafe.croma.gschema.xml:201
 msgid "List of applications ignored by show-desktop"
 msgstr "會被顯示桌面忽略的應用程式清單"
 
-#: src/org.mate.croma.gschema.xml:202
+#: src/org.cafe.croma.gschema.xml:202
 msgid ""
 "Comma separated class list. Each running GUI application referenced to given"
 " windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr "逗號分隔的類型清單。每個正在執行且引用指定的視窗管理員分類的應用程式，都將會被「顯示桌面」功能忽略。"
 
-#: src/org.mate.croma.gschema.xml:207
+#: src/org.cafe.croma.gschema.xml:207
 msgid "Icon size in alt-tab popup window"
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:208
+#: src/org.cafe.croma.gschema.xml:208
 msgid ""
 "Size of the application icons displayed in alt-tab popup window. The "
 "screen's scale factor is applied to this value."
 msgstr "顯示在 Alt-Tab 彈出式視窗中的應用程式圖示大小。畫面的縮放係數會套用此值。"
 
-#: src/org.mate.croma.gschema.xml:213
+#: src/org.cafe.croma.gschema.xml:213
 msgid "Maximum number of columns in alt-tab popup window"
 msgstr "在 alt-tab 彈出式視窗中最大欄數"
 
-#: src/org.mate.croma.gschema.xml:214
+#: src/org.cafe.croma.gschema.xml:214
 msgid ""
 "The popup window will be expanded to fit up to these many entries per row."
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:218
+#: src/org.cafe.croma.gschema.xml:218
 msgid "Expand the alt-tab popup window to fit longer window titles"
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:219
+#: src/org.cafe.croma.gschema.xml:219
 msgid ""
 "The popup window may be expanded up to the width determined by the config "
 "parameter 'alt-tab-max-columns'."
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:226 src/org.mate.croma.gschema.xml:231
-#: src/org.mate.croma.gschema.xml:236 src/org.mate.croma.gschema.xml:241
-#: src/org.mate.croma.gschema.xml:246 src/org.mate.croma.gschema.xml:251
-#: src/org.mate.croma.gschema.xml:256 src/org.mate.croma.gschema.xml:261
-#: src/org.mate.croma.gschema.xml:266 src/org.mate.croma.gschema.xml:271
-#: src/org.mate.croma.gschema.xml:276 src/org.mate.croma.gschema.xml:281
-#: src/org.mate.croma.gschema.xml:286 src/org.mate.croma.gschema.xml:291
-#: src/org.mate.croma.gschema.xml:296 src/org.mate.croma.gschema.xml:301
-#: src/org.mate.croma.gschema.xml:306 src/org.mate.croma.gschema.xml:311
-#: src/org.mate.croma.gschema.xml:316 src/org.mate.croma.gschema.xml:321
-#: src/org.mate.croma.gschema.xml:326 src/org.mate.croma.gschema.xml:331
-#: src/org.mate.croma.gschema.xml:336 src/org.mate.croma.gschema.xml:341
-#: src/org.mate.croma.gschema.xml:346 src/org.mate.croma.gschema.xml:351
-#: src/org.mate.croma.gschema.xml:356 src/org.mate.croma.gschema.xml:361
-#: src/org.mate.croma.gschema.xml:366 src/org.mate.croma.gschema.xml:371
-#: src/org.mate.croma.gschema.xml:376 src/org.mate.croma.gschema.xml:381
-#: src/org.mate.croma.gschema.xml:386 src/org.mate.croma.gschema.xml:391
-#: src/org.mate.croma.gschema.xml:396 src/org.mate.croma.gschema.xml:401
+#: src/org.cafe.croma.gschema.xml:226 src/org.cafe.croma.gschema.xml:231
+#: src/org.cafe.croma.gschema.xml:236 src/org.cafe.croma.gschema.xml:241
+#: src/org.cafe.croma.gschema.xml:246 src/org.cafe.croma.gschema.xml:251
+#: src/org.cafe.croma.gschema.xml:256 src/org.cafe.croma.gschema.xml:261
+#: src/org.cafe.croma.gschema.xml:266 src/org.cafe.croma.gschema.xml:271
+#: src/org.cafe.croma.gschema.xml:276 src/org.cafe.croma.gschema.xml:281
+#: src/org.cafe.croma.gschema.xml:286 src/org.cafe.croma.gschema.xml:291
+#: src/org.cafe.croma.gschema.xml:296 src/org.cafe.croma.gschema.xml:301
+#: src/org.cafe.croma.gschema.xml:306 src/org.cafe.croma.gschema.xml:311
+#: src/org.cafe.croma.gschema.xml:316 src/org.cafe.croma.gschema.xml:321
+#: src/org.cafe.croma.gschema.xml:326 src/org.cafe.croma.gschema.xml:331
+#: src/org.cafe.croma.gschema.xml:336 src/org.cafe.croma.gschema.xml:341
+#: src/org.cafe.croma.gschema.xml:346 src/org.cafe.croma.gschema.xml:351
+#: src/org.cafe.croma.gschema.xml:356 src/org.cafe.croma.gschema.xml:361
+#: src/org.cafe.croma.gschema.xml:366 src/org.cafe.croma.gschema.xml:371
+#: src/org.cafe.croma.gschema.xml:376 src/org.cafe.croma.gschema.xml:381
+#: src/org.cafe.croma.gschema.xml:386 src/org.cafe.croma.gschema.xml:391
+#: src/org.cafe.croma.gschema.xml:396 src/org.cafe.croma.gschema.xml:401
 msgid "Name of workspace"
 msgstr "工作區名稱"
 
-#: src/org.mate.croma.gschema.xml:227 src/org.mate.croma.gschema.xml:232
-#: src/org.mate.croma.gschema.xml:237 src/org.mate.croma.gschema.xml:242
-#: src/org.mate.croma.gschema.xml:247 src/org.mate.croma.gschema.xml:252
-#: src/org.mate.croma.gschema.xml:257 src/org.mate.croma.gschema.xml:262
-#: src/org.mate.croma.gschema.xml:267 src/org.mate.croma.gschema.xml:272
-#: src/org.mate.croma.gschema.xml:277 src/org.mate.croma.gschema.xml:282
-#: src/org.mate.croma.gschema.xml:287 src/org.mate.croma.gschema.xml:292
-#: src/org.mate.croma.gschema.xml:297 src/org.mate.croma.gschema.xml:302
-#: src/org.mate.croma.gschema.xml:307 src/org.mate.croma.gschema.xml:312
-#: src/org.mate.croma.gschema.xml:317 src/org.mate.croma.gschema.xml:322
-#: src/org.mate.croma.gschema.xml:327 src/org.mate.croma.gschema.xml:332
-#: src/org.mate.croma.gschema.xml:337 src/org.mate.croma.gschema.xml:342
-#: src/org.mate.croma.gschema.xml:347 src/org.mate.croma.gschema.xml:352
-#: src/org.mate.croma.gschema.xml:357 src/org.mate.croma.gschema.xml:362
-#: src/org.mate.croma.gschema.xml:367 src/org.mate.croma.gschema.xml:372
-#: src/org.mate.croma.gschema.xml:377 src/org.mate.croma.gschema.xml:382
-#: src/org.mate.croma.gschema.xml:387 src/org.mate.croma.gschema.xml:392
-#: src/org.mate.croma.gschema.xml:397 src/org.mate.croma.gschema.xml:402
+#: src/org.cafe.croma.gschema.xml:227 src/org.cafe.croma.gschema.xml:232
+#: src/org.cafe.croma.gschema.xml:237 src/org.cafe.croma.gschema.xml:242
+#: src/org.cafe.croma.gschema.xml:247 src/org.cafe.croma.gschema.xml:252
+#: src/org.cafe.croma.gschema.xml:257 src/org.cafe.croma.gschema.xml:262
+#: src/org.cafe.croma.gschema.xml:267 src/org.cafe.croma.gschema.xml:272
+#: src/org.cafe.croma.gschema.xml:277 src/org.cafe.croma.gschema.xml:282
+#: src/org.cafe.croma.gschema.xml:287 src/org.cafe.croma.gschema.xml:292
+#: src/org.cafe.croma.gschema.xml:297 src/org.cafe.croma.gschema.xml:302
+#: src/org.cafe.croma.gschema.xml:307 src/org.cafe.croma.gschema.xml:312
+#: src/org.cafe.croma.gschema.xml:317 src/org.cafe.croma.gschema.xml:322
+#: src/org.cafe.croma.gschema.xml:327 src/org.cafe.croma.gschema.xml:332
+#: src/org.cafe.croma.gschema.xml:337 src/org.cafe.croma.gschema.xml:342
+#: src/org.cafe.croma.gschema.xml:347 src/org.cafe.croma.gschema.xml:352
+#: src/org.cafe.croma.gschema.xml:357 src/org.cafe.croma.gschema.xml:362
+#: src/org.cafe.croma.gschema.xml:367 src/org.cafe.croma.gschema.xml:372
+#: src/org.cafe.croma.gschema.xml:377 src/org.cafe.croma.gschema.xml:382
+#: src/org.cafe.croma.gschema.xml:387 src/org.cafe.croma.gschema.xml:392
+#: src/org.cafe.croma.gschema.xml:397 src/org.cafe.croma.gschema.xml:402
 msgid "The name of a workspace."
 msgstr "工作區的名稱。"
 
-#: src/org.mate.croma.gschema.xml:409 src/org.mate.croma.gschema.xml:414
-#: src/org.mate.croma.gschema.xml:419 src/org.mate.croma.gschema.xml:424
-#: src/org.mate.croma.gschema.xml:429 src/org.mate.croma.gschema.xml:434
-#: src/org.mate.croma.gschema.xml:439 src/org.mate.croma.gschema.xml:444
-#: src/org.mate.croma.gschema.xml:449 src/org.mate.croma.gschema.xml:454
-#: src/org.mate.croma.gschema.xml:459 src/org.mate.croma.gschema.xml:464
+#: src/org.cafe.croma.gschema.xml:409 src/org.cafe.croma.gschema.xml:414
+#: src/org.cafe.croma.gschema.xml:419 src/org.cafe.croma.gschema.xml:424
+#: src/org.cafe.croma.gschema.xml:429 src/org.cafe.croma.gschema.xml:434
+#: src/org.cafe.croma.gschema.xml:439 src/org.cafe.croma.gschema.xml:444
+#: src/org.cafe.croma.gschema.xml:449 src/org.cafe.croma.gschema.xml:454
+#: src/org.cafe.croma.gschema.xml:459 src/org.cafe.croma.gschema.xml:464
 msgid "Run a defined command"
 msgstr "執行指定的指令"
 
-#: src/org.mate.croma.gschema.xml:410 src/org.mate.croma.gschema.xml:415
-#: src/org.mate.croma.gschema.xml:420 src/org.mate.croma.gschema.xml:425
-#: src/org.mate.croma.gschema.xml:430 src/org.mate.croma.gschema.xml:435
-#: src/org.mate.croma.gschema.xml:440 src/org.mate.croma.gschema.xml:445
-#: src/org.mate.croma.gschema.xml:450 src/org.mate.croma.gschema.xml:455
-#: src/org.mate.croma.gschema.xml:460 src/org.mate.croma.gschema.xml:465
+#: src/org.cafe.croma.gschema.xml:410 src/org.cafe.croma.gschema.xml:415
+#: src/org.cafe.croma.gschema.xml:420 src/org.cafe.croma.gschema.xml:425
+#: src/org.cafe.croma.gschema.xml:430 src/org.cafe.croma.gschema.xml:435
+#: src/org.cafe.croma.gschema.xml:440 src/org.cafe.croma.gschema.xml:445
+#: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
+#: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
 "The keybinding that runs the correspondingly-numbered command in "
 "/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
@@ -882,44 +882,44 @@ msgid ""
 "keybinding for this action."
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:470 src/org.mate.croma.gschema.xml:475
-#: src/org.mate.croma.gschema.xml:480 src/org.mate.croma.gschema.xml:485
-#: src/org.mate.croma.gschema.xml:490 src/org.mate.croma.gschema.xml:495
-#: src/org.mate.croma.gschema.xml:500 src/org.mate.croma.gschema.xml:505
-#: src/org.mate.croma.gschema.xml:510 src/org.mate.croma.gschema.xml:515
-#: src/org.mate.croma.gschema.xml:520 src/org.mate.croma.gschema.xml:525
-#: src/org.mate.croma.gschema.xml:530 src/org.mate.croma.gschema.xml:535
-#: src/org.mate.croma.gschema.xml:540 src/org.mate.croma.gschema.xml:545
-#: src/org.mate.croma.gschema.xml:550 src/org.mate.croma.gschema.xml:625
-#: src/org.mate.croma.gschema.xml:630 src/org.mate.croma.gschema.xml:635
-#: src/org.mate.croma.gschema.xml:640 src/org.mate.croma.gschema.xml:645
-#: src/org.mate.croma.gschema.xml:650 src/org.mate.croma.gschema.xml:655
-#: src/org.mate.croma.gschema.xml:736 src/org.mate.croma.gschema.xml:741
-#: src/org.mate.croma.gschema.xml:746 src/org.mate.croma.gschema.xml:751
-#: src/org.mate.croma.gschema.xml:756 src/org.mate.croma.gschema.xml:761
-#: src/org.mate.croma.gschema.xml:766 src/org.mate.croma.gschema.xml:771
-#: src/org.mate.croma.gschema.xml:776 src/org.mate.croma.gschema.xml:781
-#: src/org.mate.croma.gschema.xml:786 src/org.mate.croma.gschema.xml:791
-#: src/org.mate.croma.gschema.xml:796 src/org.mate.croma.gschema.xml:801
-#: src/org.mate.croma.gschema.xml:806 src/org.mate.croma.gschema.xml:811
-#: src/org.mate.croma.gschema.xml:816 src/org.mate.croma.gschema.xml:821
-#: src/org.mate.croma.gschema.xml:826 src/org.mate.croma.gschema.xml:831
-#: src/org.mate.croma.gschema.xml:836 src/org.mate.croma.gschema.xml:841
-#: src/org.mate.croma.gschema.xml:846 src/org.mate.croma.gschema.xml:851
-#: src/org.mate.croma.gschema.xml:856 src/org.mate.croma.gschema.xml:861
-#: src/org.mate.croma.gschema.xml:866 src/org.mate.croma.gschema.xml:871
-#: src/org.mate.croma.gschema.xml:876 src/org.mate.croma.gschema.xml:881
-#: src/org.mate.croma.gschema.xml:886 src/org.mate.croma.gschema.xml:891
-#: src/org.mate.croma.gschema.xml:896 src/org.mate.croma.gschema.xml:901
-#: src/org.mate.croma.gschema.xml:906 src/org.mate.croma.gschema.xml:911
-#: src/org.mate.croma.gschema.xml:916 src/org.mate.croma.gschema.xml:921
-#: src/org.mate.croma.gschema.xml:926 src/org.mate.croma.gschema.xml:931
-#: src/org.mate.croma.gschema.xml:936 src/org.mate.croma.gschema.xml:941
-#: src/org.mate.croma.gschema.xml:946 src/org.mate.croma.gschema.xml:951
-#: src/org.mate.croma.gschema.xml:956 src/org.mate.croma.gschema.xml:961
-#: src/org.mate.croma.gschema.xml:966 src/org.mate.croma.gschema.xml:971
-#: src/org.mate.croma.gschema.xml:976 src/org.mate.croma.gschema.xml:981
-#: src/org.mate.croma.gschema.xml:986 src/org.mate.croma.gschema.xml:991
+#: src/org.cafe.croma.gschema.xml:470 src/org.cafe.croma.gschema.xml:475
+#: src/org.cafe.croma.gschema.xml:480 src/org.cafe.croma.gschema.xml:485
+#: src/org.cafe.croma.gschema.xml:490 src/org.cafe.croma.gschema.xml:495
+#: src/org.cafe.croma.gschema.xml:500 src/org.cafe.croma.gschema.xml:505
+#: src/org.cafe.croma.gschema.xml:510 src/org.cafe.croma.gschema.xml:515
+#: src/org.cafe.croma.gschema.xml:520 src/org.cafe.croma.gschema.xml:525
+#: src/org.cafe.croma.gschema.xml:530 src/org.cafe.croma.gschema.xml:535
+#: src/org.cafe.croma.gschema.xml:540 src/org.cafe.croma.gschema.xml:545
+#: src/org.cafe.croma.gschema.xml:550 src/org.cafe.croma.gschema.xml:625
+#: src/org.cafe.croma.gschema.xml:630 src/org.cafe.croma.gschema.xml:635
+#: src/org.cafe.croma.gschema.xml:640 src/org.cafe.croma.gschema.xml:645
+#: src/org.cafe.croma.gschema.xml:650 src/org.cafe.croma.gschema.xml:655
+#: src/org.cafe.croma.gschema.xml:736 src/org.cafe.croma.gschema.xml:741
+#: src/org.cafe.croma.gschema.xml:746 src/org.cafe.croma.gschema.xml:751
+#: src/org.cafe.croma.gschema.xml:756 src/org.cafe.croma.gschema.xml:761
+#: src/org.cafe.croma.gschema.xml:766 src/org.cafe.croma.gschema.xml:771
+#: src/org.cafe.croma.gschema.xml:776 src/org.cafe.croma.gschema.xml:781
+#: src/org.cafe.croma.gschema.xml:786 src/org.cafe.croma.gschema.xml:791
+#: src/org.cafe.croma.gschema.xml:796 src/org.cafe.croma.gschema.xml:801
+#: src/org.cafe.croma.gschema.xml:806 src/org.cafe.croma.gschema.xml:811
+#: src/org.cafe.croma.gschema.xml:816 src/org.cafe.croma.gschema.xml:821
+#: src/org.cafe.croma.gschema.xml:826 src/org.cafe.croma.gschema.xml:831
+#: src/org.cafe.croma.gschema.xml:836 src/org.cafe.croma.gschema.xml:841
+#: src/org.cafe.croma.gschema.xml:846 src/org.cafe.croma.gschema.xml:851
+#: src/org.cafe.croma.gschema.xml:856 src/org.cafe.croma.gschema.xml:861
+#: src/org.cafe.croma.gschema.xml:866 src/org.cafe.croma.gschema.xml:871
+#: src/org.cafe.croma.gschema.xml:876 src/org.cafe.croma.gschema.xml:881
+#: src/org.cafe.croma.gschema.xml:886 src/org.cafe.croma.gschema.xml:891
+#: src/org.cafe.croma.gschema.xml:896 src/org.cafe.croma.gschema.xml:901
+#: src/org.cafe.croma.gschema.xml:906 src/org.cafe.croma.gschema.xml:911
+#: src/org.cafe.croma.gschema.xml:916 src/org.cafe.croma.gschema.xml:921
+#: src/org.cafe.croma.gschema.xml:926 src/org.cafe.croma.gschema.xml:931
+#: src/org.cafe.croma.gschema.xml:936 src/org.cafe.croma.gschema.xml:941
+#: src/org.cafe.croma.gschema.xml:946 src/org.cafe.croma.gschema.xml:951
+#: src/org.cafe.croma.gschema.xml:956 src/org.cafe.croma.gschema.xml:961
+#: src/org.cafe.croma.gschema.xml:966 src/org.cafe.croma.gschema.xml:971
+#: src/org.cafe.croma.gschema.xml:976 src/org.cafe.croma.gschema.xml:981
+#: src/org.cafe.croma.gschema.xml:986 src/org.cafe.croma.gschema.xml:991
 msgid ""
 "The format looks like \"<Control>a\" or \"<Shift><Alt>F1\". The parser is "
 "fairly liberal and allows lower or upper case, and also abbreviations such "
@@ -927,13 +927,13 @@ msgid ""
 "\"disabled\", then there will be no keybinding for this action."
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:555 src/org.mate.croma.gschema.xml:560
-#: src/org.mate.croma.gschema.xml:565 src/org.mate.croma.gschema.xml:570
-#: src/org.mate.croma.gschema.xml:575 src/org.mate.croma.gschema.xml:580
-#: src/org.mate.croma.gschema.xml:585 src/org.mate.croma.gschema.xml:590
-#: src/org.mate.croma.gschema.xml:595 src/org.mate.croma.gschema.xml:600
-#: src/org.mate.croma.gschema.xml:605 src/org.mate.croma.gschema.xml:610
-#: src/org.mate.croma.gschema.xml:615 src/org.mate.croma.gschema.xml:620
+#: src/org.cafe.croma.gschema.xml:555 src/org.cafe.croma.gschema.xml:560
+#: src/org.cafe.croma.gschema.xml:565 src/org.cafe.croma.gschema.xml:570
+#: src/org.cafe.croma.gschema.xml:575 src/org.cafe.croma.gschema.xml:580
+#: src/org.cafe.croma.gschema.xml:585 src/org.cafe.croma.gschema.xml:590
+#: src/org.cafe.croma.gschema.xml:595 src/org.cafe.croma.gschema.xml:600
+#: src/org.cafe.croma.gschema.xml:605 src/org.cafe.croma.gschema.xml:610
+#: src/org.cafe.croma.gschema.xml:615 src/org.cafe.croma.gschema.xml:620
 msgid ""
 "The format looks like \"<Control>a\" or \"<Shift><Alt>F1\". The parser is "
 "fairly liberal and allows lower or upper case, and also abbreviations such "
@@ -943,57 +943,57 @@ msgid ""
 "\"shift\" cannot be one of the keys it uses."
 msgstr ""
 
-#: src/org.mate.croma.gschema.xml:559
+#: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
 msgstr "在應用程式的視窗之間相反次序切換，使用彈出式視窗"
 
-#: src/org.mate.croma.gschema.xml:569
+#: src/org.cafe.croma.gschema.xml:569
 msgid "Move backward between windows, using a popup window"
 msgstr "在視窗之間以相反次序切換，使用彈出式視窗"
 
-#: src/org.mate.croma.gschema.xml:574
+#: src/org.cafe.croma.gschema.xml:574
 msgid "Move between windows on all workspaces, using a popup window"
 msgstr "在所有工作區間的視窗之間切換，使用彈出式視窗"
 
-#: src/org.mate.croma.gschema.xml:579
+#: src/org.cafe.croma.gschema.xml:579
 msgid "Move backward between windows on all workspaces, using a popup window"
 msgstr "在所有工作區間的視窗之間以相反次序切換，使用彈出式視窗"
 
-#: src/org.mate.croma.gschema.xml:589
+#: src/org.cafe.croma.gschema.xml:589
 msgid "Move backward between panels and the desktop, using a popup window"
 msgstr "在面板及桌面之間以相反次序切換，使用彈出式視窗"
 
-#: src/org.mate.croma.gschema.xml:599
+#: src/org.cafe.croma.gschema.xml:599
 msgid "Move backward between windows of an application immediately"
 msgstr "立即在應用程式的視窗之間相反次序切換"
 
-#: src/org.mate.croma.gschema.xml:609
+#: src/org.cafe.croma.gschema.xml:609
 msgid "Move backward between windows immediately"
 msgstr "立即在視窗之間相反次序切換"
 
-#: src/org.mate.croma.gschema.xml:619
+#: src/org.cafe.croma.gschema.xml:619
 msgid "Move backward between panels and the desktop immediately"
 msgstr "立即將輸入焦點在面板及桌面之間以相反次序切換"
 
-#: src/org.mate.croma.gschema.xml:634
+#: src/org.cafe.croma.gschema.xml:634
 msgid "Show the panel's \"Run Application\" dialog box"
 msgstr "顯示面板的「執行程式」對話盒"
 
-#: src/org.mate.croma.gschema.xml:662 src/org.mate.croma.gschema.xml:667
-#: src/org.mate.croma.gschema.xml:672 src/org.mate.croma.gschema.xml:677
-#: src/org.mate.croma.gschema.xml:682 src/org.mate.croma.gschema.xml:687
-#: src/org.mate.croma.gschema.xml:692 src/org.mate.croma.gschema.xml:697
-#: src/org.mate.croma.gschema.xml:702 src/org.mate.croma.gschema.xml:707
-#: src/org.mate.croma.gschema.xml:712 src/org.mate.croma.gschema.xml:717
+#: src/org.cafe.croma.gschema.xml:662 src/org.cafe.croma.gschema.xml:667
+#: src/org.cafe.croma.gschema.xml:672 src/org.cafe.croma.gschema.xml:677
+#: src/org.cafe.croma.gschema.xml:682 src/org.cafe.croma.gschema.xml:687
+#: src/org.cafe.croma.gschema.xml:692 src/org.cafe.croma.gschema.xml:697
+#: src/org.cafe.croma.gschema.xml:702 src/org.cafe.croma.gschema.xml:707
+#: src/org.cafe.croma.gschema.xml:712 src/org.cafe.croma.gschema.xml:717
 msgid "Commands to run in response to keybindings"
 msgstr "按下對應的按鍵組合後執行相關的指令"
 
-#: src/org.mate.croma.gschema.xml:663 src/org.mate.croma.gschema.xml:668
-#: src/org.mate.croma.gschema.xml:673 src/org.mate.croma.gschema.xml:678
-#: src/org.mate.croma.gschema.xml:683 src/org.mate.croma.gschema.xml:688
-#: src/org.mate.croma.gschema.xml:693 src/org.mate.croma.gschema.xml:698
-#: src/org.mate.croma.gschema.xml:703 src/org.mate.croma.gschema.xml:708
-#: src/org.mate.croma.gschema.xml:713 src/org.mate.croma.gschema.xml:718
+#: src/org.cafe.croma.gschema.xml:663 src/org.cafe.croma.gschema.xml:668
+#: src/org.cafe.croma.gschema.xml:673 src/org.cafe.croma.gschema.xml:678
+#: src/org.cafe.croma.gschema.xml:683 src/org.cafe.croma.gschema.xml:688
+#: src/org.cafe.croma.gschema.xml:693 src/org.cafe.croma.gschema.xml:698
+#: src/org.cafe.croma.gschema.xml:703 src/org.cafe.croma.gschema.xml:708
+#: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
 "that correspond to these commands. Pressing the keybinding for run_command_N"
@@ -1002,22 +1002,22 @@ msgstr ""
 "/apps/croma/global_keybindings/run_command_N 設定鍵值中定義了相應指令所使用的按鍵組合。按下 "
 "run_command_N 的按鍵組合會執行 command_N。"
 
-#: src/org.mate.croma.gschema.xml:722
+#: src/org.cafe.croma.gschema.xml:722
 msgid "The screenshot command"
 msgstr "螢幕截圖指令"
 
-#: src/org.mate.croma.gschema.xml:723
+#: src/org.cafe.croma.gschema.xml:723
 msgid ""
 "The /apps/croma/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
 "/apps/croma/global_keybindings/run_command_screenshot 設定鍵中定義了相應指令所使用的按鍵組合。"
 
-#: src/org.mate.croma.gschema.xml:727
+#: src/org.cafe.croma.gschema.xml:727
 msgid "The window screenshot command"
 msgstr "視窗螢幕截圖指令"
 
-#: src/org.mate.croma.gschema.xml:728
+#: src/org.cafe.croma.gschema.xml:728
 msgid ""
 "The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
 " a keybinding which causes the command specified by this setting to be "
@@ -1026,23 +1026,23 @@ msgstr ""
 "/apps/croma/global_keybindings/run_command_window_screenshot "
 "設定鍵值中定義了相應指令所使用的按鍵組合。"
 
-#: src/org.mate.croma.gschema.xml:750
+#: src/org.cafe.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
 msgstr "切換某個視窗是否永遠可以遮蔽其他視窗"
 
-#: src/org.mate.croma.gschema.xml:910
+#: src/org.cafe.croma.gschema.xml:910
 msgid "Tile window to north-west (upper left) corner of screen"
 msgstr "平鋪視窗到螢幕的西北（左上）角"
 
-#: src/org.mate.croma.gschema.xml:915
+#: src/org.cafe.croma.gschema.xml:915
 msgid "Tile window to north-east (upper right) corner of screen"
 msgstr "平鋪視窗到螢幕的東北（右上）角"
 
-#: src/org.mate.croma.gschema.xml:920
+#: src/org.cafe.croma.gschema.xml:920
 msgid "Tile window to south-east (lower right) corner of screen"
 msgstr "平鋪視窗到螢幕的東南（右下）角"
 
-#: src/org.mate.croma.gschema.xml:925
+#: src/org.cafe.croma.gschema.xml:925
 msgid "Tile window to south-west (lower left) corner of screen"
 msgstr "平鋪視窗到螢幕的西南（左下）角"
 

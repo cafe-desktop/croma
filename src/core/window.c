@@ -1519,7 +1519,7 @@ implement_showing (MetaWindow *window,
 
       /* Really this effects code should probably
        * be in meta_window_hide so the window->mapped
-       * test isn't duplicated here. Anyhow, we animate
+       * test isn't duplicated here. Anyhow, we anicafe
        * if we are mapped now, we are supposed to
        * be minimized, and we are on the current workspace.
        */
@@ -1534,7 +1534,7 @@ implement_showing (MetaWindow *window,
 
           if (!result)
             {
-              /* just animate into the corner somehow - maybe
+              /* just anicafe into the corner somehow - maybe
                * not a good idea...
                */
               icon_rect.x = window->screen->rect.width;
@@ -1971,7 +1971,7 @@ __window_is_terminal (MetaWindow *window)
    * a more-reliable indication of term-ness.
    */
 
-  /* mate-terminal -- if you couldn't guess */
+  /* cafe-terminal -- if you couldn't guess */
   if (strcmp (window->res_class, "Mate-terminal") == 0)
     return TRUE;
   /* xterm, rxvt, aterm */
@@ -1989,8 +1989,8 @@ __window_is_terminal (MetaWindow *window)
   /* KTerm -- some terminal not KDE based; so not like Konsole */
   else if (strcmp (window->res_class, "KTerm") == 0)
     return TRUE;
-  /* Multi-mate-terminal */
-  else if (strcmp (window->res_class, "Multi-mate-terminal") == 0)
+  /* Multi-cafe-terminal */
+  else if (strcmp (window->res_class, "Multi-cafe-terminal") == 0)
     return TRUE;
   /* mlterm ("multi lingual terminal emulator on X") */
   else if (strcmp (window->res_class, "mlterm") == 0)
@@ -2215,7 +2215,7 @@ meta_window_show (MetaWindow *window)
 
       /* don't ever do the initial position constraint thing again.
        * This is toggled here so that initially-iconified windows
-       * still get placed when they are ultimately shown.
+       * still get placed when they are ulticafely shown.
        */
       window->placed = TRUE;
 

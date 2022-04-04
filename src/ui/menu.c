@@ -172,7 +172,7 @@ static void activate_cb(GtkWidget* menuitem, gpointer data)
  * The calling code owns the string, and is reponsible to free the
  * memory after use.
  *
- * See also http://mail.gnome.org/archives/mate-i18n/2008-March/msg00380.html
+ * See also http://mail.gnome.org/archives/cafe-i18n/2008-March/msg00380.html
  * which discusses possible i18n concerns.
  */
 static char*

@@ -684,7 +684,7 @@ test_region_fitting (void)
   GList* region;
   MetaRectangle rect;
 
-  /* See test_basic_fitting() for how/why these automated random tests work */
+  /* See test_basic_fitting() for how/why these autocafed random tests work */
   int i;
   region = get_screen_region (3);
   for (i = 0; i < NUM_RANDOM_RUNS; i++)

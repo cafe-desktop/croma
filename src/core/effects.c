@@ -707,7 +707,7 @@ run_default_effect_handler (MetaEffect *effect)
 static void
 run_handler (MetaEffect *effect)
 {
-  if (meta_prefs_get_mate_animations ())
+  if (meta_prefs_get_cafe_animations ())
     run_default_effect_handler (effect);
 
   effect_free (effect);

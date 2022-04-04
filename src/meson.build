@@ -197,11 +197,11 @@ i18n.merge_file(
   type: 'desktop',
   po_dir: join_paths(meson.source_root(), 'po'),
   install: true,
-  install_dir: join_paths(datadir, 'mate', 'wm-properties')
+  install_dir: join_paths(datadir, 'cafe', 'wm-properties')
   )
 
 compiled_schemas = gnome.compile_schemas()
-install_data('org.mate.croma.gschema.xml',
+install_data('org.cafe.croma.gschema.xml',
                install_dir : 'share/glib-2.0/schemas')
 
 xml_files = [
@@ -217,7 +217,7 @@ foreach xml : xml_files
     po_dir: '../po',
     data_dirs: '..',
     install: true,
-    install_dir: join_paths(get_option('datadir'), 'mate-control-center', 'keybindings')
+    install_dir: join_paths(get_option('datadir'), 'cafe-control-center', 'keybindings')
     )
 endforeach
 

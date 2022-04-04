@@ -301,7 +301,7 @@ async_get_property_handler (Display *dpy,
     {
       long nbytes, netbytes;
 
-      /* this alignment macro from matecorba2 */
+      /* this alignment macro from cafecorba2 */
 #define ALIGN_VALUE(this, boundary) \
   (( ((unsigned long)(this)) + (((unsigned long)(boundary)) -1)) & (~(((unsigned long)(boundary))-1)))
 

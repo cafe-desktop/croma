@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<KeyListEntries name="Desktop" wm_name="Metacity (Croma)" package="croma" schema="org.mate.Croma.global-keybindings">
+<KeyListEntries name="Desktop" wm_name="Metacity (Croma)" package="croma" schema="org.cafe.Croma.global-keybindings">
 
 	<KeyListEntry name="panel-run-dialog" description="Show the panel's &quot;Run Application&quot; dialog box" />
 

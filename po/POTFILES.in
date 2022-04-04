@@ -3,7 +3,7 @@
 src/50-croma-desktop-key.xml.in
 src/50-croma-global-key.xml.in
 src/50-croma-window-key.xml.in
-src/org.mate.croma.gschema.xml
+src/org.cafe.croma.gschema.xml
 src/core/bell.c
 src/core/core.c
 src/core/delete.c

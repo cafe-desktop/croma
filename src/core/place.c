@@ -258,7 +258,7 @@ find_next_cascade (MetaWindow       *window,
     }
 
   /* cascade_x and cascade_y will match the last window in the list
-   * that was "in the way" (in the approximate cascade diagonal)
+   * that was "in the way" (in the approxicafe cascade diagonal)
    */
 
   g_list_free (sorted);

@@ -2384,7 +2384,7 @@ error_on_command (int         command_index,
   /*
     croma-dialog said:
 
-    FIXME offer to change the value of the command's mateconf key
+    FIXME offer to change the value of the command's cafeconf key
   */
 
   if (command && strcmp(command, "")!=0)

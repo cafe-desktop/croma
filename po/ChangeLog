@@ -42,7 +42,7 @@
 
 2009-03-02  Claude Paroz  <claude@2xlibre.net>
 
-	* fr.po: Updated French translation (synced with mate-2-26).
+	* fr.po: Updated French translation (synced with cafe-2-26).
 
 2009-02-28  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
@@ -80,7 +80,7 @@
 
 2009-02-13  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
-	* th.po: Updated Thai translation (merged from mate-2-26 branch).
+	* th.po: Updated Thai translation (merged from cafe-2-26 branch).
 
 2009-02-12  Inaki Larranaga Murgoitio  <dooteo@euskalgnu.org>
 
@@ -168,7 +168,7 @@
 
 2008-12-12  Luca Ferretti  <elle.uca@libero.it>
 
-	* it.po: Imported updated translation from mate-2-24 branch.
+	* it.po: Imported updated translation from cafe-2-24 branch.
 
 2008-12-08  Priit Laes  <plaes at svn dot gnome dot org>
 
@@ -196,7 +196,7 @@
 
 2008-11-03  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
-	* pt_BR.po: Merged from branch mate-2-24. Minor capitalization fix in
+	* pt_BR.po: Merged from branch cafe-2-24. Minor capitalization fix in
 	the Brazilian Portuguese translation.
 
 2008-10-27 Og Maciel <ogmaciel@gnome.org>
@@ -245,7 +245,7 @@
 
 2008-10-12  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
-	* th.po: Updated Thai translation (merged from mate-2-24 branch).
+	* th.po: Updated Thai translation (merged from cafe-2-24 branch).
 
 2008-10-11  Claude Paroz  <claude@2xlibre.net>
 
@@ -547,7 +547,7 @@
 
 2008-02-27  Stéphane Raimbault  <stephane.raimbault@gmail.com>
 
-	* fr.po: Updated French translation (merged from mate-2-22).
+	* fr.po: Updated French translation (merged from cafe-2-22).
 
 2008-02-25  Changwoo Ryu  <cwryu@debian.org>
 
@@ -1763,7 +1763,7 @@
 
 2006-03-13  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
-	* th.po: Updated Thai translation (merged from mate-2-14 branch).
+	* th.po: Updated Thai translation (merged from cafe-2-14 branch).
 
 2006-03-13  Satoru SATOH <ss@gnome.gr.jp>
 

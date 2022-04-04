@@ -65,9 +65,9 @@
 
 
 ========== be@latin.po ==========
-# Biełaruski pierakład croma.mate.
-# Copyright (C) 2007 THE croma.mate'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the croma.mate package.
+# Biełaruski pierakład croma.cafe.
+# Copyright (C) 2007 THE croma.cafe'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the croma.cafe package.
 # Alaksandar Navicki <zolak@lacinka.org>, 2007. Łacinka.org
 #
 
@@ -230,7 +230,7 @@
 # #parse - verarbeiten
 #
 # Matthias Warkus <mawarkus@gnome.org>, 2002.
-# Christian Neumair <chris@mate-de.org>, 2002-2004.
+# Christian Neumair <chris@cafe-de.org>, 2002-2004.
 # Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
 # Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
@@ -249,7 +249,7 @@
 
 
 ========== el.po ==========
-# translation of croma.mate-2-26.po to Greek
+# translation of croma.cafe-2-26.po to Greek
 # kostas: 17Jul2003, 412 messages, updated translation for 2.4.
 # kostas: 30Oct2003,459 messages updated translation for Mate 2.6.
 # kostas:03Feb2004, 465 messages update.
@@ -370,7 +370,7 @@
 
 ========== fi.po ==========
 # Croma Finnish translation.
-# Suomennos: http://mate-fi.sourceforge.net/
+# Suomennos: http://cafe-fi.sourceforge.net/
 #
 # Copyright (C) 2003 Free Software Foundation, Inc.
 # Pauli Virtanen <pauli.virtanen@hut.fi>, 2003-2005.
@@ -388,7 +388,7 @@
 #
 # Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
 # Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2002-2006.
-# Sun G11n <mate_int_l10n@ireland.sun.com>, 2002.
+# Sun G11n <cafe_int_l10n@ireland.sun.com>, 2002.
 # Guy Clotilde <guy.clotilde@wanadoo.fr>, 2002.
 # Baptiste Mille-Mathias <baptiste@mille-mathias.info>, 2004.
 # Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
@@ -483,10 +483,10 @@
 # Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the croma package.
 #
-# Andras Timar <timar at mate dot hu>, 2002, 2003.
+# Andras Timar <timar at cafe dot hu>, 2002, 2003.
 # Gabor Sari <saga at externet dot hu>, 2003.
-# Laszlo Dvornik <dvornik at mate dot hu>, 2004.
-# Gabor Kelemen <kelemeng at mate dot hu>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Laszlo Dvornik <dvornik at cafe dot hu>, 2004.
+# Gabor Kelemen <kelemeng at cafe dot hu>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
 
 
 
@@ -683,7 +683,7 @@
 
 ========== mn.po ==========
 # translation of croma.HEAD.po to Mongolian
-# translation of croma.mate-2-4.mn.po to Mongolian
+# translation of croma.cafe-2-4.mn.po to Mongolian
 # translation of croma.HEAD.mn.po to Mongolian
 # translation of croma.HEAD.po to mongolian
 # This file is distributed under the same license as the PACKAGE package.
@@ -738,7 +738,7 @@
 
 
 ========== ne.po ==========
-# translation of croma.mate-2-20.ne.po to Nepali
+# translation of croma.cafe-2-20.ne.po to Nepali
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -838,7 +838,7 @@
 ========== pt_BR.po ==========
 # Brazilian Portuguese translation of croma.
 # Copyright (C) 2002-2007 Free Software Foundation, Inc.
-# Sun G11n <mate_int_l10n@ireland.sun.com>, 2002.
+# Sun G11n <cafe_int_l10n@ireland.sun.com>, 2002.
 # Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002, 2003, 2006.
 # Gustavo Noronha Silva <kov@debian.org>, 2004.
 # Alexandre Folle de Menezes <afmenez@terra.com.br>, 2005.
@@ -859,7 +859,7 @@
 # Romanian translation for croma-2.4.0.
 # Copyright (C) 2002
 # This file is distributed under the same license as the croma package.
-# Mugurel Tudor <mugurelu@mate.ro>, 2002-2004, 2005, 2006, 2007.
+# Mugurel Tudor <mugurelu@cafe.ro>, 2002-2004, 2005, 2006, 2007.
 # Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010.
 
@@ -872,7 +872,7 @@
 # Copyright (C) 2001, 2005, 2006, 2009 Free Software Foundation, Inc.
 #
 # Valek Filippov <frob@df.ru>, 2001.
-# Sun G11n <mate_int_l10n@ireland.sun.com>, 2002.
+# Sun G11n <cafe_int_l10n@ireland.sun.com>, 2002.
 # Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
 # Andrew w. Nosenko <awn@bcs.zp.ua>, 2003.
 # Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2009.
@@ -930,7 +930,7 @@
 #
 # Andraž Tori <andraz.tori1@guest.arnes.si>, 2000.
 # Matjaž Horvat <m@owca.info>, 2006.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007 - 2010.
+# Matej Urbančič <cafeju@svn.gnome.org>, 2007 - 2010.
 #
 
 
@@ -1099,7 +1099,7 @@
 # translation of croma.po to zh_CN
 # Simplified Chinese translation of croma.
 # Copyright (C) 2002, 2003, 2004, 2009, 2010 Free Software Foundation, Inc.
-# Sun G11n <mate_int_l10n@ireland.sun.com>, 2002.
+# Sun G11n <cafe_int_l10n@ireland.sun.com>, 2002.
 # He Qiangqiang <carton@linux.net.cn>, 2002
 # Xiong Jiang <jxiong@offtopic.org>, 2003
 # Funda Wang <fundawang@linux.net.cn>, 2003, 2004

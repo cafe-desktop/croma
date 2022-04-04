@@ -46,7 +46,7 @@
  * not given a name here, because the purpose of the unified handlers
  * is that keys should be referred to exactly once.
  */
-#define KEY_GENERAL_SCHEMA "org.mate.Croma.general"
+#define KEY_GENERAL_SCHEMA "org.cafe.Croma.general"
 #define KEY_GENERAL_TITLEBAR_FONT "titlebar-font"
 #define KEY_GENERAL_NUM_WORKSPACES "num-workspaces"
 #define KEY_GENERAL_COMPOSITOR "compositing-manager"
@@ -56,24 +56,24 @@
 #define KEY_GENERAL_ALT_TAB_MAX_COLUMNS "alt-tab-max-columns"
 #define KEY_GENERAL_ALT_TAB_EXPAND_TO_FIT_TITLE "alt-tab-expand-to-fit-title"
 
-#define KEY_COMMAND_SCHEMA "org.mate.Croma.keybinding-commands"
+#define KEY_COMMAND_SCHEMA "org.cafe.Croma.keybinding-commands"
 #define KEY_COMMAND_PREFIX "command-"
 
-#define KEY_SCREEN_BINDINGS_SCHEMA "org.mate.Croma.global-keybindings"
+#define KEY_SCREEN_BINDINGS_SCHEMA "org.cafe.Croma.global-keybindings"
 
-#define KEY_WINDOW_BINDINGS_SCHEMA "org.mate.Croma.window-keybindings"
+#define KEY_WINDOW_BINDINGS_SCHEMA "org.cafe.Croma.window-keybindings"
 
-#define KEY_WORKSPACE_NAME_SCHEMA "org.mate.Croma.workspace-names"
+#define KEY_WORKSPACE_NAME_SCHEMA "org.cafe.Croma.workspace-names"
 #define KEY_WORKSPACE_NAME_PREFIX "name-"
 
-#define KEY_MATE_INTERFACE_SCHEMA "org.mate.interface"
+#define KEY_MATE_INTERFACE_SCHEMA "org.cafe.interface"
 #define KEY_MATE_INTERFACE_ACCESSIBILITY "accessibility"
 #define KEY_MATE_INTERFACE_ENABLE_ANIMATIONS "enable-animations"
 
-#define KEY_MATE_TERMINAL_SCHEMA "org.mate.applications-terminal"
+#define KEY_MATE_TERMINAL_SCHEMA "org.cafe.applications-terminal"
 #define KEY_MATE_TERMINAL_COMMAND "exec"
 
-#define KEY_MATE_MOUSE_SCHEMA "org.mate.peripherals-mouse"
+#define KEY_MATE_MOUSE_SCHEMA "org.cafe.peripherals-mouse"
 #define KEY_MATE_MOUSE_CURSOR_THEME "cursor-theme"
 #define KEY_MATE_MOUSE_CURSOR_SIZE "cursor-size"
 
@@ -84,9 +84,9 @@ static GSettings *settings_command;
 static GSettings *settings_screen_bindings;
 static GSettings *settings_window_bindings;
 static GSettings *settings_workspace_names;
-static GSettings *settings_mate_interface;
-static GSettings *settings_mate_terminal;
-static GSettings *settings_mate_mouse;
+static GSettings *settings_cafe_interface;
+static GSettings *settings_cafe_terminal;
+static GSettings *settings_cafe_mouse;
 static GHashTable *settings_schemas;
 
 static GList *changes = NULL;
@@ -113,8 +113,8 @@ static gboolean auto_raise_delay = 500;
 static gboolean provide_visual_bell = FALSE;
 static gboolean bell_is_audible = TRUE;
 static gboolean reduced_resources = FALSE;
-static gboolean mate_accessibility = FALSE;
-static gboolean mate_animations = TRUE;
+static gboolean cafe_accessibility = FALSE;
+static gboolean cafe_animations = TRUE;
 static char *cursor_theme = NULL;
 static int   cursor_size = 24;
 static int   icon_size   = META_DEFAULT_ICON_SIZE;
@@ -393,13 +393,13 @@ static MetaBoolPreference preferences_bool[] =
     { "accessibility",
       KEY_MATE_INTERFACE_SCHEMA,
       META_PREF_MATE_ACCESSIBILITY,
-      &mate_accessibility,
+      &cafe_accessibility,
       FALSE,
     },
     { "enable-animations",
       KEY_MATE_INTERFACE_SCHEMA,
       META_PREF_MATE_ANIMATIONS,
-      &mate_animations,
+      &cafe_animations,
       TRUE,
     },
     { KEY_GENERAL_COMPOSITOR,
@@ -942,9 +942,9 @@ meta_prefs_init (void)
   settings_screen_bindings = g_settings_new (KEY_SCREEN_BINDINGS_SCHEMA);
   settings_window_bindings = g_settings_new (KEY_WINDOW_BINDINGS_SCHEMA);
   settings_workspace_names = g_settings_new (KEY_WORKSPACE_NAME_SCHEMA);
-  settings_mate_interface = g_settings_new (KEY_MATE_INTERFACE_SCHEMA);
-  settings_mate_terminal = g_settings_new (KEY_MATE_TERMINAL_SCHEMA);
-  settings_mate_mouse = g_settings_new (KEY_MATE_MOUSE_SCHEMA);
+  settings_cafe_interface = g_settings_new (KEY_MATE_INTERFACE_SCHEMA);
+  settings_cafe_terminal = g_settings_new (KEY_MATE_TERMINAL_SCHEMA);
+  settings_cafe_mouse = g_settings_new (KEY_MATE_MOUSE_SCHEMA);
 
   settings_schemas = g_hash_table_new_full (g_str_hash, g_str_equal, NULL, g_object_unref);
   g_hash_table_insert (settings_schemas, KEY_GENERAL_SCHEMA, settings_general);
@@ -952,9 +952,9 @@ meta_prefs_init (void)
   g_hash_table_insert (settings_schemas, KEY_SCREEN_BINDINGS_SCHEMA, settings_screen_bindings);
   g_hash_table_insert (settings_schemas, KEY_WINDOW_BINDINGS_SCHEMA, settings_window_bindings);
   g_hash_table_insert (settings_schemas, KEY_WORKSPACE_NAME_SCHEMA, settings_workspace_names);
-  g_hash_table_insert (settings_schemas, KEY_MATE_INTERFACE_SCHEMA, settings_mate_interface);
-  g_hash_table_insert (settings_schemas, KEY_MATE_TERMINAL_SCHEMA, settings_mate_terminal);
-  g_hash_table_insert (settings_schemas, KEY_MATE_MOUSE_SCHEMA, settings_mate_mouse);
+  g_hash_table_insert (settings_schemas, KEY_MATE_INTERFACE_SCHEMA, settings_cafe_interface);
+  g_hash_table_insert (settings_schemas, KEY_MATE_TERMINAL_SCHEMA, settings_cafe_terminal);
+  g_hash_table_insert (settings_schemas, KEY_MATE_MOUSE_SCHEMA, settings_cafe_mouse);
 
   g_signal_connect (settings_general, "changed", G_CALLBACK (change_notify), NULL);
   g_signal_connect (settings_command, "changed", G_CALLBACK (change_notify), NULL);
@@ -962,11 +962,11 @@ meta_prefs_init (void)
   g_signal_connect (settings_window_bindings, "changed", G_CALLBACK (change_notify), NULL);
   g_signal_connect (settings_workspace_names, "changed", G_CALLBACK (change_notify), NULL);
 
-  g_signal_connect (settings_mate_interface, "changed::" KEY_MATE_INTERFACE_ACCESSIBILITY, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_mate_interface, "changed::" KEY_MATE_INTERFACE_ENABLE_ANIMATIONS, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_mate_terminal, "changed::" KEY_MATE_TERMINAL_COMMAND, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_mate_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_THEME, G_CALLBACK (change_notify), NULL);
-  g_signal_connect (settings_mate_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_SIZE, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_interface, "changed::" KEY_MATE_INTERFACE_ACCESSIBILITY, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_interface, "changed::" KEY_MATE_INTERFACE_ENABLE_ANIMATIONS, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_terminal, "changed::" KEY_MATE_TERMINAL_COMMAND, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_THEME, G_CALLBACK (change_notify), NULL);
+  g_signal_connect (settings_cafe_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_SIZE, G_CALLBACK (change_notify), NULL);
 
   /* Pick up initial values. */
 
@@ -2296,15 +2296,15 @@ meta_prefs_get_reduced_resources (void)
 }
 
 gboolean
-meta_prefs_get_mate_accessibility ()
+meta_prefs_get_cafe_accessibility ()
 {
-  return mate_accessibility;
+  return cafe_accessibility;
 }
 
 gboolean
-meta_prefs_get_mate_animations ()
+meta_prefs_get_cafe_animations ()
 {
-  return mate_animations;
+  return cafe_animations;
 }
 
 MetaKeyBindingAction

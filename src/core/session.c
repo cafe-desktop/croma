@@ -4,7 +4,7 @@
 
 /*
  * Copyright (C) 2001 Havoc Pennington (some code in here from
- * libmateui, (C) Tom Tromey, Carsten Schaar)
+ * libcafeui, (C) Tom Tromey, Carsten Schaar)
  * Copyright (C) 2004, 2005 Elijah Newren
  *
  * This program is free software; you can redistribute it and/or
@@ -159,7 +159,7 @@ new_ice_connection (IceConn connection, IcePointer client_data, Bool opening,
 
 static IceIOErrorHandler ice_installed_handler;
 
-/* We call any handler installed before (or after) mate_ice_init but
+/* We call any handler installed before (or after) cafe_ice_init but
    avoid calling the default libICE handler which does an exit() */
 static void
 ice_io_error_handler (IceConn connection)

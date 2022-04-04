@@ -46,13 +46,13 @@ Minimal Building/Testing Environment
   (gtk+ >= 2.6 if you manually revert the change from bug 348633), you
   should be able to install your distro's development packages
   (e.g. gtk2-devel, glib-devel, startup-notification-devel on
-  Fedora; also, remember to install the mate-common package which is
+  Fedora; also, remember to install the cafe-common package which is
   needed for building git versions of Mate modules like Croma) as
   well as the standard development tools (gcc, autoconf, automake,
   pkg-config, intltool, and libtool) and be ready to build and test
   Croma.  Steps to do so:
 
-  $ git clone https://github.com/mate-desktop/croma.git
+  $ git clone https://github.com/cafe-desktop/croma.git
   $ cd croma
   $ ./autogen.sh --prefix /usr
   $ make

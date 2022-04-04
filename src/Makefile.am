@@ -157,12 +157,12 @@ desktopfiles_in_files=croma.desktop.in
 desktopfiles_files=$(desktopfiles_in_files:.desktop.in=.desktop)
 desktopfiles_DATA = $(desktopfiles_files)
 
-wmpropertiesdir=$(datadir)/mate/wm-properties
+wmpropertiesdir=$(datadir)/cafe/wm-properties
 wmproperties_in_files=croma-wm.desktop.in
 wmproperties_files=$(wmproperties_in_files:.desktop.in=.desktop)
 wmproperties_DATA = $(wmproperties_files)
 
-gsettings_SCHEMAS = org.mate.croma.gschema.xml
+gsettings_SCHEMAS = org.cafe.croma.gschema.xml
 @GSETTINGS_RULES@
 
 xmldir = @MATE_KEYBINDINGS_KEYSDIR@

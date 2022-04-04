@@ -25,11 +25,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/croma\n"
+"Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
 "POT-Creation-Date: 2019-11-18 19:44+0100\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Daniel Tokarzewski <bezimo@gmail.com>, 2020\n"
-"Language-Team: Polish (https://www.transifex.com/mate/teams/13566/pl/)\n"
+"Language-Team: Polish (https://www.transifex.com/cafe/teams/13566/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,23 +44,23 @@ msgstr "Pulpit"
 msgid "Show the panel's &quot;Run Application&quot; dialog box"
 msgstr "Pokarz panele &quot;Uruchom aplikację&quot; okno dialogowe"
 
-#: src/50-croma-desktop-key.xml.in:6 src/org.mate.croma.gschema.xml:629
+#: src/50-croma-desktop-key.xml.in:6 src/org.cafe.croma.gschema.xml:629
 msgid "Show the panel's main menu"
 msgstr "Wyświetlenie głównego menu panelu"
 
-#: src/50-croma-desktop-key.xml.in:8 src/org.mate.croma.gschema.xml:639
+#: src/50-croma-desktop-key.xml.in:8 src/org.cafe.croma.gschema.xml:639
 msgid "Take a screenshot"
 msgstr "Pobranie zrzutu ekranu"
 
-#: src/50-croma-desktop-key.xml.in:10 src/org.mate.croma.gschema.xml:644
+#: src/50-croma-desktop-key.xml.in:10 src/org.cafe.croma.gschema.xml:644
 msgid "Take a screenshot of a window"
 msgstr "Pobranie zrzutu okna"
 
-#: src/50-croma-desktop-key.xml.in:12 src/org.mate.croma.gschema.xml:649
+#: src/50-croma-desktop-key.xml.in:12 src/org.cafe.croma.gschema.xml:649
 msgid "Run a terminal"
 msgstr "Uruchomienie terminala"
 
-#: src/50-croma-desktop-key.xml.in:14 src/org.mate.croma.gschema.xml:654
+#: src/50-croma-desktop-key.xml.in:14 src/org.cafe.croma.gschema.xml:654
 msgid "Rename current workspace"
 msgstr "Zmień nazwę obszaru roboczego"
 
@@ -68,173 +68,173 @@ msgstr "Zmień nazwę obszaru roboczego"
 msgid "Window Management"
 msgstr "Zarządzanie oknami"
 
-#: src/50-croma-global-key.xml.in:4 src/org.mate.croma.gschema.xml:564
+#: src/50-croma-global-key.xml.in:4 src/org.cafe.croma.gschema.xml:564
 msgid "Move between windows, using a popup window"
 msgstr "Przechodzenie pomiędzy oknami z użyciem okna podręcznego"
 
-#: src/50-croma-global-key.xml.in:6 src/org.mate.croma.gschema.xml:554
+#: src/50-croma-global-key.xml.in:6 src/org.cafe.croma.gschema.xml:554
 msgid "Move between windows of an application, using a popup window"
 msgstr "Przejście pomiędzy oknami programu z użyciem podręcznego okna"
 
-#: src/50-croma-global-key.xml.in:8 src/org.mate.croma.gschema.xml:584
+#: src/50-croma-global-key.xml.in:8 src/org.cafe.croma.gschema.xml:584
 msgid "Move between panels and the desktop, using a popup window"
 msgstr "Przechodzenie między panelami i pulpitem z użyciem okna podręcznego"
 
-#: src/50-croma-global-key.xml.in:10 src/org.mate.croma.gschema.xml:604
+#: src/50-croma-global-key.xml.in:10 src/org.cafe.croma.gschema.xml:604
 msgid "Move between windows immediately"
 msgstr "Natychmiastowe przejście pomiędzy oknami"
 
-#: src/50-croma-global-key.xml.in:12 src/org.mate.croma.gschema.xml:594
+#: src/50-croma-global-key.xml.in:12 src/org.cafe.croma.gschema.xml:594
 msgid "Move between windows of an application immediately"
 msgstr "Natychmiastowe przejście pomiędzy oknami programu"
 
-#: src/50-croma-global-key.xml.in:14 src/org.mate.croma.gschema.xml:614
+#: src/50-croma-global-key.xml.in:14 src/org.cafe.croma.gschema.xml:614
 msgid "Move between panels and the desktop immediately"
 msgstr "Natychmiastowe przejście pomiędzy panelami i biurkiem"
 
-#: src/50-croma-global-key.xml.in:16 src/org.mate.croma.gschema.xml:624
+#: src/50-croma-global-key.xml.in:16 src/org.cafe.croma.gschema.xml:624
 msgid "Hide all normal windows and set focus to the desktop"
 msgstr "Ukrycie wszystkich okien i uaktywnienie pulpitu"
 
-#: src/50-croma-global-key.xml.in:23 src/org.mate.croma.gschema.xml:469
+#: src/50-croma-global-key.xml.in:23 src/org.cafe.croma.gschema.xml:469
 msgid "Switch to workspace 1"
 msgstr "Przełączenie na 1. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:30 src/org.mate.croma.gschema.xml:474
+#: src/50-croma-global-key.xml.in:30 src/org.cafe.croma.gschema.xml:474
 msgid "Switch to workspace 2"
 msgstr "Przełączenie na 2. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:37 src/org.mate.croma.gschema.xml:479
+#: src/50-croma-global-key.xml.in:37 src/org.cafe.croma.gschema.xml:479
 msgid "Switch to workspace 3"
 msgstr "Przełączenie na 3. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:44 src/org.mate.croma.gschema.xml:484
+#: src/50-croma-global-key.xml.in:44 src/org.cafe.croma.gschema.xml:484
 msgid "Switch to workspace 4"
 msgstr "Przełączenie na 4. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:51 src/org.mate.croma.gschema.xml:489
+#: src/50-croma-global-key.xml.in:51 src/org.cafe.croma.gschema.xml:489
 msgid "Switch to workspace 5"
 msgstr "Przełączenie na 5. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:58 src/org.mate.croma.gschema.xml:494
+#: src/50-croma-global-key.xml.in:58 src/org.cafe.croma.gschema.xml:494
 msgid "Switch to workspace 6"
 msgstr "Przełączenie na 6. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:65 src/org.mate.croma.gschema.xml:499
+#: src/50-croma-global-key.xml.in:65 src/org.cafe.croma.gschema.xml:499
 msgid "Switch to workspace 7"
 msgstr "Przełączenie na 7. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:72 src/org.mate.croma.gschema.xml:504
+#: src/50-croma-global-key.xml.in:72 src/org.cafe.croma.gschema.xml:504
 msgid "Switch to workspace 8"
 msgstr "Przełączenie na 8. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:79 src/org.mate.croma.gschema.xml:509
+#: src/50-croma-global-key.xml.in:79 src/org.cafe.croma.gschema.xml:509
 msgid "Switch to workspace 9"
 msgstr "Przełączenie na 9. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:86 src/org.mate.croma.gschema.xml:514
+#: src/50-croma-global-key.xml.in:86 src/org.cafe.croma.gschema.xml:514
 msgid "Switch to workspace 10"
 msgstr "Przełączenie na 10. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:93 src/org.mate.croma.gschema.xml:519
+#: src/50-croma-global-key.xml.in:93 src/org.cafe.croma.gschema.xml:519
 msgid "Switch to workspace 11"
 msgstr "Przełączenie na 11. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:100 src/org.mate.croma.gschema.xml:524
+#: src/50-croma-global-key.xml.in:100 src/org.cafe.croma.gschema.xml:524
 msgid "Switch to workspace 12"
 msgstr "Przełączenie na 12. obszar roboczy"
 
-#: src/50-croma-global-key.xml.in:107 src/org.mate.croma.gschema.xml:529
+#: src/50-croma-global-key.xml.in:107 src/org.cafe.croma.gschema.xml:529
 msgid "Switch to workspace on the left of the current workspace"
 msgstr "Przełączenie na obszar roboczy po lewej"
 
-#: src/50-croma-global-key.xml.in:114 src/org.mate.croma.gschema.xml:534
+#: src/50-croma-global-key.xml.in:114 src/org.cafe.croma.gschema.xml:534
 msgid "Switch to workspace on the right of the current workspace"
 msgstr "Przełączenie na obszar roboczy po prawej"
 
-#: src/50-croma-global-key.xml.in:121 src/org.mate.croma.gschema.xml:539
+#: src/50-croma-global-key.xml.in:121 src/org.cafe.croma.gschema.xml:539
 msgid "Switch to workspace above the current workspace"
 msgstr "Przełączenie na obszar roboczy powyżej"
 
-#: src/50-croma-global-key.xml.in:128 src/org.mate.croma.gschema.xml:544
+#: src/50-croma-global-key.xml.in:128 src/org.cafe.croma.gschema.xml:544
 msgid "Switch to workspace below the current workspace"
 msgstr "Przełączenie na obszar roboczy poniżej"
 
-#: src/50-croma-global-key.xml.in:131 src/org.mate.croma.gschema.xml:549
+#: src/50-croma-global-key.xml.in:131 src/org.cafe.croma.gschema.xml:549
 msgid "Switch to previously selected workspace"
 msgstr "Zmień do poprzednio wybranego obszaru roboczego"
 
-#: src/50-croma-window-key.xml.in:6 src/org.mate.croma.gschema.xml:735
+#: src/50-croma-window-key.xml.in:6 src/org.cafe.croma.gschema.xml:735
 msgid "Activate the window menu"
 msgstr "Otwarcie menu okna"
 
-#: src/50-croma-window-key.xml.in:10 src/org.mate.croma.gschema.xml:740
+#: src/50-croma-window-key.xml.in:10 src/org.cafe.croma.gschema.xml:740
 msgid "Toggle fullscreen mode"
 msgstr "Przełączenie trybu pełnoekranowego"
 
-#: src/50-croma-window-key.xml.in:14 src/org.mate.croma.gschema.xml:745
+#: src/50-croma-window-key.xml.in:14 src/org.cafe.croma.gschema.xml:745
 msgid "Toggle maximization state"
 msgstr "Przełączenie trybu maksymalizacji"
 
-#: src/50-croma-window-key.xml.in:18 src/org.mate.croma.gschema.xml:755
+#: src/50-croma-window-key.xml.in:18 src/org.cafe.croma.gschema.xml:755
 msgid "Maximize window"
 msgstr "Maksymalizacja okna"
 
-#: src/50-croma-window-key.xml.in:22 src/org.mate.croma.gschema.xml:760
+#: src/50-croma-window-key.xml.in:22 src/org.cafe.croma.gschema.xml:760
 msgid "Restore window"
 msgstr "Przywrócenie okna"
 
-#: src/50-croma-window-key.xml.in:26 src/org.mate.croma.gschema.xml:765
+#: src/50-croma-window-key.xml.in:26 src/org.cafe.croma.gschema.xml:765
 msgid "Toggle shaded state"
 msgstr "Przełączenie trybu zwinięcia"
 
-#: src/50-croma-window-key.xml.in:30 src/org.mate.croma.gschema.xml:775
+#: src/50-croma-window-key.xml.in:30 src/org.cafe.croma.gschema.xml:775
 msgid "Close window"
 msgstr "Zamknij okno"
 
-#: src/50-croma-window-key.xml.in:34 src/org.mate.croma.gschema.xml:770
+#: src/50-croma-window-key.xml.in:34 src/org.cafe.croma.gschema.xml:770
 msgid "Minimize window"
 msgstr "Minimalizacja okna"
 
-#: src/50-croma-window-key.xml.in:38 src/org.mate.croma.gschema.xml:780
+#: src/50-croma-window-key.xml.in:38 src/org.cafe.croma.gschema.xml:780
 msgid "Move window"
 msgstr "Przeniesienie okna"
 
-#: src/50-croma-window-key.xml.in:42 src/org.mate.croma.gschema.xml:785
+#: src/50-croma-window-key.xml.in:42 src/org.cafe.croma.gschema.xml:785
 msgid "Resize window"
 msgstr "Zmiana rozmiaru okna"
 
-#: src/50-croma-window-key.xml.in:50 src/org.mate.croma.gschema.xml:790
+#: src/50-croma-window-key.xml.in:50 src/org.cafe.croma.gschema.xml:790
 msgid "Toggle whether window is on all workspaces or just one"
 msgstr ""
 "Przełączenie obecności okna na wszystkich obszarach roboczych/tylko jednym"
 
-#: src/50-croma-window-key.xml.in:54 src/org.mate.croma.gschema.xml:875
+#: src/50-croma-window-key.xml.in:54 src/org.cafe.croma.gschema.xml:875
 msgid "Raise window if it's covered by another window, otherwise lower it"
 msgstr ""
 "Wysunięcie okna, jeśli jest zasłonięte, odsunięcie w przeciwnym wypadku."
 
-#: src/50-croma-window-key.xml.in:58 src/org.mate.croma.gschema.xml:880
+#: src/50-croma-window-key.xml.in:58 src/org.cafe.croma.gschema.xml:880
 msgid "Raise window above other windows"
 msgstr "Wysunięcie okna przed pozostałe"
 
-#: src/50-croma-window-key.xml.in:62 src/org.mate.croma.gschema.xml:885
+#: src/50-croma-window-key.xml.in:62 src/org.cafe.croma.gschema.xml:885
 msgid "Lower window below other windows"
 msgstr "Odsunięcie okna pod pozostałe"
 
-#: src/50-croma-window-key.xml.in:66 src/org.mate.croma.gschema.xml:890
+#: src/50-croma-window-key.xml.in:66 src/org.cafe.croma.gschema.xml:890
 msgid "Maximize window vertically"
 msgstr "Pionowa maksymalizacja okna"
 
-#: src/50-croma-window-key.xml.in:70 src/org.mate.croma.gschema.xml:895
+#: src/50-croma-window-key.xml.in:70 src/org.cafe.croma.gschema.xml:895
 msgid "Maximize window horizontally"
 msgstr "Pozioma maksymalizacja okna"
 
-#: src/50-croma-window-key.xml.in:74 src/org.mate.croma.gschema.xml:900
+#: src/50-croma-window-key.xml.in:74 src/org.cafe.croma.gschema.xml:900
 msgid "Tile window to east (right) side of screen"
 msgstr "Ułożenie sąsiadująco po prawej części ekranu"
 
-#: src/50-croma-window-key.xml.in:78 src/org.mate.croma.gschema.xml:905
+#: src/50-croma-window-key.xml.in:78 src/org.cafe.croma.gschema.xml:905
 msgid "Tile window to west (left) side of screen"
 msgstr "Ułożenie sąsiadująco po lewej części ekranu"
 
@@ -255,127 +255,127 @@ msgid "Tile window to south-east (bottom right) corner"
 msgstr ""
 "Ułóż sąsiadująco okno do południowo-wschodniego (prawego dolnego) rogu"
 
-#: src/50-croma-window-key.xml.in:98 src/org.mate.croma.gschema.xml:930
+#: src/50-croma-window-key.xml.in:98 src/org.cafe.croma.gschema.xml:930
 msgid "Move window to north-west (top left) corner"
 msgstr "Przenieś okno do północno-zachodniego (lewego górnego) rogu"
 
-#: src/50-croma-window-key.xml.in:102 src/org.mate.croma.gschema.xml:935
+#: src/50-croma-window-key.xml.in:102 src/org.cafe.croma.gschema.xml:935
 msgid "Move window to north-east (top right) corner"
 msgstr "Przenieś okno do północno-wschodniego (prawego górnego) rogu"
 
-#: src/50-croma-window-key.xml.in:106 src/org.mate.croma.gschema.xml:940
+#: src/50-croma-window-key.xml.in:106 src/org.cafe.croma.gschema.xml:940
 msgid "Move window to south-west (bottom left) corner"
 msgstr "Przenieś okno do południowo-zachodniego (lewego dolnego) rogu"
 
-#: src/50-croma-window-key.xml.in:110 src/org.mate.croma.gschema.xml:945
+#: src/50-croma-window-key.xml.in:110 src/org.cafe.croma.gschema.xml:945
 msgid "Move window to south-east (bottom right) corner"
 msgstr "Przenieś okno do południowo-wschodniego (prawego dolnego) rogu"
 
-#: src/50-croma-window-key.xml.in:114 src/org.mate.croma.gschema.xml:950
+#: src/50-croma-window-key.xml.in:114 src/org.cafe.croma.gschema.xml:950
 msgid "Move window to north (top) side of screen"
 msgstr "Przenieś okno do północnego (górnego) boku ekranu"
 
-#: src/50-croma-window-key.xml.in:118 src/org.mate.croma.gschema.xml:955
+#: src/50-croma-window-key.xml.in:118 src/org.cafe.croma.gschema.xml:955
 msgid "Move window to south (bottom) side of screen"
 msgstr "Przenieś okno do południowego (dolnego) boku ekranu"
 
-#: src/50-croma-window-key.xml.in:122 src/org.mate.croma.gschema.xml:960
+#: src/50-croma-window-key.xml.in:122 src/org.cafe.croma.gschema.xml:960
 msgid "Move window to east (right) side of screen"
 msgstr "Przenieś okno do wschodiego (prawego) boku ekranu"
 
-#: src/50-croma-window-key.xml.in:126 src/org.mate.croma.gschema.xml:965
+#: src/50-croma-window-key.xml.in:126 src/org.cafe.croma.gschema.xml:965
 msgid "Move window to west (left) side of screen"
 msgstr "Przenieś okno do zachodniego (lewego) boku ekranu"
 
-#: src/50-croma-window-key.xml.in:130 src/org.mate.croma.gschema.xml:970
+#: src/50-croma-window-key.xml.in:130 src/org.cafe.croma.gschema.xml:970
 msgid "Move window to center of screen"
 msgstr "Przenieś okno na środek ekranu"
 
-#: src/50-croma-window-key.xml.in:134 src/org.mate.croma.gschema.xml:975
+#: src/50-croma-window-key.xml.in:134 src/org.cafe.croma.gschema.xml:975
 msgid "Move window to north (top) monitor"
 msgstr "Przenieś okno do północnego (górnego) monitora"
 
-#: src/50-croma-window-key.xml.in:138 src/org.mate.croma.gschema.xml:980
+#: src/50-croma-window-key.xml.in:138 src/org.cafe.croma.gschema.xml:980
 msgid "Move window to south (bottom) monitor"
 msgstr "Przenieś okno do południowego (dolnego) monitora"
 
-#: src/50-croma-window-key.xml.in:142 src/org.mate.croma.gschema.xml:985
+#: src/50-croma-window-key.xml.in:142 src/org.cafe.croma.gschema.xml:985
 msgid "Move window to east (right) monitor"
 msgstr "Przenieś okno do wschodniego (prawego) monitora"
 
-#: src/50-croma-window-key.xml.in:146 src/org.mate.croma.gschema.xml:990
+#: src/50-croma-window-key.xml.in:146 src/org.cafe.croma.gschema.xml:990
 msgid "Move window to west (left) monitor"
 msgstr "Przenieś okno do zachodniego (lewego) monitora"
 
-#: src/50-croma-window-key.xml.in:154 src/org.mate.croma.gschema.xml:795
+#: src/50-croma-window-key.xml.in:154 src/org.cafe.croma.gschema.xml:795
 msgid "Move window to workspace 1"
 msgstr "Przeniesienie okna na 1. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:162 src/org.mate.croma.gschema.xml:800
+#: src/50-croma-window-key.xml.in:162 src/org.cafe.croma.gschema.xml:800
 msgid "Move window to workspace 2"
 msgstr "Przeniesienie okna na 2. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:170 src/org.mate.croma.gschema.xml:805
+#: src/50-croma-window-key.xml.in:170 src/org.cafe.croma.gschema.xml:805
 msgid "Move window to workspace 3"
 msgstr "Przeniesienie okna na 3. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:178 src/org.mate.croma.gschema.xml:810
+#: src/50-croma-window-key.xml.in:178 src/org.cafe.croma.gschema.xml:810
 msgid "Move window to workspace 4"
 msgstr "Przeniesienie okna na 4. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:186 src/org.mate.croma.gschema.xml:815
+#: src/50-croma-window-key.xml.in:186 src/org.cafe.croma.gschema.xml:815
 msgid "Move window to workspace 5"
 msgstr "Przeniesienie okna na 5. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:194 src/org.mate.croma.gschema.xml:820
+#: src/50-croma-window-key.xml.in:194 src/org.cafe.croma.gschema.xml:820
 msgid "Move window to workspace 6"
 msgstr "Przeniesienie okna na 6. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:202 src/org.mate.croma.gschema.xml:825
+#: src/50-croma-window-key.xml.in:202 src/org.cafe.croma.gschema.xml:825
 msgid "Move window to workspace 7"
 msgstr "Przeniesienie okna na 7. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:210 src/org.mate.croma.gschema.xml:830
+#: src/50-croma-window-key.xml.in:210 src/org.cafe.croma.gschema.xml:830
 msgid "Move window to workspace 8"
 msgstr "Przeniesienie okna na 8. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:218 src/org.mate.croma.gschema.xml:835
+#: src/50-croma-window-key.xml.in:218 src/org.cafe.croma.gschema.xml:835
 msgid "Move window to workspace 9"
 msgstr "Przeniesienie okna na 9. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:226 src/org.mate.croma.gschema.xml:840
+#: src/50-croma-window-key.xml.in:226 src/org.cafe.croma.gschema.xml:840
 msgid "Move window to workspace 10"
 msgstr "Przeniesienie okna na 10. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:234 src/org.mate.croma.gschema.xml:845
+#: src/50-croma-window-key.xml.in:234 src/org.cafe.croma.gschema.xml:845
 msgid "Move window to workspace 11"
 msgstr "Przeniesienie okna na 11. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:242 src/org.mate.croma.gschema.xml:850
+#: src/50-croma-window-key.xml.in:242 src/org.cafe.croma.gschema.xml:850
 msgid "Move window to workspace 12"
 msgstr "Przeniesienie okna na 12. obszar roboczy"
 
-#: src/50-croma-window-key.xml.in:250 src/org.mate.croma.gschema.xml:855
+#: src/50-croma-window-key.xml.in:250 src/org.cafe.croma.gschema.xml:855
 msgid "Move window one workspace to the left"
 msgstr "Przeniesienie okna o obszar roboczy w lewo"
 
-#: src/50-croma-window-key.xml.in:258 src/org.mate.croma.gschema.xml:860
+#: src/50-croma-window-key.xml.in:258 src/org.cafe.croma.gschema.xml:860
 msgid "Move window one workspace to the right"
 msgstr "Przeniesienie okna o obszar roboczy w prawo"
 
-#: src/50-croma-window-key.xml.in:266 src/org.mate.croma.gschema.xml:865
+#: src/50-croma-window-key.xml.in:266 src/org.cafe.croma.gschema.xml:865
 msgid "Move window one workspace up"
 msgstr "Przeniesienie okna o obszar roboczy w górę"
 
-#: src/50-croma-window-key.xml.in:274 src/org.mate.croma.gschema.xml:870
+#: src/50-croma-window-key.xml.in:274 src/org.cafe.croma.gschema.xml:870
 msgid "Move window one workspace down"
 msgstr "Przeniesienie okna o obszar roboczy w dół"
 
-#: src/org.mate.croma.gschema.xml:50
+#: src/org.cafe.croma.gschema.xml:50
 msgid "Modifier to use for modified window click actions"
 msgstr "Modyfikator używany do wykonywania działania poprzez kliknięcie okna"
 
-#: src/org.mate.croma.gschema.xml:51
+#: src/org.cafe.croma.gschema.xml:51
 msgid ""
 "Clicking a window while holding down this modifier key will move the window "
 "(left click), resize the window (middle click), or show the window menu "
@@ -389,11 +389,11 @@ msgstr ""
 "kliknięcia można zamieniać za pomocą przycisku „resize_with_right_button”. "
 "Modyfikator wyrażony jest na przykład jako <Alt> lub <Super>."
 
-#: src/org.mate.croma.gschema.xml:55
+#: src/org.cafe.croma.gschema.xml:55
 msgid "Whether to resize with the right button"
 msgstr "Określa, czy zmieniać rozmiar okna za pomocą prawego przycisku myszy"
 
-#: src/org.mate.croma.gschema.xml:56
+#: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
 "middle button while holding down the key given in \"mouse_button_modifier\";"
@@ -404,21 +404,21 @@ msgstr ""
 "przy jednoczesnym wciśnięciu przycisku podanego w opcji "
 "\"mouse_button_modifier\"; po wyłączeniu, sytuacja będzie odwrotna."
 
-#: src/org.mate.croma.gschema.xml:60
+#: src/org.cafe.croma.gschema.xml:60
 msgid "Whether to display preselected tab window border"
 msgstr "Określa, czy wyświetlać granicę okna podczas zmiany kart."
 
-#: src/org.mate.croma.gschema.xml:61
+#: src/org.cafe.croma.gschema.xml:61
 msgid ""
 "Set this to false to disable border of preselected window while performing "
 "tab switching."
 msgstr "Ustaw to na wartość fałsz ab"
 
-#: src/org.mate.croma.gschema.xml:65
+#: src/org.cafe.croma.gschema.xml:65
 msgid "Arrangement of buttons on the titlebar"
 msgstr "Rozmieszczenie przycisków na pasku tytułowym"
 
-#: src/org.mate.croma.gschema.xml:66
+#: src/org.cafe.croma.gschema.xml:66
 msgid ""
 "Arrangement of buttons on the titlebar. The value should be a string, such "
 "as \"menu:minimize,maximize,spacer,close\"; the colon separates the left "
@@ -436,11 +436,11 @@ msgstr ""
 "przyciski nie powodując konfliktów. Aby rozdzielić dwa sąsiadujące ze sobą "
 "przyciski, można użyć specjalnego znacznika rozdzielenia (\"spacer\")."
 
-#: src/org.mate.croma.gschema.xml:70
+#: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
 msgstr "Tryb uaktywniania okna"
 
-#: src/org.mate.croma.gschema.xml:71
+#: src/org.cafe.croma.gschema.xml:71
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
@@ -456,11 +456,11 @@ msgstr ""
 "kursor myszy przesunięty zostanie na jego obszar, a po opuszczeniu go "
 "aktywacja jest wyłączana."
 
-#: src/org.mate.croma.gschema.xml:75
+#: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
 msgstr "Określa, w jaki sposób uaktywniane są okna"
 
-#: src/org.mate.croma.gschema.xml:76
+#: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
 "focus. It has two possible values; \"smart\" applies the user's normal focus"
@@ -472,12 +472,12 @@ msgstr ""
 "typowy tryb uaktywniania wg ustawień użytkownika i \"strict\" - okna otwarte"
 " z poziomu terminala nie zostaną uaktywnione."
 
-#: src/org.mate.croma.gschema.xml:80
+#: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
 msgstr ""
 "Określa, czy wysuwanie okna powinno towarzyszyć innym działaniom użytkownika"
 
-#: src/org.mate.croma.gschema.xml:81
+#: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
 "strongly discouraged from changing it from the default of true. Many actions"
@@ -517,11 +517,11 @@ msgstr ""
 "mu, że to _jego_ wina przez zepsucie managera okien i żeby ustawili tą opcję"
 " z powrotem to \"prawda\" albo pogodzili się z \"błędem\" o który prosili."
 
-#: src/org.mate.croma.gschema.xml:85
+#: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
 msgstr "Działanie przy dwukrotnym kliknięciu paska tytułowego"
 
-#: src/org.mate.croma.gschema.xml:86
+#: src/org.cafe.croma.gschema.xml:86
 msgid ""
 "This option determines the effects of double-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -541,11 +541,11 @@ msgstr ""
 " \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek "
 "efektu)."
 
-#: src/org.mate.croma.gschema.xml:90
+#: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
 msgstr "Działanie przy kliknięciu paska tytułowego środkowym przyciskiem"
 
-#: src/org.mate.croma.gschema.xml:91
+#: src/org.cafe.croma.gschema.xml:91
 msgid ""
 "This option determines the effects of middle-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -565,11 +565,11 @@ msgstr ""
 " \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek "
 "efektu)."
 
-#: src/org.mate.croma.gschema.xml:95
+#: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
 msgstr "Działanie przy kliknięciu paska tytułowego prawym przyciskiem"
 
-#: src/org.mate.croma.gschema.xml:96
+#: src/org.cafe.croma.gschema.xml:96
 msgid ""
 "This option determines the effects of right-clicking on the title bar. "
 "Current valid options are 'toggle_shade', which will shade/unshade the "
@@ -589,11 +589,11 @@ msgstr ""
 " \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek "
 "efektu)."
 
-#: src/org.mate.croma.gschema.xml:100
+#: src/org.cafe.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
 msgstr "Automatyczne wysuwanie uaktywnianych okien"
 
-#: src/org.mate.croma.gschema.xml:101
+#: src/org.cafe.croma.gschema.xml:101
 msgid ""
 "If set to true, and the focus mode is either \"sloppy\" or \"mouse\" then "
 "the focused window will be automatically raised after a delay specified by "
@@ -607,12 +607,12 @@ msgstr ""
 "oknie, aby je wysunąć, ani w przypadku przechodzenia do okna podczas "
 "przeciągania go."
 
-#: src/org.mate.croma.gschema.xml:105
+#: src/org.cafe.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
 msgstr ""
 "Opóźnienie w milisekundach używane przez opcję automatycznego wysuwania"
 
-#: src/org.mate.croma.gschema.xml:106
+#: src/org.cafe.croma.gschema.xml:106
 msgid ""
 "The time delay before raising a window if auto_raise is set to true. The "
 "delay is given in thousandths of a second."
@@ -621,21 +621,21 @@ msgstr ""
 "wysuwania (auto_rise) jest ustawiona. Opóźnienie jest podane w tysięcznych "
 "częściach sekundy."
 
-#: src/org.mate.croma.gschema.xml:110
+#: src/org.cafe.croma.gschema.xml:110
 msgid "Current theme"
 msgstr "Bieżący motyw"
 
-#: src/org.mate.croma.gschema.xml:111
+#: src/org.cafe.croma.gschema.xml:111
 msgid ""
 "The theme determines the appearance of window borders, titlebar, and so "
 "forth."
 msgstr "Skórka określa wygląd obramowania okna, paska tytułu, i tak dalej."
 
-#: src/org.mate.croma.gschema.xml:115
+#: src/org.cafe.croma.gschema.xml:115
 msgid "Use standard system font in window titles"
 msgstr "Użycie standardowej czcionki systemowej w paskach tytułowych okien"
 
-#: src/org.mate.croma.gschema.xml:116
+#: src/org.cafe.croma.gschema.xml:116
 msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
@@ -644,11 +644,11 @@ msgstr ""
 " tego na paskach tytułowych standardowej czcionki systemowej używanej przez "
 "programy."
 
-#: src/org.mate.croma.gschema.xml:120
+#: src/org.cafe.croma.gschema.xml:120
 msgid "Window title font"
 msgstr "Czcionka tytułu okna"
 
-#: src/org.mate.croma.gschema.xml:121
+#: src/org.cafe.croma.gschema.xml:121
 msgid ""
 "A font description string describing a font for window titlebars. The size "
 "from the description will only be used if the titlebar_font_size option is "
@@ -660,11 +660,11 @@ msgstr ""
 "0. Opcja ta jest wyłączona, jeśli opcja titlebar_uses_desktop_font jest "
 "ustawiona na wartość true. "
 
-#: src/org.mate.croma.gschema.xml:126
+#: src/org.cafe.croma.gschema.xml:126
 msgid "Number of workspaces"
 msgstr "Liczba obszarów roboczych"
 
-#: src/org.mate.croma.gschema.xml:127
+#: src/org.cafe.croma.gschema.xml:127
 msgid ""
 "Number of workspaces. Must be more than zero, and has a fixed maximum to "
 "prevent making the desktop unusable by accidentally asking for too many "
@@ -674,11 +674,11 @@ msgstr ""
 "wartość maksymalną, aby zapobiec sytuacji gdy pulpit przestaje odpowiadać "
 "poprzez przypadkowe zapytanie o zbyt wiele obszarów roboczych."
 
-#: src/org.mate.croma.gschema.xml:131
+#: src/org.cafe.croma.gschema.xml:131
 msgid "Workspace wrap style"
 msgstr "Styl obramowania obszaru roboczego"
 
-#: src/org.mate.croma.gschema.xml:132
+#: src/org.cafe.croma.gschema.xml:132
 msgid ""
 "The wrap style is used to determine how to switch from one workspace to "
 "another at the border of the workspace switcher. When set to \"no wrap\", "
@@ -699,11 +699,11 @@ msgstr ""
 "połączone jak obarzanek: koniec jednego rzędu prowadzi na początek jego "
 "samego a koniec każdej kolumny początku jej samej."
 
-#: src/org.mate.croma.gschema.xml:136
+#: src/org.cafe.croma.gschema.xml:136
 msgid "Enable Visual Bell"
 msgstr "Włączone wizualne sygnały dźwiękowe"
 
-#: src/org.mate.croma.gschema.xml:137
+#: src/org.cafe.croma.gschema.xml:137
 msgid ""
 "Turns on a visual indication when an application or the system issues a "
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
@@ -713,11 +713,11 @@ msgstr ""
 " dźwiękowy, wyświetlony zostanie komunikat; jest ona użyteczna dla "
 "użytkowników niedosłyszących oraz w środowiskach o dużym natężeniu dźwięku."
 
-#: src/org.mate.croma.gschema.xml:141
+#: src/org.cafe.croma.gschema.xml:141
 msgid "System Bell is Audible"
 msgstr "Brzęczyk systemowy jest słyszalny"
 
-#: src/org.mate.croma.gschema.xml:142
+#: src/org.cafe.croma.gschema.xml:142
 msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
@@ -726,11 +726,11 @@ msgstr ""
 " opcja może być używana razem z opcją \"wizualne sygnały dźwiękowe\", "
 "przedstawiającą sygnały dźwiękowe w formie graficznej."
 
-#: src/org.mate.croma.gschema.xml:146
+#: src/org.cafe.croma.gschema.xml:146
 msgid "Visual Bell Type"
 msgstr "Typ wizualnego sygnału dźwiękowego"
 
-#: src/org.mate.croma.gschema.xml:147
+#: src/org.cafe.croma.gschema.xml:147
 msgid ""
 "Tells Croma how to implement the visual indication that the system bell or "
 "another application 'bell' indicator has been rung. Currently there are two "
@@ -749,19 +749,19 @@ msgstr ""
 "zwykle miejsce przy domyślnym \"dźwięku systemowym\"), pasek tytułowy "
 "aktywnego okna zamigocze."
 
-#: src/org.mate.croma.gschema.xml:151
+#: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
 msgstr "Menedżer składania"
 
-#: src/org.mate.croma.gschema.xml:152
+#: src/org.cafe.croma.gschema.xml:152
 msgid "Determines whether Croma is a compositing manager."
 msgstr "Określa, czy program Croma ma być menedżerem składania."
 
-#: src/org.mate.croma.gschema.xml:156
+#: src/org.cafe.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
 msgstr "Szybki Alt-Tab z menedżerem kompozycji (wyłączone miniatury)"
 
-#: src/org.mate.croma.gschema.xml:157
+#: src/org.cafe.croma.gschema.xml:157
 msgid ""
 "If set to true, no window thumbnails will be displayed in the alt-tab popup "
 "window when the compositing manager is enabled. Application icons will be "
@@ -771,11 +771,11 @@ msgstr ""
 " \n"
 "Jeśli ustawione na true, miniatury okien nie będą wyświetlane w wyskakującym oknie Alt-Tab, gdy menedżer tworzenia kompozycji jest włączony. Zamiast tego zostaną wyświetlone ikony aplikacji. Pamiętaj, że na ekranach o wysokiej rozdzielczości z wieloma widocznymi oknami może wystąpić zauważalne opóźnienie w renderowaniu."
 
-#: src/org.mate.croma.gschema.xml:161
+#: src/org.cafe.croma.gschema.xml:161
 msgid "If true, trade off usability for less resource usage"
 msgstr "Jeżeli ustawione, zmniejsza zużycie zasobów kosztem funkcjonalności"
 
-#: src/org.mate.croma.gschema.xml:162
+#: src/org.cafe.croma.gschema.xml:162
 msgid ""
 "If true, croma will give the user less feedback by using wireframes, "
 "avoiding animations, or other means. This is a significant reduction in "
@@ -790,13 +790,13 @@ msgstr ""
 "normalną pracę, która w innym wypadku byłaby niemożliwa. Ramki skalowania "
 "okien będą jednak wyłączone po włączeniu opcji ułatwień dostępu."
 
-#: src/org.mate.croma.gschema.xml:166
+#: src/org.cafe.croma.gschema.xml:166
 msgid ""
 "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
 "(Niezaimplementowane) Oparcie nawigacji na programach, zamiast na oknach"
 
-#: src/org.mate.croma.gschema.xml:167
+#: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
 "concept is a bit abstract, but in general an application-based setup is more"
@@ -814,11 +814,11 @@ msgstr ""
 "kliknięcia aktywujące nie są przekazywane do okien innych programów. "
 "Aktualnie tryb programów nie jest jednak w pełni obsługiwany."
 
-#: src/org.mate.croma.gschema.xml:171
+#: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
 msgstr "Wyłącza własności, które wymagane są przez stare i błędne programy."
 
-#: src/org.mate.croma.gschema.xml:172
+#: src/org.cafe.croma.gschema.xml:172
 msgid ""
 "Some applications disregard specifications in ways that result in window "
 "manager misfeatures. This option puts Croma in a rigorously correct mode, "
@@ -830,11 +830,11 @@ msgstr ""
 "ściśle prawidłowy, w którym interfejs użytkownika jest bardziej spójny, o "
 "ile nie są uruchamiane żadne programy łamiące specyfikacje."
 
-#: src/org.mate.croma.gschema.xml:176
+#: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
 msgstr "Określa, czy nowe okna są tworzone na środku ekranu"
 
-#: src/org.mate.croma.gschema.xml:177
+#: src/org.cafe.croma.gschema.xml:177
 msgid ""
 "If set to true, new windows are opened in the center of the screen. "
 "Otherwise, they are opened at the top left of the screen."
@@ -842,11 +842,11 @@ msgstr ""
 "Włączenie tej opcji powoduje otwieranie nowych okien na środku ekranu. W "
 "przeciwnym wypadku, są one otwierane w lewym górnym rogu."
 
-#: src/org.mate.croma.gschema.xml:181
+#: src/org.cafe.croma.gschema.xml:181
 msgid "Whether to enable window tiling"
 msgstr "Określa, czy włączyć kafelkowanie."
 
-#: src/org.mate.croma.gschema.xml:182
+#: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
 "resizes them horizontally to cover half of the available area. Drag-dropping"
@@ -857,11 +857,11 @@ msgstr ""
 "dostępnej przestrzeni. Przeciągnięcie do góry spowoduje maksymalizację okna "
 "jeżeli zezwól-na-górne-kafelkowanie jest włączone."
 
-#: src/org.mate.croma.gschema.xml:186
+#: src/org.cafe.croma.gschema.xml:186
 msgid "Whether to maximize the window when dragged to the top of the screen"
 msgstr "Czy zmaksymalizować okno kiedy jest przeciągnięte do góry ekranu"
 
-#: src/org.mate.croma.gschema.xml:187
+#: src/org.cafe.croma.gschema.xml:187
 msgid ""
 "If enabled, drag-dropping a window to the top of the screen will maximize "
 "it. Only works when allow-tiling is enabled."
@@ -869,13 +869,13 @@ msgstr ""
 "Jeżeli włączone, przeciągnięcie i opuszczenie okna na górze ekranu "
 "zmaksymalizuje je. Działa tylko jeżeli zezwól-na-kafelkowanie jest włączone."
 
-#: src/org.mate.croma.gschema.xml:191
+#: src/org.cafe.croma.gschema.xml:191
 msgid "Whether to enable cycling through different tile sizes"
 msgstr ""
 " \n"
 "Określa czy włączyć cykliczne przewijanie różnych rozmiarów płytek"
 
-#: src/org.mate.croma.gschema.xml:192
+#: src/org.cafe.croma.gschema.xml:192
 msgid ""
 "If enabled, tiling a window will cycle through multiple different sizes by "
 "using the same keyboard shortcut multiple times in a row."
@@ -884,11 +884,11 @@ msgstr ""
 "wiele różnych rozmiarów przy użyciu tego samego skrótu klawiaturowego wiele "
 "razy z rzędu."
 
-#: src/org.mate.croma.gschema.xml:196
+#: src/org.cafe.croma.gschema.xml:196
 msgid "Window placement mode"
 msgstr "Tryb rozmieszczania okien"
 
-#: src/org.mate.croma.gschema.xml:197
+#: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
 "\"automatic\" means the system chooses a location automatically based on the"
@@ -904,11 +904,11 @@ msgstr ""
 "wskaźnika myszy; \"ręczny\" oznacza, że użytkownik musi ręcznie umieścić "
 "okno za pomocą myszy lub klawiatury."
 
-#: src/org.mate.croma.gschema.xml:201
+#: src/org.cafe.croma.gschema.xml:201
 msgid "List of applications ignored by show-desktop"
 msgstr "Lista aplikacji ignorowana przez wyświetl-pulpit"
 
-#: src/org.mate.croma.gschema.xml:202
+#: src/org.cafe.croma.gschema.xml:202
 msgid ""
 "Comma separated class list. Each running GUI application referenced to given"
 " windows manager class will be ignored by 'Show Desktop' functionality."
@@ -917,11 +917,11 @@ msgstr ""
 "w danej klasie managera okien będzie ignorowana przez funkcjonalność "
 "\"Pokarz Pulpit\"."
 
-#: src/org.mate.croma.gschema.xml:207
+#: src/org.cafe.croma.gschema.xml:207
 msgid "Icon size in alt-tab popup window"
 msgstr "Rozmiar ikon w wyskakującym oknie alt-tab"
 
-#: src/org.mate.croma.gschema.xml:208
+#: src/org.cafe.croma.gschema.xml:208
 msgid ""
 "Size of the application icons displayed in alt-tab popup window. The "
 "screen's scale factor is applied to this value."
@@ -929,23 +929,23 @@ msgstr ""
 "Rozmiar ikon aplikacji wyświetlanych w wyskakującym oknie alt-tab. Do tej "
 "wartości stosuje się współczynnik skali ekranu."
 
-#: src/org.mate.croma.gschema.xml:213
+#: src/org.cafe.croma.gschema.xml:213
 msgid "Maximum number of columns in alt-tab popup window"
 msgstr "Maksymalna liczba kolumn w wyskakującym oknie alt-tab"
 
-#: src/org.mate.croma.gschema.xml:214
+#: src/org.cafe.croma.gschema.xml:214
 msgid ""
 "The popup window will be expanded to fit up to these many entries per row."
 msgstr ""
 "Wyskakujące okno zostanie rozszerzone, aby zmieściło się w nich tyle wpisów "
 "w wierszu."
 
-#: src/org.mate.croma.gschema.xml:218
+#: src/org.cafe.croma.gschema.xml:218
 msgid "Expand the alt-tab popup window to fit longer window titles"
 msgstr ""
 "Rozszerz wyskakujące okno alt-tab, aby pasowało do dłuższych tytułów okna"
 
-#: src/org.mate.croma.gschema.xml:219
+#: src/org.cafe.croma.gschema.xml:219
 msgid ""
 "The popup window may be expanded up to the width determined by the config "
 "parameter 'alt-tab-max-columns'."
@@ -953,63 +953,63 @@ msgstr ""
 "Wyskakujące okno można rozszerzyć do szerokości określonej parametrem "
 "konfiguracyjnym „alt-tab-max-columns”."
 
-#: src/org.mate.croma.gschema.xml:226 src/org.mate.croma.gschema.xml:231
-#: src/org.mate.croma.gschema.xml:236 src/org.mate.croma.gschema.xml:241
-#: src/org.mate.croma.gschema.xml:246 src/org.mate.croma.gschema.xml:251
-#: src/org.mate.croma.gschema.xml:256 src/org.mate.croma.gschema.xml:261
-#: src/org.mate.croma.gschema.xml:266 src/org.mate.croma.gschema.xml:271
-#: src/org.mate.croma.gschema.xml:276 src/org.mate.croma.gschema.xml:281
-#: src/org.mate.croma.gschema.xml:286 src/org.mate.croma.gschema.xml:291
-#: src/org.mate.croma.gschema.xml:296 src/org.mate.croma.gschema.xml:301
-#: src/org.mate.croma.gschema.xml:306 src/org.mate.croma.gschema.xml:311
-#: src/org.mate.croma.gschema.xml:316 src/org.mate.croma.gschema.xml:321
-#: src/org.mate.croma.gschema.xml:326 src/org.mate.croma.gschema.xml:331
-#: src/org.mate.croma.gschema.xml:336 src/org.mate.croma.gschema.xml:341
-#: src/org.mate.croma.gschema.xml:346 src/org.mate.croma.gschema.xml:351
-#: src/org.mate.croma.gschema.xml:356 src/org.mate.croma.gschema.xml:361
-#: src/org.mate.croma.gschema.xml:366 src/org.mate.croma.gschema.xml:371
-#: src/org.mate.croma.gschema.xml:376 src/org.mate.croma.gschema.xml:381
-#: src/org.mate.croma.gschema.xml:386 src/org.mate.croma.gschema.xml:391
-#: src/org.mate.croma.gschema.xml:396 src/org.mate.croma.gschema.xml:401
+#: src/org.cafe.croma.gschema.xml:226 src/org.cafe.croma.gschema.xml:231
+#: src/org.cafe.croma.gschema.xml:236 src/org.cafe.croma.gschema.xml:241
+#: src/org.cafe.croma.gschema.xml:246 src/org.cafe.croma.gschema.xml:251
+#: src/org.cafe.croma.gschema.xml:256 src/org.cafe.croma.gschema.xml:261
+#: src/org.cafe.croma.gschema.xml:266 src/org.cafe.croma.gschema.xml:271
+#: src/org.cafe.croma.gschema.xml:276 src/org.cafe.croma.gschema.xml:281
+#: src/org.cafe.croma.gschema.xml:286 src/org.cafe.croma.gschema.xml:291
+#: src/org.cafe.croma.gschema.xml:296 src/org.cafe.croma.gschema.xml:301
+#: src/org.cafe.croma.gschema.xml:306 src/org.cafe.croma.gschema.xml:311
+#: src/org.cafe.croma.gschema.xml:316 src/org.cafe.croma.gschema.xml:321
+#: src/org.cafe.croma.gschema.xml:326 src/org.cafe.croma.gschema.xml:331
+#: src/org.cafe.croma.gschema.xml:336 src/org.cafe.croma.gschema.xml:341
+#: src/org.cafe.croma.gschema.xml:346 src/org.cafe.croma.gschema.xml:351
+#: src/org.cafe.croma.gschema.xml:356 src/org.cafe.croma.gschema.xml:361
+#: src/org.cafe.croma.gschema.xml:366 src/org.cafe.croma.gschema.xml:371
+#: src/org.cafe.croma.gschema.xml:376 src/org.cafe.croma.gschema.xml:381
+#: src/org.cafe.croma.gschema.xml:386 src/org.cafe.croma.gschema.xml:391
+#: src/org.cafe.croma.gschema.xml:396 src/org.cafe.croma.gschema.xml:401
 msgid "Name of workspace"
 msgstr "Nazwa obszaru roboczego"
 
-#: src/org.mate.croma.gschema.xml:227 src/org.mate.croma.gschema.xml:232
-#: src/org.mate.croma.gschema.xml:237 src/org.mate.croma.gschema.xml:242
-#: src/org.mate.croma.gschema.xml:247 src/org.mate.croma.gschema.xml:252
-#: src/org.mate.croma.gschema.xml:257 src/org.mate.croma.gschema.xml:262
-#: src/org.mate.croma.gschema.xml:267 src/org.mate.croma.gschema.xml:272
-#: src/org.mate.croma.gschema.xml:277 src/org.mate.croma.gschema.xml:282
-#: src/org.mate.croma.gschema.xml:287 src/org.mate.croma.gschema.xml:292
-#: src/org.mate.croma.gschema.xml:297 src/org.mate.croma.gschema.xml:302
-#: src/org.mate.croma.gschema.xml:307 src/org.mate.croma.gschema.xml:312
-#: src/org.mate.croma.gschema.xml:317 src/org.mate.croma.gschema.xml:322
-#: src/org.mate.croma.gschema.xml:327 src/org.mate.croma.gschema.xml:332
-#: src/org.mate.croma.gschema.xml:337 src/org.mate.croma.gschema.xml:342
-#: src/org.mate.croma.gschema.xml:347 src/org.mate.croma.gschema.xml:352
-#: src/org.mate.croma.gschema.xml:357 src/org.mate.croma.gschema.xml:362
-#: src/org.mate.croma.gschema.xml:367 src/org.mate.croma.gschema.xml:372
-#: src/org.mate.croma.gschema.xml:377 src/org.mate.croma.gschema.xml:382
-#: src/org.mate.croma.gschema.xml:387 src/org.mate.croma.gschema.xml:392
-#: src/org.mate.croma.gschema.xml:397 src/org.mate.croma.gschema.xml:402
+#: src/org.cafe.croma.gschema.xml:227 src/org.cafe.croma.gschema.xml:232
+#: src/org.cafe.croma.gschema.xml:237 src/org.cafe.croma.gschema.xml:242
+#: src/org.cafe.croma.gschema.xml:247 src/org.cafe.croma.gschema.xml:252
+#: src/org.cafe.croma.gschema.xml:257 src/org.cafe.croma.gschema.xml:262
+#: src/org.cafe.croma.gschema.xml:267 src/org.cafe.croma.gschema.xml:272
+#: src/org.cafe.croma.gschema.xml:277 src/org.cafe.croma.gschema.xml:282
+#: src/org.cafe.croma.gschema.xml:287 src/org.cafe.croma.gschema.xml:292
+#: src/org.cafe.croma.gschema.xml:297 src/org.cafe.croma.gschema.xml:302
+#: src/org.cafe.croma.gschema.xml:307 src/org.cafe.croma.gschema.xml:312
+#: src/org.cafe.croma.gschema.xml:317 src/org.cafe.croma.gschema.xml:322
+#: src/org.cafe.croma.gschema.xml:327 src/org.cafe.croma.gschema.xml:332
+#: src/org.cafe.croma.gschema.xml:337 src/org.cafe.croma.gschema.xml:342
+#: src/org.cafe.croma.gschema.xml:347 src/org.cafe.croma.gschema.xml:352
+#: src/org.cafe.croma.gschema.xml:357 src/org.cafe.croma.gschema.xml:362
+#: src/org.cafe.croma.gschema.xml:367 src/org.cafe.croma.gschema.xml:372
+#: src/org.cafe.croma.gschema.xml:377 src/org.cafe.croma.gschema.xml:382
+#: src/org.cafe.croma.gschema.xml:387 src/org.cafe.croma.gschema.xml:392
+#: src/org.cafe.croma.gschema.xml:397 src/org.cafe.croma.gschema.xml:402
 msgid "The name of a workspace."
 msgstr "Nazwa obszaru roboczego."
 
-#: src/org.mate.croma.gschema.xml:409 src/org.mate.croma.gschema.xml:414
-#: src/org.mate.croma.gschema.xml:419 src/org.mate.croma.gschema.xml:424
-#: src/org.mate.croma.gschema.xml:429 src/org.mate.croma.gschema.xml:434
-#: src/org.mate.croma.gschema.xml:439 src/org.mate.croma.gschema.xml:444
-#: src/org.mate.croma.gschema.xml:449 src/org.mate.croma.gschema.xml:454
-#: src/org.mate.croma.gschema.xml:459 src/org.mate.croma.gschema.xml:464
+#: src/org.cafe.croma.gschema.xml:409 src/org.cafe.croma.gschema.xml:414
+#: src/org.cafe.croma.gschema.xml:419 src/org.cafe.croma.gschema.xml:424
+#: src/org.cafe.croma.gschema.xml:429 src/org.cafe.croma.gschema.xml:434
+#: src/org.cafe.croma.gschema.xml:439 src/org.cafe.croma.gschema.xml:444
+#: src/org.cafe.croma.gschema.xml:449 src/org.cafe.croma.gschema.xml:454
+#: src/org.cafe.croma.gschema.xml:459 src/org.cafe.croma.gschema.xml:464
 msgid "Run a defined command"
 msgstr "Uruchomienie zdefiniowanego polecenia"
 
-#: src/org.mate.croma.gschema.xml:410 src/org.mate.croma.gschema.xml:415
-#: src/org.mate.croma.gschema.xml:420 src/org.mate.croma.gschema.xml:425
-#: src/org.mate.croma.gschema.xml:430 src/org.mate.croma.gschema.xml:435
-#: src/org.mate.croma.gschema.xml:440 src/org.mate.croma.gschema.xml:445
-#: src/org.mate.croma.gschema.xml:450 src/org.mate.croma.gschema.xml:455
-#: src/org.mate.croma.gschema.xml:460 src/org.mate.croma.gschema.xml:465
+#: src/org.cafe.croma.gschema.xml:410 src/org.cafe.croma.gschema.xml:415
+#: src/org.cafe.croma.gschema.xml:420 src/org.cafe.croma.gschema.xml:425
+#: src/org.cafe.croma.gschema.xml:430 src/org.cafe.croma.gschema.xml:435
+#: src/org.cafe.croma.gschema.xml:440 src/org.cafe.croma.gschema.xml:445
+#: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
+#: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
 "The keybinding that runs the correspondingly-numbered command in "
 "/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
@@ -1026,44 +1026,44 @@ msgstr ""
 "opcji zostanie przypisana wartość \"disabled\" (ang. nieaktywne), wówczas z "
 "czynnością nie będzie powiązany żaden skrót klawiszowy. "
 
-#: src/org.mate.croma.gschema.xml:470 src/org.mate.croma.gschema.xml:475
-#: src/org.mate.croma.gschema.xml:480 src/org.mate.croma.gschema.xml:485
-#: src/org.mate.croma.gschema.xml:490 src/org.mate.croma.gschema.xml:495
-#: src/org.mate.croma.gschema.xml:500 src/org.mate.croma.gschema.xml:505
-#: src/org.mate.croma.gschema.xml:510 src/org.mate.croma.gschema.xml:515
-#: src/org.mate.croma.gschema.xml:520 src/org.mate.croma.gschema.xml:525
-#: src/org.mate.croma.gschema.xml:530 src/org.mate.croma.gschema.xml:535
-#: src/org.mate.croma.gschema.xml:540 src/org.mate.croma.gschema.xml:545
-#: src/org.mate.croma.gschema.xml:550 src/org.mate.croma.gschema.xml:625
-#: src/org.mate.croma.gschema.xml:630 src/org.mate.croma.gschema.xml:635
-#: src/org.mate.croma.gschema.xml:640 src/org.mate.croma.gschema.xml:645
-#: src/org.mate.croma.gschema.xml:650 src/org.mate.croma.gschema.xml:655
-#: src/org.mate.croma.gschema.xml:736 src/org.mate.croma.gschema.xml:741
-#: src/org.mate.croma.gschema.xml:746 src/org.mate.croma.gschema.xml:751
-#: src/org.mate.croma.gschema.xml:756 src/org.mate.croma.gschema.xml:761
-#: src/org.mate.croma.gschema.xml:766 src/org.mate.croma.gschema.xml:771
-#: src/org.mate.croma.gschema.xml:776 src/org.mate.croma.gschema.xml:781
-#: src/org.mate.croma.gschema.xml:786 src/org.mate.croma.gschema.xml:791
-#: src/org.mate.croma.gschema.xml:796 src/org.mate.croma.gschema.xml:801
-#: src/org.mate.croma.gschema.xml:806 src/org.mate.croma.gschema.xml:811
-#: src/org.mate.croma.gschema.xml:816 src/org.mate.croma.gschema.xml:821
-#: src/org.mate.croma.gschema.xml:826 src/org.mate.croma.gschema.xml:831
-#: src/org.mate.croma.gschema.xml:836 src/org.mate.croma.gschema.xml:841
-#: src/org.mate.croma.gschema.xml:846 src/org.mate.croma.gschema.xml:851
-#: src/org.mate.croma.gschema.xml:856 src/org.mate.croma.gschema.xml:861
-#: src/org.mate.croma.gschema.xml:866 src/org.mate.croma.gschema.xml:871
-#: src/org.mate.croma.gschema.xml:876 src/org.mate.croma.gschema.xml:881
-#: src/org.mate.croma.gschema.xml:886 src/org.mate.croma.gschema.xml:891
-#: src/org.mate.croma.gschema.xml:896 src/org.mate.croma.gschema.xml:901
-#: src/org.mate.croma.gschema.xml:906 src/org.mate.croma.gschema.xml:911
-#: src/org.mate.croma.gschema.xml:916 src/org.mate.croma.gschema.xml:921
-#: src/org.mate.croma.gschema.xml:926 src/org.mate.croma.gschema.xml:931
-#: src/org.mate.croma.gschema.xml:936 src/org.mate.croma.gschema.xml:941
-#: src/org.mate.croma.gschema.xml:946 src/org.mate.croma.gschema.xml:951
-#: src/org.mate.croma.gschema.xml:956 src/org.mate.croma.gschema.xml:961
-#: src/org.mate.croma.gschema.xml:966 src/org.mate.croma.gschema.xml:971
-#: src/org.mate.croma.gschema.xml:976 src/org.mate.croma.gschema.xml:981
-#: src/org.mate.croma.gschema.xml:986 src/org.mate.croma.gschema.xml:991
+#: src/org.cafe.croma.gschema.xml:470 src/org.cafe.croma.gschema.xml:475
+#: src/org.cafe.croma.gschema.xml:480 src/org.cafe.croma.gschema.xml:485
+#: src/org.cafe.croma.gschema.xml:490 src/org.cafe.croma.gschema.xml:495
+#: src/org.cafe.croma.gschema.xml:500 src/org.cafe.croma.gschema.xml:505
+#: src/org.cafe.croma.gschema.xml:510 src/org.cafe.croma.gschema.xml:515
+#: src/org.cafe.croma.gschema.xml:520 src/org.cafe.croma.gschema.xml:525
+#: src/org.cafe.croma.gschema.xml:530 src/org.cafe.croma.gschema.xml:535
+#: src/org.cafe.croma.gschema.xml:540 src/org.cafe.croma.gschema.xml:545
+#: src/org.cafe.croma.gschema.xml:550 src/org.cafe.croma.gschema.xml:625
+#: src/org.cafe.croma.gschema.xml:630 src/org.cafe.croma.gschema.xml:635
+#: src/org.cafe.croma.gschema.xml:640 src/org.cafe.croma.gschema.xml:645
+#: src/org.cafe.croma.gschema.xml:650 src/org.cafe.croma.gschema.xml:655
+#: src/org.cafe.croma.gschema.xml:736 src/org.cafe.croma.gschema.xml:741
+#: src/org.cafe.croma.gschema.xml:746 src/org.cafe.croma.gschema.xml:751
+#: src/org.cafe.croma.gschema.xml:756 src/org.cafe.croma.gschema.xml:761
+#: src/org.cafe.croma.gschema.xml:766 src/org.cafe.croma.gschema.xml:771
+#: src/org.cafe.croma.gschema.xml:776 src/org.cafe.croma.gschema.xml:781
+#: src/org.cafe.croma.gschema.xml:786 src/org.cafe.croma.gschema.xml:791
+#: src/org.cafe.croma.gschema.xml:796 src/org.cafe.croma.gschema.xml:801
+#: src/org.cafe.croma.gschema.xml:806 src/org.cafe.croma.gschema.xml:811
+#: src/org.cafe.croma.gschema.xml:816 src/org.cafe.croma.gschema.xml:821
+#: src/org.cafe.croma.gschema.xml:826 src/org.cafe.croma.gschema.xml:831
+#: src/org.cafe.croma.gschema.xml:836 src/org.cafe.croma.gschema.xml:841
+#: src/org.cafe.croma.gschema.xml:846 src/org.cafe.croma.gschema.xml:851
+#: src/org.cafe.croma.gschema.xml:856 src/org.cafe.croma.gschema.xml:861
+#: src/org.cafe.croma.gschema.xml:866 src/org.cafe.croma.gschema.xml:871
+#: src/org.cafe.croma.gschema.xml:876 src/org.cafe.croma.gschema.xml:881
+#: src/org.cafe.croma.gschema.xml:886 src/org.cafe.croma.gschema.xml:891
+#: src/org.cafe.croma.gschema.xml:896 src/org.cafe.croma.gschema.xml:901
+#: src/org.cafe.croma.gschema.xml:906 src/org.cafe.croma.gschema.xml:911
+#: src/org.cafe.croma.gschema.xml:916 src/org.cafe.croma.gschema.xml:921
+#: src/org.cafe.croma.gschema.xml:926 src/org.cafe.croma.gschema.xml:931
+#: src/org.cafe.croma.gschema.xml:936 src/org.cafe.croma.gschema.xml:941
+#: src/org.cafe.croma.gschema.xml:946 src/org.cafe.croma.gschema.xml:951
+#: src/org.cafe.croma.gschema.xml:956 src/org.cafe.croma.gschema.xml:961
+#: src/org.cafe.croma.gschema.xml:966 src/org.cafe.croma.gschema.xml:971
+#: src/org.cafe.croma.gschema.xml:976 src/org.cafe.croma.gschema.xml:981
+#: src/org.cafe.croma.gschema.xml:986 src/org.cafe.croma.gschema.xml:991
 msgid ""
 "The format looks like \"<Control>a\" or \"<Shift><Alt>F1\". The parser is "
 "fairly liberal and allows lower or upper case, and also abbreviations such "
@@ -1076,13 +1076,13 @@ msgstr ""
 "opcji zostanie przypisany specjalny napis \"disabled\" (ang. nieaktywne), "
 "wówczas z czynnością nie będzie powiązany żaden skrót klawiszowy."
 
-#: src/org.mate.croma.gschema.xml:555 src/org.mate.croma.gschema.xml:560
-#: src/org.mate.croma.gschema.xml:565 src/org.mate.croma.gschema.xml:570
-#: src/org.mate.croma.gschema.xml:575 src/org.mate.croma.gschema.xml:580
-#: src/org.mate.croma.gschema.xml:585 src/org.mate.croma.gschema.xml:590
-#: src/org.mate.croma.gschema.xml:595 src/org.mate.croma.gschema.xml:600
-#: src/org.mate.croma.gschema.xml:605 src/org.mate.croma.gschema.xml:610
-#: src/org.mate.croma.gschema.xml:615 src/org.mate.croma.gschema.xml:620
+#: src/org.cafe.croma.gschema.xml:555 src/org.cafe.croma.gschema.xml:560
+#: src/org.cafe.croma.gschema.xml:565 src/org.cafe.croma.gschema.xml:570
+#: src/org.cafe.croma.gschema.xml:575 src/org.cafe.croma.gschema.xml:580
+#: src/org.cafe.croma.gschema.xml:585 src/org.cafe.croma.gschema.xml:590
+#: src/org.cafe.croma.gschema.xml:595 src/org.cafe.croma.gschema.xml:600
+#: src/org.cafe.croma.gschema.xml:605 src/org.cafe.croma.gschema.xml:610
+#: src/org.cafe.croma.gschema.xml:615 src/org.cafe.croma.gschema.xml:620
 msgid ""
 "The format looks like \"<Control>a\" or \"<Shift><Alt>F1\". The parser is "
 "fairly liberal and allows lower or upper case, and also abbreviations such "
@@ -1099,64 +1099,64 @@ msgstr ""
 "może zostać odwrócone poprzez naciśnięcie klawisza \"Shift\"; z tego powodu,"
 " do skrótu nie można przypisać klawisza \"Shift\"."
 
-#: src/org.mate.croma.gschema.xml:559
+#: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
 msgstr ""
 "Przesuń tło pomiędzy oknami aplikacji, wykorzystując wyskakujące okienko."
 
-#: src/org.mate.croma.gschema.xml:569
+#: src/org.cafe.croma.gschema.xml:569
 msgid "Move backward between windows, using a popup window"
 msgstr "Przesuń tło pomiędzy oknami, wykorzystując wyskakujące okienko."
 
-#: src/org.mate.croma.gschema.xml:574
+#: src/org.cafe.croma.gschema.xml:574
 msgid "Move between windows on all workspaces, using a popup window"
 msgstr ""
 "Przesuń pomiędzy oknami na wszystkich obszarach roboczych, wykorzystując "
 "wyskakujące okienko."
 
-#: src/org.mate.croma.gschema.xml:579
+#: src/org.cafe.croma.gschema.xml:579
 msgid "Move backward between windows on all workspaces, using a popup window"
 msgstr ""
 "Przesuń do tyłu pomiędzy oknami na wszystkich obszarach roboczych, "
 "wykorzystując wyskakujące okienko."
 
-#: src/org.mate.croma.gschema.xml:589
+#: src/org.cafe.croma.gschema.xml:589
 msgid "Move backward between panels and the desktop, using a popup window"
 msgstr ""
 "Przesuń do tyłu pomiędzy panelami i pulpitem, wykorzystując wyskakujące "
 "okienko."
 
-#: src/org.mate.croma.gschema.xml:599
+#: src/org.cafe.croma.gschema.xml:599
 msgid "Move backward between windows of an application immediately"
 msgstr "Przesuń natychmiast do tyłu pomiędzy oknami aplikacji."
 
-#: src/org.mate.croma.gschema.xml:609
+#: src/org.cafe.croma.gschema.xml:609
 msgid "Move backward between windows immediately"
 msgstr "Przesuń natychmiast do tyłu pomiędzy oknami."
 
-#: src/org.mate.croma.gschema.xml:619
+#: src/org.cafe.croma.gschema.xml:619
 msgid "Move backward between panels and the desktop immediately"
 msgstr "Przesuń natychmiast do tyłu pomiędzy panelami i pulpitem."
 
-#: src/org.mate.croma.gschema.xml:634
+#: src/org.cafe.croma.gschema.xml:634
 msgid "Show the panel's \"Run Application\" dialog box"
 msgstr "Wyświetlenie okna uruchamiania panelu"
 
-#: src/org.mate.croma.gschema.xml:662 src/org.mate.croma.gschema.xml:667
-#: src/org.mate.croma.gschema.xml:672 src/org.mate.croma.gschema.xml:677
-#: src/org.mate.croma.gschema.xml:682 src/org.mate.croma.gschema.xml:687
-#: src/org.mate.croma.gschema.xml:692 src/org.mate.croma.gschema.xml:697
-#: src/org.mate.croma.gschema.xml:702 src/org.mate.croma.gschema.xml:707
-#: src/org.mate.croma.gschema.xml:712 src/org.mate.croma.gschema.xml:717
+#: src/org.cafe.croma.gschema.xml:662 src/org.cafe.croma.gschema.xml:667
+#: src/org.cafe.croma.gschema.xml:672 src/org.cafe.croma.gschema.xml:677
+#: src/org.cafe.croma.gschema.xml:682 src/org.cafe.croma.gschema.xml:687
+#: src/org.cafe.croma.gschema.xml:692 src/org.cafe.croma.gschema.xml:697
+#: src/org.cafe.croma.gschema.xml:702 src/org.cafe.croma.gschema.xml:707
+#: src/org.cafe.croma.gschema.xml:712 src/org.cafe.croma.gschema.xml:717
 msgid "Commands to run in response to keybindings"
 msgstr "Polecenia uruchamiane w odpowiedzi na użycie skrótów klawiszowych"
 
-#: src/org.mate.croma.gschema.xml:663 src/org.mate.croma.gschema.xml:668
-#: src/org.mate.croma.gschema.xml:673 src/org.mate.croma.gschema.xml:678
-#: src/org.mate.croma.gschema.xml:683 src/org.mate.croma.gschema.xml:688
-#: src/org.mate.croma.gschema.xml:693 src/org.mate.croma.gschema.xml:698
-#: src/org.mate.croma.gschema.xml:703 src/org.mate.croma.gschema.xml:708
-#: src/org.mate.croma.gschema.xml:713 src/org.mate.croma.gschema.xml:718
+#: src/org.cafe.croma.gschema.xml:663 src/org.cafe.croma.gschema.xml:668
+#: src/org.cafe.croma.gschema.xml:673 src/org.cafe.croma.gschema.xml:678
+#: src/org.cafe.croma.gschema.xml:683 src/org.cafe.croma.gschema.xml:688
+#: src/org.cafe.croma.gschema.xml:693 src/org.cafe.croma.gschema.xml:698
+#: src/org.cafe.croma.gschema.xml:703 src/org.cafe.croma.gschema.xml:708
+#: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
 "that correspond to these commands. Pressing the keybinding for run_command_N"
@@ -1166,11 +1166,11 @@ msgstr ""
 "definiują skróty klawiszowe przypisane odpowiednim poleceniom. Naciskając "
 "skrót klawiszowy dla run_command_N uruchomi run_command_N."
 
-#: src/org.mate.croma.gschema.xml:722
+#: src/org.cafe.croma.gschema.xml:722
 msgid "The screenshot command"
 msgstr "Polecenie pobrania zrzutu ekranu"
 
-#: src/org.mate.croma.gschema.xml:723
+#: src/org.cafe.croma.gschema.xml:723
 msgid ""
 "The /apps/croma/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
@@ -1178,11 +1178,11 @@ msgstr ""
 "Klucz /apps/croma/global_keybindings/run_command_screenshot określa skrót "
 "klawiszowy wywołujący polecenie określone przez to ustawienie."
 
-#: src/org.mate.croma.gschema.xml:727
+#: src/org.cafe.croma.gschema.xml:727
 msgid "The window screenshot command"
 msgstr "Polecenie pobrania zrzutu okna"
 
-#: src/org.mate.croma.gschema.xml:728
+#: src/org.cafe.croma.gschema.xml:728
 msgid ""
 "The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
 " a keybinding which causes the command specified by this setting to be "
@@ -1191,27 +1191,27 @@ msgstr ""
 "Klucz /apps/croma/global_keybindings/run_command_window_screenshot określa "
 "skrót klawiszowy wywołujący polecenia określone przez to ustawienie."
 
-#: src/org.mate.croma.gschema.xml:750
+#: src/org.cafe.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
 msgstr "Przełącza, czy okno będzie zawsze widoczne nad innymi oknami"
 
-#: src/org.mate.croma.gschema.xml:910
+#: src/org.cafe.croma.gschema.xml:910
 msgid "Tile window to north-west (upper left) corner of screen"
 msgstr ""
 "Ułóż sąsiadująco okno do północno-zachodniego (lewego górnego) rogu ekranu"
 
-#: src/org.mate.croma.gschema.xml:915
+#: src/org.cafe.croma.gschema.xml:915
 msgid "Tile window to north-east (upper right) corner of screen"
 msgstr ""
 "Ułóż sąsiadująco okno do północno-wschodniego (prawego górnego) rogu ekranu"
 
-#: src/org.mate.croma.gschema.xml:920
+#: src/org.cafe.croma.gschema.xml:920
 msgid "Tile window to south-east (lower right) corner of screen"
 msgstr ""
 "Ułóż sąsiadująco okno do południowo-wschodniego (prawego dolnego) rogu "
 "ekranu"
 
-#: src/org.mate.croma.gschema.xml:925
+#: src/org.cafe.croma.gschema.xml:925
 msgid "Tile window to south-west (lower left) corner of screen"
 msgstr ""
 "Ułóż sąsiadująco okno do południowo-zachodniego (lewego dolnego) rogu ekranu"
@@ -1953,7 +1953,7 @@ msgid ""
 "Gtk:custom format is \"gtk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
-"Formatem Gtk:custom jest \"gtk:custom(color_name,fallback)\", \"%s\" nie "
+"Forcafem Gtk:custom jest \"gtk:custom(color_name,fallback)\", \"%s\" nie "
 "pasuje do formatu"
 
 #: src/ui/theme.c:1471
@@ -1991,7 +1991,7 @@ msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
 "format"
 msgstr ""
-"Formatem przenikania jest \"blend/bg_color/fg_color/alpha\", \"%s\" nie "
+"Forcafem przenikania jest \"blend/bg_color/fg_color/alpha\", \"%s\" nie "
 "pasuje do formatu"
 
 #: src/ui/theme.c:1548
@@ -2010,7 +2010,7 @@ msgstr ""
 #, c-format
 msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
-"Formatem przenikania jest \"shade/base_color/factor\", \"%s\" nie pasuje do "
+"Forcafem przenikania jest \"shade/base_color/factor\", \"%s\" nie pasuje do "
 "formatu"
 
 #: src/ui/theme.c:1615

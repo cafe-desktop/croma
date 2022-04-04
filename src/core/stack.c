@@ -360,7 +360,7 @@ compute_layer (MetaWindow *window)
 
   /* We can only do promotion-due-to-group for dialogs and other
    * transients, or weird stuff happens like the desktop window and
-   * caja windows getting in the same layer, or all mate-terminal
+   * caja windows getting in the same layer, or all cafe-terminal
    * windows getting in fullscreen layer if any terminal is
    * fullscreen.
    */

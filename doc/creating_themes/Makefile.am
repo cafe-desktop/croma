@@ -3,7 +3,7 @@
 # yelp-tools:
 @YELP_HELP_RULES@
 
-# The name of the directory in /usr/share/mate/help/, 
+# The name of the directory in /usr/share/cafe/help/, 
 # and the name of the main .xml file:
 HELP_ID = creating-croma-themes
 
