@@ -12,16 +12,23 @@ requires:
     - cppcheck
     - expect #required for unbuffer
     - gcc
+    - gir1.2-atk-1.0 #required for ctk
     - git
     - intltool
+    - libatk-bridge2.0-dev #required for ctk
     - libcanberra-gtk3-dev
+    - libegl1-mesa-dev #required for ctk
+    - libepoxy-dev #required for ctk
+    - libgdk-pixbuf2.0-dev #required for ctk
     - libglib2.0-dev
     - libgtop2-dev
     - libice-dev
     - libpango1.0-dev
+    - librest-0.7-0 #required for ctk
     - libsm-dev
     - libstartup-notification0-dev
     - libtool
+    - libwayland-dev #required for ctk
     - libx11-dev
     - libxcomposite-dev
     - libxcursor-dev
@@ -29,11 +36,13 @@ requires:
     - libxext-dev
     - libxfixes-dev
     - libxinerama-dev
+    - libxkbcommon-dev #required for ctk
     - libxpresent-dev
     - libxrandr-dev
     - libxrender-dev
     - libxt-dev
     - make
+    - wayland-protocols #required for ctk
     - meson
     - wget
     - x11proto-present-dev
