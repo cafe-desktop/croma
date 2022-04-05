@@ -10,5 +10,5 @@ install_data(
   'minimize_pressed.png',
   'restore_normal.png',
   'restore_pressed.png',
-  install_dir : join_paths(datadir, 'themes', 'Raleigh', 'metacity-1')
+  install_dir : join_paths(datadir, 'themes', 'Raleigh_ctk', 'metacity-1')
 )

@@ -107,7 +107,7 @@ typedef struct {
     unsigned long decorations;
     long input_mode;
     unsigned long status;
-} MotifWmHints, MwmHints;
+} Motif_ctkWmHints, MwmHints;
 
 #define MWM_HINTS_FUNCTIONS     (1L << 0)
 #define MWM_HINTS_DECORATIONS   (1L << 1)
@@ -177,7 +177,7 @@ int main (int argc, char **argv)
 
       if (noframes)
         {
-          MotifWmHints mwm;
+          Motif_ctkWmHints mwm;
           Atom mwm_atom;
 
           mwm.decorations = 0;
@@ -188,7 +188,7 @@ int main (int argc, char **argv)
           XChangeProperty (d, w, mwm_atom, mwm_atom,
                            32, PropModeReplace,
                            (unsigned char *)&mwm,
-                           sizeof (MotifWmHints)/sizeof (long));
+                           sizeof (Motif_ctkWmHints)/sizeof (long));
         }
 
       XMapWindow (d, w);

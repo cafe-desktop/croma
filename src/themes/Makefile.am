@@ -1,40 +1,40 @@
 THEMES= \
-	Atlanta \
-	ClearlooksRe \
-	Dopple \
-	Dopple-Left \
-	DustBlue \
-	Esco \
-	eOS \
-	Gorilla \
-	Motif \
-	Raleigh \
-	Spidey \
-	Spidey-Left \
-	Splint \
-	Splint-Left \
-	WinMe
+	Atlanta_ctk \
+	ClearlooksRe_ctk \
+	Dopple_ctk \
+	Dopple_ctk-Left_ctk \
+	DustBlue_ctk \
+	Esco_ctk \
+	eOS_ctk \
+	Gorilla_ctk \
+	Motif_ctk \
+	Raleigh_ctk \
+	Spidey_ctk \
+	Spidey_ctk-Left_ctk \
+	Splint_ctk \
+	Splint_ctk-Left_ctk \
+	WinMe_ctk
 
 THEME_DIR=$(datadir)/themes
 THEME_SUBDIR=metacity-1
 
 EXTRA_DIST= \
 	meson.build \
-	Atlanta/meson.build \
-	ClearlooksRe/meson.build \
-	Dopple/meson.build \
-	Dopple-Left/meson.build \
-	DustBlue/meson.build \
-	eOS/meson.build \
-	Esco/meson.build \
-	Gorilla/meson.build \
-	Motif/meson.build \
-	Raleigh/meson.build \
-	Spidey/meson.build \
-	Spidey-Left/meson.build \
-	Splint/meson.build \
-	Splint-Left/meson.build \
-	WinMe/meson.build
+	Atlanta_ctk/meson.build \
+	ClearlooksRe_ctk/meson.build \
+	Dopple_ctk/meson.build \
+	Dopple_ctk-Left_ctk/meson.build \
+	DustBlue_ctk/meson.build \
+	eOS_ctk/meson.build \
+	Esco_ctk/meson.build \
+	Gorilla_ctk/meson.build \
+	Motif_ctk/meson.build \
+	Raleigh_ctk/meson.build \
+	Spidey_ctk/meson.build \
+	Spidey_ctk-Left_ctk/meson.build \
+	Splint_ctk/meson.build \
+	Splint_ctk-Left_ctk/meson.build \
+	WinMe_ctk/meson.build
 
 install-data-local:
 	$(mkinstalldirs) $(DESTDIR)$(THEME_DIR); \

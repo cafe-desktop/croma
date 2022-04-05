@@ -13,5 +13,5 @@ install_data(
   'button_min_pressed.png',
   'menu.png',
   'metacity-theme-1.xml',
-  install_dir : join_paths(datadir, 'themes', 'DustBlue', 'metacity-1')
+  install_dir : join_paths(datadir, 'themes', 'DustBlue_ctk', 'metacity-1')
 )

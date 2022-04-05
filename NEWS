@@ -31,20 +31,20 @@
   * theme.c: Fix window control hidpi rendering for all themes.
   * tabpopup: Increase max number of columns
   * window: Add optional tile size cycling
-  * DustBlue: strip image of all profiles and comments
+  * DustBlue_ctk: strip image of all profiles and comments
   * tabpopup: Fix deprecation warnings
   * tabpopup: Change schema value ranges
   * tabpopup: Make workspaces compatible with OSD popup
   * tabpopup: Render window thumbnail as cairo surface
   * tabpopup: Draw transparent OSD-style popups
   * Fix CROMA_LOCALEDIR displaying the translated messages
-  * WinMe theme: strip png images of all profiles and comments
-  * eOS theme: Add single button backgrounds
-  * eOS theme: strip png images of all profiles and comments
-  * eOS theme: make transparent the button-box outer region
+  * WinMe_ctk theme: strip png images of all profiles and comments
+  * eOS_ctk theme: Add single button backgrounds
+  * eOS_ctk theme: strip png images of all profiles and comments
+  * eOS_ctk theme: make transparent the button-box outer region
   * theme: Render window control buttons and icons as surfaces
   * Set compiler debug flags using CAFE_DEBUG_CHECK
-  * window decoration themes: Add Atlanta, Esco, Gorilla, Motif, Raleigh
+  * window decoration themes: Add Atlanta_ctk, Esco_ctk, Gorilla_ctk, Motif_ctk, Raleigh_ctk
   * Print CFLAGS and WARN_CFLAGS in configure summary
   * Set --enable-compile-warnings=yes by default
   * Use WARN_CFLAGS which are only set with --enable-compiler-warnings

@@ -746,7 +746,7 @@ reload_mwm_hints (MetaWindow    *window,
                   MetaPropValue *value,
                   gboolean       initial)
 {
-  MotifWmHints *hints;
+  Motif_ctkWmHints *hints;
 
   window->mwm_decorated = TRUE;
   window->mwm_border_only = FALSE;

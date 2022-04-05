@@ -1,4 +1,4 @@
 install_data(
   'metacity-theme-1.xml',
-  install_dir : join_paths(datadir, 'themes', 'Dopple-Left', 'metacity-1'),
+  install_dir : join_paths(datadir, 'themes', 'Dopple_ctk-Left_ctk', 'metacity-1'),
 )

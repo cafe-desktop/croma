@@ -1229,7 +1229,7 @@ theme_name_handler (MetaPreference pref,
 
   /* Fallback crackrock */
   if (string_value == NULL)
-    current_theme = g_strdup ("ClearlooksRe");
+    current_theme = g_strdup ("ClearlooksRe_ctk");
   else
     current_theme = g_strdup (string_value);
 }

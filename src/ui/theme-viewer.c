@@ -868,7 +868,7 @@ main (int argc, char **argv)
   start = clock ();
   err = NULL;
   if (argc == 1)
-    global_theme = meta_theme_load ("ClearlooksRe", &err);
+    global_theme = meta_theme_load ("ClearlooksRe_ctk", &err);
   else if (argc == 2)
     global_theme = meta_theme_load (argv[1], &err);
   else
