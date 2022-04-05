@@ -2,7 +2,7 @@ THEMES= \
 	Atlanta_ctk \
 	ClearlooksRe_ctk \
 	Dopple_ctk \
-	Dopple_ctk-Left_ctk \
+	Dopple-Left_ctk \
 	DustBlue_ctk \
 	Esco_ctk \
 	eOS_ctk \
@@ -23,7 +23,7 @@ EXTRA_DIST= \
 	Atlanta_ctk/meson.build \
 	ClearlooksRe_ctk/meson.build \
 	Dopple_ctk/meson.build \
-	Dopple_ctk-Left_ctk/meson.build \
+	Dopple-Left_ctk/meson.build \
 	DustBlue_ctk/meson.build \
 	eOS_ctk/meson.build \
 	Esco_ctk/meson.build \
