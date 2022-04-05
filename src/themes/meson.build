@@ -1,7 +1,7 @@
 subdir('Atlanta_ctk')
 subdir('ClearlooksRe_ctk')
 subdir('Dopple_ctk')
-subdir('Dopple_ctk-Left_ctk')
+subdir('Dopple-Left_ctk')
 subdir('DustBlue_ctk')
 subdir('Esco_ctk')
 subdir('eOS_ctk')
