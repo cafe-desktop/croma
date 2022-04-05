@@ -298,16 +298,16 @@ meta_prop_get_cardinal_list (MetaDisplay *display,
 
 static gboolean
 motif_hints_from_results (GetPropertyResults *results,
-                          MotifWmHints      **hints_p)
+                          Motif_ctkWmHints      **hints_p)
 {
   int real_size, max_size;
-#define MAX_ITEMS sizeof (MotifWmHints)/sizeof (gulong)
+#define MAX_ITEMS sizeof (Motif_ctkWmHints)/sizeof (gulong)
 
   *hints_p = NULL;
 
   if (results->type == None || results->n_items <= 0)
     {
-      meta_verbose ("Motif hints had unexpected type or n_items\n");
+      meta_verbose ("Motif_ctk hints had unexpected type or n_items\n");
       if (results->prop)
         {
           XFree (results->prop);
@@ -317,10 +317,10 @@ motif_hints_from_results (GetPropertyResults *results,
     }
 
   /* The issue here is that some old crufty code will set a smaller
-   * MotifWmHints than the one we expect, apparently.  I'm not sure of
+   * Motif_ctkWmHints than the one we expect, apparently.  I'm not sure of
    * the history behind it. See bug #89841 for example.
    */
-  *hints_p = ag_Xmalloc (sizeof (MotifWmHints));
+  *hints_p = ag_Xmalloc (sizeof (Motif_ctkWmHints));
   if (*hints_p == NULL)
     {
       if (results->prop)
@@ -347,7 +347,7 @@ gboolean
 meta_prop_get_motif_hints (MetaDisplay   *display,
                            Window         xwindow,
                            Atom           xatom,
-                           MotifWmHints **hints_p)
+                           Motif_ctkWmHints **hints_p)
 {
   GetPropertyResults results;
 

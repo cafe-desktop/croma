@@ -34,7 +34,7 @@
 #endif
 
 /* Copied from Lesstif by way of CTK. Rudimentary docs can be
- * found in some Motif reference guides online.
+ * found in some Motif_ctk reference guides online.
  */
 typedef struct {
     unsigned long flags;
@@ -42,7 +42,7 @@ typedef struct {
     unsigned long decorations;
     long input_mode;
     unsigned long status;
-} MotifWmHints, MwmHints;
+} Motif_ctkWmHints, MwmHints;
 
 #define MWM_HINTS_FUNCTIONS     (1L << 0)
 #define MWM_HINTS_DECORATIONS   (1L << 1)
@@ -83,7 +83,7 @@ gboolean meta_prop_get_atom_list     (MetaDisplay   *display,
 gboolean meta_prop_get_motif_hints   (MetaDisplay   *display,
                                       Window         xwindow,
                                       Atom           xatom,
-                                      MotifWmHints **hints_p);
+                                      Motif_ctkWmHints **hints_p);
 gboolean meta_prop_get_cardinal_list (MetaDisplay   *display,
                                       Window         xwindow,
                                       Atom           xatom,
@@ -170,7 +170,7 @@ typedef struct
   union
   {
     char *str;
-    MotifWmHints *motif_hints;
+    Motif_ctkWmHints *motif_hints;
     Window xwindow;
     gulong cardinal;
     XWMHints *wm_hints;

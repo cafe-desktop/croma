@@ -1237,7 +1237,7 @@ msgid ""
 "You may choose to wait a short while for it to continue or force the "
 "application to quit entirely."
 msgstr ""
-"Escolla entre agardar un chisco a que continúe ou forzar a saída da "
+"Esco_ctklla entre agardar un chisco a que continúe ou forzar a saída da "
 "aplicación."
 
 #: src/core/delete.c:110

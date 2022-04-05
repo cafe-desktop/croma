@@ -10,5 +10,5 @@ install_data(
   'minimize_pressed.png',
   'restore_normal.png',
   'restore_pressed.png',
-  install_dir : join_paths(datadir, 'themes', 'WinMe', 'metacity-1')
+  install_dir : join_paths(datadir, 'themes', 'WinMe_ctk', 'metacity-1')
 )

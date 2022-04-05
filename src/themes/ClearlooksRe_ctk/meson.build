@@ -1,4 +1,4 @@
 install_data(
   'metacity-theme-1.xml',
-  install_dir : join_paths(datadir, 'themes', 'ClearlooksRe', 'metacity-1'),
+  install_dir : join_paths(datadir, 'themes', 'ClearlooksRe_ctk', 'metacity-1'),
 )

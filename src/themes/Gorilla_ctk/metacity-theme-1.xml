@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>Gorilla</name>
+  <name>Gorilla_ctk</name>
   <author>Kenneth Christiansen &lt;kenneth@gnu.org&gt; Anders Carlsson &lt;andersca@gnu.org&gt;</author>
   <copyright>&#194; Ximian, Inc, 2001</copyright>
   <date>February 8, 2002</date>
-  <description>A port of the Gorilla theme by Jacub Steiner</description>
+  <description>A port of the Gorilla_ctk theme by Jacub Steiner</description>
 </info>
 
 <!-- define constants -->

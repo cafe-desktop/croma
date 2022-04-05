@@ -12,5 +12,5 @@ install_data(
   'inactive-menu-button.png',
   'inactive-minimize-button.png',
   'metacity-theme-1.xml',
-  install_dir : join_paths(datadir, 'themes', 'Gorilla', 'metacity-1')
+  install_dir : join_paths(datadir, 'themes', 'Gorilla_ctk', 'metacity-1')
 )

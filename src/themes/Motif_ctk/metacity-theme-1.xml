@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
   <info>
-    <name>Motif</name>
+    <name>Motif_ctk</name>
     <author>Alexander Rokashevich</author>
     <copyright>Alexander Rokashevich, 2007</copyright>
     <date>2007-09-05</date>
-    <description>Motif Window Manager Theme based on colors from CTK+ theme, modified from mwm-north theme</description>
+    <description>Motif_ctk Window Manager Theme based on colors from CTK+ theme, modified from mwm-north theme</description>
   </info>
 <!--
 #######################################################

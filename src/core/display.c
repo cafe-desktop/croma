@@ -4458,7 +4458,7 @@ process_request_frame_extents (MetaDisplay    *display,
   Window xwindow = event->xclient.window;
   unsigned long data[4] = { 0, 0, 0, 0 };
 
-  MotifWmHints *hints = NULL;
+  Motif_ctkWmHints *hints = NULL;
   gboolean hints_set = FALSE;
 
   meta_verbose ("Setting frame extents for 0x%lx\n", xwindow);

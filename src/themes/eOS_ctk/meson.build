@@ -21,5 +21,5 @@ install_data(
   'unmaximize.png',
   'unmaximize_unfocused_over.png',
   'unmaximize_unfocused.png',
-  install_dir : join_paths(datadir, 'themes', 'eOS', 'metacity-1')
+  install_dir : join_paths(datadir, 'themes', 'eOS_ctk', 'metacity-1')
 )

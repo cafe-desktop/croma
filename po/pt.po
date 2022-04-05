@@ -87,7 +87,7 @@ msgstr "Mover imediatamente entre painéis e o ambiente"
 
 #: src/50-croma-global-key.xml.in:16 src/org.cafe.croma.gschema.xml:624
 msgid "Hide all normal windows and set focus to the desktop"
-msgstr "Esconder todas as janelas normais e colocar foco na área de trabalho"
+msgstr "Esco_ctknder todas as janelas normais e colocar foco na área de trabalho"
 
 #: src/50-croma-global-key.xml.in:23 src/org.cafe.croma.gschema.xml:469
 msgid "Switch to workspace 1"
