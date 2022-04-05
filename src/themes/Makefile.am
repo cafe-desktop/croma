@@ -12,7 +12,7 @@ THEMES= \
 	Spidey_ctk \
 	Spidey-Left_ctk \
 	Splint_ctk \
-	Splint_ctk-Left_ctk \
+	Splint-Left_ctk \
 	WinMe_ctk
 
 THEME_DIR=$(datadir)/themes
@@ -33,7 +33,7 @@ EXTRA_DIST= \
 	Spidey_ctk/meson.build \
 	Spidey-Left_ctk/meson.build \
 	Splint_ctk/meson.build \
-	Splint_ctk-Left_ctk/meson.build \
+	Splint-Left_ctk/meson.build \
 	WinMe_ctk/meson.build
 
 install-data-local:
