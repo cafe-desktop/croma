@@ -10,7 +10,7 @@ THEMES= \
 	Motif_ctk \
 	Raleigh_ctk \
 	Spidey_ctk \
-	Spidey_ctk-Left_ctk \
+	Spidey-Left_ctk \
 	Splint_ctk \
 	Splint_ctk-Left_ctk \
 	WinMe_ctk
@@ -31,7 +31,7 @@ EXTRA_DIST= \
 	Motif_ctk/meson.build \
 	Raleigh_ctk/meson.build \
 	Spidey_ctk/meson.build \
-	Spidey_ctk-Left_ctk/meson.build \
+	Spidey-Left_ctk/meson.build \
 	Splint_ctk/meson.build \
 	Splint_ctk-Left_ctk/meson.build \
 	WinMe_ctk/meson.build
