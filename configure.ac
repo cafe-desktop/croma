@@ -62,7 +62,7 @@ CROMA_PC_MODULES="ctk+-3.0 >= $CTK_MIN_VERSION gio-2.0 >= $GIO_MIN_VERSION pango
 GLIB_GSETTINGS
 
 AC_ARG_ENABLE(verbose-mode,
-  AC_HELP_STRING([--disable-verbose-mode],
+  AS_HELP_STRING([--disable-verbose-mode],
                  [disable croma's ability to do verbose logging, for embedded/size-sensitive custom builds]),,
   enable_verbose_mode=yes)
 
@@ -71,32 +71,32 @@ if test x$enable_verbose_mode = xyes; then
 fi
 
 AC_ARG_ENABLE(sm,
-  AC_HELP_STRING([--disable-sm],
+  AS_HELP_STRING([--disable-sm],
                  [disable croma's session management support, for embedded/size-sensitive custom non-CAFE builds]),,
   enable_sm=auto)
 
 AC_ARG_ENABLE(startup-notification,
-  AC_HELP_STRING([--disable-startup-notification],
+  AS_HELP_STRING([--disable-startup-notification],
                  [disable croma's startup notification support, for embedded/size-sensitive custom non-CAFE builds]),,
   enable_startup_notification=auto)
 
 AC_ARG_ENABLE(compositor,
-  AC_HELP_STRING([--disable-compositor],
+  AS_HELP_STRING([--disable-compositor],
                  [disable croma's compositing manager]),,
   enable_compositor=auto)
 
 AC_ARG_ENABLE(xsync,
-  AC_HELP_STRING([--disable-xsync],
+  AS_HELP_STRING([--disable-xsync],
                  [disable croma's use of the XSync extension]),,
   enable_xsync=auto)
 
 AC_ARG_ENABLE(render,
-  AC_HELP_STRING([--disable-render],
+  AS_HELP_STRING([--disable-render],
                  [disable croma's use of the RENDER extension]),,
   enable_render=auto)
 
 AC_ARG_ENABLE(shape,
-  AC_HELP_STRING([--disable-shape],
+  AS_HELP_STRING([--disable-shape],
                  [disable croma's use of the shaped window extension]),,
   enable_shape=auto)
 
@@ -240,7 +240,7 @@ croma_save_cppflags="$CPPFLAGS"
 CPPFLAGS="$CPPFLAGS $X_CFLAGS"
 
 AC_ARG_ENABLE(xinerama,
-  AC_HELP_STRING([--disable-xinerama],
+  AS_HELP_STRING([--disable-xinerama],
                  [disable croma's use of the Xinerama extension]),
   try_xinerama=$enable_xinerama,try_xinerama=yes)
 
