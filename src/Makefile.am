@@ -149,7 +149,9 @@ testboxes_LDADD= @CROMA_LIBS@
 testgradient_LDADD= @CROMA_LIBS@
 testasyncgetprop_LDADD= @CROMA_LIBS@
 
-%.desktop: %.desktop.in
+SUFFIXES = .desktop.in .desktop .xml.in .xml
+
+.desktop.in.desktop:
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 desktopfilesdir=$(datadir)/applications
@@ -172,7 +174,7 @@ xml_in_files = \
 	50-croma-global-key.xml.in
 xml_DATA = $(xml_in_files:.xml.in=.xml)
 
-%.xml: %.xml.in
+.xml.in.xml:
 	$(AM_V_GEN) GETTEXTDATADIR=$(top_srcdir) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
 BUILT_SOURCES =
