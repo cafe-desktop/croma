@@ -212,7 +212,6 @@ colorize_pixbuf (GdkPixbuf *orig,
   double intensity;
   int x, y;
   const guchar *src;
-  guchar *dest;
   int orig_rowstride;
   int dest_rowstride;
   int width, height;
@@ -237,6 +236,8 @@ colorize_pixbuf (GdkPixbuf *orig,
 
   for (y = 0; y < height; y++)
     {
+      guchar *dest;
+
       src = src_pixels + y * orig_rowstride;
       dest = dest_pixels + y * dest_rowstride;
 
@@ -3383,7 +3384,7 @@ pixbuf_tile (GdkPixbuf *tile,
   GdkPixbuf *pixbuf;
   int tile_width;
   int tile_height;
-  int i, j;
+  int i;
 
   tile_width = gdk_pixbuf_get_width (tile);
   tile_height = gdk_pixbuf_get_height (tile);
@@ -3395,6 +3396,8 @@ pixbuf_tile (GdkPixbuf *tile,
   i = 0;
   while (i < width)
     {
+      int j;
+
       j = 0;
       while (j < height)
         {
@@ -3922,7 +3925,7 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
     {
     case META_DRAW_LINE:
       {
-        int x1, x2, y1, y2;
+        int x1, y1;
 
         meta_color_spec_render (op->data.line.color_spec, style_ctk, &color);
         cdk_cairo_set_source_rgba (cr, &color);
@@ -3951,6 +3954,8 @@ meta_draw_op_draw_with_env (const MetaDrawOp    *op,
           }
         else
           {
+            int x2, y2;
+
             if (op->data.line.x2)
               x2 = parse_x_position_unchecked (op->data.line.x2, env);
             else
@@ -5140,13 +5145,13 @@ meta_frame_style_draw_with_style (MetaFrameStyle          *style,
       /* Draw buttons just before overlay */
       if ((i + 1) == META_FRAME_PIECE_OVERLAY)
         {
-          MetaDrawOpList *op_list;
           int middle_bg_offset;
 
           middle_bg_offset = 0;
           j = 0;
           while (j < META_BUTTON_TYPE_LAST)
             {
+              MetaDrawOpList *op_list;
               MetaButtonState button_state;
 
               get_button_rect (j, fgeom, middle_bg_offset, &rect);

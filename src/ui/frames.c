@@ -228,7 +228,6 @@ meta_frames_get_theme_variant (MetaFrames  *frames,
 static void
 update_style_contexts (MetaFrames *frames)
 {
-  CtkStyleContext *style;
   GList *variant_list, *variant;
 
   if (frames->normal_style)
@@ -238,6 +237,8 @@ update_style_contexts (MetaFrames *frames)
   variant_list = g_hash_table_get_keys (frames->style_variants);
   for (variant = variant_list; variant; variant = variant->next)
     {
+      CtkStyleContext *style;
+
       style = create_style_context (frames, (char *)variant->data);
       g_hash_table_insert (frames->style_variants,
                            g_strdup (variant->data), style);

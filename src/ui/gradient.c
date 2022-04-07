@@ -158,7 +158,6 @@ meta_gradient_create_vertical (int width, int height,
   int i, j;
   long r, g, b, a, dr, dg, db, da;
   GdkPixbuf *pixbuf;
-  unsigned char *ptr;
   int r0, g0, b0, a0;
   int rf, gf, bf, af;
   int rowstride;
@@ -192,6 +191,8 @@ meta_gradient_create_vertical (int width, int height,
 
   for (i=0; i<height; i++)
     {
+      unsigned char *ptr;
+
       ptr = pixels + i * rowstride;
 
       ptr[0] = (unsigned char)(r>>16);
@@ -281,7 +282,7 @@ meta_gradient_create_multi_horizontal (int width, int height,
                                        int count)
 {
   int i, j, k;
-  long r, g, b, a, dr, dg, db, da;
+  long r, g, b, a;
   GdkPixbuf *pixbuf;
   unsigned char *ptr;
   unsigned char *pixels;
@@ -316,6 +317,8 @@ meta_gradient_create_multi_horizontal (int width, int height,
   /* render the first line */
   for (i=1; i<count; i++)
     {
+      long dr, dg, db, da;
+
       dr = (int)((colors[i].red   - colors[i-1].red)  *0xffffff)/(int)width2;
       dg = (int)((colors[i].green - colors[i-1].green)*0xffffff)/(int)width2;
       db = (int)((colors[i].blue  - colors[i-1].blue) *0xffffff)/(int)width2;
@@ -359,9 +362,9 @@ meta_gradient_create_multi_vertical (int width, int height,
                                      int count)
 {
   int i, j, k;
-  long r, g, b, a, dr, dg, db, da;
+  long r, g, b, a;
   GdkPixbuf *pixbuf;
-  unsigned char *ptr, *tmp, *pixels;
+  unsigned char *ptr, *pixels;
   int height2;
   int x;
   int rowstride;
@@ -393,6 +396,8 @@ meta_gradient_create_multi_vertical (int width, int height,
 
   for (i=1; i<count; i++)
     {
+      long dr, dg, db, da;
+
       dr = (int)((colors[i].red   - colors[i-1].red)  *0xffffff)/(int)height2;
       dg = (int)((colors[i].green - colors[i-1].green)*0xffffff)/(int)height2;
       db = (int)((colors[i].blue  - colors[i-1].blue) *0xffffff)/(int)height2;
@@ -425,6 +430,8 @@ meta_gradient_create_multi_vertical (int width, int height,
 
   if (k<height)
     {
+      unsigned char *tmp;
+
       tmp = ptr;
 
       ptr[0] = (unsigned char) (r>>16);
@@ -566,7 +573,7 @@ meta_gradient_add_alpha_horizontal (GdkPixbuf           *pixbuf,
                                     int                  n_alphas)
 {
   int i, j;
-  long a, da;
+  long a;
   unsigned char *p;
   unsigned char *pixels;
   int width2;
@@ -605,6 +612,8 @@ meta_gradient_add_alpha_horizontal (GdkPixbuf           *pixbuf,
   /* render the gradient into an array */
   for (i = 1; i < n_alphas; i++)
     {
+      long da;
+
       da = (((int)(alphas[i] - (int) alphas[i-1])) << 8) / (int) width2;
 
       for (j = 0; j < width2; j++)
@@ -772,7 +781,6 @@ meta_gradient_create_interwoven (int            width,
   long r1, g1, b1, a1, dr1, dg1, db1, da1;
   long r2, g2, b2, a2, dr2, dg2, db2, da2;
   GdkPixbuf *pixbuf;
-  unsigned char *ptr;
   unsigned char *pixels;
   int rowstride;
 
@@ -805,6 +813,8 @@ meta_gradient_create_interwoven (int            width,
 
   for (i=0,k=0,l=0,ll=thickness1; i<height; i++)
     {
+      unsigned char *ptr;
+
       ptr = pixels + i * rowstride;
 
       if (k == 0)

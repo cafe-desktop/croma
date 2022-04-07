@@ -296,13 +296,15 @@ utility_contents (void)
 {
   CtkWidget *grid;
   CtkWidget *button;
-  int i, j;
+  int i;
 
   grid = ctk_grid_new ();
 
   i = 0;
   while (i < 3)
     {
+      int j;
+
       j = 0;
       while (j < 4)
         {
@@ -336,7 +338,6 @@ static CtkWidget*
 menu_contents (void)
 {
   CtkWidget *vbox;
-  CtkWidget *mi;
   int i;
   CtkWidget *frame;
 
@@ -349,6 +350,8 @@ menu_contents (void)
   i = 0;
   while (i < 10)
     {
+      CtkWidget *mi;
+
       char *str = g_strdup_printf (_("Fake menu item %d\n"), i + 1);
       mi = ctk_label_new (str);
       ctk_widget_set_halign (mi, CTK_ALIGN_START);
@@ -575,8 +578,6 @@ preview_collection (int font_size,
       CtkAlign xalign, yalign;
       CtkWidget *eventbox2;
       CtkWidget *preview;
-      PangoFontDescription *font_desc;
-      gchar *font_string;
       double scale;
 
       eventbox2 = ctk_event_box_new ();
@@ -628,6 +629,9 @@ preview_collection (int font_size,
 
       if (scale != 1.0)
         {
+          PangoFontDescription *font_desc;
+          gchar *font_string;
+
           font_desc = pango_font_description_new ();
 
           pango_font_description_set_size (font_desc,
@@ -1018,8 +1022,6 @@ static void
 run_theme_benchmark (void)
 {
   CtkWidget* widget;
-  cairo_surface_t *pixmap;
-  cairo_t *cr;
   MetaFrameBorders borders;
   MetaButtonState button_states[META_BUTTON_TYPE_LAST] =
   {
@@ -1076,6 +1078,9 @@ run_theme_benchmark (void)
   i = 0;
   while (i < ITERATIONS)
     {
+      cairo_surface_t *pixmap;
+      cairo_t *cr;
+
       /* Creating the pixmap in the loop is right, since
        * CDK does the same with its double buffering.
        */
