@@ -291,7 +291,6 @@ dump_xserver_region (const char   *location,
   MetaCompositorXRender *compositor = DISPLAY_COMPOSITOR (display);
   Display *xdisplay = meta_display_get_xdisplay (display);
   int nrects;
-  XRectangle *rects;
   XRectangle bounds;
 
   if (!compositor->debug)
@@ -299,6 +298,8 @@ dump_xserver_region (const char   *location,
 
   if (region)
     {
+      XRectangle *rects;
+
       rects = XFixesFetchRegionAndBounds (xdisplay, region, &nrects, &bounds);
       if (nrects > 0)
         {
@@ -341,7 +342,7 @@ sum_gaussian (conv          *map,
               int            width,
               int            height)
 {
-  double *g_data, *g_line;
+  double *g_line;
   double v;
   int fx, fy;
   int fx_start, fx_end;
@@ -372,6 +373,8 @@ sum_gaussian (conv          *map,
   v = 0.0;
   for (fy = fy_start; fy < fy_end; fy++)
     {
+      double *g_data;
+
       g_data = g_line;
       g_line += g_size;
 
@@ -1145,12 +1148,13 @@ border_size (MetaCompWindow *cw)
   MetaScreen *screen = cw->screen;
   MetaDisplay *display = meta_screen_get_display (screen);
   Display *xdisplay = meta_display_get_xdisplay (display);
-  cairo_region_t *visible_region;
   XserverRegion visible = None;
   XserverRegion border;
 
   if (cw->window)
     {
+      cairo_region_t *visible_region;
+
       visible_region = meta_window_get_frame_bounds (cw->window);
 
       if (visible_region != NULL)
