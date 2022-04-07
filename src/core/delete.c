@@ -152,8 +152,6 @@ meta_window_delete (MetaWindow  *window,
 void
 meta_window_kill (MetaWindow *window)
 {
-  char buf[257];
-
   meta_topic (META_DEBUG_WINDOW_OPS,
               "Killing %s brutally\n",
               window->desc);
@@ -161,6 +159,8 @@ meta_window_kill (MetaWindow *window)
   if (window->wm_client_machine != NULL &&
       window->net_wm_pid > 0)
     {
+      char buf[257];
+
       if (gethostname (buf, sizeof(buf)-1) == 0)
         {
           if (strcmp (buf, window->wm_client_machine) == 0)

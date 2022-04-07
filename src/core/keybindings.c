@@ -905,7 +905,6 @@ grab_keyboard (MetaDisplay *display,
                Window       xwindow,
                guint32      timestamp)
 {
-  int result;
   int grab_status;
 
   /* Grab the keyboard, so we get key releases and all key
@@ -929,7 +928,10 @@ grab_keyboard (MetaDisplay *display,
     }
   else
     {
+      int result;
+
       result = meta_error_trap_pop_with_return (display, TRUE);
+
       if (result != Success)
         {
           meta_topic (META_DEBUG_KEYBINDINGS,
@@ -2550,7 +2552,6 @@ handle_move_to_corner_backend (MetaDisplay    *display,
   MetaRectangle work_area;
   MetaRectangle outer;
   int orig_x, orig_y;
-  int delta_x, delta_y;
   int new_x, new_y;
 
   meta_window_get_work_area_all_xineramas (window, &work_area);
@@ -2558,6 +2559,8 @@ handle_move_to_corner_backend (MetaDisplay    *display,
   meta_window_get_position (window, &orig_x, &orig_y);
 
   if (xchange) {
+    int delta_x;
+
     if (to_right) {
       delta_x = (work_area.x + work_area.width) - (outer.x + outer.width);
     } else {
@@ -2569,6 +2572,8 @@ handle_move_to_corner_backend (MetaDisplay    *display,
   }
 
   if (ychange) {
+    int delta_y;
+
     if (to_bottom) {
       delta_y = (work_area.y + work_area.height) - (outer.y + outer.height);
     } else {

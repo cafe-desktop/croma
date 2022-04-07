@@ -328,7 +328,7 @@ apply_mask (GdkPixbuf *pixbuf,
             GdkPixbuf *mask)
 {
   int w, h;
-  int i, j;
+  int i;
   GdkPixbuf *with_alpha;
   guchar *src;
   guchar *dest;
@@ -349,6 +349,8 @@ apply_mask (GdkPixbuf *pixbuf,
   i = 0;
   while (i < h)
     {
+      int j;
+
       j = 0;
       while (j < w)
         {
