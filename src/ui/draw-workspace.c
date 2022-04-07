@@ -92,7 +92,7 @@ draw_window (CtkWidget                   *widget,
              CtkStateType                state)
 {
   cairo_surface_t *icon;
-  int icon_x, icon_y, icon_w, icon_h, scale;
+  int icon_w, icon_h, scale;
   gboolean is_active;
   CdkRGBA color;
   CtkStyleContext *style;
@@ -150,6 +150,8 @@ draw_window (CtkWidget                   *widget,
 
   if (icon)
     {
+      int icon_x, icon_y;
+
       icon_x = winrect->x + (winrect->width - icon_w) / 2;
       icon_y = winrect->y + (winrect->height - icon_h) / 2;
 

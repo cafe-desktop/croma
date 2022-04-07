@@ -616,9 +616,10 @@ meta_ui_get_default_window_icon (MetaUI *ui)
   static int icon_size = 0;
   int current_icon_size = meta_prefs_get_icon_size();
 
-  int scale;
   if (default_icon == NULL || current_icon_size != icon_size)
     {
+      int scale;
+
       scale = ctk_widget_get_scale_factor (CTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (current_icon_size, scale);
       g_assert (default_icon);
@@ -634,10 +635,11 @@ GdkPixbuf*
 meta_ui_get_default_mini_icon (MetaUI *ui)
 {
   static GdkPixbuf *default_icon = NULL;
-  int scale;
 
   if (default_icon == NULL)
     {
+      int scale;
+
       scale = ctk_widget_get_scale_factor (CTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (META_MINI_ICON_WIDTH, scale);
       g_assert (default_icon);
@@ -674,14 +676,15 @@ meta_ui_theme_get_frame_borders (MetaUI           *ui,
                                  MetaFrameFlags    flags,
                                  MetaFrameBorders *borders)
 {
-  int text_height;
   CtkStyleContext *style = NULL;
   PangoFontDescription *free_font_desc = NULL;
-  PangoContext *context;
-  const PangoFontDescription *font_desc;
 
   if (meta_ui_have_a_theme ())
     {
+      int text_height;
+      PangoContext *context;
+      const PangoFontDescription *font_desc;
+
       context = ctk_widget_get_pango_context (CTK_WIDGET (ui->frames));
       font_desc = meta_prefs_get_titlebar_font ();
 

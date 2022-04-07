@@ -137,7 +137,7 @@ static GdkPixbuf*
 dimm_icon (GdkPixbuf *pixbuf)
 {
   int x, y, pixel_stride, row_stride;
-  guchar *row, *pixels;
+  guchar *row;
   int w, h;
   GdkPixbuf *dimmed_pixbuf;
 
@@ -160,6 +160,8 @@ dimm_icon (GdkPixbuf *pixbuf)
 
   for (y = 0; y < h; y++)
     {
+      guchar *pixels;
+
       pixels = row;
       for (x = 0; x < w; x++)
         {
