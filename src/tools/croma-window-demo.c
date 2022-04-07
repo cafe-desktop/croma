@@ -217,7 +217,6 @@ CtkWidget *widget;
 int
 main (int argc, char **argv)
 {
-  GList *list;
   GdkPixbuf *pixbuf;
   GError *err;
 
@@ -228,6 +227,8 @@ main (int argc, char **argv)
                                      &err);
   if (pixbuf)
     {
+      GList *list;
+
       list = g_list_prepend (NULL, pixbuf);
 
       ctk_window_set_default_icon_list (list);
