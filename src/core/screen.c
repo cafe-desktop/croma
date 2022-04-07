@@ -176,7 +176,6 @@ reload_xinerama_infos (MetaScreen *screen)
     {
       XineramaScreenInfo *infos;
       int n_infos;
-      int i;
 
       n_infos = 0;
       infos = XineramaQueryScreens (display->xdisplay, &n_infos);
@@ -187,6 +186,8 @@ reload_xinerama_infos (MetaScreen *screen)
 
       if (n_infos > 0)
         {
+          int i;
+
           screen->xinerama_infos = g_new (MetaXineramaScreenInfo, n_infos);
           screen->n_xinerama_infos = n_infos;
 
@@ -234,7 +235,6 @@ reload_xinerama_infos (MetaScreen *screen)
       unsigned char hints[16];
       int result;
       int n_monitors;
-      int i;
 
       n_monitors = 0;
       result = XineramaGetInfo (screen->display->xdisplay,
@@ -246,6 +246,8 @@ reload_xinerama_infos (MetaScreen *screen)
        */
       if (result > 0)
 	{
+          int i;
+
           g_assert (n_monitors > 0);
 
           screen->xinerama_infos = g_new (MetaXineramaScreenInfo, n_monitors);
@@ -1694,7 +1696,6 @@ meta_screen_get_natural_xinerama_list (MetaScreen *screen,
                                        int*        n_xineramas)
 {
   const MetaXineramaScreenInfo* current;
-  const MetaXineramaScreenInfo* tmp;
   GQueue* xinerama_queue;
   int* visited;
   int cur = 0;
@@ -1724,6 +1725,8 @@ meta_screen_get_natural_xinerama_list (MetaScreen *screen,
 
   while (!g_queue_is_empty (xinerama_queue))
     {
+      const MetaXineramaScreenInfo* tmp;
+
       current = (const MetaXineramaScreenInfo*)
         g_queue_pop_head (xinerama_queue);
 

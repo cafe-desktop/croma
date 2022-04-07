@@ -553,19 +553,19 @@ draw_xor_rect (MetaScreen          *screen,
                         screen->root_xor_gc,
                         GCFont, &gc_values))
         {
-          char *text;
-          int text_length;
-
           XFontStruct *font_struct;
-          int text_width, text_height;
-          int box_x, box_y;
-          int box_width, box_height;
 
           font_struct = XQueryFont (screen->display->xdisplay,
                                     gc_values.font);
 
           if (font_struct != NULL)
             {
+              char *text;
+              int text_length;
+              int text_width, text_height;
+              int box_x, box_y;
+              int box_width, box_height;
+
               text = g_strdup_printf ("%d x %d", width, height);
               text_length = strlen (text);
 

@@ -4540,7 +4540,6 @@ static void
 window_stick_impl (MetaWindow  *window)
 {
   GList *tmp;
-  MetaWorkspace *workspace;
 
   meta_verbose ("Sticking window %s current on_all_workspaces = %d\n",
                 window->desc, window->on_all_workspaces);
@@ -4559,7 +4558,10 @@ window_stick_impl (MetaWindow  *window)
   tmp = window->screen->workspaces;
   while (tmp)
     {
+      MetaWorkspace *workspace;
+
       workspace = (MetaWorkspace *) tmp->data;
+
       if (!g_list_find (workspace->mru_list, window))
         workspace->mru_list = g_list_prepend (workspace->mru_list, window);
 
@@ -4575,7 +4577,6 @@ static void
 window_unstick_impl (MetaWindow  *window)
 {
   GList *tmp;
-  MetaWorkspace *workspace;
 
   if (!window->on_all_workspaces)
     return;
@@ -4588,7 +4589,10 @@ window_unstick_impl (MetaWindow  *window)
   tmp = window->screen->workspaces;
   while (tmp)
     {
+      MetaWorkspace *workspace;
+
       workspace = (MetaWorkspace *) tmp->data;
+
       if (window->workspace != workspace)
         workspace->mru_list = g_list_remove (workspace->mru_list, window);
       tmp = tmp->next;

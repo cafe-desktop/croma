@@ -1486,11 +1486,12 @@ add_edges (GList               *cur_edges,
            const MetaRectangle *rect,
            gboolean             rect_is_internal)
 {
-  MetaEdge *temp_edge;
   int i;
 
   for (i=0; i<4; i++)
     {
+      MetaEdge *temp_edge;
+
       temp_edge = g_new (MetaEdge, 1);
       temp_edge->rect = *rect;
       switch (i)

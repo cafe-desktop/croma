@@ -4768,7 +4768,6 @@ meta_display_get_tab_list (MetaDisplay   *display,
 
   {
     GSList *windows, *tmp;
-    MetaWindow *l_window;
 
     windows = meta_display_list_windows (display);
     tmp = windows;
@@ -4776,6 +4775,8 @@ meta_display_get_tab_list (MetaDisplay   *display,
     /* Go through all windows */
     while (tmp != NULL)
       {
+        MetaWindow *l_window;
+
         l_window=tmp->data;
 
         /* Check to see if it demands attention */
@@ -5027,8 +5028,8 @@ process_selection_request (MetaDisplay   *display,
     {
       if (event->xselectionrequest.property != None)
         {
-          Atom type, *adata;
-          int i, format;
+          Atom type;
+          int format;
           unsigned long num, rest;
           unsigned char *data;
 
@@ -5045,6 +5046,9 @@ process_selection_request (MetaDisplay   *display,
 
           if (meta_error_trap_pop_with_return (display, TRUE) == Success)
             {
+              Atom *adata;
+              int i;
+
               /* FIXME: to be 100% correct, should deal with rest > 0,
                * but since we have 4 possible targets, we will hardly ever
                * meet multiple requests with a length > 8

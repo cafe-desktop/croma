@@ -111,7 +111,6 @@ meta_workspace_free (MetaWorkspace *workspace)
 {
   GList *tmp;
   MetaScreen *screen;
-  int i;
 
   g_return_if_fail (workspace != workspace->screen->active_workspace);
 
@@ -154,9 +153,13 @@ meta_workspace_free (MetaWorkspace *workspace)
 
   if (!workspace->work_areas_invalid)
     {
+      int i;
+
       workspace_free_struts (workspace);
+
       for (i = 0; i < screen->n_xinerama_infos; i++)
         g_list_free_full (workspace->xinerama_region[i], g_free);
+
       g_free (workspace->xinerama_region);
       g_list_free_full (workspace->screen_region, g_free);
       g_list_free_full (workspace->screen_edges, g_free);
