@@ -116,7 +116,6 @@ evil_timeout (gpointer data)
     {
       CtkWidget *w;
       CtkWidget *c;
-      int t;
       CtkWidget *parent;
 
       w = ctk_window_new (CTK_WINDOW_TOPLEVEL);
@@ -132,7 +131,10 @@ evil_timeout (gpointer data)
       /* set transient for random window (may create all kinds of weird cycles) */
       if (len > 0)
         {
+          int t;
+
           t = g_random_int_range (- (len / 3), len);
+
           if (t >= 0)
             {
               parent = g_slist_nth_data (evil_windows, t);
