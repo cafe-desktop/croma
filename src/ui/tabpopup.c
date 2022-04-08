@@ -806,15 +806,11 @@ meta_select_image_get_type (void)
     {
       static const GTypeInfo image_info =
       {
-        sizeof (MetaSelectImageClass),
-        NULL,           /* base_init */
-        NULL,           /* base_finalize */
-        (GClassInitFunc) meta_select_image_class_init,
-        NULL,           /* class_finalize */
-        NULL,           /* class_data */
-        sizeof (MetaSelectImage),
-        16,             /* n_preallocs */
-        (GInstanceInitFunc) NULL,
+        .class_size = sizeof (MetaSelectImageClass),
+        .class_init = (GClassInitFunc) meta_select_image_class_init,
+        .instance_size = sizeof (MetaSelectImage),
+        .n_preallocs = 16,
+        .instance_init = (GInstanceInitFunc) NULL,
       };
 
       image_type = g_type_register_static (CTK_TYPE_IMAGE, "MetaSelectImage", &image_info, 0);
@@ -992,15 +988,11 @@ meta_select_workspace_get_type (void)
     {
       static const GTypeInfo workspace_info =
       {
-        sizeof (MetaSelectWorkspaceClass),
-        NULL,           /* base_init */
-        NULL,           /* base_finalize */
-        (GClassInitFunc) meta_select_workspace_class_init,
-        NULL,           /* class_finalize */
-        NULL,           /* class_data */
-        sizeof (MetaSelectWorkspace),
-        16,             /* n_preallocs */
-        (GInstanceInitFunc) NULL,
+        .class_size = sizeof (MetaSelectWorkspaceClass),
+        .class_init = (GClassInitFunc) meta_select_workspace_class_init,
+        .instance_size = sizeof (MetaSelectWorkspace),
+        .n_preallocs = 16,
+        .instance_init = (GInstanceInitFunc) NULL,
       };
 
       workspace_type = g_type_register_static (CTK_TYPE_DRAWING_AREA,
