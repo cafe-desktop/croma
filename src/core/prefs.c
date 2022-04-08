@@ -1739,7 +1739,7 @@ meta_prefs_set_num_workspaces (int n_workspaces)
   { #name, NULL, !!(flags & BINDING_REVERSES), !!(flags & BINDING_PER_WINDOW) },
 static MetaKeyPref key_bindings[] = {
 #include "all-keybindings.h"
-  { NULL, NULL, FALSE }
+  { .add_shift = FALSE }
 };
 #undef keybind
 
