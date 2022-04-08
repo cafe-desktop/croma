@@ -34,10 +34,10 @@ static gboolean eq_dispatch (GSource     *source,
 static void     eq_destroy  (GSource     *source);
 
 static GSourceFuncs eq_funcs = {
-  eq_prepare,
-  eq_check,
-  eq_dispatch,
-  eq_destroy
+  .prepare = eq_prepare,
+  .check = eq_check,
+  .dispatch = eq_dispatch,
+  .finalize = eq_destroy
 };
 
 struct _MetaEventQueue
