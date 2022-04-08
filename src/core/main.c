@@ -261,8 +261,12 @@ static void
 meta_parse_options (int *argc, char ***argv,
                     MetaArguments *meta_args)
 {
-  MetaArguments my_args = {NULL, NULL, NULL,
-                           FALSE, FALSE, FALSE, FALSE, FALSE};
+  MetaArguments my_args = { .replace_wm = FALSE,
+                            .disable_sm = FALSE,
+                            .print_version = FALSE,
+                            .sync = FALSE,
+                            .composite = FALSE };
+
   GOptionEntry options[] = {
     {
       "sm-disable", 0, 0, G_OPTION_ARG_NONE,
