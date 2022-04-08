@@ -1,4 +1,4 @@
-Croma [![Build Status](https://travis-ci.org/cafe-desktop/croma.svg?branch=master)](https://travis-ci.org/cafe-desktop/croma)
+Croma
 ===
 
 CAFE Croma is a fork of GNOME Metacity.
