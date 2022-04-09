@@ -2,26 +2,26 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Alan Lee <bkrhlim@aol.com>, 2020
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2020\n"
 "Language-Team: Korean (https://www.transifex.com/cafe/teams/13566/ko/)\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -376,11 +376,12 @@ msgstr "오른쪽 버튼으로 크기를 조정할지 여부"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
-"이 값이 참이면 마우스 오른쪽 버튼으로 크기를 조절하고, \"mouse_button_modifier\"에서 지정한 키를 누른 상태에서 "
-"마우스 가운데 버튼을 누르면 메뉴를 표시합니다. 이 값을 거짓으로 하면 반대로 동작합니다."
+"이 값이 참이면 마우스 오른쪽 버튼으로 크기를 조절하고, "
+"\"mouse_button_modifier\"에서 지정한 키를 누른 상태에서 마우스 가운데 버튼을 "
+"누르면 메뉴를 표시합니다. 이 값을 거짓으로 하면 반대로 동작합니다."
 
 #: src/org.cafe.croma.gschema.xml:60
 msgid "Whether to display preselected tab window border"
@@ -390,7 +391,9 @@ msgstr "미리 선택된 탭 창 테두리를 표시할지 여부를 결정합�
 msgid ""
 "Set this to false to disable border of preselected window while performing "
 "tab switching."
-msgstr "탭 전환을 수행하는 동안 미리 선택된 창의 테두리를 사용하지 않으려면 이 값을 false로 설정하십시오."
+msgstr ""
+"탭 전환을 수행하는 동안 미리 선택된 창의 테두리를 사용하지 않으려면 이 값을 "
+"false로 설정하십시오."
 
 #: src/org.cafe.croma.gschema.xml:65
 msgid "Arrangement of buttons on the titlebar"
@@ -406,10 +409,12 @@ msgid ""
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
-"제목 위에 있는 단추의 배치. 이 값은, 문자열로\"menu:minimize,maximize,spacer,close\";와 같이 씁니다 "
-"콜론으로 창의 왼쪽 끝과 오른쪽 끝을 구분하며, 각 버튼은 쉼표로 구분합니다. 같은 버튼을 중복해서 쓸 수 없습니다. 알 수 없는 버튼 "
-"이름은 그냥 무시되며 다음 버전의 메타시티에서 그 단추가 새로 생길 경우에도 문제 없이 쓸 수 있습니다. spacer 태그는 연속한 단추"
-" 사이에 공백을 넣고 싶을 때 사용합니다."
+"제목 위에 있는 단추의 배치. 이 값은, 문자열로\"menu:minimize,maximize,spacer,"
+"close\";와 같이 씁니다 콜론으로 창의 왼쪽 끝과 오른쪽 끝을 구분하며, 각 버튼"
+"은 쉼표로 구분합니다. 같은 버튼을 중복해서 쓸 수 없습니다. 알 수 없는 버튼 이"
+"름은 그냥 무시되며 다음 버전의 메타시티에서 그 단추가 새로 생길 경우에도 문"
+"제 없이 쓸 수 있습니다. spacer 태그는 연속한 단추 사이에 공백을 넣고 싶을 때 "
+"사용합니다."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -419,13 +424,15 @@ msgstr "창 포커스 모드"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
-"창 포커스 모드는 창을 활성화하는 방법을 지정합니다. 세 가지 값을 쓸 수 있습니다; \"click\"은 창에 포커스를 놓으려면 마우스 "
-"단추를 눌러야 하는 것이고, \"sloppy\"는 마우스가 창 안에 들어갈 때 포커스되는 것이고, \"mouse\"는 마우스가 창 안에 "
-"들어가면 포커스되고 마우스가 창 밖으로 나갈 때 포커스가 없어지는 것입니다."
+"창 포커스 모드는 창을 활성화하는 방법을 지정합니다. 세 가지 값을 쓸 수 있습니"
+"다; \"click\"은 창에 포커스를 놓으려면 마우스 단추를 눌러야 하는 것이고, "
+"\"sloppy\"는 마우스가 창 안에 들어갈 때 포커스되는 것이고, \"mouse\"는 마우스"
+"가 창 안에 들어가면 포커스되고 마우스가 창 밖으로 나갈 때 포커스가 없어지는 "
+"것입니다."
 
 #: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
@@ -434,12 +441,13 @@ msgstr "새 창이 포커스를 받는 방법을 조정합니다"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
-"이 옵션을 사용하면 새로 만든 창이 포커스를 받는 방식을 더 자세히 조정할 수 있습니다. 두 가지 값을 사용할 수 있습니다. "
-"\"smart\"는 사용자의 일반적인 포커스 모드이고, \"strict\"는 터미널에서 시작한 창의 경우 포커스를 받지 않습니다."
+"이 옵션을 사용하면 새로 만든 창이 포커스를 받는 방식을 더 자세히 조정할 수 있"
+"습니다. 두 가지 값을 사용할 수 있습니다. \"smart\"는 사용자의 일반적인 포커"
+"스 모드이고, \"strict\"는 터미널에서 시작한 창의 경우 포커스를 받지 않습니다."
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
@@ -448,35 +456,40 @@ msgstr "다른 사용자의 간섭으로 생긴 부작용이 생길 때"
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
-"이 옵션을 false로 하면 버그처럼 작동할 수 있습니다, 그래서 사용자들이 기본이나 true 값을 정말 바꾸지 않기를 권해드립니다. "
-"많은 동작들이 (e.g. 클라이언트 영역을 클릭하거나, 창을 움직이거나 크기를 바꾸는 등) 창 동작에 부작용을 일으킬 수 있습니다. 정말"
-" 권장하지 않지만, 이 옵션을 false 값으로 하면, 다른 사용자들의 동작에서 분리되고, 프로그램이 만드는 요청을 무시하는 일이 늘어날"
-" 겁니다. http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6를 참고하세요. 이 옵션이 "
-"flase 값이면, 심지어 창 장식의 기본 클릭인, alt-left 클릭 만으로도 창의 어디에서는 창을 만들 수 있으며, 태스크릿 "
-"애플릿의 요청 같은, 페이지 관리자의 특별 메시지로도 창이 만들어집니다. 이 옵션은 현재 클릭 투 포커스 모드에서는 비활성화되어 "
-"있습니다. 알아 두실 것은 raise_on_click 값이 false 일 때의 창을 만드는 두 가지 방법은 창을 발생시키는 "
-"애플리케이션으로부터의 프로그램적인 요구는 포함하지 않습니다; 그러한 요구는 어떤 이유에서든지 바로 무시 되게 됩니다. 여러분이 "
-"애플리케이션 개발자이며 여러분의 에플리케이션이 이 설정을 비활성화하는 경우 작동하지 않는것에 사용자의 불만사항이 있는 경우에는, "
-"사용자들에게 창 관리자가 깨지는 것은 사용자의 실수이며 옵션을 true 값으로 바꾸거나 사용자들이 원해서 만들어진 \"bug\" 상태로 "
-"사용해야 한다고 일러주세요."
+"이 옵션을 false로 하면 버그처럼 작동할 수 있습니다, 그래서 사용자들이 기본이"
+"나 true 값을 정말 바꾸지 않기를 권해드립니다. 많은 동작들이 (e.g. 클라이언트 "
+"영역을 클릭하거나, 창을 움직이거나 크기를 바꾸는 등) 창 동작에 부작용을 일으"
+"킬 수 있습니다. 정말 권장하지 않지만, 이 옵션을 false 값으로 하면, 다른 사용"
+"자들의 동작에서 분리되고, 프로그램이 만드는 요청을 무시하는 일이 늘어날 겁니"
+"다. http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6를 참고하세요. 이 옵션"
+"이 flase 값이면, 심지어 창 장식의 기본 클릭인, alt-left 클릭 만으로도 창의 어"
+"디에서는 창을 만들 수 있으며, 태스크릿 애플릿의 요청 같은, 페이지 관리자의 특"
+"별 메시지로도 창이 만들어집니다. 이 옵션은 현재 클릭 투 포커스 모드에서는 비"
+"활성화되어 있습니다. 알아 두실 것은 raise_on_click 값이 false 일 때의 창을 만"
+"드는 두 가지 방법은 창을 발생시키는 애플리케이션으로부터의 프로그램적인 요구"
+"는 포함하지 않습니다; 그러한 요구는 어떤 이유에서든지 바로 무시 되게 됩니다. "
+"여러분이 애플리케이션 개발자이며 여러분의 에플리케이션이 이 설정을 비활성화하"
+"는 경우 작동하지 않는것에 사용자의 불만사항이 있는 경우에는, 사용자들에게 창 "
+"관리자가 깨지는 것은 사용자의 실수이며 옵션을 true 값으로 바꾸거나 사용자들"
+"이 원해서 만들어진 \"bug\" 상태로 사용해야 한다고 일러주세요."
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -488,16 +501,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"이 옵션은 제목 표시줄에 마우스 버튼을 두 번 눌렀을 때 어떻게 할지를 결정합니다. 쓸 수 있는 옵션으로, 'toggle_shaded'는"
-" 창을 숨기거나/보여주고, 'toggle_maximized'는 최대화/최대화 취소하고, "
-"'toggle_maximize_horizontally'와 'toggle_maximize_vertically'는 창을 한 방향으로만 "
-"최대화/최대화 취소하고, 'minimize'는 창을 최소화하고, 'shade'는 창을 말아올리고, 'menu'는 창 메뉴를 표시하고, "
-"'lower'는 창을 다른 창 아래에 깔리도록 하고, 'none'은 아무것도 하지 않습니다."
+"이 옵션은 제목 표시줄에 마우스 버튼을 두 번 눌렀을 때 어떻게 할지를 결정합니"
+"다. 쓸 수 있는 옵션으로, 'toggle_shaded'는 창을 숨기거나/보여주고, "
+"'toggle_maximized'는 최대화/최대화 취소하고, "
+"'toggle_maximize_horizontally'와 'toggle_maximize_vertically'는 창을 한 방향"
+"으로만 최대화/최대화 취소하고, 'minimize'는 창을 최소화하고, 'shade'는 창을 "
+"말아올리고, 'menu'는 창 메뉴를 표시하고, 'lower'는 창을 다른 창 아래에 깔리도"
+"록 하고, 'none'은 아무것도 하지 않습니다."
 
 #: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
@@ -509,16 +524,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"이 옵션은 제목 표시줄을 마우스 가운데 버튼으로 클릭할 때 어떻게 할지를 결정합니다. 쓸 수 있는 옵션으로, "
-"'toggle_shaded'는 창을 숨기거나/보여주고, 'toggle_maximized'는 최대화/최대화 취소하고, "
-"'toggle_maximize_horizontally'와 'toggle_maximize_vertically'는 창을 한 방향으로만 "
-"최대화/최대화 취소하고, 'minimize'는 창을 최소화하고, 'shade'는 창을 말아올리고, 'menu'는 창 메뉴를 표시하고, "
-"'lower'는 창을 다른 창 아래에 깔리도록 하고, 'none'은 아무것도 하지 않습니다."
+"이 옵션은 제목 표시줄을 마우스 가운데 버튼으로 클릭할 때 어떻게 할지를 결정합"
+"니다. 쓸 수 있는 옵션으로, 'toggle_shaded'는 창을 숨기거나/보여주고, "
+"'toggle_maximized'는 최대화/최대화 취소하고, "
+"'toggle_maximize_horizontally'와 'toggle_maximize_vertically'는 창을 한 방향"
+"으로만 최대화/최대화 취소하고, 'minimize'는 창을 최소화하고, 'shade'는 창을 "
+"말아올리고, 'menu'는 창 메뉴를 표시하고, 'lower'는 창을 다른 창 아래에 깔리도"
+"록 하고, 'none'은 아무것도 하지 않습니다."
 
 #: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
@@ -530,16 +547,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"이 옵션은 제목 표시줄을 마우스 오른쪽 버튼으로 클릭할 때 어떻게 할지를 결정합니다. 쓸 수 있는 옵션으로, "
-"'toggle_shaded'는 창을 숨기거나/보여주고, 'toggle_maximized'는 최대화/최대화 취소하고, "
-"'toggle_maximize_horizontally'와 'toggle_maximize_vertically'는 창을 한 방향으로만 "
-"최대화/최대화 취소하고, 'minimize'는 창을 최소화하고, 'shade'는 창을 말아올리고, 'menu'는 창 메뉴를 표시하고, "
-"'lower'는 창을 다른 창 아래에 깔리도록 하고, 'none'은 아무것도 하지 않습니다."
+"이 옵션은 제목 표시줄을 마우스 오른쪽 버튼으로 클릭할 때 어떻게 할지를 결정합"
+"니다. 쓸 수 있는 옵션으로, 'toggle_shaded'는 창을 숨기거나/보여주고, "
+"'toggle_maximized'는 최대화/최대화 취소하고, "
+"'toggle_maximize_horizontally'와 'toggle_maximize_vertically'는 창을 한 방향"
+"으로만 최대화/최대화 취소하고, 'minimize'는 창을 최소화하고, 'shade'는 창을 "
+"말아올리고, 'menu'는 창 메뉴를 표시하고, 'lower'는 창을 다른 창 아래에 깔리도"
+"록 하고, 'none'은 아무것도 하지 않습니다."
 
 #: src/org.cafe.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
@@ -552,8 +571,9 @@ msgid ""
 "the auto_raise_delay key. This is not related to clicking on a window to "
 "raise it, nor to entering a window during drag-and-drop."
 msgstr ""
-"참이면, 그리고 포커스 모드가 \"sloppy\"이거나 \"mouse\"이면 포커스 된 창이 auto_raise_delay 키에 지정한 "
-"지연 시간 후에 자동으로 올라옵니다. 창을 눌러서 위로 올리거나 끌어놓기 도중에 창에 들어가는 것과는 별개입니다."
+"참이면, 그리고 포커스 모드가 \"sloppy\"이거나 \"mouse\"이면 포커스 된 창이 "
+"auto_raise_delay 키에 지정한 지연 시간 후에 자동으로 올라옵니다. 창을 눌러서 "
+"위로 올리거나 끌어놓기 도중에 창에 들어가는 것과는 별개입니다."
 
 #: src/org.cafe.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
@@ -563,7 +583,9 @@ msgstr "자동으로 창 띄우기 옵션 지연 시간 (밀리초)"
 msgid ""
 "The time delay before raising a window if auto_raise is set to true. The "
 "delay is given in thousandths of a second."
-msgstr "auto_raise 값이 참인 경우 창을 올리기 전의 지연 시간. 이 시간은 천분의 일초 단위로 주어집니다."
+msgstr ""
+"auto_raise 값이 참인 경우 창을 올리기 전의 지연 시간. 이 시간은 천분의 일초 "
+"단위로 주어집니다."
 
 #: src/org.cafe.croma.gschema.xml:110
 msgid "Current theme"
@@ -583,7 +605,9 @@ msgstr "창 제목에 표준 시스템 글꼴 사용하기"
 msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
-msgstr "참이면, titlebar_font 옵션을 무시하고, 표준 응용 프로그램 글꼴을 창 제목의 글꼴로 씁니다."
+msgstr ""
+"참이면, titlebar_font 옵션을 무시하고, 표준 응용 프로그램 글꼴을 창 제목의 글"
+"꼴로 씁니다."
 
 #: src/org.cafe.croma.gschema.xml:120
 msgid "Window title font"
@@ -596,8 +620,9 @@ msgid ""
 "set to 0. Also, this option is disabled if the titlebar_uses_desktop_font "
 "option is set to true."
 msgstr ""
-"창 제목 표시줄에 대한 글꼴 설명을 기술합니다. titlebar_font_size 옵션이 0으로 설정될 때만 기술된 크기가 적용됩니다. "
-"또한 이 옵션은 titlebar_uses_desktop_font 옵션이 참으로 설정되어 있으면 쓸 수 없습니다."
+"창 제목 표시줄에 대한 글꼴 설명을 기술합니다. titlebar_font_size 옵션이 0으"
+"로 설정될 때만 기술된 크기가 적용됩니다. 또한 이 옵션은 "
+"titlebar_uses_desktop_font 옵션이 참으로 설정되어 있으면 쓸 수 없습니다."
 
 #: src/org.cafe.croma.gschema.xml:126
 msgid "Number of workspaces"
@@ -609,8 +634,8 @@ msgid ""
 "prevent making the desktop unusable by accidentally asking for too many "
 "workspaces."
 msgstr ""
-"작업 공간의 개수. 0 보다 커야 하고, 실수로 너무 많은 작업 공간을 만들어서 데스크톱을 사용할 수 없게 되지 않도록 고정된 최댓값이 "
-"있습니다."
+"작업 공간의 개수. 0 보다 커야 하고, 실수로 너무 많은 작업 공간을 만들어서 데"
+"스크톱을 사용할 수 없게 되지 않도록 고정된 최댓값이 있습니다."
 
 #: src/org.cafe.croma.gschema.xml:131
 msgid "Workspace wrap style"
@@ -622,16 +647,18 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
-"전환 방식은 어떤 작업 공간에서 다른 작업공간으로 테두리를 통해 전환하는 방식을 결정할 때 활용합니다. \"no wrap\"으로 설정하면"
-" 가장자리 테두리를 통한 작업 공간 전환시 아무 일도 일어나지 않습니다. \"classic\"으로 설정하면, 이전 croma 동작을 "
-"사용합니다. 행의 제일 마지막에 도달하면 다음 행 항목의 처음을 끌어오고 열의 제일 마지막에 도달하면 다음 열 항목의 처음을 끌어오는 "
-"식입니다. \"toroidal\"을 설정하면, 작업 공간을 도넛처럼 서로 연결합니다. 행 마지막에 도달하면 행 처음에 도달하며, 열 "
-"마지막에 도달하면 열의 처음에 도달합니다."
+"전환 방식은 어떤 작업 공간에서 다른 작업공간으로 테두리를 통해 전환하는 방식"
+"을 결정할 때 활용합니다. \"no wrap\"으로 설정하면 가장자리 테두리를 통한 작"
+"업 공간 전환시 아무 일도 일어나지 않습니다. \"classic\"으로 설정하면, 이전 "
+"croma 동작을 사용합니다. 행의 제일 마지막에 도달하면 다음 행 항목의 처음을 끌"
+"어오고 열의 제일 마지막에 도달하면 다음 열 항목의 처음을 끌어오는 식입니다. "
+"\"toroidal\"을 설정하면, 작업 공간을 도넛처럼 서로 연결합니다. 행 마지막에 도"
+"달하면 행 처음에 도달하며, 열 마지막에 도달하면 열의 처음에 도달합니다."
 
 #: src/org.cafe.croma.gschema.xml:136
 msgid "Enable Visual Bell"
@@ -643,8 +670,8 @@ msgid ""
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr ""
-"프로그램이나 시스템이 '벨' 혹은 '삑소리'를 낼 때 눈에 보이도록 표현합니다. 듣는데 어려움이 있거나, 주위가 시끄러운 경우 "
-"유용합니다."
+"프로그램이나 시스템이 '벨' 혹은 '삑소리'를 낼 때 눈에 보이도록 표현합니다. 듣"
+"는데 어려움이 있거나, 주위가 시끄러운 경우 유용합니다."
 
 #: src/org.cafe.croma.gschema.xml:141
 msgid "System Bell is Audible"
@@ -655,8 +682,8 @@ msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
 msgstr ""
-"프로그램 혹은 시스템에서 들을 수 있는 '삑소리'를 낼 지 여부를 결정합니다; 조용한 '삑소리'를 내려면 '비주얼 벨'과 함께 쓸 수 "
-"있습니다."
+"프로그램 혹은 시스템에서 들을 수 있는 '삑소리'를 낼 지 여부를 결정합니다; 조"
+"용한 '삑소리'를 내려면 '비주얼 벨'과 함께 쓸 수 있습니다."
 
 #: src/org.cafe.croma.gschema.xml:146
 msgid "Visual Bell Type"
@@ -672,10 +699,11 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"시스템 벨 혹은 그 외 프로그램의 '벨' 소리를 어떻게 비주얼 하게 표현할지 결정합니다. 두 가지 값을 쓸 수 있습니다; "
-"\"fullscreen\"은 전체 화면이 흰색-검은색으로 깜박이고, \"frame_flash\"는 벨 소리를 보낸 프로그램의 제목이 "
-"깜박입니다. 벨 소리를 보낸 프로그램을 알 수 없는 경우 (\"시스템 벨 소리 \"인 경우 \"), 현재 포커스 된 창의 제목이 "
-"깜박입니다."
+"시스템 벨 혹은 그 외 프로그램의 '벨' 소리를 어떻게 비주얼 하게 표현할지 결정"
+"합니다. 두 가지 값을 쓸 수 있습니다; \"fullscreen\"은 전체 화면이 흰색-검은색"
+"으로 깜박이고, \"frame_flash\"는 벨 소리를 보낸 프로그램의 제목이 깜박입니"
+"다. 벨 소리를 보낸 프로그램을 알 수 없는 경우 (\"시스템 벨 소리 \"인 경우 "
+"\"), 현재 포커스 된 창의 제목이 깜박입니다."
 
 #: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
@@ -709,32 +737,37 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"참이면, 마르코는 사용자들에게 와이어 프레임을 사용하거나, 애니메이션을 하지 않거나, 또는 그와 유사한 경우에 피드백을 덜 하게 됩니다."
-" 이렇게 하면 많은 사용자의 사용성을 떨어뜨리지만, 레거시 프로그램을 계속 사용하게 하거나, 터미널 서버를 사용하는 경우 괜찮은 "
-"트레이드오프입니다. 하지만 접근성 기능을 사용할 경우 와이어 프레임 기능은 사용할 수 없습니다."
+"참이면, 마르코는 사용자들에게 와이어 프레임을 사용하거나, 애니메이션을 하지 "
+"않거나, 또는 그와 유사한 경우에 피드백을 덜 하게 됩니다. 이렇게 하면 많은 사"
+"용자의 사용성을 떨어뜨리지만, 레거시 프로그램을 계속 사용하게 하거나, 터미널 "
+"서버를 사용하는 경우 괜찮은 트레이드오프입니다. 하지만 접근성 기능을 사용할 "
+"경우 와이어 프레임 기능은 사용할 수 없습니다."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr "(구현되지 않음) 네비게이션을 창 단위가 아니라 프로그램 단위로 합니다"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"참이면, 마르코가 창 단위로 동작하지 않고 프로그램 단위로 동작합니다. 개념이 좀 추상적이지만, 프로그램 단위의 설정은 윈도우보다는 맥과"
-" 비슷합니다. 프로그램 단위의 모드에서 어떤 창에 포커스를 맞췄을 때, 해당 프로그램의 모든 창이 올라옵니다. 또, 프로그램 단위의 "
-"모드에서, 포커스 은 다른 프로그램 윈도우에는 전달되지 않습니다. 하지만 프로그램 모드는 현재 많은 부분이 구현되지 않은 상태입니다."
+"참이면, 마르코가 창 단위로 동작하지 않고 프로그램 단위로 동작합니다. 개념이 "
+"좀 추상적이지만, 프로그램 단위의 설정은 윈도우보다는 맥과 비슷합니다. 프로그"
+"램 단위의 모드에서 어떤 창에 포커스를 맞췄을 때, 해당 프로그램의 모든 창이 올"
+"라옵니다. 또, 프로그램 단위의 모드에서, 포커스 은 다른 프로그램 윈도우에는 전"
+"달되지 않습니다. 하지만 프로그램 모드는 현재 많은 부분이 구현되지 않은 상태입"
+"니다."
 
 #: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
-msgstr "오래되거나 손상된 응용 프로그램의 요청으로 작동하는 오작동을 차단합니다"
+msgstr ""
+"오래되거나 손상된 응용 프로그램의 요청으로 작동하는 오작동을 차단합니다"
 
 #: src/org.cafe.croma.gschema.xml:172
 msgid ""
@@ -743,8 +776,10 @@ msgid ""
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
-"일부 프로그램은 규격에 맞지 않는 방식으로 동작해서 창 관리자가 이상동작할 수 있습니다. 이 옵션을 사용하면 메타시티가 엄밀하게 정확한 "
-"모드로 동작합니다. 이렇게 하면 잘못 동작하는 프로그램이 없다는 가정 하에 사용자 인터페이스가 더 일관성이 있게 됩니다."
+"일부 프로그램은 규격에 맞지 않는 방식으로 동작해서 창 관리자가 이상동작할 수 "
+"있습니다. 이 옵션을 사용하면 메타시티가 엄밀하게 정확한 모드로 동작합니다. 이"
+"렇게 하면 잘못 동작하는 프로그램이 없다는 가정 하에 사용자 인터페이스가 더 일"
+"관성이 있게 됩니다."
 
 #: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
@@ -754,7 +789,9 @@ msgstr "새 창을 화면 가운데 만들지 결정"
 msgid ""
 "If set to true, new windows are opened in the center of the screen. "
 "Otherwise, they are opened at the top left of the screen."
-msgstr "참이면, 새 창을 화면 가운데 열어둡니다. 그렇지 않으면 화면의 좌측 상단에 열어둡니다."
+msgstr ""
+"참이면, 새 창을 화면 가운데 열어둡니다. 그렇지 않으면 화면의 좌측 상단에 열어"
+"둡니다."
 
 #: src/org.cafe.croma.gschema.xml:181
 msgid "Whether to enable window tiling"
@@ -763,11 +800,12 @@ msgstr "창 타일링 사용 여부를 결정합니다"
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
-"사용 가능으로 설정하면, 화면 가장자리에 창을 놓을 때 창이 수직으로 최대화하고 사용 가능한 영역의 절반을 덮을 수 있도록 창 크기를 "
-"수평으로 조정할 수 있습니다. 상단 타일링을 설정하면 위쪽으로 끌어서 놓을 때 창이 최대화됩니다."
+"사용 가능으로 설정하면, 화면 가장자리에 창을 놓을 때 창이 수직으로 최대화하"
+"고 사용 가능한 영역의 절반을 덮을 수 있도록 창 크기를 수평으로 조정할 수 있습"
+"니다. 상단 타일링을 설정하면 위쪽으로 끌어서 놓을 때 창이 최대화됩니다."
 
 #: src/org.cafe.croma.gschema.xml:186
 msgid "Whether to maximize the window when dragged to the top of the screen"
@@ -778,7 +816,8 @@ msgid ""
 "If enabled, drag-dropping a window to the top of the screen will maximize "
 "it. Only works when allow-tiling is enabled."
 msgstr ""
-"사용 가능으로 설정하면, 화면 상단에 창을 끌어다 놓을 때 화면이 최대화될 겁니다. 타일링을 사용하도록 설정한 경우에만 작동합니다."
+"사용 가능으로 설정하면, 화면 상단에 창을 끌어다 놓을 때 화면이 최대화될 겁니"
+"다. 타일링을 사용하도록 설정한 경우에만 작동합니다."
 
 #: src/org.cafe.croma.gschema.xml:191
 msgid "Whether to enable cycling through different tile sizes"
@@ -797,15 +836,17 @@ msgstr "창 배치 상태"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
-"창 배치상태는 새 창을 위치하는 방법을 나타냅니다. \"자동\"은 시스템이 데스크톱에서 사용할 수 있는 공간을 기반으로 위치를 자동으로 "
-"선택하거나, 공간이 없다면 임의의 창 위에 겹쳐놓는 방식으로 창을 배치함을 의미합니다. \"포인터\"는 마우스 포인터 위치에 따라 창을 "
-"배치함을 의미합니다. \"수동\"은 사용자가 마우스 또는 키보를 사용하여 새 창의 위치를 직접 지정해야 함을 의미합니다."
+"창 배치상태는 새 창을 위치하는 방법을 나타냅니다. \"자동\"은 시스템이 데스크"
+"톱에서 사용할 수 있는 공간을 기반으로 위치를 자동으로 선택하거나, 공간이 없다"
+"면 임의의 창 위에 겹쳐놓는 방식으로 창을 배치함을 의미합니다. \"포인터\"는 마"
+"우스 포인터 위치에 따라 창을 배치함을 의미합니다. \"수동\"은 사용자가 마우스 "
+"또는 키보를 사용하여 새 창의 위치를 직접 지정해야 함을 의미합니다."
 
 #: src/org.cafe.croma.gschema.xml:201
 msgid "List of applications ignored by show-desktop"
@@ -813,11 +854,11 @@ msgstr "바탕화면 보기 때문에 넘긴 애플리케이션 목록"
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
-"콤마로 구분한 클래스 목록. 주어진 창 관리자 클래스에 따라 실행 중인 각 GUI 애플리케이션들은 '바탕화면 보기' 기능  때문에 그냥 "
-"넘어갑니다."
+"콤마로 구분한 클래스 목록. 주어진 창 관리자 클래스에 따라 실행 중인 각 GUI 애"
+"플리케이션들은 '바탕화면 보기' 기능  때문에 그냥 넘어갑니다."
 
 #: src/org.cafe.croma.gschema.xml:207
 msgid "Icon size in alt-tab popup window"
@@ -906,8 +947,8 @@ msgstr "정의 명령 실행"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1028,11 +1069,11 @@ msgstr "단축키에 반응하여 실행할 명령"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
-"/apps/croma/global_keybindings/run_command_N 키는 이 명령에 연결할 단축키를 정의합니다. "
-"run_command_N의 단축키를 누르면 command_N을 실행합니다."
+"/apps/croma/global_keybindings/run_command_N 키는 이 명령에 연결할 단축키를 "
+"정의합니다. run_command_N의 단축키를 누르면 command_N을 실행합니다."
 
 #: src/org.cafe.croma.gschema.xml:722
 msgid "The screenshot command"
@@ -1043,8 +1084,8 @@ msgid ""
 "The /apps/croma/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
-"/apps/croma/global_keybindings/run_commoand_screenshot 키는 이 설정을 통해 지정한 명령을 "
-"실행할 단축키를 정의합니다."
+"/apps/croma/global_keybindings/run_commoand_screenshot 키는 이 설정을 통해 지"
+"정한 명령을 실행할 단축키를 정의합니다."
 
 #: src/org.cafe.croma.gschema.xml:727
 msgid "The window screenshot command"
@@ -1052,12 +1093,12 @@ msgstr "창 스크린 샷 명령"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
-"/apps/croma/global_keybindings/run_command_window_screenshot 키는 이 설정을 통해 지정한"
-" 명령을 실행할 단축키를 정의합니다."
+"/apps/croma/global_keybindings/run_command_window_screenshot 키는 이 설정을 "
+"통해 지정한 명령을 실행할 단축키를 정의합니다."
 
 #: src/org.cafe.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
@@ -1128,11 +1169,14 @@ msgstr "X 윈도 시스템 디스플레이 '%s'을(를) 여는데 실패하였�
 msgid ""
 "Some other program is already using the key %s with modifiers %x as a "
 "binding\n"
-msgstr "다른 프로그램에서 이미 단축키로 변경 키 %2$x와(과) 키 %1$s을(를) 사용하고 있습니다\n"
+msgstr ""
+"다른 프로그램에서 이미 단축키로 변경 키 %2$x와(과) 키 %1$s을(를) 사용하고 있"
+"습니다\n"
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1142,28 +1186,28 @@ msgstr ""
 "<tt>%s</tt> 명령을 실행하는 중 오류가 발생했습니다:\n"
 "%s."
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "명령 %d이(가) 정의되지 않았습니다.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "터미널 명령을 정의하지 않았습니다.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "<tt>작업 공간 이름 바꾸기</tt>"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "새 작업 공간 이름:"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "확인"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "취소"
 
@@ -1173,66 +1217,69 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "이 프로그램은 자유 소프트웨어 입니다; 복제 조항은 소스 코드를 참조하십시오.\n"
 "상업성, 특정 목적의 적합성에 대한 보증을 하지 않습니다.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "세션 관리자에 연결하지 않습니다"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "실행되고 있는 창 관리자를 메타시티로 바꿉니다"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "세션 관리 ID를 지정합니다"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "사용할 X 디스플레이"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "저장 파일에서 세션을 초기화 합니다"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "버전 출력"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "동기(synchronous) X 호출"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "컴포지트 켜기"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "컴포지트 끄기"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr "최대화되고 창 장식이 없는 전체화면 창을 만들지 않습니다"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "테마 디렉터리를 읽는 데 실패했습니다: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
-msgstr "테마를 찾을 수 없습니다! %s이(가) 있고 올바른 테마가 들어 있는지 확인하십시오.\n"
+msgstr ""
+"테마를 찾을 수 없습니다! %s이(가) 있고 올바른 테마가 들어 있는지 확인하십시"
+"오.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "다시 시작 실패: %s\n"
@@ -1249,7 +1296,9 @@ msgstr ""
 msgid ""
 "Workarounds for broken applications disabled. Some applications may not "
 "behave properly.\n"
-msgstr "응용 프로그램에 대한 임시 방편을 막았습니다. 몇몇 응용프로그램들이 제대로 동작하지 않을것입니다.\n"
+msgstr ""
+"응용 프로그램에 대한 임시 방편을 막았습니다. 몇몇 응용프로그램들이 제대로 동"
+"작하지 않을것입니다.\n"
 
 #: src/core/prefs.c:1194
 #, c-format
@@ -1259,47 +1308,53 @@ msgstr "%s GSettings 키의 글꼴 특성  \"%s\"을 분석할 수 없습니다�
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
-msgstr "설정 데이터베이스에서 찾은 \"%s\"이(가) 마우스 단추 설정 키의 올바른 값이 아닙니다\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
+msgstr ""
+"설정 데이터베이스에서 찾은 \"%s\"이(가) 마우스 단추 설정 키의 올바른 값이 아"
+"닙니다\n"
 
 #: src/core/prefs.c:1844
 #, c-format
 msgid ""
 "\"%s\" found in configuration database is not a valid value for keybinding "
 "\"%s\"\n"
-msgstr "설정 데이터베이스에서 찾은 \"%s\"이(가) 단축키 \"%s\"에 대한 올바른 값이 아닙니다\n"
+msgstr ""
+"설정 데이터베이스에서 찾은 \"%s\"이(가) 단축키 \"%s\"에 대한 올바른 값이 아닙"
+"니다\n"
 
 #: src/core/prefs.c:2147
 #, c-format
 msgid "Workspace %d"
 msgstr "작업 공간 %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "디스플레이 '%2$s'의 화면 %1$d은(는) 잘못되었습니다\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
-"디스플레이 \"%2$s\"의 화면 %1$d에 이미 창 관리자가 실행되고 있습니다; 현재 창 관리자를 무시하는 --replace 옵션을 "
-"써보십시오.\n"
+"디스플레이 \"%2$s\"의 화면 %1$d에 이미 창 관리자가 실행되고 있습니다; 현재 "
+"창 관리자를 무시하는 --replace 옵션을 써보십시오.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr "디스플레이 \"%2$s\"의 화면 %1$d에 창 관리 선택을 가질 수 없습니다\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
-msgstr "디스플레이 \"%2$s\"의 화면 %1$d은(는) 이미 창 관리자가 실행되고 있습니다\n"
+msgstr ""
+"디스플레이 \"%2$s\"의 화면 %1$d은(는) 이미 창 관리자가 실행되고 있습니다\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "디스플레이 \"%2$s\"의 화면 %1$d을(를) 떼어 놓을수 없습니다\n"
@@ -1350,10 +1405,11 @@ msgstr "알 수 없는 속성 %s"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
-"이 창은 &quot;현재 설정 저장&quot;을 지원하지 않기 때문에 다음 번에 로그인 할 때 수동으로 다시 시작해야 합니다."
+"이 창은 &quot;현재 설정 저장&quot;을 지원하지 않기 때문에 다음 번에 로그인 "
+"할 때 수동으로 다시 시작해야 합니다."
 
 #: src/core/util.c:101
 #, c-format
@@ -1397,12 +1453,14 @@ msgid "Croma"
 msgstr "마르코"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
 "window as specified in the ICCCM.\n"
-msgstr "%s 창이 WM_CLIENT_LEADER 창 대신 자신에게 ICCCM에 지정한대로 SM_CLIENT_ID를 지정했습니다.\n"
+msgstr ""
+"%s 창이 WM_CLIENT_LEADER 창 대신 자신에게 ICCCM에 지정한대로 SM_CLIENT_ID를 "
+"지정했습니다.\n"
 
 #. We ignore mwm_has_resize_func because WM_NORMAL_HINTS is the
 #. * authoritative source for that info. Some apps such as mplayer or
@@ -1410,14 +1468,15 @@ msgstr "%s 창이 WM_CLIENT_LEADER 창 대신 자신에게 ICCCM에 지정한대
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
 "%d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr ""
-"%s 창에서 크기 변경이 불가능하다는 MWM 힌트를 설정했지만, 최소 크기 %d x %d 및 최대 크기 %d x %d을(를) "
-"설정했습니다; 앞뒤가 맞지 않습니다.\n"
+"%s 창에서 크기 변경이 불가능하다는 MWM 힌트를 설정했지만, 최소 크기 %d x %d "
+"및 최대 크기 %d x %d을(를) 설정했습니다; 앞뒤가 맞지 않습니다.\n"
 
 #: src/core/window-props.c:306
 #, c-format
@@ -1478,60 +1537,61 @@ msgstr "창 0x%2$lx의 등록 정보 %1$s은(는) 잘못된 UTF-8이 들어 있�
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
-msgstr "창 0x%2$lx의 등록 정보 %1$s은(는) 목록안의 항목 %3$d에 잘못된 UTF-8을 포함하고 있습니다\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
+msgstr ""
+"창 0x%2$lx의 등록 정보 %1$s은(는) 목록안의 항목 %3$d에 잘못된 UTF-8을 포함하"
+"고 있습니다\n"
 
 #: src/tools/croma-message.c:150
 #, c-format
 msgid "Usage: %s\n"
 msgstr "사용법: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "창 닫기"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "창 메뉴"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr ""
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "창 최소화"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "창 최대화"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "창 복귀"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "창 말아올리기"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "창 펼치기"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "창을 맨 위에 두기"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "창을 맨 위에서 빼기"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "항상 현재 작업 공간에 놓기"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "창을 한 개 작업 공간에만 두기"
 
@@ -1639,6 +1699,7 @@ msgstr "다른 작업 공간으로 옮기기(_W)"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1647,6 +1708,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1655,6 +1717,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1663,6 +1726,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1671,6 +1735,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1679,6 +1744,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1687,6 +1753,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1695,6 +1762,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1703,6 +1771,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1711,271 +1780,290 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "맨 위"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "맨 아래"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "왼쪽"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "오른쪽"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "프레임 위치가 \"%s\"차원으로 지정되지 않았습니다"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
-msgstr "프레임 위치가 가장자리 \"%2$s\" 가장자리의 \"%1$s\"차원으로 지정되지 않았습니다."
+msgstr ""
+"프레임 위치가 가장자리 \"%2$s\" 가장자리의 \"%1$s\"차원으로 지정되지 않았습니"
+"다."
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "단추의 가로세로 비 %g이(가) 적당하지 않습니다"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "프레임 위치가 단추의 크기로 지정되지 않았습니다"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "서서히 변하는 색으로 지정하려면 최소 2색이 필요합니다"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK 색상 지정은 중괄호안에 있어야 합니다, 예: ctk:fg[NORMAL] NORMAL은 값; \"%s\"을(를) 분석할 수 없습니다"
+"CTK 색상 지정은 중괄호안에 있어야 합니다, 예: ctk:fg[NORMAL] NORMAL은 값; "
+"\"%s\"을(를) 분석할 수 없습니다"
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK 색상 지정은 값 뒤에 중괄호로 닫혀 있어야 합니다, 예: ctk:fg[NORMAL]NORMAL은 값; \"%s\"을(를) 분석할 "
-"수 없습니다"
+"CTK 색상 지정은 값 뒤에 중괄호로 닫혀 있어야 합니다, 예: ctk:fg[NORMAL]NORMAL"
+"은 값; \"%s\"을(를) 분석할 수 없습니다"
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "색상 지정의 \"%s\" 값을 이해할 수 없습니다"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "색상 지정의 색상 구성요소 \"%s\"을(를) 이해할 수 없습니다"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
 "format"
-msgstr "섞기 형식은 \"blend/bg_color/fg_color/alpha\"입니다, \"%s\"은(는) 형식에 맞지 않습니다"
+msgstr ""
+"섞기 형식은 \"blend/bg_color/fg_color/alpha\"입니다, \"%s\"은(는) 형식에 맞"
+"지 않습니다"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "색상 섞기에서 알파 값 \"%s\"을(를) 분석할 수 없습니다"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "색상 섞기에서 알파 값 \"%s\"은(는) 0.0 과 1.0사이의 값이 아닙니다"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
-msgstr "그림자 형식은 \"shade/base_color/format\"입니다, \"%s\"(은)는 형식에 맞지 않습니다"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgstr ""
+"그림자 형식은 \"shade/base_color/format\"입니다, \"%s\"(은)는 형식에 맞지 않"
+"습니다"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "그림자색에서 그림자 인자 \"%s\"(을)를 해석할 수 없습니다"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "그림자색에서 그림자 인자 \"%s\"(은)는 음수입니다"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "색상 \"%s\"을(를) 해석할 수 없습니다"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "좌표식에 허용되지 않는 문자 '%s'(이)가 포함되어 있습니다"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr "좌표식에 분석할 수 없는 부동소수점 숫자 '%s'이(가) 포함되어 있습니다"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr "좌표식에 분석할 수 없는 정수 '%s'이(가) 포함되어 있습니다"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
 "\"%s\""
-msgstr "좌표식에 이 글자 시작부분에 알 수 없는 연산자가 포함되어 있습니다: \"%s\""
+msgstr ""
+"좌표식에 이 글자 시작부분에 알 수 없는 연산자가 포함되어 있습니다: \"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "좌표식이 비어있거나 이해할 수 없습니다"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "좌표식의 결과 값이 0로 나누었습니다"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr "좌표식에서 부동소수점 수에 나머지 연산을 하려 합니다"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "좌표식에서 피연산자가 들어갈 곳에 연산자 \"%s\"이(가) 있습니다"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "좌표식에서 연산자가 들어갈 곳에 피연산자가 있습니다"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "좌표식에서 피연산자 대신에 연산자로 끝나있습니다"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
 "operand in between"
-msgstr "좌표식에서 피연산자가 없는 연산자 \"%2$c\"다음에 연산자 \"%1$c\"이(가) 있습니다"
+msgstr ""
+"좌표식에서 피연산자가 없는 연산자 \"%2$c\"다음에 연산자 \"%1$c\"이(가) 있습니"
+"다"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "좌표식에 알 수 없는 변수나 상수 \"%s\"이(가) 있습니다"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "좌표 계산 파서의 버퍼가 크기를 넘어갔습니다."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr "좌표식에 닫는 괄호는 있지만 여는 괄호가 없습니다"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "좌표식에 여는 괄호는 있지만 닫는 괄호가 없습니다"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "좌표식에 어떠한 연산자나 피연산자가 없습니다"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "테마가 오류 값을 내는 표현식이 들어 있습니다: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
 "specified for this frame style"
 msgstr ""
-"이 프레임 스타일에는 <button function=\"%s\" style=\"%s\" draw_ops=\"whatever\"/>가 "
-"지정되어야 합니다"
+"이 프레임 스타일에는 <button function=\"%s\" style=\"%s\" "
+"draw_ops=\"whatever\"/>가 지정되어야 합니다"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "<frame state=\"%s\" resize=\"%s\" focus=\"%s\" state=\"whatever\"/> 가 없습니다"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"<frame state=\"%s\" resize=\"%s\" focus=\"%s\" state=\"whatever\"/> 가 없습니"
+"다"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "테마 \"%s\"을(를) 읽을 수 없습니다: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "테마 \"%2$s\"의 <%1$s>(이)가 설정되지 않았습니다"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
 "type=\"%s\" style_set=\"whatever\"/> element"
 msgstr ""
-"테마 \"%2$s\"의 창 형식 \"%1$s\"에 대한 프레임 스타일이 없습니다,<window type=\"%3$s\" "
-"style_set=\"whatever\"/> 요소를 추가하십시오"
+"테마 \"%2$s\"의 창 형식 \"%1$s\"에 대한 프레임 스타일이 없습니다,<window "
+"type=\"%3$s\" style_set=\"whatever\"/> 요소를 추가하십시오"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
-msgstr "사용자 정의 상수는 대문자로 시작되어야 합니다; \"%s\"은(는) 그렇지 않습니다"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
+msgstr ""
+"사용자 정의 상수는 대문자로 시작되어야 합니다; \"%s\"은(는) 그렇지 않습니다"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "상수 \"%s\"은(는) 이미 지정되어 있습니다"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2034,16 +2122,18 @@ msgstr "각도 값은 0.0과 360.0 사이여야 합니다, %g(으)로 되어 있
 #: src/ui/theme-parser.c:818
 #, c-format
 msgid "Alpha must be between 0.0 (invisible) and 1.0 (fully opaque), was %g\n"
-msgstr "알파 값은 0.0(보이지 않음)과 1.0(완전 불투명)사이여야 합니다, %g(으)로 되어있습니다\n"
+msgstr ""
+"알파 값은 0.0(보이지 않음)과 1.0(완전 불투명)사이여야 합니다, %g(으)로 되어있"
+"습니다\n"
 
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"잘못된 제목 확대 \"%s\" (xx-small, x-small, small, medium, large, x-large, xx-"
-"large중에 하나여야 합니다)\n"
+"잘못된 제목 확대 \"%s\" (xx-small, x-small, small, medium, large, x-large, "
+"xx-large중에 하나여야 합니다)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2101,7 +2191,9 @@ msgstr "<%2$s> 아래에 <%1$s> 원소가 올 수 없습니다"
 msgid ""
 "Cannot specify both \"button_width\"/\"button_height\" and \"aspect_ratio\" "
 "for buttons"
-msgstr "단추의 button_width/button_height 와 \"aspect_ratio\"를 한꺼번에 지정할 수 없습니다"
+msgstr ""
+"단추의 button_width/button_height 와 \"aspect_ratio\"를 한꺼번에 지정할 수 없"
+"습니다"
 
 #: src/ui/theme-parser.c:1470
 #, c-format
@@ -2228,7 +2320,8 @@ msgstr "최대화/그림자 상태에서 <%s> 요소는 \"resize\" 속성을 가
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr "최대화한 상태에서 <%s> 요소는 \"resize\" 속성을 가지지 않습니다"
 
 #: src/ui/theme-parser.c:3203 src/ui/theme-parser.c:3247
@@ -2248,24 +2341,24 @@ msgid ""
 "Can't have a two draw_ops for a <piece> element (theme specified a draw_ops "
 "attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<piece> 요소에 두개의 draw_ops를 가질수 없습니다 (테마에 draw_ops 속성과 <draw_ops>요소를 지정했거나 두 "
-"요소를 지정했습니다"
+"<piece> 요소에 두개의 draw_ops를 가질수 없습니다 (테마에 draw_ops 속성과 "
+"<draw_ops>요소를 지정했거나 두 요소를 지정했습니다"
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<button> 요소에 두개의 draw_ops를 가질수 없습니다 (테마에 draw_ops 속성과 <draw_ops>요소를 지정했거나 두 "
-"요소를 지정했습니다"
+"<button> 요소에 두개의 draw_ops를 가질수 없습니다 (테마에 draw_ops 속성과 "
+"<draw_ops>요소를 지정했거나 두 요소를 지정했습니다"
 
 #: src/ui/theme-parser.c:3427
 msgid ""
 "Can't have a two draw_ops for a <menu_icon> element (theme specified a "
 "draw_ops attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<menu_icon> 요소에 두개의 draw_ops를 가질수 없습니다 (테마에 draw_ops 속성과 <draw_ops>요소를 지정했거나"
-" 두 요소를 지정했습니다"
+"<menu_icon> 요소에 두개의 draw_ops를 가질수 없습니다 (테마에 draw_ops 속성과 "
+"<draw_ops>요소를 지정했거나 두 요소를 지정했습니다"
 
 #: src/ui/theme-parser.c:3491
 #, c-format
@@ -2292,7 +2385,8 @@ msgstr "테마에서 맨 바깥쪽 요소는 <%s>이 아니라  <metacity_theme>
 #, c-format
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
-msgstr "name/author/date/description 요소 안에서 요소 <%s>이(가) 허용되지 않습니다"
+msgstr ""
+"name/author/date/description 요소 안에서 요소 <%s>이(가) 허용되지 않습니다"
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2303,7 +2397,8 @@ msgstr "<constant> 요소 안에서 요소 <%s>이(가) 허용되지 않습니�
 #, c-format
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
-msgstr "distance/border/aspect_ratio 요소 안에서 요소 <%s>이(가) 허용되지 않습니다"
+msgstr ""
+"distance/border/aspect_ratio 요소 안에서 요소 <%s>이(가) 허용되지 않습니다"
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2349,101 +2444,102 @@ msgstr "확인(_O)"
 msgid "This is a sample message in a sample dialog"
 msgstr "예제 대화 상자의 예제 메시지입니다"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "가짜 메뉴 항목 %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "테두리만 있는 창"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "줄"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "보통 프로그램 창"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "대화 상자"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "모달 대화 상자"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "도구 팔레트"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "떼어내기 메뉴"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "테두리"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr ""
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "단추 배치 테스트 %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "창 프레임 하나를 그리는 데 %g ms"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "쓰는 법: croma-theme-viewer [테마이름]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "테마를 읽어들이는 데 오류가 발생했습니다: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "\"%s\" 테마를 읽어들이는 데 %g초\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "보통 제목 글꼴"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "작은 제목 글꼴"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "큰 제목 글꼴"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "단추 배치"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "벤치마크"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "창 제목이 여기에 들어갑니다"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "
 "seconds wall clock time including X server resources (%g milliseconds per "
 "frame)\n"
 msgstr ""
-"%d개 프레임을 그리는 데 클라이언트 입장에서 %g초가 걸렸습니다 (한 프레임에 %g ms). 그리고 X 서버 리소스까지 포함해 실제 "
-"시간으로 %g 초가 걸렸습니다 (한 프레임에 %g ms).\n"
+"%d개 프레임을 그리는 데 클라이언트 입장에서 %g초가 걸렸습니다 (한 프레임에 "
+"%g ms). 그리고 X 서버 리소스까지 포함해 실제 시간으로 %g 초가 걸렸습니다 (한 "
+"프레임에 %g ms).\n"

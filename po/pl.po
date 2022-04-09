@@ -2,7 +2,7 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Jan Bońkowski <bonkowskijan@gmail.com>, 2020
@@ -21,20 +21,22 @@
 # pietrasagh <pietrasagh@gmail.com>, 2020
 # Dominik Adrian Grzywak, 2020
 # Daniel Tokarzewski <bezimo@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Daniel Tokarzewski <bezimo@gmail.com>, 2020\n"
 "Language-Team: Polish (https://www.transifex.com/cafe/teams/13566/pl/)\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
 msgid "Desktop"
@@ -252,8 +254,7 @@ msgstr "Ułóż sąsiadująco okno do południowo-zachodniego (lewego dolnego) r
 
 #: src/50-croma-window-key.xml.in:94
 msgid "Tile window to south-east (bottom right) corner"
-msgstr ""
-"Ułóż sąsiadująco okno do południowo-wschodniego (prawego dolnego) rogu"
+msgstr "Ułóż sąsiadująco okno do południowo-wschodniego (prawego dolnego) rogu"
 
 #: src/50-croma-window-key.xml.in:98 src/org.cafe.croma.gschema.xml:930
 msgid "Move window to north-west (top left) corner"
@@ -383,8 +384,8 @@ msgid ""
 "the \"resize_with_right_button\" key. Modifier is expressed as \"<Alt>\" or "
 "\"<Super>\" for example."
 msgstr ""
-"Kliknięcie okna przy wciśniętym klawiszu modyfikatora spowoduje przesunięcie"
-" okna (lewym przyciskiem), zmianę rozmiaru okna (środkowym przyciskiem) lub "
+"Kliknięcie okna przy wciśniętym klawiszu modyfikatora spowoduje przesunięcie "
+"okna (lewym przyciskiem), zmianę rozmiaru okna (środkowym przyciskiem) lub "
 "wyświetlenie menu okna (prawym przyciskiem). Operacje środkowego i prawego "
 "kliknięcia można zamieniać za pomocą przycisku „resize_with_right_button”. "
 "Modyfikator wyrażony jest na przykład jako <Alt> lub <Super>."
@@ -396,8 +397,8 @@ msgstr "Określa, czy zmieniać rozmiar okna za pomocą prawego przycisku myszy"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Po włączeniu użytkownik będzie mógł zmieniać rozmiar okna po wciśnięciu "
 "prawego przycisku myszy i wyświetlać menu za pomocą środkowego przycisku "
@@ -444,9 +445,9 @@ msgstr "Tryb uaktywniania okna"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Tryb uaktywnienia określa, w jaki sposób aktywowane są okna. Opcja ta może "
 "przyjmować trzy wartości; \"click\" (ang. kliknięcie) oznacza, że okno musi "
@@ -463,14 +464,14 @@ msgstr "Określa, w jaki sposób uaktywniane są okna"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Ta opcja daje dodatkowe możliwości konfiguracji sposobu, w jaki nowo "
 "utworzone okna zostają uaktywnione. Dostępne są dwie wartości: \"smart\" - "
-"typowy tryb uaktywniania wg ustawień użytkownika i \"strict\" - okna otwarte"
-" z poziomu terminala nie zostaną uaktywnione."
+"typowy tryb uaktywniania wg ustawień użytkownika i \"strict\" - okna otwarte "
+"z poziomu terminala nie zostaną uaktywnione."
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
@@ -480,42 +481,43 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 "Przestawienie tej opcji do \"fałsz\" może doprowadzić do błędnego "
 "zachowania, więc użytkownikom jest silnie odradzana zmiana z domyślnej "
 "wartości \"prawda\". Wiele wydarzeń (no. kliknięcie w obszarze klienta, "
 "przesunięcie okna) normalnie wynosi okno jako efekt uboczny. Przestawienie "
 "tej opcji do \"fałsz\", jest silnie odradzane, odłączy wynoszenie okna  od "
-"innych zdarzeń i zignoruje zapytania wyniesienia generowane przez aplikacje."
-" Patrz https://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Nawet kiedy ta "
+"innych zdarzeń i zignoruje zapytania wyniesienia generowane przez aplikacje. "
+"Patrz https://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Nawet kiedy ta "
 "opcja ma wartość \"fałsz\", okna nadal mogą być wynoszone poprzez lewe "
 "kliknięcie gdziekolwiek na oknie, normalne kliknięcie na dekoracji lub "
 "poprzez specjalne wiadomości ze pagerów takich jak  zapytanie aktywacji z "
 "appletu listy zadań. Ta opcja jest aktualnie wyłączona w trybie kliknij-aby-"
 "uaktywnić. Pamiętaj, że lista metod aby wynieść okna kiedy "
-"wynieś_przy_kliknięciu ma wartość \"fałsz\" nie zawiera programowych zapytań"
-"  z aplikacji wynoszących okna; takie zapytania będą ignorowane niezależne "
-"od powodu zapytania. Jeżeli jesteś deweloperem  aplikacji i masz użytkownika"
-" skarżącego się, że aplikacja nie działa przy wyłączonej tej opcji, przekaż "
-"mu, że to _jego_ wina przez zepsucie managera okien i żeby ustawili tą opcję"
-" z powrotem to \"prawda\" albo pogodzili się z \"błędem\" o który prosili."
+"wynieś_przy_kliknięciu ma wartość \"fałsz\" nie zawiera programowych "
+"zapytań  z aplikacji wynoszących okna; takie zapytania będą ignorowane "
+"niezależne od powodu zapytania. Jeżeli jesteś deweloperem  aplikacji i masz "
+"użytkownika skarżącego się, że aplikacja nie działa przy wyłączonej tej "
+"opcji, przekaż mu, że to _jego_ wina przez zepsucie managera okien i żeby "
+"ustawili tą opcję z powrotem to \"prawda\" albo pogodzili się z \"błędem\" o "
+"który prosili."
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -527,19 +529,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Ta opcja określa skutek dwukrotnego kliknięcia paska tytułowego okna. "
 "Aktualnie prawidłowymi opcjami są: \"toggle_shade\" (zwija/rozwija okno), "
 "\"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), "
-"\"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" "
-"(maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" "
-"(minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna),"
-" \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek "
-"efektu)."
+"\"toggle_maximize_horizontally\" i "
+"\"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie "
+"lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), "
+"\"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i "
+"\"none\" (brak jakiegokolwiek efektu)."
 
 #: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
@@ -551,19 +553,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Ta opcja określa skutek kliknięcia środkowym przyciskiem myszy na pasku "
-"tytułowym okna. Aktualnie prawidłowymi opcjami są: \"toggle_shade\" "
-"(zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar "
-"okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" "
-"(maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" "
-"(minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna),"
-" \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek "
-"efektu)."
+"tytułowym okna. Aktualnie prawidłowymi opcjami są: \"toggle_shade\" (zwija/"
+"rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), "
+"\"toggle_maximize_horizontally\" i "
+"\"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie "
+"lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), "
+"\"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i "
+"\"none\" (brak jakiegokolwiek efektu)."
 
 #: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
@@ -575,19 +577,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Ta opcja określa skutek kliknięcia prawym przyciskiem myszy na pasku "
-"tytułowym okna. Aktualnie prawidłowymi opcjami są: \"toggle_shade\" "
-"(zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar "
-"okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" "
-"(maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" "
-"(minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna),"
-" \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek "
-"efektu)."
+"tytułowym okna. Aktualnie prawidłowymi opcjami są: \"toggle_shade\" (zwija/"
+"rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), "
+"\"toggle_maximize_horizontally\" i "
+"\"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie "
+"lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), "
+"\"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i "
+"\"none\" (brak jakiegokolwiek efektu)."
 
 #: src/org.cafe.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
@@ -640,8 +642,8 @@ msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
 msgstr ""
-"Ustawienie opcji powoduje ignorowanie opcji titlebar_font i używanie zamiast"
-" tego na paskach tytułowych standardowej czcionki systemowej używanej przez "
+"Ustawienie opcji powoduje ignorowanie opcji titlebar_font i używanie zamiast "
+"tego na paskach tytułowych standardowej czcionki systemowej używanej przez "
 "programy."
 
 #: src/org.cafe.croma.gschema.xml:120
@@ -655,8 +657,8 @@ msgid ""
 "set to 0. Also, this option is disabled if the titlebar_uses_desktop_font "
 "option is set to true."
 msgstr ""
-"Napis opisujący czcionkę używaną na paskach tytułowych okien. Rozmiar z tego"
-" opisu będzie jednak użyty tylko, jeśli opcja titlebar_font_size ma wartość "
+"Napis opisujący czcionkę używaną na paskach tytułowych okien. Rozmiar z tego "
+"opisu będzie jednak użyty tylko, jeśli opcja titlebar_font_size ma wartość "
 "0. Opcja ta jest wyłączona, jeśli opcja titlebar_uses_desktop_font jest "
 "ustawiona na wartość true. "
 
@@ -684,13 +686,13 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
-"Styl obramowania jest używany do określenia jak przełączać z jednego obszaru"
-" roboczego do innego na krawędzi przełącznika obszaru roboczego. Kiedy jest "
+"Styl obramowania jest używany do określenia jak przełączać z jednego obszaru "
+"roboczego do innego na krawędzi przełącznika obszaru roboczego. Kiedy jest "
 "ustawione \"brak obramowania\", nic się nie wydarzy jeżeli spróbujesz "
 "przełączyć poza granicę przełącznika obszarów roboczych. Jeżeli ustawisz "
 "\"klasyczny\", będzie użyte stare zachowanie macro: koniec jednego rzędu "
@@ -709,8 +711,8 @@ msgid ""
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr ""
-"Włączenie opcji spowoduje, że w przypadku gdy program lub system wyda sygnał"
-" dźwiękowy, wyświetlony zostanie komunikat; jest ona użyteczna dla "
+"Włączenie opcji spowoduje, że w przypadku gdy program lub system wyda sygnał "
+"dźwiękowy, wyświetlony zostanie komunikat; jest ona użyteczna dla "
 "użytkowników niedosłyszących oraz w środowiskach o dużym natężeniu dźwięku."
 
 #: src/org.cafe.croma.gschema.xml:141
@@ -722,8 +724,8 @@ msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
 msgstr ""
-"Określa, czy programy lub system mogą generować słyszalne sygnały dźwiękowe;"
-" opcja może być używana razem z opcją \"wizualne sygnały dźwiękowe\", "
+"Określa, czy programy lub system mogą generować słyszalne sygnały dźwiękowe; "
+"opcja może być używana razem z opcją \"wizualne sygnały dźwiękowe\", "
 "przedstawiającą sygnały dźwiękowe w formie graficznej."
 
 #: src/org.cafe.croma.gschema.xml:146
@@ -769,7 +771,11 @@ msgid ""
 "windows there can be a perceptible lag in rendering."
 msgstr ""
 " \n"
-"Jeśli ustawione na true, miniatury okien nie będą wyświetlane w wyskakującym oknie Alt-Tab, gdy menedżer tworzenia kompozycji jest włączony. Zamiast tego zostaną wyświetlone ikony aplikacji. Pamiętaj, że na ekranach o wysokiej rozdzielczości z wieloma widocznymi oknami może wystąpić zauważalne opóźnienie w renderowaniu."
+"Jeśli ustawione na true, miniatury okien nie będą wyświetlane w wyskakującym "
+"oknie Alt-Tab, gdy menedżer tworzenia kompozycji jest włączony. Zamiast tego "
+"zostaną wyświetlone ikony aplikacji. Pamiętaj, że na ekranach o wysokiej "
+"rozdzielczości z wieloma widocznymi oknami może wystąpić zauważalne "
+"opóźnienie w renderowaniu."
 
 #: src/org.cafe.croma.gschema.xml:161
 msgid "If true, trade off usability for less resource usage"
@@ -785,31 +791,30 @@ msgid ""
 msgstr ""
 "Ustawienie tej opcji spowoduje, że menedżer Croma ograniczy interakcję z "
 "użytkownikiem poprzez użycie ramek przy skalowaniu okien, wyłączenie "
-"animacji i podobne. Dla wielu użytkowników może być to znaczące ograniczenie"
-" funkcjonalności, ale może pozwolić starszym programom i terminalom na "
+"animacji i podobne. Dla wielu użytkowników może być to znaczące ograniczenie "
+"funkcjonalności, ale może pozwolić starszym programom i terminalom na "
 "normalną pracę, która w innym wypadku byłaby niemożliwa. Ramki skalowania "
 "okien będą jednak wyłączone po włączeniu opcji ułatwień dostępu."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
 "(Niezaimplementowane) Oparcie nawigacji na programach, zamiast na oknach"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Ustawienie tej opcji powoduje, że menedżer Croma pracuje w ramach programów,"
-" nie okien. Pojęcie to jest nieco abstrakcyjne, ale ogólnie ustawienia "
-"oparte na programach przypominają raczej działanie systemu MacOS niż systemu"
-" Windows. Gdy menedżer pracuje w trybie programów, po uaktywnieniu okna "
+"Ustawienie tej opcji powoduje, że menedżer Croma pracuje w ramach programów, "
+"nie okien. Pojęcie to jest nieco abstrakcyjne, ale ogólnie ustawienia oparte "
+"na programach przypominają raczej działanie systemu MacOS niż systemu "
+"Windows. Gdy menedżer pracuje w trybie programów, po uaktywnieniu okna "
 "wszystkie okna danego programu zostaną wysunięte. W trybie programów "
 "kliknięcia aktywujące nie są przekazywane do okien innych programów. "
 "Aktualnie tryb programów nie jest jednak w pełni obsługiwany."
@@ -849,8 +854,8 @@ msgstr "Określa, czy włączyć kafelkowanie."
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 "Włączenie sprawia, że przeciągnięcie i upuszczenie okna na krawędziach "
 "ekranu spowoduje zmianę rozmiaru poziomo tak, by okno zajmowało połowę "
@@ -891,11 +896,11 @@ msgstr "Tryb rozmieszczania okien"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 "Tryb rozmieszczania okien wskazuje jak nowe okna są rozmieszczane. "
 "\"Automatyczny\" oznacza, że system wybierze położenie automatycznie na "
@@ -910,8 +915,8 @@ msgstr "Lista aplikacji ignorowana przez wyświetl-pulpit"
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 "Lista klas oddzielana przecinkiem. Każda działająca aplikacja GUI  wskazana "
 "w danej klasie managera okien będzie ignorowana przez funkcjonalność "
@@ -1011,8 +1016,8 @@ msgstr "Uruchomienie zdefiniowanego polecenia"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1071,8 +1076,8 @@ msgid ""
 "\"disabled\", then there will be no keybinding for this action."
 msgstr ""
 " Przykładowy zapis skrótu ma postać \"<Control>a\" lub \"<Shift><Alt>F1\". "
-"Analiza składniowa jest niezbyt restrykcyjna - pozwala to na używanie małych"
-" i wielkich liter oraz skrótów, takich jak \"<Ctl>\" oraz \"<Ctrl>\". Jeśli "
+"Analiza składniowa jest niezbyt restrykcyjna - pozwala to na używanie małych "
+"i wielkich liter oraz skrótów, takich jak \"<Ctl>\" oraz \"<Ctrl>\". Jeśli "
 "opcji zostanie przypisany specjalny napis \"disabled\" (ang. nieaktywne), "
 "wówczas z czynnością nie będzie powiązany żaden skrót klawiszowy."
 
@@ -1096,8 +1101,8 @@ msgstr ""
 "wielkich liter oraz skrótów, takich jak \"<Ctl>\" oraz \"<Ctrl>\". Jeśli "
 "opcji zostanie przypisany specjalny napis \"disabled\" (wyłączone), wówczas "
 "z czynnością nie będzie powiązany żaden skrót klawiszowy. Działanie skrótu "
-"może zostać odwrócone poprzez naciśnięcie klawisza \"Shift\"; z tego powodu,"
-" do skrótu nie można przypisać klawisza \"Shift\"."
+"może zostać odwrócone poprzez naciśnięcie klawisza \"Shift\"; z tego powodu, "
+"do skrótu nie można przypisać klawisza \"Shift\"."
 
 #: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
@@ -1159,8 +1164,8 @@ msgstr "Polecenia uruchamiane w odpowiedzi na użycie skrótów klawiszowych"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "Klawisze zdefiniowane w /apps/croma/global_keybindings/run_command_N "
 "definiują skróty klawiszowe przypisane odpowiednim poleceniom. Naciskając "
@@ -1184,8 +1189,8 @@ msgstr "Polecenie pobrania zrzutu okna"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "Klucz /apps/croma/global_keybindings/run_command_window_screenshot określa "
@@ -1208,8 +1213,7 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:920
 msgid "Tile window to south-east (lower right) corner of screen"
 msgstr ""
-"Ułóż sąsiadująco okno do południowo-wschodniego (prawego dolnego) rogu "
-"ekranu"
+"Ułóż sąsiadująco okno do południowo-wschodniego (prawego dolnego) rogu ekranu"
 
 #: src/org.cafe.croma.gschema.xml:925
 msgid "Tile window to south-west (lower left) corner of screen"
@@ -1258,7 +1262,8 @@ msgstr "Brak rozszerzenia %s wymaganego przez składanie"
 #: src/core/display.c:348
 #, c-format
 msgid "Failed to open X Window System display '%s'\n"
-msgstr "Otwarcie połączenia z ekranem \"%s\" systemu X Window się nie powiodło\n"
+msgstr ""
+"Otwarcie połączenia z ekranem \"%s\" systemu X Window się nie powiodło\n"
 
 #: src/core/keybindings.c:723
 #, c-format
@@ -1271,7 +1276,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1282,28 +1288,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Nie określono polecenia %d.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Nie określono polecenia terminala.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "<tt>Zmień nazwę obszaru roboczego</tt>"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "Nowa nazwa obszaru roboczego:"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "OK"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Anuluj"
 
@@ -1313,7 +1319,8 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Prawa autorskie (C) 2001-%s Havoc Pennington, Red Hat, Inc., oraz inni\n"
@@ -1322,63 +1329,63 @@ msgstr ""
 "Na program nie udziela się ŻADNYCH GWARANCJI, nawet domyślnej gwarancji\n"
 "PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Rozłącza połączenie z menedżerem sesji"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Podmienia uruchomionego menedżera okien na Croma"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Określa identyfikator zarządzania sesją"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "Używany ekran X"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Inicjuje sesję z zapisanego pliku"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Wypisuje wersję programu"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Synchroniczna komunikacja z serwerem X"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Włącza składanie"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Wyłącza składanie"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
 "Nie przełącza okien na pełny ekran, jeśli są zmaksymalizowane i nie "
 "posiadają dekoracji"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Przejrzenie katalogu z motywami się nie powiodło: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
 msgstr ""
-"Nie można odnaleźć żadnego motywu. Proszę sprawdzić, czy katalog %s istnieje"
-" i zawiera standardowe motywy.\n"
+"Nie można odnaleźć żadnego motywu. Proszę sprawdzić, czy katalog %s istnieje "
+"i zawiera standardowe motywy.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Ponowne uruchomienie się nie powiodło: %s\n"
@@ -1407,8 +1414,8 @@ msgstr "Nie można przetworzyć opis czcionki \"%s\" z klucza GSettings %s\n"
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "Wartość \"%s\", odnaleziona w bazie danych konfiguracji nie opisuje "
 "prawidłowo modyfikatora przycisku myszy\n"
@@ -1427,33 +1434,34 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "Obszar %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "Podekran %d ekranu \"%s\" jest nieprawidłowy\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
 "Na podekranie %d ekranu \"%s\" działa już menedżer okien. Aby zastąpić "
 "działającego menedżera okien, proszę spróbować użyć opcji --replace.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
 "Nie można uzyskać zaznaczenia menedżera okien na podekranie %d ekranu "
 "\"%s\"\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "Na podekranie %d ekranu \"%s\" działa już menedżer okien\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Nie można zwolnić podekranu %d ekranu \"%s\"\n"
@@ -1506,8 +1514,8 @@ msgstr "Nieznany element %s"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
 "Te okna nie obsługują opcji zapisu aktualnego stanu (\"save current "
 "setup\"), więc przy następnym zalogowaniu będą musiały zostać uruchomione "
@@ -1556,7 +1564,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1571,7 +1579,8 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
@@ -1615,7 +1624,8 @@ msgstr "%s (jako inny użytkownik)"
 #: src/core/window-props.c:1499
 #, c-format
 msgid "Invalid WM_TRANSIENT_FOR window 0x%lx specified for %s.\n"
-msgstr "Nieprawidłowa wartość WM_TRANSIENT_FOR dla okna 0x%lx określona w %s.\n"
+msgstr ""
+"Nieprawidłowa wartość WM_TRANSIENT_FOR dla okna 0x%lx określona w %s.\n"
 
 #: src/core/xprops.c:155
 #, c-format
@@ -1642,8 +1652,7 @@ msgstr ""
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "Własność %s odnosząca się do okna 0x%lx zawiera nieprawidłową sekwencję "
 "UTF-8 w %d. elemencie listy\n"
@@ -1653,51 +1662,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Użycie: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Zamknięcie okna"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Menu okna"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr "Menu Okna Aplikacji"
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Minimalizuje okno"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Maksymalizuje okno"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Przywrócenie okna"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Zwiń okno"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Rozwiń okno"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Zatrzymaj okno na wierzchu"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Usuń okno z wierzchu"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Zawsze na widocznym obszarze roboczym"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Umieść okno tylko na jednym obszarze roboczym"
 
@@ -1805,6 +1814,7 @@ msgstr "Przenieś do innego _obszaru"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1813,6 +1823,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1821,6 +1832,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1829,6 +1841,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1837,6 +1850,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1845,6 +1859,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1853,6 +1868,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1861,6 +1877,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1869,6 +1886,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1877,58 +1895,60 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d na %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "góra"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "dół"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "lewy"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "prawy"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "Rozmiar ramki nie określa wymiaru \"%s\""
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "Rozmiar ramki nie określa wymiaru \"%s\" dla krawędzi \"%s\""
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr ""
 "Współczynnik proporcji przycisku %g nie mieści się w rozsądnych granicach"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "Rozmiar ramki nie określa liczby przycisków"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Gradienty powinny się składać co najmniej z dwóch kolorów"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
@@ -1938,16 +1958,16 @@ msgstr ""
 "oraz kolor zapasowy w nawiasie, np. ctk:custom(foo,bar); nie można "
 "przetworzyć \"%s\""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
-"Niepoprawny znak '%c' w parametrze color_name od ctk:custom, tylko "
-"A-Za-z0-9-_ są prawidłowe."
+"Niepoprawny znak '%c' w parametrze color_name od ctk:custom, tylko A-Za-z0-9-"
+"_ są prawidłowe."
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
@@ -1956,36 +1976,36 @@ msgstr ""
 "Forcafem Ctk:custom jest \"ctk:custom(color_name,fallback)\", \"%s\" nie "
 "pasuje do formatu"
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "Specyfikacja koloru CTK+ musi zawierać stan w nawiasach kwadratowych, np. "
 "ctk:fg[NORMAL], gdzie NORMAL jest nazwą stanu; nie można przetworzyć \"%s\""
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "Specyfikacja koloru CTK+ musi po nazwie stanu zawierać zamykający nawias "
 "kwadratowy, np. ctk:fg[NORMAL], gdzie NORMAL jest nazwą stanu; nie można "
 "przetworzyć \"%s\""
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Niezrozumiały stan \"%s\" w specyfikacji koloru"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Niezrozumiała definicja koloru \"%s\" w specyfikacji koloru"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1994,64 +2014,65 @@ msgstr ""
 "Forcafem przenikania jest \"blend/bg_color/fg_color/alpha\", \"%s\" nie "
 "pasuje do formatu"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Nie można przetworzyć wartości alfa \"%s\" w przenikającym kolorze"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr ""
 "Wartość alfa \"%s\" w przenikającym kolorze nie zawiera się pomiędzy 0,0 i "
 "1,0"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Forcafem przenikania jest \"shade/base_color/factor\", \"%s\" nie pasuje do "
 "formatu"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr ""
 "Nie można przetworzyć współczynnika przenikania \"%s\" w przenikającym "
 "kolorze"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Współczynnik przenikania \"%s\" w przenikającym kolorze jest ujemny"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Nie można przetworzyć koloru \"%s\""
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "Wyrażenie określające współrzędne zawiera niedozwolony znak \"%s\""
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
 "Wyrażenie określające współrzędne zawiera liczbę zmiennoprzecinkową \"%s\", "
 "której nie można przetworzyć"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr ""
 "Wyrażenie określające współrzędne zawiera liczbę całkowitą \"%s\", której "
 "nie można przetworzyć"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
@@ -2060,40 +2081,41 @@ msgstr ""
 "Wyrażenie określające współrzędne zawiera nieznany operator na początku "
 "tekstu: \"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr ""
 "Wyrażenie określające współrzędne jest puste lub nie można go rozpoznać"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Wyrażenie opisujące położenie zawiera dzielenie przez zero"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr ""
 "Wyrażenie opisujące położenie używa operatora dzielenia modulo z argumentem "
 "zmiennoprzecinkowym"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr ""
 "Wyrażenie opisujące położenie zawiera operand \"%s\" w miejscu, w którym "
 "oczekiwano argumentu"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr ""
-"Wyrażenie opisujące położenie zawiera operand w miejscu, w którym oczekiwano"
-" operatora"
+"Wyrażenie opisujące położenie zawiera operand w miejscu, w którym oczekiwano "
+"operatora"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "Wyrażenie opisujące położenie kończy się operatorem zamiast operandem"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
@@ -2102,39 +2124,39 @@ msgstr ""
 "Wyrażenie opisujące położenie zawiera argument \"%c\" bezpośrednio po "
 "argumencie \"%c\" bez rozdzielającego ich operand"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
-msgstr "Wyrażenie opisujące położenie zawiera nieznaną zmienną lub stałą \"%s\""
+msgstr ""
+"Wyrażenie opisujące położenie zawiera nieznaną zmienną lub stałą \"%s\""
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "Parser wyrażeń określających współrzędne przepełnił swój bufor."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr ""
 "Wyrażenie opisujące położenie zawiera nawias zamykający bez odpowiadającego "
 "mu nawiasu otwierającego"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr ""
-"Wyrażenie opisujące położenie zawiera nawias otwierający bez odpowiadającego"
-" mu nawiasu zamykającego"
+"Wyrażenie opisujące położenie zawiera nawias otwierający bez odpowiadającego "
+"mu nawiasu zamykającego"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr ""
 "Wyrażenie opisujące położenie nie zawiera żadnych operatorów ani operandów"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Motyw zawiera wyrażenie, przy którego obliczaniu wystąpił błąd: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2143,23 +2165,25 @@ msgstr ""
 "Przy tym stylu ramki należy podać <button function=\"%s\" state=\"%s\" "
 "draw_ops=\"cokolwiek\"/>"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "Brak <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"cokolwiek\"/>"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"Brak <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"cokolwiek\"/>"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Wczytanie motywu \"%s\" się nie powiodło: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Nie określono elementu <%s> dla motywu \"%s\""
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2168,20 +2192,22 @@ msgstr ""
 "Przy typie okna \"%s\" w motywie \"%s\" nie ustawiono stylu ramki. Należy "
 "dodać element <window type=\"%s\" style_set=\"cokolwiek\"/>"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
 "Stałe definiowane przez użytkownika powinny rozpoczynać się wielką literą, "
 "natomiast \"%s\" nie spełnia tego warunku"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "Stała \"%s\" została już określona"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2247,11 +2273,11 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"Nieprawidłowy rozmiar tytułu \"%s\" (musi on być jedną z wartości: xx-small,"
-" x-small, small, medium, large, x-large, xx-large)\n"
+"Nieprawidłowy rozmiar tytułu \"%s\" (musi on być jedną z wartości: xx-small, "
+"x-small, small, medium, large, x-large, xx-large)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2443,7 +2469,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
 "Element <%s> nie powinien zawierać atrybutu \"resize\" przy stanie "
 "zmaksymalizowanym"
@@ -2470,8 +2497,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
 "Element <button> nie może zawierać dwóch draw_ops (motyw zawiera atrybut "
 "draw_ops i element <draw_ops> lub dwa elementy)"
@@ -2507,16 +2534,15 @@ msgstr ""
 #, c-format
 msgid "Outermost element in theme must be <metacity_theme> not <%s>"
 msgstr ""
-"Najbardziej zewnętrzny element w motywie musi być <metacity_theme> a nie "
-"<%s>"
+"Najbardziej zewnętrzny element w motywie musi być <metacity_theme> a nie <%s>"
 
 #: src/ui/theme-parser.c:3637
 #, c-format
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
 msgstr ""
-"Element <%s> nie jest dopuszczalny wewnątrz elementu "
-"name/author/date/description"
+"Element <%s> nie jest dopuszczalny wewnątrz elementu name/author/date/"
+"description"
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2528,8 +2554,8 @@ msgstr "Element <%s> nie jest dopuszczalny wewnątrz elementu <constant>"
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
 msgstr ""
-"Element <%s> nie jest dopuszczalny wewnątrz elementu "
-"distance/border/aspect_ratio"
+"Element <%s> nie jest dopuszczalny wewnątrz elementu distance/border/"
+"aspect_ratio"
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2576,96 +2602,96 @@ msgstr "_OK"
 msgid "This is a sample message in a sample dialog"
 msgstr "To jest przykładowy komunikat w prostym oknie dialogowym"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Imitacja elementu menu %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Okno zawierające tylko krawędzie"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Pasek"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Zwykłe okno programu"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Okno dialogowe"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Modalne okno dialogowe"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Paleta narzędziowa"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Menu rozwijane"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Krawędź"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr "Dołączone Modalne Okno"
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Test układu przycisków %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g milisekundy do narysowania jednej ramki okna"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Użycie: methacity-theme-viewer [NAZWA_MOTYWU]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Błąd podczas wczytywania motywu: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "Wczytano motyw \"%s\" w ciągu %g sekund\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Zwykła czcionka tytułu"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Mała czcionka tytułu"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Duża czcionka tytułu"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Układy przycisków"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Test wydajności"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Tutaj znajduje się tytuł okna"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "

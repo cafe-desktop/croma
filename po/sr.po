@@ -2,24 +2,25 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Мирослав Николић <miroslavnikolic@rocketmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>, 2020\n"
 "Language-Team: Serbian (https://www.transifex.com/cafe/teams/13566/sr/)\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sr\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
 msgid "Desktop"
@@ -378,8 +379,8 @@ msgstr "Да ли ће мењати величину десним дугмето
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Изаберите ово да промените величину десним тастером и да прикажете изборник "
 "средњим дугметом док држите притиснут тастер дат кључем "
@@ -416,8 +417,8 @@ msgstr ""
 "угао прозора од десног, а дугмићи су раздвојени зарезима. Дуплирање дугмића "
 "није дозвољено. Непознати називи дугмића се занемарују тако да дугмићи могу "
 "да буду додати у будућим издањима марка а да не наруше подешавања старијих "
-"издања. Могу се користити специјалне ознаке за убацивање простора између два"
-" суседна дугмета."
+"издања. Могу се користити специјалне ознаке за убацивање простора између два "
+"суседна дугмета."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -427,16 +428,15 @@ msgstr "Начин фокуса прозора"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Начин фокусирања прозора показује како ће прозори бити активирани. Има три "
 "могуће вредности: „click“ — значи да прозор мора бити притиснут да би добио "
 "фокус, „sloppy“ — значи да прозор добија фокус када показивач миша уђе у "
 "прозор и „mouse“ — значи да ће прозор бити фокусиран када показивачка "
-"стрелица миша уђе у прозор и бити одфокусиран када стрелица изађе из "
-"прозора."
+"стрелица миша уђе у прозор и бити одфокусиран када стрелица изађе из прозора."
 
 #: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
@@ -445,8 +445,8 @@ msgstr "Контролише како нови прозори добијају �
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Ова опција пружа додатну контролу над начином на који нови прозори улазе у "
@@ -461,26 +461,26 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
-"Поништавање ове опције може проузроковати неисправно понашање програма, тако"
-" да није препоручљиво. Многе радње (нпр. клик усред области клијента, "
+"Поништавање ове опције може проузроковати неисправно понашање програма, тако "
+"да није препоручљиво. Многе радње (нпр. клик усред области клијента, "
 "померање или промена величине прозора) обично уједно и издижу прозор. "
 "Искључивање ове опције, а што се не препоручује, ће издвојити подизање "
 "прозора од осталих радњи и занемариће програмске захтеве за издизање "
@@ -490,13 +490,13 @@ msgstr ""
 "наслова прозора или преко посебних порука из пребацивача радних површина "
 "(као што је укључивање захтева из програмчета са списком задатака). Ова "
 "опција је тренутно искључена у режиму „click-to-focus“ (клик за фокус). "
-"Списак начина за подизање прозора када је искључено „raise_on_click“ "
-"(подигни на клик) не укључује захтеве из програма за подизање прозора, те ће"
-" такви захтеви бити занемарени без обзира на разлог. Уколико пишете "
-"сопствени програм и добијете примедбе од стране корисника како ваш програм "
-"не ради са овом опцијом искљученом, реците им да је њихова кривица за "
-"неисправан рад управника прозорима и да поново изаберу ову опцију или да се "
-"навикну на пропратне појаве."
+"Списак начина за подизање прозора када је искључено "
+"„raise_on_click“ (подигни на клик) не укључује захтеве из програма за "
+"подизање прозора, те ће такви захтеви бити занемарени без обзира на разлог. "
+"Уколико пишете сопствени програм и добијете примедбе од стране корисника "
+"како ваш програм не ради са овом опцијом искљученом, реците им да је њихова "
+"кривица за неисправан рад управника прозорима и да поново изаберу ову опцију "
+"или да се навикну на пропратне појаве."
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -508,8 +508,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -518,8 +518,8 @@ msgstr ""
 "прозор, „toggle_maximize“ — што ће увећати или поништити увећање прозора, "
 "„toggle_maximize_horizontally“ и „toggle_maximize_vertically“ — што ће "
 "увећати или поништити увећање прозора само хоризонтално или усправно, "
-"„minimize“ — што ће умањити прозор, „shade“ — што ће замотати прозор, „menu“"
-" — што ће приказати изборник прозора, „lower“ — што ће поставити прозор иза "
+"„minimize“ — што ће умањити прозор, „shade“ — што ће замотати прозор, „menu“ "
+"— што ће приказати изборник прозора, „lower“ — што ће поставити прозор иза "
 "осталих и „none“ — чиме се не обавља никаква радња."
 
 #: src/org.cafe.croma.gschema.xml:90
@@ -532,8 +532,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -542,8 +542,8 @@ msgstr ""
 "прозор, „toggle_maximize“ — што ће увећати или поништити увећање прозора, "
 "„toggle_maximize_horizontally“ и „toggle_maximize_vertically“ — што ће "
 "увећати или поништити увећање прозора само хоризонтално или усправно, "
-"„minimize“ — што ће умањити прозор, „shade“ — што ће замотати прозор, „menu“"
-" — што ће приказати изборник прозора, „lower“ — што ће поставити прозор иза "
+"„minimize“ — што ће умањити прозор, „shade“ — што ће замотати прозор, „menu“ "
+"— што ће приказати изборник прозора, „lower“ — што ће поставити прозор иза "
 "осталих и „none“ — чиме се не обавља никаква радња."
 
 #: src/org.cafe.croma.gschema.xml:95
@@ -556,8 +556,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -566,8 +566,8 @@ msgstr ""
 "прозор, „toggle_maximize“ — што ће увећати или поништити увећање прозора, "
 "„toggle_maximize_horizontally“ и „toggle_maximize_vertically“ — што ће "
 "увећати или поништити увећање прозора само хоризонтално или усправно, "
-"„minimize“ — што ће умањити прозор, „shade“ — што ће замотати прозор, „menu“"
-" — што ће приказати изборник прозора, „lower“ — што ће поставити прозор иза "
+"„minimize“ — што ће умањити прозор, „shade“ — што ће замотати прозор, „menu“ "
+"— што ће приказати изборник прозора, „lower“ — што ће поставити прозор иза "
 "осталих и „none“ — чиме се не обавља никаква радња."
 
 #: src/org.cafe.croma.gschema.xml:100
@@ -646,8 +646,8 @@ msgid ""
 "prevent making the desktop unusable by accidentally asking for too many "
 "workspaces."
 msgstr ""
-"Број радних простора. Мора бити већи од нуле, и имати фиксиран максимум како"
-" бисте спречили да случајно уништите радну површину тражећи превише радних "
+"Број радних простора. Мора бити већи од нуле, и имати фиксиран максимум како "
+"бисте спречили да случајно уништите радну површину тражећи превише радних "
 "простора."
 
 #: src/org.cafe.croma.gschema.xml:131
@@ -660,8 +660,8 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
@@ -684,8 +684,8 @@ msgid ""
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr ""
-"Укључује визуелни приказ када програм или систем „зазвони“; корисно у бучним"
-" условима."
+"Укључује визуелни приказ када програм или систем „зазвони“; корисно у бучним "
+"условима."
 
 #: src/org.cafe.croma.gschema.xml:141
 msgid "System Bell is Audible"
@@ -715,8 +715,8 @@ msgid ""
 msgstr ""
 "Говори Марку како да спроведе визуелну индикацију када системско звонце или "
 "неки други индикатор програма зазвони. Тренутно су могуће две вредности, "
-"„fullscreen“ којим цео екран трепери црно-бело, и „frame_flash“ када трепери"
-" само насловна трака прозора који је зазвонио. Уколико није познат програм "
+"„fullscreen“ којим цео екран трепери црно-бело, и „frame_flash“ када трепери "
+"само насловна трака прозора који је зазвонио. Уколико није познат програм "
 "који је зазвонио (као што је то обично случај са „системским звонцетом“), "
 "трепереће насловна трака прозора који је тренутно у жижи."
 
@@ -740,8 +740,8 @@ msgid ""
 "windows there can be a perceptible lag in rendering."
 msgstr ""
 "Ако је изабрано, сличице прозора се неће приказивати у искачућем „алт-таб“ "
-"прозору када је укључен управник слагања. Уместо тога биће приказане иконице"
-" програма. Знајте да се на екранима високе резолуције са превише отворених "
+"прозору када је укључен управник слагања. Уместо тога биће приказане иконице "
+"програма. Знајте да се на екранима високе резолуције са превише отворених "
 "видљивих прозора може приметити кашњење у исцртавању."
 
 #: src/org.cafe.croma.gschema.xml:161
@@ -756,23 +756,22 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Ако је изабрано, Марко ће кориснику приказати мање података и мање осећаја о"
-" „непосредном управљању“, употребом линија, избегавањем анимација или другим"
-" средствима. Ово је значајни недостатак по питању употребљивости за многе "
+"Ако је изабрано, Марко ће кориснику приказати мање података и мање осећаја о "
+"„непосредном управљању“, употребом линија, избегавањем анимација или другим "
+"средствима. Ово је значајни недостатак по питању употребљивости за многе "
 "кориснике, али може омогућити старим програмима и терминалским серверима да "
 "раде када би иначе били непрактични. Такође, употреба линија је онемогућена "
 "када је укључена приступачност."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr "(Није примењено) Навигација ради у контексту програма а не прозора"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
@@ -787,8 +786,7 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
-msgstr ""
-"Искључује нефункционалности које захтевају стари или оштећени програми"
+msgstr "Искључује нефункционалности које захтевају стари или оштећени програми"
 
 #: src/org.cafe.croma.gschema.xml:172
 msgid ""
@@ -798,8 +796,8 @@ msgid ""
 "run any misbehaving applications."
 msgstr ""
 "Неки програми не поштују спецификације на начин који доводи до неисправног "
-"функционисања управника прозора. Ово подешавање поставља Марко у строг режим"
-" рада који доприноси правилнијем понашању, под условом да се не покушава "
+"функционисања управника прозора. Ово подешавање поставља Марко у строг режим "
+"рада који доприноси правилнијем понашању, под условом да се не покушава "
 "покретање неисправних програма."
 
 #: src/org.cafe.croma.gschema.xml:176
@@ -821,8 +819,8 @@ msgstr "Да ли ће укључити поплочавање прозора"
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 "Ако је укључено, пуштање прозора на ивице екрана увећава их усправно и мења "
 "им величину водоравно да покрију половину доступног простора. Превлачење и "
@@ -859,11 +857,11 @@ msgstr "Режим постављања прозора"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 "Режим постављања прозора указује како се постављају нови прозори. "
 "„automatic“ — значи да систем самостално бира положај у зависности од "
@@ -878,8 +876,8 @@ msgstr "Списак програма које занемарује „show-desk
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 "Зарезом раздвојен списак класа. Сваки покренути програм графичког "
 "корисничког сучеља упутан на дату класу управника прозора биће занемарен "
@@ -976,18 +974,18 @@ msgstr "Покреће одређену наредбу"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
 "keybinding for this action."
 msgstr ""
-"Пречица која покреће одговарајуће-набројану наредбу у "
-"„/apps/croma/keybinding“. Запис изгледа као „<Control>a“ или "
-"„<Shift><Alt>F1“. Обрађивач је прилично слободан и омогућава мала или велика"
-" слова, а такође и скраћенице као „<Ctl>“ и „<Ctrl>“. Ако подесите опцију на"
-" посебну ниску „disabled“ (искључено), тада неће бити пречице за ову радњу."
+"Пречица која покреће одговарајуће-набројану наредбу у „/apps/croma/"
+"keybinding“. Запис изгледа као „<Control>a“ или „<Shift><Alt>F1“. Обрађивач "
+"је прилично слободан и омогућава мала или велика слова, а такође и "
+"скраћенице као „<Ctl>“ и „<Ctrl>“. Ако подесите опцију на посебну ниску "
+"„disabled“ (искључено), тада неће бити пречице за ову радњу."
 
 #: src/org.cafe.croma.gschema.xml:470 src/org.cafe.croma.gschema.xml:475
 #: src/org.cafe.croma.gschema.xml:480 src/org.cafe.croma.gschema.xml:485
@@ -1035,8 +1033,8 @@ msgid ""
 msgstr ""
 "Запис изгледа као „<Control>a“ или „<Shift><Alt>F1“. Обрађивач је прилично "
 "слободан и омогућава мала или велика слова, а такође и скраћенице као "
-"„<Ctl>“ и „<Ctrl>“. Ако подесите опцију на посебну ниску „disabled“ "
-"(искључено), тада неће бити пречице за ову радњу."
+"„<Ctl>“ и „<Ctrl>“. Ако подесите опцију на посебну ниску "
+"„disabled“ (искључено), тада неће бити пречице за ову радњу."
 
 #: src/org.cafe.croma.gschema.xml:555 src/org.cafe.croma.gschema.xml:560
 #: src/org.cafe.croma.gschema.xml:565 src/org.cafe.croma.gschema.xml:570
@@ -1055,10 +1053,10 @@ msgid ""
 msgstr ""
 "Запис изгледа као „<Control>a“ или „<Shift><Alt>F1“. Обрађивач је прилично "
 "слободан и омогућава мала или велика слова, а такође и скраћенице као "
-"„<Ctl>“ и „<Ctrl>“. Ако подесите опцију на посебну ниску „disabled“ "
-"(искључено), тада неће бити пречице за ову радњу. Ова пречица се може "
-"преокренути држањем тастера „shift“; међутим, „shift“ не може бити један од "
-"тастера које садржи пречица."
+"„<Ctl>“ и „<Ctrl>“. Ако подесите опцију на посебну ниску "
+"„disabled“ (искључено), тада неће бити пречице за ову радњу. Ова пречица се "
+"може преокренути држањем тастера „shift“; међутим, „shift“ не може бити "
+"један од тастера које садржи пречица."
 
 #: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
@@ -1118,8 +1116,8 @@ msgstr "Наредбе за покретање као одговор на све
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "Кључ „/apps/croma/global_keybindings/run_command_N“ одређује комбинације "
 "тастера које одговарају овим наредбама. Притиском комбинације тастера за "
@@ -1143,12 +1141,12 @@ msgstr "Наредба снимка екрана прозора"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
-"Кључ „/apps/croma/global_keybindings/run_command_window_screenshot“ одређује"
-" комбинацију тастера која покреће наредбу наведену овим подешавањем."
+"Кључ „/apps/croma/global_keybindings/run_command_window_screenshot“ одређује "
+"комбинацију тастера која покреће наредбу наведену овим подешавањем."
 
 #: src/org.cafe.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
@@ -1190,8 +1188,8 @@ msgid ""
 "You may choose to wait a short while for it to continue or force the "
 "application to quit entirely."
 msgstr ""
-"Можете мало сачекати док се програм не сабере или га приморати да прекине са"
-" радом у потпуности."
+"Можете мало сачекати док се програм не сабере или га приморати да прекине са "
+"радом у потпуности."
 
 #: src/core/delete.c:110
 msgid "_Wait"
@@ -1227,7 +1225,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1238,28 +1237,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Ниједна наредба „%d“ није одређена.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Није одређена ниједна наредба терминала.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "<tt>Преименуј радни простор</tt>"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "Нови назив радног простора:"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "У реду"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Откажи"
 
@@ -1269,61 +1268,63 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "марко %s\n"
 "Ауторска права (C) 2001–%s Хавок Пенингтон, Ред Хет, Инц., и остали\n"
 "Ово је слободан програм; погледајте изворни код за услове коришћења.\n"
-"Нема НИКАКВЕ гаранције; чак ни о ТРЖИШНОЈ ВРЕДНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.\n"
+"Нема НИКАКВЕ гаранције; чак ни о ТРЖИШНОЈ ВРЕДНОСТИ или ПРИЛАГОЂЕНОСТИ "
+"ОДРЕЂЕНОЈ НАМЕНИ.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Искључује везу са управником сесије"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Мења текућег управника прозорима Марком"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Наводи ИБ управника сесије"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "Који ће X екран бити коришћен"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Покреће сесију из датотеке чувања"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Исписује издање"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Усаглашава позиве Икса"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Укључује композицију"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Искључује композицију"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
 "Не поставља преко целог екрана прозоре који нису увећани и не поседују оквир"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Нисам успео да прочитам директоријум тема: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1331,7 +1332,7 @@ msgstr ""
 "Не могу да пронађем тему! Проверите да ли постоји „%s“ и да ли садржи "
 "уобичајене теме.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Нисам успео поново да покренем: %s\n"
@@ -1360,8 +1361,8 @@ msgstr "Не могу да обрадим опис „%s“ из кључа „%
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "„%s“ је пронађен у бази подешавања што није исправна вредност за типку која "
 "мења понашање тастера миша\n"
@@ -1378,31 +1379,32 @@ msgstr "„%s“ из базе са подешавањима није испра
 msgid "Workspace %d"
 msgstr "Радни простор бр. %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "Приказ „%d“ на екрану „%s“ није исправан\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
-"Приказ „%d“ на екрану „%s“ већ има управника прозора; покушајте да користите"
-" опцију „--replace“ да замените тренутног управника прозора.\n"
+"Приказ „%d“ на екрану „%s“ већ има управника прозора; покушајте да користите "
+"опцију „--replace“ да замените тренутног управника прозора.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr "Не могу да добијем избор управника прозора на приказу %d екрана „%s“\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "Приказ %d на екрану „%s“ већ има управника прозора\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Не могу да отпустим приказ %d на екрану „%s“\n"
@@ -1454,8 +1456,8 @@ msgstr "Непознат елемент „%s“"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
 "Ови прозори не подржавају могућност „сачувај тренутна подешавања“ па ћете "
 "морати ручно да их поново покренете када се следећи пут пријавите."
@@ -1502,7 +1504,7 @@ msgid "Croma"
 msgstr "Метасити"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1517,15 +1519,16 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
 "%d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr ""
 "Прозор „%s“ је поставио „MWM“ што наговештава да није променљиве величине, "
-"али је поставио најмању величину %d x %d и највећу величину %d x %d што нема"
-" много смисла.\n"
+"али је поставио најмању величину %d x %d и највећу величину %d x %d што нема "
+"много смисла.\n"
 
 #: src/core/window-props.c:306
 #, c-format
@@ -1586,8 +1589,7 @@ msgstr "Својство „%s“ прозора 0x%lx садржи неиспр
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "Својство „%s“ прозора 0x%lx садржи неисправан УТФ-8 за ставку „%d“ на "
 "списку\n"
@@ -1597,51 +1599,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Употреба: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Затвори прозор"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Изборник прозора"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr "Изборник програма прозора"
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Умањи прозор"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Увећај прозор"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Врати величину прозору"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Замотај прозор"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Одмотај прозор"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Стави прозор у први план"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Склони прозор из првог плана"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Увек на приказаном радном простору"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Стави прозор само на један радни простор"
 
@@ -1749,6 +1751,7 @@ msgstr "Премести на други радни _простор"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Шифт"
@@ -1757,6 +1760,7 @@ msgstr "Шифт"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ктрл"
@@ -1765,6 +1769,7 @@ msgstr "Ктрл"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Алт"
@@ -1773,6 +1778,7 @@ msgstr "Алт"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Мета"
@@ -1781,6 +1787,7 @@ msgstr "Мета"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Супер"
@@ -1789,6 +1796,7 @@ msgstr "Супер"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Хипер"
@@ -1797,6 +1805,7 @@ msgstr "Хипер"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Мод2"
@@ -1805,6 +1814,7 @@ msgstr "Мод2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Мод3"
@@ -1813,6 +1823,7 @@ msgstr "Мод3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Мод4"
@@ -1821,57 +1832,59 @@ msgstr "Мод4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Мод5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "горњу"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "доњу"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "леви"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "десни"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "геометрија оквира не подешава „%s“ димензију"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "геометрија оквира не подешава „%s“ димензију за ивицу „%s“"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "Однос размере дугмета %g није разуман"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "Геометрија оквира не подешава величину дугмића"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Градијенти морају имати најмање две боје"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
@@ -1880,16 +1893,16 @@ msgstr ""
 "Спецификација произвољне ГТК боје мора имати назив боје и пребацивање у "
 "загради, на пример ctk:custom(foo,bar); не могу да обрадим „%s“"
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 "Неисправан знак „%c“ параметра назив_боје у „ctk:custom“, иасправни су само "
 "A-Za-z0-9-_"
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
@@ -1898,35 +1911,35 @@ msgstr ""
 "Гтк:произвољни формат је „ctk:custom(назив_боје,пребацивање)“, „%s“ се не "
 "уклапа у формат"
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "Одредба Гтк боје мора имати стање у загради, на пример „ctk:fg[NORMAL]“ где "
 "је „NORMAL“ стање; не могу да обрадим „%s“"
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Одредба Гтк боје мора имати затворену заграду након стања, на пример "
-"„ctk:fg[NORMAL]“ где је „NORMAL“ стање; не могу да обрадим „%s“"
+"Одредба Гтк боје мора имати затворену заграду након стања, на пример „ctk:"
+"fg[NORMAL]“ где је „NORMAL“ стање; не могу да обрадим „%s“"
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Не могу да разумем стање „%s“ у одредби боје"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Не могу да разумем састојак боје „%s“ у одредби боје"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1935,55 +1948,56 @@ msgstr ""
 "Запис смеше је „blend/bg_color/fg_color/alpha“, „%s“ се не уклапа у тражени "
 "запис"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Не могу да обрадим алфа вредност „%s“ у смешаној боји"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "Алфа вредност „%s“ у смешаној боји није између 0.0 и 1.0"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr "Запис сенке је „shade/base_color/factor“, „%s“ се не уклапа у запис"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Не могу да обрадим чинилац сенке „%s“ у засенченој боји"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Чинилац сенке „%s“ у засенченој боји је негативан"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Не могу да обрадим боју „%s“"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "Израз са координатама садржи знак „%s“ што није дозвољено"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
 "Израз са координатама садржи децимални број „%s“ што не може бити обрађено"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr "Израз са координатама садржи цели број „%s“ што не може бити обрађено"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
@@ -1991,35 +2005,36 @@ msgid ""
 msgstr ""
 "Израз са координатама садржи непознати оператор на почетку овог текста: „%s“"
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "Израз са координатама је био празан или неразумљив"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Израз са координатама резултира у дељењу нулом"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr ""
 "Израз са координатам покушава да користи оператор остатка при дељењу за "
 "децимални број"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "Израз са координатама има оператор „%s“ где је очекиван операнд"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "Израз са координатама имаше операнд где је очекиван оператор"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "Израз са координатама је завршио са оператором уместо са операндом"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
@@ -2028,34 +2043,33 @@ msgstr ""
 "Израз са координатама има оператор „%c“, а затим оператор „%c“ без операнда "
 "између"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "Израз са координатама има непознату променљиву или константу „%s“"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "Израз са координатама је био превелики за смештај и обраду."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr "Израз са координатама има затворене заграде без отворених заграда"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "Израз са координатама има отворену заграду без затворене заграде"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "Израз са координатама изгледа да нема ни један оператор или операнд"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Тема садржи израз који резултира грешком: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2064,23 +2078,25 @@ msgstr ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> мора бити "
 "наведен за овај стил оквира"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "Недостаје <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"Недостаје <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Нисам успео да учитам тему „%s“: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Није подешен елемент <%s> за тему „%s“"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2089,20 +2105,22 @@ msgstr ""
 "Није подешен стил оквира за прозор врсте „%s“ у теми „%s“, додајте елемент "
 "<window type=\"%s\" style_set=\"whatever\"/>"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
 "Константе које је одредио корисник морају почети великим словом; „%s“ не "
 "почиње"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "Константа „%s“ је већ одређена"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2168,11 +2186,11 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"Нетачно скалирање наслова „%s“ (мора бити један од следећих: xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Нетачно скалирање наслова „%s“ (мора бити један од следећих: xx-small,x-"
+"small,small,medium,large,x-large,xx-large)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2362,7 +2380,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr "Не треба имати „resize“ атрибут у елементу <%s> за увећана стања"
 
 #: src/ui/theme-parser.c:3203 src/ui/theme-parser.c:3247
@@ -2387,11 +2406,11 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"Не могу постојати два „draw_ops“ за елемент <button> (тема наводи „draw_ops“"
-" атрибут и <draw_ops> елемент, или наводи два елемента)"
+"Не могу постојати два „draw_ops“ за елемент <button> (тема наводи „draw_ops“ "
+"атрибут и <draw_ops> елемент, или наводи два елемента)"
 
 #: src/ui/theme-parser.c:3427
 msgid ""
@@ -2442,8 +2461,7 @@ msgstr "Елемент <%s> није дозвољен унутар елемен�
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
 msgstr ""
-"Елемент <%s> није дозвољен унутар елемената „distance, border и "
-"aspect_ratio“"
+"Елемент <%s> није дозвољен унутар елемената „distance, border и aspect_ratio“"
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2489,96 +2507,96 @@ msgstr "У _реду"
 msgid "This is a sample message in a sample dialog"
 msgstr "Ово је пример поруке у пробном прозорчету"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Лажна ставка изборника %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Прозор само са ивицом"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Трака"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Обичан прозор програма"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Прозорче"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Важно прозорче"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Палета алата"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Откинути изборник"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Ивица"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr "Приложено важно прозорче"
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Проба распореда дугмића %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g милисекунде за исцртавање оквира једног прозора"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Употреба: „croma-theme-viewer“ [НАЗИВТЕМЕ]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Грешка учитавања теме: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "Учитана је тема „%s“ за %g секунде\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Обичан словни лик наслова"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Мали словни лик наслова"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Велики словни лик наслова"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Распоред дугмића"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Провера брзине"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Овде иде наслов прозора"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "

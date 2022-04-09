@@ -2,7 +2,7 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com>, 2020
 # Febrian Setianto (Feber) <febrian.setianto@gmail.com>, 2020
@@ -16,19 +16,19 @@
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Muhammad Herdiansyah <herdiansyah@openmailbox.org>, 2020
 # Andika Triwidada <andika@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>, 2020\n"
 "Language-Team: Indonesian (https://www.transifex.com/cafe/teams/13566/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -368,8 +368,7 @@ msgstr "Pindahkan jendela ke area kerja bawah"
 #: src/org.cafe.croma.gschema.xml:50
 msgid "Modifier to use for modified window click actions"
 msgstr ""
-"Tombol yang digunakan untuk menjalankan suatu perintah apabila jendela "
-"diklik"
+"Tombol yang digunakan untuk menjalankan suatu perintah apabila jendela diklik"
 
 #: src/org.cafe.croma.gschema.xml:51
 msgid ""
@@ -380,8 +379,8 @@ msgid ""
 "\"<Super>\" for example."
 msgstr ""
 "Mengklik sebuah jendela sambil menekan tombol pengubah ini akan memindahkan "
-"jendela (klik kiri), mengubah ukuran jendela (klik tengah), atau menampilkan"
-" menu jendela (klik kanan). Operasi klik tengah dan kanan dapat ditukar "
+"jendela (klik kiri), mengubah ukuran jendela (klik tengah), atau menampilkan "
+"menu jendela (klik kanan). Operasi klik tengah dan kanan dapat ditukar "
 "dengan menggunakan kunci \"resize_with_right_button\". Pengubah dinyatakan "
 "misalnya sebagai \"<Alt>\" atau \"<Super>\"."
 
@@ -392,8 +391,8 @@ msgstr "Apakah akan mengubah ukuran dengan tombol kanan"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Tata ini ke true untuk mengubah ukuran dengan tombol kanan dan menampilkan "
 "suatu menu dengan tombol tengah ketika menahan kunci yang diberikan di "
@@ -426,10 +425,10 @@ msgid ""
 "some space between two adjacent buttons."
 msgstr ""
 "Pengaturan tombol pada bilah judul. Nilai di sini harus berupa string, "
-"misalnya \"menu:minimize,maximize,spacer,close\"; tanda titik dua memisahkan"
-" pojok kiri jendela dari pojok kanan, dan nama tombol dipisahkan dengan "
-"tanda koma. Tombol duplikat tidak diperbolehkan. Nama tombol yang tidak "
-"dikenal akan diabaikan sehingga di kemudian hari tombol tersebut akan dapat "
+"misalnya \"menu:minimize,maximize,spacer,close\"; tanda titik dua memisahkan "
+"pojok kiri jendela dari pojok kanan, dan nama tombol dipisahkan dengan tanda "
+"koma. Tombol duplikat tidak diperbolehkan. Nama tombol yang tidak dikenal "
+"akan diabaikan sehingga di kemudian hari tombol tersebut akan dapat "
 "ditambahkan bila memang diperlukan tanpa harus merusak konfigurasi Croma "
 "yang ada sekarang. Suatu tag khusus spacer dapat dipakai untuk menyisipkan "
 "ruang antara dua tombol bersebelahan."
@@ -442,9 +441,9 @@ msgstr "Modus fokus jendela"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Modus fokus jendela mengindikasikan bagaimana jendela-jendela yang ada "
 "diaktifkan. Modus ini memiliki memiliki tiga nilai yang dapat dipilih; "
@@ -462,15 +461,15 @@ msgstr "Kendalikan cara jendela baru mendapatkan fokus"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Pilihan ini menyediakan kendali tambahan untuk menentukan bagaimana jendela "
 "yang baru dibuat mendapatkan fokus. Pilihan ini memiliki dua nilai yang "
-"dapat dipilih; \"pintar\" menerapkan modus normal yang dipilih pengguna, dan"
-" \"ketat\" membuat jendela-jendela yang ada dimulai dari sebuah terminal "
-"yang tidak diberikan fokus."
+"dapat dipilih; \"pintar\" menerapkan modus normal yang dipilih pengguna, dan "
+"\"ketat\" membuat jendela-jendela yang ada dimulai dari sebuah terminal yang "
+"tidak diberikan fokus."
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
@@ -480,23 +479,23 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 "Mengatur opsi ini ke false dapat menyebabkan perilaku berkutu, sehingga "
 "pengguna sangat tidak dianjurkan untuk mengubahnya dari baku yang true. "
@@ -504,20 +503,19 @@ msgstr ""
 "jendela) normalnya menaikkan jendela sebagai efek samping. Menetapkan "
 "pilihan ini ke false, yang sangat tidak dianjurkan, akan melepas menaikkan "
 "dari tindakan pengguna lain, dan mengabaikan permintaan menaikkan yang "
-"dihasilkan oleh aplikasi. Lihat "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Bahkan ketika opsi ini "
-"false, jendela masih bisa dinaikkan oleh alt-klik-kiri di mana saja di "
-"jendela, klik biasa di dekorasi jendela, atau dengan pesan khusus dari "
-"pager, seperti permintaan aktivasi dari aplet tasklist. Pilihan ini sedang "
-"dimatikan pada mode klik-untuk-fokus. Perhatikan bahwa daftar cara untuk "
-"meningkatkan jendela ketika raise_on_click adalah false tidak termasuk "
-"permintaan dari program aplikasi untuk menaikkan jendela; permintaan "
-"tersebut akan diabaikan tanpa peduli alasan permintaan. Jika Anda seorang "
-"pengembang aplikasi dan memiliki pengguna yang mengeluh bahwa aplikasi Anda "
-"tidak bekerja ketika pengaturan ini dimatikankan, katakan kepada mereka itu "
-"adalah kesalahan _mereka_ karena merusak manajer jendela mereka dan bahwa "
-"mereka perlu mengubah pilihan ini kembali ke true atau hidup dengan \"kutu\""
-" yang mereka minta."
+"dihasilkan oleh aplikasi. Lihat http://bugzilla.gnome.org/show_bug.cgi?"
+"id=445447#c6. Bahkan ketika opsi ini false, jendela masih bisa dinaikkan "
+"oleh alt-klik-kiri di mana saja di jendela, klik biasa di dekorasi jendela, "
+"atau dengan pesan khusus dari pager, seperti permintaan aktivasi dari aplet "
+"tasklist. Pilihan ini sedang dimatikan pada mode klik-untuk-fokus. "
+"Perhatikan bahwa daftar cara untuk meningkatkan jendela ketika "
+"raise_on_click adalah false tidak termasuk permintaan dari program aplikasi "
+"untuk menaikkan jendela; permintaan tersebut akan diabaikan tanpa peduli "
+"alasan permintaan. Jika Anda seorang pengembang aplikasi dan memiliki "
+"pengguna yang mengeluh bahwa aplikasi Anda tidak bekerja ketika pengaturan "
+"ini dimatikankan, katakan kepada mereka itu adalah kesalahan _mereka_ karena "
+"merusak manajer jendela mereka dan bahwa mereka perlu mengubah pilihan ini "
+"kembali ke true atau hidup dengan \"kutu\" yang mereka minta."
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -529,8 +527,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -538,8 +536,8 @@ msgstr ""
 "adalah 'toggle_shade' yang akan mengaktifkan/mematikan bayangan jendela, "
 "'toggle_maximize' yang akan memaksimalkan dan mengecilkan jendela, "
 "'toggle_maximize_horizontally' dan 'toggle_maximize_vertically' yang akan "
-"memaksimalkan/membatalkan pemaksimalan jendela hanya ke arah itu, 'minimize'"
-" yang akan meminimalkan jendela, 'shade' yang akan menggulung jendela up, "
+"memaksimalkan/membatalkan pemaksimalan jendela hanya ke arah itu, 'minimize' "
+"yang akan meminimalkan jendela, 'shade' yang akan menggulung jendela up, "
 "'menu' yang akan menampilkan menu jendela, 'lower' yang akan menempatkan "
 "jendela di belakang yang lain, dan 'none' tidak akan melakukan apapun."
 
@@ -553,8 +551,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -562,8 +560,8 @@ msgstr ""
 "adalah 'toggle_shade' yang akan mengaktifkan/mematikan bayangan jendela, "
 "'toggle_maximize' yang akan memaksimalkan dan mengecilkan jendela, "
 "'toggle_maximize_horizontally' dan 'toggle_maximize_vertically' yang akan "
-"memaksimalkan/membatalkan pemaksimalan jendela hanya ke arah itu, 'minimize'"
-" yang akan meminimalkan jendela, 'shade' yang akan menggulung jendela up, "
+"memaksimalkan/membatalkan pemaksimalan jendela hanya ke arah itu, 'minimize' "
+"yang akan meminimalkan jendela, 'shade' yang akan menggulung jendela up, "
 "'menu' yang akan menampilkan menu jendela, 'lower' yang akan menempatkan "
 "jendela di belakang yang lain, dan 'none' tidak akan melakukan apapun."
 
@@ -577,8 +575,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -586,8 +584,8 @@ msgstr ""
 "adalah 'toggle_shade' yang akan mengaktifkan/mematikan bayangan jendela, "
 "'toggle_maximize' yang akan memaksimalkan dan mengecilkan jendela, "
 "'toggle_maximize_horizontally' dan 'toggle_maximize_vertically' yang akan "
-"memaksimalkan/membatalkan pemaksimalan jendela hanya ke arah itu, 'minimize'"
-" yang akan meminimalkan jendela, 'shade' yang akan menggulung jendela up, "
+"memaksimalkan/membatalkan pemaksimalan jendela hanya ke arah itu, 'minimize' "
+"yang akan meminimalkan jendela, 'shade' yang akan menggulung jendela up, "
 "'menu' yang akan menampilkan menu jendela, 'lower' yang akan menempatkan "
 "jendela di belakang yang lain, dan 'none' tidak akan melakukan apapun."
 
@@ -682,8 +680,8 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
@@ -743,9 +741,9 @@ msgstr ""
 "\"fullscreen\" yang akan menampilkan kilatan hitam putih di seluruh area "
 "layar, dan \"frame_flash\"yang akan menampikan kilatan pada bilah judul "
 "jendela aplikasi yang membunyikan bel. Jika tidak diketahui aplikasi mana "
-"yang membunyikan bel (biasanya karena ini merupakan bel sistem standar) maka"
-" kilatan akan ditampilkan pada bilah judul jendela yang sedang memiliki "
-"fokus saat ini."
+"yang membunyikan bel (biasanya karena ini merupakan bel sistem standar) maka "
+"kilatan akan ditampilkan pada bilah judul jendela yang sedang memiliki fokus "
+"saat ini."
 
 #: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
@@ -793,22 +791,21 @@ msgstr ""
 "dimatikan saat aksesibilitas diaktifkan."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr "(Tidak diwujudkan) Navigasi bekerja mengikuti aplikasi bukan jendela"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Bila berisi true, Croma akan bekerja berdasarkan aplikasi, bukan berdasarkan"
-" jendela. Konsepnya agak sedikit abstrak, tapi secara umum, konsepnya lebih "
+"Bila berisi true, Croma akan bekerja berdasarkan aplikasi, bukan berdasarkan "
+"jendela. Konsepnya agak sedikit abstrak, tapi secara umum, konsepnya lebih "
 "mirip ke Mac ketimbang ke Windows. Saat Anda memberi fokus pada window pada "
 "mode berbasis aplikasi, semua jendela pada aplikasi akan dinaikkan. Juga, "
 "pada mode berbasis aplikasi, klik fokus tidak diberikan ke jendela pada "
@@ -817,8 +814,7 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
-msgstr ""
-"Nonaktifkan fitur yang diperlukan oleh aplikasi tua dan aplikasi rusak"
+msgstr "Nonaktifkan fitur yang diperlukan oleh aplikasi tua dan aplikasi rusak"
 
 #: src/org.cafe.croma.gschema.xml:172
 msgid ""
@@ -830,8 +826,7 @@ msgstr ""
 "Beberapa aplikasi mengabaikan spesifikasi yang dapat menyebabkan kesalahan "
 "pengelola jendela. Pilihan ini menempatkan Croma pada mode pembenaran yang "
 "tepat, yang akan memberikan antar muka pengguna yang lebih konsisten, "
-"sehingga tidak perlu menjalankan aplikasi yang memiliki perilaku tidak "
-"benar."
+"sehingga tidak perlu menjalankan aplikasi yang memiliki perilaku tidak benar."
 
 #: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
@@ -852,8 +847,8 @@ msgstr "Apakah memfungsikan pengubinan jendela"
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 "Bila difungsikan, menjatuhkan jendela pada tepi layar memaksimalkan mereka "
 "ke arah vertikal dan mengubah ukuran secara horisontal sehingga mencakup "
@@ -891,11 +886,11 @@ msgstr "Modus penempatan jendela"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 "Mode penempatan jendela mengindikasikan bagaimana jendela baru akan "
 "diposisikan. \"Otomatis\" berarti sistem akan memiliki lokasi secara "
@@ -910,8 +905,8 @@ msgstr "Daftar aplikasi yang diabaikan oleh tampilkan-destop"
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 "Daftar kelas yang dipisahkan koma. Setiap aplikasi GUI yang berjalan yang "
 "dirujuk ke kelas manajer windows yang diberikan akan diabaikan oleh fungsi "
@@ -942,16 +937,15 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:218
 msgid "Expand the alt-tab popup window to fit longer window titles"
 msgstr ""
-"Mengembangkan jendela popup alt-tab agar pas judul jendela yang lebih "
-"panjang"
+"Mengembangkan jendela popup alt-tab agar pas judul jendela yang lebih panjang"
 
 #: src/org.cafe.croma.gschema.xml:219
 msgid ""
 "The popup window may be expanded up to the width determined by the config "
 "parameter 'alt-tab-max-columns'."
 msgstr ""
-"Jendela popup dapat dikembangkan sampai lebar yang ditentukan oleh parameter"
-" konfig 'alt-tab-max-columns'."
+"Jendela popup dapat dikembangkan sampai lebar yang ditentukan oleh parameter "
+"konfig 'alt-tab-max-columns'."
 
 #: src/org.cafe.croma.gschema.xml:226 src/org.cafe.croma.gschema.xml:231
 #: src/org.cafe.croma.gschema.xml:236 src/org.cafe.croma.gschema.xml:241
@@ -1011,19 +1005,19 @@ msgstr "Jalankan perintah yang sudah terdefinisi"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
 "keybinding for this action."
 msgstr ""
 "Kombinasi tombol yang menjalankan perintah yang sesuai dengan nomor "
-"panggilnya pada /apps/croma/keybinding_commands. Format penulisannya seperti"
-" \"<Control>a\" atau \"<Shift><Alt>F1\". Pengurainya sangat liberal dan "
+"panggilnya pada /apps/croma/keybinding_commands. Format penulisannya seperti "
+"\"<Control>a\" atau \"<Shift><Alt>F1\". Pengurainya sangat liberal dan "
 "memperbolehkan digunakannya huruf besar dan huruf kecil, juga singkatan "
-"seperti \"<Ctl>\" atau \"<Ctrl>\". Apabila Anda menentukan opsinya pada kata"
-" \"disabled\" maka tidak akan ada pengikatan tombol bagi aksi ini."
+"seperti \"<Ctl>\" atau \"<Ctrl>\". Apabila Anda menentukan opsinya pada kata "
+"\"disabled\" maka tidak akan ada pengikatan tombol bagi aksi ini."
 
 #: src/org.cafe.croma.gschema.xml:470 src/org.cafe.croma.gschema.xml:475
 #: src/org.cafe.croma.gschema.xml:480 src/org.cafe.croma.gschema.xml:485
@@ -1069,8 +1063,8 @@ msgid ""
 "as \"<Ctl>\" and \"<Ctrl>\". If you set the option to the special string "
 "\"disabled\", then there will be no keybinding for this action."
 msgstr ""
-"Format penulisannya seperti \"<Control>a\" atau \"<Shift><Alt>F1\". Pengurai"
-" ini cukup liberal dan memperbolehkan digunakannya huruf besar dan huruf "
+"Format penulisannya seperti \"<Control>a\" atau \"<Shift><Alt>F1\". Pengurai "
+"ini cukup liberal dan memperbolehkan digunakannya huruf besar dan huruf "
 "kecil, juga   singkatan seperti \"<Ctl>\" atau \"<Ctrl>\". Apabila Anda "
 "menata opsi ke string khusus \"disabled\", maka tidak akan ada pengikatan "
 "tombol bagi aksi ini."
@@ -1090,8 +1084,13 @@ msgid ""
 "keybinding may be reversed by holding down the \"shift\" key; therefore, "
 "\"shift\" cannot be one of the keys it uses."
 msgstr ""
-"Format penulisannya seperti \"<Control>a\" atau \"<Shift><Alt>F1\". Pengurai ini cukup liberal dan memperbolehkan digunakannya huruf besar dan huruf kecil, juga   singkatan seperti \"<Ctl>\" atau \"<Ctrl>\". Apabila Anda menata opsi ke string khusus \"disabled\", maka tidak akan ada pengikatan tombol bagi aksi ini.\n"
-"Pengikatan tombol ini bisa dibalik dengan menahan \"shift\"; maka, \"shift\" tak bisa menjadi salah satu tombol yang dipakai."
+"Format penulisannya seperti \"<Control>a\" atau \"<Shift><Alt>F1\". Pengurai "
+"ini cukup liberal dan memperbolehkan digunakannya huruf besar dan huruf "
+"kecil, juga   singkatan seperti \"<Ctl>\" atau \"<Ctrl>\". Apabila Anda "
+"menata opsi ke string khusus \"disabled\", maka tidak akan ada pengikatan "
+"tombol bagi aksi ini.\n"
+"Pengikatan tombol ini bisa dibalik dengan menahan \"shift\"; maka, \"shift\" "
+"tak bisa menjadi salah satu tombol yang dipakai."
 
 #: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
@@ -1111,13 +1110,12 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:579
 msgid "Move backward between windows on all workspaces, using a popup window"
 msgstr ""
-"Berpindah mundur antar jendela pada semua ruang kerja, memakai suatu jendela"
-" popup"
+"Berpindah mundur antar jendela pada semua ruang kerja, memakai suatu jendela "
+"popup"
 
 #: src/org.cafe.croma.gschema.xml:589
 msgid "Move backward between panels and the desktop, using a popup window"
-msgstr ""
-"Berpindah mundur antara panel dan desktop, memakai suatu jendela popup"
+msgstr "Berpindah mundur antara panel dan desktop, memakai suatu jendela popup"
 
 #: src/org.cafe.croma.gschema.xml:599
 msgid "Move backward between windows of an application immediately"
@@ -1152,8 +1150,8 @@ msgstr "Perintah yang akan dijalankan bila tombol kombinasi ditekan"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "Kunci /apps/croma/global_keybindings/run_command_N menentukan kombinasi "
 "tombol untuk perintah ini. Dengan menekan kombinasi tombol tersebut maka "
@@ -1177,8 +1175,8 @@ msgstr "Perintah pengambilay gambar layar pada jendela"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "Kunci /apps/croma/global_keybindings/run_command_window_screenshot "
@@ -1259,7 +1257,8 @@ msgstr "Ada program lain yang menggunakan tombol %s dengan kombinasi %x\n"
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1270,28 +1269,28 @@ msgstr ""
 "\n"
 "%s."
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Tidak ada perintah %d.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Tidak ada perintah untuk menjalankan terminal.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "<tt>Ganti Nama Ruang Kerja</tt>"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "Nama Ruang Kerja Baru:"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "OK"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Batal"
 
@@ -1301,68 +1300,70 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Hak Cipta (C) 2001-%s Havoc Pennington, Red Hat, Inc., dan lain-lain.\n"
-"Ini adalah perangkat lunak bebas, silakan lihat kode asalnya untuk kondisi penyalinan.\n"
-"TIDAK ADA jaminan, bahkan untuk KELAYAKAN JUAL atau KELAYAKAN UNTUK KEGUNAAN TERTENTU.\n"
+"Ini adalah perangkat lunak bebas, silakan lihat kode asalnya untuk kondisi "
+"penyalinan.\n"
+"TIDAK ADA jaminan, bahkan untuk KELAYAKAN JUAL atau KELAYAKAN UNTUK KEGUNAAN "
+"TERTENTU.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Menonaktifkan koneksi ke manajer sesi"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Ganti program pengatur jendela yang aktif dengan Croma"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Tentukan ID manajemen sesi"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "Tampilan X yang digunakan"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Aktifkan sesi dari berkas simpanan"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Menampilkan versi"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Buat call X sinkoronus"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Nyalakan pengkomposisian"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Matikan pengkomposisian"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
-"Jangan jadikan layar penuh jendela yang dimaksimalkan dan tak memiliki "
-"hiasan"
+"Jangan jadikan layar penuh jendela yang dimaksimalkan dan tak memiliki hiasan"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Gagal memeriksa direktori tema: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
 msgstr "Tak menemukan tema! Pastikan %s ada dan berisi tema yang biasa.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Gagal menjalankan ulang: %s\n"
@@ -1393,8 +1394,8 @@ msgstr "Tidak dapat membaca deskripsi fonta \"%s\" dari kunci GSettings %s\n"
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "\"%s\" yang ada pada database konfigurasi bukanlah nilai yang benar untuk "
 "tombol mouse.\n"
@@ -1413,33 +1414,34 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "Area Kerja %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "Layar %d pada tampilan '%s' tidak benar\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
 "Layar %d pada tampilan \"%s\" sudah memiliki pengatur jendela. Cobalah "
 "gunakan pilihan --replace untuk mengganti pengatur jendela yang aktif.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
 "Tidak dapat mendapatkan pilihan pengatur jendela pada layar %d tampilan "
 "\"%s\"\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "Layar %d pada tampilan \"%s\" sudah ada pengatur jendelanya\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Layar %d pada tampilan \"%s\" tidak dapat dilepas\n"
@@ -1490,11 +1492,11 @@ msgstr "Elemen %s tidak dikenal"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
-"Jendela ini tidak bisa &quot;menyimpan setelan aktif saat ini&quot; dan bila"
-" log masuk kali lain Anda harus menjalankannya ulang."
+"Jendela ini tidak bisa &quot;menyimpan setelan aktif saat ini&quot; dan bila "
+"log masuk kali lain Anda harus menjalankannya ulang."
 
 #: src/core/util.c:101
 #, c-format
@@ -1538,7 +1540,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1553,7 +1555,8 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
@@ -1622,62 +1625,60 @@ msgstr "Properti %s pada jendela 0x%lx berisi karakter UTF-8 yang salah\n"
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
-"Properti %s pada jendela 0x%lx di obyek %d berisi karakter UTF-8 yang "
-"salah\n"
+"Properti %s pada jendela 0x%lx di obyek %d berisi karakter UTF-8 yang salah\n"
 
 #: src/tools/croma-message.c:150
 #, c-format
 msgid "Usage: %s\n"
 msgstr "Cara pakai: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Tutup Jendela"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Menu Jendela"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr "Menu Apl Jendela"
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Kecilkan Jendela"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Maksimalkan Ukuran Jendela"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Kembalikan Ukuran jendela"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Gulung Jendela"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Buka Gulungan Jendela"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Jaga Jendela Di Puncak"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Hapus Jendela Dari Puncak"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Selalu Pada Area Kerja Tampak"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Letakkan Jendela Hanya Pada Satu Area Kerja"
 
@@ -1785,6 +1786,7 @@ msgstr "_Pindah ke Area Kerja Lain"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1793,6 +1795,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1801,6 +1804,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1809,6 +1813,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1817,6 +1822,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1825,6 +1831,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hiper"
@@ -1833,6 +1840,7 @@ msgstr "Hiper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1841,6 +1849,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1849,6 +1858,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1857,57 +1867,59 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "atas"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "bawah"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "kiri"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "kanan"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "geometri rangka tidak menyebutkan dimensi \"%s\""
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "geometri rangka tidak menyebutkan dimensi \"%s\" untuk batas \"%s\""
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "Aspek rasio tombol %g tidak wajar"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "Ukuran frame tidak menyebutkan ukuran tombol"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Gradien harus paling tidak ada dua warna"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
@@ -1916,16 +1928,16 @@ msgstr ""
 "Spesifikasi warna ubahan CTK harus memiliki nama warna dan cadangan dalam "
 "kurung, mis. ctk:custom(foo,bar); tidak dapat mengurai \"%s\""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 "Karakter tidak valid '%c' dalam parameter color_name dari ctk:custom, hanya "
 "A-Za-z0-9-_ yang valid"
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
@@ -1934,37 +1946,35 @@ msgstr ""
 "Format Ctk:custom adalah \"ctk:custom(color_name,fallback)\", \"%s\" tidak "
 "cocok dengan format"
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Spesifikasi warna CTK harus memiliki kondisi pada kurung, misal "
-"ctk:fg[NORMAL] dengan NORMAL adalah jenis kondisinya, tidak dapat membaca "
-"\"%s\""
+"Spesifikasi warna CTK harus memiliki kondisi pada kurung, misal ctk:"
+"fg[NORMAL] dengan NORMAL adalah jenis kondisinya, tidak dapat membaca \"%s\""
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Spesifikasi warna CTK harus memiliki kurung tutup pada kondisinya, misal "
-"ctk:fg[NORMAL] dengan NORMAL adalah jenis kondisinya, tidak dapat membaca "
-"\"%s\""
+"Spesifikasi warna CTK harus memiliki kurung tutup pada kondisinya, misal ctk:"
+"fg[NORMAL] dengan NORMAL adalah jenis kondisinya, tidak dapat membaca \"%s\""
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Kondisi \"%s\" tidak benar pada spesifikasi warna"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Komponen warna \"%s\" tidak benar pada spesifikasi warna"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1973,96 +1983,97 @@ msgstr ""
 "Format pencampuran adalah \"blend/bg_color/fg_color/alpha\", \"%s\" bukan "
 "ditulis dalam format yang benar"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Tidak dapat membaca nilai alpha \"%s\" pada pencampuran warna"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr ""
 "Nilai alpha \"%s\" pada warna yang dicampur tidak ada dalam rentang 0.0 dan "
 "1.0"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Format bayangan adalah \"shade/base_color/factor\", \"%s\" ditulis dalam "
 "format yang keliru"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Tidak dapat membaca faktor bayangan \"%s\" pada warna berbayang"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Faktor bayangan \"%s\" pada warna berbayang bernilai negatif"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Tidak dapat membaca warna \"%s\""
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "Ekspresi koordinat berisi karakter '%s' yang tidak diperbolehkan"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
 "Ekspresi koordinat berisi angka floating point '%s' yang tidak dapat dibaca"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr "Ekspresi koordinat berisi integer '%s' yang tidak dapat dibaca"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
 "\"%s\""
 msgstr ""
-"Ekspresi koordinat berisi operator tak dikenal pada awal teks berikut: "
-"\"%s\""
+"Ekspresi koordinat berisi operator tak dikenal pada awal teks berikut: \"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "Ekspresi koordinat kosong atau tidak dapat dimengerti"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Ekspresi koordinat menghasilkan pembagian dengan nol"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr "Ekspresi koordinat menggunakan operator mod pada angka bilangan nyata"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "Ekspresi koordinat menggunakan operator \"%s\" tanpa adanya operan"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "Ekspresi koordinat menggunakan operand tanpa operator"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr ""
 "Ekspresi koordinat diakhiri dengan operator, seharusnya diakhiri dengan "
 "operand"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
@@ -2071,35 +2082,34 @@ msgstr ""
 "Ekspresi koordinat memiliki operator \"%c\" diikuti operator \"%c\" tanpa "
 "adanya operand di antarany"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr ""
 "Ada variabel atau konstanta \"%s\" tidak diketahui pada ekspresi koordinat"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "Ekspresi koordinat melampaui batasannya."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr "Terdapat kurung tutup tanpa kurung buka pada ekspresi koordinat"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "Terdapat kurung buka tanpa kurung tutup pada ekspresi koordinat "
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "Ekspresi koordinat sepertinya tidak memiliki operator atau operan"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Tema berisi suatu ekspresi yang menghasilkan galat: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2108,23 +2118,25 @@ msgstr ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> tidak "
 "disebutkan pada gaya frame ini"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> tidak ada"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> tidak ada"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Gagal membuka tema \"%s\": %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Tidak ada <%s> yang ditentukan untuk tema \"%s\""
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2133,18 +2145,21 @@ msgstr ""
 "Tidak ada gaya frame untuk tipe window \"%s\" pada tema \"%s\". Tambah dulu "
 "elemen <window type=\"%s\" style_set=\"whatever\"/>"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
-msgstr "Konstanta buatan pengguna harus dimulai dengan huruf besar: \"%s\" tidak"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
+msgstr ""
+"Konstanta buatan pengguna harus dimulai dengan huruf besar: \"%s\" tidak"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "Konstanta \"%s\" telah didefinisikan sebelumnya"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2163,7 +2178,8 @@ msgstr "Atribut \"%s\" diulangi dua kali pada elemen <%s> yang sama"
 #: src/ui/theme-parser.c:523 src/ui/theme-parser.c:572
 #, c-format
 msgid "Attribute \"%s\" is invalid on <%s> element in this context"
-msgstr "Dalam konteks ini, atribut \"%s\" tidak boleh dipasang pada elemen <%s>"
+msgstr ""
+"Dalam konteks ini, atribut \"%s\" tidak boleh dipasang pada elemen <%s>"
 
 #: src/ui/theme-parser.c:614
 #, c-format
@@ -2210,8 +2226,8 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
 "Skala judul \"%s\" tidak benar (harusnya bernilai xx-small, x-small, small, "
 "medium, large, x-large, xx-large)\n"
@@ -2336,7 +2352,8 @@ msgstr "Tidak ada <draw_ops> bernama \"%s\" yang telah didefinisikan"
 #: src/ui/theme-parser.c:2726 src/ui/theme-parser.c:2822
 #, c-format
 msgid "Including draw_ops \"%s\" here would create a circular reference"
-msgstr "Menyertakan draw_ops \"%s\" di sini akan membuat referensi tak berujung"
+msgstr ""
+"Menyertakan draw_ops \"%s\" di sini akan membuat referensi tak berujung"
 
 #: src/ui/theme-parser.c:2937
 #, c-format
@@ -2404,7 +2421,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
 "Atribut \"resize\" tidak boleh ada pada elemen <%s> untuk kondisi ukuran "
 "jendela maksimum"
@@ -2431,11 +2449,11 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"Tidak boleh ada dua draw_ops untuk elemen <button> (tema menyebutkan atribut"
-" draw_ops dan juga elemen <draw_ops> atau meyebutkan dua elemen tersebut "
+"Tidak boleh ada dua draw_ops untuk elemen <button> (tema menyebutkan atribut "
+"draw_ops dan juga elemen <draw_ops> atau meyebutkan dua elemen tersebut "
 
 #: src/ui/theme-parser.c:3427
 msgid ""
@@ -2533,96 +2551,96 @@ msgstr "_OK"
 msgid "This is a sample message in a sample dialog"
 msgstr "Ini contoh pesan pada suatu dialog"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Item menu palsu %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Jendela dengan hanya tepi"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Batang"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Jendela Aplikasi Normal"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Kotak Dialog"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Kotak Dialog Modal"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Palet Perkakas"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Menu Dapat Dilepas"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Batas"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr "Dialog Modal Terlampir"
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Tes komposisi tombol %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "lama waktu menggambar satu bingkai jendela %g milidetik"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Cara pakai: croma-theme-viewer [NAMA TEMA]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Ada galat saat memuat tema: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "Tema \"%s\" dibuka dalam %g detik\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Fonta Judul Normal"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Fonta Judul Kecil"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Fonta Judul Besar"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Tata Letak Tombol"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Pengukuran"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Ini tempat judul jendela"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # mauron, 2020
 # Mika Kobayashi, 2020
@@ -12,19 +12,19 @@
 # ABE Tsunehiko, 2020
 # Rockers <sumorock@hotmail.com>, 2020
 # Ikuru K <kanumaiku@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Ikuru K <kanumaiku@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/cafe/teams/13566/ja/)\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -65,7 +65,8 @@ msgstr "ポップアップ・ウィンドウを利用して、ウィンドウ間
 
 #: src/50-croma-global-key.xml.in:6 src/org.cafe.croma.gschema.xml:554
 msgid "Move between windows of an application, using a popup window"
-msgstr "ポップアップ・ウインドウを利用してアプリケーションのウィンドウの間を移動する"
+msgstr ""
+"ポップアップ・ウインドウを利用してアプリケーションのウィンドウの間を移動する"
 
 #: src/50-croma-global-key.xml.in:8 src/org.cafe.croma.gschema.xml:584
 msgid "Move between panels and the desktop, using a popup window"
@@ -201,7 +202,8 @@ msgstr "ウィンドウを常にすべてのワークスペースに配置する
 
 #: src/50-croma-window-key.xml.in:54 src/org.cafe.croma.gschema.xml:875
 msgid "Raise window if it's covered by another window, otherwise lower it"
-msgstr "ウィンドウが他のウィンドウに隠れていれば前面に出し、さもなくば下にします"
+msgstr ""
+"ウィンドウが他のウィンドウに隠れていれば前面に出し、さもなくば下にします"
 
 #: src/50-croma-window-key.xml.in:58 src/org.cafe.croma.gschema.xml:880
 msgid "Raise window above other windows"
@@ -379,11 +381,11 @@ msgstr "右ボタンで大きさを変更するかどうか"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
-"これを TRUE に設定すると、\"mouse_button_modifier\" "
-"で設定したキーを押しながら右のボタンでサイズ変更し、真ん中のボタンでメニューを表示します。"
+"これを TRUE に設定すると、\"mouse_button_modifier\" で設定したキーを押しなが"
+"ら右のボタンでサイズ変更し、真ん中のボタンでメニューを表示します。"
 
 #: src/org.cafe.croma.gschema.xml:60
 msgid "Whether to display preselected tab window border"
@@ -393,7 +395,9 @@ msgstr "前回選択したタブウィンドウに枠を表示するかどうか
 msgid ""
 "Set this to false to disable border of preselected window while performing "
 "tab switching."
-msgstr "FALSE にすると、タブスイッチ中に前回選択したウィンドウに枠が表示されなくなります。"
+msgstr ""
+"FALSE にすると、タブスイッチ中に前回選択したウィンドウに枠が表示されなくなり"
+"ます。"
 
 #: src/org.cafe.croma.gschema.xml:65
 msgid "Arrangement of buttons on the titlebar"
@@ -409,10 +413,12 @@ msgid ""
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
-"タイトル・バーのボタンの位置を指定します。ここで指定する値は \"menu:minimize,maximize,spacer,close\" "
-"のような文字列にしてください; "
-"コロンでウィンドウの右上隅と左上隅を分割し、ボタン名はコンマで区切ります。ボタンを重複させることはできません。不明なボタン名は単に無視されるだけなので、croma"
-" の新しいバージョンが旧バージョンに影響を与えることはありません。spacer というタグはボタンとボタンの間に挿入する空白を意味します。"
+"タイトル・バーのボタンの位置を指定します。ここで指定する値は \"menu:minimize,"
+"maximize,spacer,close\" のような文字列にしてください; コロンでウィンドウの右"
+"上隅と左上隅を分割し、ボタン名はコンマで区切ります。ボタンを重複させることは"
+"できません。不明なボタン名は単に無視されるだけなので、croma の新しいバージョ"
+"ンが旧バージョンに影響を与えることはありません。spacer というタグはボタンとボ"
+"タンの間に挿入する空白を意味します。"
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -422,13 +428,14 @@ msgstr "ウィンドウフォーカスモード"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
-"ウィンドウフォーカスモードはウィンドウがアクティブになる条件を表します。設定可能な値は3つあり、\"click\" "
-"はクリックするとフォーカスします。\"sloppy\" はマウスがウィンドウ内に入るとフォーカスします。\"mouse\" "
-"はマウスがウィンドウ内に入るとフォーカスし、マウスがウィンドウから出るとフォーカスが外れます。"
+"ウィンドウフォーカスモードはウィンドウがアクティブになる条件を表します。設定"
+"可能な値は3つあり、\"click\" はクリックするとフォーカスします。\"sloppy\" は"
+"マウスがウィンドウ内に入るとフォーカスします。\"mouse\" はマウスがウィンドウ"
+"内に入るとフォーカスし、マウスがウィンドウから出るとフォーカスが外れます。"
 
 #: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
@@ -437,12 +444,14 @@ msgstr "新しいウィンドウに対するフォーカスの当て方"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
-"このオプションを使い、新しく生成したウィンドウに対して、どのようにフォーカスを与えるかを制御します。設定可能なオプション: \"smart\" "
-"(ユーザが定義したフォーカスモードを適用します)、\"strict\" (端末から起動したアプリのウィンドウにはフォーカスを与えないようにします)"
+"このオプションを使い、新しく生成したウィンドウに対して、どのようにフォーカス"
+"を与えるかを制御します。設定可能なオプション: \"smart\" (ユーザが定義した"
+"フォーカスモードを適用します)、\"strict\" (端末から起動したアプリのウィンドウ"
+"にはフォーカスを与えないようにします)"
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
@@ -451,36 +460,43 @@ msgstr "他のユーザ操作による副作用としてウィンドウを前面
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
-"このオプションを FALSE にすると不安定になるため、デフォルトの TRUE "
-"のままにしておくことを強くお勧めします。クライアントエリアをクリックする、ウィンドウを移動したりウィンドウのサイズを変更するなどの様々な操作は、一般的に副作用としてウィンドウを最前面に移動します。まったくお勧めはしませんが、このオプションを"
-" FALSE "
-"にすると、ユーザー操作とウィンドウを最前面に移動する処理を切り離し、アプリケーションからのウィンドウを最前面に移動する処理のリクエストも無視するようになります。詳細については"
-" http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6 で確認してください。このオプションを "
-"FALSE にしても、ウィンドウのどこかを Alt + "
-"右クリック、ウィンドウの装飾部分をクリック、タスクリストアプレットからのアクティベーションリクエストなどのページャーからの特殊メッセージなどにより、ウィンドウは最前面に移動します。現在このオプションはクリックしてフォーカスするという処理を無効にしています。上に記載した"
-" FALSE "
-"の時でもウィンドウを最前面に移動する操作の中には、アプリケーションからのウィンドウを最前面に移動する処理のリクエストが含まれていないことに注意してください。すなわち、アプリケーションからのリクエストはその理由を問わず無視されます。もしあなたが開発者で、この設定を"
-" FALSE "
-"にするとアプリケーションが動作しないバグがあると主張するユーザーが現れた場合、ユーザー自身が自分のウィンドウマネージャーを壊したということと、バグを解決するためにこのオプションを"
-" TRUE に戻す必要があることを伝えてください。"
+"このオプションを FALSE にすると不安定になるため、デフォルトの TRUE のままにし"
+"ておくことを強くお勧めします。クライアントエリアをクリックする、ウィンドウを"
+"移動したりウィンドウのサイズを変更するなどの様々な操作は、一般的に副作用とし"
+"てウィンドウを最前面に移動します。まったくお勧めはしませんが、このオプション"
+"を FALSE にすると、ユーザー操作とウィンドウを最前面に移動する処理を切り離し、"
+"アプリケーションからのウィンドウを最前面に移動する処理のリクエストも無視する"
+"ようになります。詳細については http://bugzilla.gnome.org/show_bug.cgi?"
+"id=445447#c6 で確認してください。このオプションを FALSE にしても、ウィンドウ"
+"のどこかを Alt + 右クリック、ウィンドウの装飾部分をクリック、タスクリストアプ"
+"レットからのアクティベーションリクエストなどのページャーからの特殊メッセージ"
+"などにより、ウィンドウは最前面に移動します。現在このオプションはクリックして"
+"フォーカスするという処理を無効にしています。上に記載した FALSE の時でもウィン"
+"ドウを最前面に移動する操作の中には、アプリケーションからのウィンドウを最前面"
+"に移動する処理のリクエストが含まれていないことに注意してください。すなわち、"
+"アプリケーションからのリクエストはその理由を問わず無視されます。もしあなたが"
+"開発者で、この設定を FALSE にするとアプリケーションが動作しないバグがあると主"
+"張するユーザーが現れた場合、ユーザー自身が自分のウィンドウマネージャーを壊し"
+"たということと、バグを解決するためにこのオプションを TRUE に戻す必要があるこ"
+"とを伝えてください。"
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -492,17 +508,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"タイトルバーをダブル・クリックした際の効果を指定します。指定可能なオプション: 'toggle_shade' "
-"(ウィンドウの巻き上げ状態を切り替える)、'toggle_maximize' "
-"(ウィンドウを最大化/通常サイズ化する)、'toggle_maximize_horizontally' "
-"(水平方向にのみウィンドウを最大化/通常サイズ化する)、'toggle_maximize_vertically' "
-"(垂直方向にのみウィンドウを最大化/通常サイズ化する)、'minimize' (ウィンドウを最小化する)、'shade' "
-"(ウィンドウを巻き上げる)、'menu' (ウィンドウメニューを表示する)、'lower' (ウィンドウを一番後ろに回す)、'none' (何もしない)"
+"タイトルバーをダブル・クリックした際の効果を指定します。指定可能なオプショ"
+"ン: 'toggle_shade' (ウィンドウの巻き上げ状態を切り替え"
+"る)、'toggle_maximize' (ウィンドウを最大化/通常サイズ化す"
+"る)、'toggle_maximize_horizontally' (水平方向にのみウィンドウを最大化/通常サ"
+"イズ化する)、'toggle_maximize_vertically' (垂直方向にのみウィンドウを最大化/"
+"通常サイズ化する)、'minimize' (ウィンドウを最小化する)、'shade' (ウィンドウを"
+"巻き上げる)、'menu' (ウィンドウメニューを表示する)、'lower' (ウィンドウを一番"
+"後ろに回す)、'none' (何もしない)"
 
 #: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
@@ -514,17 +532,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"タイトルバーを中クリックした際の効果を指定します。指定可能なオプション: 'toggle_shade' "
-"(ウィンドウの巻き上げ状態を切り替える)、'toggle_maximize' "
-"(ウィンドウを最大化/通常サイズ化する)、'toggle_maximize_horizontally' "
-"(水平方向にのみウィンドウを最大化/通常サイズ化する)、'toggle_maximize_vertically' "
-"(垂直方向にのみウィンドウを最大化/通常サイズ化する)、'minimize' (ウィンドウを最小化する)、'shade' "
-"(ウィンドウを巻き上げる)、'menu' (ウィンドウメニューを表示する)、'lower' (ウィンドウを一番後ろに回す)、'none' (何もしない)"
+"タイトルバーを中クリックした際の効果を指定します。指定可能なオプション: "
+"'toggle_shade' (ウィンドウの巻き上げ状態を切り替え"
+"る)、'toggle_maximize' (ウィンドウを最大化/通常サイズ化す"
+"る)、'toggle_maximize_horizontally' (水平方向にのみウィンドウを最大化/通常サ"
+"イズ化する)、'toggle_maximize_vertically' (垂直方向にのみウィンドウを最大化/"
+"通常サイズ化する)、'minimize' (ウィンドウを最小化する)、'shade' (ウィンドウを"
+"巻き上げる)、'menu' (ウィンドウメニューを表示する)、'lower' (ウィンドウを一番"
+"後ろに回す)、'none' (何もしない)"
 
 #: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
@@ -536,17 +556,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"タイトルバーを右クリックした際の効果を指定します。指定可能なオプション: 'toggle_shade' "
-"(ウィンドウの巻き上げ状態を切り替える)、'toggle_maximize' "
-"(ウィンドウを最大化/通常サイズ化する)、'toggle_maximize_horizontally' "
-"(水平方向にのみウィンドウを最大化/通常サイズ化する)、'toggle_maximize_vertically' "
-"(垂直方向にのみウィンドウを最大化/通常サイズ化する)、'minimize' (ウィンドウを最小化する)、'shade' "
-"(ウィンドウを巻き上げる)、'menu' (ウィンドウメニューを表示する)、'lower' (ウィンドウを一番後ろに回す)、'none' (何もしない)"
+"タイトルバーを右クリックした際の効果を指定します。指定可能なオプション: "
+"'toggle_shade' (ウィンドウの巻き上げ状態を切り替え"
+"る)、'toggle_maximize' (ウィンドウを最大化/通常サイズ化す"
+"る)、'toggle_maximize_horizontally' (水平方向にのみウィンドウを最大化/通常サ"
+"イズ化する)、'toggle_maximize_vertically' (垂直方向にのみウィンドウを最大化/"
+"通常サイズ化する)、'minimize' (ウィンドウを最小化する)、'shade' (ウィンドウを"
+"巻き上げる)、'menu' (ウィンドウメニューを表示する)、'lower' (ウィンドウを一番"
+"後ろに回す)、'none' (何もしない)"
 
 #: src/org.cafe.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
@@ -559,9 +581,11 @@ msgid ""
 "the auto_raise_delay key. This is not related to clicking on a window to "
 "raise it, nor to entering a window during drag-and-drop."
 msgstr ""
-"この値が TRUE かつフォーカスモードが \"sloppy\" または \"mouse\" の場合、フォーカスを取得したウィンドウは "
-"auto_raise_delay "
-"キーに指定した時間が経過した後に自動的に前面に表示されます。これはウィンドウをクリックして前面に表示する場合とは関係はなく、ドラッグアンドドロップ中にポインタがウィンドウ内に入った場合とも関係はありません。"
+"この値が TRUE かつフォーカスモードが \"sloppy\" または \"mouse\" の場合、"
+"フォーカスを取得したウィンドウは auto_raise_delay キーに指定した時間が経過し"
+"た後に自動的に前面に表示されます。これはウィンドウをクリックして前面に表示す"
+"る場合とは関係はなく、ドラッグアンドドロップ中にポインタがウィンドウ内に入っ"
+"た場合とも関係はありません。"
 
 #: src/org.cafe.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
@@ -572,7 +596,8 @@ msgid ""
 "The time delay before raising a window if auto_raise is set to true. The "
 "delay is given in thousandths of a second."
 msgstr ""
-"auto_raise が TRUE に設定されている際、ウィンドウを全面に移動するまでの遅延時間を指定します。この遅延はミリ秒単位で指定します。"
+"auto_raise が TRUE に設定されている際、ウィンドウを全面に移動するまでの遅延時"
+"間を指定します。この遅延はミリ秒単位で指定します。"
 
 #: src/org.cafe.croma.gschema.xml:110
 msgid "Current theme"
@@ -593,7 +618,8 @@ msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
 msgstr ""
-"この値が TRUE の場合、titlebar_font オプションを無視してウィンドウのタイトルに標準のアプリケーションフォントを使用します。"
+"この値が TRUE の場合、titlebar_font オプションを無視してウィンドウのタイトル"
+"に標準のアプリケーションフォントを使用します。"
 
 #: src/org.cafe.croma.gschema.xml:120
 msgid "Window title font"
@@ -606,8 +632,9 @@ msgid ""
 "set to 0. Also, this option is disabled if the titlebar_uses_desktop_font "
 "option is set to true."
 msgstr ""
-"ウィンドウのタイトルバーに表示するフォントを記述するフォント記述文字です。ただし、ここで指定したフォントサイズが使用されるのは、titlebar_font_size"
-" オプションが 0 の場合だけです。また titlebar_uses_desktop_font オプションが TRUE "
+"ウィンドウのタイトルバーに表示するフォントを記述するフォント記述文字です。た"
+"だし、ここで指定したフォントサイズが使用されるのは、titlebar_font_size オプ"
+"ションが 0 の場合だけです。また titlebar_uses_desktop_font オプションが TRUE "
 "の場合でも、このオプションは無効になります。"
 
 #: src/org.cafe.croma.gschema.xml:126
@@ -620,8 +647,9 @@ msgid ""
 "prevent making the desktop unusable by accidentally asking for too many "
 "workspaces."
 msgstr ""
-"ワークスペースの数です。ワークスペースの数を 0 "
-"にしないでください。また、誤って大量のワークスペースを指定してしまいデスクトップが使いにくくなることを防ぐため、最大値は固定になっています。"
+"ワークスペースの数です。ワークスペースの数を 0 にしないでください。また、誤っ"
+"て大量のワークスペースを指定してしまいデスクトップが使いにくくなることを防ぐ"
+"ため、最大値は固定になっています。"
 
 #: src/org.cafe.croma.gschema.xml:131
 msgid "Workspace wrap style"
@@ -633,15 +661,17 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
-"ラップ形式はワークスペース切り替え時に端から端へ移動する際の動きを決定するために使用します。\"no wrap\" "
-"にすると端から端へ移動しなくなります。\"classic\" に設定すると Croma "
-"の古い挙動と同じになります。すなわち、行の終わりは次の行の先頭とつながっているとみなされます。\"toroidal\" "
-"を選択すると、ワークスペースはドーナツ形に接続します。すなわち、行の終わりはその行の先頭と、列の終わりはその列の先頭とつながっているとみなされます。"
+"ラップ形式はワークスペース切り替え時に端から端へ移動する際の動きを決定するた"
+"めに使用します。\"no wrap\" にすると端から端へ移動しなくなりま"
+"す。\"classic\" に設定すると Croma の古い挙動と同じになります。すなわち、行の"
+"終わりは次の行の先頭とつながっているとみなされます。\"toroidal\" を選択する"
+"と、ワークスペースはドーナツ形に接続します。すなわち、行の終わりはその行の先"
+"頭と、列の終わりはその列の先頭とつながっているとみなされます。"
 
 #: src/org.cafe.croma.gschema.xml:136
 msgid "Enable Visual Bell"
@@ -652,7 +682,9 @@ msgid ""
 "Turns on a visual indication when an application or the system issues a "
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
-msgstr "アプリケーションやシステムがベルやビープ音を鳴らそうとした際、視覚的に表示します。耳が不自由な方や、騒音の中での使用に便利です。"
+msgstr ""
+"アプリケーションやシステムがベルやビープ音を鳴らそうとした際、視覚的に表示し"
+"ます。耳が不自由な方や、騒音の中での使用に便利です。"
 
 #: src/org.cafe.croma.gschema.xml:141
 msgid "System Bell is Audible"
@@ -663,8 +695,9 @@ msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
 msgstr ""
-"アプリケーションもしくはシステムが聴覚的なビープ音を生成できるか決定します。これは、無音のビープを許可する '視覚的なベルを有効にする' "
-"と共に用いられます。"
+"アプリケーションもしくはシステムが聴覚的なビープ音を生成できるか決定します。"
+"これは、無音のビープを許可する '視覚的なベルを有効にする' と共に用いられま"
+"す。"
 
 #: src/org.cafe.croma.gschema.xml:146
 msgid "Visual Bell Type"
@@ -680,10 +713,13 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"システムベルや他のアプリケーションのベル表示が鳴らされたことを視覚的に通知する実装の方法を Croma "
-"に通知します。現在、2つの方法が有効です。\"fullscreen\" は全画面を白黒で点滅させます。\"frame_flash\" "
-"はベルのシグナルを通知したアプリケーションのタイトルバーを点滅させます。どのアプリケーションがベルのシグナルを鳴らしたのか分からないとき "
-"(デフォルトのシステムビープではよくあるケースです) は、その時点でフォーカスされているウィンドウのタイトルバーを点滅させます。"
+"システムベルや他のアプリケーションのベル表示が鳴らされたことを視覚的に通知す"
+"る実装の方法を Croma に通知します。現在、2つの方法が有効です。\"fullscreen\" "
+"は全画面を白黒で点滅させます。\"frame_flash\" はベルのシグナルを通知したアプ"
+"リケーションのタイトルバーを点滅させます。どのアプリケーションがベルのシグナ"
+"ルを鳴らしたのか分からないとき (デフォルトのシステムビープではよくあるケース"
+"です) は、その時点でフォーカスされているウィンドウのタイトルバーを点滅させま"
+"す。"
 
 #: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
@@ -707,7 +743,8 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:161
 msgid "If true, trade off usability for less resource usage"
-msgstr "TRUE にすると、リソースの消費が少なくなりますが、代わりに操作性が低下します。"
+msgstr ""
+"TRUE にすると、リソースの消費が少なくなりますが、代わりに操作性が低下します。"
 
 #: src/org.cafe.croma.gschema.xml:162
 msgid ""
@@ -717,33 +754,40 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"この値が TRUE の場合、Croma "
-"はワイヤーフレームを使ったり、アニメーションをしなくなったりするなど、ユーザーへのフィードバックが少なくなり、\"直感的な操作\" "
-"という点で操作性が落ちます。これは多くのユーザーにとってユーザビリティの重大な低下につながりますが、そうしないと操作に困るような旧式のアプリケーションやターミナル・サーバーもうまく使えるようになります。しかしながら、アクセシビリティの機能が有効な場合はワイヤーフレームの機能は無効になります。"
+"この値が TRUE の場合、Croma はワイヤーフレームを使ったり、アニメーションをし"
+"なくなったりするなど、ユーザーへのフィードバックが少なくなり、\"直感的な操作"
+"\" という点で操作性が落ちます。これは多くのユーザーにとってユーザビリティの重"
+"大な低下につながりますが、そうしないと操作に困るような旧式のアプリケーション"
+"やターミナル・サーバーもうまく使えるようになります。しかしながら、アクセシビ"
+"リティの機能が有効な場合はワイヤーフレームの機能は無効になります。"
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr "ウィンドウを利用しないアプリの動作をナビゲートする条件 (未実装) "
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"この値が TRUE の場合、Croma "
-"の動作はウィンドウではなくアプリケーションに依存します。この概念はやや抽象的ですが、一般的にアプリケーション固定モードは Mac に近く、Windows"
-" "
-"にはあまり似ていません。アプリケーション固定モードでウィンドウがフォーカスされると、アプリケーションのすべてのウィンドウが手前に表示されます。また、アプリケーション固定モードでは、フォーカス・クリックが他のアプリケーションのウィンドウに渡されることはありません。しかしながら、アプリケーション固定モードは現在のところ大部分が未実装です。"
+"この値が TRUE の場合、Croma の動作はウィンドウではなくアプリケーションに依存"
+"します。この概念はやや抽象的ですが、一般的にアプリケーション固定モードは Mac "
+"に近く、Windows にはあまり似ていません。アプリケーション固定モードでウィンド"
+"ウがフォーカスされると、アプリケーションのすべてのウィンドウが手前に表示され"
+"ます。また、アプリケーション固定モードでは、フォーカス・クリックが他のアプリ"
+"ケーションのウィンドウに渡されることはありません。しかしながら、アプリケー"
+"ション固定モードは現在のところ大部分が未実装です。"
 
 #: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
-msgstr "古い、あるいは仕様に準拠していないアプリケーションが要求する不要な機能を無効にする"
+msgstr ""
+"古い、あるいは仕様に準拠していないアプリケーションが要求する不要な機能を無効"
+"にする"
 
 #: src/org.cafe.croma.gschema.xml:172
 msgid ""
@@ -752,8 +796,10 @@ msgid ""
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
-"いくつかのアプリケーションではウィンドウマネージャーの間違った動きや機能の結果、仕様を無視します。このオプションは Croma "
-"を厳格に正しいモードにし、さらに一貫したユーザーインタフェースを提供することで、何かおかしな動きをするアプリケーションを実行することがないようにします。"
+"いくつかのアプリケーションではウィンドウマネージャーの間違った動きや機能の結"
+"果、仕様を無視します。このオプションは Croma を厳格に正しいモードにし、さらに"
+"一貫したユーザーインタフェースを提供することで、何かおかしな動きをするアプリ"
+"ケーションを実行することがないようにします。"
 
 #: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
@@ -763,7 +809,9 @@ msgstr "新しいウィンドウが画面中央に作成されたかを確認す
 msgid ""
 "If set to true, new windows are opened in the center of the screen. "
 "Otherwise, they are opened at the top left of the screen."
-msgstr "TRUE にすると、新しいウィンドウは画面の中央に開きます。FALSE の場合は画面の左上に開きます。"
+msgstr ""
+"TRUE にすると、新しいウィンドウは画面の中央に開きます。FALSE の場合は画面の左"
+"上に開きます。"
 
 #: src/org.cafe.croma.gschema.xml:181
 msgid "Whether to enable window tiling"
@@ -772,8 +820,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:186
@@ -803,15 +851,16 @@ msgstr "ウィンドウの配置モード"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
-"新しいウィンドウをどのように配置するかを設定します。\"automatic\" "
-"は、デスクトップに空きがある場合その位置に、空きがない場合は単純に重なる位置にシステムが自動配置します。\"pointer\" "
-"はマウスポインターの位置に配置します。\"manual\"はユーザーがマウスやキーボードを使って配置位置を決定します。"
+"新しいウィンドウをどのように配置するかを設定します。\"automatic\" は、デスク"
+"トップに空きがある場合その位置に、空きがない場合は単純に重なる位置にシステム"
+"が自動配置します。\"pointer\" はマウスポインターの位置に配置しま"
+"す。\"manual\"はユーザーがマウスやキーボードを使って配置位置を決定します。"
 
 #: src/org.cafe.croma.gschema.xml:201
 msgid "List of applications ignored by show-desktop"
@@ -819,9 +868,11 @@ msgstr "デスクトップを表示時に無視するアプリケーションの
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
-msgstr "カンマ区切りのクラスのリストです。デスクトップを表示する際、このリスト内にあるウィンドウマネージャークラスは無視され、最小化されません。"
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
+msgstr ""
+"カンマ区切りのクラスのリストです。デスクトップを表示する際、このリスト内にあ"
+"るウィンドウマネージャークラスは無視され、最小化されません。"
 
 #: src/org.cafe.croma.gschema.xml:207
 msgid "Icon size in alt-tab popup window"
@@ -910,8 +961,8 @@ msgstr "指定されたコマンドの実行"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -981,7 +1032,9 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
-msgstr "ポップアップ・ウインドウを利用して後方のアプリケーションのウィンドウへ移動する"
+msgstr ""
+"ポップアップ・ウインドウを利用して後方のアプリケーションのウィンドウへ移動す"
+"る"
 
 #: src/org.cafe.croma.gschema.xml:569
 msgid "Move backward between windows, using a popup window"
@@ -997,7 +1050,8 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:589
 msgid "Move backward between panels and the desktop, using a popup window"
-msgstr "ポップアップ・ウィンドウを使ってパネルとデスクトップの間を後方に移動する"
+msgstr ""
+"ポップアップ・ウィンドウを使ってパネルとデスクトップの間を後方に移動する"
 
 #: src/org.cafe.croma.gschema.xml:599
 msgid "Move backward between windows of an application immediately"
@@ -1032,11 +1086,12 @@ msgstr "キーバインドの応答として実行されるコマンド"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
-"/apps/croma/global_keybindings/runs_command_N "
-"キーは、これらのコマンドに対応するキーバインドを定義します。run_command_N のキーバインドを押すとcommand_Nが実行されます。"
+"/apps/croma/global_keybindings/runs_command_N キーは、これらのコマンドに対応"
+"するキーバインドを定義します。run_command_N のキーバインドを押すとcommand_Nが"
+"実行されます。"
 
 #: src/org.cafe.croma.gschema.xml:722
 msgid "The screenshot command"
@@ -1047,8 +1102,8 @@ msgid ""
 "The /apps/croma/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
-"/apps/croma/global_keybindings/runs_command_screenshot "
-"キーは。この設定で実行するよう指定されたコマンドに対応するキーバインドを定義します。"
+"/apps/croma/global_keybindings/runs_command_screenshot キーは。この設定で実行"
+"するよう指定されたコマンドに対応するキーバインドを定義します。"
 
 #: src/org.cafe.croma.gschema.xml:727
 msgid "The window screenshot command"
@@ -1056,12 +1111,12 @@ msgstr "ウィンドウのスクリーンショットのためのコマンド"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
-"/apps/croma/global_keybindings/runs_command_window_screenshot "
-"キーは、この設定で実行するよう指定されたコマンドに対応するキーバインドを定義します。"
+"/apps/croma/global_keybindings/runs_command_window_screenshot キーは、この設"
+"定で実行するよう指定されたコマンドに対応するキーバインドを定義します。"
 
 #: src/org.cafe.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
@@ -1102,7 +1157,9 @@ msgstr "<tt>%s</tt> から応答がありません。"
 msgid ""
 "You may choose to wait a short while for it to continue or force the "
 "application to quit entirely."
-msgstr "応答があるまで少し待つか、または強制的にアプリケーションを終了するか選択してください。"
+msgstr ""
+"応答があるまで少し待つか、または強制的にアプリケーションを終了するか選択して"
+"ください。"
 
 #: src/core/delete.c:110
 msgid "_Wait"
@@ -1132,11 +1189,14 @@ msgstr "Xウィンドウ・システムのディスプレイ '%s' のオープ�
 msgid ""
 "Some other program is already using the key %s with modifiers %x as a "
 "binding\n"
-msgstr "既にバインディングとして別のプログラムでキー %s (修飾キー %x) を使っています\n"
+msgstr ""
+"既にバインディングとして別のプログラムでキー %s (修飾キー %x) を使っていま"
+"す\n"
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1147,28 +1207,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "コマンド %d は定義されていません。\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "端末を起動するコマンドが定義されていません。\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr ""
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "OK"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -1178,66 +1238,71 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., とその他の貢献者\n"
-"これはフリーソフトウェアです; 複製する際の条件はソース・ファイルを参照してください。\n"
-"このソフトウェアは無保証です; 商用や特定目的への適用についても保証しません。\n"
+"これはフリーソフトウェアです; 複製する際の条件はソース・ファイルを参照してく"
+"ださい。\n"
+"このソフトウェアは無保証です; 商用や特定目的への適用についても保証しませ"
+"ん。\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "セッションマネージャーに接続しない"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "実行中のウィンドウ・マネージャを Croma で置き換える"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "セッション管理 ID を指定する"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "使用するXディスプレイを指定する"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "保存ファイルからセッションを初期化する"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "バージョンを表示する"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "X の呼び出しを同期する"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "合成マネージャをオン"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "合成マネージャをオフ"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr "最大化されて、装飾のない全画面のウィンドウを作成しない"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "テーマ・フォルダのスキャンに失敗しました: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
-msgstr "テーマが見つかりませんでした! %s の存在と通常のテーマが含まれていることを確認してください。\n"
+msgstr ""
+"テーマが見つかりませんでした! %s の存在と通常のテーマが含まれていることを確認"
+"してください。\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "再起動に失敗しました: %s\n"
@@ -1254,57 +1319,69 @@ msgstr "GSettings の %2$s キーの値 %1$d は %3$d〜%4$d の範囲内にあ�
 msgid ""
 "Workarounds for broken applications disabled. Some applications may not "
 "behave properly.\n"
-msgstr "仕様に準拠していないアプリケーションに対する次善策は無効になっています。一部のアプリケーションは正常に動作しない可能性があります\n"
+msgstr ""
+"仕様に準拠していないアプリケーションに対する次善策は無効になっています。一部"
+"のアプリケーションは正常に動作しない可能性があります\n"
 
 #: src/core/prefs.c:1194
 #, c-format
 msgid "Could not parse font description \"%s\" from GSettings key %s\n"
-msgstr "GSettings の %2$s キーのフォントの説明 \"%1$s\" を解析できませんでした\n"
+msgstr ""
+"GSettings の %2$s キーのフォントの説明 \"%1$s\" を解析できませんでした\n"
 
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
-msgstr "CafeConf の \"%s\" はマウス・ボタンの修飾キーとして妥当な値ではありません\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
+msgstr ""
+"CafeConf の \"%s\" はマウス・ボタンの修飾キーとして妥当な値ではありません\n"
 
 #: src/core/prefs.c:1844
 #, c-format
 msgid ""
 "\"%s\" found in configuration database is not a valid value for keybinding "
 "\"%s\"\n"
-msgstr "設定データベースで発見した \"%s\" はキーバインド \"%s\" に有効な値ではありません\n"
+msgstr ""
+"設定データベースで発見した \"%s\" はキーバインド \"%s\" に有効な値ではありま"
+"せん\n"
 
 #: src/core/prefs.c:2147
 #, c-format
 msgid "Workspace %d"
 msgstr "ワークスペース %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "ディスプレイ '%2$s' 上のスクリーン %1$d は無効です\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
-"ディスプレイ \"%2$s\" 上のスクリーン %1$d はすでにウィンドウマネージャを持っています; 現在のウィンドウマネージャを上書きするために--"
-"replace オプションの使用を試してください。\n"
+"ディスプレイ \"%2$s\" 上のスクリーン %1$d はすでにウィンドウマネージャを持っ"
+"ています; 現在のウィンドウマネージャを上書きするために--replace オプションの"
+"使用を試してください。\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
-msgstr "ディスプレイ \"%2$s\" 上のスクリーン %1$d でウィンドウマネージャの選択を取得できませんでした\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgstr ""
+"ディスプレイ \"%2$s\" 上のスクリーン %1$d でウィンドウマネージャの選択を取得"
+"できませんでした\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
-msgstr "ディスプレイ \"%2$s\" 上のスクリーン %1$d はすでにウィンドウマネージャを持っています\n"
+msgstr ""
+"ディスプレイ \"%2$s\" 上のスクリーン %1$d はすでにウィンドウマネージャを持っ"
+"ています\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "ディスプレイ \"%2$s\" 上のスクリーン %1$d を解放できませんでした\n"
@@ -1317,7 +1394,8 @@ msgstr "ディレクトリ '%s' を作成できませんでした : %s\n"
 #: src/core/session.c:859
 #, c-format
 msgid "Could not open session file '%s' for writing: %s\n"
-msgstr "書き込みのためのセッションファイル '%s' をオープンできませんでした: %s\n"
+msgstr ""
+"書き込みのためのセッションファイル '%s' をオープンできませんでした: %s\n"
 
 #: src/core/session.c:999
 #, c-format
@@ -1355,9 +1433,11 @@ msgstr "不明なエレメント %s があります"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
-msgstr "これらのウィンドウは \"現在の設定を保存する\" 機能をサポートしません。次回ログインする時に手動で再起動してください。"
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
+msgstr ""
+"これらのウィンドウは \"現在の設定を保存する\" 機能をサポートしません。次回ロ"
+"グインする時に手動で再起動してください。"
 
 #: src/core/util.c:101
 #, c-format
@@ -1401,14 +1481,14 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
 "window as specified in the ICCCM.\n"
 msgstr ""
-"ウィンドウ %s は ICCCM で指定されてたような WM_CLIENT_LEADER ウィンドウの代わりに自分自身で SM_CLIENT_ID "
-"を設定しています\n"
+"ウィンドウ %s は ICCCM で指定されてたような WM_CLIENT_LEADER ウィンドウの代わ"
+"りに自分自身で SM_CLIENT_ID を設定しています\n"
 
 #. We ignore mwm_has_resize_func because WM_NORMAL_HINTS is the
 #. * authoritative source for that info. Some apps such as mplayer or
@@ -1416,14 +1496,16 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
 "%d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr ""
-"ウィンドウ %s はリサイズ可能ではない MWM ヒント指示を設定していますが、最小サイズ %d x %d と最大サイズ %d x "
-"%dも設定しています。これはあまり意味がありません\n"
+"ウィンドウ %s はリサイズ可能ではない MWM ヒント指示を設定していますが、最小サ"
+"イズ %d x %d と最大サイズ %d x %dも設定しています。これはあまり意味がありませ"
+"ん\n"
 
 #: src/core/window-props.c:306
 #, c-format
@@ -1459,7 +1541,8 @@ msgstr "%s (他のユーザで)"
 #: src/core/window-props.c:1499
 #, c-format
 msgid "Invalid WM_TRANSIENT_FOR window 0x%lx specified for %s.\n"
-msgstr "%2$s で指定したウィンドウ 0x%1$lx の WM_TRANSIENT_FOR が間違っています\n"
+msgstr ""
+"%2$s で指定したウィンドウ 0x%1$lx の WM_TRANSIENT_FOR が間違っています\n"
 
 #: src/core/xprops.c:155
 #, c-format
@@ -1484,60 +1567,61 @@ msgstr "ウィンドウ 0x%2$lx 上のプロパティ %1$s は無効なUTF-8を�
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
-msgstr "ウィンドウ 0x%2$lx 上のプロパティ %1$s はリスト内のアイテム %3$d で無効な UTF-8を含んでいました\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
+msgstr ""
+"ウィンドウ 0x%2$lx 上のプロパティ %1$s はリスト内のアイテム %3$d で無効な "
+"UTF-8を含んでいました\n"
 
 #: src/tools/croma-message.c:150
 #, c-format
 msgid "Usage: %s\n"
 msgstr "用法: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "ウィンドウを閉じる"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "ウィンドウ・メニューを表示します"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr ""
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "ウィンドウを最小化します"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "ウィンドウを最大化します"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "ウィンドウを復帰する"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "ウィンドウを巻き上げます"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "ウィンドウの巻き上げを解除します"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "ウィンドウを最前面に維持します"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "ウィンドウを最前面の維持から解除します"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "すべてのワークスペースに配置します"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "現在のワークスペースにのみ配置します"
 
@@ -1645,6 +1729,7 @@ msgstr "別のワークスペースへ移動する(_W)"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1653,6 +1738,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1661,6 +1747,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1669,6 +1756,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1677,6 +1765,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1685,6 +1774,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1693,6 +1783,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1701,6 +1792,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1709,6 +1801,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1717,272 +1810,287 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "上"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "下"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "左側"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "右側"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "フレームジオメトリは \"%s\" のサイズを指定しません"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "境界 \"%2$s\" 用のフレームジオメトリは大きさ \"%1$s\" を指定しません"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "ボタンのアスペクト比 %g は妥当ではありません"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "フレームジオメトリはボタンのサイズを指定しません"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "階調度は少なくとも2つの色をもつべきです"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"\"%s\" を解析できませんでした; CTK の色指定では ctk:fg[NORMAL] のように状態を大括弧で囲み指定する必要があります "
-"(NORMAL は状態を示す)"
+"\"%s\" を解析できませんでした; CTK の色指定では ctk:fg[NORMAL] のように状態を"
+"大括弧で囲み指定する必要があります (NORMAL は状態を示す)"
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"\"%s\" を解析できませんでした; CTK の色指定では ctk:fg[NORMAL] のように状態の後に右大括弧をつける必要があります "
-"(NORMAL は状態を示す)"
+"\"%s\" を解析できませんでした; CTK の色指定では ctk:fg[NORMAL] のように状態の"
+"後に右大括弧をつける必要があります (NORMAL は状態を示す)"
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "色指定で状態 \"%s\" は理解しませんでした"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "色指定でカラーコンポーネント \"%s\" は理解しませんでした"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
 "format"
-msgstr "混合色のフォーマットは \"blend/bg_color/fg_color/alpha\" で、\"%s\" はこのフォーマットに適合していません"
+msgstr ""
+"混合色のフォーマットは \"blend/bg_color/fg_color/alpha\" で、\"%s\" はこの"
+"フォーマットに適合していません"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "混合色のアルファ値 \"%s\" を解析できませんでした"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "混合色のアルファ値 \"%s\" は 0.0 から 1.0 の間ではありません"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
-msgstr "シェードのフォーマットは \"shade/base_color/factor\" で、\"%s\" はこのフォーマットに適合していません"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgstr ""
+"シェードのフォーマットは \"shade/base_color/factor\" で、\"%s\" はこのフォー"
+"マットに適合していません"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "シェードカラーのシェード係数 \"%s\" をパスできませんでした"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "シェードカラーのシェード係数 \"%s\" が負の値です"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "色 \"%s\" を解析できませんでした"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "許可されていない文字 '%s' が座標式に含まれています"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr "解析できない浮動小数点数 '%s' が座標式に含まれています"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr "解析できない整数 '%s' が座標式に含まれています"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
 "\"%s\""
 msgstr "座標式は次のテキストの先頭に無効な演算子を含んでいました: \"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "座標式が空か解析不能です"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "座標式はゼロで除算しました"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr "座標式は浮動小数点で mod 演算子を使用しようとしています"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "座標式はオペランドが必要な場所に演算子 \"%s\" を使用しています"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "座標式は演算子が必要な場所でオペランドを使用しています"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "座標式はオペランドの代わりに演算子で終わっています"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
 "operand in between"
-msgstr "座標式は演算子 \"%2$c\" の後に演算子 \"%1$c\" が続いており、これらの間にオペランドがありません"
+msgstr ""
+"座標式は演算子 \"%2$c\" の後に演算子 \"%1$c\" が続いており、これらの間にオペ"
+"ランドがありません"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "座標式は無効な値または定数 \"%s\" が使用されていました"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "座標式を解析する際にオーバーフローが発生しました"
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr "座標式は左括弧がなしに右括弧が指定されています"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "座標式は左括弧が指定されていますが、右括弧がありません"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "座標式は演算子もオペランドも使用していないようです"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "テーマにエラーを引き起こす式が含まれていました: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
 "specified for this frame style"
 msgstr ""
-"このフレームスタイルは <button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> "
-"を指定する必要があります"
+"このフレームスタイルは <button function=\"%s\" state=\"%s\" "
+"draw_ops=\"whatever\"/> を指定する必要があります"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>がありません"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>がありませ"
+"ん"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "テーマ \"%s\" の読み込みに失敗しました: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "テーマ \"%1$s\" の <%2$s> が設定されていません"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
 "type=\"%s\" style_set=\"whatever\"/> element"
 msgstr ""
-"テーマ \"%2$s\" にウィンドウタイプ \"%1$s\" のフレームスタイルが設定されていません。<window type=\"%3$s\" "
-"style_set=\"whatever\"/> エレメントを追加してください"
+"テーマ \"%2$s\" にウィンドウタイプ \"%1$s\" のフレームスタイルが設定されてい"
+"ません。<window type=\"%3$s\" style_set=\"whatever\"/> エレメントを追加してく"
+"ださい"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr "ユーザ定義の定数は大文字で始まらなければなりません; \"%s\" は違います"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "定数 \"%s\" は既に定義されています"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2031,7 +2139,8 @@ msgstr "浮動小数点として \"%s\" を解析できませんでした"
 #: src/ui/theme-parser.c:700 src/ui/theme-parser.c:728
 #, c-format
 msgid "Boolean values must be \"true\" or \"false\" not \"%s\""
-msgstr "ブール値は \"true\" か \"false\" でなければならず \"%s\" ではありません"
+msgstr ""
+"ブール値は \"true\" か \"false\" でなければならず \"%s\" ではありません"
 
 #: src/ui/theme-parser.c:755
 #, c-format
@@ -2041,16 +2150,18 @@ msgstr "角度は 0.0 から 360.0 の間でなければなりませんが、%g 
 #: src/ui/theme-parser.c:818
 #, c-format
 msgid "Alpha must be between 0.0 (invisible) and 1.0 (fully opaque), was %g\n"
-msgstr "アルファ値は 0.0 (不可視)と 1.0 (完全に不透明) の間でなければなりませんが、%g でした\n"
+msgstr ""
+"アルファ値は 0.0 (不可視)と 1.0 (完全に不透明) の間でなければなりません"
+"が、%g でした\n"
 
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"無効なタイトルスケール \"%s\" です (xx-small,x-small,small,medium,large,x-large,xx-large "
-"のひとつでなければなりません)\n"
+"無効なタイトルスケール \"%s\" です (xx-small,x-small,small,medium,large,x-"
+"large,xx-large のひとつでなければなりません)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2072,7 +2183,9 @@ msgstr "<%s> のジオメトリ \"%s\" は定義されていません"
 #: src/ui/theme-parser.c:1174
 #, c-format
 msgid "<%s> must specify either a geometry or a parent that has a geometry"
-msgstr "<%s> はジオメトリ、またはジオメトリを持つ親のどちらかを指定しなければなりません"
+msgstr ""
+"<%s> はジオメトリ、またはジオメトリを持つ親のどちらかを指定しなければなりませ"
+"ん"
 
 #: src/ui/theme-parser.c:1216
 msgid "You must specify a background for an alpha value to be meaningful"
@@ -2108,7 +2221,9 @@ msgstr "要素 <%s> は <%s> の下に格納できません"
 msgid ""
 "Cannot specify both \"button_width\"/\"button_height\" and \"aspect_ratio\" "
 "for buttons"
-msgstr "\"button_width\"/\"button_height\" と \"aspect_ratio\" の両方のプロパティを指定することはできません"
+msgstr ""
+"\"button_width\"/\"button_height\" と \"aspect_ratio\" の両方のプロパティを指"
+"定することはできません"
 
 #: src/ui/theme-parser.c:1470
 #, c-format
@@ -2196,7 +2311,8 @@ msgstr "ボタンのための機能 \"%s\" は不明です"
 #: src/ui/theme-parser.c:3002
 #, c-format
 msgid "Button function \"%s\" does not exist in this version (%d, need %d)"
-msgstr "このバージョンでは \"%s\" というボタンの機能は提供していません (現 %d, 要 %d)"
+msgstr ""
+"このバージョンでは \"%s\" というボタンの機能は提供していません (現 %d, 要 %d)"
 
 #: src/ui/theme-parser.c:3014
 #, c-format
@@ -2233,17 +2349,20 @@ msgstr "\"%s\" はリサイズ属性のためには有効な値ではありま�
 msgid ""
 "Should not have \"resize\" attribute on <%s> element for maximized/shaded "
 "states"
-msgstr "最大化/シェード化のための <%s> エレメントには \"resize\" 属性を指定できません"
+msgstr ""
+"最大化/シェード化のための <%s> エレメントには \"resize\" 属性を指定できません"
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr "最大化のための <%s> エレメントには \"resize\" 属性を指定できません"
 
 #: src/ui/theme-parser.c:3203 src/ui/theme-parser.c:3247
 #, c-format
 msgid "Style has already been specified for state %s resize %s focus %s"
-msgstr "状態 %s リサイズ %s フォーカス %s のためのスタイルはすでに指定されています"
+msgstr ""
+"状態 %s リサイズ %s フォーカス %s のためのスタイルはすでに指定されています"
 
 #: src/ui/theme-parser.c:3214 src/ui/theme-parser.c:3225
 #: src/ui/theme-parser.c:3236 src/ui/theme-parser.c:3258
@@ -2257,24 +2376,27 @@ msgid ""
 "Can't have a two draw_ops for a <piece> element (theme specified a draw_ops "
 "attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<piece> エレメントは2つの draw_ops を持つことができません (テーマで draw_ops 属性と <draw_ops> "
-"エレメントが指定されたか、あるいは 2 つのエレメントが指定されました)"
+"<piece> エレメントは2つの draw_ops を持つことができません (テーマで draw_ops "
+"属性と <draw_ops> エレメントが指定されたか、あるいは 2 つのエレメントが指定さ"
+"れました)"
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<button> エレメントは 2 つの draw_ops を持つことができません (テーマで draw_ops 属性と <draw_ops> "
-"エレメントが指定されたか、あるいは 2 つのエレメントが指定されました)"
+"<button> エレメントは 2 つの draw_ops を持つことができません (テーマで "
+"draw_ops 属性と <draw_ops> エレメントが指定されたか、あるいは 2 つのエレメン"
+"トが指定されました)"
 
 #: src/ui/theme-parser.c:3427
 msgid ""
 "Can't have a two draw_ops for a <menu_icon> element (theme specified a "
 "draw_ops attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<menu_icon> エレメントは 2 つの draw_ops を持つことができません (テーマで draw_ops 属性と <draw_ops> "
-"エレメントが指定されたか、あるいは 2 つのエレメントが指定されました)"
+"<menu_icon> エレメントは 2 つの draw_ops を持つことができません (テーマで "
+"draw_ops 属性と <draw_ops> エレメントが指定されたか、あるいは 2 つのエレメン"
+"トが指定されました)"
 
 #: src/ui/theme-parser.c:3491
 #, c-format
@@ -2301,7 +2423,9 @@ msgstr "一番外側の要素は <%s> ではなく <metacity_theme> にする必
 #, c-format
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
-msgstr "エレメント <%s> は name/author/date/description エレメントの内側に許可されていません"
+msgstr ""
+"エレメント <%s> は name/author/date/description エレメントの内側に許可されて"
+"いません"
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2312,7 +2436,9 @@ msgstr "エレメント <%s> は <constant> エレメントの内側に許可さ
 #, c-format
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
-msgstr "エレメント <%s> はdistance/border/aspect_ratioエレメントの内側に許可されていません"
+msgstr ""
+"エレメント <%s> はdistance/border/aspect_ratioエレメントの内側に許可されてい"
+"ません"
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2358,101 +2484,101 @@ msgstr ""
 msgid "This is a sample message in a sample dialog"
 msgstr "これはサンプルダイアログの中のサンプルメッセージです"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "見せかけのメニュー・アイテム %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "ボーダーのみのウィンドウ"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "バー"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "通常のアプリケーションウィンドウ"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "ダイアログボックス"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "モーダルダイアログボックス"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "ユーティリティパレット"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "トーンオフ メニュー"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "境界線を付ける"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr ""
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "ボタン・レイアウトのテスト %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "一つのウィンドウ・フレームの描画時間: %g ミリ秒"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "用法: croma-theme-viewer [テーマ名]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "テーマのロードでエラーが発生しました: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "\"%s\" というテーマを %g秒で読み込みました\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "通常のタイトルフォント"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "小さいタイトルフォント"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "大きいタイトルフォント"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "ボタンレイアウト"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "ベンチマーク"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "ここにウィンドウのタイトルが表示されます"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "
 "seconds wall clock time including X server resources (%g milliseconds per "
 "frame)\n"
 msgstr ""
-"%d フレームをクライアント側で %g秒 (1フレームにつき %gミリ秒)、実時間ではXサーバのリソースを含めて %g秒 (1フレームにつき "
-"%gミリ秒)で描画しました\n"
+"%d フレームをクライアント側で %g秒 (1フレームにつき %gミリ秒)、実時間ではX"
+"サーバのリソースを含めて %g秒 (1フレームにつき %gミリ秒)で描画しました\n"

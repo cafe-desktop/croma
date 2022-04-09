@@ -2,25 +2,25 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Basque (https://www.transifex.com/cafe/teams/13566/eu/)\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -375,11 +375,11 @@ msgstr "Saguaren eskuineko botoiarekin tamaina aldatu ala ez"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
-"Ezarri TRUE (egia) gisa saguaren eskuineko botoiarekin tamaina aldatzeko eta"
-" erdiko botoiarekin menua erakusteko \"mouse_button_modifier\"-en emandako "
+"Ezarri TRUE (egia) gisa saguaren eskuineko botoiarekin tamaina aldatzeko eta "
+"erdiko botoiarekin menua erakusteko \"mouse_button_modifier\"-en emandako "
 "tekla sakatuta mantentzen den bitartean. Ezarri FALSE (faltsua) gisa beste "
 "erara funtzionatzeko."
 
@@ -407,14 +407,14 @@ msgid ""
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
-"Titulu-barrako botoien antolamendua. Balioak katea izan behar du,  "
-"\"menu:minimize,maximize,spacer,close\" erakoa; bi puntuek leihoaren "
-"ezkerreko izkina eskuineko izkinatik bereizten dute, eta botoi-izenak komaz "
-"bereizita jartzen dira. Ez da onartzen bikoiztutako botoirik. Botoi-izen "
-"ezezagunei ez ikusi egiten zaie zuzenean, eta horrela botoiak gehitu ahal "
-"izango dira croma-ren etorkizuneko bertsioetan bertsio zaharragoak hautsi "
-"gabe. Etiketa tartekatzaile berezia erabil daiteke jarraian dauden bi "
-"botoiren artean tartea sartzeko."
+"Titulu-barrako botoien antolamendua. Balioak katea izan behar du,  \"menu:"
+"minimize,maximize,spacer,close\" erakoa; bi puntuek leihoaren ezkerreko "
+"izkina eskuineko izkinatik bereizten dute, eta botoi-izenak komaz bereizita "
+"jartzen dira. Ez da onartzen bikoiztutako botoirik. Botoi-izen ezezagunei ez "
+"ikusi egiten zaie zuzenean, eta horrela botoiak gehitu ahal izango dira "
+"croma-ren etorkizuneko bertsioetan bertsio zaharragoak hautsi gabe. Etiketa "
+"tartekatzaile berezia erabil daiteke jarraian dauden bi botoiren artean "
+"tartea sartzeko."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -424,15 +424,15 @@ msgstr "Leiho-fokuaren modua"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Leihoei fokua ecafeko moduak adierazten du leihoak nola aktibatuko diren. "
-"Hiru aukera daude: \"click\" (leihoari fokua ecafeko, bertan klik egin behar"
-" da), \"sloppy\" (sagua leihoan sartzen denean leihoak fokua hartuko du), "
-"eta \"mouse\" (sagua leihoan sartzen denean leihoak fokua hartuko du, eta "
-"saguak leihotik alde egiten duenean, fokua galduko du)."
+"Hiru aukera daude: \"click\" (leihoari fokua ecafeko, bertan klik egin behar "
+"da), \"sloppy\" (sagua leihoan sartzen denean leihoak fokua hartuko du), eta "
+"\"mouse\" (sagua leihoan sartzen denean leihoak fokua hartuko du, eta saguak "
+"leihotik alde egiten duenean, fokua galduko du)."
 
 #: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
@@ -441,13 +441,13 @@ msgstr "Kontrolatu leiho berriek fokua nola lortzea"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Aukera honek leihoak sortu berriek nola lortzen duten fokuaren gaineko "
-"kontrol gehiago ecafen du. Bi balio izan ditzake: \"smart\" erabiltzailearen"
-" foku-modu normala aplikatzen du, eta \"sctrict\" leihoa terminal batetik "
+"kontrol gehiago ecafen du. Bi balio izan ditzake: \"smart\" erabiltzailearen "
+"foku-modu normala aplikatzen du, eta \"sctrict\" leihoa terminal batetik "
 "abiaratzen denean eta fokua lortzen ez duenekoa."
 
 #: src/org.cafe.croma.gschema.xml:80
@@ -459,23 +459,23 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:85
@@ -488,8 +488,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -512,18 +512,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"Aukera honek erabakitzen du titulu-barran erdiko botoiarekin klik egindakoan"
-" zer gertatuko den. Uneko aukerak hauek dira: 'toggle_shade', leihoari "
-"itzala jarri edo kentzen dio; 'toggle_maximize' leihoa maximizatu edo "
+"Aukera honek erabakitzen du titulu-barran erdiko botoiarekin klik egindakoan "
+"zer gertatuko den. Uneko aukerak hauek dira: 'toggle_shade', leihoari itzala "
+"jarri edo kentzen dio; 'toggle_maximize' leihoa maximizatu edo "
 "leheneratzeko; 'toggle_maximize_horizontally' eta "
 "'toggle_maximize_vertically' leihoa horizontalki edo bertikalki "
-"maximizatzeko edo desmaximizatzeko; 'minimize' leihoa minimizatzeko; 'shade'"
-" leihoa biltzeko; 'menu' leihoaren menua bistaratzeko; 'lower' leihoa beste "
+"maximizatzeko edo desmaximizatzeko; 'minimize' leihoa minimizatzeko; 'shade' "
+"leihoa biltzeko; 'menu' leihoaren menua bistaratzeko; 'lower' leihoa beste "
 "leiho guztien atzean jartzeko;eta 'none' ezer ez egiteko."
 
 #: src/org.cafe.croma.gschema.xml:95
@@ -536,8 +536,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -643,8 +643,8 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
@@ -693,9 +693,9 @@ msgstr ""
 "Sistemaren soinua edo beste aplikazio baten 'soinua' jotzean, bisualki nola "
 "adierazi behar duen esaten dio Croma-ri. Oraingoz bi balio daude aukeran, "
 "\"fullscreen\", pantaila osoko zuri-beltzeko flash-a egiten duena; eta "
-"\"frame_flash\", soinua jotzeko agindua eman duen aplikazioaren titulu-barra"
-" keinuka erakusten duena. Soinua zein aplikaziok jo duen jakiterik ez badago"
-" (hori gertatzen da normalean \"sistema-soinu\" lehenetsia denean), unean "
+"\"frame_flash\", soinua jotzeko agindua eman duen aplikazioaren titulu-barra "
+"keinuka erakusten duena. Soinua zein aplikaziok jo duen jakiterik ez badago "
+"(hori gertatzen da normalean \"sistema-soinu\" lehenetsia denean), unean "
 "fokua duen leihoaren titulu-barra agertzen da keinuka."
 
 #: src/org.cafe.croma.gschema.xml:151
@@ -732,24 +732,23 @@ msgid ""
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
 "Egia bada, croma-k erabiltzaileari informazio eta \"zuzeneko kudeaketa\" "
-"zentzu gutxiago eskainiko dio, burdin-hariak erabiliz, animazioak saihestuz,"
-" e.a. Erabiltzaile askorentzako honek erabilgarritasuna gutxiagotzen du, "
+"zentzu gutxiago eskainiko dio, burdin-hariak erabiliz, animazioak saihestuz, "
+"e.a. Erabiltzaile askorentzako honek erabilgarritasuna gutxiagotzen du, "
 "baina heredatutako aplikazioak eta terminal-zerbitzariak funtzionatzea "
 "baimendu dezake, beste kasuetan ezinezkoa izango zatekeena. Hala ere, "
 "erabilgarritasuna aktibo dagoenean wireframe funtzionalitatea desgaitu "
 "egiten da."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
 "(Ez dago inplementatuta) Nabigazioa aplikazioetan egiten da, ez leihoetan"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
@@ -761,8 +760,8 @@ msgstr ""
 "Aplikazioan oinarritutako moduan leiho bati fokua ecafen diozunean, "
 "aplikazio horretako leiho guztiak goratuko dira. Gainera, aplikazioan "
 "oinarritutako moduan, foku-klikak ez dira pasatzen beste aplikazio "
-"batzuetako leihoetara. Horretaz gain, aplikazioa oinarritutako modua ez dago"
-" ia batere inplementatuta oraingoz."
+"batzuetako leihoetara. Horretaz gain, aplikazioa oinarritutako modua ez dago "
+"ia batere inplementatuta oraingoz."
 
 #: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
@@ -778,10 +777,9 @@ msgid ""
 "run any misbehaving applications."
 msgstr ""
 "Aplikazio batzuk espezifikazioei jaramonik ez diete egiten, leiho-"
-"kudeatzailearen funtzionalitatea gutxituz. Aukera honek Croma era zorrotzeko"
-" zuzeneko moduan du, erabiltzailearen interfazeari sendotasun gehiago "
-"emanez, eskainitakoak ez dauka gaizki portatzen diren aplikazioak exekutatu "
-"beharrik."
+"kudeatzailearen funtzionalitatea gutxituz. Aukera honek Croma era zorrotzeko "
+"zuzeneko moduan du, erabiltzailearen interfazeari sendotasun gehiago emanez, "
+"eskainitakoak ez dauka gaizki portatzen diren aplikazioak exekutatu beharrik."
 
 #: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
@@ -800,8 +798,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:186
@@ -831,11 +829,11 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:201
@@ -844,8 +842,8 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:207
@@ -935,8 +933,8 @@ msgstr "Exekutatu definitutako komandoa"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1006,8 +1004,7 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
-msgstr ""
-"Atzerantz joan aplikazioaren leihoen artean, laster-leiho bat erabiliz"
+msgstr "Atzerantz joan aplikazioaren leihoen artean, laster-leiho bat erabiliz"
 
 #: src/org.cafe.croma.gschema.xml:569
 msgid "Move backward between windows, using a popup window"
@@ -1059,8 +1056,8 @@ msgstr "Komandoak laster-teklei erantzunez exekutatzeko"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "/apps/croma/global_keybindings/run_command_N gakoek definitzen dituzte "
 "komando horiei dagozkien laster-teklak. run_command_N komandoarentzat "
@@ -1076,8 +1073,7 @@ msgid ""
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
 "/apps/croma/global_keybindings/run_command_screenshot gakoak laster-tekla "
-"bat definitzen du, ezarpen honetan zehaztutako komandoa exekutatuko "
-"duelarik."
+"bat definitzen du, ezarpen honetan zehaztutako komandoa exekutatuko duelarik."
 
 #: src/org.cafe.croma.gschema.xml:727
 msgid "The window screenshot command"
@@ -1085,8 +1081,8 @@ msgstr "Leihoaren pantaila-argazkiaren komandoa"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "/apps/croma/global_keybindings/run_command_window_screenshot gakoak laster-"
@@ -1171,7 +1167,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1182,28 +1179,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "%d komandoa ez dago definituta.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Ez da terminalaren komandoa definitu.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr ""
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Utzi"
 
@@ -1213,62 +1210,64 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Copyright-a (C) 2001-%s Havoc Pennington, Red Hat, Inc., eta beste batzuk\n"
 "Hau software librea da; ikus kopiatzeko baldintzak iturburu-kodean.\n"
-"EZ du bermerik; ezta MERKATURATZEKO edo XEDE JAKIN BATERAKO EGOKITASUNAREN BERMERIK ERE.\n"
+"EZ du bermerik; ezta MERKATURATZEKO edo XEDE JAKIN BATERAKO EGOKITASUNAREN "
+"BERMERIK ERE.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Desgaitu saio-kudeatzailearen konexioa"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Ordeztu exekutatzen dagoen leiho-kudeatzailea Croma-rekin"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Zehaztu saio-kudeatzailearen IDa"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "X pantaila erabiltzeko"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Hasieratu saioa babes-fitxategitik"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Inprimatu bertsioa"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Bihurtu X dei sinkroniko"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Aktibatu konposaketa"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Desaktibatu konposaketa"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
 "Ez jarri pantaila osoko leihoak maximizatuta badaude eta dekoraziorik ez "
 "badute"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Huts egin du gaien direktorioa aztertzean: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1276,7 +1275,7 @@ msgstr ""
 "Gai bat ezin izan da aurkitu. Ziurtatu %s badagoela eta ohiko gaiak "
 "dituela.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Ezin izan da berrabiarazi: %s\n"
@@ -1305,8 +1304,8 @@ msgstr ""
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "Konfigurazioaren datu-basean aurkitutako \"%s\" balioa ez da baliozkoa sagu-"
 "botoiaren aldatzailearentzat\n"
@@ -1325,33 +1324,34 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "%d. laneko area"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "'%2$s' bistaratzeko %1$d pantaila ez da baliozkoa\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
 "\"%2$s\" bistaratzeko %1$d pantailak badu leiho-kudeatzailea; leiho-"
 "kudeatzaile hori ordeztu nahi baduzu, saiatu --replace aukerarekin.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
 "Ezin izan da eskuratu leiho-kudeatzailearen hautapena \"%2$s\" bistaratzeko "
 "%1$d pantailan\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "\"%2$s\" bistaratzeko %1$d pantailak badu leiho-kudeatzailea\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Ezin izan da askatu \"%2$s\" bistaratzeko %1$d pantaila\n"
@@ -1402,11 +1402,11 @@ msgstr "%s elementu ezezaguna"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
-"Leiho hauek ez dute onartzen &quot;gorde uneko konfigurazioa&quot; eta eskuz"
-" berrabiarazi beharko dituzu hurrengo saioa hasten duzunean."
+"Leiho hauek ez dute onartzen &quot;gorde uneko konfigurazioa&quot; eta eskuz "
+"berrabiarazi beharko dituzu hurrengo saioa hasten duzunean."
 
 #: src/core/util.c:101
 #, c-format
@@ -1450,14 +1450,14 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
 "window as specified in the ICCCM.\n"
 msgstr ""
-"%s leihoak bere buruari ezartzen dio SM_CLIENT_ID, WM_CLIENT_LEADER leihoari"
-" ezarri beharren, ICCCMan zehaztuta dagoen moduan.\n"
+"%s leihoak bere buruari ezartzen dio SM_CLIENT_ID, WM_CLIENT_LEADER leihoari "
+"ezarri beharren, ICCCMan zehaztuta dagoen moduan.\n"
 
 #. We ignore mwm_has_resize_func because WM_NORMAL_HINTS is the
 #. * authoritative source for that info. Some apps such as mplayer or
@@ -1465,7 +1465,8 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
@@ -1534,8 +1535,7 @@ msgstr "0x%2$lx leihoko %1$s propietateak UTF-8 baliogabea du\n"
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "0x%2$lx leihoko %1$s propietateak UTF-8 baliogabea du zerrendako %3$d. "
 "elementuan\n"
@@ -1545,51 +1545,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Erabilera: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Itxi leihoa"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Leiho-menua"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr ""
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Minimizatu leihoa"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Maximizatu leihoa"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Leheneratu leihoa"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Bildu leihoa"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Zabaldu leihoa"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Mantendu leihoa gainean"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Kendu leihoa gainetik"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Beti laneko area ikusgaian"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Jarri leihoa laneko area bakar batean"
 
@@ -1697,6 +1697,7 @@ msgstr "Aldatu beste _laneko areara"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Maius"
@@ -1705,6 +1706,7 @@ msgstr "Maius"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ktrl"
@@ -1713,6 +1715,7 @@ msgstr "Ktrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1721,6 +1724,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1729,6 +1733,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1737,6 +1742,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hiper"
@@ -1745,6 +1751,7 @@ msgstr "Hiper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Ald2"
@@ -1753,6 +1760,7 @@ msgstr "Ald2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Ald3"
@@ -1761,6 +1769,7 @@ msgstr "Ald3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Ald4"
@@ -1769,106 +1778,108 @@ msgstr "Ald4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Ald5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "goian"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "behean"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "ezkerrekoa"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "eskuinekoa"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "marko-geometriak ez du zehazten \"%s\" neurririk"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "marko-geometriak ez du zehazten \"%s\" neurririk \"%s\" ertzerako"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "Botoiaren %g aspektu-erlazioa ez da arrazoizkoa"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "Marko-geometriak ez du zehazten botoien tamainarik"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Gradienteek bi kolore izan behar dituzte gutxienez"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK kolore-zehaztapenak egoera kortxete artean izan behar du, adib. "
+"CTK kolore-zehaztapenak egoera kortxete artean izan behar du, adib. ctk:"
+"fg[NORMAL], NORMAL egoera izanik; \"%s\" ezin da analizatu"
+
+#: src/ui/theme.c:1486
+#, c-format
+msgid ""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+msgstr ""
+"CTK kolore-zehaztapenak ixteko kortxetea izan behar egoeraren ondoren, adib. "
 "ctk:fg[NORMAL], NORMAL egoera izanik; \"%s\" ezin da analizatu"
 
-#: src/ui/theme.c:1485
-#, c-format
-msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
-msgstr ""
-"CTK kolore-zehaztapenak ixteko kortxetea izan behar egoeraren ondoren, adib."
-" ctk:fg[NORMAL], NORMAL egoera izanik; \"%s\" ezin da analizatu"
-
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Ez da ulertu \"%s\" egoera kolore-zehaztapenean"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Ez da ulertu \"%s\" kolore-osagaia kolore-zehaztapenean"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1877,60 +1888,61 @@ msgstr ""
 "Nahaste-formatua \"blend/bg_color/fg_color/alpha\" da, \"%s\" ez dator bat "
 "formatuarekin"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Ezin da analizatu \"%s\" alfa balioa kolore nahastuan"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "Kolore nahastuko \"%s\" alfa balioa ez dago 0,0 eta 1,0 artean"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Itzal-faktorea \"shade/base_color/factor\" da, \"%s\" ez dator bat "
 "formatuarekin"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Ezin da analizatu \"%s\" itzal-faktorea itzaldun kolorean"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Itzaldun kolorean \"%s\" itzal-faktorea negatiboa da"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Ezin izan da \"%s\" kolorea analizatu"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr ""
 "Koordenatuen adierazpenak '%s' karakterea dauka, eta hori ez da onartzen"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
 "Koordenatuen adierazpenak '%s' koma mugikorreko zenbakia dauka, eta ezin da "
 "analizatu"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr ""
 "Koordenatuen adierazpenak '%s' osoko zenbakia dauka, eta ezin da analizatu"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
@@ -1939,39 +1951,40 @@ msgstr ""
 "Koordenatuen adierazpenak eragile ezezaguna dauka testu honen hasieran: "
 "\"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "Koordenatuen adierazpena hutsik dago edo ez da ulertu"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Koordenatuen adierazpenak zero zatitzaileko zatiketa ecafen du"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr ""
 "Koordenatuen adierazpena mod eragilea erabiltzen saiatzen da koma "
 "mugikorreko zenbaki batean"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr ""
 "Koordenatuen adierazpenak \"%s\" eragilea du eragigai bat espero zen lekuan"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr ""
 "Koordenatuen adierazpenak eragigai bat du eragile bat espero zen lekuan"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr ""
 "Koordenatuen adierazpena eragile batez amaitzen da, eragigai batez amaitu "
 "beharrean"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
@@ -1980,39 +1993,36 @@ msgstr ""
 "Koordenatuen adierazpenak \"%c\" eragilea du \"%c\" eragilearen ondoren, "
 "tartean eragigairik gabe"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "Koordenatuen adierazpenak \"%s\" aldagai edo konstante ezezaguna du"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr ""
 "Koordenatuen adierazpenaren analizatzaileak bere bufferra gainezkatu du"
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr ""
-"Koordenatuen adierazpenak ixteko parentesi bat du, baina irekitzekoa falta "
-"da"
+"Koordenatuen adierazpenak ixteko parentesi bat du, baina irekitzekoa falta da"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr ""
-"Koordenatuen adierazpenak irekitzeko parentesi bat du, baina ixtekoa falta "
-"da"
+"Koordenatuen adierazpenak irekitzeko parentesi bat du, baina ixtekoa falta da"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "Koordenatuen adierazpenak ez dirudi eragilerik edo eragigairik duenik"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Gaiak errorea ecafen duen adierazpen bat dauka: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2021,23 +2031,25 @@ msgstr ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> zehaztu behar "
 "da marko-estilo honetan"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> falta da"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> falta da"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Huts egin du \"%s\" gaia kargatzean: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "<%s> ez da ezarri \"%s\" gaian"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2046,20 +2058,22 @@ msgstr ""
 "Ez da marko-estilorik ezarri set \"%s\" leiho-motarentzat \"%s\" gaian, "
 "gehitu <window type=\"%s\" style_set=\"whatever\"/> elementu bat"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
 "Erabiltzaileak definitutako konstanteak maiuskulaz hasi behar du; \"%s\" ez "
 "da maiuskulaz hasten"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "\"%s\" konstantea lehendik definituta dago"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2108,7 +2122,8 @@ msgstr "\"%s\" ezin da analizatu koma mugikorreko zenbaki gisa"
 #: src/ui/theme-parser.c:700 src/ui/theme-parser.c:728
 #, c-format
 msgid "Boolean values must be \"true\" or \"false\" not \"%s\""
-msgstr "Balio boolearrak \"egiazkoak\" edo \"faltsuak\" izan daitezke, ez \"%s\""
+msgstr ""
+"Balio boolearrak \"egiazkoak\" edo \"faltsuak\" izan daitezke, ez \"%s\""
 
 #: src/ui/theme-parser.c:755
 #, c-format
@@ -2124,11 +2139,11 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"\"%s\" titulu-eskala baliogabea (xx-small,x-small,small,medium,large,x-large"
-",xx-large izan behar du)\n"
+"\"%s\" titulu-eskala baliogabea (xx-small,x-small,small,medium,large,x-large,"
+"xx-large izan behar du)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2249,7 +2264,8 @@ msgstr "Ez da \"%s\" izeneko <draw_ops> bat ere definitu"
 #: src/ui/theme-parser.c:2726 src/ui/theme-parser.c:2822
 #, c-format
 msgid "Including draw_ops \"%s\" here would create a circular reference"
-msgstr "Hemen \"%s\" draw_ops sartzen bada, erreferentzia zirkularra sortuko da"
+msgstr ""
+"Hemen \"%s\" draw_ops sartzen bada, erreferentzia zirkularra sortuko da"
 
 #: src/ui/theme-parser.c:2937
 #, c-format
@@ -2274,7 +2290,8 @@ msgstr "\"%s\" funtzioa ezezaguna botoiarentzat"
 #: src/ui/theme-parser.c:3002
 #, c-format
 msgid "Button function \"%s\" does not exist in this version (%d, need %d)"
-msgstr "\"%s\" botoi-funtzioa ez da existitzen bertsio honetan (%d, %d behar du)"
+msgstr ""
+"\"%s\" botoi-funtzioa ez da existitzen bertsio honetan (%d, %d behar du)"
 
 #: src/ui/theme-parser.c:3014
 #, c-format
@@ -2312,12 +2329,13 @@ msgid ""
 "Should not have \"resize\" attribute on <%s> element for maximized/shaded "
 "states"
 msgstr ""
-"Ez luke izan behar \"resize\" atributurik <%s> elementuan "
-"maximizatutako/bildutako egoerentzat"
+"Ez luke izan behar \"resize\" atributurik <%s> elementuan maximizatutako/"
+"bildutako egoerentzat"
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
 "Ez luke izan behar \"resize\" atributurik <%s> elementuan maximizatutako "
 "egoerentzat"
@@ -2325,8 +2343,7 @@ msgstr ""
 #: src/ui/theme-parser.c:3203 src/ui/theme-parser.c:3247
 #, c-format
 msgid "Style has already been specified for state %s resize %s focus %s"
-msgstr ""
-"Estiloa dagoeneko zehaztu da %s egoeran %s tamaina-aldatzean %s fokuan"
+msgstr "Estiloa dagoeneko zehaztu da %s egoeran %s tamaina-aldatzean %s fokuan"
 
 #: src/ui/theme-parser.c:3214 src/ui/theme-parser.c:3225
 #: src/ui/theme-parser.c:3236 src/ui/theme-parser.c:3258
@@ -2345,11 +2362,11 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"Ezin dira bi draw_ops izan <button> elementu batean (gaiak draw_ops atributu"
-" bat eta <draw_ops> elementu bat zehaztu ditu, edo bi elementu zehaztu ditu)"
+"Ezin dira bi draw_ops izan <button> elementu batean (gaiak draw_ops atributu "
+"bat eta <draw_ops> elementu bat zehaztu ditu, edo bi elementu zehaztu ditu)"
 
 #: src/ui/theme-parser.c:3427
 msgid ""
@@ -2443,96 +2460,96 @@ msgstr ""
 msgid "This is a sample message in a sample dialog"
 msgstr "Hau mezu adibide bat da, adibidezko elkarrizketa-koadro batekin"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Menuko %d elementu faltsua\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Ertz-soileko leihoa"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Barra"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Aplikazio normalaren leihoa"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Elkarrizketa-koadroko kutxa"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Elkarrizketa-koadroko kutxa modala"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Paleta utilitatea"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Menua itzalita"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Ertza"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr ""
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Botoi diseinuen %d. proba"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g milisegundo leiho-markoa marrazteko"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Erabilera: croma-theme-viewer [GAIA]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Errorea gaia kargatzean: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "\"%s\" gaia %g segundotan kargatua\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Tituluko letra-tipo normala"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Tituluko letra-tipo txikia"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Tituluko letra-tipo handia"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Botoien diseinua"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Proba-lekua"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Leihoaren titulua hemen doa"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "

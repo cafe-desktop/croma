@@ -2,24 +2,24 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Martin Wimpress <code@flexion.org>, 2020
 # Vaibhav S Dalvi <vaibhav.dlv@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Marathi (https://www.transifex.com/cafe/teams/13566/mr/)\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -192,8 +192,7 @@ msgstr "पटल पुनःआकार करा"
 
 #: src/50-croma-window-key.xml.in:50 src/org.cafe.croma.gschema.xml:790
 msgid "Toggle whether window is on all workspaces or just one"
-msgstr ""
-"पटल सर्व कार्यक्षेत्र किंवा फक्त एकाच पटलावर दृष्यास्पद करायचे ते ठरवा"
+msgstr "पटल सर्व कार्यक्षेत्र किंवा फक्त एकाच पटलावर दृष्यास्पद करायचे ते ठरवा"
 
 #: src/50-croma-window-key.xml.in:54 src/org.cafe.croma.gschema.xml:875
 msgid "Raise window if it's covered by another window, otherwise lower it"
@@ -375,12 +374,12 @@ msgstr "उजव्या बटनसह पुनःआकार द्या
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
-"उजव्या बटनसह पुनःआकार व \"mouse_button_modifier\" मधील कि दाबून ठेवतेवेळी "
-"मध्य बटनसह मेन्यू दाखवण्यासाठी, यांस true सेट करा; या उलट कार्यान्वीत करायचे"
-" असल्यास यांस false सेट करा."
+"उजव्या बटनसह पुनःआकार व \"mouse_button_modifier\" मधील कि दाबून ठेवतेवेळी मध्य "
+"बटनसह मेन्यू दाखवण्यासाठी, यांस true सेट करा; या उलट कार्यान्वीत करायचे असल्यास यांस "
+"false सेट करा."
 
 #: src/org.cafe.croma.gschema.xml:60
 msgid "Whether to display preselected tab window border"
@@ -406,13 +405,11 @@ msgid ""
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
-"शिर्षकपट्टीवरील बटनांची सुस्थीती. मूल्य अक्षरसंच, जसे कि "
-"\"menu:minimize,maximize,spacer,close\"; कोलन पटलचा डावा कोपरा ऊजव्या "
-"कोपऱ्यापासून वेगळे करते, व बटन नाव स्वल्पविराम-विभाजीत असतात. ड्युप्लिकेट "
-"बटन स्वीकारले जात नाही. अपरिचीत बटन नाव शांतपणे दुर्लक्ष केले जातात ज्यामुळे"
-" बटन भविष्ट croma आवृत्तीत जुणी आवृत्ती खंडीत न करता समाविष्ट केले जातील. "
-"दोन बटन अंतर्गत स्पेस् अंतर्भूत करण्यासाठी विशेष स्पेसर टॅगचा वापर केला जाऊ "
-"शकतो."
+"शिर्षकपट्टीवरील बटनांची सुस्थीती. मूल्य अक्षरसंच, जसे कि \"menu:minimize,maximize,"
+"spacer,close\"; कोलन पटलचा डावा कोपरा ऊजव्या कोपऱ्यापासून वेगळे करते, व बटन नाव "
+"स्वल्पविराम-विभाजीत असतात. ड्युप्लिकेट बटन स्वीकारले जात नाही. अपरिचीत बटन नाव शांतपणे "
+"दुर्लक्ष केले जातात ज्यामुळे बटन भविष्ट croma आवृत्तीत जुणी आवृत्ती खंडीत न करता समाविष्ट केले "
+"जातील. दोन बटन अंतर्गत स्पेस् अंतर्भूत करण्यासाठी विशेष स्पेसर टॅगचा वापर केला जाऊ शकतो."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -422,16 +419,15 @@ msgstr "पटल फोकस मोड"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
-"पध्दती पटल कसे सक्रीय करायचे याचे सूचक पटल लक्ष्यकेंद्र पध्दती आहे. याचे तीन"
-" संभाव्य मुल्य आहे; \"क्लिक\" म्हणजे लक्षकेंद्र करण्याकरीता पटलवर क्लिक केले"
-" पाहिजे, \"गचाळ\" म्हणजे जेव्हा माउस पटल मध्ये प्रवेश करतो तेव्हा पटल "
-"लक्ष्यकेंद्रीत केले जाते व \"माउस\" म्हणजे जेव्हा माउस पटलीत प्रवेश करतो "
-"तेव्हा पटल लक्ष्यकेंद्रीत केले जाते व जेव्हा माउस पटलीत प्रवेश करत नाही "
-"तेव्हा पटल लक्ष्यकेंद्रीत केले जात नाही."
+"पध्दती पटल कसे सक्रीय करायचे याचे सूचक पटल लक्ष्यकेंद्र पध्दती आहे. याचे तीन संभाव्य मुल्य आहे; "
+"\"क्लिक\" म्हणजे लक्षकेंद्र करण्याकरीता पटलवर क्लिक केले पाहिजे, \"गचाळ\" म्हणजे जेव्हा माउस "
+"पटल मध्ये प्रवेश करतो तेव्हा पटल लक्ष्यकेंद्रीत केले जाते व \"माउस\" म्हणजे जेव्हा माउस पटलीत "
+"प्रवेश करतो तेव्हा पटल लक्ष्यकेंद्रीत केले जाते व जेव्हा माउस पटलीत प्रवेश करत नाही तेव्हा पटल "
+"लक्ष्यकेंद्रीत केले जात नाही."
 
 #: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
@@ -440,14 +436,13 @@ msgstr "नविन पटल लक्ष्यकेंद्रीत कस
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
-"या पर्याय नविन नर्मित पटली करीता लक्ष्यकेंद्र कसे प्राप्त होते या करीता अगाऊ"
-" नियंत्रण पुरवितो. दोन संभाव्य मुल्य आहेत; \"smart\" म्हणजे वापरकर्त्याचे "
-"साधारण लक्ष्यकेंद्र पध्दती, व \"strict\" म्हणजे टर्मिनल पासून सुरू होणारे "
-"पटली ज्यास लक्ष्यकेंद्र देऊ शकत नाही."
+"या पर्याय नविन नर्मित पटली करीता लक्ष्यकेंद्र कसे प्राप्त होते या करीता अगाऊ नियंत्रण "
+"पुरवितो. दोन संभाव्य मुल्य आहेत; \"smart\" म्हणजे वापरकर्त्याचे साधारण लक्ष्यकेंद्र पध्दती, व "
+"\"strict\" म्हणजे टर्मिनल पासून सुरू होणारे पटली ज्यास लक्ष्यकेंद्र देऊ शकत नाही."
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
@@ -456,23 +451,23 @@ msgstr "अन्य वापरकर्त्याशी परस्पर 
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:85
@@ -485,19 +480,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"हा पर्याय शिर्षक पट्टीवर दोनवेळा-क्लिक केल्यानंतरचे प्रभाव ओळखतो. सध्याचे "
-"वैध पर्याय याप्रमाणे आहे 'toggle_shade' आहे, ज्यामुळे पटलाचे रंगछटा "
-"शक्य/अशक्य होते, 'toggle_maximize' ज्यामुळे पटलचे आकार मोठे शक्य/अशक्य होते,"
-" 'toggle_maximize_horizontally' व 'toggle_maximize_vertically' ज्यामुळे पटल "
-"ठराविक दिशामध्येच मोठे शक्य/अशक्य होते, 'minimize' ज्यामुळे पटल लहान होते, "
-"'shade' ज्यामुळे पटल वर सरकते, 'menu' ज्यामुळे पटलचे मेन्यू दाखवले जाते, "
-"'lower' ज्यामुळे पटल इतरांच्या पाठीमागे स्थीत केले जाते, व 'none' ज्यामुळे "
-"काहीच होत नाही."
+"हा पर्याय शिर्षक पट्टीवर दोनवेळा-क्लिक केल्यानंतरचे प्रभाव ओळखतो. सध्याचे वैध पर्याय "
+"याप्रमाणे आहे 'toggle_shade' आहे, ज्यामुळे पटलाचे रंगछटा शक्य/अशक्य होते, "
+"'toggle_maximize' ज्यामुळे पटलचे आकार मोठे शक्य/अशक्य होते, "
+"'toggle_maximize_horizontally' व 'toggle_maximize_vertically' ज्यामुळे पटल "
+"ठराविक दिशामध्येच मोठे शक्य/अशक्य होते, 'minimize' ज्यामुळे पटल लहान होते, 'shade' "
+"ज्यामुळे पटल वर सरकते, 'menu' ज्यामुळे पटलचे मेन्यू दाखवले जाते, 'lower' ज्यामुळे पटल "
+"इतरांच्या पाठीमागे स्थीत केले जाते, व 'none' ज्यामुळे काहीच होत नाही."
 
 #: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
@@ -509,18 +503,17 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"हा पर्याय शिर्षक पट्टीवर मध्य-क्लिक केल्यानंतरचे प्रभाव ओळखतो. सध्याचे वैध "
-"पर्याय याप्रमाणे आहे 'toggle_shade' आहे, ज्यामुळे पटलाचे रंगछटा शक्य/अशक्य "
-"होते, 'toggle_maximize' ज्यामुळे पटलचे आकार मोठे शक्य/अशक्य होते, "
-"'toggle_maximize_horizontally' व 'toggle_maximize_vertically' ज्यामुळे पटल "
-"ठराविक दिशामध्येच मोठे शक्य/अशक्य होते, 'minimize' ज्यामुळे पटल लहान होते, "
-"'shade' ज्यामुळे पटल वर सरकते, 'menu' ज्यामुळे पटलचे मेन्यू दाखवले जाते, "
-"'lower' ज्यामुळे पटल इतरांच्या पाठीमागे स्थीत केले जाते, व 'none' ज्यामुळे "
+"हा पर्याय शिर्षक पट्टीवर मध्य-क्लिक केल्यानंतरचे प्रभाव ओळखतो. सध्याचे वैध पर्याय याप्रमाणे "
+"आहे 'toggle_shade' आहे, ज्यामुळे पटलाचे रंगछटा शक्य/अशक्य होते, 'toggle_maximize' "
+"ज्यामुळे पटलचे आकार मोठे शक्य/अशक्य होते, 'toggle_maximize_horizontally' व "
+"'toggle_maximize_vertically' ज्यामुळे पटल ठराविक दिशामध्येच मोठे शक्य/अशक्य होते, "
+"'minimize' ज्यामुळे पटल लहान होते, 'shade' ज्यामुळे पटल वर सरकते, 'menu' ज्यामुळे पटलचे "
+"मेन्यू दाखवले जाते, 'lower' ज्यामुळे पटल इतरांच्या पाठीमागे स्थीत केले जाते, व 'none' ज्यामुळे "
 "काहीच होत नाही."
 
 #: src/org.cafe.croma.gschema.xml:95
@@ -533,18 +526,17 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"हा पर्याय शिर्षक पट्टीवर उजवी-क्लिक केल्यानंतरचे प्रभाव ओळखतो. सध्याचे वैध "
-"पर्याय याप्रमाणे आहे 'toggle_shade' आहे, ज्यामुळे पटलाचे रंगछटा शक्य/अशक्य "
-"होते, 'toggle_maximize' ज्यामुळे पटलचे आकार मोठे शक्य/अशक्य होते, "
-"'toggle_maximize_horizontally' व 'toggle_maximize_vertically' ज्यामुळे पटल "
-"ठराविक दिशामध्येच मोठे शक्य/अशक्य होते, 'minimize' ज्यामुळे पटल लहान होते, "
-"'shade' ज्यामुळे पटल वर सरकते, 'menu' ज्यामुळे पटलचे मेन्यू दाखवले जाते, "
-"'lower' ज्यामुळे पटल इतरांच्या पाठीमागे स्थीत केले जाते, व 'none' ज्यामुळे "
+"हा पर्याय शिर्षक पट्टीवर उजवी-क्लिक केल्यानंतरचे प्रभाव ओळखतो. सध्याचे वैध पर्याय याप्रमाणे "
+"आहे 'toggle_shade' आहे, ज्यामुळे पटलाचे रंगछटा शक्य/अशक्य होते, 'toggle_maximize' "
+"ज्यामुळे पटलचे आकार मोठे शक्य/अशक्य होते, 'toggle_maximize_horizontally' व "
+"'toggle_maximize_vertically' ज्यामुळे पटल ठराविक दिशामध्येच मोठे शक्य/अशक्य होते, "
+"'minimize' ज्यामुळे पटल लहान होते, 'shade' ज्यामुळे पटल वर सरकते, 'menu' ज्यामुळे पटलचे "
+"मेन्यू दाखवले जाते, 'lower' ज्यामुळे पटल इतरांच्या पाठीमागे स्थीत केले जाते, व 'none' ज्यामुळे "
 "काहीच होत नाही."
 
 #: src/org.cafe.croma.gschema.xml:100
@@ -558,10 +550,10 @@ msgid ""
 "the auto_raise_delay key. This is not related to clicking on a window to "
 "raise it, nor to entering a window during drag-and-drop."
 msgstr ""
-"खरे निश्चित केल्यास, व लक्ष्यकेंद्र पध्दती एकतर \"गचाळ\" किंवा \"माउस\" "
-"असल्यास लक्ष्यकेंद्रीय पटल आपोआप स्व_वाढ_उशीर किल्ली द्वारे निश्चित उशीर "
-"नंतर दृश्यीस केले जाईल. हे पटलवर क्लिक केल्यास पटल दर्शविण्याकरीता समान "
-"नाही, व ओढा-व-टाकावेळी पटल दाखलन समान देखिल नाही."
+"खरे निश्चित केल्यास, व लक्ष्यकेंद्र पध्दती एकतर \"गचाळ\" किंवा \"माउस\" असल्यास "
+"लक्ष्यकेंद्रीय पटल आपोआप स्व_वाढ_उशीर किल्ली द्वारे निश्चित उशीर नंतर दृश्यीस केले जाईल. हे "
+"पटलवर क्लिक केल्यास पटल दर्शविण्याकरीता समान नाही, व ओढा-व-टाकावेळी पटल दाखलन समान "
+"देखिल नाही."
 
 #: src/org.cafe.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
@@ -572,8 +564,8 @@ msgid ""
 "The time delay before raising a window if auto_raise is set to true. The "
 "delay is given in thousandths of a second."
 msgstr ""
-"स्वः_वाढ खरे निश्चित केल्यास होणारा वेळेतील उशीर . या उशीर सेकंदाच्या "
-"हजाराव्या अंशात प्रविष्ट केले जाते."
+"स्वः_वाढ खरे निश्चित केल्यास होणारा वेळेतील उशीर . या उशीर सेकंदाच्या हजाराव्या अंशात "
+"प्रविष्ट केले जाते."
 
 #: src/org.cafe.croma.gschema.xml:110
 msgid "Current theme"
@@ -594,8 +586,8 @@ msgid ""
 "If true, ignore the titlebar_font option, and use the standard application "
 "font for window titles."
 msgstr ""
-"खरे असल्यास, शिर्षकपट्टी_फॉन्ट पर्याय दुर्लक्ष करा, व पटल शिर्षक करीता मानक "
-"अनुप्रयोग फॉन्ट वापरा."
+"खरे असल्यास, शिर्षकपट्टी_फॉन्ट पर्याय दुर्लक्ष करा, व पटल शिर्षक करीता मानक अनुप्रयोग "
+"फॉन्ट वापरा."
 
 #: src/org.cafe.croma.gschema.xml:120
 msgid "Window title font"
@@ -608,10 +600,10 @@ msgid ""
 "set to 0. Also, this option is disabled if the titlebar_uses_desktop_font "
 "option is set to true."
 msgstr ""
-"पटल शिर्षकपट्टी करीता फॉन्ट वर्णन अक्षरमाळा परिभाषीत करा. परिभाषातील आकार "
-"तेव्हाच वापरले जाईल जेव्हा शिर्षकपट्टी_फॉन्ट_आकार पर्याय 0 करीता निश्चित "
-"केले जाईल. आणखी, जर हा पर्याय अकार्यान्वीत केला जाईल जर "
-"शिर्षकपट्टी_डेस्कटॉप_फॉन्ट_वापर पर्याय खरे आहे असे निश्चितही केले जाऊ शकते."
+"पटल शिर्षकपट्टी करीता फॉन्ट वर्णन अक्षरमाळा परिभाषीत करा. परिभाषातील आकार तेव्हाच "
+"वापरले जाईल जेव्हा शिर्षकपट्टी_फॉन्ट_आकार पर्याय 0 करीता निश्चित केले जाईल. आणखी, जर "
+"हा पर्याय अकार्यान्वीत केला जाईल जर शिर्षकपट्टी_डेस्कटॉप_फॉन्ट_वापर पर्याय खरे आहे असे "
+"निश्चितही केले जाऊ शकते."
 
 #: src/org.cafe.croma.gschema.xml:126
 msgid "Number of workspaces"
@@ -623,9 +615,8 @@ msgid ""
 "prevent making the desktop unusable by accidentally asking for too many "
 "workspaces."
 msgstr ""
-"कार्यक्षेत्रांची संख्या. शून्यपेक्षा जास्त असायला हवे, व डेस्कटॉपला पुष्कळ "
-"कार्यक्षेत्र वापरण्यापासून प्रतिबंधित करण्याकरीता कमाल संख्या देखिल स्थापित "
-"केली जाते."
+"कार्यक्षेत्रांची संख्या. शून्यपेक्षा जास्त असायला हवे, व डेस्कटॉपला पुष्कळ कार्यक्षेत्र "
+"वापरण्यापासून प्रतिबंधित करण्याकरीता कमाल संख्या देखिल स्थापित केली जाते."
 
 #: src/org.cafe.croma.gschema.xml:131
 msgid "Workspace wrap style"
@@ -637,8 +628,8 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
@@ -653,9 +644,8 @@ msgid ""
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr ""
-"प्रणाली घंटा किंवा अन्य अनुप्रयोगाची 'घंटा' किंवा 'बीप' वाजविली अल्यास "
-"दृश्नीय सूचक चालू करा; जे एकण्यास कठिण जाणाऱ्यांना व जास्त आवाज वातवरणात "
-"फारच उपयोगी ठरू शकते."
+"प्रणाली घंटा किंवा अन्य अनुप्रयोगाची 'घंटा' किंवा 'बीप' वाजविली अल्यास दृश्नीय सूचक चालू "
+"करा; जे एकण्यास कठिण जाणाऱ्यांना व जास्त आवाज वातवरणात फारच उपयोगी ठरू शकते."
 
 #: src/org.cafe.croma.gschema.xml:141
 msgid "System Bell is Audible"
@@ -666,9 +656,8 @@ msgid ""
 "Determines whether applications or the system can generate audible 'beeps'; "
 "may be used in conjunction with 'visual bell' to allow silent 'beeps'."
 msgstr ""
-"अनुप्रयोग किंवा प्रणाली एकण्याजोगी 'बीप' निर्माण करू शकते की नाही ते निश्चित"
-" करते; शांत 'बीप' करीता परवानगी देण्यास दृश्यात्मक घंटाशी संयुक्तपणे वापरले "
-"जाऊ शकते."
+"अनुप्रयोग किंवा प्रणाली एकण्याजोगी 'बीप' निर्माण करू शकते की नाही ते निश्चित करते; शांत "
+"'बीप' करीता परवानगी देण्यास दृश्यात्मक घंटाशी संयुक्तपणे वापरले जाऊ शकते."
 
 #: src/org.cafe.croma.gschema.xml:146
 msgid "Visual Bell Type"
@@ -684,12 +673,11 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"प्रणाली घंटा किंवा अन्य अनुप्रयोगाची 'घंटा' वाजविली अल्यास दृश्नीय सूचक कसे "
-"कार्यरत करायचे ते Croma ला कळविते. सद्या दोन वैध मुल्य, \"पूर्णपडदा\", "
-"ज्यामुळे पूर्णपडदा पांढरे-काळे असे दिसून पडते, व \"फेम_फ्लॅश\" ज्यामुळे "
-"अनुप्रयोगची शिर्षकपट्टी दिसण्यास सुरू होते. ज्या अनुप्रयोगने संकेत पाठविले "
-"ते अपरिचीत असल्यास (जे मुलभूत \"प्रणाली बीप\" करीता स्वरूप आहे), सद्याचे "
-"केंद्रीत पटलाचे शिर्षकपट्टी दिसते."
+"प्रणाली घंटा किंवा अन्य अनुप्रयोगाची 'घंटा' वाजविली अल्यास दृश्नीय सूचक कसे कार्यरत करायचे "
+"ते Croma ला कळविते. सद्या दोन वैध मुल्य, \"पूर्णपडदा\", ज्यामुळे पूर्णपडदा पांढरे-काळे असे "
+"दिसून पडते, व \"फेम_फ्लॅश\" ज्यामुळे अनुप्रयोगची शिर्षकपट्टी दिसण्यास सुरू होते. ज्या "
+"अनुप्रयोगने संकेत पाठविले ते अपरिचीत असल्यास (जे मुलभूत \"प्रणाली बीप\" करीता स्वरूप आहे), "
+"सद्याचे केंद्रीत पटलाचे शिर्षकपट्टी दिसते."
 
 #: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
@@ -723,35 +711,31 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"खरे असल्यास, मेटासिटी वापरकर्त्यास वायरफ्रेम, चित्रचेतनीकरण दुर्लक्ष करून, "
-"किंवा अन्य कुठल्याही तऱ्हेचा वापर करून कमी प्रतिसाद देते. हे बहुदा "
-"वापरकर्त्यास वापरणीच्या दृष्टीकोणातून महत्वाचे नाही, पण कार्यरत राहण्याकरीता"
-" लेगसी अनुप्रोयागला परवानगी देऊ शकते, व टर्मिनल सर्वर करीता उपयोगी ठरू शकते."
-" तरी, प्रवेश सुरू असल्यास वायरफ्रेम वैशिष्ट्ये अकार्यान्वीत केले जाते."
+"खरे असल्यास, मेटासिटी वापरकर्त्यास वायरफ्रेम, चित्रचेतनीकरण दुर्लक्ष करून, किंवा अन्य "
+"कुठल्याही तऱ्हेचा वापर करून कमी प्रतिसाद देते. हे बहुदा वापरकर्त्यास वापरणीच्या "
+"दृष्टीकोणातून महत्वाचे नाही, पण कार्यरत राहण्याकरीता लेगसी अनुप्रोयागला परवानगी देऊ "
+"शकते, व टर्मिनल सर्वर करीता उपयोगी ठरू शकते. तरी, प्रवेश सुरू असल्यास वायरफ्रेम वैशिष्ट्ये "
+"अकार्यान्वीत केले जाते."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
-msgstr ""
-"(कार्यान्वीत नाही) संचार अनुप्रयोगच्या स्वरूपात कार्य करते पटलच्या स्वरूपात "
-"नाही"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
+msgstr "(कार्यान्वीत नाही) संचार अनुप्रयोगच्या स्वरूपात कार्य करते पटलच्या स्वरूपात नाही"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"खरे असल्यास, मेटासिटी अनुप्रयोग एवजी पटल स्वरूपात कार्य करतो. ही पध्दत वेगळी"
-" आहे, पण अनुप्रयोग-आधारीत संयोजना Mac सारखे जास्त व Windows सारखे कमी आहे. "
-"अनुप्रयोग-आधारीत पध्दती मध्ये पटल केंद्रीत करत असल्यास, अनुप्रयोगातील सर्व "
-"पटल वाढविले जातील. तरी, अनुप्रयोग-आधारीत पध्दतीमध्ये, इतर अनुप्रयोग मध्ये "
-"लक्ष्यकेंद्र किल्क स्थानांतरीत केले जात नाही. अनुप्रयोग-आधारीत पध्दती, "
-"याक्षणी तरी कार्यरत केले गेले नाही."
+"खरे असल्यास, मेटासिटी अनुप्रयोग एवजी पटल स्वरूपात कार्य करतो. ही पध्दत वेगळी आहे, पण "
+"अनुप्रयोग-आधारीत संयोजना Mac सारखे जास्त व Windows सारखे कमी आहे. अनुप्रयोग-आधारीत "
+"पध्दती मध्ये पटल केंद्रीत करत असल्यास, अनुप्रयोगातील सर्व पटल वाढविले जातील. तरी, "
+"अनुप्रयोग-आधारीत पध्दतीमध्ये, इतर अनुप्रयोग मध्ये लक्ष्यकेंद्र किल्क स्थानांतरीत केले जात नाही. "
+"अनुप्रयोग-आधारीत पध्दती, याक्षणी तरी कार्यरत केले गेले नाही."
 
 #: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
@@ -764,10 +748,9 @@ msgid ""
 "which gives a more consistent user interface, provided one does not need to "
 "run any misbehaving applications."
 msgstr ""
-"काहीक अनुप्रयोग संयोजनाचे उल्लंगन करते ज्यामुळे पटल व्यवस्थापकचे वैशिष्ट्ये "
-"सदोषीत होते. या पर्याय Croma ला योग्य पध्तीत कार्यरत करतो, ज्यामुळे सुस्थित "
-"वापरकर्ता संवाद प्राप्त होते, व त्याकरीता एवढीच अट अशी आहे की त्याक्षणी "
-"असुसंगती अनुप्रयोग चालवायचे नाही."
+"काहीक अनुप्रयोग संयोजनाचे उल्लंगन करते ज्यामुळे पटल व्यवस्थापकचे वैशिष्ट्ये सदोषीत होते. या "
+"पर्याय Croma ला योग्य पध्तीत कार्यरत करतो, ज्यामुळे सुस्थित वापरकर्ता संवाद प्राप्त होते, "
+"व त्याकरीता एवढीच अट अशी आहे की त्याक्षणी असुसंगती अनुप्रयोग चालवायचे नाही."
 
 #: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
@@ -786,8 +769,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:186
@@ -817,11 +800,11 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:201
@@ -830,8 +813,8 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:207
@@ -921,8 +904,8 @@ msgstr "परिभाषीत आदेश चालवा"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1043,12 +1026,12 @@ msgstr "कळीच्या बंधाना प्रतिसाद म्
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
-"/apps/croma/global_keybindings/run_command_N किल्ली keybinding निश्चित करते "
-"जे या आदेशशी परस्पर आहे. कळबांधणी run_command_N करीता दाबल्यास command_N "
-"कार्यान्वीत होईल."
+"/apps/croma/global_keybindings/run_command_N किल्ली keybinding निश्चित करते जे "
+"या आदेशशी परस्पर आहे. कळबांधणी run_command_N करीता दाबल्यास command_N कार्यान्वीत "
+"होईल."
 
 #: src/org.cafe.croma.gschema.xml:722
 msgid "The screenshot command"
@@ -1068,8 +1051,8 @@ msgstr "पटलच्या पडदा फोटोंची आदेश"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "/apps/croma/global_keybindings/run_command_window_screenshot किल्ली "
@@ -1115,8 +1098,8 @@ msgid ""
 "You may choose to wait a short while for it to continue or force the "
 "application to quit entirely."
 msgstr ""
-"तुम्ही जरावेळ थांबण्याचा पर्याय नीवडू शकता किंवा ऍप्लिकेशनला बाहेर "
-"पडण्यासाठी जबरनरित्या आग्रह करू शकता."
+"तुम्ही जरावेळ थांबण्याचा पर्याय नीवडू शकता किंवा ऍप्लिकेशनला बाहेर पडण्यासाठी जबरनरित्या "
+"आग्रह करू शकता."
 
 #: src/core/delete.c:110
 msgid "_Wait"
@@ -1147,12 +1130,12 @@ msgid ""
 "Some other program is already using the key %s with modifiers %x as a "
 "binding\n"
 msgstr ""
-"कुठलेतरी इतर कार्यक्रम आधिपासूनच किल्ली %s ला संपादक %x सह बांधणी म्हणून "
-"वापरत आहे\n"
+"कुठलेतरी इतर कार्यक्रम आधिपासूनच किल्ली %s ला संपादक %x सह बांधणी म्हणून वापरत आहे\n"
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1163,28 +1146,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "आदेश %d परिभाषीत नाही.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "टर्मिनल आदेश परिभाषीत नाही.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr ""
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "रद्द करा"
 
@@ -1194,68 +1177,70 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "सत्र व्यवस्थापकशी जुळवणी अकार्यान्वीत करा"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "सध्याचे कार्यरत पटल व्यवस्थापक Croma शी बदलवा"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "सत्र व्यवस्थापन ID निश्चित करा"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "वापरणीकरीता X डिस्प्ले"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "संचयन फाइल पासून सत्र प्रारंभीत करा"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "छपाई आवृत्ती"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "X कोल एकाच वेळी घडवा "
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "कंपोजीटींग सुरू करा"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "कंपोजीटींग बंद करा"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr "मोठे केलेले व सजावट विना पटल, पडदाभर करू नका"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "सुत्रयोजना संचयीका स्कॅन करण्यास अपयशी: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
 msgstr ""
-"सुत्रयोजना शोधू शकले नाही! %s अस्तित्वात आहे व त्यात नेहमीचे सुत्रयोजना "
-"समाविष्टीत आहे याची खात्री घ्या.\n"
+"सुत्रयोजना शोधू शकले नाही! %s अस्तित्वात आहे व त्यात नेहमीचे सुत्रयोजना समाविष्टीत आहे "
+"याची खात्री घ्या.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "पुनःआरंभ करण्यास अपयशी: %s\n"
@@ -1273,8 +1258,8 @@ msgid ""
 "Workarounds for broken applications disabled. Some applications may not "
 "behave properly.\n"
 msgstr ""
-"अनिश्चित अनुप्रोयगांकरीता कार्य अकार्यान्वीत केले गेले. काहीक अनुप्रयोगांची "
-"वागणून योग्यरित्या आढळणार नाही\n"
+"अनिश्चित अनुप्रोयगांकरीता कार्य अकार्यान्वीत केले गेले. काहीक अनुप्रयोगांची वागणून "
+"योग्यरित्या आढळणार नाही\n"
 
 #: src/core/prefs.c:1194
 #, c-format
@@ -1284,11 +1269,9 @@ msgstr "GSetting किल्ली \"%s\" पासून फॉन्टची
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
-msgstr ""
-"माउस बटन संपादक करीता संयोजना माहितीकोश मध्ये आढळलेले \"%s\" वैध मुल्य "
-"नाही\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
+msgstr "माउस बटन संपादक करीता संयोजना माहितीकोश मध्ये आढळलेले \"%s\" वैध मुल्य नाही\n"
 
 #: src/core/prefs.c:1844
 #, c-format
@@ -1296,41 +1279,40 @@ msgid ""
 "\"%s\" found in configuration database is not a valid value for keybinding "
 "\"%s\"\n"
 msgstr ""
-"keybinding \"%2$s\" करीता संयोजना माहितीकोश मध्ये आढळलेले \"%1$s\" वैध मुल्य"
-" नाही\n"
+"keybinding \"%2$s\" करीता संयोजना माहितीकोश मध्ये आढळलेले \"%1$s\" वैध मुल्य नाही\n"
 
 #: src/core/prefs.c:2147
 #, c-format
 msgid "Workspace %d"
 msgstr "कार्यक्षेत्र %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "दृश्य '%2$s' वरील पडदा %1$d अवैध आहे\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
-"दृश्य \"%2$s\" वरील पडदा %1$d कडे आधिपासूनच पटल व्यवस्थापक आहे; --replace "
-"पर्याय चा वापर सद्याचे पटल व्यवस्थापक बदलविण्याकरीता केले जाऊ शकतो.\n"
+"दृश्य \"%2$s\" वरील पडदा %1$d कडे आधिपासूनच पटल व्यवस्थापक आहे; --replace पर्याय चा "
+"वापर सद्याचे पटल व्यवस्थापक बदलविण्याकरीता केले जाऊ शकतो.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
-"दृश्य \"%2$s\" वरील पडदा %1$d करीता पटल व्यवस्थापक निवड प्राप्त करू शकले "
-"नाही\n"
+"दृश्य \"%2$s\" वरील पडदा %1$d करीता पटल व्यवस्थापक निवड प्राप्त करू शकले नाही\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "दृश्य \"%2$s\" वरील पडदा %1$d कडे आधिपासूनच पटल व्यवस्थापक आहे\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "दृश्य \"%2$s\" वरील पडदा %1$d मोकळे करू शकला नाही\n"
@@ -1362,8 +1344,7 @@ msgstr "संचयीत सत्र फाइल वाचण्यास �
 
 #: src/core/session.c:1183
 msgid "<croma_session> attribute seen but we already have the session ID"
-msgstr ""
-"<croma_session> हा गुणधर्म आढळले पण आमच्याकडे आधिपासूनच सत्र ओळखक्रमांक आहे"
+msgstr "<croma_session> हा गुणधर्म आढळले पण आमच्याकडे आधिपासूनच सत्र ओळखक्रमांक आहे"
 
 #: src/core/session.c:1196 src/core/session.c:1271 src/core/session.c:1303
 #: src/core/session.c:1375 src/core/session.c:1435
@@ -1382,11 +1363,11 @@ msgstr "अपरिचीत घटक %s"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
-"हे पटल &quot;सद्याचे सेटअप साठवा&quot; करीता समर्थन पुरवत नाही व पुढच्यावेळी"
-" प्रवेश करतेवेळी तुम्हाला स्वतः पुन्हा सुरू करावे लागेल."
+"हे पटल &quot;सद्याचे सेटअप साठवा&quot; करीता समर्थन पुरवत नाही व पुढच्यावेळी प्रवेश "
+"करतेवेळी तुम्हाला स्वतः पुन्हा सुरू करावे लागेल."
 
 #: src/core/util.c:101
 #, c-format
@@ -1430,7 +1411,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1445,15 +1426,15 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
 "%d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr ""
-"पटल %s MWM निश्चित करतो ज्याचा अर्थ ते पुन्हआकार देण्याजोगी नाही, परंतु "
-"किमान आकार %d x %d व कमाल आकार %d x %d; निश्चित करते ज्याचा जास्त अर्थ दिसून"
-" येत नाही.\n"
+"पटल %s MWM निश्चित करतो ज्याचा अर्थ ते पुन्हआकार देण्याजोगी नाही, परंतु किमान आकार %d "
+"x %d व कमाल आकार %d x %d; निश्चित करते ज्याचा जास्त अर्थ दिसून येत नाही.\n"
 
 #: src/core/window-props.c:306
 #, c-format
@@ -1514,8 +1495,7 @@ msgstr "पटल %s वरील गुणधर्म 0x%lx चुकीचे
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "पटल 0x%2$lx वरील गुणधर्म %1$s मध्ये यादी मधिल %3$d करीता अवैध UTF-8 घटक "
 "समाविष्टीत\n"
@@ -1525,51 +1505,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "वापर: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "चौकट बंद करा"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "पटल मेनू"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr ""
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "पटल लहान करा"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "पटल मोठ्यात मोठी करा"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "पटल पूर्वस्थितीत आणा"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "पटल गुंडाळा"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "पटल गुंडाळा"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "पटल वर दर्शवा"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "शिर्ष पासून पटल काढूण टाका"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "नेहमी दिसण्याजोगी कार्यक्षेत्रावर दर्शवा"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "पटल फक्त एका कार्यक्षेत्रावर दर्शवा"
 
@@ -1677,6 +1657,7 @@ msgstr "वेगळ्या कार्यक्षेत्रावर ज�
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1685,6 +1666,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1693,6 +1675,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1701,6 +1684,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "मेटा"
@@ -1709,6 +1693,7 @@ msgstr "मेटा"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "सुपर"
@@ -1717,6 +1702,7 @@ msgstr "सुपर"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "हायपर"
@@ -1725,6 +1711,7 @@ msgstr "हायपर"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1733,6 +1720,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1741,6 +1729,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1749,238 +1738,234 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "उच्च"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "तळ"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "डावा"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "उजवी"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "हे आकारमान चौकट भूमिती \"%s\" ठरवत नाही"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "हे आकारमान सीमारेषेसाठी \"%s\" चौकट भूमिती \"%s\" ठरवत नाही"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "बटन aspect प्रमाण %g योग्य नाही"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "हे आकारमान चौकट भूमिती बटणाचा आकार ठरवत नाही"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "चढानी कमीत कमी दोन रंग हवेत"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK रंग संयोजना कंसा मध्ये असायला हवे, उ.दा. ctk:fg[साधारण] जेथे साधारण असे "
-"स्थर आहे; जे \"%s\" ला वाचू शकले नाही"
+"CTK रंग संयोजना कंसा मध्ये असायला हवे, उ.दा. ctk:fg[साधारण] जेथे साधारण असे स्थर आहे; जे "
+"\"%s\" ला वाचू शकले नाही"
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK रंग संयोजनास बंद कंस असायला हवे, उ.दा. ctk:fg[साधारण] जेथे साधारण असे "
-"स्थर आहे; जे \"%s\" ला वाचू शकले नाही"
+"CTK रंग संयोजनास बंद कंस असायला हवे, उ.दा. ctk:fg[साधारण] जेथे साधारण असे स्थर आहे; जे "
+"\"%s\" ला वाचू शकले नाही"
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "रंग ठरावात \"%s\" हा भाग समजला गेला नाही"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "रंग ठरावात \"%s\" रंगाचे घटक समजले गेले नाही"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
 "format"
 msgstr ""
-"ब्लेंड पध्दती \"blend/bg_color/fg_color/alpha\" आहे, \"%s\"  ह्या पध्दतीत "
-"बसत नाही"
+"ब्लेंड पध्दती \"blend/bg_color/fg_color/alpha\" आहे, \"%s\"  ह्या पध्दतीत बसत नाही"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "मिसळलेल्या रंगात अल्फा किंमत \"%s\" पार्स होऊ शकत नाही"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "मिसळलेल्या रंगात अल्फा किंमत \"%s\" ही 0.0 आणि 1.0 मध्ये नाही"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr "रंगछटा रूपण \"shade/base_color/factor\" असे आहे, \"%s\" या पध्दतीत बसत नाही"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "सावली पध्दत सावलीतील रंगात \"%s\" पार्स होऊ शकत नाही"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "सावली रंगात सावली भाग \"%s\" नकारात्मक आहे"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "रंग \"%s\" विश्लेषित करता आला नाही"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "निबंधक वाक्यरचनातील '%s' अक्षराला परवानगी नाही"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
-"निबंधक वाक्यरचना मध्ये फ्लोटींग पॉईंट क्रमांक '%s' समाविष्टीत आहे जे वाचले "
-"जाऊ शकत नाही"
+"निबंधक वाक्यरचना मध्ये फ्लोटींग पॉईंट क्रमांक '%s' समाविष्टीत आहे जे वाचले जाऊ शकत नाही"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr "निबंधक वाक्यरचनात '%s' हा इंटिजर पार्स होऊ शकत नाही"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
 "\"%s\""
-msgstr ""
-"निबंधक वाक्यरचनात पाठ्यच्या सुरवातीस अपरिचीत operator समाविष्टीत आहे: \"%s\""
+msgstr "निबंधक वाक्यरचनात पाठ्यच्या सुरवातीस अपरिचीत operator समाविष्टीत आहे: \"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "निबंध वाक्यरचना रिकामे होते किंवा समझण्याजोगी नाही"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "निबंधक वाक्यरचना division by zero चा परिणाम देते"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
-msgstr ""
-"निबंधक वाक्यरचना फ्लोटींग पॉईंट क्रमांकवर mod नियंत्रक वापरण्याचा प्रयत्न "
-"करीत आहे"
+msgstr "निबंधक वाक्यरचना फ्लोटींग पॉईंट क्रमांकवर mod नियंत्रक वापरण्याचा प्रयत्न करीत आहे"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "निबंधक वाक्यरचनातील operator \"%s\" च्या जागी operand अपेक्षीत"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "निबंधक वाक्यरचनातील operand च्या जागी operator अपेक्षीत"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "निबंधक वाक्यरचना operand च्या एवजी operator मध्ये समाप्त होते"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
 "operand in between"
 msgstr ""
-"निबंधक वाक्यरचनाकडे operator \"%c\" खालिल operator \"%c\" आहे व तेही कुठलेही"
-" operand विना"
+"निबंधक वाक्यरचनाकडे operator \"%c\" खालिल operator \"%c\" आहे व तेही कुठलेही "
+"operand विना"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "निबंधक वाक्यरचना मध्ये अपरिचीत variable किंवा constant \"%s\" आढळले"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "निबंधक वाक्यरचना पार्सर मधिल बफर मध्ये जागा नाही."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr "निबंधक वाक्यरचना कडे बंद पॅरंथसीस आहे व तेही उघडे पॅरंथसीस विनाआहे"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "निबंधक वाक्यरचना कडे उघडे पॅरंथसीस आहे व तेही बंद पॅरंथसीस विना"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "निबंधक वाक्यरचना कडे ऑपरेटर किंवा ऑपरंड नाही असे दिसून येत"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
-msgstr ""
-"सुत्रयोजना मध्ये वाक्यरचना समाविष्टीत आहे ज्यामुळे त्रुटी परिणामस्वरूपी "
-"उधभवली: %s\n"
+msgstr "सुत्रयोजना मध्ये वाक्यरचना समाविष्टीत आहे ज्यामुळे त्रुटी परिणामस्वरूपी उधभवली: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -1989,45 +1974,47 @@ msgstr ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/>  ह्या "
 "भिंतफितीसाठी ठरविलेले आहे"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "हरवले आहे <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"हरवले आहे <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "थीम \"%s\" भारित करण्यास अपयशी: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "कोणतेही <%s> थीम \"%s\" साठी निर्धारित नाही"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
 "type=\"%s\" style_set=\"whatever\"/> element"
 msgstr ""
-"संकल्पनेमध्ये पटल प्रकारासाठी फिती \"%s\" शैलीची मांडणी नाही \"%s\", गुणधर्म"
-" <window type=\"%s\" style_set=\"whatever\"/> जोडा"
+"संकल्पनेमध्ये पटल प्रकारासाठी फिती \"%s\" शैलीची मांडणी नाही \"%s\", गुणधर्म <window "
+"type=\"%s\" style_set=\"whatever\"/> जोडा"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
-msgstr ""
-"वापरणाऱ्याने सुचविलेला स्थिरांक मोठ्या अक्षरांचे सुरू व्हायला हवा; \"%s\" "
-"नाही "
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
+msgstr "वापरणाऱ्याने सुचविलेला स्थिरांक मोठ्या अक्षरांचे सुरू व्हायला हवा; \"%s\" नाही "
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "स्थिरांक \"%s\" हा अगोदर पासूनच ठरवण्यात आलेला आहे"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2091,11 +2078,11 @@ msgstr "अल्फाची किंमत 0.0 आणि 1.0, असायल
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"अवैध शिर्षक प्रमाण \"%s\" (यापैकी एक असायले हवे xx-"
-"लहान,x-लहान,लहान,मध्यम,मोठे,x-मोठे,xx-मोठे)\n"
+"अवैध शिर्षक प्रमाण \"%s\" (यापैकी एक असायले हवे xx-लहान,x-लहान,लहान,मध्यम,मोठे,x-मोठे,"
+"xx-मोठे)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2241,9 +2228,7 @@ msgstr "बटणासाठी \"%s\" अयोग्य कार्य"
 #: src/ui/theme-parser.c:3002
 #, c-format
 msgid "Button function \"%s\" does not exist in this version (%d, need %d)"
-msgstr ""
-"बटन कार्यपध्दती \"%1$s\" या आवृत्ती मध्ये अस्तीत्वात नाही (%2$d, आवश्यक "
-"%3$d)"
+msgstr "बटन कार्यपध्दती \"%1$s\" या आवृत्ती मध्ये अस्तीत्वात नाही (%2$d, आवश्यक %3$d)"
 
 #: src/ui/theme-parser.c:3014
 #, c-format
@@ -2284,7 +2269,8 @@ msgstr "मोठे करा/छटा स्थिती करीता <%s>
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr "मोठे करा स्थिती करीता <%s> घटकावरील \"पुन्हआकार\" गुणधर्म नसायला हवे"
 
 #: src/ui/theme-parser.c:3203 src/ui/theme-parser.c:3247
@@ -2304,24 +2290,24 @@ msgid ""
 "Can't have a two draw_ops for a <piece> element (theme specified a draw_ops "
 "attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<piece> घटक करीता दोन draw_ops असू शकत नाही (सुत्रयोजनाने draw_ops गुणधर्म व"
-" <draw_ops> घटक निश्चित केले, किंवा दोन घटक निश्चित केले)"
+"<piece> घटक करीता दोन draw_ops असू शकत नाही (सुत्रयोजनाने draw_ops गुणधर्म व "
+"<draw_ops> घटक निश्चित केले, किंवा दोन घटक निश्चित केले)"
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<button> घटक करीता दोन draw_ops असू शकत नाही (सुत्रयोजनाने draw_ops गुणधर्म "
-"व <draw_ops> घटक निश्चित केले, किंवा दोन घटक निश्चित केले)"
+"<button> घटक करीता दोन draw_ops असू शकत नाही (सुत्रयोजनाने draw_ops गुणधर्म व "
+"<draw_ops> घटक निश्चित केले, किंवा दोन घटक निश्चित केले)"
 
 #: src/ui/theme-parser.c:3427
 msgid ""
 "Can't have a two draw_ops for a <menu_icon> element (theme specified a "
 "draw_ops attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"<menu_icon> घटक करीता दोन draw_ops असू शकत नाही (सुत्रयोजनाने draw_ops "
-"गुणधर्म व <draw_ops> घटक निश्चित केले, किंवा दोन घटक निश्चित केले)"
+"<menu_icon> घटक करीता दोन draw_ops असू शकत नाही (सुत्रयोजनाने draw_ops गुणधर्म व "
+"<draw_ops> घटक निश्चित केले, किंवा दोन घटक निश्चित केले)"
 
 #: src/ui/theme-parser.c:3491
 #, c-format
@@ -2405,101 +2391,101 @@ msgstr ""
 msgid "This is a sample message in a sample dialog"
 msgstr "उदाहरणाकरिता दिलेल्या संभाषणात ह्या नमुन्याचा संदेश आहे"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "खोटी मेनू वस्तू %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "फक्त-किनार पटल"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "पट्टी"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "सामान्य अनुप्रयोग पटल"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "संवाद खोका"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "मोडल संवाद खोका"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "उपयुक्तता पॅलेट"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "टिअर-ऑफ मेनू"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "किनार"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr ""
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "बटन लेआउट कसोटी %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "एक पटलची पटल काढण्यासाठी %g मिलीसेकंद"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "वापर: croma-theme-viewer [THEMENAME]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "थीम भारित करण्यात त्रुटी: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "\"%s\" थीम %g सेकंदांत भारित करत आहे\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "सामान्य शिर्षक फॉन्ट"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "लहान शिर्षक फॉन्ट"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "मोठा शिर्षक फॉन्ट"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "बटन लेआउट"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "बेंचमार्क"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "पटलचे शिर्षक येथे जाते"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "
 "seconds wall clock time including X server resources (%g milliseconds per "
 "frame)\n"
 msgstr ""
-"%2$g client-side सेकंद मध्ये %1$d पटल रेखाटले (%3$g मिलीसेकंद दर पटल) व %4$g"
-" सेकंद घड्याळ वेळ व X सर्वर स्त्रोत अंतर्भुतीत (%5$g मिलीसेकंद दर पटल)\n"
+"%2$g client-side सेकंद मध्ये %1$d पटल रेखाटले (%3$g मिलीसेकंद दर पटल) व %4$g सेकंद "
+"घड्याळ वेळ व X सर्वर स्त्रोत अंतर्भुतीत (%5$g मिलीसेकंद दर पटल)\n"

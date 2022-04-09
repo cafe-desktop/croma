@@ -2,26 +2,26 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Anh Phan <vietnamesel10n@gmail.com>, 2020
 # Martin Wimpress <code@flexion.org>, 2020
 # Duy Truong Nguyen <truongap.ars@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Horazone Detex <thmmt2017d@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Horazone Detex <thmmt2017d@gmail.com>, 2020\n"
 "Language-Team: Vietnamese (https://www.transifex.com/cafe/teams/13566/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -377,8 +377,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:60
@@ -405,13 +405,13 @@ msgid ""
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
-"Bố trí các nút trên thanh tiêu đề. Giá trị nên là một chuỗi như là « "
-"menu:minimize,maximize,close » (trình đơn:cực tiểu hóa,cực đại hóa,đóng), "
-"dấu hai chấm tách góc trái ra khỏi góc phải cửa sổ, tên các nút được cách "
-"nhau bởi dấu phẩy. Không cho phép nút đúp nào. Tên nút không rõ sẽ được bỏ "
-"qua để cho các nút tiếp tục được bổ sung vào các phiên bản tiếp theo của "
-"croma mà không phá vỡ phiên bản cũ. Một thẻ phân cách đặc biệt có thể được "
-"dùng để chèn khoảng cách vào giữa hai nút kề nhau."
+"Bố trí các nút trên thanh tiêu đề. Giá trị nên là một chuỗi như là « menu:"
+"minimize,maximize,close » (trình đơn:cực tiểu hóa,cực đại hóa,đóng), dấu hai "
+"chấm tách góc trái ra khỏi góc phải cửa sổ, tên các nút được cách nhau bởi "
+"dấu phẩy. Không cho phép nút đúp nào. Tên nút không rõ sẽ được bỏ qua để cho "
+"các nút tiếp tục được bổ sung vào các phiên bản tiếp theo của croma mà không "
+"phá vỡ phiên bản cũ. Một thẻ phân cách đặc biệt có thể được dùng để chèn "
+"khoảng cách vào giữa hai nút kề nhau."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -421,9 +421,9 @@ msgstr "Chế độ tiêu điểm cửa sổ"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Chế độ tiêu điểm cửa sổ chỉ ra cách cửa sổ được kích hoạt. Nó có thể có ba "
 "giá trị sau: «nhắp» (click) nghĩa là cửa sổ được nhấn để nhận tiêu điểm, "
@@ -438,40 +438,41 @@ msgstr "Điều khiển cách gán tiêu điểm cho cửa sổ mới"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
-"Tùy chọn này cung cấp khả năng thêm điều khiển cách gán tiêu điểm cho cửa sổ mới tạo. Nó có hai giá trị có thể :\n"
+"Tùy chọn này cung cấp khả năng thêm điều khiển cách gán tiêu điểm cho cửa sổ "
+"mới tạo. Nó có hai giá trị có thể :\n"
 " • smart\t\táp dụng chế độ tiêu điểm bình thường của người dùng đó,\n"
 " • strict\t\tgây ra cửa sổ không có tiêu điểm nếu được tạo từ thiết bị cuối."
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
 msgstr ""
-"Việc nâng lên có nên là hiệu ứng khác của việc tương tác người dùng khác hay"
-" không."
+"Việc nâng lên có nên là hiệu ứng khác của việc tương tác người dùng khác hay "
+"không."
 
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:85
@@ -484,12 +485,13 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"Tùy chọn này quyết định tác dụng của việc nhấn đúp chuột trên thanh tiêu đề. Tùy chọn hợp lệ hiện thời là:\n"
+"Tùy chọn này quyết định tác dụng của việc nhấn đúp chuột trên thanh tiêu đề. "
+"Tùy chọn hợp lệ hiện thời là:\n"
 " • toggle_shade\t\ttạo bóng/thôi tạo bóng cửa sổ\n"
 " • toggle_maximize\tphóng to/thôi phóng to cửa sổ\n"
 " • toggle_maximize_horizontally\t\tphóng to cửa sổ theo chiều ngang\n"
@@ -510,12 +512,13 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"Tùy chọn này quyết định tác dụng của việc nhấn-giữa chuột trên thanh tiêu đề. Tùy chọn hợp lệ hiện thời là:\n"
+"Tùy chọn này quyết định tác dụng của việc nhấn-giữa chuột trên thanh tiêu "
+"đề. Tùy chọn hợp lệ hiện thời là:\n"
 " • toggle_shade\t\ttạo bóng/thôi tạo bóng cửa sổ\n"
 " • toggle_maximize\tphóng to/thôi phóng to cửa sổ\n"
 " • toggle_maximize_horizontally\t\tphóng to cửa sổ theo chiều ngang\n"
@@ -536,12 +539,13 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"Tùy chọn này quyết định tác dụng của việc nhấn-giữa chuột trên thanh tựa. Tùy chọn hợp lệ hiện thời là:\n"
+"Tùy chọn này quyết định tác dụng của việc nhấn-giữa chuột trên thanh tựa. "
+"Tùy chọn hợp lệ hiện thời là:\n"
 " • toggle_shade\t\ttạo bóng/thôi tạo bóng cửa sổ\n"
 " • toggle_maximize\tphóng to/thôi phóng to cửa sổ\n"
 " • toggle_maximize_horizontally\t\tphóng to cửa sổ theo chiều ngang\n"
@@ -563,11 +567,11 @@ msgid ""
 "the auto_raise_delay key. This is not related to clicking on a window to "
 "raise it, nor to entering a window during drag-and-drop."
 msgstr ""
-"Nếu bật, và chế độ tiêu điểm hoạc là « sloppy » (luộm thuộm) hay « mouse » "
-"(con chuột) thì cửa sổ có tiêu điểm sẽ được nâng lên tự động, sau một thời "
+"Nếu bật, và chế độ tiêu điểm hoạc là « sloppy » (luộm thuộm) hay « mouse "
+"» (con chuột) thì cửa sổ có tiêu điểm sẽ được nâng lên tự động, sau một thời "
 "gian hoãn được xác định bởi khoá « auto_raise_delay » (hoãn nâng lên tự "
-"động). Cái này không liên quan đến việc nhắp vào cửa sổ để nâng nó lên, cũng"
-" không liên quan đến việc vào cửa sổ trong khi kéo và thả."
+"động). Cái này không liên quan đến việc nhắp vào cửa sổ để nâng nó lên, cũng "
+"không liên quan đến việc vào cửa sổ trong khi kéo và thả."
 
 #: src/org.cafe.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
@@ -590,8 +594,8 @@ msgid ""
 "The theme determines the appearance of window borders, titlebar, and so "
 "forth."
 msgstr ""
-"Sắc thái xác định diện mạo của đường viền cửa sổ, thanh tựa đề, và nhiều thứ"
-" khác."
+"Sắc thái xác định diện mạo của đường viền cửa sổ, thanh tựa đề, và nhiều thứ "
+"khác."
 
 #: src/org.cafe.croma.gschema.xml:115
 msgid "Use standard system font in window titles"
@@ -617,9 +621,9 @@ msgid ""
 "option is set to true."
 msgstr ""
 "Chuỗi mô tả phông chữ mô tả phông chữ cho tựa đề cửa sổ. Tuy nhiên kích "
-"thước theo mô tả này sẽ chỉ được dùng nếu tùy chọn « titlebar_font_size » "
-"(kích thước phông chữ thanh tựa đề) được đặt là 0. Ngoài ra, tùy chọn này sẽ"
-" tắt nếu tùy chọn « titlebar_uses_desktop_font » (thanh đựa đề dùng phông "
+"thước theo mô tả này sẽ chỉ được dùng nếu tùy chọn « titlebar_font_size "
+"» (kích thước phông chữ thanh tựa đề) được đặt là 0. Ngoài ra, tùy chọn này "
+"sẽ tắt nếu tùy chọn « titlebar_uses_desktop_font » (thanh đựa đề dùng phông "
 "chữ của màn hình làm việc) bật."
 
 #: src/org.cafe.croma.gschema.xml:126
@@ -646,8 +650,8 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
@@ -691,12 +695,12 @@ msgid ""
 "(as is usually the case for the default \"system beep\"), the currently "
 "focused window's titlebar is flashed."
 msgstr ""
-"Cho Croma biết cách thực hiện cái hiển thị khi có chuông từ hệ thống hoặc từ"
-" ứng dụng khác. Hiện thời chỉ có hai gia trị hợp lệ là «fullscreen» (toàn "
-"màn hình), làm chớp trắng-đen toàn màn hình, và «frame_flash» (khung chớp) "
-"làm chớp thanh tựa đề của ứng dụng rung chuông. Nếu không biết ứng dụng nào "
-"rung chuông (trường hợp thường khi là «chuông hệ thống»), tựa đề ứng dụng "
-"đang có tiêu điểm sẽ chớp."
+"Cho Croma biết cách thực hiện cái hiển thị khi có chuông từ hệ thống hoặc từ "
+"ứng dụng khác. Hiện thời chỉ có hai gia trị hợp lệ là «fullscreen» (toàn màn "
+"hình), làm chớp trắng-đen toàn màn hình, và «frame_flash» (khung chớp) làm "
+"chớp thanh tựa đề của ứng dụng rung chuông. Nếu không biết ứng dụng nào rung "
+"chuông (trường hợp thường khi là «chuông hệ thống»), tựa đề ứng dụng đang có "
+"tiêu điểm sẽ chớp."
 
 #: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
@@ -730,37 +734,36 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Nếu bật thì trình croma sẽ cho người dùng xem phản hồi ít hơn bằng cách dùng"
-" đường viền, tránh hoạt ảnh, hoặc bằng cách khác. Phần lớn người dùng sẽ "
-"thấy biết tính hữu dụng đã giảm xuống, nhưng mà có lẽ tùy chọn này sẽ cho "
-"phép ứng dụng cũ hơn tiếp tục hoạt động, và có lẽ cũng là thoả hiệp có ích "
-"cho trình phục vụ thiết bị cuỗi. Tuy nhiên, tính năng đường viền đã tắt khi "
-"khả năng truy cập được bật."
+"Nếu bật thì trình croma sẽ cho người dùng xem phản hồi ít hơn bằng cách dùng "
+"đường viền, tránh hoạt ảnh, hoặc bằng cách khác. Phần lớn người dùng sẽ thấy "
+"biết tính hữu dụng đã giảm xuống, nhưng mà có lẽ tùy chọn này sẽ cho phép "
+"ứng dụng cũ hơn tiếp tục hoạt động, và có lẽ cũng là thoả hiệp có ích cho "
+"trình phục vụ thiết bị cuỗi. Tuy nhiên, tính năng đường viền đã tắt khi khả "
+"năng truy cập được bật."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
-"Việc duyệt (chưa thực hiện) làm việc theo các điều khoản của ứng dụng, không"
-" phải cửa sổ."
+"Việc duyệt (chưa thực hiện) làm việc theo các điều khoản của ứng dụng, không "
+"phải cửa sổ."
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
-"Nếu bật thì trình Croma hoạt động như theo ứng dụng hơn là theo cửa sổ. Khái"
-" niệm này hơi trừu tượng, nhưng nói chung một thiết lập dựa trên ứng dụng "
-"thì giống như Mac hơn Windows. Khi bạn đặt tiêu điểm lên một cửa sổ trong "
-"chế độ dựa trên ứng dụng, mọi cửa sổ trong ứng dụng đó sẽ được hiển thị. "
-"Ngoài ra, trong chế độ dựa trên ứng dụng, nhấn tiêu điểm không được chuyển "
-"cho cửa sổ của ứng dụng khác. Ngoài ra chế độ dựa trên ứng dụng chưa được "
-"làm tại thời điểm này."
+"Nếu bật thì trình Croma hoạt động như theo ứng dụng hơn là theo cửa sổ. Khái "
+"niệm này hơi trừu tượng, nhưng nói chung một thiết lập dựa trên ứng dụng thì "
+"giống như Mac hơn Windows. Khi bạn đặt tiêu điểm lên một cửa sổ trong chế độ "
+"dựa trên ứng dụng, mọi cửa sổ trong ứng dụng đó sẽ được hiển thị. Ngoài ra, "
+"trong chế độ dựa trên ứng dụng, nhấn tiêu điểm không được chuyển cho cửa sổ "
+"của ứng dụng khác. Ngoài ra chế độ dựa trên ứng dụng chưa được làm tại thời "
+"điểm này."
 
 #: src/org.cafe.croma.gschema.xml:171
 msgid "Disable misfeatures that are required by old or broken applications"
@@ -775,8 +778,8 @@ msgid ""
 msgstr ""
 "Một số ứng dụng riêng bỏ qua đặc tả, gây ra bộ quản lý cửa sổ không hoạt "
 "động cho đúng. Tùy chọn này đặt Croma trong chế độ đúng chính xác, mà bảo "
-"tồn một giao diện người dùng thống nhất hơn, nếu bạn không cần chạy ứng dụng"
-" nào chạy sai."
+"tồn một giao diện người dùng thống nhất hơn, nếu bạn không cần chạy ứng dụng "
+"nào chạy sai."
 
 #: src/org.cafe.croma.gschema.xml:176
 msgid "Determines if new windows are created on the center of the screen"
@@ -795,8 +798,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:186
@@ -826,11 +829,11 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:201
@@ -839,8 +842,8 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:207
@@ -930,8 +933,8 @@ msgstr "Chạy lệnh đã định nghĩa"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1052,8 +1055,8 @@ msgstr "Lệnh cần chạy khi nhấn phím tổ hợp"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "Những khóa «/apps/croma/global_keybindings/run_command_N» định nghĩa tổ hợp "
 "phím tương ứng với những lệnh này. Hãy nhấn phím tổ hợp của «run_command_N» "
@@ -1077,13 +1080,13 @@ msgstr "Lệnh chụp hình cửa sổ"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "Những khóa «/apps/croma/global_keybindings/run_command_window_screenshot» "
-"định nghĩa tổ hợp phím, khi được nhấn, sẽ thực hiện lệnh được ghi trong khóa"
-" này."
+"định nghĩa tổ hợp phím, khi được nhấn, sẽ thực hiện lệnh được ghi trong khóa "
+"này."
 
 #: src/org.cafe.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
@@ -1160,7 +1163,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1168,28 +1172,28 @@ msgid ""
 "%s"
 msgstr ""
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Không có lệnh «%d» nào được định nghĩa.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Không có lệnh thiết bị cuối nào được định nghĩa.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr ""
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Thôi"
 
@@ -1199,56 +1203,57 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Tắt kết nối với trình quản lý phiên chạy"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Thay thế bộ quản lý cửa sổ đang chạy bằng Croma"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Xác định mã số quản lý phiên làm việc"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "Bộ trình bày X cần dùng"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Khởi động phiên làm việc từ tập tin lưu"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "In ra phiên bản"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Đặt cuộc gọi X là đồng bộ"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr ""
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr ""
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Lỗi quét thư mục sắc thái: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1256,7 +1261,7 @@ msgstr ""
 "Không tìm thấy sắc thái. Hãy bảo đảm %s tồn tại và chứa những sắc thái bình "
 "thường.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Lỗi khởi động lại: %s\n"
@@ -1274,8 +1279,8 @@ msgid ""
 "Workarounds for broken applications disabled. Some applications may not "
 "behave properly.\n"
 msgstr ""
-"Khả năng chỉnh sửa cho các ứng dụng không theo chuẩn đã đã tắt. Vài ứng dụng"
-" có thể sẽ xử sự không đúng.\n"
+"Khả năng chỉnh sửa cho các ứng dụng không theo chuẩn đã đã tắt. Vài ứng dụng "
+"có thể sẽ xử sự không đúng.\n"
 
 #: src/core/prefs.c:1194
 #, c-format
@@ -1285,8 +1290,8 @@ msgstr ""
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "Tìm thấy « %s » trong cơ sở dữ liệu cấu hình không phải giá trị hợp lệ cho "
 "bộ biến đổi nút chuột.\n"
@@ -1305,33 +1310,34 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "Vùng làm việc %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "Màn hình %d trên bộ trình bày « %s » không hợp lệ.\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
 "Màn hình %d trên bộ trình bày « %s » đã có bộ quản lý cửa sổ rồi; hãy thử "
 "dùng tùy chọn «--replace» để _thay thế_ bộ quản lý cửa sổ đang dùng.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
-"Không thể lấy vùng chọn bộ quản lý cửa sổ trên Màn hình %d trên bộ trình bày"
-" « %s ».\n"
+"Không thể lấy vùng chọn bộ quản lý cửa sổ trên Màn hình %d trên bộ trình bày "
+"« %s ».\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "Màn hình %d trên bộ trình bày « %s » đã có bộ quản lý cửa sổ.\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Không thể giải phóng Màn hình %d trên bộ trình bày « %s ».\n"
@@ -1382,8 +1388,8 @@ msgstr "Phần tử lạ « %s »"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
 
 #: src/core/util.c:101
@@ -1428,7 +1434,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1443,7 +1449,8 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
@@ -1512,8 +1519,7 @@ msgstr "Thuộc tính « %s » trên cửa sổ « 0x%lx » chứa chuỗi UTF-8
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "Thuộc tính « %s » trên cửa sổ « 0x%lx » chứa chuỗi UTF-8 sai cho mục %d "
 "trong danh sách.\n"
@@ -1523,51 +1529,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Cách dùng: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Đóng cửa sổ"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Trình đơn cửa sổ"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr ""
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Thu nhỏ cửa sổ"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Phóng to cửa sổ"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr ""
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Cuộn cửa sổ lên"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Bỏ cuộn cửa sổ"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Giữ cửa sổ ở trên cùng"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Thôi giữ cửa sổ ở trên cùng"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Luôn nằm trong vùng làm việc có thể thấy"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Đặt cửa sổ trên chỉ một vùng làm việc"
 
@@ -1675,6 +1681,7 @@ msgstr "Chuyển sang vùng làm việc _khác"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1683,6 +1690,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1691,6 +1699,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1699,6 +1708,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1707,6 +1717,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Cao cấp"
@@ -1715,6 +1726,7 @@ msgstr "Cao cấp"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Cao"
@@ -1723,6 +1735,7 @@ msgstr "Cao"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1731,6 +1744,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1739,6 +1753,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1747,107 +1762,108 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "đỉnh"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "đáy"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "trái"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "phải"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "tọa độ khung không xác định chiều « %s »."
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "tọa độ khung không xác định chiều « %s » cho biên « %s »."
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "Tỷ lệ hình thể nút «%g» không hợp lý."
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "Toạ độ khung không xác định kích thước nút."
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Thang độ nên có ít nhất hai màu."
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Lời ghi rõ màu CTK phải có trạng thái nằm trong ngoặc, v.d. "
-"«ctk:fg[NORMAL]», NORMAL (bình thường) là trạng thái; không thể phân tích « "
-"%s »."
+"Lời ghi rõ màu CTK phải có trạng thái nằm trong ngoặc, v.d. «ctk:"
+"fg[NORMAL]», NORMAL (bình thường) là trạng thái; không thể phân tích « %s »."
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Lời ghi rõ màu CTK phải có dấu đóng ngoặc sau trạng thái, v.d. «fg[NORMAL]»,"
-" NORMAL (bình thường) là trạng thái; không thể phân tích « %s »."
+"Lời ghi rõ màu CTK phải có dấu đóng ngoặc sau trạng thái, v.d. «fg[NORMAL]», "
+"NORMAL (bình thường) là trạng thái; không thể phân tích « %s »."
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Không hiểu trạng thái « %s » trong lời ghi rõ màu."
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Không hiểu thành phần màu « %s » trong lời ghi rõ màu."
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1856,57 +1872,57 @@ msgstr ""
 "Dạng pha trộn là «blend/bg_color/fg_color/alpha», « %s » không tuân theo "
 "dạng thức đó."
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Không thể phân tích giá trị alpha « %s » trong màu pha trộn."
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "Giá trị alpha « %s » trong màu pha trộn không nằm giữa 0.0 và 1.0."
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Dạng thức bóng là « shade/base_color/factor » (bóng/màu cơ bản/hệ số), « %s "
 "» không tuân theo dạng thức đó."
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Không thể phân tích hệ số bóng « %s » trong màu bóng."
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Có hệ số bóng âm « %s » trong màu bóng."
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Không thể phân tích màu « %s »."
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "Biểu thức tọa độ chứa ký tự « %s » không được phép."
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
-msgstr ""
-"Biểu thức tọa độ chứa số với điểm phù động « %s » không thể phân tích."
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
+msgstr "Biểu thức tọa độ chứa số với điểm phù động « %s » không thể phân tích."
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr "Biểu thức tọa độ chứa số nguyên « %s » không thể phân tích."
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
@@ -1915,70 +1931,70 @@ msgstr ""
 "Biểu thức tọa độ chứa toán tử lạ tại đầu văn bản: \n"
 "« %s »"
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "Biểu thức tọa độ rỗng hoặc không thể hiểu."
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Biểu thức tọa độ gây ra lỗi chia cho không."
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr "Biểu thức tọa độ thử dùng toán tử «mod» với số với điểm phụ động."
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "Biểu thức tọa độ có toán tử « %s », nơi lẽ ra phải là một toán hạng."
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "Biểu thức tọa đổ có toán hạng nơi lẽ ra phải là toán tử."
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr ""
 "Biểu thức tọa độ kết thúc bằng toán tử trong khi lẽ ra phải là toán hạng."
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
 "operand in between"
 msgstr ""
-"Biểu thức tọa độ có toán tử «%c» theo sau toán tử «%c» mà không có toán hạng"
-" ở giữa."
+"Biểu thức tọa độ có toán tử «%c» theo sau toán tử «%c» mà không có toán hạng "
+"ở giữa."
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "Biểu thức tọa độ có biến hoặc hằng lạ « %s »."
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "Bộ phân tách biểu thức tọa độ đã tràn bộ đệm."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr "Biểu thức tọa độ có dấu đóng ngoặc mà thiếu dấu mở ngoặc."
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "Biểu thức tọa độ có dấu mở ngoặc nhưng thiếu dấu đóng ngoặc."
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "Biểu thức tọa độ không có bất kỳ toán tử hay toán hạng nào."
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Sắc thái chứa một biểu thức gây ra lỗi: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -1987,23 +2003,24 @@ msgstr ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"gì đó\"/> phải xác định cho "
 "kiểu dáng khung này."
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
 msgstr "Thiếu <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"gì đó\"/>"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Lỗi nạp sắc thái « %s »: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Chưa đặt <%s> cho sắc thái « %s »."
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2012,18 +2029,20 @@ msgstr ""
 "Chưa đặt kiểu khung cho loại cửa sổ « %s » trong sắc thái « %s », hãy thêm "
 "phần tử <window type=\"%s\" style_set=\"gì đó\"/>."
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr "Hằng tự định nghĩa phải bắt đầu bằng ký tự hoa; « %s » không phải."
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "Hằng « %s » đã được định nghĩa."
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2073,8 +2092,8 @@ msgstr "Không thể phân tích « %s » thành số với điểm phù động
 #, c-format
 msgid "Boolean values must be \"true\" or \"false\" not \"%s\""
 msgstr ""
-"Giá trị luận lý phải là « đúng » (true) hoặc « sai » (false), không thể là «"
-" %s »."
+"Giá trị luận lý phải là « đúng » (true) hoặc « sai » (false), không thể là « "
+"%s »."
 
 #: src/ui/theme-parser.c:755
 #, c-format
@@ -2090,8 +2109,8 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
 "Tỷ lệ tựa đề « %s » không hợp lệ. Nó phải là một điều của những điều này:\n"
 " • xx-small\t\ttí tị\n"
@@ -2291,10 +2310,11 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
-"Nên có thuộc tính \"resize\" (đổi cỡ) trên phần tử <%s> cho trạng thái phóng"
-" to."
+"Nên có thuộc tính \"resize\" (đổi cỡ) trên phần tử <%s> cho trạng thái phóng "
+"to."
 
 #: src/ui/theme-parser.c:3203 src/ui/theme-parser.c:3247
 #, c-format
@@ -2321,8 +2341,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
 "Không thể có hai «draw_ops» trong một phần tử <button> (sắc thái xác định "
 "một «draw_ops» và có một phần tử <draw_ops>, hoặc xác định cả hai phần tử)."
@@ -2332,8 +2352,8 @@ msgid ""
 "Can't have a two draw_ops for a <menu_icon> element (theme specified a "
 "draw_ops attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"Không thể có hai «draw_ops» cho phần tử <menu_icon> (sắc thái xác định thuộc"
-" tính «draw_ops» và một phần tử <draw_ops>, hoặc xác định cả hai phần tử)."
+"Không thể có hai «draw_ops» cho phần tử <menu_icon> (sắc thái xác định thuộc "
+"tính «draw_ops» và một phần tử <draw_ops>, hoặc xác định cả hai phần tử)."
 
 #: src/ui/theme-parser.c:3491
 #, c-format
@@ -2361,8 +2381,8 @@ msgstr ""
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
 msgstr ""
-"Không cho phép phần tử <%s> nằm trong phần tử « name/author/date/description"
-" » (tên/tác giả/ngày/mô tả)."
+"Không cho phép phần tử <%s> nằm trong phần tử « name/author/date/description "
+"» (tên/tác giả/ngày/mô tả)."
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2374,8 +2394,8 @@ msgstr "Không cho phép phần tử <%s> nằm trong phần tử <constant>."
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
 msgstr ""
-"Không cho phép phần tử <%s> nằm trong phần tử « distance/border/aspect_ratio"
-" » (khoảng cách/viền/tỷ lệ hình thể)."
+"Không cho phép phần tử <%s> nằm trong phần tử « distance/border/aspect_ratio "
+"» (khoảng cách/viền/tỷ lệ hình thể)."
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2421,96 +2441,96 @@ msgstr "_OK"
 msgid "This is a sample message in a sample dialog"
 msgstr "Đây là thông điệp mẫu trong hộp thoại mẫu"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Mục trình đơn giả «%d»\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Cửa sổ chỉ có viền"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Thanh"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Cửa sổ ứng dụng thông thường"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Hộp thoại"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Hộp thoại cách thức"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Bảng chọn tiện ích"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Trình đơn tách rời"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Đường viền"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr ""
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Thử Bố cục nút «%d»"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g mili giây để vẽ một khung cửa sổ"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Cách dùng: croma-theme-viewer [TÊN_SẮC_THÁI]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Gặp lỗi khi tải sắc thái: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "Tải sắc thái « %s » trong %g giây.\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Phông chữ Tựa đề thường"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Phông chữ Tựa đề nhỏ"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Phông chữ Tựa đề lớn"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Bố cục nút"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Điểm chuẩn"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Tựa đề Cửa sổ ở đây"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "
@@ -2518,5 +2538,5 @@ msgid ""
 "frame)\n"
 msgstr ""
 "Vẽ %d khung trong vòng %g giây bên khách (%g mili giây cho mỗi khung) và %g "
-"giây thời gian đồng hồ tường gồm tiềm năng trình phục vụ X (%g mili giây cho"
-" mỗi khung).\n"
+"giây thời gian đồng hồ tường gồm tiềm năng trình phục vụ X (%g mili giây cho "
+"mỗi khung).\n"

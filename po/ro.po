@@ -2,27 +2,28 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # corneliu.e <corneliueva@yahoo.com>, 2020
 # AntonieG <vastinar.antonie@gmail.com>, 2020
 # Octi <octi@writeme.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Daniel <danny3@tutanota.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Daniel <danny3@tutanota.com>, 2020\n"
 "Language-Team: Romanian (https://www.transifex.com/cafe/teams/13566/ro/)\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
 
 #: src/50-croma-desktop-key.xml.in:2
 msgid "Desktop"
@@ -62,8 +63,7 @@ msgstr "Comută între ferestre, folosind o fereastră informativă"
 
 #: src/50-croma-global-key.xml.in:6 src/org.cafe.croma.gschema.xml:554
 msgid "Move between windows of an application, using a popup window"
-msgstr ""
-"Comută între ferestrele unui program, folosind o fereastră informativă"
+msgstr "Comută între ferestrele unui program, folosind o fereastră informativă"
 
 #: src/50-croma-global-key.xml.in:8 src/org.cafe.croma.gschema.xml:584
 msgid "Move between panels and the desktop, using a popup window"
@@ -379,8 +379,8 @@ msgstr "Dacă să se redimensioneze cu butonul drept"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Definiți ca „true” pentru a redimensiona cu butonul drept și a arăta meniul "
 "cu butonul central când țineți apăsată tasta aleasă la "
@@ -411,8 +411,8 @@ msgid ""
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
-"Aranjamentul butoanelor pe bara de titlu. Valoare ar trebui să fie un șir ca"
-" „menu:minimize,maximize,spacer,close”; două puncte separă colțul stâng de "
+"Aranjamentul butoanelor pe bara de titlu. Valoare ar trebui să fie un șir ca "
+"„menu:minimize,maximize,spacer,close”; două puncte separă colțul stâng de "
 "cel drept al ferestrei, și numele butoanelor sunt separate cu virgulă. Nu "
 "este permisă reduplicarea butoanelor. Numele de butoane necunoscute sunt "
 "ignorate, astfel că noi butoane pot fi adăugate în versiuni viitoare ale "
@@ -427,9 +427,9 @@ msgstr "Modul de focalizare al ferestrei"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Modul de focalizare al ferestrei indică modul în care ferestrele sunt "
 "activate. Are trei valori posibile: „click” înseamnă că fereastra trebuie "
@@ -445,12 +445,12 @@ msgstr "Controlează felul în care ferestrele noi sunt focalizate"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
-"Această opțiune furnizează un control adițional la cum ferestrele nou create"
-" primesc focus. Are valori posibile, „smart” furnizează modul normal de "
+"Această opțiune furnizează un control adițional la cum ferestrele nou create "
+"primesc focus. Are valori posibile, „smart” furnizează modul normal de "
 "focus, iar „strict” face ca ferestrele pornite dintr-un terminal să nu "
 "primească focus."
 
@@ -463,23 +463,23 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:85
@@ -492,8 +492,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -503,8 +503,8 @@ msgstr ""
 "„toggle_maximize_horizontally” și „toggle_maximize_vertically” care "
 "maximizează/restaurează fereastra orizontal și respectiv vertical, "
 "„minimize” care va minimiza fereastra, „shade” care rulează sus fereastra, "
-"„menu” care afișează meniul ferestrei, „lower” care pune fereastra sub toate"
-" celelalte, și „none” care nu face nimic."
+"„menu” care afișează meniul ferestrei, „lower” care pune fereastra sub toate "
+"celelalte, și „none” care nu face nimic."
 
 #: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
@@ -516,8 +516,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -527,8 +527,8 @@ msgstr ""
 "„toggle_maximize_horizontally” și „toggle_maximize_vertically” care "
 "maximizează/restaurează fereastra orizontal și respectiv vertical, "
 "„minimize” care va minimiza fereastra, „shade” care rulează sus fereastra, "
-"„menu” care afișează meniul ferestrei, „lower” care pune fereastra sub toate"
-" celelalte, și „none” care nu face nimic."
+"„menu” care afișează meniul ferestrei, „lower” care pune fereastra sub toate "
+"celelalte, și „none” care nu face nimic."
 
 #: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
@@ -540,8 +540,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -551,8 +551,8 @@ msgstr ""
 "„toggle_maximize_horizontally” și „toggle_maximize_vertically” care "
 "maximizează/restaurează fereastra orizontal și, respectiv, vertical, "
 "„minimize” care va minimiza fereastra, „shade” care rulează sus fereastra, "
-"„menu” care afișează meniul ferestrei, „lower” care pune fereastra sub toate"
-" celelalte, și „none” care nu face nimic."
+"„menu” care afișează meniul ferestrei, „lower” care pune fereastra sub toate "
+"celelalte, și „none” care nu face nimic."
 
 #: src/org.cafe.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
@@ -647,8 +647,8 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
@@ -697,9 +697,9 @@ msgstr ""
 "Instruiește Croma cum să implementeze indicația vizuală la producerea unui "
 "bip. Pentru moment sunt două valori, „fullscreen”, ce produce o clipire alb-"
 "negru pe tot ecranul, și „frame_flash”, ce produce o clipire la nivelul "
-"barei de titlu al aplicației ce a cauzat bipul. Dacă aplicația care a trimis"
-" bipul nu poate fi determinată (ca în cazul bipului de sistem), va clipi "
-"bara de titlu a ferestrei care are focusul în acel moment."
+"barei de titlu al aplicației ce a cauzat bipul. Dacă aplicația care a trimis "
+"bipul nu poate fi determinată (ca în cazul bipului de sistem), va clipi bara "
+"de titlu a ferestrei care are focusul în acel moment."
 
 #: src/org.cafe.croma.gschema.xml:151
 msgid "Compositing Manager"
@@ -724,8 +724,7 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:161
 msgid "If true, trade off usability for less resource usage"
 msgstr ""
-"Daca este true, reduce uzabilitatea în favoarea ocupării a mai puține "
-"resurse"
+"Daca este true, reduce uzabilitatea în favoarea ocupării a mai puține resurse"
 
 #: src/org.cafe.croma.gschema.xml:162
 msgid ""
@@ -742,15 +741,14 @@ msgstr ""
 "de wireframe este dezactivată când accesibilitatea este activată."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr "(Neimplementat) Navigația se referă la aplicații și nu la ferestre"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
@@ -778,8 +776,8 @@ msgid ""
 msgstr ""
 "Unele aplicații nu iau în seamă specificațiile într-un mod care duce la "
 "funcționarea defectuoasă a managerului de ferestre. Această opțiune pune "
-"Croma într-un mod riguros corect, ceea ce duce la o interfață utilizator mai"
-" consistentă, admițând că nu este nevoie să executați nici o aplicație "
+"Croma într-un mod riguros corect, ceea ce duce la o interfață utilizator mai "
+"consistentă, admițând că nu este nevoie să executați nici o aplicație "
 "problematică."
 
 #: src/org.cafe.croma.gschema.xml:176
@@ -799,8 +797,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:186
@@ -830,11 +828,11 @@ msgstr "Mod amplasare ferestre"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:201
@@ -843,8 +841,8 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:207
@@ -934,8 +932,8 @@ msgstr "Execută o comandă definită"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1063,11 +1061,11 @@ msgstr "Comenzi de executat ca răspuns la asocierile de taste"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
-"Cheile /apps/croma/global_keybindings/run_command_N definesc combinațiile de"
-" taste corespunzătoare acestor comenzi. Apăsând combinația de taste pentru "
+"Cheile /apps/croma/global_keybindings/run_command_N definesc combinațiile de "
+"taste corespunzătoare acestor comenzi. Apăsând combinația de taste pentru "
 "run_command_N se va executa command_N."
 
 #: src/org.cafe.croma.gschema.xml:722
@@ -1088,12 +1086,12 @@ msgstr "Comanda pentru captură ecran a ferestrei"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
-"Cheia /apps/croma/global_keybindings/run_command_window_screenshot definește"
-" combinația de taste corespunzătoare acestei comenzi."
+"Cheia /apps/croma/global_keybindings/run_command_window_screenshot definește "
+"combinația de taste corespunzătoare acestei comenzi."
 
 #: src/org.cafe.croma.gschema.xml:750
 msgid "Toggle whether a window will always be visible over other windows"
@@ -1172,7 +1170,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1183,28 +1182,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Nicio comandă %d nu a fost definită.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Nicio comandă pentru terminal nu a fost definită.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr ""
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr ""
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Renunță"
 
@@ -1214,62 +1213,64 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Drepturi de autori (C) 2001-%s Havoc Pennington, Red Hat, Inc., și alții\n"
 "Acesta este software liber; consultați sursa pentru condițiile de copiere.\n"
-"Nu există NICIO garanție; nici aceea de COMERCIALIZARE sau ADECVARE PENTRU UN SCOP ANUME.\n"
+"Nu există NICIO garanție; nici aceea de COMERCIALIZARE sau ADECVARE PENTRU "
+"UN SCOP ANUME.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Dezactivează conexiunea la administratorul de sesiune"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Înlocuiește administratorul de ferestre actual cu Croma"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Specifică ID-ul administratorului de sesiune"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "Afișajul X ce va fi folosit"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Inițializează sesiunea din fișierul salvat"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Afișează versiunea"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Sincronizează apelurile X"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Pornește efectele compozite"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Oprește efectele compozite"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
 "Nu desena pe tot ecranul ferestrele care sunt maximizate, dar care nu au "
 "decorații"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Nu s-a putut citi dosarul de teme: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1277,7 +1278,7 @@ msgstr ""
 "Nu s-a putut găsi o temă ! Asigurați-vă că %s există și conține temele "
 "uzuale.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Eșuare la repornire: %s\n"
@@ -1306,8 +1307,8 @@ msgstr "Nu s-a putut analiza descrierea fontului „%s” din cheia GSettings %s
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "„%s” găsită în configurație nu este o cheie validă pentru modificatorul "
 "butonului de maus\n"
@@ -1326,34 +1327,35 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "Spațiul de lucru %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "Ecranul %d pe afișajul „%s” este invalid\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
-"Ecranul %d pe afișajul „%s” are deja un administrator de ferestre; încercați"
-" să folosiți opțiunea --replace pentru a înlocui administratorul de ferestre"
-" actual.\n"
+"Ecranul %d pe afișajul „%s” are deja un administrator de ferestre; încercați "
+"să folosiți opțiunea --replace pentru a înlocui administratorul de ferestre "
+"actual.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
 "Nu s-a putut obține selecția administratorului de ferestre pe ecranul %d "
 "afișajul „%s”\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "Ecranul %d pe afișajul „%s” are deja un administrator de ferestre\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Nu s-a putut elibera ecranul %d pe afișajul „%s”\n"
@@ -1404,8 +1406,8 @@ msgstr "Element necunoscut %s"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
 "Aceste ferestre nu suportă &quot;save current setup&quot; și va trebui să "
 "fie restaurate manual în sesiunea următoare."
@@ -1453,7 +1455,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1468,15 +1470,16 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
 "%d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr ""
 "Fereastra %s definește un indicator MWM indicând că nu e redimensionabilă, "
-"dar definește dimensiunea minimă %d x %d și dimensiunea maximă %d x %d; asta"
-" nu prea are sens.\n"
+"dar definește dimensiunea minimă %d x %d și dimensiunea maximă %d x %d; asta "
+"nu prea are sens.\n"
 
 #: src/core/window-props.c:306
 #, c-format
@@ -1512,7 +1515,8 @@ msgstr "%s (drept un alt utilizator)"
 #: src/core/window-props.c:1499
 #, c-format
 msgid "Invalid WM_TRANSIENT_FOR window 0x%lx specified for %s.\n"
-msgstr "S-a specificat un WM_TRANSIENT_FOR fereastra 0x%lx invalid pentru %s.\n"
+msgstr ""
+"S-a specificat un WM_TRANSIENT_FOR fereastra 0x%lx invalid pentru %s.\n"
 
 #: src/core/xprops.c:155
 #, c-format
@@ -1526,7 +1530,8 @@ msgstr ""
 "Fereastra 0x%lx are proprietatea %s\n"
 "care era așteptată să aibă tipul %s formatul %d\n"
 "și de fapt are tipul %s formatul %d n_items %d.\n"
-"Acest lucru e cel mai probabil o problemă a aplicației, nu a managerului de ferestre.\n"
+"Acest lucru e cel mai probabil o problemă a aplicației, nu a managerului de "
+"ferestre.\n"
 "Fereastra are titlul=„%s” clasa=„%s” nume=„%s”\n"
 
 #: src/core/xprops.c:411
@@ -1537,8 +1542,7 @@ msgstr "Proprietatea %s din fereastra 0x%lx conține date invalide UTF-8\n"
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "Proprietatea %s din fereastra 0x%lx conține date invalide UTF-8 pentru "
 "elementul %d din listă\n"
@@ -1548,51 +1552,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Folosire: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Închide fereastra"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Meniu fereastră"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr ""
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Minimizează fereastra"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Maximizează fereastra"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Restabilește fereastra"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Rulează fereastra"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Derulează fereastra"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Menține fereastra deasupra"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Anulează menținerea fereastrei deasupra"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Visibil permanent pe spațiu de lucru"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Pune fereastra pe un singur spațiu de lucru"
 
@@ -1700,6 +1704,7 @@ msgstr "Mută în alt _spațiu de lucru"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1708,6 +1713,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1716,6 +1722,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1724,6 +1731,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1732,6 +1740,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1740,6 +1749,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1748,6 +1758,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1756,6 +1767,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1764,6 +1776,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1772,108 +1785,110 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "sus"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "jos"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "stânga"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "dreapta"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "geometria cadrului nu specifică dimensiunea „%s”"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "geometria cadrului nu specifică dimensiunea „%s” pentru marginea „%s”"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "Proporția butonul %g nu este rezonabilă"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "Geometria cadrului nu specifică mărimea butoanelor"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Degradeul ar trebui să aibă cel puțin două culori"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
 "parentheses, e.g. ctk:custom(foo,bar); could not parse \"%s\""
 msgstr ""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
 msgstr ""
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"Specificația culorilor CTK trebuie să aibă starea între paranteze drepte, de"
-" exemplu ctk:fg[NORMAL], unde starea este NORMAL; nu s-a putut analiza „%s”"
+"Specificația culorilor CTK trebuie să aibă starea între paranteze drepte, de "
+"exemplu ctk:fg[NORMAL], unde starea este NORMAL; nu s-a putut analiza „%s”"
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "Specificația culorilor CTK trebuie să fie aibă o paranteză dreaptă după "
 "stare, de exemplu ctk:fg[NORMAL], unde starea este NORMAL; nu s-a putut "
 "analiza „%s”"
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Nu s-a putut înțelege starea „%s” în specificarea culorilor"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr ""
 "Nu s-a putut înțelege componenta de culoare „%s” în specificarea culorilor"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1882,59 +1897,60 @@ msgstr ""
 "Formatul blend este „blend/bg_color/fg_color/alpha”, unde„%s” nu se "
 "potrivește formatului"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Nu s-a putut analiza valoarea alfa „%s” în culoarea blend-ată"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "Valoarea alfa „%s” în culoarea blend-ată nu este între 0.0 și 1.0"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Formatul de umbră este „shade/base_color/factor”, „%s” nu se potrivește "
 "formatului"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Nu s-a putut analiza factorul de umbrire „%s” în culoarea umbrită"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Factorul de umbrire „%s” în culoarea umbrită este negativ"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Nu s-a putut analiza culoarea „%s”"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "Expresia coordonatelor conține caracterul nepermis „%s”"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
 "Expresia coordonatelor conține numărul în virgulă mobilă „%s” care nu a "
 "putut fi analizat."
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr ""
 "Expresia coordonatelor conține întregul „%s” care nu a putut fi analizat"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
@@ -1943,74 +1959,73 @@ msgstr ""
 "Expresia coordonatelor conține operatorul necunoscut la începutul acestui "
 "text: „%s”"
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "Expresia coordonatelor a fost goală sau neînțeleasă"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Expresia coordonatelor este rezultată în urma unei împărțiri la zero"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr ""
 "Expresia coordonatelor încearcă să folosească operatorul mod asupra unui "
 "număr în virgulă mobilă"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "Expresia coordonatelor are un operator „%s” care așteaptă un operand"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "Expresia coordonatelor are un operand unde un operator era așteptat"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr ""
 "Expresia coordonatelor a fost terminată cu un operator în locul operandului"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
 "operand in between"
 msgstr ""
-"Expresia coordonatelor are un operator „%c” urmând operatorului „%c” fără un"
-" operand între ele"
+"Expresia coordonatelor are un operator „%c” urmând operatorului „%c” fără un "
+"operand între ele"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "Expresia coordonatelor are variabila necunscută sau constanta „%s”"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "Parcurgerea expresiei coordonatelor a cauzat un buffer overflow."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr ""
-"Expresia coordonatelor are o paranteză închisă fără nici o paranteză "
-"deschisă"
+"Expresia coordonatelor are o paranteză închisă fără nici o paranteză deschisă"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "Expresia coordonatelor are o paranteză deschisă și nici una închisă"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "Expresia coordonatelor nu are niciun operator și operand"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Tema conținea o expresie ce a rezultat într-o eroare: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2019,23 +2034,25 @@ msgstr ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> trebuie "
 "specificate pentru stilul acestui cadru"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "Lipsește <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"Lipsește <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Nu s-a putut încărca tema „%s”: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Nu a fost definit niciun <%s> pentru tema „%s”"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2044,20 +2061,22 @@ msgstr ""
 "Nici un stil de cadru definit pentru tipul de fereastră „%s” în tema „%s”; "
 "adăugați un element <window type=\"%s\" style_set=\"whatever\"/>"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
 "Constantele definite de utilizatori trebuie să înceapă cu o majusculă; „%s” "
 "nu respectă acest lucru"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "Constanta „%s” a fost deja definită"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2123,11 +2142,11 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"Scalare invalidă a titlului „%s” (trebuie să fie una dintre xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Scalare invalidă a titlului „%s” (trebuie să fie una dintre xx-small,x-small,"
+"small,medium,large,x-large,xx-large)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2319,7 +2338,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
 "Nu trebuie să conțină atributul „resize” în elementul <%s> pentru stările "
 "maximizate"
@@ -2343,13 +2363,13 @@ msgid ""
 "Can't have a two draw_ops for a <piece> element (theme specified a draw_ops "
 "attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"Nu puteți avea două draw_ops pentru un element <piece> (tema a specificat un"
-" atribut draw_ops și un element <draw_ops>, sau pe amândouă)"
+"Nu puteți avea două draw_ops pentru un element <piece> (tema a specificat un "
+"atribut draw_ops și un element <draw_ops>, sau pe amândouă)"
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
 "Nu puteți avea două draw_ops pentru un element <button> (tema a specificat "
 "un atribut draw_ops și un element <draw_ops>, sau pe amândouă)"
@@ -2390,8 +2410,8 @@ msgstr ""
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
 msgstr ""
-"Elementul <%s> nu este permis în interiorul un element "
-"name/author/date/description"
+"Elementul <%s> nu este permis în interiorul un element name/author/date/"
+"description"
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2403,8 +2423,8 @@ msgstr "Elementul <%s> nu este permis în interiorul unui element <constant>"
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
 msgstr ""
-"Elementul <%s> nu este permis în interiorul unui element "
-"distance/border/aspect_ratio"
+"Elementul <%s> nu este permis în interiorul unui element distance/border/"
+"aspect_ratio"
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2450,102 +2470,102 @@ msgstr ""
 msgid "This is a sample message in a sample dialog"
 msgstr "Acesta este un mesaj de test într-un dialog de test"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Element fals de meniu %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Fereastră doar cu margine"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Bară"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Fereastră normală de aplicație"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Fereastră de dialog"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Fereastră modală de dialog"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Paletă utilitară"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Meniu Torn-off"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Contur"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr ""
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Aranjament de test pentru buton %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g milisecunde pentru a afișa un cadru de fereastră"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Utilizare: croma-theme-viewer [NUME TEMĂ]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Eroare la încărcarea temei: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "S-a încărcat tema „%s“ în %g secunde\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Font pentru titlu normal"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Font pentru titlu mic"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Font pentru titlu mare"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Aranjamente butoane"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Test de performanță"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Titlul de fereastră vine aici"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "
 "seconds wall clock time including X server resources (%g milliseconds per "
 "frame)\n"
 msgstr ""
-"%d cadre desenate în %g secunde măsurate la client (%g milisecunde pe cadru)"
-" și %g secunde consucafe de proces incluzând resursele servitorului X (%g "
+"%d cadre desenate în %g secunde măsurate la client (%g milisecunde pe cadru) "
+"și %g secunde consucafe de proces incluzând resursele servitorului X (%g "
 "milisecunde pe cadru)\n"

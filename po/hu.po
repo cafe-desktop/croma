@@ -2,26 +2,26 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Rezső Páder <rezso@rezso.net>, 2020
 # KAMI KAMI <kami911@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Falu <info@falu.me>, 2020
 # Balázs Meskó <meskobalazs@mailbox.org>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2020\n"
 "Language-Team: Hungarian (https://www.transifex.com/cafe/teams/13566/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -376,8 +376,8 @@ msgstr "Átméretezés a jobb egérgombbal"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Állítsa igazra a „mouse_button_modifier” kulcsban megadott billentyű "
 "lenyomva tartása közben a jobb gombbal való átméretezéshez és a középső "
@@ -412,8 +412,8 @@ msgstr ""
 "A címsor gombjainak igazítása. Az értéknek szövegnek kell lennie, mint "
 "például „menu:minimize,maximize,spacer,close”; a kettőspont választja el az "
 "ablak jobb és bal sarkát, a gombneveket pedig vesszők. Kettőzött gombok nem "
-"megengedettek. Az ismeretlen gombnevek jelzés nélkül figyelmen kívül lesznek"
-" hagyva, így a jövőbeli croma verziókkal készült gombsorok visszafelé "
+"megengedettek. Az ismeretlen gombnevek jelzés nélkül figyelmen kívül lesznek "
+"hagyva, így a jövőbeli croma verziókkal készült gombsorok visszafelé "
 "kompatibilisek maradnak. A speciális spacer címkével némi hely szúrható két "
 "szomszédos gomb közé."
 
@@ -425,16 +425,16 @@ msgstr "Ablakfókusz módja"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
-"Az ablakfókusz módja jelzi, hogy az ablakokat hogyan tehetőek aktívvá. Három"
-" lehetséges értéke van; „click” azt jelenti, hogy rá kell kattintani az "
-"adott ablakra hogy aktív legyen, „sloppy” azt jelenti, hogy az ablak aktív "
-"lesz, amint az egér az ablak fölé ér és a „mouse” azt jelenti, hogy az ablak"
-" aktív lesz, amint az egér az ablak fölé ér és nem lesz az, ha az egér "
-"elhagyja az ablakot."
+"Az ablakfókusz módja jelzi, hogy az ablakokat hogyan tehetőek aktívvá. Három "
+"lehetséges értéke van; „click” azt jelenti, hogy rá kell kattintani az adott "
+"ablakra hogy aktív legyen, „sloppy” azt jelenti, hogy az ablak aktív lesz, "
+"amint az egér az ablak fölé ér és a „mouse” azt jelenti, hogy az ablak aktív "
+"lesz, amint az egér az ablak fölé ér és nem lesz az, ha az egér elhagyja az "
+"ablakot."
 
 #: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
@@ -443,8 +443,8 @@ msgstr "Új ablakok fókuszba kerülésének vezérlése"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Ez a beállítás az újonnan létrehozott ablakok fókuszba kerülésének "
@@ -455,33 +455,32 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
-msgstr ""
-"Az előtérbe hozás más felhasználói tevékenységek mellékhatása legyen-e"
+msgstr "Az előtérbe hozás más felhasználói tevékenységek mellékhatása legyen-e"
 
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 "Ezen érték hamisra állítása hibás viselkedést eredményezhet, ezért nem "
-"javasolt az alapértelmezett igaz érték módosítása. Számos művelet (például a"
-" kattintás a kliens területén, az ablak mozgatása vagy átméretezése) "
+"javasolt az alapértelmezett igaz érték módosítása. Számos művelet (például a "
+"kattintás a kliens területén, az ablak mozgatása vagy átméretezése) "
 "mellékhatásként előtérbe hozzák az ablakot. Ezen beállítás – nem javasolt – "
 "hamisra állításával az előtérbe hozást elválaszthatja más felhasználói "
 "műveletektől és figyelmen kívül hagyhatja az alkalmazások által generált "
@@ -492,12 +491,12 @@ msgstr ""
 "kisalkalmazásoktól. Ez a beállítás jelenleg le van tiltva a „kattintás "
 "fókuszhoz” módban. Ne feledje, hogy az ablakok előtérbe hozási módjainak "
 "listája a „raise_on_click” kulcs hamis értéke esetén nem tartalmazza az "
-"alkalmazások ablak-előtérbe hozási programkéréseit, az ilyen kérések a kérés"
-" okától függetlenül figyelmen kívül maradnak. Ha alkalmazásfejlesztőként a "
+"alkalmazások ablak-előtérbe hozási programkéréseit, az ilyen kérések a kérés "
+"okától függetlenül figyelmen kívül maradnak. Ha alkalmazásfejlesztőként a "
 "felhasználói arra panaszkodnak, hogy az alkalmazás nem működik ezen "
 "beállítás letiltásakor, akkor vissza kell állítaniuk ezen beállítás igaz "
-"értékét. További információkért nézze meg a "
-"http://bugzilla.gnome.org/show_bug.cgi.id=445447#c6 oldalt."
+"értékét. További információkért nézze meg a http://bugzilla.gnome.org/"
+"show_bug.cgi.id=445447#c6 oldalt."
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -509,20 +508,20 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"Ez az opció határozza meg, hogy mi történjen a címsoron való dupla kattintás"
-" esetén. Jelenleg érvényes opciók a „toggle_shade”, amely hatására az ablak "
-"felgördül/legördül, a „toggle_maximize”, amely hatására teljes "
-"képernyős/eredeti méretű lesz, „toggle_maximize_horizontally” és "
-"„toggle_maximize_vertically”, amelyek hatására az ablak csak "
-"vízszintesen/függőlegesen lesz maximalizálva, „minimize”, amely hatására kis"
-" méretű lesz az ablak, „shade”, amely hatására az ablak felgördül, „menu”, "
-"amely megjeleníti az ablak menüt, „lower”, amely az ablakot a többi ablak "
-"mögé viszi és „none”, amely nem hajt végre semmit."
+"Ez az opció határozza meg, hogy mi történjen a címsoron való dupla kattintás "
+"esetén. Jelenleg érvényes opciók a „toggle_shade”, amely hatására az ablak "
+"felgördül/legördül, a „toggle_maximize”, amely hatására teljes képernyős/"
+"eredeti méretű lesz, „toggle_maximize_horizontally” és "
+"„toggle_maximize_vertically”, amelyek hatására az ablak csak vízszintesen/"
+"függőlegesen lesz maximalizálva, „minimize”, amely hatására kis méretű lesz "
+"az ablak, „shade”, amely hatására az ablak felgördül, „menu”, amely "
+"megjeleníti az ablak menüt, „lower”, amely az ablakot a többi ablak mögé "
+"viszi és „none”, amely nem hajt végre semmit."
 
 #: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
@@ -534,8 +533,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -543,11 +542,11 @@ msgstr ""
 "kattintás esetén. Jelenleg érvényes opciók a „toggle_shade”, amely hatására "
 "az ablak felgördül/legördül, a „toggle_maximize”, amely hatására teljes "
 "képernyős/eredeti méretű lesz, „toggle_maximize_horizontally” és "
-"„toggle_maximize_vertically”, amelyek hatására az ablak csak "
-"vízszintesen/függőlegesen lesz maximalizálva, „minimize”, amely hatására kis"
-" méretű lesz az ablak, „shade”, amely hatására az ablak felgördül, „menu”, "
-"amely megjeleníti az ablak menüt, „lower”, amely az ablakot a többi ablak "
-"mögé viszi és „none”, amely nem hajt végre semmit."
+"„toggle_maximize_vertically”, amelyek hatására az ablak csak vízszintesen/"
+"függőlegesen lesz maximalizálva, „minimize”, amely hatására kis méretű lesz "
+"az ablak, „shade”, amely hatására az ablak felgördül, „menu”, amely "
+"megjeleníti az ablak menüt, „lower”, amely az ablakot a többi ablak mögé "
+"viszi és „none”, amely nem hajt végre semmit."
 
 #: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
@@ -559,8 +558,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -568,11 +567,11 @@ msgstr ""
 "kattintás esetén. Jelenleg érvényes opciók a „toggle_shade”, amely hatására "
 "az ablak felgördül/legördül, a „toggle_maximize”, amely hatására teljes "
 "képernyős/eredeti méretű lesz, „toggle_maximize_horizontally” és "
-"„toggle_maximize_vertically”, amelyek hatására az ablak csak "
-"vízszintesen/függőlegesen lesz maximalizálva, „minimize”, amely hatására kis"
-" méretű lesz az ablak, „shade”, amely hatására az ablak felgördül, „menu”, "
-"amely megjeleníti az ablak menüt, „lower”, amely az ablakot a többi ablak "
-"mögé viszi és „none”, amely nem hajt végre semmit."
+"„toggle_maximize_vertically”, amelyek hatására az ablak csak vízszintesen/"
+"függőlegesen lesz maximalizálva, „minimize”, amely hatására kis méretű lesz "
+"az ablak, „shade”, amely hatására az ablak felgördül, „menu”, amely "
+"megjeleníti az ablak menüt, „lower”, amely az ablakot a többi ablak mögé "
+"viszi és „none”, amely nem hajt végre semmit."
 
 #: src/org.cafe.croma.gschema.xml:100
 msgid "Automatically raises the focused window"
@@ -585,8 +584,8 @@ msgid ""
 "the auto_raise_delay key. This is not related to clicking on a window to "
 "raise it, nor to entering a window during drag-and-drop."
 msgstr ""
-"Ha igazra van állítva és a fókuszmód a „sloppy” vagy „mouse” egyike, akkor a"
-" fókuszba került ablak automatikusan az előtérbe lesz hozva az "
+"Ha igazra van állítva és a fókuszmód a „sloppy” vagy „mouse” egyike, akkor a "
+"fókuszba került ablak automatikusan az előtérbe lesz hozva az "
 "auto_raise_delay kulcsban megadott késleltetés letelte után. Ez nem "
 "kapcsolódik az ablakra kattintáshoz annak előtérbe hozása érdekében, sem az "
 "ablakra mutatáshoz fogd és ejtsd művelet során."
@@ -665,15 +664,20 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
-"A körbetekerés stílusa adja meg, a munkaterület széleinek viselkedését, egyik munkaterületről a másikra történő váltáskor.\n"
-"Amikor a „no wrap” értéket választja, nem fog történni semmi, amikor az egérmutató elhagyja a munkaterület váltó határait.\n"
-"Ha a „classic” érték van megadva, akkor a régi croma működés szerint a sor végén a következő sorba lép, az oszlop végén a következő sorba lép.\n"
-"Amennyiben a „toroidal” értéket állítja be, akkor a minden sor vége ugyanazon sor elejére ugrik, minden oszlop vége ugyanazon oszlop elejére ugrik."
+"A körbetekerés stílusa adja meg, a munkaterület széleinek viselkedését, "
+"egyik munkaterületről a másikra történő váltáskor.\n"
+"Amikor a „no wrap” értéket választja, nem fog történni semmi, amikor az "
+"egérmutató elhagyja a munkaterület váltó határait.\n"
+"Ha a „classic” érték van megadva, akkor a régi croma működés szerint a sor "
+"végén a következő sorba lép, az oszlop végén a következő sorba lép.\n"
+"Amennyiben a „toroidal” értéket állítja be, akkor a minden sor vége "
+"ugyanazon sor elejére ugrik, minden oszlop vége ugyanazon oszlop elejére "
+"ugrik."
 
 #: src/org.cafe.croma.gschema.xml:136
 msgid "Enable Visual Bell"
@@ -685,8 +689,8 @@ msgid ""
 "'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy "
 "environments."
 msgstr ""
-"Látható jelzést ad, amikor egy alkalmazás vagy a rendszer „hangjelzést” adna"
-" ki; ez hasznos lehet a nagyothallók számára vagy zajos környezetben."
+"Látható jelzést ad, amikor egy alkalmazás vagy a rendszer „hangjelzést” adna "
+"ki; ez hasznos lehet a nagyothallók számára vagy zajos környezetben."
 
 #: src/org.cafe.croma.gschema.xml:141
 msgid "System Bell is Audible"
@@ -761,12 +765,11 @@ msgstr ""
 "ad drótvázak használatával, animációk kikapcsolásával, vagy egyéb módon. Ez "
 "a használhatóság jelentős csökkentése sok felhasználó számára, de lehetővé "
 "teszi az örökölt alkalmazásoknak a működés folytatását és terminál "
-"kiszolgálóknak is hasznos engedmény lehet. Azonban a drótváz szolgáltatás ki"
-" van kapcsolva, ha az akadálymentesítés be van kapcsolva."
+"kiszolgálóknak is hasznos engedmény lehet. Azonban a drótváz szolgáltatás ki "
+"van kapcsolva, ha az akadálymentesítés be van kapcsolva."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
 "(Nincs megvalósítva) A navigáció az alkalmazások és nem az ablakok szintjén "
 "működik"
@@ -774,8 +777,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
@@ -827,8 +830,8 @@ msgstr "Engedélyezze-e az ablakigazítást"
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 "Ha engedélyezett, akkor a képernyőélekre húzott ablakok függőlegesen "
 "maximalizálva lesznek, vízszintesen pedig az elérhető terület felét fogják "
@@ -838,8 +841,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:186
 msgid "Whether to maximize the window when dragged to the top of the screen"
 msgstr ""
-"Maximalizálva legyenek-e azok az ablakok, amelyek a képernyő tetejére lettek"
-" húzva."
+"Maximalizálva legyenek-e azok az ablakok, amelyek a képernyő tetejére lettek "
+"húzva."
 
 #: src/org.cafe.croma.gschema.xml:187
 msgid ""
@@ -866,16 +869,21 @@ msgstr "Ablak elhelyezése üzemmód"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
-"Az ablak elhelyezése üzemmód jelzi, hogy a megjelenő új ablak, hova lesz elhelyezve.\n"
-"Az „automatic” érték megadása esetén a rendszer dönti el az ablak helyét, a rendelkezésre álló szabad hely alapján. Amennyiben nincsen elegendő hely, úgy az ablak lépcsőzetes elrendezésben jelenik meg.\n"
-"A „pointer” érték megadása esetén az új ablak az egérmutató által megadott helyre kerül.\n"
-"A „manual” érték esetén a felhasználónak egérrel és billentyűzettel kell elhelyeznie az új ablakot."
+"Az ablak elhelyezése üzemmód jelzi, hogy a megjelenő új ablak, hova lesz "
+"elhelyezve.\n"
+"Az „automatic” érték megadása esetén a rendszer dönti el az ablak helyét, a "
+"rendelkezésre álló szabad hely alapján. Amennyiben nincsen elegendő hely, "
+"úgy az ablak lépcsőzetes elrendezésben jelenik meg.\n"
+"A „pointer” érték megadása esetén az új ablak az egérmutató által megadott "
+"helyre kerül.\n"
+"A „manual” érték esetén a felhasználónak egérrel és billentyűzettel kell "
+"elhelyeznie az új ablakot."
 
 #: src/org.cafe.croma.gschema.xml:201
 msgid "List of applications ignored by show-desktop"
@@ -883,8 +891,8 @@ msgstr "A show-desktop által figyelmen kívül hagyott alkalmazások listája"
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 "Vesszővel elválasztott osztály lista. Minden futó GUI alkalmazást, amely a "
 "megadott ablakkezelő osztállyal hivatkozható nem vesz figyelembe az „Asztal "
@@ -977,8 +985,8 @@ msgstr "Megadott parancs futtatása"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1100,13 +1108,13 @@ msgstr "Billentyű összerendelések hatására futtatandó parancsok"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "Az /apps/croma/global_keybindings/run_command_N határozza meg a "
 "billentyűkombinációkat, amelyek ezekhez a parancsokhoz tartoznak. A "
-"run_command_N-hez tartozó billentyűkombináció lenyomásakor végre lesz hajtva"
-" a command_N."
+"run_command_N-hez tartozó billentyűkombináció lenyomásakor végre lesz hajtva "
+"a command_N."
 
 #: src/org.cafe.croma.gschema.xml:722
 msgid "The screenshot command"
@@ -1127,8 +1135,8 @@ msgstr "A ablak képernyőkép-készítő parancs"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "Az /apps/croma/global_keybindings/run_command_window_screenshot kulcs "
@@ -1212,7 +1220,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1223,28 +1232,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Nincs %d parancs meghatározva.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Nincs terminálparancs meghatározva.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "Munkaterület átnevezése"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "Új munkaterület nevek"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "OK"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Mégse"
 
@@ -1254,62 +1263,64 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., és mások\n"
 "Ez egy szabad szoftver; lásd a forrást a másolás feltételeiről.\n"
-"NINCS garancia; még az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ ALKALMAZHATÓSÁGRA vonatkozólag sem.\n"
+"NINCS garancia; még az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ "
+"ALKALMAZHATÓSÁGRA vonatkozólag sem.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "A munkamenet-kezelőhöz való csatlakozás tiltása"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "A futó ablakkezelő helyettesítése a Croma-vel"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Munkamenet-kezelő azonosítójának megadása"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "A használandó X megjelenítő"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "A munkamenet előkészítése a mentési fájlból"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Verziószám nyomtatása"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Legyenek szinkron X-hívások"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Kompozitálás bekapcsolása"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Kompozitálás kikapcsolása"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
 "Ne tegye teljes képernyőssé a maximalizált és díszítésekkel nem rendelkező "
 "ablakokat"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Témakönyvtár beolvasása sikertelen: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1317,7 +1328,7 @@ msgstr ""
 "Nem található téma! Bizonyosodjon meg róla hogy a(z) %s létezik és "
 "tartalmazza a szokásos témákat.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Újraindítás sikertelen: %s\n"
@@ -1350,8 +1361,8 @@ msgstr ""
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "A konfigurációs adatbázisban talált „%s” érvénytelen érték az egérgomb "
 "módosítóhoz\n"
@@ -1370,33 +1381,34 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "%d. munkaterület"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "A(z) %d képernyő a(z) „%s” megjelenítőn érvénytelen\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
 "A(z) %d képernyő a(z) „%s” megjelenítőn már rendelkezik egy ablakkezelővel; "
 "próbálja a --replace opcióval helyettesíteni a jelenlegi ablakkezelőt.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
 "Nem sikerült beolvasni az ablakkezelő kiválasztását a(z) %d képernyőn a(z) "
 "„%s” megjelenítőn\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "A(z) %d képernyőnek a(z) „%s” megjelenítőn már van ablakkezelője\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Nem sikerült elengedni a(z) %d képernyőt a(z) „%s” kijelzőn\n"
@@ -1449,8 +1461,8 @@ msgstr "Ismeretlen elem: %s"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
 "Az alábbi ablakok nem támogatják az &quot;aktuális beállítások "
 "mentését&quot;, emiatt ezeket a legközelebbi bejelentkezéskor manuálisan "
@@ -1498,7 +1510,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1513,15 +1525,16 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
 "%d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr ""
 "A(z) %s ablak egy MWM javaslatot állít be, ami szerint nem méretezhető át, "
-"de mégis %d x %d minimális és %d x %d maximális értéket ad meg, amelynek így"
-" nincs értelme.\n"
+"de mégis %d x %d minimális és %d x %d maximális értéket ad meg, amelynek így "
+"nincs értelme.\n"
 
 #: src/core/window-props.c:306
 #, c-format
@@ -1585,8 +1598,7 @@ msgstr ""
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "A(z) %s tulajdonság a 0x%lx ablakon érvénytelen UTF-8 adatot tartalmazott a "
 "lista %d. elemében\n"
@@ -1596,51 +1608,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Használat: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Ablak bezárása"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Ablak menü"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr "Ablak alkalmazásmenüje"
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Ablak minimalizálása"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Ablak maximalizálása"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Ablak visszaállítása"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Ablak felgördítése"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Ablak lenyitása"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Ablak legfelül tartása"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Ablak eltávolítása legfelülről"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Mindig a látható munkaterületen"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Ablak kirakása csak egy munkaterületre"
 
@@ -1748,6 +1760,7 @@ msgstr "Áthelyezés mási_k munkaterületre"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1756,6 +1769,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1764,6 +1778,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1772,6 +1787,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1780,6 +1796,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1788,6 +1805,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1796,6 +1814,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1804,6 +1823,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1812,6 +1832,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1820,57 +1841,59 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "fent"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "lent"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "Bal"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "Jobb"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "a keretgeometria nem határoz meg „%s” dimenziót"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "a keretgeometria nem határoz meg „%s” dimenziót „%s” szegélynek"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "%g gomb méretaránya nem fogadható el"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "A keretgeometria nem határozza meg a gombok méretét"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "A színátmenetnek legalább két színűnek kell lennie"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
@@ -1880,16 +1903,16 @@ msgstr ""
 "tartalék érték. Például: ctk:custom(foo,bar); Nem sikerült értelmezni a "
 "következőt: „%s”."
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 "Érvénytelen karakter „%c” a ctk:custom beállítás color_name paraméterében. "
 "Kizárólag a „A-Za-z0-9-_” értékek érvényesek."
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
@@ -1898,37 +1921,37 @@ msgstr ""
 "A Ctk:custom formátuma: „ctk:custom(color_name,fallback)”, A „%s” nem ilyen "
 "formátumú."
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK szín meghatározásnál az állapotnak szögletes zárójelben kell lennie, "
-"pl.ctk:fg[NORMAL] ahol NORMAL az állapot; nem lehetett feldolgozni a "
+"CTK szín meghatározásnál az állapotnak szögletes zárójelben kell lennie, pl."
+"ctk:fg[NORMAL] ahol NORMAL az állapot; nem lehetett feldolgozni a "
 "következőt: „%s”"
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"A CTK színmeghatározásnál kötelező záró szögletes zárójelet tenni az állapot"
-" után, például ctk:fg[NORMAL], ahol NORMAL az állapot; nem sikerült "
+"A CTK színmeghatározásnál kötelező záró szögletes zárójelet tenni az állapot "
+"után, például ctk:fg[NORMAL], ahol NORMAL az állapot; nem sikerült "
 "értelmezni a következőt: „%s”"
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Nem sikerült a(z) „%s” állapotot értelmezni a szín meghatározásban"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Nem sikerült értelmezni „%s” színösszetevőt a színmeghatározásban"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1937,60 +1960,60 @@ msgstr ""
 "A keverés formátuma: „blend/bg_color/fg_color/alpha”, „%s” nem felel meg "
 "ennek"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Nem sikerült értelmezni a(z) „%s” alfa értéket a kevert színben"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "A(z) „%s” alfa érték a kevert színben nem 0.0 és 1.0 között van"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Az árnyék formátuma: „shade/base_color/factor”, „%s” nem felel meg ennek"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
-msgstr ""
-"Nem sikerült a(z) „%s” árnyéktényezőt feldolgozni az árnyékolt színben"
+msgstr "Nem sikerült a(z) „%s” árnyéktényezőt feldolgozni az árnyékolt színben"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "„%s” árnyéktényező az árnyékolt színben negatív"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Nem sikerült feldolgozni a(z) „%s” színt"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "A koordinátakifejezés „%s” karaktert tartalmaz, ami nem megengedett"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
 "A koordinátakifejezés „%s” lebegőpontos számot tartalmaz, amit nem sikerült "
 "feldolgozni"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr ""
 "A koordinátakifejezés „%s” egész számot tartalmaz, amit nem sikerült "
 "feldolgozni"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
@@ -1999,71 +2022,71 @@ msgstr ""
 "A koordinátakifejezés ismeretlen operátort tartalmaz ennek a szövegnek az "
 "elején: „%s”"
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "A koordinátakifejezés üres vagy értelmezhetetlen volt"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "A koordinátakifejezés nullával való osztást okozott."
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr ""
 "A koordinátakifejezés mod operátort próbált használni lebegőpontos számon"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "A koordinátakifejezésben egy operandus helyén „%s” operátor volt"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "A koordinátakifejezésben a várt operátor helyett operandus szerepelt"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "A koordinátakifejezés operátorral végződött, nem operandussal"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
 "operand in between"
 msgstr ""
-"A koordinátakifejezésben „%c” operátort „%c” operátor követi úgy, hogy nincs"
-" köztük operandus"
+"A koordinátakifejezésben „%c” operátort „%c” operátor követi úgy, hogy nincs "
+"köztük operandus"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "A koordinátakifejezésben „%s” változó vagy állandó ismeretlen volt"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "A koordinátakifejezés-elemző túlcsordította a pufferét."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr "A koordinátakifejezésben záró zárójel szerepelt kezdő nélkül"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr "A koordinátakifejezésben kezdő zárójel szerepelt záró nélkül"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr ""
 "A koordinátakifejezésben úgy tűnik nincsenek sem operátorok, sem operandusok"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "A téma által tartalmazott kifejezés hibát okozott: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2072,45 +2095,49 @@ msgstr ""
 "Ehhez a keretstílushoz meg kell határozni a következő elemet: <button "
 "function=\"%s\" state=\"%s\" draw_ops=\"bármi\"/>"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "Hiányzó <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"bármi\"/> elem"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"Hiányzó <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"bármi\"/> elem"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Hiba a(z) „%s” téma betöltése közben: %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Nincs <%s> beállítva a(z) „%s” témához"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
 "type=\"%s\" style_set=\"whatever\"/> element"
 msgstr ""
-"Nincs keretstílus beállítva a(z) „%s” ablaktípushoz a(z) „%s” témában, adjon"
-" hozzá egy <window type=\"%s\" style_set=\"bármi\"/> elemet"
+"Nincs keretstílus beállítva a(z) „%s” ablaktípushoz a(z) „%s” témában, adjon "
+"hozzá egy <window type=\"%s\" style_set=\"bármi\"/> elemet"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
-"A felhasználó által meghatározott konstansoknak nagybetűvel kell kezdődniük,"
-" a(z) „%s” nem ilyen"
+"A felhasználó által meghatározott konstansoknak nagybetűvel kell kezdődniük, "
+"a(z) „%s” nem ilyen"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "A(z) „%s” konstans már definiálva van"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2129,8 +2156,7 @@ msgstr "„%s” attribútum kétszer lett megismételve ugyanazon a(z) <%s> ele
 #: src/ui/theme-parser.c:523 src/ui/theme-parser.c:572
 #, c-format
 msgid "Attribute \"%s\" is invalid on <%s> element in this context"
-msgstr ""
-"A(z) „%s” attribútum érvénytelen a(z) <%s> elemen ebben a kontextusban"
+msgstr "A(z) „%s” attribútum érvénytelen a(z) <%s> elemen ebben a kontextusban"
 
 #: src/ui/theme-parser.c:614
 #, c-format
@@ -2172,17 +2198,17 @@ msgstr "Szögnek 0.0 és 360.0 között kell lennie, %g volt\n"
 #, c-format
 msgid "Alpha must be between 0.0 (invisible) and 1.0 (fully opaque), was %g\n"
 msgstr ""
-"Az alfának 0.0 (átlátszó) és 1.0 (teljesen átlátszatlan) között kell lennie,"
-" %g volt\n"
+"Az alfának 0.0 (átlátszó) és 1.0 (teljesen átlátszatlan) között kell lennie, "
+"%g volt\n"
 
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-" „%s” érvénytelen címméret (lehetséges értékek: xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+" „%s” érvénytelen címméret (lehetséges értékek: xx-small,x-small,small,"
+"medium,large,x-large,xx-large)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2375,7 +2401,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
 "A(z) <%s> elemnek nem szabadna „resize” attribútummal rendelkeznie a teljes "
 "méretű állapothoz"
@@ -2384,8 +2411,7 @@ msgstr ""
 #, c-format
 msgid "Style has already been specified for state %s resize %s focus %s"
 msgstr ""
-"%s állapothoz, %s átméretezéshez és %s fókuszhoz már meg van határozva "
-"stílus"
+"%s állapothoz, %s átméretezéshez és %s fókuszhoz már meg van határozva stílus"
 
 #: src/ui/theme-parser.c:3214 src/ui/theme-parser.c:3225
 #: src/ui/theme-parser.c:3236 src/ui/theme-parser.c:3258
@@ -2405,8 +2431,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
 "Nem lehet két draw_ops-a egy <button> elemnek (a téma meghatározott egy "
 "draw_ops attribútumot és egy <draw_ops> elemet, vagy két elemet)"
@@ -2508,96 +2534,96 @@ msgstr "_OK"
 msgid "This is a sample message in a sample dialog"
 msgstr "Ez egy mintaüzenet egy minta párbeszédben"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "%d. hamis menüelem\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Csak keretes ablak"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Sáv"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Normál alkalmazásablak"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Párbeszédablak"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Kizárólagos párbeszéd doboz"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Eszközpaletta"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Leválasztott menü"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Szegély"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr "Hozzáfűzött kizárólagos ablak"
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Gombelrendezés teszt %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g ezredmásodpercig tartott egy ablakkeret kirajzolása"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Használat: croma-theme-viewer [TÉMANÉV]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Hiba történt a téma betöltése közben: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "A(z) „%s” téma %g másodperc alatt betöltve\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Normál cím betűtípus"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Kicsi cím betűtípus"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Nagy cím betűtípus"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Gombelrendezések"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Teljesítményteszt"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Ide kerül az ablak címe"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "

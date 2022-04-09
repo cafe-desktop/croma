@@ -2,7 +2,7 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Henrik Mattsson-Mårn <h@reglage.net>, 2020
 # cb445fb3dfd1fe3c2b9f58ac5638f478, 2020
@@ -15,19 +15,19 @@
 # Tobias Lekare <lekare@linux.com>, 2020
 # Ludvig Nybogård <ludvig@nybogard.nu>, 2020
 # Philip Andersen <renegadevi@codeofmagi.net>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Philip Andersen <renegadevi@codeofmagi.net>, 2020\n"
 "Language-Team: Swedish (https://www.transifex.com/cafe/teams/13566/sv/)\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -382,8 +382,8 @@ msgstr "Huruvida högerknappen ändrar storlek"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Ställ in detta till sant för att ändra storlek med högerknappen och visa en "
 "meny med mittenknappen när tangenten, som angivits i "
@@ -416,13 +416,13 @@ msgid ""
 "without breaking older versions. A special spacer tag can be used to insert "
 "some space between two adjacent buttons."
 msgstr ""
-"Arrangemang av knapparna på titelraden. Värdet måste vara en sträng som till"
-" exempel \"menu:minimize,maximize,close\"; kolonet skiljer det vänstra "
-"hörnet från det högra hörnet, och knappnamnen är kommaseparerade. Två "
-"knappar av samma typ är inte tillåtet. Okända knappnamn ignoreras helt och "
-"hållet så att knappar kan läggas till i framtida versioner utan att gamla "
-"versioner går sönder. En speciell utfyllnadstagg kan användas för att infoga"
-" utrymme mellan två närliggande knappar."
+"Arrangemang av knapparna på titelraden. Värdet måste vara en sträng som till "
+"exempel \"menu:minimize,maximize,close\"; kolonet skiljer det vänstra hörnet "
+"från det högra hörnet, och knappnamnen är kommaseparerade. Två knappar av "
+"samma typ är inte tillåtet. Okända knappnamn ignoreras helt och hållet så "
+"att knappar kan läggas till i framtida versioner utan att gamla versioner "
+"går sönder. En speciell utfyllnadstagg kan användas för att infoga utrymme "
+"mellan två närliggande knappar."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -432,15 +432,15 @@ msgstr "Fönsterfokusläge"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Fönsterfokusläget anger hur fönster ska aktiveras. Det har tre möjliga "
 "värden; \"click\" betyder att fönster måste klickas på för att de ska få "
 "fokus, \"sloppy\" betyder att fönster fokuseras då muspekaren hamnar i "
-"fönstret, och \"mouse\" betyder att fönster fokuseras då muspekaren hamnar i"
-" fönstret och förlorar fokus då muspekaren lämnar fönstret."
+"fönstret, och \"mouse\" betyder att fönster fokuseras då muspekaren hamnar i "
+"fönstret och förlorar fokus då muspekaren lämnar fönstret."
 
 #: src/org.cafe.croma.gschema.xml:75
 msgid "Control how new windows get focus"
@@ -449,8 +449,8 @@ msgstr "Kontrollera hur nya fönster får fokus"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Detta alternativ tillhandahåller ytterligare kontroll över hur nyligen "
@@ -460,50 +460,48 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
-msgstr ""
-"Huruvida höjning ska vara en sidoeffekt av andra användarinteraktioner"
+msgstr "Huruvida höjning ska vara en sidoeffekt av andra användarinteraktioner"
 
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
-"Ställa in detta alternativ till falskt kan leda till ett felaktigt beteende,"
-" så därför rekommenderas användarna att inte ändra det från standardvärdet, "
+"Ställa in detta alternativ till falskt kan leda till ett felaktigt beteende, "
+"så därför rekommenderas användarna att inte ändra det från standardvärdet, "
 "vilket är sant. Många åtgärder (t.ex. klicka i klientområdet, flytta eller "
 "ändra storlek på fönstret) höjer normalt sett fönstret som en sidoeffekt. "
 "Ställa in detta alternativ till falskt, vilket inte rekommenderas, kan "
 "koppla loss höjningen från andra användaråtgärder och ignorera "
-"höjningsbegäran som genereras av program. Se "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Även när detta "
-"alternativ är falskt kan fönster fortfarande höjas genom Alt-vänster-klick "
-"någonstans i fönstret, ett vanligt klick på fönstrets dekoration eller genom"
-" speciella meddelanden från visare, såsom en aktiveringsbegäran från "
-"panelprogram. Detta alternativ är för närvarande inaktiverat i klicka-för-"
-"fokus-läget. Observera att listan över sätt att höja fönster när "
-"raise_on_click är falskt inte inkluderar programmatiska begäran från program"
-" för att höja fönster; sådana begäran kommer att ignoreras oavsett "
-"anledningen till begäran. Om du är en programutvecklare och har en användare"
-" som klagar på att ditt program inte fungerar med denna inställning "
-"inaktiverad så kan du informera dem om att det är _deras_ fel att deras "
-"fönsterhanterare är trasig och att de behöver ändra detta alternativ till "
-"sant eller leva med \"felet\" som de begärde."
+"höjningsbegäran som genereras av program. Se http://bugzilla.gnome.org/"
+"show_bug.cgi?id=445447#c6. Även när detta alternativ är falskt kan fönster "
+"fortfarande höjas genom Alt-vänster-klick någonstans i fönstret, ett vanligt "
+"klick på fönstrets dekoration eller genom speciella meddelanden från visare, "
+"såsom en aktiveringsbegäran från panelprogram. Detta alternativ är för "
+"närvarande inaktiverat i klicka-för-fokus-läget. Observera att listan över "
+"sätt att höja fönster när raise_on_click är falskt inte inkluderar "
+"programmatiska begäran från program för att höja fönster; sådana begäran "
+"kommer att ignoreras oavsett anledningen till begäran. Om du är en "
+"programutvecklare och har en användare som klagar på att ditt program inte "
+"fungerar med denna inställning inaktiverad så kan du informera dem om att "
+"det är _deras_ fel att deras fönsterhanterare är trasig och att de behöver "
+"ändra detta alternativ till sant eller leva med \"felet\" som de begärde."
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -515,18 +513,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"Detta alternativ bestämmer effekterna av dubbelklick på titelraden. Aktuella"
-" giltiga alternativ är \"toggle_shade\" som kommer att rulla upp/rulla ned "
+"Detta alternativ bestämmer effekterna av dubbelklick på titelraden. Aktuella "
+"giltiga alternativ är \"toggle_shade\" som kommer att rulla upp/rulla ned "
 "fönstret, \"toggle_maximize\" som kommer att maximera/avmaximera fönstret, "
 "\"toggle_maximize_horizontally\" och \"toggle_maximize_vertically\" som "
 "kommer att maximera/avmaximera fönstret endast i den riktningen, "
-"\"minimize\" kommer kommer att minimera fönstret, \"shade\" kommer att rulla"
-" upp fönstret, \"menu\" kommer att visa fönstermenyn, \"lower\" som kommer "
+"\"minimize\" kommer kommer att minimera fönstret, \"shade\" kommer att rulla "
+"upp fönstret, \"menu\" kommer att visa fönstermenyn, \"lower\" som kommer "
 "att lägga fönstret bakom alla andra, samt \"none\" som inte gör något."
 
 #: src/org.cafe.croma.gschema.xml:90
@@ -539,20 +537,20 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Detta alternativ bestämmer effekterna av mittenklick på titellisten. "
-"Aktuella giltiga alternativ är \"toggle_shade\" som kommer att rulla "
-"upp/rulla ned fönstret, \"toggle_maximize\" som kommer att "
-"maximera/avmaximera fönstret, \"toggle_maximize_horizontally\" och "
+"Aktuella giltiga alternativ är \"toggle_shade\" som kommer att rulla upp/"
+"rulla ned fönstret, \"toggle_maximize\" som kommer att maximera/avmaximera "
+"fönstret, \"toggle_maximize_horizontally\" och "
 "\"toggle_maximize_vertically\" som kommer att maximera/avmaximera fönstret "
 "endast i den riktningen, \"minimize\" kommer kommer att minimera fönstret, "
 "\"shade\" kommer att rulla upp fönstret, \"menu\" kommer att visa "
-"fönstermenyn, \"lower\" som kommer att lägga fönstret bakom alla andra, samt"
-" \"none\" som inte gör något."
+"fönstermenyn, \"lower\" som kommer att lägga fönstret bakom alla andra, samt "
+"\"none\" som inte gör något."
 
 #: src/org.cafe.croma.gschema.xml:95
 msgid "Action on title bar right-click"
@@ -564,18 +562,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
-"Detta alternativ bestämmer effekterna av högerklick på titellisten. Aktuella"
-" giltiga alternativ är \"toggle_shade\" som kommer att rulla upp/rulla ned "
+"Detta alternativ bestämmer effekterna av högerklick på titellisten. Aktuella "
+"giltiga alternativ är \"toggle_shade\" som kommer att rulla upp/rulla ned "
 "fönstret, \"toggle_maximize\" som kommer att maximera/avmaximera fönstret, "
 "\"toggle_maximize_horizontally\" och \"toggle_maximize_vertically\" som "
 "kommer att maximera/avmaximera fönstret endast i den riktningen, "
-"\"minimize\" kommer kommer att minimera fönstret, \"shade\" kommer att rulla"
-" upp fönstret, \"menu\" kommer att visa fönstermenyn, \"lower\" som kommer "
+"\"minimize\" kommer kommer att minimera fönstret, \"shade\" kommer att rulla "
+"upp fönstret, \"menu\" kommer att visa fönstermenyn, \"lower\" som kommer "
 "att lägga fönstret bakom alla andra, samt \"none\" som inte gör något."
 
 #: src/org.cafe.croma.gschema.xml:100
@@ -592,8 +590,8 @@ msgstr ""
 "Om sant, och om fokusläget antingen är \"sloppy\" eller \"mouse\", kommer "
 "det fokuserade fönstret att automatiskt höjas efter en fördröjning "
 "(fördröjningen anges av nyckeln auto_raise_delay). Detta är inte relaterat "
-"till att klicka på ett fönster för att höja det, inte heller att gå in i ett"
-" fönster med drag-och-släpp."
+"till att klicka på ett fönster för att höja det, inte heller att gå in i ett "
+"fönster med drag-och-släpp."
 
 #: src/org.cafe.croma.gschema.xml:105
 msgid "Delay in milliseconds for the auto raise option"
@@ -657,8 +655,8 @@ msgid ""
 "workspaces."
 msgstr ""
 "Antal arbetsytor. Måste vara större än noll, och har ett fast maxvärde för "
-"att förhindra att skrivbordet förstörs genom att för många arbetsytor begärs"
-" av misstag."
+"att förhindra att skrivbordet förstörs genom att för många arbetsytor begärs "
+"av misstag."
 
 #: src/org.cafe.croma.gschema.xml:131
 msgid "Workspace wrap style"
@@ -670,16 +668,16 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
 "Wrap-stilen används för att bestämma hur man växlar från en arbetsyta till "
 "en annan vid gränsen för arbetsyta-väljaren. När det är inställt på \"no "
 "wrap\" inträffar inget om du försöker växla till en arbetsyta förbi gränsen "
-"för arbetsområdesomkopplaren. Om den är inställd på \"klassisk\" används det"
-" gamla croma beteendet: slutet av en rad leder till början av nästa och "
+"för arbetsområdesomkopplaren. Om den är inställd på \"klassisk\" används det "
+"gamla croma beteendet: slutet av en rad leder till början av nästa och "
 "slutet av en kolumn leder till början av nästa. Om de är inställda på "
 "\"toroidal\", är arbetsytor anslutna som en munk: slutet på varje rad leder "
 "till sin egen början och slutet av varje kolumn leder till sin egen början."
@@ -774,16 +772,15 @@ msgstr ""
 "tillgänglighet är på."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
 "(Inte implementerat) Navigering fungerar i termer av program, inte fönster"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
@@ -834,13 +831,12 @@ msgstr "Om du vill aktivera fönsterkakel"
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 "Om aktiverat och du släpper fönstren på skärmkanten maximeras dem vertikalt "
-"och horisontellt för att täcka hälften av det tillgängliga området. Drag-"
-"och-släpp till toppen för att maximera fönstret om allow-top-tiling är "
-"aktiverat."
+"och horisontellt för att täcka hälften av det tillgängliga området. Drag-och-"
+"släpp till toppen för att maximera fönstret om allow-top-tiling är aktiverat."
 
 #: src/org.cafe.croma.gschema.xml:186
 msgid "Whether to maximize the window when dragged to the top of the screen"
@@ -872,11 +868,11 @@ msgstr "Fönsterplaceringsläge."
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 "Fönsterplaceringsläget indikerar hur nya fönster är placerade. "
 "\"automatisk\" betyder att systemet väljer en plats automatiskt baserat på "
@@ -891,8 +887,8 @@ msgstr "Lista på applikationer som ignoreras av visa-skrivbordet"
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 "Kommaseparerad klasslista. Alla pågående GUI-applikatier som hänvisas till "
 "den givna fönsterhanterarklassen ignoreras av funktionen \"Visa skrivbord\"."
@@ -984,8 +980,8 @@ msgstr "Kör ett angivet kommando"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1111,8 +1107,8 @@ msgstr "Kommandon att köra som svar på tangentbindningar"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "Nycklarna /apps/croma/global_keybindings/run_command_N anger "
 "tangentbindningar som motsvarar dessa kommandon. Att trycka "
@@ -1128,8 +1124,7 @@ msgid ""
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
 "Nyckeln /apps/croma/global_keybindings/run_command_screenshot anger en "
-"tangentbindning som gör att kommandot som anges av denna inställning "
-"anropas."
+"tangentbindning som gör att kommandot som anges av denna inställning anropas."
 
 #: src/org.cafe.croma.gschema.xml:727
 msgid "The window screenshot command"
@@ -1137,8 +1132,8 @@ msgstr "Fönstrets skärmdump kommandot"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "Nyckeln /apps/croma/global_keybindings/run_command_window_screenshot anger "
@@ -1157,13 +1152,11 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:915
 msgid "Tile window to north-east (upper right) corner of screen"
-msgstr ""
-"Justera fönsterstorleken till nordöstra (övre högra) hörnet av skärmen"
+msgstr "Justera fönsterstorleken till nordöstra (övre högra) hörnet av skärmen"
 
 #: src/org.cafe.croma.gschema.xml:920
 msgid "Tile window to south-east (lower right) corner of screen"
-msgstr ""
-"Justera fönsterstorleken till sydöstra (nedre högra) hörnet av skärmen"
+msgstr "Justera fönsterstorleken till sydöstra (nedre högra) hörnet av skärmen"
 
 #: src/org.cafe.croma.gschema.xml:925
 msgid "Tile window to south-west (lower left) corner of screen"
@@ -1227,7 +1220,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1238,28 +1232,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Inget kommando %d har definierats.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Inget terminalkommando har definierats.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "<tt>Byt namn på Arbetsyta </tt>"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "Nytt namn på Arbetsyta:"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "OK"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -1269,60 +1263,62 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Copyright © 2001-%s Havoc Pennington, Red Hat, Inc. och andra\n"
 "Det här är fri programvara; se källkoden för kopieringsvillkor.\n"
-"Det finns INGA garantier; inte ens för SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL.\n"
+"Det finns INGA garantier; inte ens för SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT "
+"SPECIELLT ÄNDAMÅL.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Inaktivera anslutning till sessionshanterare"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Ersätt den körande fönsterhanteraren med Croma"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Ange id för sessionshantering"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "X-display att använda"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Initiera session från sparandefil"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Skriv ut versionsnummer"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Gör X-anrop synkrona"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Slå på kompositering"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Stäng av kompositering"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr "Skapa inte helskärmsfönster som är maximerade och saknar dekorationer"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Misslyckades med att genomsöka temakatalogen: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1330,7 +1326,7 @@ msgstr ""
 "Kunde inte hitta ett tema! Försäkra dig om att %s finns och innehåller "
 "vanliga teman.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Misslyckades med att starta om: %s\n"
@@ -1354,13 +1350,14 @@ msgstr ""
 #: src/core/prefs.c:1194
 #, c-format
 msgid "Could not parse font description \"%s\" from GSettings key %s\n"
-msgstr "Kunde inte tolka typsnittsbeskrivningen \"%s\" från GSettings-nyckeln %s\n"
+msgstr ""
+"Kunde inte tolka typsnittsbeskrivningen \"%s\" från GSettings-nyckeln %s\n"
 
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "\"%s\" som hittades i konfigurationsdatabasen är inte ett giltigt värde för "
 "musknappsmodifierare\n"
@@ -1379,31 +1376,32 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "Arbetsyta %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "Skärm %d på display \"%s\" är ogiltig\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
-"Skärm %d på display \"%s\" har redan en fönsterhanterare; försök med flaggan"
-" --replace för att ersätta den aktuella fönsterhanteraren.\n"
+"Skärm %d på display \"%s\" har redan en fönsterhanterare; försök med flaggan "
+"--replace för att ersätta den aktuella fönsterhanteraren.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr "Kunde inte få tag i fönsterhanterarval på skärm %d display \"%s\"\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "Skärm %d på display \"%s\" har redan en fönsterhanterare\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Kunde inte släppa skärm %d på display \"%s\"\n"
@@ -1454,8 +1452,8 @@ msgstr "Okänt element %s"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
 "Dessa fönster har inte stöd för &quot;spara nuvarande inställningar&quot; "
 "och kommer att behöva startas om manuellt nästa gång du loggar in."
@@ -1502,7 +1500,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1517,15 +1515,16 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
 "%d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr ""
 "Fönstret %s ställer in ett MWM-tips som anger att det inte går att ändra "
-"storlek på, men ställer in minsta storleken %d × %d och största storleken %d"
-" × %d; detta verkar inte vettigt.\n"
+"storlek på, men ställer in minsta storleken %d × %d och största storleken %d "
+"× %d; detta verkar inte vettigt.\n"
 
 #: src/core/window-props.c:306
 #, c-format
@@ -1586,8 +1585,7 @@ msgstr "Egenskap %s på fönster 0x%lx innehöll ogiltig UTF-8\n"
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "Egenskap %s på fönster 0x%lx innehöll ogiltig UTF-8 för objekt %d i listan\n"
 
@@ -1596,51 +1594,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Användning: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Stäng fönster"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Fönstermeny"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr "Fönster-appmeny"
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Minimera fönster"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Maximera fönster"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Återställ fönster"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Rulla upp fönstret"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Rulla tillbaka fönstret"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Behåll fönstret överst"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Ta bort överliggande fönster"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Alltid på synlig arbetsyta"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Placera fönstret på endast en arbetsyta"
 
@@ -1748,6 +1746,7 @@ msgstr "Flytta till en annan _arbetsyta"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Skift"
@@ -1756,6 +1755,7 @@ msgstr "Skift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1764,6 +1764,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1772,6 +1773,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1780,6 +1782,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1788,6 +1791,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1796,6 +1800,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1804,6 +1809,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1812,6 +1818,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1820,57 +1827,59 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "överkant"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "nederkant"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "vänster"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "höger"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "ramgeometrin anger inte \"%s\"-dimension"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "ramgeometrin anger inte dimensionen \"%s\" för ramen \"%s\""
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "Knappförhållandet %g är inte rimligt"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "ramgeometrin anger inte storlek på knappar"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Toningarna bör ha minst två färger"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
@@ -1879,16 +1888,16 @@ msgstr ""
 "CTK-färgspecifikationen måste ha färgnamn och reserv inom paranteser, t.ex. "
 "ctk:custom(foo,bar); could not parse \"%s\""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
-"Ogiltigt tecken '%c' i color_name parametern av ctk:custom. Endast "
-"A-Za-z0-9-_ är giltiga."
+"Ogiltigt tecken '%c' i color_name parametern av ctk:custom. Endast A-Za-z0-9-"
+"_ är giltiga."
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
@@ -1897,35 +1906,35 @@ msgstr ""
 "Ctk:custom forcafet är \"ctk:custom(color_name,fallback)\", \"%s\" passar "
 "inte med forcafet"
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK-färgspecifikationen måste ha tillståndet inom klamrar, t.ex. "
-"ctk:fg[NORMAL], där NORMAL är tillståndet; kunde inte tolka \"%s\""
+"CTK-färgspecifikationen måste ha tillståndet inom klamrar, t.ex. ctk:"
+"fg[NORMAL], där NORMAL är tillståndet; kunde inte tolka \"%s\""
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"CTK-färgspecifikationen måste ha en stängningsklammer efter tillståndet, "
-"t.ex. ctk:fg[NORMAL], där NORMAL är tillståndet; kunde inte tolka \"%s\""
+"CTK-färgspecifikationen måste ha en stängningsklammer efter tillståndet, t."
+"ex. ctk:fg[NORMAL], där NORMAL är tillståndet; kunde inte tolka \"%s\""
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Förstod inte tillståndet \"%s\" i färgspecifikation"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Förstod inte färgkomponenten \"%s\" i färgspecifikation"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1934,87 +1943,91 @@ msgstr ""
 "Blandningsforcafet är \"blend/bg_color/fg_color/alpha\", \"%s\" passar inte "
 "med forcafet"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Kunde inte tolka alfavärdet \"%s\" i blandad färg"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr "Alfavärdet \"%s\" i blandad färg är inte mellan 0,0 och 1,0"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
-msgstr "Skuggforcafet är \"shade/base_color/factor\", \"%s\" passar inte med forcafet"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgstr ""
+"Skuggforcafet är \"shade/base_color/factor\", \"%s\" passar inte med forcafet"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Kunde inte tolka skuggfaktorn \"%s\" i skuggad färg"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Skuggfaktorn \"%s\" i skuggad färg är negativ"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Kunde inte tolka färgen \"%s\""
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "Koordinatuttrycket innehåller tecknet \"%s\" vilket inte är tillåtet"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr "Koordinatuttrycket innehåller flyttalet \"%s\" som inte kunde tolkas"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr "Koordinatuttrycket innehåller heltalet \"%s\" som inte kunde tolkas"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
 "\"%s\""
-msgstr "Koordinatuttrycket hade en okänd operand vid början av denna text: \"%s\""
+msgstr ""
+"Koordinatuttrycket hade en okänd operand vid början av denna text: \"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "Koordinatuttrycket var tomt eller förstods inte"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Koordinatuttrycket resulterar i division med noll"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr "Koordinatuttrycket försöker använda mod-operator på ett flyttal"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr "Koordinatuttrycket har en operator \"%s\" där en operand förväntades"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "Koordinatuttrycket hade en operand där en operator förväntades"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "Koordinatuttrycket slutade med en operator istället för en operand"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
@@ -2023,61 +2036,62 @@ msgstr ""
 "Koordinatuttrycket har en operator \"%c\" som följer på operatorn \"%c\" "
 "utan någon operand imellan"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "Koordinatuttrycket hade en okänd variabel eller konstant \"%s\""
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "Koordinatuttryckstolkaren överflödade sin buffert."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr ""
 "Koordinatuttrycket hade en stängningsparentes utan någon öppningsparentes"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr ""
 "Koordinatuttrycket hade en öppningsparentes utan någon stängningsparentes"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "Koordinatuttrycket verkar inte ha några operatorer eller operander"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Temat innehöll ett uttryck som resulterade i ett fel: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
 "specified for this frame style"
 msgstr ""
-"<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> måste anges för"
-" denna ramtyp"
+"<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> måste anges för "
+"denna ramtyp"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> saknas"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> saknas"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Misslyckades med att läsa in temat \"%s\": %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Inget <%s> angivet för temat \"%s\""
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2086,20 +2100,22 @@ msgstr ""
 "Ingen ramstil angiven för fönstertypen \"%s\" i temat \"%s\", lägg till ett "
 "<window type=\"%s\" style_set=\"whatever\"/>-element"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
 "Användardefinierade konstanter måste börja med en stor bokstav; \"%s\" gör "
 "det inte"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "Konstanten \"%s\" har redan definierats"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2164,11 +2180,11 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"Ogiltig titelskala \"%s\" (måste vara ett av xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Ogiltig titelskala \"%s\" (måste vara ett av xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2358,8 +2374,10 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
-msgstr "Bör inte ha \"resize\"-attribut i <%s>-element för maximerade tillstånd"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
+msgstr ""
+"Bör inte ha \"resize\"-attribut i <%s>-element för maximerade tillstånd"
 
 #: src/ui/theme-parser.c:3203 src/ui/theme-parser.c:3247
 #, c-format
@@ -2384,8 +2402,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
 "Kan inte ha två draw_ops för ett <button>-element (temat angav ett draw_ops-"
 "attribut och även ett <draw_ops>-element, eller angav två element)"
@@ -2426,8 +2444,8 @@ msgstr "Det yttersta elementet i temat måste vara <metacity_theme> inte <%s>"
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
 msgstr ""
-"Elementet <%s> är inte tillåtet inuti ett "
-"namn-/författare-/datum-/beskrivningselement"
+"Elementet <%s> är inte tillåtet inuti ett namn-/författare-/datum-/"
+"beskrivningselement"
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2486,102 +2504,102 @@ msgstr "Ok"
 msgid "This is a sample message in a sample dialog"
 msgstr "Detta är ett exempelmeddelande i en exempelkatalog"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Falskt menyobjekt %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Fönster med endast ram"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Rad"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Normalt programfönster"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Dialogruta"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Modalt dialogfönster"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Verktygspalett"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Avtagen meny"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Ram"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr "Fäst modalt dialogfönster"
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Test %d av knapplayout"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g millisekunder för att rita en fönsterram"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Användning: croma-theme-viewer [TEMANAMN]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Fel vid inläsning av tema: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "Läste in temat \"%s\" på %g sekunder\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Normalt titeltypsnitt"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Litet titeltypsnitt"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Stort titeltypsnitt"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Knapplayouter"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Prestandatest"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Fönstertitel hamnar här"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "
 "seconds wall clock time including X server resources (%g milliseconds per "
 "frame)\n"
 msgstr ""
-"Ritade %d ramar på %g sekunder på klientsidan (%g millisekunder per ram) och"
-" %g sekunder väggklockstid inklusive X-serverresurser (%g millisekunder per "
+"Ritade %d ramar på %g sekunder på klientsidan (%g millisekunder per ram) och "
+"%g sekunder väggklockstid inklusive X-serverresurser (%g millisekunder per "
 "ram)\n"

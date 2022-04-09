@@ -2,26 +2,28 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # brennus <jonas.ska@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Moo, 2020
 # Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020\n"
 "Language-Team: Lithuanian (https://www.transifex.com/cafe/teams/13566/lt/)\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
-"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
 msgid "Desktop"
@@ -198,8 +200,8 @@ msgstr "Keisti lango matomumą visose darbo srityse"
 #: src/50-croma-window-key.xml.in:54 src/org.cafe.croma.gschema.xml:875
 msgid "Raise window if it's covered by another window, otherwise lower it"
 msgstr ""
-"Iškelti neaktyvų langą, jei jis uždengtas kito lango, kitu atveju – paslėpti"
-" jį"
+"Iškelti neaktyvų langą, jei jis uždengtas kito lango, kitu atveju – paslėpti "
+"jį"
 
 #: src/50-croma-window-key.xml.in:58 src/org.cafe.croma.gschema.xml:880
 msgid "Raise window above other windows"
@@ -384,8 +386,8 @@ msgstr "Ar keisti dydį dešiniuoju mygtuku"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Nustatykite į teisingą, jei norite keisti dydį dešiniuoju mygtuku ir rodyti "
 "meniu viduriniuoju mygtuku nuspaudus klavišą, nurodytą "
@@ -422,8 +424,8 @@ msgstr ""
 "seka, pvz., „menu:minimize,maximize,close“; dvitaškis skiria kairįjį lango "
 "kampą nuo dešiniojo, o mygtukų vardai atskiriami kableliais. Mygtukų vardai "
 "neturi pasikartoti. Nežinomi mygtukai yra ignoruojami, jei juos kada nors "
-"panaudotų būsimos croma laidos. Speciali tarpo žymė palieka šiek tiek vietos"
-" tarp gretimų mygtukų."
+"panaudotų būsimos croma laidos. Speciali tarpo žymė palieka šiek tiek vietos "
+"tarp gretimų mygtukų."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -433,9 +435,9 @@ msgstr "Langų aktyvinimo veiksena"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Lango aktyvinimo veiksena nustato kaip bus aktyvuojami langai. Yra trys "
 "galimos reikšmės; \"click\" reiškia, kad reikia spustelėti ant lango norint "
@@ -450,8 +452,8 @@ msgstr "Nustatyti, kada nauji langai suaktyvinami"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Šis parametras leidžia tiksliau valdyti naujų langų aktyvinimą. Leidžiamos "
@@ -465,44 +467,44 @@ msgstr "Ar pakėlimas turėtų būti pašalinis kitų naudotojo veiksmų efektas
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
 "Šio parametro nustatymas į neigiamą gali privesti prie klaidingos elgsenos, "
 "taigi, naudotojai primygtinai raginami jo nekeisti ir palikti numatytąjį "
 "teigiamą. Daugelis veiksmų (pvz., spustelėjimas kliento srityje, langų "
 "perkėlimas ar dydžio keitimas) įprastai, sąlygojami šalutinio poveikio, "
-"iškelia langą. Šio parametro nustatymas į neigiamą, ko yra skatinama vengti,"
-" atskirs iškėlimą nuo kitų naudotojo veiksmų ir prives prie to, kad "
-"programos užklausų iškelti langą bus nepaisoma. Žiūrėkite "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Netgi kai ši reikšmė "
-"neigiama, langai vis tiek gali būti iškelti, spustelėjus bet kur ant lango "
-"alt-kairysis-spustelėjimas, normaliu spustelėjimu ant lango dekoracijų arba "
-"specialiais pranešimais iš pranešimų gaviklių, tokiais kaip aktyvavimo "
-"užklausos iš užduočių sąrašo įtaisų. Šis parametras šiuo metu yra išjungtas "
-"veiksenoje spustelėti-norint-sufokusuoti. Turėkite omenyje, kad langų "
-"iškėlimo būduose, kai raise_on_click yra neigiamas, nėra programinių "
-"užklausų iš programų iškelti langus; tokių užklausų bus nepaisoma, "
-"nepriklausomai nuo užklausos priežasties. Jeigu jūs esate programos kūrėjai "
-"ir naudotojai jums skundžiasi, kad jūsų programa neveikia, kai šis "
-"parametras yra išjungtas, tuomet pasakykite jiems, kad tai yra_jų_kaltė, kad"
-" jie sulaužė savo langų tvarkytuvę ir, kad jie turi pakeisti šį parametrą "
-"atgal į teigiamą arba gyventi su \"klaida\", kurios jie paprašė."
+"iškelia langą. Šio parametro nustatymas į neigiamą, ko yra skatinama vengti, "
+"atskirs iškėlimą nuo kitų naudotojo veiksmų ir prives prie to, kad programos "
+"užklausų iškelti langą bus nepaisoma. Žiūrėkite http://bugzilla.gnome.org/"
+"show_bug.cgi?id=445447#c6. Netgi kai ši reikšmė neigiama, langai vis tiek "
+"gali būti iškelti, spustelėjus bet kur ant lango alt-kairysis-spustelėjimas, "
+"normaliu spustelėjimu ant lango dekoracijų arba specialiais pranešimais iš "
+"pranešimų gaviklių, tokiais kaip aktyvavimo užklausos iš užduočių sąrašo "
+"įtaisų. Šis parametras šiuo metu yra išjungtas veiksenoje spustelėti-norint-"
+"sufokusuoti. Turėkite omenyje, kad langų iškėlimo būduose, kai "
+"raise_on_click yra neigiamas, nėra programinių užklausų iš programų iškelti "
+"langus; tokių užklausų bus nepaisoma, nepriklausomai nuo užklausos "
+"priežasties. Jeigu jūs esate programos kūrėjai ir naudotojai jums "
+"skundžiasi, kad jūsų programa neveikia, kai šis parametras yra išjungtas, "
+"tuomet pasakykite jiems, kad tai yra_jų_kaltė, kad jie sulaužė savo langų "
+"tvarkytuvę ir, kad jie turi pakeisti šį parametrą atgal į teigiamą arba "
+"gyventi su \"klaida\", kurios jie paprašė."
 
 #: src/org.cafe.croma.gschema.xml:85
 msgid "Action on title bar double-click"
@@ -514,18 +516,18 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Šis parametras nurodo dvikarčio antraštės spustelėjimo veiksmą. Galimos "
 "reikšmės: „toggle_shade“ – suvynioti / išvynioti langą, „toggle_maximize“ – "
 "išskleisti / grąžinti iš išskleidimo langą, „toggle_maximize_horizontally“ "
-"ir „toggle_maximize_vertically“ – išskleisti langą nurodyta kryptimi, "
-"„minimize“ – suskleisti langą, „shade“ – suvynioti langą, „menu“ – parodyti "
-"lango meniu, „lower“ – nukelti langą už kitų langų ir „none“ – nedaryti "
-"nieko."
+"ir „toggle_maximize_vertically“ – išskleisti langą nurodyta "
+"kryptimi, „minimize“ – suskleisti langą, „shade“ – suvynioti langą, „menu“ – "
+"parodyti lango meniu, „lower“ – nukelti langą už kitų langų ir „none“ – "
+"nedaryti nieko."
 
 #: src/org.cafe.croma.gschema.xml:90
 msgid "Action on title bar middle-click"
@@ -537,8 +539,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -560,8 +562,8 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
@@ -664,18 +666,18 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
 "Perjungimo stilius yra naudojamas nustatyti, kaip darbo sričių perjungiklio "
 "krašte bus perjunginėjama iš vienos darbo srities į kitą. Jei yra nustatyta "
 "\"no wrap\" ir bandysite perjungti į darbo sritį už darbo sričių keitiklio "
-"ribų, nieko neįvyks. Jei yra nustatyta \"classic\", bus naudojama sena croma"
-" elgsena: vienos eilutės pabaiga veda į kitos eilutės pradžią, o stulpelio "
-"pabaiga veda į kito stulpelio pradžią. Jei yra nustatyta \"toroidal\", darbo"
-" sritys bus sujungtos kaip spurga: kiekvienos eilutės pabaiga veda prie tos "
+"ribų, nieko neįvyks. Jei yra nustatyta \"classic\", bus naudojama sena croma "
+"elgsena: vienos eilutės pabaiga veda į kitos eilutės pradžią, o stulpelio "
+"pabaiga veda į kito stulpelio pradžią. Jei yra nustatyta \"toroidal\", darbo "
+"sritys bus sujungtos kaip spurga: kiekvienos eilutės pabaiga veda prie tos "
 "pačios eilutės pradžios, o kiekvieno stulpelio pabaiga veda prie to pačio "
 "stulpelio pradžios."
 
@@ -723,8 +725,8 @@ msgid ""
 msgstr ""
 "Nustato kaip langų tvarkytuvė vykdo vaizdinį signalą suveikus sisteminiam "
 "pyptelėjimui arba kokios nors programos pyptelėjimo signalui. Šiuo metu "
-"galimos dvi reikšmės - „fullscreen“, kuris sukuria viso ekrano vaizdo juodai"
-" baltą blykstelėjimą, bei „frame_flash“, kuris sukuria programos, "
+"galimos dvi reikšmės - „fullscreen“, kuris sukuria viso ekrano vaizdo juodai "
+"baltą blykstelėjimą, bei „frame_flash“, kuris sukuria programos, "
 "pasiuntusios signalą, antraštės mirgėjimą. Jei programa pasiuntusi signalą "
 "yra nežinoma (paprastai tai būna kai suveikia standartinis sisteminis "
 "pyptelėjimas), mirga tuo momentu naudojamo lango antraštė."
@@ -749,8 +751,8 @@ msgid ""
 "windows there can be a perceptible lag in rendering."
 msgstr ""
 "Jei teisinga, tuomet, komponavimo tvarkytuvei esant įjungtai, alt-tab "
-"iškylančiajame lange nebus rodomos langų miniatiūros. Vietoj jų, bus rodomos"
-" programų piktogramos. Atkreipkite dėmesį, kad didelės raiškos ekranuose su "
+"iškylančiajame lange nebus rodomos langų miniatiūros. Vietoj jų, bus rodomos "
+"programų piktogramos. Atkreipkite dėmesį, kad didelės raiškos ekranuose su "
 "daug matomų langų gali pasitakyti atvaizdavimo delsa."
 
 #: src/org.cafe.croma.gschema.xml:161
@@ -767,15 +769,14 @@ msgid ""
 "working, and may also be a useful tradeoff for terminal servers. However, "
 "the wireframe feature is disabled when accessibility is on."
 msgstr ""
-"Jei reikšmė teigiama, croma, naudodama langų rėmelius, vengdama animacijų ar"
-" kitų efektų, pateiks naudotojui mažiau reakcijų ir bus mažiau jaučiama "
+"Jei reikšmė teigiama, croma, naudodama langų rėmelius, vengdama animacijų ar "
+"kitų efektų, pateiks naudotojui mažiau reakcijų ir bus mažiau jaučiama "
 "„tiesioginė manipuliacija“. Tai smarkiai suprastina sąsajos išraiškingumą, "
 "bet leidžia normaliai veikti senesnėms programoms bei terminalų serveriams. "
 "Kai įjungtos prieinamumo funkcijos, rėmelių naudojimas išjungiamas."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
 "(Neįgyvendinta) Persijungimas galimas tarp programų, o ne tarp programos "
 "langų"
@@ -783,8 +784,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
@@ -822,8 +823,8 @@ msgid ""
 "If set to true, new windows are opened in the center of the screen. "
 "Otherwise, they are opened at the top left of the screen."
 msgstr ""
-"Jei reikšmė teigiama, nauji langai bus atveriami ekrano centre. Kitu atveju,"
-" jie bus atveriami viršutinėje kairioje ekrano dalyje."
+"Jei reikšmė teigiama, nauji langai bus atveriami ekrano centre. Kitu atveju, "
+"jie bus atveriami viršutinėje kairioje ekrano dalyje."
 
 #: src/org.cafe.croma.gschema.xml:181
 msgid "Whether to enable window tiling"
@@ -832,8 +833,8 @@ msgstr "Ar įjungti langų išklojimą"
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 "Jei įjungta, langų numetimas ekrano krašte išskleis juos vertikaliai ir "
 "pakeis jų dydį horizontaliai taip, kad jie užimtų pusę prieinamo ploto. "
@@ -871,15 +872,15 @@ msgstr "Langų išdėstymo veiksena"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 "Langų išdėstymo veiksena nurodo kaip yra išdėstomi nauji langai. "
-"\"automatic\" reiškia, kad sistema, priklausomai nuo darbalaukyje prieinamos"
-" vietos, automatiškai pasirenka vietą arba, jeigu vietos nėra, išdėsto "
+"\"automatic\" reiškia, kad sistema, priklausomai nuo darbalaukyje prieinamos "
+"vietos, automatiškai pasirenka vietą arba, jeigu vietos nėra, išdėsto "
 "paprastomis pakopomis; \"pointer\" reiškia, kad nauji langai yra išdėstomi "
 "pagal pelės rodyklės vietą; \"manual\" reiškia, kad naudotojas, pelės ar "
 "klaviatūros pagalba, privalo pats išdėstyti naują langą."
@@ -890,12 +891,12 @@ msgstr "Programų, kurių nepaisys veiksmas \"rodyti darbalaukį\", sąrašas"
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 "Kableliais atskirtų klasių sąrašas. \"Rodyti darbalaukį\" funkcionalumas "
-"nepaisys kiekvienos paleistos naudotojo sąsajos programos, kuriai yra duotos"
-" nuorodos į nurodytą langų tvarkytuvės klasę."
+"nepaisys kiekvienos paleistos naudotojo sąsajos programos, kuriai yra duotos "
+"nuorodos į nurodytą langų tvarkytuvės klasę."
 
 #: src/org.cafe.croma.gschema.xml:207
 msgid "Icon size in alt-tab popup window"
@@ -922,8 +923,7 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:218
 msgid "Expand the alt-tab popup window to fit longer window titles"
 msgstr ""
-"Išplėsti alt-tab iškylantįjį langą, kad jame tilptų ilgesni langų "
-"pavadinimai"
+"Išplėsti alt-tab iškylantįjį langą, kad jame tilptų ilgesni langų pavadinimai"
 
 #: src/org.cafe.croma.gschema.xml:219
 msgid ""
@@ -991,18 +991,18 @@ msgstr "Paleisti nurodytą komandą"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
 "keybinding for this action."
 msgstr ""
-"Klavišų susiejimas, kuris paleidžia atitinkamą sunumeruotą komandą iš "
-"/apps/croma/keybinding_commands raktų. Klavišų susiejimo formatas gali būti "
+"Klavišų susiejimas, kuris paleidžia atitinkamą sunumeruotą komandą iš /apps/"
+"croma/keybinding_commands raktų. Klavišų susiejimo formatas gali būti "
 "panašus į „<Control>a“ arba „<Shift><Alt>F1“. Sistema apdorojanti aprašymą "
-"yra gana laisva ir leidžia maišyti didžiąsias bei mažąsias raides ir naudoti"
-" tokius sutrumpinimus kaip „<Ctl>“ ir „<Ctrl>“. Nustačius specialų požymį "
+"yra gana laisva ir leidžia maišyti didžiąsias bei mažąsias raides ir naudoti "
+"tokius sutrumpinimus kaip „<Ctl>“ ir „<Ctrl>“. Nustačius specialų požymį "
 "\"disabled\", su šiuo veiksmu nebus susieta jokia klavišų kombinacija."
 
 #: src/org.cafe.croma.gschema.xml:470 src/org.cafe.croma.gschema.xml:475
@@ -1051,7 +1051,10 @@ msgid ""
 msgstr ""
 "Formatas maždaug toks: „<Control>a“ arba „<Shift><Alt>F1“.\n"
 "\n"
-"Sistema apdorojanti aprašymą yra gana laisva ir leidžia maišyti didžiąsias bei mažąsias raides ir naudoti tokius sutrumpinimus kaip „<Ctl>“ ir „<Ctrl>“. Nustačius specialų požymį „disabled“, su šiuo veiksmu nebus susieta jokia klavišų kombinacija."
+"Sistema apdorojanti aprašymą yra gana laisva ir leidžia maišyti didžiąsias "
+"bei mažąsias raides ir naudoti tokius sutrumpinimus kaip „<Ctl>“ ir "
+"„<Ctrl>“. Nustačius specialų požymį „disabled“, su šiuo veiksmu nebus "
+"susieta jokia klavišų kombinacija."
 
 #: src/org.cafe.croma.gschema.xml:555 src/org.cafe.croma.gschema.xml:560
 #: src/org.cafe.croma.gschema.xml:565 src/org.cafe.croma.gschema.xml:570
@@ -1070,9 +1073,13 @@ msgid ""
 msgstr ""
 "Formatas maždaug toks: „<Control>a“ arba „<Shift><Alt>F1“.\n"
 "\n"
-"Sistema, apdorojanti aprašymą, yra gana laisva ir leidžia maišyti didžiąsias bei mažąsias raides ir naudoti tokius sutrumpinimus kaip „<Ctl>“ ir „<Ctrl>“. Nustačius specialų požymį „disabled“, su šiuo veiksmu nebus susieta jokia klavišų kombinacija.\n"
+"Sistema, apdorojanti aprašymą, yra gana laisva ir leidžia maišyti didžiąsias "
+"bei mažąsias raides ir naudoti tokius sutrumpinimus kaip „<Ctl>“ ir "
+"„<Ctrl>“. Nustačius specialų požymį „disabled“, su šiuo veiksmu nebus "
+"susieta jokia klavišų kombinacija.\n"
 "\n"
-"Šis klavišų susiejimas gali būti apsuktas nuspaudus „Lyg2“  klavišą, taigi jame negalima naudoti „Lyg2“."
+"Šis klavišų susiejimas gali būti apsuktas nuspaudus „Lyg2“  klavišą, taigi "
+"jame negalima naudoti „Lyg2“."
 
 #: src/org.cafe.croma.gschema.xml:559
 msgid "Move backward between windows of an application, using a popup window"
@@ -1095,8 +1102,7 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:589
 msgid "Move backward between panels and the desktop, using a popup window"
-msgstr ""
-"Judėti atgal tarp skydelių ir darbalaukio, naudojant iškylantįjį langą"
+msgstr "Judėti atgal tarp skydelių ir darbalaukio, naudojant iškylantįjį langą"
 
 #: src/org.cafe.croma.gschema.xml:599
 msgid "Move backward between windows of an application immediately"
@@ -1133,8 +1139,8 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "/apps/croma/global_keybindings/run_command_N raktai nustato specialius "
 "klavišų susiejimus, kurie atitinka nurodytas komandas. Paspaudus klavišo "
@@ -1149,8 +1155,8 @@ msgid ""
 "The /apps/croma/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
-"/apps/croma/global_keybindings/run_command_screenshot raktas nustato klavišų"
-" susiejimą, kuris iškviečia šiame nustatyme nurodytą komandą."
+"/apps/croma/global_keybindings/run_command_screenshot raktas nustato klavišų "
+"susiejimą, kuris iškviečia šiame nustatyme nurodytą komandą."
 
 #: src/org.cafe.croma.gschema.xml:727
 msgid "The window screenshot command"
@@ -1158,8 +1164,8 @@ msgstr "Langų ekrano kopijos komanda"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "/apps/croma/global_keybindings/run_command_window_screenshot raktas nustato "
@@ -1240,7 +1246,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1251,28 +1258,28 @@ msgstr ""
 "\n"
 "%s."
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Komanda %d neaprašyta.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Terminalo komanda nebuvo nurodyta.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "<tt>Pervadinti darbo sritį</tt>"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "Naujas darbo srities pavadinimas:"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "Gerai"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Atsisakyti"
 
@@ -1282,62 +1289,64 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Autorinės teisės (C) priklauso 2001-%s Havoc Pennington, Red Hat, Inc.\n"
 "ir kitiems.\n"
 "Tai yra laisva programinė įranga; platinimo sąlygos yra aprašytos \n"
 "programos pradiniuose tekstuose.\n"
-"Nėra JOKIOS garantijos; net dėl PREKIAVIMO ar TAM TIKRO PANAUDOJIMO TIKSLO ATITIKIMO.\n"
+"Nėra JOKIOS garantijos; net dėl PREKIAVIMO ar TAM TIKRO PANAUDOJIMO TIKSLO "
+"ATITIKIMO.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Išjungti ryšį su seansų tvarkytuve"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr "Pakeisti veikiančią langų tvarkytuvę į Croma"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Nurodykite seanso valdymo ID"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "Naudotinas X ekranas"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Inicijuoti seansą iš įrašymo failo"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Parodyti versiją"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Vykdyti X užklausas sinchroniškai"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Įjungti komponavimą"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Išjungti komponavimą"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr "Nekurti pilno ekrano langų, kurie yra išskleisti ir neturi dekoracijų"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Nepavyko nuskenuoti temų katalogo: %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1345,7 +1354,7 @@ msgstr ""
 "Nepavyko rasti temos! Įsitikinkite, kad %s egzistuoja ir kad ten yra "
 "įprastos temos.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Nepavyko paleisti iš naujo: %s\n"
@@ -1374,8 +1383,8 @@ msgstr "Nepavyko apdoroti šrifto aprašymo „%s“ saugomo „GSettings“ rak
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
 "„%s“ reikšmė rasta nustatymų duomenų bazėje yra netinkama pelės mygtuko "
 "keitiklio aprašymui\n"
@@ -1394,33 +1403,34 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "Darbo sritis %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "Ekranas %d vaizduoklyje „%s“ netinkamas\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
 "Ekranas %d vaizduoklyje „%s“ jau turi langų tvarkytuvę; pabandykite "
 "pasinaudoti parametru --replace, jei norite pakeisti esamą langų "
 "tvarkytuvę.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
 "Nepavyko aptikti langų tvarkytuvės pasirinkimo ekrano %d vaizduoklyje „%s“\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "Ekranas %d vaizduoklyje „%s“ jau turi langų tvarkytuvę\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Nepavyko pasitraukti iš ekrano %d vaizduoklyje „%s“\n"
@@ -1471,11 +1481,11 @@ msgstr "Nežinomas elementas %s"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
-"Šie langai nepalaiko komandos „įrašyti esamą sąranką“ ir turės būti paleisti"
-" rankiniu būdu, kai prisijungsite kitą kartą."
+"Šie langai nepalaiko komandos „įrašyti esamą sąranką“ ir turės būti paleisti "
+"rankiniu būdu, kai prisijungsite kitą kartą."
 
 #: src/core/util.c:101
 #, c-format
@@ -1519,7 +1529,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1534,7 +1544,8 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
@@ -1603,8 +1614,7 @@ msgstr "Požymis %s lange 0x%lx saugo nepriimtinus UTF-8 simbolius\n"
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "Požymis %s lange 0x%lx naudoja nepriimtinus UTF-8 simbolius sąrašo punkte "
 "%d\n"
@@ -1614,51 +1624,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Naudojimas: %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Užverti langą"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Lango meniu"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr "Lango programos meniu"
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Suskleisti langą"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Išskleisti langą"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Atkurti lango dydį"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Suvynioti langą"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Išvynioti langą"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Langas visada viršuje"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Langas nebūtinai viršuje"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Visada matomoje darbo srityje"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Langas tik vienoje darbo srityje"
 
@@ -1766,6 +1776,7 @@ msgstr "Perkelti langą į kitą _darbo sritį"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1774,6 +1785,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1782,6 +1794,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1790,6 +1803,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1798,6 +1812,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1806,6 +1821,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1814,6 +1830,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1822,6 +1839,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1830,6 +1848,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1838,57 +1857,59 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "viršus"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "apačia"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "kairė"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "dešinė"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "rėmelio aprašyme nenurodytas „%s“ matmuo"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr "rėmelio aprašyme nenurodytas paraštės „%2$s“ „%1$s“ matmuo"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "Mygtuko dydžio santykis %g yra nenuosaikus"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "Rėmelio aprašyme nenurodytas mygtukų dydis"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Aprašant persiliejančias spalvas reikia nurodyti bent dvi spalvas"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
@@ -1897,156 +1918,157 @@ msgstr ""
 "CTK pasirinktų spalvų aprašymas turi turėti palvos pavadinimą ir atsarginę "
 "spalvą skliaustuose, pvz. ctk:custom(foo,bar); could not parse \"%s\""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
-"Netinkamas simbolis „%c“ ctk:custom color_name parametre, tinka tik "
-"A-Za-z0-9-_"
+"Netinkamas simbolis „%c“ ctk:custom color_name parametre, tinka tik A-Za-"
+"z0-9-_"
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
 "fit the format"
-msgstr ""
-"Ctk:custom formatas yra „ctk:custom(color_name,fallback“, „%s“ netinka"
+msgstr "Ctk:custom formatas yra „ctk:custom(color_name,fallback“, „%s“ netinka"
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "CTK spalvų aprašymas turi turėti būsenos aprašymą patalpintą tarp laužtinių "
 "skliaustų, pvz., ctk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
 "\"%s\""
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
 "CTK spalvų aprašymas po būsenos turi turėti uždarančius laužtinius "
 "skliaustus, pvz., ctk:fg[NORMAL], kur NORMAL yra būsena; nepavyko apdoroti "
 "\"%s\""
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr "Nesuprantama spalvų aprašymo būsena \"%s\""
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr "Spalvų aprašyme nurodytas nesuprantamas spalvos komponentas \"%s\""
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
 "format"
 msgstr ""
-"Išplaukimo formatas yra \"blend/bg_color/fg_color/alpha\", \"%s\" neatitinka"
-" šio formato"
+"Išplaukimo formatas yra \"blend/bg_color/fg_color/alpha\", \"%s\" neatitinka "
+"šio formato"
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr ""
 "Nepavyko aprodoti skaidrumo reikšmės \"%s\" priskirtos išplaukiančiai spalva"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr ""
 "Skaidrumo reikšmė \"%s\" tarp išplaukiančios spalvos yra ne tarp 0.0 ir 1.0"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Šešėlio formatas yra \"shade/base_color/factor\", \"%s\" neatitinka šio "
 "formato"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Nepavyko apdoroti šešėlinės spalvos šešėlių rodiklio \"%s\""
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Šešėlio rodiklis \"%s\" tarp šešėlinės spalvos yra neigiamas"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Nepavyko apdoroti spalvos \"%s\""
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr "Koordinačių išraiška turi neleistiną simbolį '%s'"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
 "Koordinačių išraiška turi skaičių su slankiu kableliu '%s', kuris negali "
 "būti apdorotas"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr ""
 "Koordinačių išraiška turi sveiką skaičių '%s', kuris negali būti apdorotas"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
 "\"%s\""
 msgstr ""
-"Koordinačių išraiškoje nurodytas nežinomas operatorius šio teksto pradžioje:"
-" \"%s\""
+"Koordinačių išraiškoje nurodytas nežinomas operatorius šio teksto pradžioje: "
+"\"%s\""
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "Koordinačių išraiška tuščia arba nesuprantama"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "Koordinačių išraiška sukelia dalybą iš nulio"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr ""
 "Koordinačių išraiška bando panaudoti liekanos operatorių (mod) slankaus "
 "kablelio skaičiui"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr ""
-"Koordinačių išraiškoje įvestas operatorius \"%s\" ten, kur turi būti vedamas"
-" operandas"
+"Koordinačių išraiškoje įvestas operatorius \"%s\" ten, kur turi būti vedamas "
+"operandas"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr "Koordinačių išraiškoje operandas įrašytas operatoriaus vietoje"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr "Koordinačių išraiška pasibaigė operatoriumi, o ne operandu"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
@@ -2055,38 +2077,37 @@ msgstr ""
 "Koordinačių išraiškoje operatorius \"%c\" eina po operatoriaus \"%c\" be "
 "tarpinio operando"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr "Koordinačių išraiška saugo nežinomą kintamąjį arba konstantą \"%s\""
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr "Koordinačių išraiškų skaitytuvas perpildė buferį."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr ""
 "Koordinačių išraiškoje įvesti uždarantys skliaustai, nors atidarančių "
 "skliaustų nerasta"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr ""
 "Koordinačių išraiškoje po atidarančių skliaustų neįvesti uždarantys "
 "skliaustai"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr "Koordinačių išraiška neturi jokių operatorių ar operandų"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Temoje esanti išraiška sukėlė klaidą: %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2095,23 +2116,25 @@ msgstr ""
 "Šiam rėmelio stiliui turi būti nurodytas <button function=\"%s\" "
 "state=\"%s\" draw_ops=\"kažkokswhatever\"/> požymis"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "Trūksta <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"kažkoks\"/>"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"Trūksta <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"kažkoks\"/>"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Nepavyko paleisti temos \"%s\": %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Temoje \"%2$s\" trūksta <%1$s> nustatymų"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
@@ -2120,20 +2143,22 @@ msgstr ""
 "Rėmelio stilius nenurodytas lango tipui \"%s\" temoje \"%s\", pridėkite "
 "<window type=\"%s\" style_set=\"kažkoks\"/> elementą"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
 "Naudotojo nustatytos konstantos turi prasidėti didžiąja raide; „%s“ nėra "
 "didžioji"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "Konstanta „%s“ jau aprašyta"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2201,11 +2226,11 @@ msgstr ""
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
-"Netinkamas antraštės mastelis \"%s\" (turi būti viena iš xx-"
-"small,x-small,small,medium,large,x-large,xx-large reikšmių)\n"
+"Netinkamas antraštės mastelis \"%s\" (turi būti viena iš xx-small,x-small,"
+"small,medium,large,x-large,xx-large reikšmių)\n"
 
 #: src/ui/theme-parser.c:1039 src/ui/theme-parser.c:1102
 #: src/ui/theme-parser.c:1136 src/ui/theme-parser.c:1239
@@ -2364,8 +2389,8 @@ msgstr "Mygtukui priskirta nežinoma būsena \"%s\""
 #, c-format
 msgid "Frame style already has a button for function %s state %s"
 msgstr ""
-"Rėmelio stiliaus aprašyme jau yra nurodytas mygtukas aprašantis funkcijos %s"
-" būseną %s"
+"Rėmelio stiliaus aprašyme jau yra nurodytas mygtukas aprašantis funkcijos %s "
+"būseną %s"
 
 #: src/ui/theme-parser.c:3101
 #, c-format
@@ -2393,12 +2418,13 @@ msgid ""
 "Should not have \"resize\" attribute on <%s> element for maximized/shaded "
 "states"
 msgstr ""
-"Negalima naudoti \"resize\" požymio elemente <%s>, skirtame "
-"išskleidimo/suvyniavimo būsenų aprašymui"
+"Negalima naudoti \"resize\" požymio elemente <%s>, skirtame išskleidimo/"
+"suvyniavimo būsenų aprašymui"
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
 "Negalima naudoti \"resize\" požymio elemente <%s>, skirtame išskleidimo "
 "būsenų aprašymui"
@@ -2425,8 +2451,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
 "Negalima naudoti dviejų draw_ops požymių <button> elemente (tema nustatė "
 "draw_ops požymį ir <draw_ops> elementą, arba nurodė du elementus)"
@@ -2466,8 +2492,7 @@ msgstr "Šakninis temos failo elementas turi būti <metacity_theme>, o ne <%s>"
 #, c-format
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
-msgstr ""
-"Elementas <%s> nepriimtinas tarp name/author/date/description elementų"
+msgstr "Elementas <%s> nepriimtinas tarp name/author/date/description elementų"
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2478,8 +2503,7 @@ msgstr "Elementas <%s> nepriimtinas tarp <constant> elemento"
 #, c-format
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
-msgstr ""
-"Elementas <%s> nepriimtinas tarp distance/border/aspect_ratio elementų"
+msgstr "Elementas <%s> nepriimtinas tarp distance/border/aspect_ratio elementų"
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2525,96 +2549,96 @@ msgstr "_Gerai"
 msgid "This is a sample message in a sample dialog"
 msgstr "Tai yra pavydžio pranešimas pavyzdžio dialoge"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Netikras meniu punktas %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Tik rėmelį turintis langas"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Juosta"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Normalus programos langas"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Dialogo langas"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Modalinis dialogo langas"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Įrankių paletė"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Atkabinamas meniu"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Kraštinė"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr "Pridėtas modalinis dialogas"
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Mygtukų išdėstymo testas %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "vienam lango kadrui išvesti yra skirta %g milisekundžių"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Naudojimas: croma-theme-viewer [TEMOS PAVADINIMAS]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Klaida įkeliant temą: %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "Tema „%s“ įkelta per %g sekundžių\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Normalus antraštės šriftas"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Smulkus antraštės šriftas"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Didelis antraštės šriftas"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Mygtukų išdėstymai"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Greičio testas"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Čia rodomo lango antraštė"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "

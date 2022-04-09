@@ -2,7 +2,7 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the croma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Tubuntu <tubuntu@testimonium.be>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
@@ -12,19 +12,19 @@
 # Étienne Deparis <etienne@depar.is>, 2020
 # yoplait <yoplait@tememe.org>, 2020
 # Rox fr <roxfr@outlook.fr>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: croma 1.23.1\n"
 "Report-Msgid-Bugs-To: https://github.com/cafe-desktop/croma\n"
-"POT-Creation-Date: 2019-11-18 19:44+0100\n"
+"POT-Creation-Date: 2022-04-09 10:14+0200\n"
 "PO-Revision-Date: 2020-02-15 11:16+0000\n"
 "Last-Translator: Rox fr <roxfr@outlook.fr>, 2020\n"
 "Language-Team: French (https://www.transifex.com/cafe/teams/13566/fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/50-croma-desktop-key.xml.in:2
@@ -389,12 +389,12 @@ msgstr "Indique si le bouton droit peut servir à redimensionner"
 #: src/org.cafe.croma.gschema.xml:56
 msgid ""
 "Set this to true to resize with the right button and show a menu with the "
-"middle button while holding down the key given in \"mouse_button_modifier\";"
-" set it to false to make it work the opposite way around."
+"middle button while holding down the key given in \"mouse_button_modifier\"; "
+"set it to false to make it work the opposite way around."
 msgstr ""
 "Définir à « true » pour redimensionner avec le bouton droit et afficher un "
-"menu avec le bouton du milieu en maintenant enfoncée la touche donnée dans «"
-" mouse_button_modifier » ; définir à « false » pour avoir le fonctionnement "
+"menu avec le bouton du milieu en maintenant enfoncée la touche donnée dans "
+"« mouse_button_modifier » ; définir à « false » pour avoir le fonctionnement "
 "inverse."
 
 #: src/org.cafe.croma.gschema.xml:60
@@ -431,8 +431,8 @@ msgstr ""
 "bouton doivent être séparés par des virgules. Les boutons dupliqués ne sont "
 "pas autorisés. Les noms de bouton inconnus sont silencieusement ignorés, "
 "ainsi des boutons pourront être ajoutés dans des futures versions de croma "
-"sans casser les anciennes versions. Une étiquette spéciale « spacer » permet"
-" d'insérer un peu d'espace entre deux boutons adjacents."
+"sans casser les anciennes versions. Une étiquette spéciale « spacer » permet "
+"d'insérer un peu d'espace entre deux boutons adjacents."
 
 #: src/org.cafe.croma.gschema.xml:70
 msgid "Window focus mode"
@@ -442,15 +442,15 @@ msgstr "Mode de focus des fenêtres"
 msgid ""
 "The window focus mode indicates how windows are activated. It has three "
 "possible values; \"click\" means windows must be clicked in order to focus "
-"them, \"sloppy\" means windows are focused when the mouse enters the window,"
-" and \"mouse\" means windows are focused when the mouse enters the window "
-"and unfocused when the mouse leaves the window."
+"them, \"sloppy\" means windows are focused when the mouse enters the window, "
+"and \"mouse\" means windows are focused when the mouse enters the window and "
+"unfocused when the mouse leaves the window."
 msgstr ""
 "Le mode de focus de la fenêtre indique la façon dont les fenêtres sont "
 "activées. Il présente trois valeurs possibles ; « click » signifie que vous "
 "devez cliquer sur les fenêtres pour les activer, « sloppy » (« coulé ») "
-"signifie que les fenêtres sont activées lorsque la souris s'y place et « "
-"mouse » (« souris »), signifie que les fenêtres sont activées lorsque la "
+"signifie que les fenêtres sont activées lorsque la souris s'y place et "
+"« mouse » (« souris »), signifie que les fenêtres sont activées lorsque la "
 "souris s'y place et désactivées lorsqu'elle les quitte."
 
 #: src/org.cafe.croma.gschema.xml:75
@@ -460,14 +460,14 @@ msgstr "Contrôle la façon dont les nouvelles fenêtres deviennent actives"
 #: src/org.cafe.croma.gschema.xml:76
 msgid ""
 "This option provides additional control over how newly created windows get "
-"focus. It has two possible values; \"smart\" applies the user's normal focus"
-" mode, and \"strict\" results in windows started from a terminal not being "
+"focus. It has two possible values; \"smart\" applies the user's normal focus "
+"mode, and \"strict\" results in windows started from a terminal not being "
 "given focus."
 msgstr ""
 "Cette option fournit un contrôle supplémentaire sur la façon dont les "
-"nouvelles fenêtres deviennent actives. Elle a deux valeurs possible: « smart"
-" » qui correspond au mode d'activation utilisateur normal et « strict » qui "
-"n'active pas les fenêtre démarrées depuis un terminal."
+"nouvelles fenêtres deviennent actives. Elle a deux valeurs "
+"possible: « smart » qui correspond au mode d'activation utilisateur normal "
+"et « strict » qui n'active pas les fenêtre démarrées depuis un terminal."
 
 #: src/org.cafe.croma.gschema.xml:80
 msgid "Whether raising should be a side-effect of other user interactions"
@@ -478,26 +478,26 @@ msgstr ""
 #: src/org.cafe.croma.gschema.xml:81
 msgid ""
 "Setting this option to false can lead to buggy behavior, so users are "
-"strongly discouraged from changing it from the default of true. Many actions"
-" (e.g. clicking in the client area, moving or resizing the window) normally "
+"strongly discouraged from changing it from the default of true. Many actions "
+"(e.g. clicking in the client area, moving or resizing the window) normally "
 "raise the window as a side-effect. Setting this option to false, which is "
 "strongly discouraged, will decouple raising from other user actions, and "
-"ignore raise requests generated by applications. See "
-"http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option "
-"is false, windows can still be raised by an alt-left-click anywhere on the "
-"window, a normal click on the window decorations, or by special messages "
-"from pagers, such as activation requests from tasklist applets. This option "
-"is currently disabled in click-to-focus mode. Note that the list of ways to "
-"raise windows when raise_on_click is false does not include programmatic "
-"requests from applications to raise windows; such requests will be ignored "
-"regardless of the reason for the request. If you are an application "
-"developer and have a user complaining that your application does not work "
-"with this setting disabled, tell them it is _their_ fault for breaking their"
-" window manager and that they need to change this option back to true or "
-"live with the \"bug\" they requested."
+"ignore raise requests generated by applications. See http://bugzilla.gnome."
+"org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can "
+"still be raised by an alt-left-click anywhere on the window, a normal click "
+"on the window decorations, or by special messages from pagers, such as "
+"activation requests from tasklist applets. This option is currently disabled "
+"in click-to-focus mode. Note that the list of ways to raise windows when "
+"raise_on_click is false does not include programmatic requests from "
+"applications to raise windows; such requests will be ignored regardless of "
+"the reason for the request. If you are an application developer and have a "
+"user complaining that your application does not work with this setting "
+"disabled, tell them it is _their_ fault for breaking their window manager "
+"and that they need to change this option back to true or live with the "
+"\"bug\" they requested."
 msgstr ""
-"Régler cette option sur « false » peut engendrer des erreurs, par conséquent"
-" il est vivement déconseillé aux utilisateurs de modifier la valeur par "
+"Régler cette option sur « false » peut engendrer des erreurs, par conséquent "
+"il est vivement déconseillé aux utilisateurs de modifier la valeur par "
 "défaut qui est true. De nombreuses actions (par exemple cliquer sur la zone "
 "cliente, déplacer ou redimensionner la fenêtre) restaurent normalement la "
 "fenêtre par effet secondaire. Régler cette option sur false, qui est "
@@ -512,10 +512,10 @@ msgstr ""
 "cible de saisie (focus). Veuillez noter que la liste des moyens pour "
 "restaurer les fenêtres lorsque raise_on_clic est sur false n'inclut pas les "
 "requêtes des programmes pour restaurer les fenêtres; de telles requêtes "
-"seront ignorées sans prendre en compte leur raison. Si vous êtes développeur"
-" et avez des utilisateurs qui se plaignent que votre application ne "
-"fonctionne pas lorsque ce réglage est désactivé, dites-leur que c'est _leur_"
-" faute d'avoir déréglé leur gestionnaire de fenêtres et qu'ils doivent soit "
+"seront ignorées sans prendre en compte leur raison. Si vous êtes développeur "
+"et avez des utilisateurs qui se plaignent que votre application ne "
+"fonctionne pas lorsque ce réglage est désactivé, dites-leur que c'est _leur_ "
+"faute d'avoir déréglé leur gestionnaire de fenêtres et qu'ils doivent soit "
 "revenir sur true pour cette option, soit vivre avec le « bogue » qu'ils ont "
 "demandé."
 
@@ -529,19 +529,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Cette option détermine les effets d'un double-clic sur la barre de titre "
 "d'une fenêtre. Les valeurs possibles sont « toggle_shade » qui replie la "
 "fenêtre ou la déplie, « toggle_maximize » qui maximise la fenêtre ou la "
-"remet à sa taille initiale avant maximisation, « "
-"toggle_maximize_horizontally » et « toggle_maximize_vertically » qui "
-"limitent la maximisation dans la direction indiquée, « minimize » qui réduit"
-" la fenêtre, « shade » qui replie la fenêtre, « menu » qui affiche le menu "
-"de la fenêtre, « lower » qui place la fenêtre derrière toutes les autres et "
+"remet à sa taille initiale avant maximisation, "
+"« toggle_maximize_horizontally » et « toggle_maximize_vertically » qui "
+"limitent la maximisation dans la direction indiquée, « minimize » qui réduit "
+"la fenêtre, « shade » qui replie la fenêtre, « menu » qui affiche le menu de "
+"la fenêtre, « lower » qui place la fenêtre derrière toutes les autres et "
 "« none » qui ne fait rien."
 
 #: src/org.cafe.croma.gschema.xml:90
@@ -554,19 +554,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Cette option détermine les effets d'un clic du milieu sur la barre de titre "
 "d'une fenêtre. Les valeurs possibles sont « toggle_shade » qui replie la "
 "fenêtre ou la déplie, « toggle_maximize » qui maximise la fenêtre ou la "
-"remet à sa taille initiale avant maximisation, « "
-"toggle_maximize_horizontally » et « toggle_maximize_vertically » qui "
-"limitent la maximisation dans la direction indiquée, « minimize » qui réduit"
-" la fenêtre, « shade » qui replie la fenêtre, « menu » qui affiche le menu "
-"de la fenêtre, « lower » qui place la fenêtre derrière toutes les autres et "
+"remet à sa taille initiale avant maximisation, "
+"« toggle_maximize_horizontally » et « toggle_maximize_vertically » qui "
+"limitent la maximisation dans la direction indiquée, « minimize » qui réduit "
+"la fenêtre, « shade » qui replie la fenêtre, « menu » qui affiche le menu de "
+"la fenêtre, « lower » qui place la fenêtre derrière toutes les autres et "
 "« none » qui ne fait rien."
 
 #: src/org.cafe.croma.gschema.xml:95
@@ -579,19 +579,19 @@ msgid ""
 "Current valid options are 'toggle_shade', which will shade/unshade the "
 "window, 'toggle_maximize' which will maximize/unmaximize the window, "
 "'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will "
-"maximize/unmaximize the window in that direction only, 'minimize' which will"
-" minimize the window, 'shade' which will roll the window up, 'menu' which "
+"maximize/unmaximize the window in that direction only, 'minimize' which will "
+"minimize the window, 'shade' which will roll the window up, 'menu' which "
 "will display the window menu, 'lower' which will put the window behind all "
 "the others, and 'none' which will not do anything."
 msgstr ""
 "Cette option détermine les effets d'un clic droit sur la barre de titre "
 "d'une fenêtre. Les valeurs possibles sont « toggle_shade » qui replie la "
 "fenêtre ou la déplie, « toggle_maximize » qui maximise la fenêtre ou la "
-"remet à sa taille initiale avant maximisation, « "
-"toggle_maximize_horizontally » et « toggle_maximize_vertically » qui "
-"limitent la maximisation dans la direction indiquée, « minimize » qui réduit"
-" la fenêtre, « shade » qui replie la fenêtre, « menu » qui affiche le menu "
-"de la fenêtre, « lower » qui place la fenêtre derrière toutes les autres et "
+"remet à sa taille initiale avant maximisation, "
+"« toggle_maximize_horizontally » et « toggle_maximize_vertically » qui "
+"limitent la maximisation dans la direction indiquée, « minimize » qui réduit "
+"la fenêtre, « shade » qui replie la fenêtre, « menu » qui affiche le menu de "
+"la fenêtre, « lower » qui place la fenêtre derrière toutes les autres et "
 "« none » qui ne fait rien."
 
 #: src/org.cafe.croma.gschema.xml:100
@@ -688,19 +688,19 @@ msgid ""
 "another at the border of the workspace switcher. When set to \"no wrap\", "
 "nothing will happen if you try to switch to a workspace past the border of "
 "the workspace switcher. If set to \"classic\", the old croma behavior is "
-"used: the end of one row leads to the beginning of the next and the end of a"
-" column leads to the beginning of the next. If set to \"toroidal\", "
+"used: the end of one row leads to the beginning of the next and the end of a "
+"column leads to the beginning of the next. If set to \"toroidal\", "
 "workspaces are connected like a doughnut: the end of each row leads to its "
 "own beginning and the end of each column leads to its own beginning."
 msgstr ""
 "Le style de déformation est utilisé pour déterminer comment passer d'un "
 "espace de travail à un autre au bord du changement d'espace de travail. "
-"Quand il est fixé à \"pas de déformation\", il ne se passera rien quand vous"
-" essayerez de changer d'espace de travail. Si vous le fixez à \"classique\","
-" l'ancien comportement sera utilisé : la fin d'une ligne mène au début de la"
-" prochaine et la fin d'une colonne mène au début de la suivante. Si vous le "
-"fixez à \"toroidal\", les espaces de travail sont connectés comme un donut :"
-" la fin de chaque ligne mène au début de la suivante et la fin de chaque "
+"Quand il est fixé à \"pas de déformation\", il ne se passera rien quand vous "
+"essayerez de changer d'espace de travail. Si vous le fixez à \"classique\", "
+"l'ancien comportement sera utilisé : la fin d'une ligne mène au début de la "
+"prochaine et la fin d'une colonne mène au début de la suivante. Si vous le "
+"fixez à \"toroidal\", les espaces de travail sont connectés comme un donut : "
+"la fin de chaque ligne mène au début de la suivante et la fin de chaque "
 "colonne mène au début de la suivante."
 
 #: src/org.cafe.croma.gschema.xml:136
@@ -764,8 +764,7 @@ msgstr "Détermine si Croma est utilisé comme gestionnaire de composition."
 #: src/org.cafe.croma.gschema.xml:156
 msgid "Fast Alt-Tab with compositing manager (disable thumbnails)"
 msgstr ""
-"Alt-Tab rapide avec le gestionnaire de composition (désactiver les "
-"vignettes)"
+"Alt-Tab rapide avec le gestionnaire de composition (désactiver les vignettes)"
 
 #: src/org.cafe.croma.gschema.xml:157
 msgid ""
@@ -798,25 +797,24 @@ msgstr ""
 "lorsque l'accessibilité est activé."
 
 #: src/org.cafe.croma.gschema.xml:166
-msgid ""
-"(Not implemented) Navigation works in terms of applications not windows"
+msgid "(Not implemented) Navigation works in terms of applications not windows"
 msgstr ""
-"(non implémenté) La navigation fonctionne en termes d'applications et non de"
-" fenêtres"
+"(non implémenté) La navigation fonctionne en termes d'applications et non de "
+"fenêtres"
 
 #: src/org.cafe.croma.gschema.xml:167
 msgid ""
 "If true, then Croma works in terms of applications rather than windows. The "
-"concept is a bit abstract, but in general an application-based setup is more"
-" like the Mac and less like Windows. When you focus a window in application-"
+"concept is a bit abstract, but in general an application-based setup is more "
+"like the Mac and less like Windows. When you focus a window in application-"
 "based mode, all the windows in the application will be raised. Also, in "
 "application-based mode, focus clicks are not passed through to windows in "
 "other applications. Application-based mode is, however, largely "
 "unimplemented at the moment."
 msgstr ""
 "Si VRAI, Croma fonctionne en termes d'applications plutôt que de fenêtres. "
-"Le concept est assez abstrait, mais, en général, une configuration basée sur"
-" les applications est plus proche de Mac OS que de Windows. Lorsque vous "
+"Le concept est assez abstrait, mais, en général, une configuration basée sur "
+"les applications est plus proche de Mac OS que de Windows. Lorsque vous "
 "activez une fenêtre en mode basé sur les applications, toutes les fenêtres "
 "de l'application seront mises au premier plan. En outre, en mode basé sur "
 "les applications, les clics de focus ne sont pas transmis aux fenêtres "
@@ -861,12 +859,12 @@ msgstr "Indique s'il faut activer la juxtaposition des fenêtres"
 #: src/org.cafe.croma.gschema.xml:182
 msgid ""
 "If enabled, dropping windows on screen edges maximizes them vertically and "
-"resizes them horizontally to cover half of the available area. Drag-dropping"
-" to the top maximizes the window if allow-top-tiling is enabled."
+"resizes them horizontally to cover half of the available area. Drag-dropping "
+"to the top maximizes the window if allow-top-tiling is enabled."
 msgstr ""
 "Si activé, déplacer les fenêtres sur les bords de l'écran les maximise "
-"verticalement et les redimensionne horizontalement pour couvrir la moitié de"
-" la zone disponible. Déplacer la fenêtre sur le bord haut de l'écran la "
+"verticalement et les redimensionne horizontalement pour couvrir la moitié de "
+"la zone disponible. Déplacer la fenêtre sur le bord haut de l'écran la "
 "maximise si l'option autoriser le recouvrement haut est activée."
 
 #: src/org.cafe.croma.gschema.xml:186
@@ -881,8 +879,8 @@ msgid ""
 "it. Only works when allow-tiling is enabled."
 msgstr ""
 "Si activé, les fenêtres déplacées sur le bord haut de l'écran seront "
-"maximisées. Fonctionne uniquement si l'option autoriser la juxtaposition des"
-" fenêtres est activée."
+"maximisées. Fonctionne uniquement si l'option autoriser la juxtaposition des "
+"fenêtres est activée."
 
 #: src/org.cafe.croma.gschema.xml:191
 msgid "Whether to enable cycling through different tile sizes"
@@ -901,19 +899,19 @@ msgstr "Mode de placement de la fenêtre"
 #: src/org.cafe.croma.gschema.xml:197
 msgid ""
 "The window placement mode indicates how new windows are positioned. "
-"\"automatic\" means the system chooses a location automatically based on the"
-" space available on the desktop, or by a simple cascade if there is no "
-"space; \"pointer\" means that new windows are placed according to the mouse "
-"pointer position; \"manual\" means that the user must manually place the new"
-" window with the mouse or keyboard."
+"\"automatic\" means the system chooses a location automatically based on the "
+"space available on the desktop, or by a simple cascade if there is no space; "
+"\"pointer\" means that new windows are placed according to the mouse pointer "
+"position; \"manual\" means that the user must manually place the new window "
+"with the mouse or keyboard."
 msgstr ""
 "Le mode de placement de la fenêtre indique comment les nouvelles fenêtres "
 "sont positionnées. \"Automatique\" signifie que le système choisit un "
 "emplacement automatiquement en fonction de l'espace disponible sur le "
 "bureau, ou en cascade s'il n'y a plus d'espace; \"pointeur\" signifie que "
 "les nouvelles fenêtres sont placées en fonction de la position du pointeur "
-"de la souris; \"manuel\" signifie que l'utilisateur doit placer manuellement"
-" la nouvelle fenêtre avec la souris ou le clavier."
+"de la souris; \"manuel\" signifie que l'utilisateur doit placer manuellement "
+"la nouvelle fenêtre avec la souris ou le clavier."
 
 #: src/org.cafe.croma.gschema.xml:201
 msgid "List of applications ignored by show-desktop"
@@ -923,12 +921,12 @@ msgstr ""
 
 #: src/org.cafe.croma.gschema.xml:202
 msgid ""
-"Comma separated class list. Each running GUI application referenced to given"
-" windows manager class will be ignored by 'Show Desktop' functionality."
+"Comma separated class list. Each running GUI application referenced to given "
+"windows manager class will be ignored by 'Show Desktop' functionality."
 msgstr ""
 "Liste de classes séparée par des virgules. Chaque application, dont la "
-"classe de fenêtre détectée par le gestionnaire de fenêtres est présente dans"
-" cette liste, sera ignorée par la commande « Afficher le bureau »."
+"classe de fenêtre détectée par le gestionnaire de fenêtres est présente dans "
+"cette liste, sera ignorée par la commande « Afficher le bureau »."
 
 #: src/org.cafe.croma.gschema.xml:207
 msgid "Icon size in alt-tab popup window"
@@ -1017,8 +1015,8 @@ msgstr "Exécuter la commande définie"
 #: src/org.cafe.croma.gschema.xml:450 src/org.cafe.croma.gschema.xml:455
 #: src/org.cafe.croma.gschema.xml:460 src/org.cafe.croma.gschema.xml:465
 msgid ""
-"The keybinding that runs the correspondingly-numbered command in "
-"/apps/croma/keybinding_commands The format looks like \"<Control>a\" or "
+"The keybinding that runs the correspondingly-numbered command in /apps/croma/"
+"keybinding_commands The format looks like \"<Control>a\" or "
 "\"<Shift><Alt>F1\". The parser is fairly liberal and allows lower or upper "
 "case, and also abbreviations such as \"<Ctl>\" and \"<Ctrl>\". If you set "
 "the option to the special string \"disabled\", then there will be no "
@@ -1151,8 +1149,8 @@ msgstr "Commande à exécuter en réponse aux combinaisons de touches"
 #: src/org.cafe.croma.gschema.xml:713 src/org.cafe.croma.gschema.xml:718
 msgid ""
 "The /apps/croma/global_keybindings/run_command_N keys define keybindings "
-"that correspond to these commands. Pressing the keybinding for run_command_N"
-" will execute command_N."
+"that correspond to these commands. Pressing the keybinding for run_command_N "
+"will execute command_N."
 msgstr ""
 "Les clés /apps/croma/global_keybindings/run_command_N définissent les "
 "combinaisons de touches qui correspondent à ces commandes. Presser la "
@@ -1176,8 +1174,8 @@ msgstr "La commande de capture d'écran de fenêtre"
 
 #: src/org.cafe.croma.gschema.xml:728
 msgid ""
-"The /apps/croma/global_keybindings/run_command_window_screenshot key defines"
-" a keybinding which causes the command specified by this setting to be "
+"The /apps/croma/global_keybindings/run_command_window_screenshot key defines "
+"a keybinding which causes the command specified by this setting to be "
 "invoked."
 msgstr ""
 "La clé /apps/croma/global_keybindings/run_command_window_screenshot définit "
@@ -1266,7 +1264,8 @@ msgstr ""
 
 #. Displayed when a keybinding which is
 #. * supposed to launch a program fails.
-#: src/core/keybindings.c:2396
+#.
+#: src/core/keybindings.c:2398
 #, c-format
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
@@ -1277,28 +1276,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: src/core/keybindings.c:2485
+#: src/core/keybindings.c:2487
 #, c-format
 msgid "No command %d has been defined.\n"
 msgstr "Aucune commande %d n'a été définie.\n"
 
-#: src/core/keybindings.c:3595
+#: src/core/keybindings.c:3600
 msgid "No terminal command has been defined.\n"
 msgstr "Aucune commande de terminal n'a été définie.\n"
 
-#: src/core/keybindings.c:3735
+#: src/core/keybindings.c:3740
 msgid "<tt>Rename Workspace</tt>"
 msgstr "<tt>Renommer l'espace de travail</tt>"
 
-#: src/core/keybindings.c:3736
+#: src/core/keybindings.c:3741
 msgid "New Workspace Name:"
 msgstr "Nom du nouvel espace de travail :"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "OK"
 msgstr "Valider"
 
-#: src/core/keybindings.c:3747
+#: src/core/keybindings.c:3752
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -1308,7 +1307,8 @@ msgid ""
 "croma %s\n"
 "Copyright (C) 2001-%s Havoc Pennington, Red Hat, Inc., and others\n"
 "This is free software; see the source for copying conditions.\n"
-"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A "
+"PARTICULAR PURPOSE.\n"
 msgstr ""
 "croma %s\n"
 "Copyright © 2001-%s Havoc Pennington, Red Hat, Inc., et autres.\n"
@@ -1317,56 +1317,56 @@ msgstr ""
 "Il n'y a AUCUNE garantie ; même pas de VALEUR MARCHANDE ou\n"
 "d'ADÉQUATION À UN USAGE PARTICULIER.\n"
 
-#: src/core/main.c:270
+#: src/core/main.c:274
 msgid "Disable connection to session manager"
 msgstr "Désactive la connexion au gestionnaire de sessions"
 
-#: src/core/main.c:276
+#: src/core/main.c:280
 msgid "Replace the running window manager with Croma"
 msgstr ""
 "Remplacer le gestionnaire de fenêtres en cours de fonctionnement par Croma"
 
-#: src/core/main.c:282
+#: src/core/main.c:286
 msgid "Specify session management ID"
 msgstr "Indique l'ID de la gestion de sessions"
 
-#: src/core/main.c:287
+#: src/core/main.c:291
 msgid "X Display to use"
 msgstr "Visuel X à utiliser"
 
-#: src/core/main.c:293
+#: src/core/main.c:297
 msgid "Initialize session from savefile"
 msgstr "Initialiser la session depuis le fichier de sauvegarde"
 
-#: src/core/main.c:299
+#: src/core/main.c:303
 msgid "Print version"
 msgstr "Affiche la version"
 
-#: src/core/main.c:305
+#: src/core/main.c:309
 msgid "Make X calls synchronous"
 msgstr "Effectuer des appels X synchrones"
 
-#: src/core/main.c:311
+#: src/core/main.c:315
 msgid "Turn compositing on"
 msgstr "Activer la composition"
 
-#: src/core/main.c:317
+#: src/core/main.c:321
 msgid "Turn compositing off"
 msgstr "Désactiver la composition"
 
-#: src/core/main.c:323
+#: src/core/main.c:327
 msgid ""
 "Don't make fullscreen windows that are maximized and have no decorations"
 msgstr ""
 "Ne pas mettre en plein écran des fenêtres qui sont maximisées et ne "
 "possèdent pas de décorations"
 
-#: src/core/main.c:522
+#: src/core/main.c:526
 #, c-format
 msgid "Failed to scan themes directory: %s\n"
 msgstr "Le parcours du répertoire de thèmes a échoué : %s\n"
 
-#: src/core/main.c:538
+#: src/core/main.c:542
 #, c-format
 msgid ""
 "Could not find a theme! Be sure %s exists and contains the usual themes.\n"
@@ -1374,7 +1374,7 @@ msgstr ""
 "Impossible de trouver un thème ! Assurez-vous que %s existe et contient les "
 "thèmes habituels.\n"
 
-#: src/core/main.c:597
+#: src/core/main.c:601
 #, c-format
 msgid "Failed to restart: %s\n"
 msgstr "Impossible de redémarrer : %s\n"
@@ -1406,11 +1406,11 @@ msgstr ""
 #: src/core/prefs.c:1256
 #, c-format
 msgid ""
-"\"%s\" found in configuration database is not a valid value for mouse button"
-" modifier\n"
+"\"%s\" found in configuration database is not a valid value for mouse button "
+"modifier\n"
 msgstr ""
-"« %s » trouvée dans la base de données de configuration n'est pas une valeur"
-" correcte pour le bouton de souris\n"
+"« %s » trouvée dans la base de données de configuration n'est pas une valeur "
+"correcte pour le bouton de souris\n"
 
 #: src/core/prefs.c:1844
 #, c-format
@@ -1426,34 +1426,35 @@ msgstr ""
 msgid "Workspace %d"
 msgstr "Espace de travail %d"
 
-#: src/core/screen.c:362
+#: src/core/screen.c:364
 #, c-format
 msgid "Screen %d on display '%s' is invalid\n"
 msgstr "L'écran %d sur le visuel « %s » n'est pas valide\n"
 
-#: src/core/screen.c:378
+#: src/core/screen.c:380
 #, c-format
 msgid ""
-"Screen %d on display \"%s\" already has a window manager; try using the "
-"--replace option to replace the current window manager.\n"
+"Screen %d on display \"%s\" already has a window manager; try using the --"
+"replace option to replace the current window manager.\n"
 msgstr ""
-"L'écran %d sur le visuel « %s » a déjà un gestionnaire de fenêtres ; essayez"
-" d'utiliser l'option --replace pour remplacer le gestionnaire de fenêtres "
+"L'écran %d sur le visuel « %s » a déjà un gestionnaire de fenêtres ; essayez "
+"d'utiliser l'option --replace pour remplacer le gestionnaire de fenêtres "
 "actuel.\n"
 
-#: src/core/screen.c:405
+#: src/core/screen.c:407
 #, c-format
-msgid "Could not acquire window manager selection on screen %d display \"%s\"\n"
+msgid ""
+"Could not acquire window manager selection on screen %d display \"%s\"\n"
 msgstr ""
 "Impossible d'avoir la sélection du gestionnaire de fenêtres sur l'écran %d "
 "du visuel « %s »\n"
 
-#: src/core/screen.c:463
+#: src/core/screen.c:465
 #, c-format
 msgid "Screen %d on display \"%s\" already has a window manager\n"
 msgstr "L'écran %d sur le visuel « %s » a déjà un gestionnaire de fenêtres\n"
 
-#: src/core/screen.c:677
+#: src/core/screen.c:679
 #, c-format
 msgid "Could not release screen %d on display \"%s\"\n"
 msgstr "Impossible de libérer l'écran %d sur le visuel « %s »\n"
@@ -1506,8 +1507,8 @@ msgstr "Élément %s inconnu"
 
 #: src/core/session.c:1807
 msgid ""
-"These windows do not support &quot;save current setup&quot; and will have to"
-" be restarted manually next time you log in."
+"These windows do not support &quot;save current setup&quot; and will have to "
+"be restarted manually next time you log in."
 msgstr ""
 "Ces fenêtres ne prennent pas en charge « l'enregistrement de la "
 "configuration actuelle » et devront être redémarrées manuellement à la "
@@ -1522,8 +1523,7 @@ msgstr "L'ouverture du journal de débogage a échoué : %s\n"
 #, c-format
 msgid "Failed to fdopen() log file %s: %s\n"
 msgstr ""
-"L'exécution de la commande fdopen() sur le fichier journal %s a échoué : "
-"%s\n"
+"L'exécution de la commande fdopen() sur le fichier journal %s a échoué : %s\n"
 
 #: src/core/util.c:117
 #, c-format
@@ -1557,7 +1557,7 @@ msgid "Croma"
 msgstr "Croma"
 
 #. first time through
-#: src/core/window.c:6004
+#: src/core/window.c:6036
 #, c-format
 msgid ""
 "Window %s sets SM_CLIENT_ID on itself, instead of on the WM_CLIENT_LEADER "
@@ -1572,7 +1572,8 @@ msgstr ""
 #. * leads to e.g. us not fullscreening their windows.  Apps that set
 #. * MWM but not WM_NORMAL_HINTS are basically broken. We complain
 #. * about these apps but make them work.
-#: src/core/window.c:6582
+#.
+#: src/core/window.c:6623
 #, c-format
 msgid ""
 "Window %s sets an MWM hint indicating it isn't resizable, but sets min size "
@@ -1637,13 +1638,13 @@ msgstr ""
 #: src/core/xprops.c:411
 #, c-format
 msgid "Property %s on window 0x%lx contained invalid UTF-8\n"
-msgstr "La propriété %s de la fenêtre 0x%lx contient un code UTF-8 non valide\n"
+msgstr ""
+"La propriété %s de la fenêtre 0x%lx contient un code UTF-8 non valide\n"
 
 #: src/core/xprops.c:494
 #, c-format
 msgid ""
-"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the "
-"list\n"
+"Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
 "La propriété %s de la fenêtre 0x%lx contient un code UTF-8 non valide pour "
 "l'élément %d dans la liste\n"
@@ -1653,51 +1654,51 @@ msgstr ""
 msgid "Usage: %s\n"
 msgstr "Utilisation : %s\n"
 
-#: src/ui/frames.c:1338
+#: src/ui/frames.c:1339
 msgid "Close Window"
 msgstr "Fermer la fenêtre"
 
-#: src/ui/frames.c:1341
+#: src/ui/frames.c:1342
 msgid "Window Menu"
 msgstr "Menu Fenêtre"
 
-#: src/ui/frames.c:1344
+#: src/ui/frames.c:1345
 msgid "Window App Menu"
 msgstr "Menu Application Fenêtre"
 
-#: src/ui/frames.c:1347
+#: src/ui/frames.c:1348
 msgid "Minimize Window"
 msgstr "Réduire la fenêtre"
 
-#: src/ui/frames.c:1350
+#: src/ui/frames.c:1351
 msgid "Maximize Window"
 msgstr "Maximiser la fenêtre"
 
-#: src/ui/frames.c:1353
+#: src/ui/frames.c:1354
 msgid "Restore Window"
 msgstr "Restaurer la fenêtre"
 
-#: src/ui/frames.c:1356
+#: src/ui/frames.c:1357
 msgid "Roll Up Window"
 msgstr "Replier la fenêtre"
 
-#: src/ui/frames.c:1359
+#: src/ui/frames.c:1360
 msgid "Unroll Window"
 msgstr "Déplier la fenêtre"
 
-#: src/ui/frames.c:1362
+#: src/ui/frames.c:1363
 msgid "Keep Window On Top"
 msgstr "Garder la fenêtre au premier plan"
 
-#: src/ui/frames.c:1365
+#: src/ui/frames.c:1366
 msgid "Remove Window From Top"
 msgstr "Enlever la fenêtre du premier plan"
 
-#: src/ui/frames.c:1368
+#: src/ui/frames.c:1369
 msgid "Always On Visible Workspace"
 msgstr "Toujours sur l'espace de travail visible"
 
-#: src/ui/frames.c:1371
+#: src/ui/frames.c:1372
 msgid "Put Window On Only One Workspace"
 msgstr "Mettre la fenêtre sur un seul espace de travail"
 
@@ -1805,6 +1806,7 @@ msgstr "Déplacer vers un _autre espace de travail"
 #. * that use the shift key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:80
 msgid "Shift"
 msgstr "Shift"
@@ -1813,6 +1815,7 @@ msgstr "Shift"
 #. * that use the control key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:86
 msgid "Ctrl"
 msgstr "Ctrl"
@@ -1821,6 +1824,7 @@ msgstr "Ctrl"
 #. * that use the alt key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:92
 msgid "Alt"
 msgstr "Alt"
@@ -1829,6 +1833,7 @@ msgstr "Alt"
 #. * that use the meta key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:98
 msgid "Meta"
 msgstr "Meta"
@@ -1837,6 +1842,7 @@ msgstr "Meta"
 #. * that use the super key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:104
 msgid "Super"
 msgstr "Super"
@@ -1845,6 +1851,7 @@ msgstr "Super"
 #. * that use the hyper key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:110
 msgid "Hyper"
 msgstr "Hyper"
@@ -1853,6 +1860,7 @@ msgstr "Hyper"
 #. * that use the mod2 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:116
 msgid "Mod2"
 msgstr "Mod2"
@@ -1861,6 +1869,7 @@ msgstr "Mod2"
 #. * that use the mod3 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:122
 msgid "Mod3"
 msgstr "Mod3"
@@ -1869,6 +1878,7 @@ msgstr "Mod3"
 #. * that use the mod4 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:128
 msgid "Mod4"
 msgstr "Mod4"
@@ -1877,59 +1887,61 @@ msgstr "Mod4"
 #. * that use the mod5 key. If the text on this key isn't typically
 #. * translated on keyboards used for your language, don't translate
 #. * this.
+#.
 #: src/ui/metaaccellabel.c:134
 msgid "Mod5"
 msgstr "Mod5"
 
 #. Translators: This represents the size of a window.  The first number is
 #. * the width of the window and the second is the height.
+#.
 #: src/ui/resizepopup.c:117
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: src/ui/theme.c:366
+#: src/ui/theme.c:367
 msgid "top"
 msgstr "haut"
 
-#: src/ui/theme.c:368
+#: src/ui/theme.c:369
 msgid "bottom"
 msgstr "bas"
 
-#: src/ui/theme.c:370
+#: src/ui/theme.c:371
 msgid "left"
 msgstr "gauche"
 
-#: src/ui/theme.c:372
+#: src/ui/theme.c:373
 msgid "right"
 msgstr "droit"
 
-#: src/ui/theme.c:399
+#: src/ui/theme.c:400
 #, c-format
 msgid "frame geometry does not specify \"%s\" dimension"
 msgstr "la géométrie du cadre n'indique pas la dimension « %s »"
 
-#: src/ui/theme.c:418
+#: src/ui/theme.c:419
 #, c-format
 msgid "frame geometry does not specify dimension \"%s\" for border \"%s\""
 msgstr ""
-"la géométrie du cadre n'indique pas la dimension « %s » pour la bordure « %s"
-" »"
+"la géométrie du cadre n'indique pas la dimension « %s » pour la bordure "
+"« %s »"
 
-#: src/ui/theme.c:455
+#: src/ui/theme.c:456
 #, c-format
 msgid "Button aspect ratio %g is not reasonable"
 msgstr "La proportion du bouton %g n'est pas raisonnable"
 
-#: src/ui/theme.c:467
+#: src/ui/theme.c:468
 msgid "Frame geometry does not specify size of buttons"
 msgstr "La géométrie du cadre n'indique pas la taille des boutons"
 
-#: src/ui/theme.c:1227
+#: src/ui/theme.c:1228
 msgid "Gradients should have at least two colors"
 msgstr "Les dégradés doivent comporter au moins deux couleurs"
 
-#: src/ui/theme.c:1397
+#: src/ui/theme.c:1398
 #, c-format
 msgid ""
 "CTK custom color specification must have color name and fallback in "
@@ -1939,16 +1951,16 @@ msgstr ""
 "et un repli entre parenthèses, p. ex. ctk:custom(foo,bar); impossible "
 "d'analyser \"%s\""
 
-#: src/ui/theme.c:1413
+#: src/ui/theme.c:1414
 #, c-format
 msgid ""
-"Invalid character '%c' in color_name parameter of ctk:custom, only "
-"A-Za-z0-9-_ are valid"
+"Invalid character '%c' in color_name parameter of ctk:custom, only A-Za-z0-9-"
+"_ are valid"
 msgstr ""
 "Caractère non valide '%c' dans le paramètre color_name de ctk:custom, seuls "
 "les caractères A-Za-z0-9-_ sont valides"
 
-#: src/ui/theme.c:1427
+#: src/ui/theme.c:1428
 #, c-format
 msgid ""
 "Ctk:custom format is \"ctk:custom(color_name,fallback)\", \"%s\" does not "
@@ -1957,39 +1969,39 @@ msgstr ""
 "Ctk: le format personnalisé est \"ctk:custom(color_name,fallback)\", \"%s\" "
 "ne correspond pas au format"
 
-#: src/ui/theme.c:1471
+#: src/ui/theme.c:1472
 #, c-format
 msgid ""
-"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL]"
-" where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have the state in brackets, e.g. ctk:fg[NORMAL] "
+"where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"La spécification de couleur CTK doit présenter l'état entre crochets, p. ex."
-" ctk:fg[NORMAL] où NORMAL est l'état ; impossible d'analyser « %s »"
+"La spécification de couleur CTK doit présenter l'état entre crochets, p. ex. "
+"ctk:fg[NORMAL] où NORMAL est l'état ; impossible d'analyser « %s »"
 
-#: src/ui/theme.c:1485
+#: src/ui/theme.c:1486
 #, c-format
 msgid ""
-"CTK color specification must have a close bracket after the state, e.g. "
-"ctk:fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
+"CTK color specification must have a close bracket after the state, e.g. ctk:"
+"fg[NORMAL] where NORMAL is the state; could not parse \"%s\""
 msgstr ""
-"La spécification de couleur CTK doit comporter un crochet de fermeture après"
-" l'état, p. ex. ctk:fg[NORMAL] où NORMAL est l'état ; impossible d'analyser "
+"La spécification de couleur CTK doit comporter un crochet de fermeture après "
+"l'état, p. ex. ctk:fg[NORMAL] où NORMAL est l'état ; impossible d'analyser "
 "« %s »"
 
-#: src/ui/theme.c:1496
+#: src/ui/theme.c:1497
 #, c-format
 msgid "Did not understand state \"%s\" in color specification"
 msgstr ""
 "Impossible de comprendre l'état « %s » dans la spécification de couleur"
 
-#: src/ui/theme.c:1509
+#: src/ui/theme.c:1510
 #, c-format
 msgid "Did not understand color component \"%s\" in color specification"
 msgstr ""
 "Impossible de comprendre le composant de couleur « %s » dans la "
 "spécification de couleur"
 
-#: src/ui/theme.c:1537
+#: src/ui/theme.c:1538
 #, c-format
 msgid ""
 "Blend format is \"blend/bg_color/fg_color/alpha\", \"%s\" does not fit the "
@@ -1998,64 +2010,65 @@ msgstr ""
 "Le format de mélange est « blend/bg_color/fg_color/alpha », « %s » ne "
 "correspond pas à ce format."
 
-#: src/ui/theme.c:1548
+#: src/ui/theme.c:1549
 #, c-format
 msgid "Could not parse alpha value \"%s\" in blended color"
 msgstr "Impossible d'analyser la valeur alpha « %s » en couleur mélangée"
 
-#: src/ui/theme.c:1558
+#: src/ui/theme.c:1559
 #, c-format
 msgid "Alpha value \"%s\" in blended color is not between 0.0 and 1.0"
 msgstr ""
 "La valeur alpha « %s » en couleur mélangée n'est pas comprise entre 0,0 et "
 "1,0"
 
-#: src/ui/theme.c:1604
+#: src/ui/theme.c:1605
 #, c-format
-msgid "Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
+msgid ""
+"Shade format is \"shade/base_color/factor\", \"%s\" does not fit the format"
 msgstr ""
 "Le format d'ombre est « shade/base_color/factor », « %s » ne correspond pas "
 "au format"
 
-#: src/ui/theme.c:1615
+#: src/ui/theme.c:1616
 #, c-format
 msgid "Could not parse shade factor \"%s\" in shaded color"
 msgstr "Impossible d'analyser le facteur d'ombre « %s » en couleur ombrée"
 
-#: src/ui/theme.c:1625
+#: src/ui/theme.c:1626
 #, c-format
 msgid "Shade factor \"%s\" in shaded color is negative"
 msgstr "Le facteur d'ombre « %s » en couleur ombrée est négatif"
 
-#: src/ui/theme.c:1654
+#: src/ui/theme.c:1655
 #, c-format
 msgid "Could not parse color \"%s\""
 msgstr "Impossible d'analyser la couleur « %s »"
 
-#: src/ui/theme.c:2003
+#: src/ui/theme.c:2004
 #, c-format
 msgid "Coordinate expression contains character '%s' which is not allowed"
 msgstr ""
 "L'expression de la coordonnée contient le caractère « %s » qui n'est pas "
 "autorisé"
 
-#: src/ui/theme.c:2030
+#: src/ui/theme.c:2031
 #, c-format
 msgid ""
-"Coordinate expression contains floating point number '%s' which could not be"
-" parsed"
+"Coordinate expression contains floating point number '%s' which could not be "
+"parsed"
 msgstr ""
-"L'expression de la coordonnée contient la valeur en virgule flottante « %s »"
-" qui ne peut pas être analysée"
+"L'expression de la coordonnée contient la valeur en virgule flottante « %s » "
+"qui ne peut pas être analysée"
 
-#: src/ui/theme.c:2044
+#: src/ui/theme.c:2045
 #, c-format
 msgid "Coordinate expression contains integer '%s' which could not be parsed"
 msgstr ""
 "L'expression de la coordonnée contient l'entier « %s » qui n'a pas pu être "
 "analysé"
 
-#: src/ui/theme.c:2166
+#: src/ui/theme.c:2167
 #, c-format
 msgid ""
 "Coordinate expression contained unknown operator at the start of this text: "
@@ -2064,85 +2077,85 @@ msgstr ""
 "L'expression de la coordonnée contenait un opérateur inconnu au début de ce "
 "texte : « %s »"
 
-#: src/ui/theme.c:2223
+#: src/ui/theme.c:2224
 msgid "Coordinate expression was empty or not understood"
 msgstr "L'expression de la coordonnée était vide ou incomprise"
 
-#: src/ui/theme.c:2334 src/ui/theme.c:2344 src/ui/theme.c:2378
+#: src/ui/theme.c:2335 src/ui/theme.c:2345 src/ui/theme.c:2379
 msgid "Coordinate expression results in division by zero"
 msgstr "L'expression de la coordonnée entraîne une division par zéro"
 
-#: src/ui/theme.c:2386
+#: src/ui/theme.c:2387
 msgid ""
 "Coordinate expression tries to use mod operator on a floating-point number"
 msgstr ""
 "L'expression de la coordonnée tente d'utiliser l'opérateur mod sur une "
 "valeur en virgule flottante"
 
-#: src/ui/theme.c:2442
+#: src/ui/theme.c:2443
 #, c-format
-msgid "Coordinate expression has an operator \"%s\" where an operand was expected"
+msgid ""
+"Coordinate expression has an operator \"%s\" where an operand was expected"
 msgstr ""
 "L'expression de la coordonnée a un opérateur « %s » là où un opérande était "
 "attendu"
 
-#: src/ui/theme.c:2451
+#: src/ui/theme.c:2452
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr ""
 "L'expression de la coordonnée a un opérande là où un opérateur était attendu"
 
-#: src/ui/theme.c:2459
+#: src/ui/theme.c:2460
 msgid "Coordinate expression ended with an operator instead of an operand"
 msgstr ""
 "L'expression de la coordonnée était terminée par un opérateur au lieu d'un "
 "opérande"
 
-#: src/ui/theme.c:2469
+#: src/ui/theme.c:2470
 #, c-format
 msgid ""
 "Coordinate expression has operator \"%c\" following operator \"%c\" with no "
 "operand in between"
 msgstr ""
-"L'expression de la coordonnée a un opérateur « %c » suivant l'opérateur « %c"
-" » sans opérande entre eux"
+"L'expression de la coordonnée a un opérateur « %c » suivant l'opérateur "
+"« %c » sans opérande entre eux"
 
-#: src/ui/theme.c:2620 src/ui/theme.c:2665
+#: src/ui/theme.c:2621 src/ui/theme.c:2666
 #, c-format
 msgid "Coordinate expression had unknown variable or constant \"%s\""
 msgstr ""
-"L'expression de la coordonnée possède une variable ou constante inconnue « "
-"%s »"
+"L'expression de la coordonnée possède une variable ou constante inconnue "
+"« %s »"
 
-#: src/ui/theme.c:2719
+#: src/ui/theme.c:2720
 msgid "Coordinate expression parser overflowed its buffer."
 msgstr ""
 "L'analyseur d'expression de coordonnées a dépassé la capacité de son tampon."
 
-#: src/ui/theme.c:2748
+#: src/ui/theme.c:2749
 msgid "Coordinate expression had a close parenthesis with no open parenthesis"
 msgstr ""
-"L'expression de la coordonnée comporte une parenthèse de fermeture, mais pas"
-" de parenthèse d'ouverture"
+"L'expression de la coordonnée comporte une parenthèse de fermeture, mais pas "
+"de parenthèse d'ouverture"
 
-#: src/ui/theme.c:2812
-msgid ""
-"Coordinate expression had an open parenthesis with no close parenthesis"
+#: src/ui/theme.c:2813
+msgid "Coordinate expression had an open parenthesis with no close parenthesis"
 msgstr ""
 "L'expression de la coordonnée comporte une parenthèse d'ouverture, mais pas "
 "de parenthèse de fermeture"
 
-#: src/ui/theme.c:2823
+#: src/ui/theme.c:2824
 msgid "Coordinate expression doesn't seem to have any operators or operands"
 msgstr ""
 "L'expression de la coordonnée ne semble pas comprendre d'opérateur ni "
 "d'opérande"
 
-#: src/ui/theme.c:3027 src/ui/theme.c:3047 src/ui/theme.c:3067
+#: src/ui/theme.c:3028 src/ui/theme.c:3048 src/ui/theme.c:3068
 #, c-format
 msgid "Theme contained an expression that resulted in an error: %s\n"
 msgstr "Le thème contient une expression qui a entraîné une erreur : %s\n"
 
-#: src/ui/theme.c:4857
+#: src/ui/theme.c:4862
 #, c-format
 msgid ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> must be "
@@ -2151,45 +2164,49 @@ msgstr ""
 "<button function=\"%s\" state=\"%s\" draw_ops=\"whatever\"/> doit être "
 "indiqué pour ce style de cadre"
 
-#: src/ui/theme.c:5393 src/ui/theme.c:5418
+#: src/ui/theme.c:5398 src/ui/theme.c:5423
 #, c-format
-msgid "Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
-msgstr "<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> manquant"
+msgid ""
+"Missing <frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/>"
+msgstr ""
+"<frame state=\"%s\" resize=\"%s\" focus=\"%s\" style=\"whatever\"/> manquant"
 
-#: src/ui/theme.c:5462
+#: src/ui/theme.c:5467
 #, c-format
 msgid "Failed to load theme \"%s\": %s\n"
 msgstr "Impossible de charger le thème « %s » : %s\n"
 
-#: src/ui/theme.c:5594 src/ui/theme.c:5601 src/ui/theme.c:5608
-#: src/ui/theme.c:5615 src/ui/theme.c:5622
+#: src/ui/theme.c:5599 src/ui/theme.c:5606 src/ui/theme.c:5613
+#: src/ui/theme.c:5620 src/ui/theme.c:5627
 #, c-format
 msgid "No <%s> set for theme \"%s\""
 msgstr "Aucun <%s> défini pour le thème « %s »"
 
-#: src/ui/theme.c:5630
+#: src/ui/theme.c:5635
 #, c-format
 msgid ""
 "No frame style set for window type \"%s\" in theme \"%s\", add a <window "
 "type=\"%s\" style_set=\"whatever\"/> element"
 msgstr ""
-"Aucun style de cadre défini pour le type de fenêtre « %s » dans le thème « "
-"%s », ajoutez un élément <window type=\"%s\" style_set=\"whatever\"/>"
+"Aucun style de cadre défini pour le type de fenêtre « %s » dans le thème "
+"« %s », ajoutez un élément <window type=\"%s\" style_set=\"whatever\"/>"
 
-#: src/ui/theme.c:6045 src/ui/theme.c:6107 src/ui/theme.c:6170
+#: src/ui/theme.c:6062 src/ui/theme.c:6124 src/ui/theme.c:6187
 #, c-format
-msgid "User-defined constants must begin with a capital letter; \"%s\" does not"
+msgid ""
+"User-defined constants must begin with a capital letter; \"%s\" does not"
 msgstr ""
 "Les constantes définies par l'utilisateur doivent commencer par une "
 "majuscule ; « %s » commence par une minuscule"
 
-#: src/ui/theme.c:6053 src/ui/theme.c:6115 src/ui/theme.c:6178
+#: src/ui/theme.c:6070 src/ui/theme.c:6132 src/ui/theme.c:6195
 #, c-format
 msgid "Constant \"%s\" has already been defined"
 msgstr "La constante « %s » a déjà été définie"
 
 #. Translators: This means that an attribute which should have been found
 #. * on an XML element was not in fact found.
+#.
 #: src/ui/theme-parser.c:252
 #, c-format
 msgid "No \"%s\" attribute on element <%s>"
@@ -2250,14 +2267,14 @@ msgstr "L'angle doit être compris entre 0,0 et 360,0. Il était de %g\n"
 #, c-format
 msgid "Alpha must be between 0.0 (invisible) and 1.0 (fully opaque), was %g\n"
 msgstr ""
-"La valeur alpha doit être comprise entre 0,0 (invisible) et 1,0 (entièrement"
-" opaque). Elle était de %g\n"
+"La valeur alpha doit être comprise entre 0,0 (invisible) et 1,0 (entièrement "
+"opaque). Elle était de %g\n"
 
 #: src/ui/theme-parser.c:883
 #, c-format
 msgid ""
-"Invalid title scale \"%s\" (must be one of xx-"
-"small,x-small,small,medium,large,x-large,xx-large)\n"
+"Invalid title scale \"%s\" (must be one of xx-small,x-small,small,medium,"
+"large,x-large,xx-large)\n"
 msgstr ""
 "Échelle de titre non valide « %s » (elle doit avoir l'une des valeurs "
 "suivantes : xx-small, x-small, small, medium,large, x-large, xx-large)\n"
@@ -2319,8 +2336,9 @@ msgid ""
 "Cannot specify both \"button_width\"/\"button_height\" and \"aspect_ratio\" "
 "for buttons"
 msgstr ""
-"Impossible d'indiquer à la fois « button_width » / « button_height » "
-"(largeur/hauteur) et « aspect_ratio » (proportion) pour les boutons"
+"Impossible d'indiquer à la fois « button_width » / "
+"« button_height » (largeur/hauteur) et « aspect_ratio » (proportion) pour "
+"les boutons"
 
 #: src/ui/theme-parser.c:1470
 #, c-format
@@ -2348,8 +2366,8 @@ msgstr ""
 #, c-format
 msgid "No \"extent_angle\" or \"to\" attribute on element <%s>"
 msgstr ""
-"Aucun attribut « extent_angle » (« extension d'angle ») ou « to » (« vers »)"
-" sur l'élément <%s>"
+"Aucun attribut « extent_angle » (« extension d'angle ») ou « to » (« vers ») "
+"sur l'élément <%s>"
 
 #: src/ui/theme-parser.c:2135
 #, c-format
@@ -2457,7 +2475,8 @@ msgstr ""
 
 #: src/ui/theme-parser.c:3189
 #, c-format
-msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
+msgid ""
+"Should not have \"resize\" attribute on <%s> element for maximized states"
 msgstr ""
 "L'attribut « resize » (« redimensionnement ») ne devrait pas figurer sur "
 "l'élément <%s> pour l'état maximisé"
@@ -2480,13 +2499,13 @@ msgid ""
 "Can't have a two draw_ops for a <piece> element (theme specified a draw_ops "
 "attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
-"Impossible d'avoir deux attributs draw_ops pour un élément <piece> (le thème"
-" indiquait un attribut draw_ops et un élément <draw_ops> ou deux éléments)"
+"Impossible d'avoir deux attributs draw_ops pour un élément <piece> (le thème "
+"indiquait un attribut draw_ops et un élément <draw_ops> ou deux éléments)"
 
 #: src/ui/theme-parser.c:3357
 msgid ""
-"Can't have a two draw_ops for a <button> element (theme specified a draw_ops"
-" attribute and also a <draw_ops> element, or specified two elements)"
+"Can't have a two draw_ops for a <button> element (theme specified a draw_ops "
+"attribute and also a <draw_ops> element, or specified two elements)"
 msgstr ""
 "Impossible d'avoir deux attributs draw_ops pour un élément <button> (le "
 "thème indiquait un attribut draw_ops et un élément <draw_ops> ou deux "
@@ -2511,15 +2530,15 @@ msgid ""
 "\"version\" attribute cannot be used in metacity-theme-1.xml or metacity-"
 "theme-2.xml"
 msgstr ""
-"L'attribut \"version\" ne peut pas être utilisé dans metacity-theme-1.xml ou"
-" metacity-theme-2.xml"
+"L'attribut \"version\" ne peut pas être utilisé dans metacity-theme-1.xml ou "
+"metacity-theme-2.xml"
 
 #: src/ui/theme-parser.c:3585
 #, c-format
 msgid "Theme requires version %s but latest supported theme version is %d.%d"
 msgstr ""
-"Le thème nécessite une version %s mais la dernière version du thème prise en"
-" charge est %d.%d"
+"Le thème nécessite une version %s mais la dernière version du thème prise en "
+"charge est %d.%d"
 
 #: src/ui/theme-parser.c:3617
 #, c-format
@@ -2532,8 +2551,8 @@ msgstr ""
 msgid ""
 "Element <%s> is not allowed inside a name/author/date/description element"
 msgstr ""
-"L'élément <%s> n'est pas autorisé dans un élément "
-"name/author/date/description"
+"L'élément <%s> n'est pas autorisé dans un élément name/author/date/"
+"description"
 
 #: src/ui/theme-parser.c:3642
 #, c-format
@@ -2545,8 +2564,8 @@ msgstr "L'élément <%s> n'est pas autorisé dans un élément <constant>"
 msgid ""
 "Element <%s> is not allowed inside a distance/border/aspect_ratio element"
 msgstr ""
-"L'élément <%s> n'est pas autorisé dans un élément "
-"distance/border/aspect_ratio"
+"L'élément <%s> n'est pas autorisé dans un élément distance/border/"
+"aspect_ratio"
 
 #: src/ui/theme-parser.c:3676
 #, c-format
@@ -2593,96 +2612,96 @@ msgstr "_OK"
 msgid "This is a sample message in a sample dialog"
 msgstr "C'est un message d'exemple dans une boîte de dialogue d'exemple"
 
-#: src/ui/theme-viewer.c:352
+#: src/ui/theme-viewer.c:355
 #, c-format
 msgid "Fake menu item %d\n"
 msgstr "Élément de menu factice %d\n"
 
-#: src/ui/theme-viewer.c:408
+#: src/ui/theme-viewer.c:411
 msgid "Border-only window"
 msgstr "Fenêtre avec seulement des bordures"
 
-#: src/ui/theme-viewer.c:410
+#: src/ui/theme-viewer.c:413
 msgid "Bar"
 msgstr "Barre"
 
-#: src/ui/theme-viewer.c:427
+#: src/ui/theme-viewer.c:430
 msgid "Normal Application Window"
 msgstr "Fenêtre d'application normale"
 
-#: src/ui/theme-viewer.c:431
+#: src/ui/theme-viewer.c:434
 msgid "Dialog Box"
 msgstr "Boîte de dialogue"
 
-#: src/ui/theme-viewer.c:435
+#: src/ui/theme-viewer.c:438
 msgid "Modal Dialog Box"
 msgstr "Boîte de dialogue modale"
 
-#: src/ui/theme-viewer.c:439
+#: src/ui/theme-viewer.c:442
 msgid "Utility Palette"
 msgstr "Palette utilitaire"
 
-#: src/ui/theme-viewer.c:443
+#: src/ui/theme-viewer.c:446
 msgid "Torn-off Menu"
 msgstr "Menu détaché"
 
-#: src/ui/theme-viewer.c:447
+#: src/ui/theme-viewer.c:450
 msgid "Border"
 msgstr "Bordure"
 
-#: src/ui/theme-viewer.c:451
+#: src/ui/theme-viewer.c:454
 msgid "Attached Modal Dialog"
 msgstr "Boîte de dialogue modale attachée"
 
-#: src/ui/theme-viewer.c:811
+#: src/ui/theme-viewer.c:815
 #, c-format
 msgid "Button layout test %d"
 msgstr "Test d'agencement de boutons %d"
 
-#: src/ui/theme-viewer.c:836
+#: src/ui/theme-viewer.c:840
 #, c-format
 msgid "%g milliseconds to draw one window frame"
 msgstr "%g millisecondes pour dessiner un cadre de fenêtre"
 
-#: src/ui/theme-viewer.c:876
+#: src/ui/theme-viewer.c:880
 msgid "Usage: croma-theme-viewer [THEMENAME]\n"
 msgstr "Usage : croma-theme-viewer [NOMDUTHEME]\n"
 
-#: src/ui/theme-viewer.c:883
+#: src/ui/theme-viewer.c:887
 #, c-format
 msgid "Error loading theme: %s\n"
 msgstr "Erreur lors du chargement du thème : %s\n"
 
-#: src/ui/theme-viewer.c:889
+#: src/ui/theme-viewer.c:893
 #, c-format
 msgid "Loaded theme \"%s\" in %g seconds\n"
 msgstr "Thème « %s » chargé en %g secondes\n"
 
-#: src/ui/theme-viewer.c:933
+#: src/ui/theme-viewer.c:937
 msgid "Normal Title Font"
 msgstr "Police de titre normal"
 
-#: src/ui/theme-viewer.c:939
+#: src/ui/theme-viewer.c:943
 msgid "Small Title Font"
 msgstr "Petite police de titre"
 
-#: src/ui/theme-viewer.c:945
+#: src/ui/theme-viewer.c:949
 msgid "Large Title Font"
 msgstr "Grande police de titre"
 
-#: src/ui/theme-viewer.c:950
+#: src/ui/theme-viewer.c:954
 msgid "Button Layouts"
 msgstr "Agencements des boutons"
 
-#: src/ui/theme-viewer.c:955
+#: src/ui/theme-viewer.c:959
 msgid "Benchmark"
 msgstr "Performance"
 
-#: src/ui/theme-viewer.c:1012
+#: src/ui/theme-viewer.c:1016
 msgid "Window Title Goes Here"
 msgstr "Le titre des fenêtres se trouve ici"
 
-#: src/ui/theme-viewer.c:1114
+#: src/ui/theme-viewer.c:1119
 #, c-format
 msgid ""
 "Drew %d frames in %g client-side seconds (%g milliseconds per frame) and %g "
