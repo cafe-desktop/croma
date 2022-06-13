@@ -1,0 +1,1 @@
+tabpopup: Fix [-Wmissing-field-initializers] warning inside 'GTypeInfo'
