@@ -1,4 +1,4 @@
-Croma
+Croma [![Build status](https://github.com/cafe-desktop/croma/actions/workflows/main.yml/badge.svg)](https://github.com/cafe-desktop/croma/actions/workflows/main.yml)
 ===
 
 CAFE Croma is a fork of GNOME Metacity.
