@@ -308,6 +308,8 @@ static CtkWidget* menu_item_new(MenuItem* menuitem, int workspace_id)
 
 	meta_accel_label_set_accelerator (META_ACCEL_LABEL (accel_label), key, mods);
 
+	g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+
 	return mi;
 }
 
