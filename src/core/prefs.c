@@ -73,7 +73,7 @@
 #define KEY_CAFE_TERMINAL_SCHEMA "org.cafe.applications-terminal"
 #define KEY_CAFE_TERMINAL_COMMAND "exec"
 
-#define KEY_CAFE_MOUSE_SCHEMA "org.mate.peripherals-mouse"
+#define KEY_CAFE_MOUSE_SCHEMA "org.cafe.peripherals-mouse"
 #define KEY_CAFE_MOUSE_CURSOR_THEME "cursor-theme"
 #define KEY_CAFE_MOUSE_CURSOR_SIZE "cursor-size"
 
