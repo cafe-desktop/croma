@@ -158,7 +158,7 @@ glib_dep = dependency('glib-2.0', version: glib_req)
 ctk_dep = dependency('ctk+-3.0', version: ctk_req)
 gio_dep = dependency('gio-2.0', version: gio_req)
 pango_dep = dependency('pango', version: pango_req)
-libkanberra_ctk_dep = dependency('libkanberra-gtk3')
+libkanberra_ctk_dep = dependency('libkanberra-ctk3')
 x11_dep = dependency('x11')
 
 croma_deps = [
