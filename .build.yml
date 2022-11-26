@@ -15,7 +15,6 @@ requires:
     - gcc
     - git
     - intltool
-    - libcanberra-gtk3-dev
     - libglib2.0-dev
     - libgtop2-dev
     - libice-dev
@@ -41,8 +40,19 @@ requires:
     - yelp-tools
     - zenity
 
+    # Required for libkanberra
+    - gnome-pkg-tools
+    - gtk-doc-tools
+    - libltdl-dev
+    - libasound2-dev
+    - libvorbis-dev
+    - libtdb-dev
+    - libpulse-dev
+    - libgstreamer1.0-dev
+
 before_scripts:
   - ./html-cppcheck
+  - ./install-from-git https://github.com/cafe-desktop/libkanberra master
   - ./install-from-git https://github.com/cafe-desktop/cafe-common master
   - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0'
 
