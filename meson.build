@@ -151,14 +151,14 @@ glib_req = '>= 2.58.0'
 gio_req = '>= 2.25.10'
 ctk_req = '>= 3.22.0'
 pango_req = '>= 1.2.0'
-libcanberra_ctk_req = '>= 3.22.0'
+libkanberra_ctk_req = '>= 3.22.0'
 startup_notification_req = '>= 0.7'
 
 glib_dep = dependency('glib-2.0', version: glib_req)
 ctk_dep = dependency('ctk+-3.0', version: ctk_req)
 gio_dep = dependency('gio-2.0', version: gio_req)
 pango_dep = dependency('pango', version: pango_req)
-libcanberra_ctk_dep = dependency('libcanberra-gtk3')
+libkanberra_ctk_dep = dependency('libkanberra-gtk3')
 x11_dep = dependency('x11')
 
 croma_deps = [
@@ -166,7 +166,7 @@ croma_deps = [
   ctk_dep,
   gio_dep,
   pango_dep,
-  libcanberra_ctk_dep,
+  libkanberra_ctk_dep,
 ]
 
 croma_message_deps = [
