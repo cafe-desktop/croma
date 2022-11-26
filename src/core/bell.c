@@ -52,7 +52,7 @@
 #include "bell.h"
 #include "screen-private.h"
 #include "prefs.h"
-#include <kanberra-gtk.h>
+#include <kanberra-ctk.h>
 
 /**
  * Flashes one entire screen.  This is done by making a window the size of the
@@ -324,7 +324,7 @@ meta_bell_notify (MetaDisplay *display,
               x += width/2;
               x = CLAMP(x, 0, screen_width-1);
 
-              /* From libkanberra-gtk.
+              /* From libkanberra-ctk.
                * We use these strange format strings here to avoid that libc
                * applies locale information on the formatting of floating
                * numbers. */

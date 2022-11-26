@@ -29,7 +29,7 @@
 #include "prefs.h"
 #include <X11/Xatom.h>
 #include <string.h>
-#include <kanberra-gtk.h>
+#include <kanberra-ctk.h>
 
 void meta_workspace_queue_calc_showing   (MetaWorkspace *workspace);
 static void set_active_space_hint        (MetaScreen *screen);
