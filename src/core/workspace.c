@@ -358,7 +358,7 @@ static void workspace_switch_sound(MetaWorkspace *from,
     goto finish;
   }
 
-  ka_context_play(ka_gtk_context_get(), 1,
+  ka_context_play(ka_ctk_context_get(), 1,
                   KA_PROP_EVENT_ID, e,
                   KA_PROP_EVENT_DESCRIPTION, "Desktop switched",
                   KA_PROP_KANBERRA_CACHE_CONTROL, "permanent",
