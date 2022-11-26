@@ -284,15 +284,15 @@ meta_bell_notify (MetaDisplay *display,
 
   if (meta_prefs_bell_is_audible ())
     {
-      ca_proplist *p;
+      ka_proplist *p;
       XkbBellNotifyEvent *xkb_bell_event = (XkbBellNotifyEvent*) xkb_ev;
       MetaWindow *window;
       int res;
 
-      ca_proplist_create (&p);
-      ca_proplist_sets (p, CA_PROP_EVENT_ID, "bell-window-system");
-      ca_proplist_sets (p, CA_PROP_EVENT_DESCRIPTION, _("Bell event"));
-      ca_proplist_sets (p, CA_PROP_KANBERRA_CACHE_CONTROL, "permanent");
+      ka_proplist_create (&p);
+      ka_proplist_sets (p, CA_PROP_EVENT_ID, "bell-window-system");
+      ka_proplist_sets (p, CA_PROP_EVENT_DESCRIPTION, _("Bell event"));
+      ka_proplist_sets (p, CA_PROP_KANBERRA_CACHE_CONTROL, "permanent");
 
       window = meta_display_lookup_x_window (display, xkb_bell_event->window);
       if (!window && (display->focus_window) && (display->focus_window->frame))
@@ -305,18 +305,18 @@ meta_bell_notify (MetaDisplay *display,
 
           screen = meta_window_get_screen (window);
 
-          ca_proplist_sets (p, CA_PROP_WINDOW_NAME, window->title);
-          ca_proplist_setf (p, CA_PROP_WINDOW_X11_XID, "%lu", (unsigned long)window->xwindow);
-          ca_proplist_setf (p, CA_PROP_WINDOW_X11_SCREEN, "%i", meta_screen_get_screen_number(screen));
-          ca_proplist_sets (p, CA_PROP_APPLICATION_NAME, window->res_name);
-          ca_proplist_setf (p, CA_PROP_APPLICATION_PROCESS_ID, "%d", window->net_wm_pid);
+          ka_proplist_sets (p, CA_PROP_WINDOW_NAME, window->title);
+          ka_proplist_setf (p, CA_PROP_WINDOW_X11_XID, "%lu", (unsigned long)window->xwindow);
+          ka_proplist_setf (p, CA_PROP_WINDOW_X11_SCREEN, "%i", meta_screen_get_screen_number(screen));
+          ka_proplist_sets (p, CA_PROP_APPLICATION_NAME, window->res_name);
+          ka_proplist_setf (p, CA_PROP_APPLICATION_PROCESS_ID, "%d", window->net_wm_pid);
 
           /* properties for positional sound based on window placement */
           meta_window_get_geometry (window, &x, &y, &width, &height);
-          ca_proplist_setf (p, CA_PROP_WINDOW_X, "%i", x);
-          ca_proplist_setf (p, CA_PROP_WINDOW_Y, "%i", y);
-          ca_proplist_setf (p, CA_PROP_WINDOW_WIDTH, "%i", width);
-          ca_proplist_setf (p, CA_PROP_WINDOW_HEIGHT, "%i", height);
+          ka_proplist_setf (p, CA_PROP_WINDOW_X, "%i", x);
+          ka_proplist_setf (p, CA_PROP_WINDOW_Y, "%i", y);
+          ka_proplist_setf (p, CA_PROP_WINDOW_WIDTH, "%i", width);
+          ka_proplist_setf (p, CA_PROP_WINDOW_HEIGHT, "%i", height);
 
           meta_screen_get_size (screen, &screen_width, &screen_height);
           if (screen_width > 1)
@@ -329,7 +329,7 @@ meta_bell_notify (MetaDisplay *display,
                * applies locale information on the formatting of floating
                * numbers. */
 
-              ca_proplist_setf (p, CA_PROP_WINDOW_HPOS, "%i.%03i",
+              ka_proplist_setf (p, CA_PROP_WINDOW_HPOS, "%i.%03i",
                                (int) (x/(screen_width-1)), (int) (1000.0*x/(screen_width-1)) % 1000);
             }
           if (screen_height > 1)
@@ -337,15 +337,15 @@ meta_bell_notify (MetaDisplay *display,
               y += height/2;
               y = CLAMP(y, 0, screen_height-1);
 
-              ca_proplist_setf (p, CA_PROP_WINDOW_VPOS, "%i.%03i",
+              ka_proplist_setf (p, CA_PROP_WINDOW_VPOS, "%i.%03i",
                                (int) (y/(screen_height-1)), (int) (1000.0*y/(screen_height-1)) % 1000);
             }
         }
 
       /* First, we try to play a real sound ... */
-      res = ca_context_play_full (ca_gtk_context_get (), 1, p, NULL, NULL);
+      res = ka_context_play_full (ka_gtk_context_get (), 1, p, NULL, NULL);
 
-      ca_proplist_destroy (p);
+      ka_proplist_destroy (p);
 
       if (res != CA_SUCCESS && res != CA_ERROR_DISABLED)
         {
