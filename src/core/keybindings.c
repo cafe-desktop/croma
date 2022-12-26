@@ -1257,7 +1257,7 @@ process_event (MetaKeyBinding       *bindings,
       display->allow_terminal_deactivation = TRUE;
 
       (* handler->func) (display, screen,
-                         bindings[i].handler->flags & BINDING_PER_WINDOW? window: NULL,
+                         (bindings[i].handler->flags & BINDING_PER_WINDOW) ? window: NULL,
                          event,
                          &bindings[i]);
       return TRUE;
