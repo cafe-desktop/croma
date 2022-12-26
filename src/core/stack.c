@@ -325,7 +325,6 @@ get_maximum_layer_in_group (MetaWindow *window)
   MetaGroup *group;
   GSList *tmp;
   MetaStackLayer max;
-  MetaStackLayer layer;
 
   max = META_LAYER_DESKTOP;
 
@@ -339,6 +338,7 @@ get_maximum_layer_in_group (MetaWindow *window)
   tmp = members;
   while (tmp != NULL)
     {
+      MetaStackLayer layer;
       MetaWindow *w = tmp->data;
 
       layer = get_standalone_layer (w);

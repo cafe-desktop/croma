@@ -192,13 +192,6 @@ meta_preview_draw (CtkWidget *widget,
   int border_width;
   int client_width;
   int client_height;
-  MetaButtonState button_states[META_BUTTON_TYPE_LAST] =
-  {
-    META_BUTTON_STATE_NORMAL,
-    META_BUTTON_STATE_NORMAL,
-    META_BUTTON_STATE_NORMAL,
-    META_BUTTON_STATE_NORMAL
-  };
 
   g_return_val_if_fail (META_IS_PREVIEW (widget), FALSE);
 
@@ -221,6 +214,14 @@ meta_preview_draw (CtkWidget *widget,
 
   if (preview->theme)
     {
+      MetaButtonState button_states[META_BUTTON_TYPE_LAST] =
+      {
+        META_BUTTON_STATE_NORMAL,
+        META_BUTTON_STATE_NORMAL,
+        META_BUTTON_STATE_NORMAL,
+        META_BUTTON_STATE_NORMAL
+      };
+
       meta_theme_draw_frame (preview->theme,
                              ctk_widget_get_style_context (widget),
                              cr,
