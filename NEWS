@@ -1,3 +1,18 @@
+### croma 1.25.1
+
+  * ci: little improvements
+  * README: add build status
+  * stack: rename caja -> baul
+  * po: Fix some authors
+  * Revert "prefs: rename 'org.cafe->mate.peripherals-mouse'"
+  * menu: show icons in menus
+  * port from libcanberra to libkanberra
+  * keybindings: clarify calculation precedence
+  * window: avoid duplicate condition
+  * reduce the scope of some variables
+  * theme-viewer: declare some variables with const
+  * util: avoid unreachable code
+
 ### croma 1.25.0
 
   * initial commit: marco 1.24.1 fork
