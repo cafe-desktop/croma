@@ -720,13 +720,13 @@ init_layouts (void)
         {
           int j;
 
-          static MetaButtonFunction left_functions[MAX_BUTTONS_PER_CORNER] = {
+          static const MetaButtonFunction left_functions[MAX_BUTTONS_PER_CORNER] = {
             META_BUTTON_FUNCTION_MENU,
             META_BUTTON_FUNCTION_MINIMIZE,
             META_BUTTON_FUNCTION_MAXIMIZE,
             META_BUTTON_FUNCTION_CLOSE
           };
-          static MetaButtonFunction right_functions[MAX_BUTTONS_PER_CORNER] = {
+          static const MetaButtonFunction right_functions[MAX_BUTTONS_PER_CORNER] = {
             META_BUTTON_FUNCTION_MINIMIZE,
             META_BUTTON_FUNCTION_MAXIMIZE,
             META_BUTTON_FUNCTION_CLOSE,
