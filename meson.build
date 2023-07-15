@@ -147,7 +147,7 @@ localdir = join_paths(datadir, 'local')
 vapidir = join_paths(datadir, 'vala', 'vapi')
 
 # Dependencies
-glib_req = '>= 2.58.0'
+glib_req = '>= 2.67.3'
 gio_req = '>= 2.25.10'
 ctk_req = '>= 3.22.0'
 pango_req = '>= 1.2.0'
