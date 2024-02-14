@@ -2224,7 +2224,7 @@ static gboolean event_callback(XEvent* event, gpointer data)
                       meta_event_detail_to_string (event->xfocus.detail));
 
           if (event->type == FocusIn &&
-              event->xfocus.detail == NotifyDetailNone)
+              (event->xfocus.detail == NotifyDetailNone || event->xfocus.detail == NotifyPointerRoot))
             {
               meta_topic (META_DEBUG_FOCUS,
                           "Focus got set to None, probably due to "
