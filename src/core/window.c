@@ -1519,7 +1519,7 @@ implement_showing (MetaWindow *window,
 
       /* Really this effects code should probably
        * be in meta_window_hide so the window->mapped
-       * test isn't duplicated here. Anyhow, we anicafe
+       * test isn't duplicated here. Anyhow, we animate
        * if we are mapped now, we are supposed to
        * be minimized, and we are on the current workspace.
        */
@@ -1534,7 +1534,7 @@ implement_showing (MetaWindow *window,
 
           if (!result)
             {
-              /* just anicafe into the corner somehow - maybe
+              /* just animate into the corner somehow - maybe
                * not a good idea...
                */
               icon_rect.x = window->screen->rect.width;
