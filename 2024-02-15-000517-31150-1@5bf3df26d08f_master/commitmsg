@@ -1,0 +1,4 @@
+display: Fix focus closing some applications (xterm, chromium)
+
+based in marco commit:
+https://github.com/mate-desktop/marco/commit/db228e276fd4e7e7b33957d96cba73aaa4166a8d
