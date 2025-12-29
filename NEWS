@@ -1,3 +1,11 @@
+### croma 2.0.0
+
+  * ci: some improvements
+  * build: GLib 2.67.3 required
+  * display: Fix focus closing some applications (xterm, chromium)
+  * update translations
+
+
 ### croma 1.25.1
 
   * ci: little improvements
@@ -12,6 +20,7 @@
   * reduce the scope of some variables
   * theme-viewer: declare some variables with const
   * util: avoid unreachable code
+
 
 ### croma 1.25.0
 
