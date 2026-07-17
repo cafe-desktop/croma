@@ -29,7 +29,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <glib.h>
-#include <gdk-pixbuf/gdk-pixbuf.h>
+#include <cdk-pixbuf/cdk-pixbuf.h>
 #include <cairo/cairo.h>
 
 /* This is between CTK_PRIORITY_RESIZE (+10) and CDK_PRIORITY_REDRAW (+20) */
@@ -137,7 +137,7 @@ void            meta_ui_window_menu_popup (MetaWindowMenu     *menu,
                                            guint32             timestamp);
 void            meta_ui_window_menu_free  (MetaWindowMenu     *menu);
 
-GdkPixbuf* meta_gdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
+GdkPixbuf* meta_cdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
                                             Pixmap       xpixmap,
                                             int          src_x,
                                             int          src_y,

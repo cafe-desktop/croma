@@ -42,7 +42,7 @@
 #include "iconcache.h"
 #include <X11/Xutil.h>
 #include <cairo.h>
-#include <gdk-pixbuf/gdk-pixbuf.h>
+#include <cdk-pixbuf/cdk-pixbuf.h>
 #include <ctk/ctk.h>
 
 typedef struct _MetaGroup MetaGroup;

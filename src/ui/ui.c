@@ -531,7 +531,7 @@ meta_ui_window_menu_free (MetaWindowMenu *menu)
 }
 
 GdkPixbuf*
-meta_gdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
+meta_cdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
                                  Pixmap       xpixmap,
                                  int          src_x,
                                  int          src_y,
@@ -573,7 +573,7 @@ meta_gdk_pixbuf_get_from_pixmap (GdkPixbuf   *dest,
                                            w_ret, h_ret);
     }
 
-  retval = gdk_pixbuf_get_from_surface (surface,
+  retval = cdk_pixbuf_get_from_surface (surface,
                                         src_x,
                                         src_y,
                                         width,
@@ -953,6 +953,6 @@ GdkPixbuf *meta_ui_get_pixbuf_from_surface (cairo_surface_t *surface)
 	width = cairo_xlib_surface_get_width (surface);
 	height = cairo_xlib_surface_get_height (surface);
 
-	return gdk_pixbuf_get_from_surface (surface, 0, 0, width, height);
+	return cdk_pixbuf_get_from_surface (surface, 0, 0, width, height);
 }
 
