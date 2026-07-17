@@ -217,7 +217,7 @@ CtkWidget *widget;
 int
 main (int argc, char **argv)
 {
-  GdkPixbuf *pixbuf;
+  CdkPixbuf *pixbuf;
   GError *err;
 
   ctk_init (&argc, &argv);

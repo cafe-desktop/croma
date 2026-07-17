@@ -2171,7 +2171,7 @@ parse_draw_op_element (GMarkupParseContext  *context,
       const char *colorize;
       const char *fill_type;
       MetaAlphaGradientSpec *alpha_spec;
-      GdkPixbuf *pixbuf;
+      CdkPixbuf *pixbuf;
       MetaColorSpec *colorize_spec = NULL;
       MetaImageFillType fill_type_val;
       int h, w, c;
