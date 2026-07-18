@@ -1652,84 +1652,84 @@ msgstr "Mindig a látható munkaterületen"
 msgid "Put Window On Only One Workspace"
 msgstr "Ablak kirakása csak egy munkaterületre"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:65
 msgid "Mi_nimize"
 msgstr "Mi_nimalizálás"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:67
 msgid "Ma_ximize"
 msgstr "Ma_ximalizálás"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:69
 msgid "Unma_ximize"
 msgstr "_Eredeti méret"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:71
 msgid "Roll _Up"
 msgstr "_Felgördítés"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:73
 msgid "_Unroll"
 msgstr "_Legördítés"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:75
 msgid "_Move"
 msgstr "Át_helyezés"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:77
 msgid "_Resize"
 msgstr "Át_méretezés"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:79
 msgid "Move Titlebar On_screen"
 msgstr "_Címsor mozgatása a képernyőn"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:82 src/ui/menu.c:84
 msgid "Always on _Top"
 msgstr "Mindig _felül"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:86
 msgid "_Always on Visible Workspace"
 msgstr "Mindig a látható m_unkaterületen"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:88
 msgid "_Only on This Workspace"
 msgstr "_Csak ezen a munkaterületen"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:90
 msgid "Move to Workspace _Left"
 msgstr "Áthelyezés a bal ol_dali munkaterületre"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:92
 msgid "Move to Workspace R_ight"
 msgstr "Áthelyezés a j_obb oldali munkaterületre"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:94
 msgid "Move to Workspace _Up"
 msgstr "Áthelyezés a fel_ső munkaterületre"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:96
 msgid "Move to Workspace _Down"
 msgstr "Áthelyezés az _alsó munkaterületre"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:100
 msgid "_Close"
 msgstr "_Bezárás"

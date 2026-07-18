@@ -1678,84 +1678,84 @@ msgstr "Selalu Pada Area Kerja Tampak"
 msgid "Put Window On Only One Workspace"
 msgstr "Letakkan Jendela Hanya Pada Satu Area Kerja"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:65
 msgid "Mi_nimize"
 msgstr "Mi_nimalkan"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:67
 msgid "Ma_ximize"
 msgstr "Ma_ksimalkan"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:69
 msgid "Unma_ximize"
 msgstr "Tak Ma_ksimalkan"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:71
 msgid "Roll _Up"
 msgstr "G_ulung"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:73
 msgid "_Unroll"
 msgstr "B_uka"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:75
 msgid "_Move"
 msgstr "_Pindahkan"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:77
 msgid "_Resize"
 msgstr "Ganti Uku_ran"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:79
 msgid "Move Titlebar On_screen"
 msgstr "Pindahkan Judul Pada _layar"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:82 src/ui/menu.c:84
 msgid "Always on _Top"
 msgstr "Selalu di _Puncak"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:86
 msgid "_Always on Visible Workspace"
 msgstr "Sel_alu pada Area Kerja yang Tampak"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:88
 msgid "_Only on This Workspace"
 msgstr "_Hanya untuk Area Kerja ini"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:90
 msgid "Move to Workspace _Left"
 msgstr "Pindah ke Area Kerja _Kiri"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:92
 msgid "Move to Workspace R_ight"
 msgstr "P_indah ke Area Kerja Kanan"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:94
 msgid "Move to Workspace _Up"
 msgstr "Pindah ke Area Kerja _Atas"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:96
 msgid "Move to Workspace _Down"
 msgstr "Pindah ke Area Kerja _Bawah"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:100
 msgid "_Close"
 msgstr "_Tutup"

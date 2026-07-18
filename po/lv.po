@@ -1576,84 +1576,84 @@ msgstr "Vienmēr redzamajā darbvietā"
 msgid "Put Window On Only One Workspace"
 msgstr "Turēt logu tikai vienā darbvietā"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:65
 msgid "Mi_nimize"
 msgstr "Mi_nimizēt"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:67
 msgid "Ma_ximize"
 msgstr "Mak_simizēt"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:69
 msgid "Unma_ximize"
 msgstr "Atma_ksimizēt"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:71
 msgid "Roll _Up"
 msgstr "_Uzrullēt"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:73
 msgid "_Unroll"
 msgstr "_Norullēt"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:75
 msgid "_Move"
 msgstr "Pār_vietot"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:77
 msgid "_Resize"
 msgstr "Mainīt izmē_ru"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:79
 msgid "Move Titlebar On_screen"
 msgstr "Pārvietot virsrak_sta joslu uz ekrāna"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:82 src/ui/menu.c:84
 msgid "Always on _Top"
 msgstr "Vienmēr _virspusē"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:86
 msgid "_Always on Visible Workspace"
 msgstr "Vienmēr uz redz_amās darba vietas"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:88
 msgid "_Only on This Workspace"
 msgstr "_Tikai uz šīs darba vietas"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:90
 msgid "Move to Workspace _Left"
 msgstr "Pārvietot uz darba vietu pa _kreisi"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:92
 msgid "Move to Workspace R_ight"
 msgstr "Pārvietot uz darba vietu pa lab_i"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:94
 msgid "Move to Workspace _Up"
 msgstr "Pārvietot uz darba vietu a_ugšup"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:96
 msgid "Move to Workspace _Down"
 msgstr "Pārvietot uz _darba vietu lejup"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:100
 msgid "_Close"
 msgstr "_Aizvērt"

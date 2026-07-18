@@ -1702,84 +1702,84 @@ msgstr "Altijd op zichtbaar werkblad"
 msgid "Put Window On Only One Workspace"
 msgstr "Zet venster op slechts één werkblad"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:65
 msgid "Mi_nimize"
 msgstr "_Minimaliseren"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:67
 msgid "Ma_ximize"
 msgstr "Ma_ximaliseren"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:69
 msgid "Unma_ximize"
 msgstr "Ontmaximaliseren"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:71
 msgid "Roll _Up"
 msgstr "_Oprollen"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:73
 msgid "_Unroll"
 msgstr "_Uitrollen"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:75
 msgid "_Move"
 msgstr "_Verplaatsen"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:77
 msgid "_Resize"
 msgstr "He_rschalen"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:79
 msgid "Move Titlebar On_screen"
 msgstr "_Titelbalk op scherm verplaatsen"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:82 src/ui/menu.c:84
 msgid "Always on _Top"
 msgstr "Altijd _bovenop"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:86
 msgid "_Always on Visible Workspace"
 msgstr "_Altijd op zichtbare werkblad"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:88
 msgid "_Only on This Workspace"
 msgstr "_Alleen op dit werkblad"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:90
 msgid "Move to Workspace _Left"
 msgstr "Verplaatsen naar werkblad lin_ks"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:92
 msgid "Move to Workspace R_ight"
 msgstr "Verplaatsen naar werkblad _rechts"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:94
 msgid "Move to Workspace _Up"
 msgstr "Verplaatsen naar werkblad hierbov_en"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:96
 msgid "Move to Workspace _Down"
 msgstr "Verplaatsen naar werkblad hier_onder"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:100
 msgid "_Close"
 msgstr "Sl_uiten"

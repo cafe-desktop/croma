@@ -1578,84 +1578,84 @@ msgstr "দৃশ্যমান কর্মক্ষেত্রে সর্�
 msgid "Put Window On Only One Workspace"
 msgstr "শুধুমাত্র একটি কর্মক্ষেত্রের মধ্যে উইন্ডো স্থাপন করা হবে"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:65
 msgid "Mi_nimize"
 msgstr "আড়াল করুন (_n)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:67
 msgid "Ma_ximize"
 msgstr "বড় করুন (_x)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:69
 msgid "Unma_ximize"
 msgstr "স্বাভাবিক মাপ (_x)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:71
 msgid "Roll _Up"
 msgstr "গোটাও (_U)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:73
 msgid "_Unroll"
 msgstr "খোলো (_U)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:75
 msgid "_Move"
 msgstr "স্থানান্তরণ (_M)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:77
 msgid "_Resize"
 msgstr "মাপ পরিবর্তন (_R)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:79
 msgid "Move Titlebar On_screen"
 msgstr "পর্দার উপর শিরোনামের বার স্থানান্তর করুন (_s)"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:82 src/ui/menu.c:84
 msgid "Always on _Top"
 msgstr "সর্বদা উপরে (_T)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:86
 msgid "_Always on Visible Workspace"
 msgstr "দৃশ্যমান কর্মক্ষেত্রে সর্বদা উপস্থিত (_A)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:88
 msgid "_Only on This Workspace"
 msgstr "শুধুমাত্র বর্তমান কর্মক্ষেত্রে (_O)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:90
 msgid "Move to Workspace _Left"
 msgstr "বাঁদিকের কর্মক্ষেত্রে স্থানান্তর করুন (_L)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:92
 msgid "Move to Workspace R_ight"
 msgstr "ডান দিকের কর্মক্ষেত্রে স্থানান্তর করুন (_i)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:94
 msgid "Move to Workspace _Up"
 msgstr "উপরের কর্মক্ষেত্রে স্থানান্তরণ (_U)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:96
 msgid "Move to Workspace _Down"
 msgstr "নীচের কর্মক্ষেত্রে স্থানান্তরণ (_D)"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:100
 msgid "_Close"
 msgstr "বন্ধ করুন (_C)"

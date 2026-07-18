@@ -1588,84 +1588,84 @@ msgstr "ಯಾವಾಗಲೂ ಕಾಣಿಸುವ ಕಾರ್ಯಕ್ಷೇ�
 msgid "Put Window On Only One Workspace"
 msgstr "ವಿಂಡೊವನ್ನು ಕೇವಲ ಒಂದು ಕಾರ್ಯಕ್ಷೇತ್ರದಲ್ಲಿ ಇರಿಸು"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:65
 msgid "Mi_nimize"
 msgstr "ಕುಗ್ಗಿಸು (_n)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:67
 msgid "Ma_ximize"
 msgstr "ಹಿಗ್ಗಿಸು (_x)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:69
 msgid "Unma_ximize"
 msgstr "ಹಿಗ್ಗಿಸಲಾದುದನ್ನು ಕುಗ್ಗಿಸು (_x)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:71
 msgid "Roll _Up"
 msgstr "ಸುತ್ತು(_U)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:73
 msgid "_Unroll"
 msgstr "ಸುತ್ತದಿರು(_U)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:75
 msgid "_Move"
 msgstr "ಜರಗಿಸು"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:77
 msgid "_Resize"
 msgstr "ಗಾತ್ರ ಬದಲಾಯಿಸು"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:79
 msgid "Move Titlebar On_screen"
 msgstr "ಶೀರ್ಷಿಕೆಪಟ್ಟಿಯನ್ನು ತೆರೆಯ ಮೇಲೆ ಜರುಗಿಸು(_s)"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:82 src/ui/menu.c:84
 msgid "Always on _Top"
 msgstr "ಯಾವಾಗಲೂ ಮೇಲ್ಭಾಗದಲ್ಲಿ(_T)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:86
 msgid "_Always on Visible Workspace"
 msgstr "ಕೇವಲ ಗೋಚರಿಸುವ ಕಾರ್ಯಸ್ಥಳದಲ್ಲಿ ಮಾತ್ರ(_A)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:88
 msgid "_Only on This Workspace"
 msgstr "ಕೇವಲ ಈ ಕಾರ್ಯಸ್ಥಳದಲ್ಲಿ ಮಾತ್ರ(_O)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:90
 msgid "Move to Workspace _Left"
 msgstr "ಎಡಭಾಗದ ಕಾರ್ಯಸ್ಥಳಕ್ಕೆ ಬದಲಾಯಿಸು(_L)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:92
 msgid "Move to Workspace R_ight"
 msgstr "ಬಲಭಾಗದ ಕಾರ್ಯಸ್ಥಳಕ್ಕೆ ಬದಲಾಯಿಸು(_i)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:94
 msgid "Move to Workspace _Up"
 msgstr "ಮೇಲ್ಭಾಗದ ಕಾರ್ಯಸ್ಥಳಕ್ಕೆ ಬದಲಾಯಿಸು(_U)"
 
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:96
 msgid "Move to Workspace _Down"
 msgstr "ಕೆಳಭಾಗದ ಕಾರ್ಯಸ್ಥಳಕ್ಕೆ ಬದಲಾಯಿಸು(_D)"
 
 #. separator
-#. Translators: Translate this string the same way as you do in libwnck!
+#. Translators: Translate this string the same way as you do in libvnck!
 #: src/ui/menu.c:100
 msgid "_Close"
 msgstr "ಮುಚ್ಚು (_C)"

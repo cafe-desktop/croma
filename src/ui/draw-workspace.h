@@ -3,7 +3,7 @@
 /* Draw a workspace */
 
 /* This file should not be modified to depend on other files in
- * libwnck or croma, since it's used in both of them
+ * libvnck or croma, since it's used in both of them
  */
 
 /*
@@ -45,7 +45,7 @@ typedef struct
 
 } WnckWindowDisplayInfo;
 
-void wnck_draw_workspace (CtkWidget                   *widget,
+void vnck_draw_workspace (CtkWidget                   *widget,
                           cairo_t                     *cr,
                           int                          x,
                           int                          y,

@@ -1016,36 +1016,36 @@ meta_select_workspace_class_init (MetaSelectWorkspaceClass *klass,
 }
 
 /**
- * meta_convert_meta_to_wnck() converts a MetaWindow to a
+ * meta_convert_meta_to_vnck() converts a MetaWindow to a
  * WnckWindowDisplayInfo window that is used to build a thumbnail of a
  * workspace.
  **/
 static WnckWindowDisplayInfo
-meta_convert_meta_to_wnck (MetaWindow *window, MetaScreen *screen)
+meta_convert_meta_to_vnck (MetaWindow *window, MetaScreen *screen)
 {
-  WnckWindowDisplayInfo wnck_window;
-  wnck_window.icon = window->icon;
-  wnck_window.mini_icon = window->mini_icon;
+  WnckWindowDisplayInfo vnck_window;
+  vnck_window.icon = window->icon;
+  vnck_window.mini_icon = window->mini_icon;
 
-  wnck_window.is_active = FALSE;
+  vnck_window.is_active = FALSE;
   if (window == window->display->expected_focus_window)
-    wnck_window.is_active = TRUE;
+    vnck_window.is_active = TRUE;
 
   if (window->frame)
     {
-      wnck_window.x = window->frame->rect.x;
-      wnck_window.y = window->frame->rect.y;
-      wnck_window.width = window->frame->rect.width;
-      wnck_window.height = window->frame->rect.height;
+      vnck_window.x = window->frame->rect.x;
+      vnck_window.y = window->frame->rect.y;
+      vnck_window.width = window->frame->rect.width;
+      vnck_window.height = window->frame->rect.height;
     }
   else
     {
-      wnck_window.x = window->rect.x;
-      wnck_window.y = window->rect.y;
-      wnck_window.width = window->rect.width;
-      wnck_window.height = window->rect.height;
+      vnck_window.x = window->rect.x;
+      vnck_window.y = window->rect.y;
+      vnck_window.width = window->rect.width;
+      vnck_window.height = window->rect.height;
     }
-  return wnck_window;
+  return vnck_window;
 }
 
 static gboolean
@@ -1085,7 +1085,7 @@ meta_select_workspace_draw (CtkWidget *widget,
         }
       else
         {
-          windows[i] = meta_convert_meta_to_wnck (window, workspace->screen);
+          windows[i] = meta_convert_meta_to_vnck (window, workspace->screen);
           i++;
         }
       tmp = tmp->next;
@@ -1095,7 +1095,7 @@ meta_select_workspace_draw (CtkWidget *widget,
 
   ctk_widget_get_allocation (widget, &allocation);
 
-  wnck_draw_workspace (widget,
+  vnck_draw_workspace (widget,
                        cr,
                        SELECT_OUTLINE_WIDTH,
                        SELECT_OUTLINE_WIDTH,

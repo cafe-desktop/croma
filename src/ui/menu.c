@@ -61,42 +61,42 @@ struct _MenuData {
 static void activate_cb(CtkWidget* menuitem, gpointer data);
 
 static MenuItem menuitems[] = {
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_MINIMIZE, MENU_ITEM_IMAGE, CROMA_STOCK_MINIMIZE, FALSE, N_("Mi_nimize")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_MAXIMIZE, MENU_ITEM_IMAGE, CROMA_STOCK_MAXIMIZE, FALSE, N_("Ma_ximize")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_UNMAXIMIZE, MENU_ITEM_IMAGE, CROMA_STOCK_RESTORE, FALSE, N_("Unma_ximize")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_SHADE, MENU_ITEM_NORMAL, NULL, FALSE, N_("Roll _Up")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_UNSHADE, MENU_ITEM_NORMAL, NULL, FALSE, N_("_Unroll")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_MOVE, MENU_ITEM_NORMAL, NULL, FALSE, N_("_Move") },
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_RESIZE, MENU_ITEM_NORMAL, NULL, FALSE, N_("_Resize")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_RECOVER, MENU_ITEM_NORMAL, NULL, FALSE, N_("Move Titlebar On_screen")},
 	{META_MENU_OP_WORKSPACES, MENU_ITEM_SEPARATOR, NULL, FALSE, NULL}, /* separator */
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_ABOVE, MENU_ITEM_CHECKBOX, NULL, FALSE, N_("Always on _Top")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_UNABOVE, MENU_ITEM_CHECKBOX, NULL, TRUE, N_("Always on _Top")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_STICK, MENU_ITEM_RADIOBUTTON, NULL, FALSE, N_("_Always on Visible Workspace")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_UNSTICK, MENU_ITEM_RADIOBUTTON, NULL, FALSE,  N_("_Only on This Workspace")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_MOVE_LEFT, MENU_ITEM_NORMAL, NULL, FALSE, N_("Move to Workspace _Left")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_MOVE_RIGHT, MENU_ITEM_NORMAL, NULL, FALSE, N_("Move to Workspace R_ight")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_MOVE_UP, MENU_ITEM_NORMAL, NULL, FALSE, N_("Move to Workspace _Up")},
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_MOVE_DOWN, MENU_ITEM_NORMAL, NULL, FALSE, N_("Move to Workspace _Down")},
 	{0, MENU_ITEM_WORKSPACE_LIST, NULL, FALSE, NULL},
 	{0, MENU_ITEM_SEPARATOR, NULL, FALSE, NULL}, /* separator */
-	/* Translators: Translate this string the same way as you do in libwnck! */
+	/* Translators: Translate this string the same way as you do in libvnck! */
 	{META_MENU_OP_DELETE, MENU_ITEM_IMAGE, CROMA_STOCK_DELETE, FALSE, N_("_Close")}
 };
 

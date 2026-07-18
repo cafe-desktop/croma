@@ -77,8 +77,8 @@ CROMA FEATURES
 
  - Includes only the window manager; does not try to be a desktop
    environment. The pager, configuration, etc. are all separate and
-   modular. The "libwnck" library (which I also wrote) is available
-   for writing croma extensions, pagers, and so on. (But libwnck
+   modular. The "libvnck" library (which I also wrote) is available
+   for writing croma extensions, pagers, and so on. (But libvnck
    isn't croma specific, or CAFE-dependent; it requires only CTK,
    and should work with KWin, fvwm2, and other EWMH-compliant WMs.)
 
@@ -213,7 +213,7 @@ HOW TO ADD EXTERNAL FEATURES
 You can write a croma "plugin" such as a pager, window list, icon
 box, task menu, or even things like "window matching" using the
 Extended Window Manager Hints. See http://www.freedesktop.org for the
-EWMH specification. An easy-to-use library called "libwnck" is
+EWMH specification. An easy-to-use library called "libvnck" is
 available that uses the EWMH and is specifically designed for writing
 WM accessories.
 
@@ -434,7 +434,7 @@ Q: I think croma sucks.
 
 A: Feel free to use any WM you like. The reason croma follows the
    ICCCM and EWMH specifications is that it makes croma a modular,
-   interchangeable part in the desktop. libwnck-based apps such as the
+   interchangeable part in the desktop. libvnck-based apps such as the
    CAFE window list will work just fine with any EWMH-compliant WM.
 
 Q: Did you spend a lot of time on this?

@@ -28,7 +28,7 @@
 
 #include <X11/Xatom.h>
 
-/* The icon-reading code is also in libwnck, please sync bugfixes */
+/* The icon-reading code is also in libvnck, please sync bugfixes */
 
 static void
 get_fallback_icons (MetaScreen     *screen,

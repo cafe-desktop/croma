@@ -1396,7 +1396,7 @@
 2006-09-13  Ilkka Tuohela  <hile@iki.fi>
 
 	* fi.po: Updated Finnish translation.
-	- concistency fixes with libwnck
+	- concistency fixes with libvnck
 
 2006-09-13  Rajesh Ranjan <rajeshkajha@yahoo.com>
 
@@ -3851,7 +3851,7 @@
 
 2003-02-25  Pablo Gonzalo del Campo <pablodc@bigfoot.com>
 
-	* es.po: Fixed a translation string to match with libwnck.
+	* es.po: Fixed a translation string to match with libvnck.
 
 2003-02-22  Rob Adams <robadams@ucla.edu>
 

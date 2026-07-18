@@ -162,7 +162,7 @@ Getting started -- where to look
       window-props.c
       various functions in screen.c (especially ones using XChangeProperty)
       xprops.c
-      The libwnck module in cvs
+      The libvnck module in cvs
       meta_window_client_message
       Lots of the EWMH
 
