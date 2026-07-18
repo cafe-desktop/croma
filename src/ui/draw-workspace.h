@@ -25,8 +25,8 @@
  * 02110-1301, USA.
  */
 
-#ifndef WNCK_DRAW_WORKSPACE_H
-#define WNCK_DRAW_WORKSPACE_H
+#ifndef VNCK_DRAW_WORKSPACE_H
+#define VNCK_DRAW_WORKSPACE_H
 
 #include <cdk/cdk.h>
 #include <cdk-pixbuf/cdk-pixbuf.h>
