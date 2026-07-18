@@ -3,63 +3,12 @@
 ##########################################################
 requires:
   debian:
-    # Useful URL: https://github.com/cafe-desktop/debian-packages
-    # Useful URL: https://salsa.debian.org/debian-cafe-team/croma
-    - aptitude
-    - autoconf-archive
-    - autopoint
-    - clang
-    - clang-tools
-    - cppcheck
-    - expect #required for unbuffer
-    - gcc
-    - git
-    - intltool
-    - libglib2.0-dev
-    - libgtop2-dev
-    - libice-dev
-    - libpango1.0-dev
-    - libsm-dev
-    - libstartup-notification0-dev
-    - libtool
-    - libx11-dev
-    - libxcomposite-dev
-    - libxcursor-dev
-    - libxdamage-dev
-    - libxext-dev
-    - libxfixes-dev
-    - libxinerama-dev
-    - libxpresent-dev
-    - libxrandr-dev
-    - libxrender-dev
-    - libxt-dev
-    - make
-    - meson
-    - wget
-    - x11proto-present-dev
-    - yelp-tools
-    - zenity
-
-    # Required for libkanberra
-    - gnome-pkg-tools
-    - gtk-doc-tools
-    - libltdl-dev
-    - libasound2-dev
-    - libvorbis-dev
-    - libtdb-dev
-    - libpulse-dev
-    - libgstreamer1.0-dev
 
 before_scripts:
-  - ./html-cppcheck
-  - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0'
-  - ./install-from-git https://github.com/cafe-desktop/libkanberra master
-  - ./install-from-git https://github.com/cafe-desktop/cafe-common master
+  - ./debrepo-install
 
 build_scripts:
-  - ./before-build
-  - ./make-scanbuild '--enable-compile-warnings=maximum'
-  - ./after-build
+  - ./build-debs https://github.com/cafe-desktop/debian-packages devel croma
 
 after_scripts:
   - if [ -f "gen-index" ]; then ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/cafe-icon-theme/raw/master/cafe/16x16/apps/preferences-system-windows.png; fi
