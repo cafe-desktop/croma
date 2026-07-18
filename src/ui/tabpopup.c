@@ -1017,13 +1017,13 @@ meta_select_workspace_class_init (MetaSelectWorkspaceClass *klass,
 
 /**
  * meta_convert_meta_to_vnck() converts a MetaWindow to a
- * WnckWindowDisplayInfo window that is used to build a thumbnail of a
+ * VnckWindowDisplayInfo window that is used to build a thumbnail of a
  * workspace.
  **/
-static WnckWindowDisplayInfo
+static VnckWindowDisplayInfo
 meta_convert_meta_to_vnck (MetaWindow *window, MetaScreen *screen)
 {
-  WnckWindowDisplayInfo vnck_window;
+  VnckWindowDisplayInfo vnck_window;
   vnck_window.icon = window->icon;
   vnck_window.mini_icon = window->mini_icon;
 
@@ -1053,7 +1053,7 @@ meta_select_workspace_draw (CtkWidget *widget,
                             cairo_t   *cr)
 {
   MetaWorkspace *workspace;
-  WnckWindowDisplayInfo *windows;
+  VnckWindowDisplayInfo *windows;
   CtkAllocation allocation;
   int i, n_windows;
   GList *tmp, *list;
@@ -1062,7 +1062,7 @@ meta_select_workspace_draw (CtkWidget *widget,
 
   list = meta_stack_list_windows (workspace->screen->stack, workspace);
   n_windows = g_list_length (list);
-  windows = g_new (WnckWindowDisplayInfo, n_windows);
+  windows = g_new (VnckWindowDisplayInfo, n_windows);
 
   tmp = list;
   i = 0;

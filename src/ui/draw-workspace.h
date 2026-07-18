@@ -43,7 +43,7 @@ typedef struct
 
   guint is_active : 1;
 
-} WnckWindowDisplayInfo;
+} VnckWindowDisplayInfo;
 
 void vnck_draw_workspace (CtkWidget                   *widget,
                           cairo_t                     *cr,
@@ -55,7 +55,7 @@ void vnck_draw_workspace (CtkWidget                   *widget,
                           int                          screen_height,
                           CdkPixbuf                   *workspace_background,
                           gboolean                     is_active,
-                          const WnckWindowDisplayInfo *windows,
+                          const VnckWindowDisplayInfo *windows,
                           int                          n_windows);
 
 #endif

@@ -29,7 +29,7 @@
 #include "theme.h"
 
 static void
-get_window_rect (const WnckWindowDisplayInfo *win,
+get_window_rect (const VnckWindowDisplayInfo *win,
                  int                    screen_width,
                  int                    screen_height,
                  const CdkRectangle    *workspace_rect,
@@ -87,7 +87,7 @@ get_background_color (CtkStyleContext *context,
 static void
 draw_window (CtkWidget                   *widget,
              cairo_t                     *cr,
-             const WnckWindowDisplayInfo *win,
+             const VnckWindowDisplayInfo *win,
              const CdkRectangle          *winrect,
              CtkStateType                state)
 {
@@ -188,7 +188,7 @@ vnck_draw_workspace (CtkWidget                   *widget,
                      int                          screen_height,
                      CdkPixbuf                   *workspace_background,
                      gboolean                     is_active,
-                     const WnckWindowDisplayInfo *windows,
+                     const VnckWindowDisplayInfo *windows,
                      int                          n_windows)
 {
   int i;
@@ -231,7 +231,7 @@ vnck_draw_workspace (CtkWidget                   *widget,
   i = 0;
   while (i < n_windows)
     {
-      const WnckWindowDisplayInfo *win = &windows[i];
+      const VnckWindowDisplayInfo *win = &windows[i];
       CdkRectangle winrect;
 
       get_window_rect (win, screen_width,
