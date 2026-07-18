@@ -1,7 +1,7 @@
 AC_PREREQ(2.50)
 
 m4_define([croma_major_version], [2])
-m4_define([croma_minor_version], [0])
+m4_define([croma_minor_version], [1])
 m4_define([croma_micro_version], [0])
 
 m4_define([croma_version],
